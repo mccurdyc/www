@@ -1,0 +1,52 @@
+{{ define "main" }}
+
+  <div role="icons" class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="header-icons list-inline text-center header-links">
+          {{ range .Site.Data.beautifulhugo.social.social_icons }}
+            {{- if isset $.Site.Author .id }}
+              <li>
+                <a class="icon" href="{{ printf .url (index $.Site.Author .id) }}" title="{{ .title }}">
+                  <span>
+                    <i class="{{ .icon }} fa-5x"></i>
+                  </span>
+                </a>
+              </li>
+            {{- end -}}
+          {{ end }}
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div role="main" class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        {{ with .Content }}
+          <div class="row">
+            {{.}}
+          </div>
+        {{ end }}
+
+        <div role="status" class="row">
+          <div align="center">
+              <h2>Status Updates From Colton J. McCurdy</h2>
+                <a class="twitter-timeline"
+                  data-width="800"
+                  data-height="800"
+                  data-dnt="true"
+                  data-theme="dark"
+                  data-link-color="#FFCC66"
+                  data-chrome="transparent noborders noscrollbar noheader"
+                  data-related="twitterapi,twitter"
+                  data-aria-polite="assertive"
+                  href="https://twitter.com/McCurdyColton?ref_src=twsrc%5Etfw">
+                </a>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{{ end }}

@@ -1,0 +1,81 @@
+baseurl = "https://mccurdyc.dev"
+DefaultContentLanguage = "en"
+title = "Colton J. McCurdy"
+theme = "beautiful-hugo"
+metaDataFormat = "yaml"
+pygmentsStyle = "pastie"
+pygmentsCodefencesGuessSyntax = true
+relativeurls = true
+staticDir = "static"
+themesDir = "themes"
+watch = true
+[taxonomies]
+  post = "posts"
+  tag = "tags"
+  category = "categories"
+
+[Params]
+  homeTitle = "Colton J. McCurdy"
+  subtitle = "Software. Coffee. Fountain Pens."
+  # logo = "img/avatar-icon.png" # Expecting square dimensions
+  favicon = "img/favicon.ico"
+  dateFormat = "2006-01-02"
+  since="2013"
+  commit = false
+  rss = false
+  comments = false
+  readingTime = true
+  wordCount = true
+  useHLJS = true
+  socialShare = true
+  delayDisqus = true
+  showRelatedPosts = true
+
+[[Params.bigimg]]
+ src = "img/detroit-street-art.jpg"
+
+[Author]
+  name = "Colton J. McCurdy"
+  website = "https://mccurdyc.dev"
+  email = "coltonjmccurdy@gmail.com"
+  github = "mccurdyc"
+  twitter = "mccurdycolton"
+  linkedin = "mccurdycolton"
+
+[[menu.main]]
+    name = "Blog"
+    url = ""
+    weight = 1
+
+[[menu.main]]
+    parent = "Blog"
+    name = "Posts"
+    url = "post"
+    weight = 1
+
+[[menu.main]]
+    parent = "Blog"
+    name = "Titles"
+    url = "posts"
+    weight = 3
+
+[[menu.main]]
+    parent = "Blog"
+    name = "Tags"
+    url = "tags"
+    weight = 2
+
+[[menu.main]]
+    name = "Resume"
+    url = "resume/curriculum_vitae_mccurdy.pdf"
+    weight = 2
+
+[[menu.main]]
+    name = "Talks"
+    url = "page/talks/"
+    weight = 3
+
+[[menu.main]]
+    name = "Papers"
+    url = "page/papers/"
+    weight = 4
