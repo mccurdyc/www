@@ -3,12 +3,13 @@ DefaultContentLanguage = "en"
 title = "Colton J. McCurdy"
 theme = "beautiful-hugo"
 metaDataFormat = "yaml"
-pygmentsStyle = "pastie"
-pygmentsCodefencesGuessSyntax = true
 relativeurls = true
 staticDir = "static"
 themesDir = "themes"
 watch = true
+pygmentsCodeFences = true
+pygmentsUseClasses = true
+pygmentsCodefencesGuessSyntax = true
 [taxonomies]
   post = "posts"
   tag = "tags"
