@@ -29,23 +29,27 @@
           </div>
         {{ end }}
 
-        <div role="status" class="row">
-          <div align="center">
-              <h2>Status Updates From Colton J. McCurdy</h2>
-                <a class="twitter-timeline"
-                  data-width="800"
-                  data-height="800"
-                  data-dnt="true"
-                  data-theme="dark"
-                  data-link-color="#FFCC66"
-                  data-chrome="transparent noborders noscrollbar noheader"
-                  data-related="twitterapi,twitter"
-                  data-aria-polite="assertive"
-                  href="https://twitter.com/McCurdyColton?ref_src=twsrc%5Etfw">
-                </a>
-                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        {{ if .Site.Author.twitter }}
+          <div role="status" class="row">
+            <div align="center">
+                {{ if .Site.Author.name }}
+                <h2>Status Updates From {{ .Site.Author.name }}</h2>
+                {{ end }}
+                  <a class="twitter-timeline"
+                    data-width="800"
+                    data-height="800"
+                    data-dnt="true"
+                    data-theme="dark"
+                    data-link-color="#FFCC66"
+                    data-chrome="transparent noborders noscrollbar noheader"
+                    data-related="twitterapi,twitter"
+                    data-aria-polite="assertive"
+                    href="https://twitter.com/{{ .Site.Author.twitter }}?ref_src=twsrc%5Etfw">
+                  </a>
+                  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
           </div>
-        </div>
+        {{ end }}
       </div>
     </div>
   </div>

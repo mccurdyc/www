@@ -1,12 +1,13 @@
 baseurl = "https://mccurdyc.dev"
 DefaultContentLanguage = "en"
 title = "Colton J. McCurdy"
-theme = "beautiful-hugo"
+theme = "beautifulhugo"
 metaDataFormat = "yaml"
 relativeurls = true
 staticDir = "static"
 themesDir = "themes"
 watch = true
+useHLJS = false
 pygmentsCodeFences = true
 pygmentsUseClasses = true
 pygmentsCodefencesGuessSyntax = true

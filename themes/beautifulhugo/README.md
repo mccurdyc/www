@@ -1,17 +1,60 @@
-# Beautiful Hugo - A port of Beautiful Jekyll Theme
+# A Customized Beautiful Hugo - A customized port of Beautiful Hugo, a port of the Beautiful Jekyll Theme
 
-![Beautiful Hugo Theme Screenshot](https://github.com/halogenica/beautifulhugo/blob/master/images/screenshot.png)
+![Custom Beautiful Hugo Theme Screenshot](images/screenshot.png)
 
 ## Installation
 
-    $ mkdir themes
-    $ cd themes
-    $ git submodule add https://github.com/halogenica/beautifulhugo.git beautifulhugo
+1. [Start a Hugo project](https://gohugo.io/getting-started/quick-start/)
+```bash
+hugo new site your-site-name
+```
+2. Initialized the Git Repository
+```bash
+git init
+```
+3. "Install" the theme
+```bash
+git submodule add https://github.com/mccurdyc/beautifulhugo.git themes/beautifulhugo
+```
 
+4. [Update your config.* to use the theme](https://gohugo.io/themes/installing-and-using-themes/) (if using `toml` add the following)
+```toml
+themesDir = "themes"
+theme = "beautifulhugo"
+```
 
 See [the Hugo documentation](https://gohugo.io/themes/installing/) for more information.
 
 ## Extra Features
+
+### You can easily change the colorscheme
+
+At the top of `static/css/main.css`, set the appropriate values for your colorscheme.
+
+```css
+:root {
+  --base00: #2d2d2d;
+  --base01: #393939;
+  --base02: #515151;
+  --base03: #747369;
+  --base04: #a09f93;
+  --base05: #d3d0c8;
+  --base06: #e8e6df;
+  --base07: #f2f0ec;
+  --base08: #f2777a;
+  --base09: #f99157;
+  --base0a: #ffcc66;
+  --base0b: #99cc99;
+  --base0c: #66cccc;
+  --base0d: #6699cc;
+  --base0e: #cc99cc;
+  --base0f: #d27b53;
+}
+```
+
+_Issue: there is one known issue where the Twitter status links are hardcoded to use `#FFCC66`._
+
+I recommend https://terminal.sexy if your colorscheme is available on there.
 
 ### Responsive
 
@@ -30,10 +73,12 @@ pygmentsCodeFences = true
 pygmentsUseClasses = true
 ```
 
-Then, you can generate a different style by running:
+Then, you can manually edit the syntax highlighting at the bottom of `static/css/main.css`.
+
+Or, you can generate a different style by running:
 
 ```
-hugo gen chromastyles --style=trac > static/css/syntax.css
+hugo gen chromastyles --style=trac >> static/css/main.css
 ```
 
 #### Pygments - Old server side syntax highlighting
