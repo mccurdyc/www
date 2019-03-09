@@ -1,0 +1,49 @@
+{{ $finished := $.Get "finished" }}
+{{ $thrift := $.Get "thrift" }}
+{{ $amazon := $.Get "amazon" }}
+
+<p>
+  <h1>{{ .Get `title` }}</h1>
+
+  <h2>Author(s): {{ .Get `author` }}</h2>
+
+  <p>
+    <h3>Status:</h3>
+    {{ if ne $finished "" }}
+      <p>
+      Finished: {{ $finished }}
+      </p>
+
+      <h3>My takeaways</h3>
+
+      <p>
+        {{ .Inner }}
+      </p>
+    {{ else }}
+      <p>
+        Currently Reading
+      </p>
+    {{ end }}
+  </p>
+
+  {{ if ne $thrift "" }}
+  <p>
+    <a href="{{ .Get `thrift` }}" target="_blank">
+      <i class='fa fa-book'>
+      </i>
+      View on thriftbooks
+    </a>
+  </p>
+  {{ end }}
+
+  {{ if ne $amazon "" }}
+  <p>
+    <a href="{{ .Get `amazon` }}" target="_blank">
+      <i class='fab fa-amazon'>
+      </i>
+      View on Amazon
+    </a>
+  </p>
+  {{ end}}
+
+</p>
