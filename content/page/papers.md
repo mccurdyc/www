@@ -35,11 +35,11 @@ significantly reduced, especially with "heavyweight" DBMSs like PostgreSQL.
 ### Resources
 
 
-<a href="/papers/McMinn2018-paper.pdf" target="_blank"><i class='fa fa-download'></i> Paper</a>
+{{< download link="/papers/McMinn2018-paper.pdf" display="Paper" >}}
 
-<a href="https://github.com/schemaanalyst/imdetect-replicate" target="_blank"><i class='fab fa-github'></i> schemaanalyst/imdetect-replicate</a>
+{{< repo-link "schemaanalyst/imdetect-replicate" >}}
 
-<a href="https://github.com/schemaanalyst/schemaanalyst" target="_blank"><i class='fab fa-github'></i> schemaanalyst/schemaanalyst</a>
+{{< repo-link "schemaanalyst/schemaanalyst" >}}
 
 ---
 
@@ -67,9 +67,10 @@ using it, this paper inaugurates the public release of this open-source tool.
 
 ### Resources
 
-<a href="/papers/icsme2016-mrstudyr.pdf" target="_blank"><i class='fa fa-download'></i> Paper</a>
+{{< download link="/papers/icsme2016-mrstudyr.pdf" display="Paper" >}}
 
-<a href="https://github.com/mccurdyc/mrstudyr" target="_blank"><i class='fab fa-github'></i> mccurdyc/mrstudyr</a>
+{{< repo-link "mccurdyc/mrstudyr" >}}
+
 
 ---
 
@@ -93,6 +94,6 @@ test relational database schemas.
 
 ### Resources
 
-<a href="/papers/McMinn2016c-paper.pdf" target="_blank"><i class='fa fa-download'></i> Paper</a>
+{{< download link="/papers/McMinn2016c-paper.pdf" display="Paper" >}}
 
-<a href="https://github.com/schemaanalyst-team/schemaanalyst" target="_blank"><i class='fab fa-github'></i> schemaanalyst-team/schemaanalyst</a>
+{{< repo-link "schemaanalyst-team/schemaanalyst" >}}

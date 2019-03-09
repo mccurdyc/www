@@ -13,9 +13,9 @@ _Allegheny College, Thesis Defense_
 
 ### Resources
 
-<a href="/talks/mccurdyc-thesis-defense.pdf" target="_blank"><i class='fa fa-download'></i> Slides</a>
+{{< download link="/talks/mccurdyc-thesis-defense.pdf" display="Slides" >}}
 
-<a href="https://github.com/mccurdyc/cs610s2017-mccurdyc-defense" target="_blank"><i class='fab fa-github'></i> mccurdyc/cs610s2017-mccurdyc-defense</a>
+{{< repo-link "mccurdyc/cs610s2017-mccurdyc-defense" >}}
 
 ---
 
@@ -29,6 +29,6 @@ _Proceedings of the 32nd International Conference on Software Maintenance and Ev
 
 ### Resources
 
-<a href="/talks/icsme2016-mccurdyc.pdf" target="_blank"><i class='fa fa-download'></i> Slides</a>
+{{< download link="/talks/icsme2016-mccurdyc.pdf" display="Slides" >}}
 
-<a href="https://github.com/mccurdyc/icsme2016-presentation" target="_blank"><i class='fab fa-github'></i> mccurdyc/icsme2016-presentation</a>
+{{< repo-link "mccurdyc/icsme2016-presentation" >}}
