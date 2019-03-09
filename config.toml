@@ -11,6 +11,7 @@ useHLJS = false
 pygmentsCodeFences = true
 pygmentsUseClasses = true
 pygmentsCodefencesGuessSyntax = true
+googleAnalytics = "UA-62612842-1"
 [taxonomies]
   post = "posts"
   tag = "tags"
@@ -34,7 +35,7 @@ pygmentsCodefencesGuessSyntax = true
   showRelatedPosts = true
 
 [[Params.bigimg]]
- src = "img/detroit-street-art.jpg"
+ src = "images/detroit-street-art.jpg"
 
 [Author]
   name = "Colton J. McCurdy"
@@ -73,11 +74,26 @@ pygmentsCodefencesGuessSyntax = true
     weight = 2
 
 [[menu.main]]
+    name = "Projects"
+    url = "page/projects/"
+    weight = 3
+
+[[menu.main]]
+    name = "Bookshelf"
+    url = "page/bookshelf/"
+    weight = 4
+
+[[menu.main]]
     name = "Talks"
     url = "page/talks/"
-    weight = 3
+    weight = 5
 
 [[menu.main]]
     name = "Papers"
     url = "page/papers/"
-    weight = 4
+    weight = 6
+
+[[menu.main]]
+    name = "Site"
+    url = "page/site/"
+    weight = 7
