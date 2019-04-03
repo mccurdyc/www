@@ -42,7 +42,7 @@ Speaker(s):
 
   + Yaroslav Tkachenko ([@sap1ens](https://twitter.com/sap1ens)): Software Architect, Activision
 
-### Key slides:
+### Key slides
 
 {{< gallery caption-effect="fade" >}}
   {{< figure thumb="-thumb" src="/images/cod-proxy.jpg" caption="Slide 1" >}}
@@ -97,7 +97,7 @@ Speaker(s):
 
   + Kyle Bendickson ([@kbendickson](https://twitter.com/kbendickson)): Software Engineer, Data, Tinder
 
-### Key slides:
+### Key slides
 
 {{< gallery caption-effect="fade" >}}
   {{< figure thumb="-thumb" src="/images/tinder-event-driven-arch.jpg" caption="Slide 1" >}}
@@ -120,7 +120,7 @@ Speaker(s):
 
   + Adam Bellemare: Staff Data Engineer, Flipp
 
-### Key slides:
+### Key slides
 
 {{< gallery caption-effect="fade" >}}
   {{< figure thumb="-thumb" src="/images/flipp-contexts.jpg" caption="Slide 1" >}}
@@ -190,7 +190,7 @@ Speaker(s):
 
 {{< tweet 1113159815113658369 >}}
 
-### Key slides:
+### Key slides
 
 {{< gallery caption-effect="fade" >}}
   {{< figure thumb="-thumb" src="/images/confluent-alexa.jpg" caption="Slide 1" >}}
