@@ -64,7 +64,7 @@ will respond with the message "hello". You can run this server on your local mac
 assuming you have Go installed --- with the following command:
 
 {{< highlight bash >}}
-$ go run main.go
+  $ go run main.go
 {{< /highlight >}}
 
 To interact with the server that is running, you can use the Unix command, [cURL](https://github.com/curl/curl),
@@ -72,12 +72,12 @@ or `curl` in another window of your terminal. For our example, the URL that we w
 Running the command below in your terminal, you should receive a response.
 
 {{< highlight bash >}}
-$ curl localhost:8080/hello
+  $ curl localhost:8080/hello
 {{< /highlight >}}
 
 Response:
 {{< highlight bash >}}
-hello
+  hello
 {{< /highlight >}}
 
 ### Running Go in Environment Without Go Installed
@@ -88,7 +88,7 @@ one where Go is not installed. When this is the case, the Go toolchain can be le
 build a single, static binary with the following command in the root of the project:
 
 {{< highlight bash >}}
-$ go build -o bin/hello .
+  $ go build -o bin/hello .
 {{< /highlight >}}
 
 In the command above, the `-o` flag, which is only allowed when compiling a
@@ -99,17 +99,17 @@ Now, we can run the same server by executing the binary with the following comma
 in the root of the project:
 
 {{< highlight bash >}}
-$ ./bin/hello
+  $ ./bin/hello
 {{< /highlight >}}
 
 In another window:
 {{< highlight bash >}}
-$ curl localhost:8080/hello
+  $ curl localhost:8080/hello
 {{< /highlight >}}
 
 Response:
 {{< highlight bash >}}
-hello
+  hello
 {{< /highlight >}}
 
 ### Building and Running Go on a Different Operating System
@@ -123,7 +123,7 @@ build the binary for this distribution of Linux, we need to set `GOOS=linux` and
 Now, our build command is:
 
 {{< highlight bash >}}
-$ GOOS=linux GOARCH=amd64 go build -o bin/hello .
+  $ GOOS=linux GOARCH=amd64 go build -o bin/hello .
 {{< /highlight >}}
 
 While this application won't run on your local machine --- unless you are running Alpine Linux ---
@@ -147,15 +147,15 @@ in the Dockerfile. The contents of our Dockerfile --- named `Dockerfile_1` in or
 to differentiate between Dockerfiles throughout this tutorial --- are as follows:
 
 {{< highlight Dockerfile >}}
-FROM golang:1.9
+  FROM golang:1.9
 
-CMD cd $GOPATH
+  CMD cd $GOPATH
 
-RUN go get github.com/mccurdyc/goblogs/docker-multi-stage-builds/hello
+  RUN go get github.com/mccurdyc/goblogs/docker-multi-stage-builds/hello
 
-WORKDIR $GOPATH/src/github.com/mccurdyc/goblogs/docker-multi-stage-builds/hello
+  WORKDIR $GOPATH/src/github.com/mccurdyc/goblogs/docker-multi-stage-builds/hello
 
-ENTRYPOINT ["go", "run", "main.go"]
+  ENTRYPOINT ["go", "run", "main.go"]
 {{< /highlight >}}
 
 When a Dockerfile is present in the current directory, the following
@@ -167,34 +167,34 @@ $ docker build --rm -f Dockerfile_1 -t stockx/hello .
 
 Output:
 {{< highlight bash >}}
-Step 1/5 : FROM golang:1.9
- ---> 138bd936fa29
-Step 2/5 : RUN mkdir /app
- ---> Using cache
- ---> fd1cf9736c21
-Step 3/5 : ADD . /app
- ---> b698af017d04
-Step 4/5 : WORKDIR /app
-Removing intermediate container d8b5ad763bf7
- ---> 0518e56b3702
-Step 5/5 : ENTRYPOINT ["go", "run", "main.go"]
- ---> Running in 14d350c4d643
-Removing intermediate container 14d350c4d643
- ---> 807e62c84619
-Successfully built 807e62c84619
-Successfully tagged stockx/hello:latest
+  Step 1/5 : FROM golang:1.9
+  ---> 138bd936fa29
+  Step 2/5 : RUN mkdir /app
+  ---> Using cache
+  ---> fd1cf9736c21
+  Step 3/5 : ADD . /app
+  ---> b698af017d04
+  Step 4/5 : WORKDIR /app
+  Removing intermediate container d8b5ad763bf7
+  ---> 0518e56b3702
+  Step 5/5 : ENTRYPOINT ["go", "run", "main.go"]
+  ---> Running in 14d350c4d643
+  Removing intermediate container 14d350c4d643
+  ---> 807e62c84619
+  Successfully built 807e62c84619
+  Successfully tagged stockx/hello:latest
 {{< /highlight >}}
 
 To see a list of images immediately available on your machine --- including the image tagged `stockx/hello` --- run the following:
 
 {{< highlight bash >}}
-$ docker images
+  $ docker images
 {{< /highlight >}}
 
 Output:
 {{< highlight bash >}}
-REPOSITORY                            TAG                 IMAGE ID            CREATED             SIZE
-stockx/hello                          latest              49b293df7e71        9 hours ago         734MB
+  REPOSITORY                            TAG                 IMAGE ID            CREATED             SIZE
+  stockx/hello                          latest              49b293df7e71        9 hours ago         734MB
 {{< /highlight >}}
 
 Note that the size of the image is ~730MB. We will use this number
@@ -208,24 +208,24 @@ instance of an image. To start a container and map the container ports to your
 local machine, use the following command:
 
 {{< highlight bash >}}
-$ docker run -p 8080:8080 stockx/hello
+  $ docker run -p 8080:8080 stockx/hello
 {{< /highlight >}}
 
 Output:
 {{< highlight bash >}}
-2018/01/23 02:12:01 started server on localhost:8080
+  2018/01/23 02:12:01 started server on localhost:8080
 {{< /highlight >}}
 
 To see the running container, use the following command:
 
 {{< highlight bash >}}
-$ docker ps
+  $ docker ps
 {{< /highlight >}}
 
 Output:
 {{< highlight bash >}}
-CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS               NAMES
-4492d4f94465        stockx/hello        "go run main.go /bin…"   1 second ago        Up 3 seconds        0.0.0.0:8080->8080/tcp   romantic_neumann
+  CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS               NAMES
+  4492d4f94465        stockx/hello        "go run main.go /bin…"   1 second ago        Up 3 seconds        0.0.0.0:8080->8080/tcp   romantic_neumann
 {{< /highlight >}}
 
 ### Building a Lightweight Image
@@ -240,7 +240,7 @@ To do this, build the binary for the runtime environment, in this case, it will 
 Linux, so we can use the command from earlier:
 
 {{< highlight bash >}}
-$ GOOS=linux GOARCH=amd64 go build -o bin/hello .
+  $ GOOS=linux GOARCH=amd64 go build -o bin/hello .
 {{< /highlight >}}
 
 For this build, we will use `Dockerfile_2` which uses Alpine Linux as the base image,
@@ -248,20 +248,20 @@ copies the Go binary to our container and runs the binary instead of invoking Go
 `Dockerfile_2` contains the following:
 
 {{< highlight Dockerfile>}}
-FROM alpine:latest
+  FROM alpine:latest
 
-RUN mkdir /app
+  RUN mkdir /app
 
-ADD /bin/hello /app
+  ADD /bin/hello /app
 
-WORKDIR /app
+  WORKDIR /app
 
-ENTRYPOINT ["/app/hello"]
+  ENTRYPOINT ["/app/hello"]
 {{< /highlight >}}
 
 Run:
 {{< highlight bash >}}
-$ docker build --rm -f Dockerfile_2 -t stockx/hello .
+  $ docker build --rm -f Dockerfile_2 -t stockx/hello .
 {{< /highlight >}}
 
 Now, if we run `docker images` and look at the size of the image, it is significantly
@@ -269,25 +269,25 @@ smaller, over 700MB smaller. It is now ~10MB as compared to the previous ~730MB.
 
 Output:
 {{< highlight bash >}}
-REPOSITORY          TAG                 IMAGE ID            CREATED                  SIZE
-stockx/hello        latest              a585021da814        Less than a second ago   10.7MB
+  REPOSITORY          TAG                 IMAGE ID            CREATED                  SIZE
+  stockx/hello        latest              a585021da814        Less than a second ago   10.7MB
 {{< /highlight >}}
 
 To start the container and list the running containers once started, use the following
 commands, respectively:
 
 {{< highlight bash >}}
-$ docker run -p 8080:8080 stockx/hello
+  $ docker run -p 8080:8080 stockx/hello
 {{< /highlight >}}
 
 {{< highlight bash >}}
-$ docker ps
+  $ docker ps
 {{< /highlight >}}
 
 Output:
 {{< highlight bash >}}
-CONTAINER ID        IMAGE               COMMAND             CREATED                  STATUS              PORTS                    NAMES
-750208ddc2b4        stockx/hello        "/app/hello"        Less than a second ago   Up 1 second         0.0.0.0:8080->8080/tcp   cocky_shannon
+  CONTAINER ID        IMAGE               COMMAND             CREATED                  STATUS              PORTS                    NAMES
+  750208ddc2b4        stockx/hello        "/app/hello"        Less than a second ago   Up 1 second         0.0.0.0:8080->8080/tcp   cocky_shannon
 {{< /highlight >}}
 
 ## Difficulty Using 3rd-Party Libraries
@@ -316,25 +316,25 @@ To do this, basically all that needs done is to add the contents of two Dockerfi
 into a single Dockerfile, like so:
 
 {{< highlight Dockerfile >}}
-FROM golang:alpine AS prelim
+  FROM golang:alpine AS prelim
 
-RUN mkdir /app
+  RUN mkdir /app
 
-RUN apk add --no-cache git build-base
+  RUN apk add --no-cache git build-base
 
-RUN go get github.com/markbates/pop/...
-RUN GOOS=linux GOARCH=amd64 \
-	go build -o /go/bin/soda github.com/markbates/pop/soda
+  RUN go get github.com/markbates/pop/...
+  RUN GOOS=linux GOARCH=amd64 \
+    go build -o /go/bin/soda github.com/markbates/pop/soda
 
-FROM alpine:latest
+  FROM alpine:latest
 
-RUN mkdir /app
+  RUN mkdir /app
 
-ADD bin/hello /app
+  ADD bin/hello /app
 
-COPY --from=prelim /go/bin/soda bin/
+  COPY --from=prelim /go/bin/soda bin/
 
-ENTRYPOINT ["/app/hello"]
+  ENTRYPOINT ["/app/hello"]
 {{< /highlight >}}
 
 Running our server will behave the same, but what we are interested in is that the
@@ -347,7 +347,7 @@ need to grab the `CONTAINER_ID` from `docker ps`. To check this, `exec` into the
 container with the following command:
 
 {{< highlight bash >}}
-$ docker exec -it <CONTAINER_ID> /bin/sh
+  $ docker exec -it <CONTAINER_ID> /bin/sh
 {{< /highlight >}}
 
 Once in the container, ensure that the binary that we added to `/bin` is accessible
@@ -356,29 +356,29 @@ similar to the following:
 
 Output:
 {{< highlight bash >}}
-v3.51.1
+  v3.51.1
 
-A tasty treat for all your database needs
+  A tasty treat for all your database needs
 
-Usage:
-  soda [flags]
-  soda [command]
+  Usage:
+    soda [flags]
+    soda [command]
 
-Available Commands:
-  create      Creates databases for you
-  drop        Drops databases for you
-  generate
-  help        Help about any command
-  migrate     Runs migrations against your database.
-  schema      Tools for working with your database schema
+  Available Commands:
+    create      Creates databases for you
+    drop        Drops databases for you
+    generate
+    help        Help about any command
+    migrate     Runs migrations against your database.
+    schema      Tools for working with your database schema
 
-Flags:
-  -c, --config string   The configuration file you would like to use.
-  -d, --debug           Use debug/verbose mode
-  -e, --env string      The environment you want to run migrations against. Will use $GO_ENV if set. (default "development")
-  -h, --help            help for soda
-  -p, --path string     Path to the migrations folder (default "./migrations")
-  -v, --version         Show version information
+  Flags:
+    -c, --config string   The configuration file you would like to use.
+    -d, --debug           Use debug/verbose mode
+    -e, --env string      The environment you want to run migrations against. Will use $GO_ENV if set. (default "development")
+    -h, --help            help for soda
+    -p, --path string     Path to the migrations folder (default "./migrations")
+    -v, --version         Show version information
 
-Use "soda [command] --help" for more information about a command.
+  Use "soda [command] --help" for more information about a command.
 {{< /highlight >}}
