@@ -80,7 +80,7 @@ p + p {
     margin: 24px 0 6px 0;
 }
 p a {
-  color: var(--base08);
+  color: var(--base01);
 }
 
 h1 {
@@ -129,7 +129,7 @@ a.icon i {
 
 
 blockquote {
-  color: var(--base08);
+  color: var(--base0a);
   font-style: italic;
 }
 
@@ -987,18 +987,22 @@ h4.see-also {
 /* Pygments template by Jan T. Sott (https://github.com/idleberg) */
 
 
+code {
+  background: var(--base02);
+  color: var(--base05);
+}
+
 pre.chroma {
-  background: var(--base00);
-  color: var(--base07);
-  border: 1px solid var(--base07);
+  background: var(--base01);
+  color: var(--base05);
+  border: 3px solid var(--base02);
   font-family: 'Source Code Pro', monospace;
-  font-size: 15px;
-  margin: 15px 0 0 15px;
+  font-size: 16px;
 }
 
 .chroma { color: var(--base05); background-color: var(--base00); } /* Background */
 .chroma .hll { background-color: var(--base00); }
-.chroma .err { color: #960050; } /* Error */
+.chroma .err { color: var(--base08) } /* Error */
 .chroma .lntd { vertical-align: top; padding: 0; margin: 0; border: 0; } /* LineTableTD */
 .chroma .lntable { border-spacing: 0; padding: 0; margin: 0; border: 0; width: auto; overflow: auto; display: block; } /* LineTable */
 .chroma .hl { display: block; width: 100%;background-color: var(--base00); } /* LineHighlight */
