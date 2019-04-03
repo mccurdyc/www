@@ -4,6 +4,7 @@ author: "Colton J. McCurdy"
 date: 2019-04-02
 tags: ["kafka", "kafka summit", "nyc", "conference", "2019"]
 posts: ["Kafka Summit New York City 2019"]
+image: /images/kafka-summit-nyc-2019.jpg
 ---
 
 # Overview
@@ -185,9 +186,9 @@ Speaker(s):
 
   + Ricardo Ferreira ([@riferrei](https://twitter.com/riferrei)): Developer Advocate, Confluent
 
-### My tweets:
+### My tweets
 
-https://twitter.com/McCurdyColton/status/1113159815113658369
+{{< tweet 1113159815113658369 >}}
 
 ### Key slides:
 
