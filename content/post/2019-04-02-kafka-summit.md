@@ -20,6 +20,10 @@ For more details about the event itself, visit the [Kafka Summity New York City 
 Finally, I will try to update the images of the slides with the actual slides
 when the slides are released and include links to the slides.
 
+The official videos and slides can be found [here](confluent.io/resources/kafka-summit-new-york-2019/).
+
+
+
 ---
 
 ## (Keynote) The Rise of Real-Time
@@ -28,6 +32,10 @@ Speaker(s):
 
   + Jay Kreps ([@jaykreps](https://twitter.com/jaykreps)): CEO, Co-Founder, Confluent
   + James Watters ([@wattersjames](https://twitter.com/wattersjames)): SVP, Strategy, Pivotal
+
+### Video and Slides:
+
++ https://www.confluent.io/kafka-summit-NY19/events-everywhere
 
 ### Key points:
 + transformations in many industries to be event-driven and immediately reactive
@@ -41,6 +49,10 @@ Speaker(s):
 Speaker(s):
 
   + Yaroslav Tkachenko ([@sap1ens](https://twitter.com/sap1ens)): Software Architect, Activision
+
+### Video and Slides:
+
++ https://www.confluent.io/kafka-summit-ny19/call-of-duty-games
 
 ### Key slides
 
@@ -97,6 +109,10 @@ Speaker(s):
 
   + Kyle Bendickson ([@kbendickson](https://twitter.com/kbendickson)): Software Engineer, Data, Tinder
 
+### Video and Slides:
+
++ https://www.confluent.io/kafka-summit-ny19/event-driven-architecture-restful-microservices
+
 ### Key slides
 
 {{< gallery caption-effect="fade" >}}
@@ -119,6 +135,10 @@ Speaker(s):
 ### Speaker(s):
 
   + Adam Bellemare: Staff Data Engineer, Flipp
+
+### Video and Slides:
+
++ https://www.confluent.io/kafka-summit-ny19/the-migration-to-event-driven-microservices
 
 ### Key slides
 
@@ -170,6 +190,10 @@ Speaker(s):
 
   + Iago Borges: Software Engineer, Nubank
 
+### Video and Slides:
+
++ https://www.confluent.io/kafka-summit-ny19/maintaining-consistency-for-financial-event-driven-architecture
+
 ### Key points:
 
 + mentions [datomic](https://www.datomic.com/)
@@ -189,6 +213,10 @@ Speaker(s):
 ### My tweets
 
 {{< tweet 1113159815113658369 >}}
+
+### Video and Slides:
+
++ https://www.confluent.io/kafka-summit-ny19/keeping-your-data-close-and-your-caches-hotter
 
 ### Key slides
 
@@ -229,6 +257,10 @@ Speaker(s):
 
   + Shrijeet Paliwal ([@shrjeet](https://twitter.com/shrijeet))
 
+### Video and Slides:
+
++ https://www.confluent.io/kafka-summit-ny19/stream-processing-in-ludicrous-mode
+
 ### Key slides
 
 {{< gallery caption-effect="fade" >}}
@@ -253,6 +285,10 @@ Speaker(s):
 ### Speaker(s):
 
   + Guido Schmutz ([@gschmutz](https://twitter.com/gschmutz)): Solution Architect, Trivadis
+
+### Video and Slides:
+
++ https://www.confluent.io/kafka-summit-ny19/Kafka-as-an-event-store
 
 ### Key slides
 
@@ -294,6 +330,10 @@ Speaker(s):
 ### Speaker(s):
 
   + Hao Wang: Senior Software Engineer, Airbnb
+
+### Video and Slides:
+
++ https://www.confluent.io/kafka-summit-ny19/streaming-ingestion-of-logging-events-at-airbnb
 
 ### Key points:
 
