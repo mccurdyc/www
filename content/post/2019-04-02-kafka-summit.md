@@ -17,9 +17,6 @@ For the full list of talks, provided talk summaries and the various tracks, visi
 the [Schedule Page](https://kafka-summit.org/kafka-summit-new-york-2019/schedule/).
 For more details about the event itself, visit the [Kafka Summity New York City 2019 Homepage](https://kafka-summit.org/events/kafka-summit-new-york-2019/).
 
-Finally, I will try to update the images of the slides with the actual slides
-when the slides are released and include links to the slides.
-
 The official videos and slides can be found [here](confluent.io/resources/kafka-summit-new-york-2019/).
 
 
