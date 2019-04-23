@@ -80,7 +80,7 @@ p + p {
     margin: 24px 0 6px 0;
 }
 p a {
-  color: var(--base0a);
+  color: var(--base0b);
 }
 
 h1 {
@@ -96,7 +96,7 @@ h2,h3,h4,h5,h6 {
 }
 
 a {
-  color: var(--base0a);
+  color: var(--base0b);
 }
 
 a:hover {
