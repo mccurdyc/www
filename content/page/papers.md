@@ -38,6 +38,7 @@ significantly reduced, especially with "heavyweight" DBMSs like PostgreSQL.
 {{< download link="/papers/McMinn2018-paper.pdf" display="Paper" >}}
 
 {{< repo-link "schemaanalyst/imdetect-replicate" >}}
+<p/>
 
 {{< repo-link "schemaanalyst/schemaanalyst" >}}
 
