@@ -18,7 +18,7 @@ tasks e.g., adding a CODEOWNERS or LICENSE file to all of an organization's repo
 
 neighbor executes an arbitrary binary, specified by the user e.g., `ls -al`. Therefore,
 neighbor cannot be prescriptive in it's output format e.g., a CSV file with the "results".
-But instead, the output is specified by the executed binary. The neighbor logs are the
+But instead, the output is specified by the executed binary. The logs are the
 focal point for a user interacting with neighbor. neighbor also aims to not be
 restrictive e.g., only writing to a file, but rather flexible, in regards to the
 output format. If a user wants to write to a file, they can still do so by redirecting
@@ -29,9 +29,7 @@ This is why the logging library that is used by neighbor is important.
 Example:
 
 ```bash
-neighbor --access_token=$GITHUB_ACCESS_TOKEN \
-         --search_type="repository" \
-         --query="org:neighbor-projects NOT minikube" \
+neighbor --query="org:neighbor-projects NOT minikube" \
          --external_command="ls -al" \
          > out.log 2>error.log
 ```
