@@ -12,12 +12,12 @@ comments: false
 ## Relationships
 
 One of the points early in the book that Ben said his father taught him is something
-challenging for many people who are passionate about their work, that is remembering
+challenging for many people who are passionate about their work, that is, remembering
 to take time and focus on loved ones and friends.
 
 > Flowers are really cheap. But do you know what is expensive? Divorce.
 
-I don't think that his father was just talking about cheap from a financial perspective.
+I don't think that his father was exclusively talking about "cheap" from a financial perspective.
 And really I think the point can be boiled down to doing seemingly simple, yet impactful
 things for friends and loved ones can mean a lot because when you don't do anything
 and don't give any attention to these relationships, they fall apart. Ben talks about
@@ -39,27 +39,28 @@ complacency and intensity, too much of either is not productive.
 
 Another point that Ben makes in regards to relationships, but more specifically
 in communication is the importance of honesty and being able to deliver difficult
-messages clearly. If instead of doing the hard thing, that is delivering the message
-in a straightforward way, you hand someone a "shit sandwich" (a compliment followed
-by the difficult thing that you really wanted to say followed by another compliment),
-you will confuse whoever you are talking to and that won't actually get the
-point that you really wanted to make. Ben mentions the importance of clarity, even
+messages, clearly. If instead of doing the hard thing --- delivering the message
+in a straightforward way --- you give someone a "shit sandwich" (a compliment, followed
+by the difficult thing that you really wanted to say, followed by another compliment),
+you will confuse whoever you are talking to and won't actually get the
+point that you wanted to make across. Ben also mentions the importance of clarity, even
 when you don't have a solution to a particular problem.
 
 While on the topic of giving feedback, in chapter 7, there is a section titled "Feedback
-if a dialog, not a monologue". In this section, Ben says, "...your goal should be for
+is a dialog, not a monologue". In this section, Ben explains that "...your goal should be for
 your feedback to open up rather than close down discussion." In code reviews, I've
 told my team that when someone gives feedback, that doesn't necessarily mean to do
 exactly what the person is proposing or that the person is correct, but that it
-is a data point to consider and possibly discuss further if you don't understand or
+is a data point to consider and possibly discuss further if you don't understand, or
 disagree. Personally, I have been trying to give feedback that is both actionable
 and data-backed. When I do give opinionated feedback, I make it clear that it is
 an opinion. On a similar note, work that you have done can and should be iterated
-upon, it should not be "dead". You shouldn't be deterred from working on something
+upon; it should not be "dead". You shouldn't be deterred from working on something
 because you aren't sure if you have the best solution. Treat it like an experiment.
 You probably have a reason for thinking that what you are working on could improve
-something and if it doesn't, or if it makes it worse, "undo" it. Your work should
-start a conversation and should iterated upon.
+something --- whether it be a process, safety, etc. --- and if it doesn't, or
+if it makes it worse, "undo" it. Your work should start a conversation that needs
+to be had and can be iterated upon.
 
 > ...your goal should be for your feedback to open up rather than close down discussion.
 
@@ -68,12 +69,12 @@ start a conversation and should iterated upon.
 Ben, throughout the book, makes many great points on the topic of hiring and culture.
 One of the points that stands out most and if I had to pick just one point from
 this book, it would be that there is no such thing as the perfect person for the
-position or the perfect person for the position in 18 months, but rather, that
+position. Or, the perfect person for the position in 18 months. But rather, that
 there is only the perfect person for the position at your company, _right now_.
 If you hire the person who would be perfect _in_ 18 months, that individuals probably
 isn't meeting many peoples' expectation for the challenges that you are facing _right
 now_. In 18 months, or even 6 months, you could be a very different company and
-the position could have very different responsibilities. If that person was
+the position could have very different responsibilities. If that person is
 great for what your company needs in 18 months _from now_ and you got them right now,
 first, they may not be as flexible as you need them to be or second, they could
 hate the chaos that you are currently facing and end up leaving before
@@ -137,17 +138,17 @@ properly.
 My philosophy on this currently has leaned toward doing the thing that I know adds
 value now and will especially add value in the future, but to be consciously aware
 of scope creep. You need to know when to stop and when the returns of what you are
-working on diminish. It certain cases, it would be acceptable to "open a ticket and
+working is diminishing. In certain cases, it would be acceptable to "open a ticket and
 put it in the backlog", but in others, when I have a clear vision and solution
 for a major problem that has a significant impact on the work we are working on,
-that is when I suggest, just doing the work and asking for forgiveness later.
+that is when I suggest doing the work and asking for forgiveness later.
 
 ## The Vision
 
 Time and time again, from conversations with people and reading books, I constantly
 hear and see the point of market fit and the vision.
 
-> Focus on the road, not the wall"
+> Focus on the road, not the wall
 
 If you focus on what _could_ go wrong, you will drive yourself crazy. "Focus on
 where you are going rather than on what you hope to avoid."
