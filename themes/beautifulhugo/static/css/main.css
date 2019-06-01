@@ -1035,3 +1035,9 @@ pre.chroma {
 .chroma .se { color: var(--base09) } /* LiteralStringEscape */
 .chroma .sh { color: var(--base0e) } /* LiteralStringHeredoc */
 .chroma .si { color: var(--base0e) } /* LiteralStringInterpol */
+
+.twitter-tweet-rendered {
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
