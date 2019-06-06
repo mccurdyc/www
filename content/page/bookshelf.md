@@ -1,7 +1,10 @@
 ---
 title: Bookshelf
 comments: false
+image: /images/bookshelf.jpg
 ---
+
+{{< figure src="/images/bookshelf.jpg" >}}
 
 # 2019
 
