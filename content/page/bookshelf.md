@@ -7,6 +7,19 @@ comments: false
 
 {{% book title="Born To Run: A hidden tribe, superathletes, and the greatest race the world has never seen" author="Chris McDougall" finished="May 28, 2019" amazon="https://www.amazon.com/Born-Run-Hidden-Superathletes-Greatest/dp/0307279189" thrift="https://www.thriftbooks.com/w/born-to-run-a-hidden-tribe-superathletes-and-the-greatest-race-the-world-has-never-seen_christopher-mcdougall/249036/?mkwid=s5F8Qd4T0%7cdc&pcrid=70112885352&pkw=&pmt=&plc=&pgrid=21326561472&ptaid=pla-294813786956&gclid=Cj0KCQjwxMjnBRCtARIsAGwWnBM5koiZdQNi8UPQ_HodxQW7pNGA3HY454CWx72_uggq7ML_ZtLmX_kaAgMTEALw_wcB#isbn=0307266303&idiq=2141447" %}}
 
+
+Born To Run tells a story of discovery of not only the best runners, but some of
+the best athletes in the world, deep in the Copper Canyon of Mexico. Individuals
+from an indigenous group, namely the Rarámuri or Tarahumara, were taken and their
+running skills were challenged in some of the most difficult races in the United
+States.
+
+{{<tweet 1134452014983864321>}}
+
+{{% /book %}}
+
+---
+
 {{% book title="The Hard Things About Hard Things: Building a business when there are no easy answers" author="Ben Horowitz" finished="May 20, 2019" amazon="https://www.amazon.com/Hard-Thing-About-Things-Building/dp/0062273205" thrift="https://www.thriftbooks.com/w/the-hard-thing-about-hard-things-building-a-business-when-there-are-no-easy-answers_ben-horowitz/3307127/?mkwid=sFM5qtcnV%7cdc&pcrid=70112878392&pkw=&pmt=&plc=&pgrid=21323665512&ptaid=pla-292616666786&gclid=Cj0KCQjwxMjnBRCtARIsAGwWnBMZGQNHt9KEy5y23QpZQCF-Vr13WMGOCerekAz6V4GxSRTNdeTEifcaAqOtEALw_wcB#isbn=0062273205&idiq=5331843" %}}
 
 ## Relationships
@@ -152,6 +165,10 @@ hear and see the point of market fit and the vision.
 
 If you focus on what _could_ go wrong, you will drive yourself crazy. "Focus on
 where you are going rather than on what you hope to avoid."
+
+{{% /book %}}
+
+---
 
 {{% book title="Close to the Machine: Technophilia and Its Discontents" author="Ellen Ullman" finished="March 22, 2019" amazon="https://www.amazon.com/Close-Machine-Technophilia-Its-Discontents/dp/1250002486" thrift="https://www.thriftbooks.com/w/close-to-the-machine-technophilia-and-its-discontents_ellen-ullman/392556/all-editions/" %}}
 
