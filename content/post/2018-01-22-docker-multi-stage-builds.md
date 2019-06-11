@@ -2,7 +2,7 @@
 title: Containerizing Go and a Use Case for Multi-Stage Docker Builds
 author: "Colton J. McCurdy"
 date: 2018-01-22
-tags: ["docker", "multi-stage", "golang"]
+post-tags: ["docker", "multi-stage", "golang"]
 posts: ["Containerizing Go and a Use Case for Multi-Stage Docker Builds"]
 ---
 
