@@ -6,7 +6,6 @@ date: {{ .Date }}
 subtitle: ""
 image: ""
 book-tags: []
-book-titles: []
 books: []
-book-author: ""
+book-authors: []
 ---

@@ -2,10 +2,10 @@
 title: "Born To Run: A hidden tribe, superathletes, and the greatest race the world has never seen"
 author: "Colton J. McCurdy"
 date: 2019-05-28
-book-author: ["Chris McDougall"]
 abstract: "Born To Run tells a story of discovery of not only the best runners, but some of the best athletes in the world from deep in the Copper Canyon of Mexico. Individuals from an indigenous group, namely the Rarámuri or Tarahumara, were taken and their running skills were challenged in some of the most difficult races in the United States, where they consistently performed better than the top runners."
 book-tags: ["book", "2019"]
 books: ["Born To Run: A hidden tribe, superathletes, and the greatest race the world has never seen"]
+book-authors: ["Chris McDougall"]
 ---
 
 {{% book author="Chris McDougall" amazon="https://www.amazon.com/Born-Run-Hidden-Superathletes-Greatest/dp/0307279189" thrift="https://www.thriftbooks.com/w/born-to-run-a-hidden-tribe-superathletes-and-the-greatest-race-the-world-has-never-seen_christopher-mcdougall/249036/?mkwid=s5F8Qd4T0%7cdc&pcrid=70112885352&pkw=&pmt=&plc=&pgrid=21326561472&ptaid=pla-294813786956&gclid=Cj0KCQjwxMjnBRCtARIsAGwWnBM5koiZdQNi8UPQ_HodxQW7pNGA3HY454CWx72_uggq7ML_ZtLmX_kaAgMTEALw_wcB#isbn=0307266303&idiq=2141447" %}}

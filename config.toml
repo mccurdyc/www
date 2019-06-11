@@ -69,7 +69,7 @@ googleAnalytics = "UA-62612842-1"
 [[menu.main]]
     parent = "Blog"
     name = "Post Titles"
-    url = "post-titles"
+    url = "posts"
     weight = 3
 
 [[menu.main]]
@@ -97,8 +97,14 @@ googleAnalytics = "UA-62612842-1"
 [[menu.main]]
     parent = "Bookshelf"
     name = "Book Titles"
-    url = "book-titles"
+    url = "books"
     weight = 3
+
+[[menu.main]]
+    parent = "Bookshelf"
+    name = "Book Authors"
+    url = "book-authors"
+    weight = 4
 
 [[menu.main]]
     name = "Projects"
