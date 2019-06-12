@@ -6,6 +6,7 @@ date: {{ .Date }}
 subtitle: ""
 image: ""
 abstract: ""
-post-tags: []
-posts: []
+book-tags: []
+books: []
+book-authors: []
 ---

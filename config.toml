@@ -14,7 +14,11 @@ pygmentsCodefencesGuessSyntax = true
 googleAnalytics = "UA-62612842-1"
 [taxonomies]
   post = "posts"
-  tag = "tags"
+  book = "books"
+  book-tag = "book-tags"
+  post-title = "post-titles"
+  book-author = "book-authors"
+  post-tag = "post-tags"
   category = "categories"
 
 [Params]
@@ -58,15 +62,15 @@ googleAnalytics = "UA-62612842-1"
 
 [[menu.main]]
     parent = "Blog"
-    name = "Titles"
-    url = "posts"
-    weight = 3
+    name = "Post Tags"
+    url = "post-tags"
+    weight = 2
 
 [[menu.main]]
     parent = "Blog"
-    name = "Tags"
-    url = "tags"
-    weight = 2
+    name = "Post Titles"
+    url = "posts"
+    weight = 3
 
 [[menu.main]]
     name = "Resume"
@@ -74,13 +78,37 @@ googleAnalytics = "UA-62612842-1"
     weight = 2
 
 [[menu.main]]
-    name = "Projects"
-    url = "page/projects/"
+    name = "Bookshelf"
+    url = ""
     weight = 3
 
 [[menu.main]]
-    name = "Bookshelf"
-    url = "page/bookshelf/"
+    parent = "Bookshelf"
+    name = "Books"
+    url = "book"
+    weight = 1
+
+[[menu.main]]
+    parent = "Bookshelf"
+    name = "Book Tags"
+    url = "book-tags"
+    weight = 2
+
+[[menu.main]]
+    parent = "Bookshelf"
+    name = "Book Titles"
+    url = "books"
+    weight = 3
+
+[[menu.main]]
+    parent = "Bookshelf"
+    name = "Book Authors"
+    url = "book-authors"
+    weight = 4
+
+[[menu.main]]
+    name = "Projects"
+    url = "page/projects/"
     weight = 4
 
 [[menu.main]]

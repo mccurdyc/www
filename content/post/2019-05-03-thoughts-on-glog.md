@@ -2,7 +2,7 @@
 title: Should I Use golang/glog?
 author: "Colton J. McCurdy"
 date: 2019-05-03
-tags: ["glog", "logging", "neighbor", "2019"]
+post-tags: ["glog", "logging", "neighbor", "2019"]
 posts: ["Should I Use golang/glog"]
 ---
 

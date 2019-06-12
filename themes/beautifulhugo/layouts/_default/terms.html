@@ -6,7 +6,7 @@
   <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
     <article class="post-preview">
       <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-        {{ if eq $data.Singular "post" }}
+        {{ if in (slice "post" "book") $data.Singular }}
         {{ range $key, $value := .Data.Terms.Alphabetical }}
           {{ range $item := $value.WeightedPages }}
             <time>{{ .Date.Format "Mon, Jan 2, 2006" }}</time>
