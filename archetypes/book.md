@@ -5,6 +5,7 @@ type: ""
 date: {{ .Date }}
 subtitle: ""
 image: ""
+abstract: ""
 book-tags: []
 books: []
 book-authors: []
