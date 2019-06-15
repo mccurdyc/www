@@ -9,11 +9,8 @@ books: ["An Elegant Puzzle: Systems of Engineering Management"]
 book-authors: ["Will Larson"]
 ---
 
-</br>
-
 > ...management, at its core, is an ethical profession.
 
-</br>
 # Individual Contributors Should Still Understand Management
 
 {{<tweet 1135881974424358913>}}
@@ -46,7 +43,11 @@ many of my challenges as a software engineer are not purely technical.
 
 {{<tweet 1138436722600140801>}}
 
+</br>
+
 ---
+
+</br>
 
 > An organization is a collection of people working toward a shared goal.
 
@@ -105,7 +106,7 @@ the larger team are "visiting" the project, doing one task and then not contribu
 to the project for a long period of time. This results in paying the cost of
 on-boarding individuals, frequently, or in this case basically for every task.
 
-#### Getting to the Proper Size
+### Getting to the Proper Size
 
 Will names four sources --- that are "probably" in order --- of candidates for staffing a team:
 
@@ -229,17 +230,28 @@ Will further stresses the importance of the career ladder when he says,
 
 > If there is one component of performance management that you are going to invest in doing well, make it the ladders: everything else builds on this foundation.
 
+## Presenting to Leadership
 
-## Presenting to Senior Leadership (Section 3.13)
+I've failed at presenting to many leaders before, not presenting few, clear goals
+or action items, but instead listing _everything_ that I felt needed considered.
+Instead, as Will suggests, I should have presented a few points very clearly.
+Will provides a few additional points on the topic of engaging leadership:
 
-p104
-+ ive failed at this before, not presenting few, clear goals or action items, but instead
-listing a bunch of things that I wanted to see changed or addressed. instead, ishould
-have presented a few points very clearl....
+* Communication is company-specific
+* Start with the conclusion
+* Frame _why_ the topic matters to the company; not just to yourself
+* Everyone loves a narrative
+    * "where things are now, how you got here and where you're going now"
+* Prepare for detours
+* Prepare a lot; practice a little
+    * Basically, be prepared for detours rather than word-for-word what you are going to say.
 
-## Time Management
-+ p111
-    not an exhaustive list, but points that were meaningful to me now
-    + stop doing things
-    + decouple participation from productivity
-    + calendar blocking
+In order, your pitch should go as follows:
+
+1. Tie the topic to business value
+2. The historical narrative
+3. Explicit ask
+4. Data-driven diagnosis
+5. How did you make the decision
+6. What's next and when will it be done
+7. Return to the explicit ask
