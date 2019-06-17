@@ -162,7 +162,7 @@ document why it was successful. Next, get a _few_ people from other teams to
 confirm that the approach is effective given the same, or similar, problem. Finally, _sharing_
 the approach **not** lobbying for everyone to adopt the approach.
 
-I have relatively adopted this as my approach to sharing my solution to a problem.
+I have recently adopted this as my approach to sharing my solution to a problem.
 Similar to Will, I have experienced wider adoption than me lobbying for the change.
 In a later section title, Communities of Learning, Will mentions that a key point
 in getting the wider community to contribute is to "be a facilitator, not a lecturer".
