@@ -4,7 +4,7 @@ subtitle: How I define "senior" as someone with two years of industry experience
 author: "Colton J. McCurdy"
 date: 2019-07-06
 post-tags: ["senior", "seniority", "tech", "leadership", "2019"]
-posts: ["Seniority?"]
+posts: ["Seniority?: How I define \"senior\" as someone with two years of industry experience"]
 ---
 
 ## Overview
