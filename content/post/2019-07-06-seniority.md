@@ -89,11 +89,11 @@ for a matrix. Instead, it complements a career ladder matrix.
 
 ### 1. Evangelize others before themselves
 * e.g., When given the opportunity to shine the light on either themselves or
-  someone else; consistently chooses someone other than themselves.
+  someone else, consistently chooses someone other than themselves.
   Seniors should absolutely still evangelize their own work, but it should come
   after praising the work of others or the team.
 
-### 2. Open, rather than close conversations or discussions<sup>5</sup>.
+### 2. Open, rather than close, conversations or discussions<sup>5</sup>
 * e.g., This could be in the form of a review comment. Instead of saying, "do this...",
   they say, "What are your thoughts on doing it [this way]...?"
 
@@ -109,7 +109,7 @@ for a matrix. Instead, it complements a career ladder matrix.
 ### 5. Intensely focus on finishing
 * e.g., Doesn't start a number of things, hand them off and never see them finished.
 
-### 6. Actively seek out constructive criticism and feedback from peers of all levels<sup>4</sup>
+### 6. Actively seek out constructive criticism and feedback from peers of _all_ levels<sup>4</sup>
 * e.g., Doesn't say, "give me feedback", instead, creates an environment that makes
   it natural for others to provide feedback by posing questions for the others
   to consider. For example, "what do you think about using [this approach] instead?"
@@ -131,8 +131,8 @@ for a matrix. Instead, it complements a career ladder matrix.
 * Can also quickly pick up on effective ways to make change given the environment.
 
 ### 10. Focus on simplicity
-* e.g., Instead of building five separate cronjobs that are dependent on state
-  set by the one before, keeps each one independent.
+* e.g., Is constantly evaluating systems to see what is actually necessary and what
+  could be removed.
 
 ### 11. Frequently evaluate the alignment of one's and the team's work with the wider organization/company/community, correcting when necessary
 * e.g., Catches themselves quickly in situations where scope is creeping too much
@@ -149,10 +149,11 @@ for a matrix. Instead, it complements a career ladder matrix.
   Do queues get backed up?
 
 ### 14. Know where to look (or who to ask) when questions arise
-* e.g., If I know there is an issue in a service owned by another team, this
-  person may go quickly look at the code and then ask questions to establish more confidence.
+* e.g., If they know there is an issue in a service owned by another team, this
+  person may go quickly look at the code and then ask follow-up questions
+  rather than just going directly to someone and asking a question.
 
-### 15. Understand industry idioms and/or best practices (and aware of when not to use them)
+### 15. Understand industry idioms and/or best practices
 * e.g., Go Proverb: "The bigger the interface, the weaker the abstraction<sup>7</sup>"
 
 ### 16. Estimate accurately, consistently<sup>4</sup>
@@ -161,8 +162,8 @@ for a matrix. Instead, it complements a career ladder matrix.
 
 ### 17. Effectively communicate across business domains and internal teams
 * Note: Ultimately, engineering is here to support the company. We are all trying
-* to achieve the exact same goal! If we work with other teams and we understand
-* their interest and they understand ours, we will all be better off.
+  to achieve the exact same goal! If we work with other teams and we understand
+  their interest and they understand ours, we will all be better off.
 
 ## Does Not
 
@@ -195,9 +196,8 @@ for a matrix. Instead, it complements a career ladder matrix.
 
 ### Document Goals
 
-* Start a conversation about how collectively we can define "senior".
-* Set expectations for/of individuals who want to be/already are defined as "senior"
-* This document will evolve; we will absolutely need to iterate.
+* _Start_ a conversation about how collectively we can define "senior".
+* Set expectations for/of individuals who want to be/already are defined as "senior".
 * Help define the type of person who I want to work with.
 * Meant to complement an engineering matrix document.
 
@@ -205,14 +205,6 @@ for a matrix. Instead, it complements a career ladder matrix.
 
 * Define a career ladder.
 * Define an exhaustive list of traits that seniors possess.
-
-### How I Propose to Use This Doc
-
-* There will be points that we all agree on; we should keep those.
-* There will be points that some people strongly disagree with; if there are enough
-  people who disagree, we should delete those.
-* There will be points in between, we should address those such that the most
-  people possible agree.
 
 ### Threats to Validity:
 
@@ -236,11 +228,11 @@ this is how I define senior at this point in time in my career.
 
 * I think seniors still have to have tasks with clear end goals, where \> senior
   finds and fixes problems that people didn't know existed (unknown, knowns).
-* Senior Engineer II<sup>1</sup>: "Given a nebulous project, a Senior Engineer II
-  will appropriately scope it, find a solution, implement and launch that solution."
+* Senior Engineer II: "Given a nebulous project, a Senior Engineer II
+  will appropriately scope it, find a solution, implement and launch that solution.<sup>1</sup>"
 * e.g., \> senior given a widely-scoped, cross-team task, can propose a solution.
   Senior would be working on designing individual pieces of the task.
-* Staff Engineer<sup>4</sup>: defining the vision of Engineering
+* Staff Engineer: defining the vision of Engineering<sup>4</sup>.
 * \> Senior leads multiple teams (technical insight, vision, etc.) versus
   Senior is focused on doing the same things for one team.
 
