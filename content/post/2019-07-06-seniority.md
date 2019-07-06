@@ -9,7 +9,7 @@ posts: ["Seniority?: How I define \"senior\" as someone with two years of indust
 
 ## Overview
 
-Career growth is the foundation for an organization’s culture. In the same way
+Career growth is the foundation of an organization’s culture. In the same way
 that we strive to build a product that enables the growth of a company, we should
 aim to design a career ladder that facilitates the growth of our people through
 well-defined expectations.
@@ -188,7 +188,7 @@ for a matrix. Instead, it complements a career ladder matrix.
   There are diminishing returns in certain instances or times when it isn't "worth"
   adding another test.
 
-#### 5. Solve solved problems
+### 5. Solve solved problems
 * e.g., "I bet there is already a tool that does that."
 
 ## Appendix
