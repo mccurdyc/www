@@ -9,6 +9,9 @@ books: ["The Manager's Path: A Guide for Tech Leaders Navigating Growth & Change
 book-authors: ["Camille Fournier"]
 ---
 
+> Managing teams is a series of complex black boxes interacting with other complex
+> black boxes. -@skamille
+
 This post is not a comprehensive review or summary of The Manager's Path, but rather
 my interpretation of the key takeaways for me _at this point_ (two-years in) in my career
 as a software engineer at a hyper-growth company. As I've said before, I read a lot
@@ -168,3 +171,12 @@ the absense of trust is a fundamental dysfunction
 - [ ] Migrate old notes stored in private markdown files to Google Docs
 
 ### Expectations of code reviews (maybe just appendix item)
+> for the most part, code reviews don't catch bugs; tests catch bugs. -@skamille
+
+be clear about expectations (e.g., naming and documentation standards, etc.)
+
+code reviews are "largely a socialization exercise" to make sure impacted parties
+are aware of changes
+
+### "Open door policy" asking for feedback
+actively ask for feedback,
