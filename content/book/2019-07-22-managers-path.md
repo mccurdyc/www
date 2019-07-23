@@ -9,6 +9,9 @@ books: ["The Manager's Path: A Guide for Tech Leaders Navigating Growth & Change
 book-authors: ["Camille Fournier"]
 ---
 
+{{% book author="Camille Fournier" amazon="https://www.amazon.com/Managers-Path-Leaders-Navigating-Growth/dp/1491973897" thrift="https://www.thriftbooks.com/w/the-managers-path-a-guide-for-tech-leaders-navigating-growth-and-change_camille-fournier/13547019/#isbn=1491973897&idiq=19012514" %}}
+{{% /book %}}
+
 > Managing teams is a series of complex black boxes interacting with other complex black boxes. -@skamille
 
 This post is not a comprehensive review or summary of The Manager's Path, but rather
