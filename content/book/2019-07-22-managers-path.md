@@ -197,7 +197,8 @@ the company roadmap. If it doesn't align with either of these, make sure that yo
 ask why you are doing the task. Could you be working "smarter" instead of working longer?
 For example, instead of every week saying yes to manually creating a report, propose
 automating the process. Even repetitive easy tasks are a waste of time. Sometimes
-it is good to "be lazy" and not put up with those sort of tasks forever.
+it is good to "be lazy" and not put up with repetitive, manual, ["toil"](https://landing.google.com/sre/sre-book/chapters/eliminating-toil/)
+tasks forever.
 
 ## Appendix
 
