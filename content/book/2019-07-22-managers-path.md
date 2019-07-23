@@ -9,8 +9,7 @@ books: ["The Manager's Path: A Guide for Tech Leaders Navigating Growth & Change
 book-authors: ["Camille Fournier"]
 ---
 
-> Managing teams is a series of complex black boxes interacting with other complex
-> black boxes. -@skamille
+> Managing teams is a series of complex black boxes interacting with other complex black boxes. -@skamille
 
 This post is not a comprehensive review or summary of The Manager's Path, but rather
 my interpretation of the key takeaways for me _at this point_ (two-years in) in my career
@@ -26,6 +25,8 @@ that I wanted to see in ways other than lobbying. He explained that a foundation
 principal of a product-driven technology company is managing the balance between
 product and engineering-focused work.
 
+## Influencing Change
+
 > The only person that you can change is yourself. -@skamille
 
 Often what you will have to do is motivate technical changes through value added
@@ -37,13 +38,15 @@ tweak as you see fit and then iteratively share with larger groups.
 
 Evangelizing your current and completed work is also foundational in your career growth.
 The angle at which you evangelize your work should be tailored to your audience.
-If the room is full of engineers, you may not have to motivate adding a test suite
+If the room is full of engineers, you may not need to motivate adding a test suite
 and integrating it into the continuous integration (CI) workflow. However,
-if you are in a room with the product team, you absolutely have to motivate
-these types of changes from their perspective e.g., improved reliability, reduced on-boarding
+if you are in a room with the product team, you absolutely need to motivate
+these types of changes _from their perspective_ e.g., improved reliability, reduced on-boarding
 costs of new engineers to the project, faster feature cycles. Otherwise, to product,
 the equivalent time spent adding the test suite and integrating into CI could
 have been spent elsewhere.
+
+## Understanding the _Why_
 
 Understanding _why_ you are doing something will help improve your mental health. If
 you know you are working on something important and of value to the company, you
@@ -51,6 +54,9 @@ will probably be happier than someone who doesn't know why they are doing someth
 The responsibility of understanding why you are working on something shouldn't
 fall entirely on your manager. You should feel empowered to ask, "why?", if you
 don't understand why what you are doing is valuable or valuable _at this point in time_.
+
+You should help others understand why they are working on something if you see
+that they are struggling with understanding why.
 Evangelizing the work that others are doing while they are working on it is something
 that I have tried to do more. When I hear them say, "I didn't do anything important
 this sprint", I remind them that they just finished a huge value add. I think the
@@ -59,18 +65,19 @@ out for each other and on the engineering manager.
 
 It may be the case that _occasionally_ you have to work on something that you don't
 value --- e.g., maybe the hacky system, or the project written in a language that
-you despise ---- but, your work "needn't always be self-sacrificing."
+you despise --- but, your work "needn't always be self-sacrificing."
 
 > [a]utonomy...is an important element of motivation. -@skamille
 
 Honestly, in my experience, people aren't working on what they want because they
-haven't expressed their interests or they haven't motivated them in a way that
+haven't expressed their interests or they haven't motivated their interests in a way that
 adds immediate value. Often what I will hear is, "I want to rewrite this system
-because it's poorly written." Even if every single task in this system takes a
+because it's poorly written." Even if every single new feature in this system takes a
 week to add, no matter how trivial, and there is a lot of risk associated with changes,
 this might be a price that product is willing to deal with to avoid a multi-month
 rewrite. You have to break these large changes down into "bite-size" or sprint-size
-pieces, which will help the change seem more achievable. Additionally, if you are
+pieces, which will help the change seem more achievable. The product team is driven
+by completion. Additionally, if you are
 able to break these pieces down and have them align with the product roadmap, you
 will have a higher chance of them being prioritized.
 
@@ -93,8 +100,8 @@ abusive and only held 1:1s to yell at them.
 ### One-on-One Meetings (1:1s)
 
 In my experience, surprisingly, many engineers prefer benign neglect over the frequent 1:1s.
-I, on the other hand, especially being remote, prefer weekly --- we tried bi-weekly
-and it didn't seem frequent enough --- 1:1s with my direct manager and less frequent
+I, on the other hand, especially being remote, prefer weekly 1:1s with my direct
+manager and less frequent
 1:1s with skip-level managers and peers. I've scheduled the bi-weekly 1:1s with
 skip-levels and peers such that each week is evenly distributed with meetings rather
 than one week being "bloated" with meetings and the next being "light".
@@ -148,35 +155,53 @@ progress isn't made.
 > We have yet to achieve Borg hive mind or Vulcan mind meld, so we're constantly
 > pushing complex ideas through the eye of the needle of language. -@skamille
 
+## Being Able to Say, "No"
 
-### Instilling the Virtues of Laziness and Impatience
-* work smarter not harder or longer
-* p61 If you were only allowed to work 45-hrs per week how would you spend it?
-* you can't have a rough crunch time for every single release
+Fournier describes in one of the "Good Manager, Bad Manager" sections the "people pleaser"
+and how this individual typically says, "yes" to everything but can't feasibly
+act on all of the things they've said yes to. Being able to say, "no" is important
+in upholding "agreements". In a recent long car drive, I listened to [episode #60
+of the Knowledge Project with Shane Parrish and guest Jim Dethmer](https://fs.blog/jim-dethmer/).
+The episode starts with Dethmer stating that most people in organizations
+keep between 40 and 60 percent of their agreements. Most of the agreements that
+aren't upheld are because agreements are accepted without clear terms.
 
-### Being Able to Say, "No"
-in the Good Manager, Bad Manager section: dont be a people pleaser
+He does describe the commonality in organizations to expect acceptance or rejection
+to an agreement immediately after the agreement has been proposed. Rather than
+giving people the opportunity to think
+and reflect on whether upholding the agreement is feasible. This is precisely when
+you should feel empowered to say "no", using one of the strategies proposed by
+Fournier. Your response doesn't have to explicitly be "no". Instead, it could be,
+"give me until the end of the day to get you a response" or "yes, but we can't do
+this piece in this time frame. Either change the time or we can drop this piece."
 
-#### Strategies for Saying, "No"
+Asking for the rest of the day gets you out of the situation of giving a response
+with people in the room where you aren't clearly thinking about what all the task
+entails. The second makes sure that you are aligning expectations. You display
+you understand the importance of doing the task, but you are helping align their
+expectations on when and what will be delivered. As a manager, you should make
+sure that you are establishing a culture where people shouldn't feel that it is
+necessary to give a response immediately after something has been proposed, but
+also should be empowering your team to say "no".
 
-### Avoid Micromanagement
-the absense of trust is a fundamental dysfunction
+> If you were only allowed to work 45 hours this week, what would you do with those
+> 45 hours? -@skamille
 
+Fournier makes this point when she is discussing picking your battles. For example,
+if you are a senior engineer, is it worth nitpicking every single little detail
+in a junior's code? This point is also helpful when deciding what you
+are going to say "yes" to. Every task isn't so important that it must be done this
+week. When you are saying "yes" to tasks, make sure you are thinking about what
+you are saying yes to and make sure that it aligns with your personal roadmap and
+the company roadmap. If it doesn't align with either of these, make sure that you
+ask why you are doing the task. Could you be working "smarter" instead of working longer?
+For example, instead of every week saying yes to manually creating a report, propose
+automating the process. Even repetitive easy tasks are a waste of time. Sometimes
+it is good to "be lazy" and not put up with those sort of tasks forever.
 
 ## Appendix
 
-### Personal Action Items
+## Personal Action Items
 
-- [x] Shared Google Doc for all 1:1 meetings
-- [ ] Migrate old notes stored in private markdown files to Google Docs
-
-### Expectations of code reviews (maybe just appendix item)
-> for the most part, code reviews don't catch bugs; tests catch bugs. -@skamille
-
-be clear about expectations (e.g., naming and documentation standards, etc.)
-
-code reviews are "largely a socialization exercise" to make sure impacted parties
-are aware of changes
-
-### "Open door policy" asking for feedback
-actively ask for feedback,
+* [x] Shared Google Doc for all 1:1 meetings
+* [x] Migrate old notes stored in private files to Google Docs
