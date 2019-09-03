@@ -128,4 +128,6 @@ who believed that compassion had to be based on "a keen awareness of the interde
 
 > The circle of loving responsiveness widens like the ripple from a stone dropped in a pool. - [@Dr_SueJohnson](https://twitter.com/Dr_SueJohnson)
 
-
+_Disclaimer: I am not an EFT-certified therapist, nor am I a therapist at all. Therefore, please
+do not take this post as advise, but rather take this post as my personal takeaways of
+the Hold Me Tight book._
