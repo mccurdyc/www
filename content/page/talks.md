@@ -9,7 +9,7 @@ comments: false
 
 **McCurdy, Colton J.**
 
-_Allegheny College, Thesis Defense_
+_[Detroit Meets, Detroit Gophers Night of Meetups](https://www.meetup.com/Detroit-Meets/events/266231171/)_
 
 ### Resources
 
