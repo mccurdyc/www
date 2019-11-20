@@ -3,6 +3,20 @@ title: Talks
 comments: false
 ---
 
+# 2019
+
+## Project Structure: Idioms and suggestions from the Go community
+
+**McCurdy, Colton J.**
+
+_Allegheny College, Thesis Defense_
+
+### Resources
+
+{{< download link="/talks/2019-11-19-go-meetup.pdf" display="Slides" >}}
+
+---
+
 # 2017
 
 ## Retrospective Mutant Reduction: Empirically evaluating a family of integrated techniques
