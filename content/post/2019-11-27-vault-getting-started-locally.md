@@ -20,7 +20,8 @@ was connecting Vault to a PostgreSQL `storage` backend.
 ### Initial Setup
 
 1. Setup your shell with `alias`es and environment variables
-```bash 
+
+```bash
 export VAULT_ADDR='http://127.0.0.1:8200'
 export DB_USER="user"
 export DB_NAME="secrets"
@@ -98,6 +99,7 @@ _Note:_ [Official Vault documentation on this topic](https://www.vaultproject.io
 ### Configuring Vault to Use the Storage Backend
 
 2. Create a Vault Server Configuration File
+
 ```bash
 $ sudo cat /etc/vault.hcl
 
@@ -120,6 +122,7 @@ log_level = "trace"
 ```
 
 3. Start the Vault Server
+
 ```bash
 vault server -config=/etc/vault.hcl
 ```
@@ -215,11 +218,13 @@ VAULT_TOKEN=s.xpmoaOWlDESk5ZQU4yBlzLCR vault secrets enable -path=secret kv
 7. Write your first secret!
 
 Write a key-value secret
+
 ```bash
 VAULT_TOKEN=s.xpmoaOWlDESk5ZQU4yBlzLCR vault kv put secret/creds passcode=my-long-passcode
 ```
 
 Read the key-value secret
+
 ```bash
 VAULT_TOKEN=s.xpmoaOWlDESk5ZQU4yBlzLCR vault kv get secret/creds
 ```
