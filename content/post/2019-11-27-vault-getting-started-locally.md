@@ -44,7 +44,7 @@ when connecting directly via `pslconn`.
 ### Configuring your PostgreSQL Storage Backend
 To read more about the PostgreSQL Docker image, refer to the official [documentation](https://hub.docker.com/_/postgres).
 
-1. Start PostgreSQL in a Docker container
++ Start PostgreSQL in a Docker container
 
 ```bash
 docker run \
@@ -57,7 +57,7 @@ docker run \
   -d postgres
 ```
 
-2. Connect to the running PostgreSQL container
++ Connect to the running PostgreSQL container
 
 ```bash
 $ psqlconn
@@ -71,13 +71,13 @@ Type "help" for help.
 secrets=#
 ```
 
-3. Create a database `SUPERUSER` role for Vault to use
++ Create a database `SUPERUSER` role for Vault to use
 
 ```sql
 CREATE ROLE vault WITH SUPERUSER LOGIN CREATEROLE;
 ```
 
-4. Create a table for storing the encrypted secrets since this step is not done automatically by Vault
++ Create a table for storing the encrypted secrets since this step is not done automatically by Vault
 
 ```sql
 CREATE TABLE vault_kv_store (
@@ -94,7 +94,7 @@ CREATE INDEX parent_path_idx ON vault_kv_store (parent_path);
 _Note:_ [Official Vault documentation on this topic](https://www.vaultproject.io/docs/configuration/storage/postgresql.html)
 
 ### Configuring Vault to Use the Storage Backend
-1. Create a Vault Server Configuration File
++ Create a Vault Server Configuration File
 
 ```bash
 $ sudo cat /etc/vault.hcl
@@ -117,22 +117,22 @@ disable_mlock = true
 log_level = "trace"
 ```
 
-2. Start the Vault Server
++ Start the Vault Server
 
-  - _Note:_ To check the status of Vault at any time, you can run `vault status`. The important
-  thing to look for is that, at this point, the Vault server should _not_ yet be initialized.
+_Note:_ To check the status of Vault at any time, you can run `vault status`. The important
+thing to look for is that, at this point, the Vault server should _not_ yet be initialized.
 
 ```bash
 vault server -config=/etc/vault.hcl
 ```
 
-3. Initialize Vault
++ Initialize Vault
 
 ```bash
 vault operator init
 ```
 
-  - Now, you should see your Unseal Keys and `vault status` should show that the Vault server is initialized.
+Now, you should see your Unseal Keys and `vault status` should show that the Vault server is initialized.
 
 ```bash
 Unseal Key 1: eTg5Hdqbs2UpUAE4DD0t+HY0nZ51961svAW0qxRllaaI
@@ -155,10 +155,10 @@ It is possible to generate new unseal keys, provided you have a quorum of
 existing unseal keys shares. See "vault operator rekey" for more information.
 ```
 
-4. Unseal Vault to Enable Secrets
++ Unseal Vault to Enable Secrets
 
-  - You will need to use the Unseal Keys returned from running `vault operator init`.
-  The values above will not work for you.
+You will need to use the Unseal Keys returned from running `vault operator init`.
+The values above will not work for you.
 
 ```bash
 $ vault operator unseal
@@ -205,21 +205,19 @@ Cluster ID      16c58b38-29f5-d320-a87a-7daeaeef83c3
 HA Enabled      false
 ```
 
-5. Enable `kv` Secrets
++ Enable `kv` Secrets
 
 ```bash
 VAULT_TOKEN=s.xpmoaOWlDESk5ZQU4yBlzLCR vault secrets enable -path=secret kv
 ```
 
-6. Write your first secret!
-
-  - Write a key-value secret
++ Write your first secret!
 
 ```bash
 VAULT_TOKEN=s.xpmoaOWlDESk5ZQU4yBlzLCR vault kv put secret/creds passcode=my-long-passcode
 ```
 
-  - Read the key-value secret
++ Read the key-value secret
 
 ```bash
 VAULT_TOKEN=s.xpmoaOWlDESk5ZQU4yBlzLCR vault kv get secret/creds
