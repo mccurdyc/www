@@ -217,23 +217,16 @@ system behavior.
 
 ## Leverage Points
 
-In the book the notion of "leverage points" is discussed. Leverage points are places
-in the system where "tweaks" can be made to _try_ to improve or correct the system.
+Leverage points are places in the system where "tweaks" can be made
+to _try_ to improve or correct the system.
 However, the leverage points that result in the desired behavior are not intuitive
 and difficult to share.
 
-Leverage points come in the form of changing flows i.e., changing the "parameters".
-This is often one of the first leverage points that is touched and while it is a
-relatively inexpensive means to attempt to correct a system, it frequently has
-little effect. Yet, this is where most focus and time is spent when people try to
-correct systems. Adding buffer, as described above, is a means to correcting a system,
-but they are often expensive to implement. Another expensive and slow, but effective means,
-is a structural change.
+One example is changing flows i.e., changing the "parameters".
+Changing flows is often one of the first leverage points that is considered. While it is
+relatively inexpensive, it frequently has little effect. Yet, this is where
+most focus and time is spent when people try to
+correct systems.
 
-A few less expensive to implement means are to make sure that you have clearly defined
-the true goals of the system and to align rules with those goals. Self-organization
-and empowerment are extremely effective means for correcting a system. However, you
-can't force or choose these things, you have to establish and optimize for them. The
-culture needs to encourage and reinforce self-organization. The two most impactful,
-inexpensive means to correcting a system were to understand _your_ paradigm and to
-shift it and to understand _all_ other paradigms and to be flexible.
+The most impactful leverage points are clearly defined, accurate goals
+that are aligned with the rules and paradigm or mental model shifts.
