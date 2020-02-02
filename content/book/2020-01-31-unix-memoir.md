@@ -51,8 +51,8 @@ One task in particular that I remember receiving was to transform "large" JSON l
 dumps. If I remember correctly, it took me roughly a month to write a program that
 did this.
 
-At Bell Labs, _everyone_, even the "famous" people, took time to listen to and speak
-and work with interns.
+At Bell Labs, _everyone_, even the "famous" people, took time to listen to, speak
+and work with, interns.
 
 > Everyone gave generously of their time, it was simply part of the culture that you
 provided detailed comments on what your colleagues wrote.
