@@ -26,8 +26,8 @@ rewrite an application to run under a different operating system - Dennis Ritchi
 
 This was different from what was typical at the time. Software was written specifically
 _for_ the hardware that it was run on. Primarily because a lot of software was
-written in low-level language specific to the hardware. Conversely, Unix, was written
-in C which could be compiled to low-level instructions specific for the hardware.
+written in low-level language specific to the hardware. Conversely, Unix, was
+re-written in C which could be compiled to low-level instructions specific for the hardware.
 
 ## Management
 
