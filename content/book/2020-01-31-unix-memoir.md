@@ -16,31 +16,32 @@ book-authors: ["Brian Kernighan"]
 be seen as natural consequences of what was understood and could be accomplished
 with the resources available at the time.
 
+## Long-term View
+
+AT&T / Bell Labs had a very long-term view and an "unfettered environment for exploration"
+no matter how unconventional.
+
+> I think that it would be easier to move Unix to another piece of hardware than to
+rewrite an application to run under a different operating system - Dennis Ritchie
+
+This was different from what was typical at the time. Software was written specifically
+_for_ the hardware that it was run on. Primarily because a lot of software was
+written in low-level language specific to the hardware. Conversely, Unix, was written
+in C which could be compiled to low-level instructions specific for the hardware.
+
+## Management
+
+The lack of explicit management was standard practice at Bell Labs. Bells Labs
+had a broad but clear mission, "universal service". There was a lot of trust that
+people were interested in achieving this mission.
+
 > ... no research proposals, no quarterly progress reports, and no need to seek
 management approval before working on something.
 
 > As Dick Hamming said, if you don't work on important problems, it's unlikely that
 you'll do important work.
 
-## Long-term View
-
-AT&T / Bell Labs had a very long-term view and an "unfettered environment for exploration"
-no matter how unconventional.
-
-## Management
-
-> ... no research proposals, no quarterly progress reports, and no need to seek
-management approval before working on something.
-
-The lack of explicit management was standard practice at Bell Labs.
-
-## The importance of the ability to write, well
-
-There was
-Brian played an important role in the success of both Unix and C by being what the
-industry now calls a Developer Advocate.
-
-## Luck and Timing
+## The Culture
 
 Brian talks about how he felt that he was a below-average intern after his final
 year of college at Imperial Oil. He spent the entire summer _trying_ and failing
@@ -53,6 +54,28 @@ did this.
 At Bell Labs, _everyone_, even the "famous" people, took time to listen to and speak
 and work with interns.
 
+> Everyone gave generously of their time, it was simply part of the culture that you
+provided detailed comments on what your colleagues wrote.
+
+Writing was especially important at Bell Labs and the spread of both Unix and C.
+
+Brian played an important role in the success of Unix and C by unofficially being, what the
+industry now calls, a Developer Advocate. Writing that was published externally was
+one of the primary recruiting mechanisms. Writing was part of the process that
+was respected and given time at Bell Labs. There were close ties to academia and
+you were expected to write papers, give talks and even teach courses at universities.
+
+> External visibility was important for recruiting...Secretive companies had a harder
+time attracting talent.
+
+> We could only hire one or two people a year, and almost always young ones.
+
+On whether Bell Labs was more interested in specialization or generalization, Steve
+Johnson once asked, "should we be hiring athletes or first basemen?
+
+Brian said that his preference was always for people who were good at what they did,
+without worrying too much about what specifically it was.
+
 ## Constraints
 
 > If nothing else, choices that might seem wrong-headed or perverse today can often
@@ -63,10 +86,11 @@ with the resources available at the time.
 than if there are no constraints.
 
 This was a major contributing factor to the design of Unix, but also a way to get
-teams and departments to work together to collectively get what they want. The Unix
+teams and departments to work together to collectively achieve some goal. The Unix
 department tried to get funding for a new computer, specifically, to upgrade from the PDP-7
-to the PDP-11. They were denied multiple times for funding. Bell Labs had an
-active patent department and the Unix team knew that they were considering buying
+to the PDP-11. They were denied multiple times for funding.
+
+Bell Labs had an active patent department and the Unix team knew that they were considering buying
 new, expensive, patent-specific hardware. The Unix team saw this as an opportunity
 to get what they wanted, a PDP-11. The Unix team convinced the patent department
 to purchase a PDP-11 and the Unix team agreed to write the patent-printing software
@@ -77,9 +101,3 @@ relied on this hardware, so if the software broke, then the department couldn't 
 Keep in mind that this was before proper version control, so easily rolling back
 to a working version of the software was difficult. Eventually, the patent department
 bought a PDP-11 for the Unix department to build and test software.
-
-## 1127
-
-In Rob Pike's post title, ["Less is exponentially more"](https://commandcenter.blogspot.com/2012/06/less-is-exponentially-more.html),
-he restates a joke from Ron Hardin, "that if we really understood our world better,
-we could drop a digit and go down from 127 to just 27."
