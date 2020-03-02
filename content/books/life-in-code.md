@@ -2,7 +2,7 @@
 title: "Life in Code"
 author: "Colton J. McCurdy"
 date: 2019-03-05
-abstract: "People imagine that programming is logical, a process like fixing a clock. Nothing could be further from the truth. Programming is more like an illness, a fever, an obsession."
+description: "People imagine that programming is logical, a process like fixing a clock. Nothing could be further from the truth. Programming is more like an illness, a fever, an obsession."
 book-tags: ["book", "2019"]
 books: ["Life in Code"]
 book-authors: ["Ellen Ullman"]

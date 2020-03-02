@@ -6,7 +6,7 @@ DefaultContentLanguage = "en"
 theme = "hello-friend-ng"
 
 PygmentsCodeFences = true
-PygmentsStyle = "monokai"
+PygmentsStyle = "eighties"
 
 rssLimit  = 10  # Maximum number of items in the RSS feed.
 copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License." # This message is only used by the RSS template.
@@ -38,6 +38,7 @@ disableHugoGeneratorInject = false
 
 [author]
   name = "Colton J. McCurdy"
+  twitter = "mccurdycolton"
 
 [blackfriday]
   hrefTargetBlank = true
@@ -51,6 +52,8 @@ disableHugoGeneratorInject = false
   dateformShort   = "Jan 2"
   dateformNum     = "2006-01-02"
   dateformNumTime = "2006-01-02 15:04 -0700"
+
+  homeSubtitle = "Software. Coffee. Fountain Pens. Running."
 
   # Metadata mostly used in document's head
   description = "Colton J. McCurdy's Website."
@@ -73,6 +76,7 @@ disableHugoGeneratorInject = false
 
   # Directory name of your blog content (default is `content/posts`)
   contentTypeName = "posts"
+  listedContentTypes = ["posts", "books", "talks", "papers"]
 
   # Default theme "light" or "dark"
   defaultTheme = "dark"
@@ -80,19 +84,21 @@ disableHugoGeneratorInject = false
 
   # Colors for favicons
   [params.favicon.color]
-    mask = "#252627"
-    msapplication = "#252627"
-    theme = "#252627"
+    mask = "#2d2d2d"
+    msapplication = "#2d2d2d"
+    theme = "#2d2d2d"
 
   [params.logo]
-    logoText     = "$ cd /home/"
+    logoText     = "$HOME"
     logoHomeLink = "/"
+    # path = "/img/your-example-logo.svg"
+    # alt = "Your example logo alt text"
     # Set true to remove the logo cursor entirely.
     logoCursorDisabled = false
     # Set to a valid CSS color to change the cursor in the logo.
     logoCursorColor    = "#ffcc66"
     # Set to a valid CSS time value to change the animation duration, "0s" to disable.
-    logoCursorAnimate  = "2s"
+    logoCursorAnimate  = "1s"
 
   # Social icons
   [[params.social]]
@@ -113,25 +119,31 @@ disableHugoGeneratorInject = false
 
 [languages]
   [languages.en]
-    subtitle = "Software. Coffee. Fountain Pens. Running."
     keywords = ""
     copyright = ""
-    readOtherPosts = "Read other posts"
-
-    [languages.en.params.logo]
-      logoText = "Colton J. McCurdy"
-      logoHomeLink = "/"
-    # or
-    #
-    # path = "/img/your-example-logo.svg"
-    # alt = "Your example logo alt text"
 
 [menu]
+  [[menu.main]]
+    identifier = "about"
+    name       = "About"
+    url        = "about/"
   [[menu.main]]
     identifier = "posts"
     name       = "Posts"
     url        = "posts/"
   [[menu.main]]
     identifier = "books"
-    name       = "Books"
+    name       = "Bookshelf"
     url        = "books/"
+  [[menu.main]]
+    identifier = "talks"
+    name       = "Talks"
+    url        = "talks/"
+  [[menu.main]]
+    identifier = "open-source"
+    name       = "Open Source"
+    url        = "oss/"
+  [[menu.main]]
+    identifier = "papers"
+    name       = "Papers"
+    url        = "papers/"

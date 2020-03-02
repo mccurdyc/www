@@ -3,7 +3,7 @@ title: "Close to the Machine"
 subtitle: "Technophilia and Its Discontents"
 author: "Colton J. McCurdy"
 date: 2019-03-22
-abstract: "As software engineers, sometimes we are too caught up in _how_ we build something, instead of _what_ we are building."
+description: "As software engineers, sometimes we are too caught up in _how_ we build something, instead of _what_ we are building."
 book-tags: ["book", "2019"]
 books: ["Close to the Machine: Technophilia and Its Discontents"]
 book-authors: ["Ellen Ullman"]

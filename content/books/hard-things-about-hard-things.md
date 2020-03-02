@@ -3,7 +3,7 @@ title: "The Hard Things About Hard Things"
 subtitle: "Building a business when there are no easy answers"
 author: "Colton J. McCurdy"
 date: 2019-05-20
-abstract: "Ben, throughout the book, makes many great points on the topic of hiring and culture.  One of the points that stands out most and if I had to pick just one point from this book, it would be that there is no such thing as the perfect person for the position. Or, the perfect person for the position in 18 months. But rather, that there is only the perfect person for the position at your company, _right now_."
+description: "Ben, throughout the book, makes many great points on the topic of hiring and culture.  One of the points that stands out most and if I had to pick just one point from this book, it would be that there is no such thing as the perfect person for the position. Or, the perfect person for the position in 18 months. But rather, that there is only the perfect person for the position at your company, _right now_."
 book-tags: ["book", "2019"]
 books: ["The Hard Things About Hard Things: Building a business when there are no easy answers"]
 book-authors: ["Ben Horowitz"]
