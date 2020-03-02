@@ -140,7 +140,7 @@ disableHugoGeneratorInject = false
     name       = "Talks"
     url        = "talks/"
   [[menu.main]]
-    identifier = "open-source"
+    identifier = "oss"
     name       = "Open Source"
     url        = "oss/"
   [[menu.main]]
