@@ -1,11 +1,11 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
-author: ""
+authors: []
 type: ""
 date: {{ .Date }}
 subtitle: ""
 image: ""
-book-tags: []
-books: []
-book-authors: []
+description: ""
+tags: []
+repos: []
 ---

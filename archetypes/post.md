@@ -5,7 +5,6 @@ type: ""
 date: {{ .Date }}
 subtitle: ""
 image: ""
-abstract: ""
 post-tags: []
 posts: []
 ---
