@@ -1,127 +1,137 @@
 baseurl = "https://mccurdyc.dev"
-DefaultContentLanguage = "en"
 title = "Colton J. McCurdy"
-theme = "beautifulhugo"
-metaDataFormat = "yaml"
-relativeurls = true
-staticDir = "static"
-themesDir = "themes"
-watch = true
-useHLJS = false
-pygmentsCodeFences = true
-pygmentsUseClasses = true
-pygmentsCodefencesGuessSyntax = true
+
+DefaultContentLanguage = "en"
+
+theme = "hello-friend-ng"
+
+PygmentsCodeFences = true
+PygmentsStyle = "monokai"
+
+rssLimit  = 10  # Maximum number of items in the RSS feed.
+copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License." # This message is only used by the RSS template.
+
 googleAnalytics = "UA-62612842-1"
+
+archetypeDir = "archetypes"
+contentDir   = "content"
+dataDir      = "data"
+layoutDir    = "layouts"
+publishDir   = "public"
+
+buildDrafts  = false
+buildFuture  = false
+buildExpored = false
+canonifyURLs = true
+
+enableRobotsTXT = true
+enableGitInfo   = false
+enableEmoji     = true
+enableMissingTranslationPlaceholders = false
+disableRSS     = false
+disableSitemap = false
+disable404     = false
+disableHugoGeneratorInject = false
+
+[permalinks]
+  posts = "/posts/:year/:month/:title/"
+
+[author]
+  name = "Colton J. McCurdy"
+
+[blackfriday]
+  hrefTargetBlank = true
+
 [taxonomies]
-  post = "posts"
-  book = "books"
-  book-tag = "book-tags"
-  post-title = "post-titles"
-  book-author = "book-authors"
-  post-tag = "post-tags"
+  tag      = "tags"
   category = "categories"
 
-[Params]
-  homeTitle = "Colton J. McCurdy"
-  subtitle = "Software. Coffee. Fountain Pens."
-  # logo = "img/avatar-icon.png" # Expecting square dimensions
-  favicon = "img/favicon.ico"
-  dateFormat = "2006-01-02"
-  since="2013"
-  commit = false
-  rss = false
-  comments = false
-  readingTime = true
-  wordCount = true
-  useHLJS = true
-  socialShare = true
-  delayDisqus = true
-  showRelatedPosts = true
+[params]
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04 -0700"
 
-[[Params.bigimg]]
- src = "images/detroit-street-art.jpg"
+  # Metadata mostly used in document's head
+  description = "Colton J. McCurdy's Website."
+  keywords = ""
+  images = [""]
 
-[Author]
-  name = "Colton J. McCurdy"
-  website = "https://mccurdyc.dev"
-  email = "coltonjmccurdy@gmail.com"
-  github = "mccurdyc"
-  twitter = "mccurdycolton"
-  linkedin = "mccurdycolton"
+  # Prefix of link to the git commit detail page. GitInfo must be enabled.
+  # gitUrl = ""
 
-[[menu.main]]
-    name = "Blog"
-    url = ""
-    weight = 1
+  # Set disableReadOtherPosts to true in order to hide the links to other posts.
+  disableReadOtherPosts = false
 
-[[menu.main]]
-    parent = "Blog"
-    name = "Posts"
-    url = "post"
-    weight = 1
+  # Integrate Javascript files or stylesheets by adding the url to the external assets or by
+  # linking local files with their path relative to the static folder, e.g. "css/styles.css"
+  # customCSS = []
+  # customJS  = []
 
-[[menu.main]]
-    parent = "Blog"
-    name = "Post Tags"
-    url = "post-tags"
-    weight = 2
+  # Toggle this option need to rebuild SCSS, requires extended version of Hugo
+  justifyContent = false  # Set "text-align: justify" to .content.
 
-[[menu.main]]
-    parent = "Blog"
-    name = "Post Titles"
-    url = "posts"
-    weight = 3
+  # Directory name of your blog content (default is `content/posts`)
+  contentTypeName = "posts"
 
-[[menu.main]]
-    name = "Resume"
-    url = "resume/curriculum_vitae_mccurdy.pdf"
-    weight = 2
+  # Default theme "light" or "dark"
+  defaultTheme = "dark"
+  themeColor = "#2d2d2d"
 
-[[menu.main]]
-    name = "Bookshelf"
-    url = ""
-    weight = 3
+  # Colors for favicons
+  [params.favicon.color]
+    mask = "#252627"
+    msapplication = "#252627"
+    theme = "#252627"
 
-[[menu.main]]
-    parent = "Bookshelf"
-    name = "Books"
-    url = "book"
-    weight = 1
+  [params.logo]
+    logoText     = "$ cd /home/"
+    logoHomeLink = "/"
+    # Set true to remove the logo cursor entirely.
+    logoCursorDisabled = false
+    # Set to a valid CSS color to change the cursor in the logo.
+    logoCursorColor    = "#ffcc66"
+    # Set to a valid CSS time value to change the animation duration, "0s" to disable.
+    logoCursorAnimate  = "2s"
 
-[[menu.main]]
-    parent = "Bookshelf"
-    name = "Book Tags"
-    url = "book-tags"
-    weight = 2
+  # Social icons
+  [[params.social]]
+    name = "twitter"
+    url  = "https://twitter.com/mccurdycolton"
 
-[[menu.main]]
-    parent = "Bookshelf"
-    name = "Book Titles"
-    url = "books"
-    weight = 3
+  [[params.social]]
+    name = "email"
+    url  = "mailto:coltonjmccurdy+website@gmail.com"
 
-[[menu.main]]
-    parent = "Bookshelf"
-    name = "Book Authors"
-    url = "book-authors"
-    weight = 4
+  [[params.social]]
+    name = "github"
+    url  = "https://github.com/mccurdyc"
 
-[[menu.main]]
-    name = "Projects"
-    url = "page/projects/"
-    weight = 4
+  [[params.social]]
+    name = "linkedin"
+    url  = "https://www.linkedin.com/in/mccurdycolton"
 
-[[menu.main]]
-    name = "Talks"
-    url = "page/talks/"
-    weight = 5
+[languages]
+  [languages.en]
+    subtitle = "Software. Coffee. Fountain Pens. Running."
+    keywords = ""
+    copyright = ""
+    readOtherPosts = "Read other posts"
 
-[[menu.main]]
-    name = "Papers"
-    url = "page/papers/"
-    weight = 6
+    [languages.en.params.logo]
+      logoText = "Colton J. McCurdy"
+      logoHomeLink = "/"
+    # or
+    #
+    # path = "/img/your-example-logo.svg"
+    # alt = "Your example logo alt text"
 
-[[menu.main]]
-    name = "Site"
-    url = "page/site/"
-    weight = 7
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name       = "Posts"
+    url        = "posts/"
+  [[menu.main]]
+    identifier = "books"
+    name       = "Books"
+    url        = "books/"

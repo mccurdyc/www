@@ -1,20 +1,13 @@
-{{ $thrift := $.Get "thrift" }}
-{{ $amazon := $.Get "amazon" }}
+{{ $thrift := .Get "thrift" }}
+{{ $amazon := .Get "amazon" }}
 
 <p>
-  <h1>{{ .Get `title` }}</h1>
-
-  <h2>Author(s): {{ .Get `author` }}</h2>
-
-  <p>
-      <p>
-        {{ .Inner }}
-      </p>
-  </p>
+  <h1>{{ .Get "title" }}</h1>
+  <h2>Author(s): {{ .Get "author" }}</h2>
 
   {{ if ne $thrift "" }}
   <p>
-    <a href="{{ .Get `thrift` }}" target="_blank">
+    <a href="{{ $thrift }}" target="_blank">
       <i class='fa fa-book'>
       </i>
       View on thriftbooks
@@ -24,12 +17,11 @@
 
   {{ if ne $amazon "" }}
   <p>
-    <a href="{{ .Get `amazon` }}" target="_blank">
+    <a href="{{ $amazon }}" target="_blank">
       <i class='fab fa-amazon'>
       </i>
       View on Amazon
     </a>
   </p>
   {{ end}}
-
 </p>
