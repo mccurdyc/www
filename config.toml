@@ -133,7 +133,7 @@ disableHugoGeneratorInject = false
     url        = "posts/"
   [[menu.main]]
     identifier = "books"
-    name       = "Bookshelf"
+    name       = "Books"
     url        = "books/"
   [[menu.main]]
     identifier = "talks"
@@ -141,9 +141,13 @@ disableHugoGeneratorInject = false
     url        = "talks/"
   [[menu.main]]
     identifier = "oss"
-    name       = "Open Source"
+    name       = "Software"
     url        = "oss/"
   [[menu.main]]
     identifier = "papers"
     name       = "Papers"
     url        = "papers/"
+  [[menu.main]]
+    identifier = "resume"
+    name       = "Resume"
+    url        = "/resume/curriculum_vitae_mccurdy.pdf"
