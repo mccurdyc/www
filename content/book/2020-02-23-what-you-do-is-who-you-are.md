@@ -19,7 +19,7 @@ Who you are is what you do.
 > Culture is an abstract set of principles that lives --- or dies --- by concrete
 decisions the people in your organization make.
 
-## Culture Defines Behaviors and is Remembered
+## The Culture is Remembered
 
 > ... your culture is how your company makes decisions when you're not there.
 
@@ -27,12 +27,11 @@ decisions the people in your organization make.
 and the rest will be a mistake.
 
 While a good culture doesn't guarantee success, it will be the aspect of the company
-that employees remember in the future. Ben says that employees quickly forget press
+that employees remember forever. Ben says that employees quickly forget press
 releases, quarterly reviews, product definitions, but people never forget what it
-was like to work somewhere. Read or listen to the people who worked at Bell Labs
-talk about the culture. They talk about it like it was yesterday.
+was like to work somewhere.
 
-Related to the memorable components, Ben quotes the samurai Hagakure,
+Related to what is remembered, Ben quotes the samurai Hagakure,
 "the way of the warrior is to be found dying". It is at this time that you no
 longer have the chance to do the honorable things that you wish you would have done.
 Therefore, every day in life, meditate on this time of death and how you want to be remembered.
@@ -48,7 +47,7 @@ stop and instead question the culture that encouraged or allowed this behavior.
 Additionally, Ben talked about how the culture of a company
 can shift the behavior of an individual, even when outside of the workplace. The recommendation
 was that if your place of work doesn't have a culture that you personally believe in or
-that you actually disagree with, leave as quickly as possible.
+that you disagree with, leave as quickly as possible.
 
 > Culture isn't a set of magical rules that make everyone behave the way you'd like.
 It's a system of behaviors that you _hope_ _most_ people will follow _most_ of the time...
@@ -56,44 +55,40 @@ It's a system of behaviors that you _hope_ _most_ people will follow _most_ of t
 
 ## Culture is Defined by Actions and Inactions
 
+> A value is merely a belief, but a virtue is a belief that you actively pursue or embody.
+
 Values are aspirations, while virtues are actions. The samurai bushido code
 referred to their core principles or code of _action_ as "virtues" rather than "values".
 
-> A value is merely a belief, but a virtue is a belief that you actively pursue or embody.
+> [culture] is a consequence of actions rather than beliefs.
 
-Culture is just as much defined by the _inactions_ as it is by the actions.
-Ben mentions, that in the military, if you see something below standard
-and do nothing, then you've just set the new standard. Ben tells a story of Shaka Senghor,
-who was in prison for murder. When he first arrived in prison he was
+Furthermore, culture is just as much defined by the _inactions_ as it is by the actions
+or virtues. Ben mentions, that in the military, if you see something below standard
+and do nothing, then you've just set the new standard.
+
+Ben tells a story of Shaka Senghor, who was in prison for murder. When he first arrived in prison he was
 in a position where the other prisoners were trying to "figure him out". The other
 prisoners were just as much interested in his inactions as they were his actions.
-For example, could someone bully him around without repercussions? Similarly, new
+For example, could someone bully him without repercussions? Similarly, new
 employees at a company are trying to figure out what they should and shouldn't do.
 Should they leave early? Should they call someone out when they do something
 unethical? If something is broken, should they say something?
 
-Values or virtues need to be explicitly defined. Phrases like "do the right thing."
+Additionally, values and/or virtues need to be explicitly defined. Phrases like "do the right thing."
 are ambiguous and mean something different to everyone, especially when the company
 is comprised of people from diverse backgrounds. Does doing the right thing mean
 that it is acceptable to miss quarterly projections because your were acting ethically?
-
-> [culture] is a consequence of actions rather than beliefs.
-
-Independent of whether those actions were accidental or deliberate. This is why
-Ben advices leaders to frequently re-evaluate the current culture to ensure that
-it wasn't derailed by a recent action. If it was derailed, then a more powerful,
-over-correcting action needs to be made to get the culture back on track.
 
 ## Culture is a Long-term Investment
 
 Ben describe certain characteristics such as integrity, honesty and decency as "long-term
 culture investments". I liked this phrasing for two reasons. First, recognizing
-that culture is not something that you can "solve" in any amount of time, it is
-something that you are always optimizing for tomorrow or next month or year or decade.
+that culture is not something that you can "solve" or "finish" in any amount of time. Rather,
+it is something that you are always optimizing for tomorrow or next month or year or decade.
 However, a wrong culture decision can quickly and harshly undo a lot of that long-term
 work. Second, seeing culture as an investment. Often with investments, you are
 more interested in the future rewards over the near-term gains. From personal
-experience, it is so much easier for a company to optimize for the short-term,
+experience, it is so much easier for a company to optimize for the short-term with
 measured goals than it is to consider the long-term harm to the culture. It's also
 difficult to advocate for the health of the long-term culture over a win in the
 short-term. The seemingly harmless, little things in the moment compound and
@@ -106,9 +101,13 @@ He gave the example of Facebook's culture evolving from "move fast and break thi
 when they were trying to keep up and pass MySpace to "move fast with stable infrastructure"
 after passing MySpace and trying to establish partnerships.
 
+## Cultural Bounds
+
 Like with many things, there need to be bounds. In a culture of competitiveness,
 it is important that employees are aware of the cultural and ethical bounds and
 that they recognize these bounds take precedence over the culture.
+
+## Evaluating Culture
 
 When people orient themselves in a new place, they pick up the habits of the "successful"
 people around them. Whether those habits align with the culture or not. Ben talks
@@ -130,8 +129,8 @@ Words don't change culture. Changing culture requires impactful events. Ben gave
 example of Reed Hastings kicking the DVD executives out of the weekly executive
 meetings at Netflix.
 
-Ben tells a story about changing the culture at Netscape around agreeing to disagree
-and commit. He says that there are three rules:
+Ben tells a related story about changing the culture at Netscape around agreeing to disagree
+and commit. He says that there were three rules:
 
 1. If you see a snake, don't call committees, don't call your buddies, don't form
 a team, don't get a meeting together, just kill the snake.
