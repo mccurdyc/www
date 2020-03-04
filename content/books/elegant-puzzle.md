@@ -7,9 +7,9 @@ description: "\"An organization is a collection of people working toward a share
 book-tags: ["book", "2019"]
 books: ["An Elegant Puzzle: Systems of Engineering Management"]
 book-authors: ["Will Larson"]
+amazon: "https://www.amazon.com/dp/1732265186/ref=cm_sw_r_tw_dp_U_x_s8VnDbC6B82RW"
+thriftbooks: "https://www.thriftbooks.com/w/an-elegant-puzzle-systems-of-engineering-management_will-larson/21517133/#isbn=1732265186"
 ---
-
-{{< book author="Will Larson" amazon="https://www.amazon.com/dp/1732265186/ref=cm_sw_r_tw_dp_U_x_s8VnDbC6B82RW" thrift="https://www.thriftbooks.com/w/an-elegant-puzzle-systems-of-engineering-management_will-larson/21517133/#isbn=1732265186" >}}
 
 > ...management, at its core, is an ethical profession.
 

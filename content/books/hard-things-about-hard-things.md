@@ -7,9 +7,9 @@ description: "Ben, throughout the book, makes many great points on the topic of 
 book-tags: ["book", "2019"]
 books: ["The Hard Things About Hard Things: Building a business when there are no easy answers"]
 book-authors: ["Ben Horowitz"]
+amazon: "https://www.amazon.com/Hard-Thing-About-Things-Building/dp/0062273205"
+thriftbooks: "https://www.thriftbooks.com/w/the-hard-thing-about-hard-things-building-a-business-when-there-are-no-easy-answers_ben-horowitz/3307127/?mkwid=sFM5qtcnV%7cdc&pcrid=70112878392&pkw=&pmt=&plc=&pgrid=21323665512&ptaid=pla-292616666786&gclid=Cj0KCQjwxMjnBRCtARIsAGwWnBMZGQNHt9KEy5y23QpZQCF-Vr13WMGOCerekAz6V4GxSRTNdeTEifcaAqOtEALw_wcB#isbn=0062273205&idiq=5331843"
 ---
-
-{{< book amazon="https://www.amazon.com/Hard-Thing-About-Things-Building/dp/0062273205" thrift="https://www.thriftbooks.com/w/the-hard-thing-about-hard-things-building-a-business-when-there-are-no-easy-answers_ben-horowitz/3307127/?mkwid=sFM5qtcnV%7cdc&pcrid=70112878392&pkw=&pmt=&plc=&pgrid=21323665512&ptaid=pla-292616666786&gclid=Cj0KCQjwxMjnBRCtARIsAGwWnBMZGQNHt9KEy5y23QpZQCF-Vr13WMGOCerekAz6V4GxSRTNdeTEifcaAqOtEALw_wcB#isbn=0062273205&idiq=5331843" >}}
 
 ## Relationships
 

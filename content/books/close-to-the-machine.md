@@ -7,9 +7,9 @@ description: "As software engineers, sometimes we are too caught up in _how_ we 
 book-tags: ["book", "2019"]
 books: ["Close to the Machine: Technophilia and Its Discontents"]
 book-authors: ["Ellen Ullman"]
+amazon: "https://www.amazon.com/Close-Machine-Technophilia-Its-Discontents/dp/1250002486"
+thriftbooks: "https://www.thriftbooks.com/w/close-to-the-machine-technophilia-and-its-discontents_ellen-ullman/392556/all-editions/"
 ---
-
-{{< book amazon="https://www.amazon.com/Close-Machine-Technophilia-Its-Discontents/dp/1250002486" thrift="https://www.thriftbooks.com/w/close-to-the-machine-technophilia-and-its-discontents_ellen-ullman/392556/all-editions/" >}}
 
 Founding father of virtual reality, [Jaron Lanier](http://www.jaronlanier.com/), writes
 in the introduction about what "nerdism" is like. Lanier says,

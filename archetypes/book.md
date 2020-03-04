@@ -8,4 +8,6 @@ image: ""
 book-tags: []
 books: []
 book-authors: []
+amazon: ""
+thriftbooks: ""
 ---

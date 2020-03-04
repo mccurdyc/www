@@ -7,9 +7,9 @@ description: "Ben Horowitz, describes how culture is defined by your actions as 
 book-tags: ["book", "2020", "culture"]
 books: ["What You Do Is Who You Are: How To Create Your Business Culture"]
 book-authors: ["Ben Horowitz"]
+amazon: "https://www.amazon.com/What-You-Do-Who-Are/dp/0062871331"
+thriftbooks: "https://www.thriftbooks.com/w/what-you-do-is-who-you-are-how-to-create-your-business-culture_ben-horowitz/20754635/#isbn=0062871331"
 ---
-
-{{< book author="Ben Horowitz" amazon="https://www.amazon.com/What-You-Do-Who-Are/dp/0062871331" thrift="https://www.thriftbooks.com/w/what-you-do-is-who-you-are-how-to-create-your-business-culture_ben-horowitz/20754635/#isbn=0062871331" >}}
 
 > Who you are is not the values you list on the wall. It's not what you say in a
 company-wide meeting. It's not your marketing campaign. It's not even what you believe.

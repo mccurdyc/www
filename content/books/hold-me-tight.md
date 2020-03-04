@@ -7,9 +7,9 @@ description: "Hold Me Tight discusses a practice known as Emotionally Focused Th
 book-tags: ["book", "2019"]
 books: ["Hold Me Tight: Seven conversations for a lifetime of love"]
 book-authors: ["Dr. Sue Johnson"]
+amazon: "https://www.amazon.com/Hold-Me-Tight-Conversations-Lifetime/dp/031611300X"
+thriftbooks: "https://www.thriftbooks.com/w/hold-me-tight-seven-conversations-for-a-lifetime-of-love_sue-johnson/248702/#isbn=031611300X&idiq=4032793"
 ---
-
-{{< book author="Dr. Sue Johnson" amazon="https://www.amazon.com/Hold-Me-Tight-Conversations-Lifetime/dp/031611300X" thrift="https://www.thriftbooks.com/w/hold-me-tight-seven-conversations-for-a-lifetime-of-love_sue-johnson/248702/#isbn=031611300X&idiq=4032793" >}}
 
 > ...love is like a language. If you speak it, it flows more and more easily. If you don't, then you start to lose it. - [@Dr_SueJohnson](https://twitter.com/Dr_SueJohnson)
 

@@ -7,9 +7,9 @@ description: "Author, Brian Kernighan talks about the environment, his time at B
 book-tags: ["book", "2020", "unix-memoir"]
 books: ["UNIX: A History and a Memoir"]
 book-authors: ["Brian Kernighan"]
+amazon: "https://www.amazon.com/UNIX-History-Memoir-Brian-Kernighan/dp/1695978552"
+thriftbooks: "https://www.thriftbooks.com/w/unix-a-history-and-a-memoir_brian-w-kernighan/24296322/#isbn=1695978552&idiq=35079524"
 ---
-
-{{< book author="Brian Kernighan" amazon="https://www.amazon.com/UNIX-History-Memoir-Brian-Kernighan/dp/1695978552" thrift="https://www.thriftbooks.com/w/unix-a-history-and-a-memoir_brian-w-kernighan/24296322/#isbn=1695978552&idiq=35079524" >}}
 
 > If nothing else, choices that might seem wrong-headed or perverse today can often
 be seen as natural consequences of what was understood and could be accomplished

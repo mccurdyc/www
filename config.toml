@@ -1,4 +1,4 @@
-baseurl = "https://mccurdyc.dev"
+baseurl = "https://www.mccurdyc.dev"
 title = "Colton J. McCurdy"
 
 DefaultContentLanguage = "en"
@@ -32,6 +32,13 @@ disableRSS     = false
 disableSitemap = false
 disable404     = false
 disableHugoGeneratorInject = false
+
+[deployment]
+order = [".jpg$", ".gif$"]
+
+[[deployment.targets]]
+name = "www"
+URL = "gs://www.mccurdyc.dev"
 
 [permalinks]
   posts = "/posts/:year/:month/:title/"

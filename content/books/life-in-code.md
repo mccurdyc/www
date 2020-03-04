@@ -6,9 +6,9 @@ description: "People imagine that programming is logical, a process like fixing 
 book-tags: ["book", "2019"]
 books: ["Life in Code"]
 book-authors: ["Ellen Ullman"]
+amazon: "https://www.amazon.com/Life-Code-Personal-History-Technology/dp/1250181690/"
+thriftbooks: "https://www.thriftbooks.com/w/life-in-code-a-personal-history-of-technology_ellen-ullman/13998458/all-editions/"
 ---
-
-{{< book amazon="https://www.amazon.com/Life-Code-Personal-History-Technology/dp/1250181690/ref=pd_lpo_sbs_14_t_0?_encoding=UTF8&psc=1&refRID=6BC2NWZG60SW5CTFWQMG" thrift="https://www.thriftbooks.com/w/life-in-code-a-personal-history-of-technology_ellen-ullman/13998458/all-editions/" >}}
 
 Ullman starts the book with the following quote,
 
