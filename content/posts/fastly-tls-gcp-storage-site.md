@@ -71,20 +71,35 @@ similar to what is described in [this post](https://www.realjenius.com/2019/11/2
 Why did I choose Hugo? Why did I choose to not use Netlify? Why did I choose Google Cloud Platform (GCP)
 over Amazon Web Services (AWS)? Why did I choose Fastly?
 
-I chose Hugo because it is written in the programming language that I am most comfortable
-with and therefore effectively able to contribute back to. Additionally, the site
+I chose Hugo because it is written in the programming language, namely Go, that I am most comfortable
+with and therefore effectively able to contribute back to. Additionally, the
 build times are extremely fast. I chose to go the more tedious and manual route and
 avoid Netlify because I am interested in learning what all is involved in deploying
 a static site. Also, because I want more control. GCP over AWS because I used
 AWS at my day job and wanted to familiarize myself with the competing platform.
 Fastly, again because we used a competing platform at my previous day job and I
-am about to start working at Fastly and I wanted to familiarize myself with the product.
+am about to start working at Fastly and I primarily wanted to familiarize myself with the product.
+There are other reasons for considering Fastly, like reduced latency globally.
 
 ---
 
 ## Process Overview
 
-There were a few main parts to put `mccurdyc.dev` behind Fastly.
+There were a few main parts to put `mccurdyc.dev` behind Fastly. In the following steps,
+I will not include screenshots of how to configure the various platforms via
+their respective consoles, but rather will provide the terraform for doing so.
+I do however find it easier to create resources in the console first, tweak them
+there,and then do a `terraform import` of the resource and check the difference between
+the resource definition that I have locally and the state of the resource with
+`terraform plan`.
+
+My terraform and provider versions are as follows
+```bash
+$ terraform version
+
+Terraform v0.12.21
++ provider.google v3.9.0
+```
 
 1. [Hugo Builds and Deployments](#hugo-builds-and-deployments)
 2. Google Cloud Platform (GCP) / Google Cloud Storage (GCS) Configuration
@@ -124,38 +139,41 @@ gets deployed to GCS with `hugo deploy`.
 
 ### Google Cloud Platform (GCP) / Google Cloud Storage (GCS) Configuration
 
-While primarily documenting how to configure your Fastly Service, rather than GCS specifically,
-it is helpful to reference the documentation on [using GCS as an origin server](https://docs.fastly.com/en/guides/google-cloud-storage).
+#### Create a Project on GCP
 
-_Note: Originally, I configured everything around using `www.mccurdyc.dev` because
-this is what GCP recommended for [hosting a static website in a GCS bucket](https://cloud.google.com/storage/docs/hosting-static-website).
-For more information on using GCS for a static website, check out
-[this document on static website examples and tips](https://cloud.google.com/storage/docs/static-website)._
+_The exhaustived details for creating a GCP project are out of the scope of this post. Refer
+to this guide on [Creating and Managing Projects](https://cloud.google.com/resource-manager/docs/creating-managing-projects)._
 
-1. Create a GCP Project
+Upon creating a project in the GCP console, Google provides you with a unique, immutable
+project ID. The project ID for my project, namely `mccurdyc-dot-dev`, is `daring-octane-268913`.
 
-_The details for creating a GCP project are out of the scope of this post. Refer
-to this document on [Creating and Managing Projects](https://cloud.google.com/resource-manager/docs/creating-managing-projects)._
+```bash
+export TF_VAR_gcp_project_id="daring-octane-268913"
+```
 
-I find it easier to create resources in the console first and tweak them there and
-then do a `terraform import` of the resource and check the difference between
-the resource definition that I have locally and the state of the resource with
-`terraform plan`. The documentation for defining a Google Project in Terraform
-can be found [here](https://www.terraform.io/docs/providers/google/r/google_project.html).
+1. Write the rough terraform for creating a GCP project
+```hcl
+resource "google_billing_account_iam_member" "binding" {
+  billing_account_id = var.gcp_billing_account_id
+  role               = "roles/billing.admin"
+  member = format("user:%s", var.gcp_user_email)
+}
 
-The Terraform commands that I ran were as follows:
+resource "google_project" "website" {
+  name       = var.gcp_project_name
+  project_id = var.gcp_project_id
 
-0. `terraform init`
-1. `terraform import google_project.mccurdyc_dot_dev daring-octane-268913`
-2. `terraform import google_service_account.create_access_service_account projects/daring-octane-268913/serviceAccounts/create-access@daring-octane-268913.iam.gserviceaccount.com`
+  billing_account = google_billing_account_iam_member.binding.billing_account_id
+}
+```
 
-While the terraform specifies that the bucket
-
-https://cloud.google.com/storage/docs/xml-api/put-bucket-website
-
-> Note: A bucket's website configuration only applies to requests that use either the CNAME redirect endpoint or Cloud Load Balancing.
+```bash
+$ terraform import google_project.website $TF_VAR_gcp_project_id
+$ terraform import google_service_account.create_access_service_account projects/$TF_VAR_gcp_project_id/serviceAccounts/create-access@$TF_VAR_gcp_project_id.iam.gserviceaccount.com
+```
 
 ### Create a "Service" on Fastly
+  1. Create an API token
   1. Configure origin host
   2. Force TLS and HSTS
 
