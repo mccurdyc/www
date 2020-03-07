@@ -350,9 +350,12 @@ $ pacman -S
   alacritty \
   netctl \
   fzf \
-  htop \
   tree \
-  xdg-utils
+  xdg-utils \
+  bluez \
+  bluez-utils \
+  pulseaudio-bluetooth \
+  pulseaudio-alsa
 ```
 
 Make sure some more things start on startup (and start them now).
@@ -360,6 +363,8 @@ Make sure some more things start on startup (and start them now).
 ```bash
 $ systemctl enable NetworkManager.service
 $ systemctl start NetworkManager.service
+$ systemctl enable bluetooth.service
+$ systemctl start bluetooth.service
 ```
 
 ### Clone Helpful `git` Repositories
@@ -507,7 +512,8 @@ pacman -Qqme
 
 ```bash
 $ pacman -S \
-  docker
+  docker \
+  htop
 
 $ yay -S \
   neovim \    # a "better" Vim editor
@@ -518,6 +524,17 @@ $ yay -S \
 ---
 
 ## Other Notes
+
+### Screen Brightness
+
+https://prdpx7.github.io/linux/stuff-i-learned-while-fixing-brightness-on-ubuntu/
++ [/etc/rc.local](https://github.com/mccurdyc/dotfiles/tree/master/etc/rc.local)
+
+### Bluetooth Audio
+
++ https://wiki.archlinux.org/index.php/Bluetooth
+If you wanted a bluetooth GUI, you could install one of the suggested ones here.
++ https://wiki.archlinux.org/index.php/Bluetooth_headset
 
 ### Chrome Extensions
 
