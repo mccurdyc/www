@@ -60,6 +60,9 @@ Resource(s):
   3. Change the SATA operating mode from `RAID` to `AHCI`
     Your SSD should show when you boot arch with `lsblk -f`
 
+
+Warmup complete. Level 1 unlocked.
+
 ---
 
 ## On the target machine
@@ -301,6 +304,8 @@ options cryptdevice=UUID=<UUID>:vg0 root=/dev/mapper/vg0-root quiet rw
 1. Leave the root system with `exit`
 2. `reboot`
 
+If everything works, you've made it passed the hardest part! Level 2 unlocked.
+
 ---
 
 ## After Rebooting
@@ -367,7 +372,7 @@ $ sudo chsh -s /bin/zsh mccurdyc
 ```bash
 $ git clone --recursive https://github.com/mccurdyc/dotfiles.git # ssh isn't configured yet
 $ cd dotfiles && git submodule update --init
-$ make run # does a bunch of necessary symlinking
+$ make run-minimal # does a bunch of necessary symlinking
 $ export TOOLS_DIR=$HOME/tools
 $ mkdir $TOOLS_DIR
 ```
@@ -425,7 +430,7 @@ $ yay -S \
 To see all i3 keystrokes, check out [`~/.config/i3/config`](https://github.com/mccurdyc/dotfiles/blob/master/.config/i3/config).
 
 ```bash
-$ startx # BAM! No longer limited to a shell
+$ startx # BAM! No longer limited to a shell.
 ```
 
 If your video is super laggy or only updates on mouse movement, the `xf86-video-intel`
@@ -434,6 +439,9 @@ package is probably still installed. See the [Install Video Drivers section](#in
 ```bash
 $ pacman -R xf86-video-intel
 ```
+
+If you have video and it's not laggy, you've made it passed the second most difficult part!
+Final level unlocked. Time for the fun stuff (i.e., making it your own).
 
 ### Install Drivers
 
