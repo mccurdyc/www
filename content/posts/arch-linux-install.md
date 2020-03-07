@@ -49,7 +49,7 @@ lspci -k | grep -A3 'Network controller'
 2. `iw dev`
 3. `ip link set wlan0 up`
 4. `iw dev wlan0 scan | grep 'SSID:'`
-5. `wpa_supplicant -i wlan0 -c <(wpa_passphrase 'McCurdyNetwork' 'password')`
+5. `wpa_supplicant -i wlan0 -c <(wpa_passphrase 'your_network_ssid' 'password')`
 > Once a connection is established, fork the process to the background by pressing [ctrl]+z and running `bg`.
 6. lease an IP address with `dhcpcd wlan0`
 7. Sync system time with `timedatectl set-ntp true`
@@ -279,7 +279,7 @@ $ iw dev # the device name probably changed
 $ sudo ip link set wlp2s0 up
 
 # https://unix.stackexchange.com/questions/279545/failed-to-open-config-file-dev-fd-63-error-no-such-file-or-directory-for-wp
-$ sudo su -c 'wpa_supplicant -i wlp2s0 -c <(wpa_passphrase "McCurdyNetwork" "password")'
+$ sudo su -c 'wpa_supplicant -i wlp2s0 -c <(wpa_passphrase "your_network_ssid" "password")'
 ```
 
 ### Install some necessary packages
@@ -287,17 +287,27 @@ $ sudo su -c 'wpa_supplicant -i wlp2s0 -c <(wpa_passphrase "McCurdyNetwork" "pas
 https://gist.github.com/chrisleekr/a23e93edc3b0795d8d95f9c70d93eedd
 
 ```bash
-$ pacman -S networkmanager iw wpa_supplicant dialog wireless_tools base-devel xclip rofi alacritty
+$ pacman -S networkmanager iw zsh wpa_supplicant dialog wireless_tools base-devel xclip rofi alacritty netctl
 $ systemctl enable NetworkManager.service
+$ systemctl start NetworkManager.service
 $ systemctl enable wpa_supplicant.service
+$ systemctl start wpa_supplicant.service
 ```
 
 ### Clone some helpful git repos
 
+Set `zsh` as your default shell because the tools in `mccurdyc/dotfiles` expect this.
+
+```bash
+$ sudo chsh -s /bin/zsh mccurdyc
+```
+
 Install `yay` (my favorite AUR package manager, written in Go!)
 
 ```bash
-$ git clone https://github.com/mccurdyc/dotfiles.git # ssh isn't configured yet
+$ git clone --recursive https://github.com/mccurdyc/dotfiles.git # ssh isn't configured yet
+$ cd dotfiles && git submodule update --init
+$ make run
 $ mkdir /home/mccurdyc/tools
 $ git clone https://aur.archlinux.org/yay.git /home/mccurdyc/tools/yay
 $ cd /home/mccurdyc/tools/yay
@@ -307,7 +317,7 @@ $ makepkg -si
 ### Install i3 Window Manager
 
 ```bash
-$ sudo pacman -S xorg xorg-xclock xorg-twm xorg-xinit xterm i3 zsh tmux adobe-source-code-pro-fonts
+$ sudo pacman -S xorg xorg-xclock xorg-twm xorg-xinit xterm i3 tmux adobe-source-code-pro-fonts
 $ echo "exec i3" >> ~/.xinitrc
 $ startx
 ```
@@ -332,9 +342,16 @@ $ pacman -S xorg-drivers
 
 ### Setup ssh for `git clone`
 
-https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+1. [Generate an SSH key](https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 
-### Install Desktop Environment
+```bash
+$ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+$ eval "$(ssh-agent -s)"
+$ ssh-add ~/.ssh/id_rsa
+$ xclip -sel clip < ~/.ssh/id_rsa.pub
+```
+
+2. [Add the SSH key to your GitHub account](https://help.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account)
 
 ### Install Display Manager (or login manager)
 
@@ -351,12 +368,18 @@ $ yay -S cdm-git
 ### Other installs
 
 ```bash
-$ yay -S brave-bin neovim
+$ yay -S brave-bin neovim ttf-font-awesome
 ```
 
 ```bash
-# https://aur.archlinux.org/packages/1password-cli/#pinned-652863
-$ gpg --recv-keys 3FEF9748469ADBE15DA7CA80AC2D62742012EA22
-$ yay -S 1password-cli
+```
 
 To list AUR packages on another machine, run `pacman -Qm`
+
+### Fixing Font Sizes
+
+To fix them in GTK applications
+
+edit the font size in `~/.config/gtk-3.0/settings.ini`
+
+To fix them globally and the actual website content, update the font size in ~/.Xresources`
