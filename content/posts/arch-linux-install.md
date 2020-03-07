@@ -337,7 +337,8 @@ Resource(s):
   + https://gist.github.com/chrisleekr/a23e93edc3b0795d8d95f9c70d93eedd
 
 ```bash
-$ pacman -S networkmanager \
+$ pacman -S
+  networkmanager \
   iw \
   zsh \
   wpa_supplicant \
@@ -349,6 +350,7 @@ $ pacman -S networkmanager \
   alacritty \
   netctl \
   fzf \
+  htop \
   tree \
   xdg-utils
 ```
