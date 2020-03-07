@@ -414,18 +414,18 @@ $ yay -S \
   ttf-font-awesome # used by the i3status bar
 ```
 
-Important Keystrokes
+**CRITICAL:** Important keystrokes. Remember these for when you are in the X window system.
 
-**CRITICAL:** Remember these for when you are in the X window system.
 + The Windows key is set as the i3 modifier key (Mod)
-    + Mod+Shift+Backspace - locks the screen
+    + Mod+Shift+Backspace - locks the screen (just start typing to login)
+    + Mod+Shift+r - reloads the i3 config
     + Mod+<ENTER> - opens a terminal
     + Mod+Backslash (i.e., `\`) - opens a browser
 
 To see all i3 keystrokes, check out [`~/.config/i3/config`](https://github.com/mccurdyc/dotfiles/blob/master/.config/i3/config).
 
 ```bash
-$ startx
+$ startx # BAM! No longer limited to a shell
 ```
 
 If your video is super laggy or only updates on mouse movement, the `xf86-video-intel`
