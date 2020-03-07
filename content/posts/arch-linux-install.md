@@ -1,46 +1,72 @@
 ---
-title: "Arch Linux Install on Dell XPS 13 7390 (2019)"
+title: "Arch Linux Install and Configuration on Dell XPS 13 7390 (2019)"
 author: "Colton J. McCurdy"
 type: ""
 date: 2020-03-05
 image: ""
-tags: []
+tags: ["arch", "2020", "linux"]
 ---
 
-## Installing Arch on a USB
+## Background
+
+This post is rather selfish in nature and often not describe what each command does.
+It is not meant to be a post that "just works" for anyone, but rather so that others
+can see how I installed Arch Linux on my machine (i.e., I use my device names, etc.).
+Also, I am far from an Arch or Linux expert, most of what follows has been taken
+from other sources. I link to where I found the information.
+
+Next, keep in mind that Arch installations may vary slightly depending on the
+machine you are trying to install it on. I strongly suggest trying to search the
+Arch wiki for your target machine (e.g., [Dell XPS 13 7390 Arch Wiki](https://wiki.archlinux.org/index.php/Dell_XPS_13_(7390)).
+
+Also, I acknowledge that I could have copied my existing Arch installation to the
+target machine rather than manually setting everything up. However, I was interested
+in documenting the steps of a fresh install as well as build up my scripts to make
+it easier to do again in the future.
+
+## Installing Arch on a USB from Another Arch Machine
 
 ### USB Storage Arch
 
-https://wiki.archlinux.org/index.php/USB_storage_devices
-1. find the device with `lsblk -f`
+Resource(s):
+  + https://wiki.archlinux.org/index.php/USB_storage_devices
+
+1. Find the device with `lsblk -f`
 2. `mkdir /mnt/usb`
 3. `mount -U <UUID> /mnt/usb`
-4. when done, `umount /mnt/usb`
+4. When done, `umount /mnt/usb`
 
-### Grabbing and Arch `.iso`
+### Downloading the Arch `.iso`
 
-1. Download the `*.iso` file from the [Arch Downloads page (HTTP Direct Downloads)](https://www.archlinux.org/download/)
+Download the `*.iso` file from a mirror listed on the [Arch Downloads page (HTTP Direct Downloads)](https://www.archlinux.org/download/).
 
-### Creating bootable Arch image
+### Creating Bootable Arch image
 
-http://valleycat.org/linux/arch-usb.html?i=1
+Resource(s):
+  + http://valleycat.org/linux/arch-usb.html?i=1
 
 `dd bs=4M if=$HOME/Downloads/archlinux.*.iso of=/dev/sda status=progress && sync`
 
-### Plug the USB into the machine
+### Plug the USB into the Target Machine
 
-1. while booting, keep smashing <F12>
-2. Disabled Secure Boot and changed the boot order to have the USB first
+Resource(s):
+  + https://github.com/nw2190/Arch_Install
 
-Other BIOS stuff like changing SATA operating mode from `RAID` to `AHCI`
-(this should now show your SSD when you boot arch)
-https://github.com/nw2190/Arch_Install
+1. Enter the machine's BIOS menu. For me, smash `<F12>` while booting.
 
-## On the new machine
+**CRITICAL:** in the BIOS, do the following:
+  1. Disable `UEFI Secure Boot`
+  2. Change the boot order to have the USB first
+  3. Change the SATA operating mode from `RAID` to `AHCI`
+    Your SSD should show when you boot arch with `lsblk -f`
 
-### Connect to wifi
+---
 
-1. make sure that the wireless drivers in the ISO were included and are supported
+## On the target machine
+
+### Connect to WiFi
+
+1. Make sure that the wireless drivers in the ISO were included and are supported
 
 ```bash
 lspci -k | grep -A3 'Network controller'
@@ -50,38 +76,26 @@ lspci -k | grep -A3 'Network controller'
 3. `ip link set wlan0 up`
 4. `iw dev wlan0 scan | grep 'SSID:'`
 5. `wpa_supplicant -i wlan0 -c <(wpa_passphrase 'your_network_ssid' 'password')`
-> Once a connection is established, fork the process to the background by pressing [ctrl]+z and running `bg`.
+> Once a connection is established, fork the process to the background by pressing `[CTRL]+z` and running `bg`.
 6. lease an IP address with `dhcpcd wlan0`
 7. Sync system time with `timedatectl set-ntp true`
 
-### Partitioning
+### Partitioning the Drive
 
-1. `lsblk` to get the USB device's name
+1. `lsblk` to get the drive's name.
 
-followed steps here https://gilyes.com/Installing-Arch-Linux-with-LVM/
+**CRITICAL:** Use the `UEFI/GPT` partitioning layout.
+Specific details [here](https://wiki.archlinux.org/index.php/installation_guide)
+and example layouts [here](https://wiki.archlinux.org/index.php/Partitioning#Example_layouts).
+I originally was following [this post](https://gist.github.com/chrisleekr/a23e93edc3b0795d8d95f9c70d93eedd),
+but my target machine would not allow "Legacy" boot mode (i.e., BIOS/MBR) in the BIOS.
 
-Specific details here
-https://wiki.archlinux.org/index.php/installation_guide
-and here https://wiki.archlinux.org/index.php/Partitioning#Example_layouts
+Resources(s):
+  + https://www.saminiir.com/installing-arch-linux-on-dell-xps-15/
+  + https://wiki.archlinux.org/index.php/installation_guide
+  + https://wiki.archlinux.org/index.php/Partitioning#Example_layouts
 
-UEFI/GPT layout
-
-OLD
-```bash
-$ gdisk /dev/nvme0n1
-$ d # (until all partitions are removed)
-$ o
-$ n # (skip, skip, +260M, ef00)
-$ n # (skip, skip, +25G, 8304 <Linux x86-64 root (/)>)
-$ n # (skip, skip, skip, 8302 <Linux /home>)
-$ p (just to check)
-$ w (write)
-```
-
-NEW
-
-https://www.saminiir.com/installing-arch-linux-on-dell-xps-15/
-
+2. Partition the drive with `fdisk`. You could also use `parted` or `gdisk`.
 ```bash
 $ fdisk /dev/nvme0n1
 $ (fdisk) g
@@ -90,13 +104,10 @@ $ (fdisk) t (1, 1)
 $ (fdisk) n (skip, skip, skip)
 ```
 
-I wanted to go this route, but my system would not allow Legacy boot mode (i.e., BIOS/MBR)
+### Formatting the Partitions
 
-https://gist.github.com/chrisleekr/a23e93edc3b0795d8d95f9c70d93eedd
-
-### Formatting the partitions
-
-https://www.saminiir.com/installing-arch-linux-on-dell-xps-15/
+Resource(s):
+  +  https://www.saminiir.com/installing-arch-linux-on-dell-xps-15/
 
 ```bash
 # Should show "esp" in Flags:
@@ -109,18 +120,21 @@ $ mkfs.fat -F32 -nESP /dev/nvme0n1p1
 $ mkfs.ext4 /dev/nvme0n1p2
 ```
 
-### Setup Encryption
+### Encrypt the Drive
 
-https://gist.github.com/chrisleekr/a23e93edc3b0795d8d95f9c70d93eedd
+Resource(s):
+  + https://gist.github.com/chrisleekr/a23e93edc3b0795d8d95f9c70d93eedd
 
 ```bash
-# cryptsetup -c aes-xts-plain64 -y --use-random luksFormat /dev/nvme0n1p2
-# cryptsetup luksOpen /dev/nvme0n1p2 luks
+$ cryptsetup -c aes-xts-plain64 -y --use-random luksFormat /dev/nvme0n1p2
+$ cryptsetup luksOpen /dev/nvme0n1p2 luks
 ```
 
-### LVM Partitions
+### Logical Volume Manager (LVM) Partitions
 
-https://gist.github.com/chrisleekr/a23e93edc3b0795d8d95f9c70d93eedd
+Resource(s):
+  + https://gist.github.com/chrisleekr/a23e93edc3b0795d8d95f9c70d93eedd
+  + https://wiki.archlinux.org/index.php/LVM
 
 ```bash
 $ pvcreate /dev/mapper/luks
@@ -132,8 +146,9 @@ $ lvcreate -l 100%FREE vg0 -n home
 
 ### Format Partitions
 
-https://gist.github.com/chrisleekr/a23e93edc3b0795d8d95f9c70d93eedd
-https://www.saminiir.com/installing-arch-linux-on-dell-xps-15/
+Resource(s):
+  + https://gist.github.com/chrisleekr/a23e93edc3b0795d8d95f9c70d93eedd
+  + https://www.saminiir.com/installing-arch-linux-on-dell-xps-15/
 
 ```bash
 $ mkfs.ext4 /dev/mapper/vg0-root
@@ -141,9 +156,10 @@ $ mkfs.ext4 /dev/mapper/vg0-home
 $ mkswap /dev/mapper/vg0-swap
 ```
 
-### Mount the filesystem
+### Mount the Filesystem
 
-https://gist.github.com/chrisleekr/a23e93edc3b0795d8d95f9c70d93eedd
+Resource(s)
+  + https://gist.github.com/chrisleekr/a23e93edc3b0795d8d95f9c70d93eedd
 
 ```bash
 $ mount /dev/mapper/vg0-root /mnt
@@ -153,148 +169,193 @@ $ mount /dev/mapper/vg0-home /mnt/home
 $ swapon /dev/mapper/vg0-swap
 ```
 
-### Install base packages that go with you to the root system
+### Install Packages that Go with You to the Root System
+
+Resource(s)
+  + https://gist.github.com/chrisleekr/a23e93edc3b0795d8d95f9c70d93eedd
+
+**CRITICAL:** Install any packages that will help you with setup (e.g., connecting
+to WiFi). You could minimally install `base` and `base-devel`.
 
 ```bash
-$ pacstrap -i /mnt base base-devel linux lvm2 linux-firmware nano iw dialog dhcpcd wpa_supplicant git vim openssh intel-ucode
+$ pacstrap -i /mnt \
+  base \
+  base-devel \
+  linux \
+  lvm2 \
+  linux-firmware \
+  nano \
+  iw \
+  dialog \
+  dhcpcd \
+  wpa_supplicant \
+  git \
+  vim \
+  openssh \
+  intel-ucode
 ```
 
 ### Generate `fstab`
 
-https://gist.github.com/chrisleekr/a23e93edc3b0795d8d95f9c70d93eedd
+Resource(s):
+  + https://gist.github.com/chrisleekr/a23e93edc3b0795d8d95f9c70d93eedd
 
 ```bash
 $ genfstab -U /mnt >> /mnt/etc/fstab
 ```
 
-### Enter the new system
+### Enter the Root System
 
-https://gist.github.com/chrisleekr/a23e93edc3b0795d8d95f9c70d93eedd
+Resource(s):
+  + https://gist.github.com/chrisleekr/a23e93edc3b0795d8d95f9c70d93eedd
 
 ```bash
 $ arch-chroot /mnt /bin/bash
 ```
 
-1. set timezone
+1. Set timezone
 ```bash
 # ln -s /usr/share/zoneinfo/America/US /etc/localtime
 ```
 
-2. set locale
+2. Set locale
 
 ```bash
-$ vim /etc/locale.gen (uncomment en_US.UTF-8 UTF-8)
+$ vim /etc/locale.gen # (uncomment en_US.UTF-8 UTF-8)
 $ locale-gen
 $ echo LANG=en_US.UTF-8 > /etc/locale.conf
 $ export LANG=en_US.UTF-8
 ```
 
-3. set hardware clock
+3. Set hardware clock
 
 ```bash
 $ hwclock --systohc --utc
 ```
 
-4. set hostname
+4. Set hostname
 
-https://wiki.archlinux.org/index.php/installation_guide
+Resource(s):
+  + https://wiki.archlinux.org/index.php/installation_guide
 
 ```bash
-$ echo mccurdyc >/etc/hostname
+$ echo dell-arch > /etc/hostname
 ```
 
 `/etc/hosts`
 ```txt
 127.0.0.1	localhost
 ::1		localhost
-127.0.1.1	mccurdyc.localdomain	mccurdyc
+127.0.1.1	dell-arch.localdomain	dell-arch
 ```
 
-5. create a user
+5. Create a user
 
-https://gist.github.com/chrisleekr/a23e93edc3b0795d8d95f9c70d93eedd
+Resource(s):
+  + https://gist.github.com/chrisleekr/a23e93edc3b0795d8d95f9c70d93eedd
+  + https://wiki.archlinux.org/index.php/users_and_groups
 
 ```bash
-$ useradd -m -g users -G wheel -s /bin/bash mccurdyc # the shells must be listed in $(cat /etc/shells) see - https://wiki.archlinux.org/index.php/users_and_groups
+$ useradd -m -g users -G wheel -s /bin/bash mccurdyc # the shell must be listed in $(cat /etc/shells)
 $ passwd mccurdyc
 $ visudo # uncomment %wheel ALL=(ALL) ALL
 ```
 
-6. Configure mkinitcpio with modules needed for the initrd image
+6. Configure `mkinitcpio` with modules needed for the `initrd` image
 
 ```bash
-$ vim /etc/mkinitcpio.conf
-# Add 'encrypt' and 'lvm2' to HOOKS before 'filesystems'
+$ vim /etc/mkinitcpio.conf # Add 'encrypt' and 'lvm2' to HOOKS before 'filesystems'
 $ mkinitcpio -p linux
 ```
 
-7. setup the `systemd-boot` boot manager
+7. Setup the `systemd-boot` boot manager
 
-`grub` isn't working on this laptop
+**CRITICAL:** `grub` didn't work
 
-https://www.cio.com/article/3098030/how-to-install-arch-linux-on-dell-xps-13-2016-in-7-steps.html
-https://www.saminiir.com/installing-arch-linux-on-dell-xps-15/
+Resource(s):
+  + https://www.cio.com/article/3098030/how-to-install-arch-linux-on-dell-xps-13-2016-in-7-steps.html
+  + https://www.saminiir.com/installing-arch-linux-on-dell-xps-15/
 
 ```bash
 # Make sure your ESP partition (described earlier) is mounted at /boot
 $ mount -l | grep boot
-
 $ bootctl --path=/boot install
 
 # Get the UUID of your root partition
-$ blkid -s UUID -o value /dev/nvme0n1p2
-
-# create a `/boot/loader/entries/arch-encrypted-lvm.conf` file
-$ vim /boot/loader/entries/arch-encrypted-lvm.conf
+$ touch /boot/loader/entries/arch-encrypted-lvm.conf
+$ blkid -s UUID -o value /dev/nvme0n1p2 >> /boot/loader/entries/arch-encrypted-lvm.conf
 ```
 
-With the following
+Add the following to `/boot/loader/entries/arch-encrypted-lvm.conf`
 
 ```
 title Arch Linux Encrypted LVM
 linux /vmlinuz-linux
 initrd /intel-ucode.img
 initrd /initramfs-linux.img
-options cryptdevice=UUID=<UUID>:MyVol root=/dev/mapper/MyVol-root quiet rw
+options cryptdevice=UUID=<UUID>:vg0 root=/dev/mapper/vg0-root quiet rw
 ```
 
 ### Reboot
 
-1. Leave chroot with `exit`
+1. Leave the root system with `exit`
 2. `reboot`
 
-## After rebooting
+---
 
-https://gist.github.com/chrisleekr/a23e93edc3b0795d8d95f9c70d93eedd
+## After Rebooting
+
+Resource(s):
+  + https://gist.github.com/chrisleekr/a23e93edc3b0795d8d95f9c70d93eedd
+  + https://unix.stackexchange.com/questions/279545/failed-to-open-config-file-dev-fd-63-error-no-such-file-or-directory-for-wp
+
+Make sure some things start on startup (and start them now).
 
 ```bash
 $ systemctl enable dhcpcd.service
 $ systemctl start dhcpcd.service
-```
-
-### Reconnect to the wifi
-
-```bash
-$ iw dev # the device name probably changed
-$ sudo ip link set wlp2s0 up
-
-# https://unix.stackexchange.com/questions/279545/failed-to-open-config-file-dev-fd-63-error-no-such-file-or-directory-for-wp
-$ sudo su -c 'wpa_supplicant -i wlp2s0 -c <(wpa_passphrase "your_network_ssid" "password")'
-```
-
-### Install some necessary packages
-
-https://gist.github.com/chrisleekr/a23e93edc3b0795d8d95f9c70d93eedd
-
-```bash
-$ pacman -S networkmanager iw zsh wpa_supplicant dialog wireless_tools base-devel xclip rofi alacritty netctl
-$ systemctl enable NetworkManager.service
-$ systemctl start NetworkManager.service
 $ systemctl enable wpa_supplicant.service
 $ systemctl start wpa_supplicant.service
 ```
 
-### Clone some helpful git repos
+### Reconnect to the WiFi
+
+```bash
+$ iw dev # the device name probably changed
+$ sudo ip link set wlp2s0 up
+$ sudo su -c 'wpa_supplicant -i wlp2s0 -c <(wpa_passphrase "your_network_ssid" "password")'
+```
+
+### Install Necessary and Helpful Packages
+
+Resource(s):
+  + https://gist.github.com/chrisleekr/a23e93edc3b0795d8d95f9c70d93eedd
+
+```bash
+$ pacman -S networkmanager \
+  iw \
+  zsh \
+  wpa_supplicant \
+  dialog \
+  wireless_tools \
+  base-devel \
+  xclip \
+  rofi \
+  alacritty \
+  netctl \
+  fzf \
+  tree \
+  xdg-utils
+```
+
+Make sure some more things start on startup (and start them now).
+
+```bash
+$ systemctl enable NetworkManager.service
+$ systemctl start NetworkManager.service
+```
+
+### Clone Helpful `git` Repositories
 
 Set `zsh` as your default shell because the tools in `mccurdyc/dotfiles` expect this.
 
@@ -302,43 +363,100 @@ Set `zsh` as your default shell because the tools in `mccurdyc/dotfiles` expect 
 $ sudo chsh -s /bin/zsh mccurdyc
 ```
 
-Install `yay` (my favorite AUR package manager, written in Go!)
-
+**CRITICAL:** This step creates the necessary symlinks and package installations
 ```bash
 $ git clone --recursive https://github.com/mccurdyc/dotfiles.git # ssh isn't configured yet
 $ cd dotfiles && git submodule update --init
-$ make run
-$ mkdir /home/mccurdyc/tools
-$ git clone https://aur.archlinux.org/yay.git /home/mccurdyc/tools/yay
-$ cd /home/mccurdyc/tools/yay
+$ make run # does a bunch of necessary symlinking
+$ export TOOLS_DIR=$HOME/tools
+$ mkdir $TOOLS_DIR
+```
+
+Install [`yay`](https://github.com/Jguer/yay)
+  + My favorite AUR package manager
+  + Written in Go (I'd love to contribute)!
+  + Actively maintained
+
+```bash
+$ git clone https://aur.archlinux.org/yay.git $TOOLS_DIR/yay
+$ cd $TOOLS_DIR/yay
 $ makepkg -si
 ```
 
-### Install i3 Window Manager
+### Install Video Drivers
+
+Resource(s):
+  + https://wiki.archlinux.org/index.php/Intel_graphics
+
+**CRITICAL:** `xf86-video-intel` caused video to be super super laggy in the next step!!!
 
 ```bash
-$ sudo pacman -S xorg xorg-xclock xorg-twm xorg-xinit xterm i3 tmux adobe-source-code-pro-fonts
-$ echo "exec i3" >> ~/.xinitrc
+$ pacman -S vulkan-intel vulkan-mesa-layer
+```
+
+### Install i3 Window Manager (and some other helpful packages)
+
+```bash
+$ pacman -S \
+  xorg \
+  xorg-xclock \
+  xorg-twm \
+  xorg-xinit \
+  xterm \
+  i3 \
+  tmux \
+  adobe-source-code-pro-fonts
+```
+
+```bash
+$ yay -S \
+  brave-bin \
+  ttf-font-awesome # used by the i3status bar
+```
+
+Important Keystrokes
+
+**CRITICAL:** Remember these for when you are in the X window system.
++ The Windows key is set as the i3 modifier key (Mod)
+    + Mod+Shift+Backspace - locks the screen
+    + Mod+<ENTER> - opens a terminal
+    + Mod+Backslash (i.e., `\`) - opens a browser
+
+To see all i3 keystrokes, check out [`~/.config/i3/config`](https://github.com/mccurdyc/dotfiles/blob/master/.config/i3/config).
+
+```bash
 $ startx
 ```
 
-### Install Video drivers
-
-https://wiki.archlinux.org/index.php/Intel_graphics
+If your video is super laggy or only updates on mouse movement, the `xf86-video-intel`
+package is probably still installed. See the [Install Video Drivers section](#install-video-drivers).
 
 ```bash
-$ pacman -S vulkan-intel vulkan-mesa-layer # xf86-video-intel caused it to be super super laggy!!!
+$ pacman -R xf86-video-intel
 ```
 
-Make sure that `xf86-video-intel` is not installed. If your video is super laggy, it probably is installed.
+### Install Drivers
 
-### Install drivers (should fix ability to change screen brightness)
-
-https://www.archlinux.org/groups/x86_64/xorg-drivers/
+Resource(s):
+  + https://www.archlinux.org/groups/x86_64/xorg-drivers/
 
 ```bash
 $ pacman -S xorg-drivers
 ```
+
+---
+
+## After Device is Setup
+
+Go ahead and reboot now with `sudo reboot -h now`.
+
+### Adjusting Font Sizes
+
+1. To adjust them in [GTK applications](https://wiki.archlinux.org/index.php/GTK)
+(e.g., Chrome, Brave Browser, etc.), edit the font size in `~/.config/gtk-3.0/settings.ini`.
+
+2. To adjust them globally and the actual browser content, update the font size in `~/.Xresources`,
+but **more importantly, the `Xft.dpi` setting**.
 
 ### Setup ssh for `git clone`
 
@@ -353,33 +471,50 @@ $ xclip -sel clip < ~/.ssh/id_rsa.pub
 
 2. [Add the SSH key to your GitHub account](https://help.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account)
 
-### Install Display Manager (or login manager)
+### Other Necessary Installs
 
-https://wiki.archlinux.org/index.php/Display_manager
-
-> A display manager, or login manager, is typically a graphical user interface that is displayed at the end of the boot process in place of the default shell.
-
-https://wiki.archlinux.org/index.php/CDM
+Install `vim-plug` Plugin Manager for NeoVim
 
 ```bash
-$ yay -S cdm-git
+$ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+$ nvim +PlugInstall +qall > /dev/null
 ```
 
-### Other installs
+To list packages on another Arch machine, run the following:
+
+Official packages:
+```
+pacman -Qqne
+```
+
+AUR packages:
+```
+pacman -Qqme
+```
+
+### Optional Installs
 
 ```bash
-$ yay -S brave-bin neovim ttf-font-awesome
+$ pacman -S \
+  docker
+
+$ yay -S \
+  neovim \    # a "better" Vim editor
+  hugo \      # static site generate written in Go
+  python-grip # GitHub-flavored markdown previewer
 ```
 
-```bash
-```
+---
 
-To list AUR packages on another machine, run `pacman -Qm`
+## Other Notes
 
-### Fixing Font Sizes
+### Chrome Extensions
 
-To fix them in GTK applications
+I wanted to also be able to install Chrome Extensions via the command line, but
+it appears that this is not possible according to [this StackOverflow post](https://stackoverflow.com/questions/16800696/how-install-crx-chrome-extension-via-command-line).
+The Chrome Extensions that I use are as follows:
 
-edit the font size in `~/.config/gtk-3.0/settings.ini`
-
-To fix them globally and the actual website content, update the font size in ~/.Xresources`
++ [Vimium](https://chrome.google.com/webstore/detail/vimium/dbepggeogbaibhgnhhndojpepiihcmeb?hl=en)
++ [1 Password X](https://chrome.google.com/webstore/detail/1password-x-%E2%80%93-password-ma/aeblfdkhhhdcdjpifhhbdiojplfjncoa?hl=en)
++ [Notion Web Clipper](https://chrome.google.com/webstore/detail/notion-web-clipper/knheggckgoiihginacbkhaalnibhilkk/related?hl=en)
