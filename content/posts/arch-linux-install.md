@@ -60,7 +60,6 @@ Resource(s):
   3. Change the SATA operating mode from `RAID` to `AHCI`
     Your SSD should show when you boot arch with `lsblk -f`
 
-
 Warmup complete. Level 1 unlocked.
 
 ---
@@ -351,6 +350,7 @@ $ pacman -S
   netctl \
   fzf \
   tree \
+  scrot \
   xdg-utils \
   bluez \
   bluez-utils \
@@ -375,7 +375,7 @@ Set `zsh` as your default shell because the tools in `mccurdyc/dotfiles` expect 
 $ sudo chsh -s /bin/zsh mccurdyc
 ```
 
-**CRITICAL:** This step creates the necessary symlinks and package installations
+**CRITICAL:** This step creates the necessary symlinks and installs the following packages.
 ```bash
 $ git clone --recursive https://github.com/mccurdyc/dotfiles.git # ssh isn't configured yet
 $ cd dotfiles && git submodule update --init
@@ -388,6 +388,7 @@ Install [`yay`](https://github.com/Jguer/yay)
   + My favorite AUR package manager
   + Written in Go (I'd love to contribute)!
   + Actively maintained
+  + Similar API to `pacman` (i.e., `-S` to install, `-R` to remove)
 
 ```bash
 $ git clone https://aur.archlinux.org/yay.git $TOOLS_DIR/yay
@@ -433,6 +434,7 @@ $ yay -S \
     + Mod+Shift+r - reloads the i3 config
     + Mod+<ENTER> - opens a terminal
     + Mod+Backslash (i.e., `\`) - opens a browser
+    + Mod+<TAB> - brings up an application fuzzy searcher
 
 To see all i3 keystrokes, check out [`~/.config/i3/config`](https://github.com/mccurdyc/dotfiles/blob/master/.config/i3/config).
 
@@ -527,14 +529,32 @@ $ yay -S \
 
 ### Screen Brightness
 
-https://prdpx7.github.io/linux/stuff-i-learned-while-fixing-brightness-on-ubuntu/
++ https://prdpx7.github.io/linux/stuff-i-learned-while-fixing-brightness-on-ubuntu/
++ https://superuser.com/a/462828
 + [/etc/rc.local](https://github.com/mccurdyc/dotfiles/tree/master/etc/rc.local)
++ [/etc/systemd/system/rc-local.service](https://github.com/mccurdyc/dotfiles/tree/master/etc/systemd/system/rc-local.service)
+
+```bash
+$ sudo systemctl enable rc-local.service
+$ sudo systemctl start rc-local.service
+```
 
 ### Bluetooth Audio
 
 + https://wiki.archlinux.org/index.php/Bluetooth
 If you wanted a bluetooth GUI, you could install one of the suggested ones here.
 + https://wiki.archlinux.org/index.php/Bluetooth_headset
++ https://wiki.archlinux.org/index.php/PulseAudio
+
+```bash
+$ bluetoothctl
+$ (bluetoothctl) power on
+$ (bluetoothctl) agent on
+$ (bluetoothctl) scan on
+$ (bluetoothctl) devices
+$ (bluetoothctl) pair <MAC>
+$ (bluetoothctl) connect <MAC>
+```
 
 ### Chrome Extensions
 
@@ -545,3 +565,7 @@ The Chrome Extensions that I use are as follows:
 + [Vimium](https://chrome.google.com/webstore/detail/vimium/dbepggeogbaibhgnhhndojpepiihcmeb?hl=en)
 + [1 Password X](https://chrome.google.com/webstore/detail/1password-x-%E2%80%93-password-ma/aeblfdkhhhdcdjpifhhbdiojplfjncoa?hl=en)
 + [Notion Web Clipper](https://chrome.google.com/webstore/detail/notion-web-clipper/knheggckgoiihginacbkhaalnibhilkk/related?hl=en)
+
+### Additional Resources
+
++ [i3status config](http://kumarcode.com/Colorful-i3/)
