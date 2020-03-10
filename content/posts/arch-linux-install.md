@@ -1,5 +1,5 @@
 ---
-title: "Arch Linux Install and Configuration on Dell XPS 13 7390 (2019)"
+title: "My Arch Linux Install and Configuration on Dell XPS 13 7390 (2019)"
 author: "Colton J. McCurdy"
 type: ""
 date: 2020-03-05
@@ -474,11 +474,43 @@ Go ahead and reboot now with `sudo reboot -h now`.
 
 ### Adjusting Font Sizes
 
+Resource(s):
+  + https://wiki.archlinux.org/index.php/HiDPI
+
 1. To adjust them in [GTK applications](https://wiki.archlinux.org/index.php/GTK)
 (e.g., Chrome, Brave Browser, etc.), edit the font size in `~/.config/gtk-3.0/settings.ini`.
 
 2. To adjust them globally and the actual browser content, update the font size in `~/.Xresources`,
 but **more importantly, the `Xft.dpi` setting**.
+
+Examples:
+
+_Note: either export `QT_SCALE_FACTOR=...` or alias the commands to include the
+application-specific scale factor._
+
+```bash
+$ QT_SCALE_FACTOR=2 zoom
+```
+
+Or, more likely, you will have to update the command that gets run by `/usr/local/share/application/<app-name>.desktop`.
+To add user overrides, do the following:
+
+```bash
+$ export XDG_DATA_HOME="$HOME/.local/share"
+$ cp /usr/local/share/applications/<application>.desktop $XDG_DATA_HOME
+```
+
+In order to prepend an environment variable --- like above --- you will have
+to do the following, as noted in the "Modify environment variables" section in
+[this Arch Wiki page](https://wiki.archlinux.org/index.php/Desktop_entries).
+
+```bash
+...
+Exec=env QT_SCALE_FACTOR=2 /usr/bin/zoom %U
+...
+```
+
+To read more about the XDG Base Directory, check out [this post on the Arch Wiki](https://wiki.archlinux.org/index.php/XDG_Base_Directory).
 
 ### Setup ssh for `git clone`
 
@@ -498,7 +530,7 @@ $ xclip -sel clip < ~/.ssh/id_rsa.pub
 Install `vim-plug` Plugin Manager for NeoVim
 
 ```bash
-$ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+$ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 $ nvim +PlugInstall +UpdateRemotePlugins +qall > /dev/null
 ```
@@ -548,7 +580,6 @@ $ yay -S \
 
 ```bash
 $ xdg-mime query default inode/directory
-$ xdg-mime query default application/x-pkcs12
 ```
 
 ### Screen Brightness
