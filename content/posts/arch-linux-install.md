@@ -9,7 +9,7 @@ tags: ["arch", "2020", "linux"]
 
 ## Background
 
-This post is rather selfish in nature and often not describe what each command does.
+This post is rather selfish in nature and often does not describe what each command does.
 It is not meant to be a post that "just works" for anyone, but rather so that others
 can see how I installed Arch Linux on my machine (i.e., I use my device names, etc.).
 Also, I am far from an Arch or Linux expert, most of what follows has been taken
@@ -45,7 +45,9 @@ Download the `*.iso` file from a mirror listed on the [Arch Downloads page (HTTP
 Resource(s):
   + http://valleycat.org/linux/arch-usb.html?i=1
 
-`dd bs=4M if=$HOME/Downloads/archlinux.*.iso of=/dev/sda status=progress && sync`
+```bash
+$ dd bs=4M if=$HOME/Downloads/archlinux.*.iso of=/dev/sda status=progress && sync
+```
 
 ### Plug the USB into the Target Machine
 
@@ -70,17 +72,19 @@ Warmup complete. Level 1 unlocked.
 
 1. Make sure that the wireless drivers in the ISO were included and are supported
 
+2. Connect to the WiFi
 ```bash
-lspci -k | grep -A3 'Network controller'
+$ lspci -k | grep -A3 'Network controller'
+$ iw dev
+$ ip link set wlan0 up
+$ iw dev wlan0 scan | grep 'SSID:'
+$ wpa_supplicant -i wlan0 -c <(wpa_passphrase 'your_network_ssid' 'password')
 ```
 
-2. `iw dev`
-3. `ip link set wlan0 up`
-4. `iw dev wlan0 scan | grep 'SSID:'`
-5. `wpa_supplicant -i wlan0 -c <(wpa_passphrase 'your_network_ssid' 'password')`
 > Once a connection is established, fork the process to the background by pressing `[CTRL]+z` and running `bg`.
-6. lease an IP address with `dhcpcd wlan0`
-7. Sync system time with `timedatectl set-ntp true`
+
+3. lease an IP address with `dhcpcd wlan0`
+4. Sync system time with `timedatectl set-ntp true`
 
 ### Partitioning the Drive
 
@@ -176,8 +180,8 @@ $ swapon /dev/mapper/vg0-swap
 Resource(s)
   + https://gist.github.com/chrisleekr/a23e93edc3b0795d8d95f9c70d93eedd
 
-**CRITICAL:** Install any packages that will help you with setup (e.g., connecting
-to WiFi). You could minimally install `base` and `base-devel`.
+**CRITICAL:** Install any packages that will help you with setup (e.g., packages
+for connecting to WiFi). You could minimally install `base` and `base-devel`.
 
 ```bash
 $ pacstrap -i /mnt \
@@ -247,7 +251,7 @@ $ echo dell-arch > /etc/hostname
 `/etc/hosts`
 ```txt
 127.0.0.1	localhost
-::1		localhost
+::1        localhost
 127.0.1.1	dell-arch.localdomain	dell-arch
 ```
 
@@ -375,7 +379,8 @@ Set `zsh` as your default shell because the tools in `mccurdyc/dotfiles` expect 
 $ sudo chsh -s /bin/zsh mccurdyc
 ```
 
-**CRITICAL:** This step creates the necessary symlinks and installs the following packages.
+**CRITICAL:** This step creates the necessary symlinks and does the installations
+and configuring described below.
 ```bash
 $ git clone --recursive https://github.com/mccurdyc/dotfiles.git # ssh isn't configured yet
 $ cd dotfiles && git submodule update --init
@@ -432,9 +437,9 @@ $ yay -S \
 + The Windows key is set as the i3 modifier key (Mod)
     + Mod+Shift+Backspace - locks the screen (just start typing to login)
     + Mod+Shift+r - reloads the i3 config
-    + Mod+<ENTER> - opens a terminal
+    + Mod+`<ENTER>` - opens a terminal
     + Mod+Backslash (i.e., `\`) - opens a browser
-    + Mod+<TAB> - brings up an application fuzzy searcher
+    + Mod+`<TAB>` - brings up an application fuzzy searcher
 
 To see all i3 keystrokes, check out [`~/.config/i3/config`](https://github.com/mccurdyc/dotfiles/blob/master/.config/i3/config).
 
@@ -495,7 +500,15 @@ Install `vim-plug` Plugin Manager for NeoVim
 ```bash
 $ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-$ nvim +PlugInstall +qall > /dev/null
+$ nvim +PlugInstall +UpdateRemotePlugins +qall > /dev/null
+```
+
+`tmux` plugin manager
+
+```bash
+$ $(HOME)/.tmux/plugins/tpm/scripts/install_plugins.sh
+$ tmux source $(HOME)/.tmux.conf
+$ sudo npm i -g bash-language-server
 ```
 
 To list packages on another Arch machine, run the following:
@@ -515,6 +528,7 @@ pacman -Qqme
 ```bash
 $ pacman -S \
   docker \
+  wget \
   htop
 
 $ yay -S \
@@ -527,12 +541,22 @@ $ yay -S \
 
 ## Other Notes
 
+### Setting Default Applications
+
++ https://wiki.archlinux.org/index.php/XDG_MIME_Applications
++ https://www.linuxquestions.org/questions/slackware-14/wrong-application-for-opening-directories-with-xdg-open-4175619886/
+
+```bash
+$ xdg-mime query default inode/directory
+$ xdg-mime query default application/x-pkcs12
+```
+
 ### Screen Brightness
 
 + https://prdpx7.github.io/linux/stuff-i-learned-while-fixing-brightness-on-ubuntu/
 + https://superuser.com/a/462828
-+ [/etc/rc.local](https://github.com/mccurdyc/dotfiles/tree/master/etc/rc.local)
-+ [/etc/systemd/system/rc-local.service](https://github.com/mccurdyc/dotfiles/tree/master/etc/systemd/system/rc-local.service)
++ [my `/etc/rc.local`](https://github.com/mccurdyc/dotfiles/tree/master/etc/rc.local)
++ [my `/etc/systemd/system/rc-local.service`](https://github.com/mccurdyc/dotfiles/tree/master/etc/systemd/system/rc-local.service)
 
 ```bash
 $ sudo systemctl enable rc-local.service
