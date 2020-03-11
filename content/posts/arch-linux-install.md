@@ -221,7 +221,7 @@ $ arch-chroot /mnt /bin/bash
 
 1. Set timezone
 ```bash
-# ln -s /usr/share/zoneinfo/America/US /etc/localtime
+# ln -s /usr/share/zoneinfo/America/New_York /etc/localtime
 ```
 
 2. Set locale
@@ -561,7 +561,9 @@ pacman -Qqme
 $ pacman -S \
   docker \
   wget \
-  htop
+  imagemagick \
+  htop \
+  pavucontrol
 
 $ yay -S \
   neovim \    # a "better" Vim editor
@@ -584,15 +586,38 @@ $ xdg-mime query default inode/directory
 
 ### Screen Brightness
 
+Resource(s):
 + https://prdpx7.github.io/linux/stuff-i-learned-while-fixing-brightness-on-ubuntu/
 + https://superuser.com/a/462828
-+ [my `/etc/rc.local`](https://github.com/mccurdyc/dotfiles/tree/master/etc/rc.local)
-+ [my `/etc/systemd/system/rc-local.service`](https://github.com/mccurdyc/dotfiles/tree/master/etc/systemd/system/rc-local.service)
++ https://unix.stackexchange.com/questions/471824/what-is-the-correct-substitute-for-rc-local-in-systemd-instead-of-re-creating-rc
++ https://www.linuxbabe.com/linux-server/how-to-enable-etcrc-local-with-systemd
++ digitalocean.com/community/tutorials/understanding-systemd-units-and-unit-files
++ https://bbs.archlinux.org/viewtopic.php?id=86815
++ https://wiki.archlinux.org/index.php/kernel_parameters
+
+This one ultimately solved it for me
++ **https://wiki.archlinux.org/index.php/backlight**
+>  If you find that changing the `acpi_video0` backlight does not actually change the brightness, you may need to use `acpi_backlight=none`.
 
 ```bash
-$ sudo systemctl enable rc-local.service
-$ sudo systemctl start rc-local.service
+$ ls /sys/class/backlight/
+intel_backlight
 ```
+
+Updated `/boot/loader/entries/arch-encrypted-lvm.conf` from above to include `acpi_backlight=none` in the `options`.
+
+```
+...
+options ... acpi_backlight=none quiet rw
+```
+
+### Content Adaptive Brightness Control
+
+Resource(s):
++ https://wiki.archlinux.org/index.php/Dell_XPS_13_(9360)#Content_Adaptive_Brightness_Control
+
+Since I am on the Dell XPS 13 (9370), disabling Content Adaptive Brightness was
+as easy as disabling it in the BIOS menu, under the Video settings.
 
 ### Bluetooth Audio
 
