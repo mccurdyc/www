@@ -83,7 +83,7 @@ $ wpa_supplicant -i wlan0 -c <(wpa_passphrase 'your_network_ssid' 'password')
 
 > Once a connection is established, fork the process to the background by pressing `[CTRL]+z` and running `bg`.
 
-3. lease an IP address with `dhcpcd wlan0`
+3. Lease an IP address with `dhcpcd wlan0`
 4. Sync system time with `timedatectl set-ntp true`
 
 ### Partitioning the Drive
@@ -604,7 +604,7 @@ $ ls /sys/class/backlight/
 intel_backlight
 ```
 
-Updated `/boot/loader/entries/arch-encrypted-lvm.conf` from above to include `acpi_backlight=none` in the `options`.
+Updated `/boot/loader/entries/arch-encrypted-lvm.conf` from [above](#enter-the-root-system) to include `acpi_backlight=none` in the `options`.
 
 ```
 ...
@@ -616,7 +616,7 @@ options ... acpi_backlight=none quiet rw
 Resource(s):
 + https://wiki.archlinux.org/index.php/Dell_XPS_13_(9360)#Content_Adaptive_Brightness_Control
 
-Since I am on the Dell XPS 13 (9370), disabling Content Adaptive Brightness was
+Since I am on the Dell XPS 13 (7390), disabling Content Adaptive Brightness was
 as easy as disabling it in the BIOS menu, under the Video settings.
 
 ### Bluetooth Audio
