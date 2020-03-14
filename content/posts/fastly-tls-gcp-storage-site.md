@@ -148,7 +148,7 @@ Upon creating a project in the GCP console, Google provides you with a unique, i
 project ID. The project ID for my project, namely `mccurdyc-dot-dev`, is `daring-octane-268913`.
 
 ```bash
-export TF_VAR_gcp_project_id="daring-octane-268913"
+export TF_VAR_gcp_project_id="dev-mccurdyc-website"
 ```
 
 1. Write the rough terraform for creating a GCP project
@@ -168,8 +168,12 @@ resource "google_project" "website" {
 ```
 
 ```bash
-$ terraform import google_project.website $TF_VAR_gcp_project_id
-$ terraform import google_service_account.create_access_service_account projects/$TF_VAR_gcp_project_id/serviceAccounts/create-access@$TF_VAR_gcp_project_id.iam.gserviceaccount.com
+$ terraform import module.google-compute-platform.google_project.default $TF_VAR_gcp_project_id
+```
+
+```bash
+$ gcloud dns managed-zones list # enable DNS
+$ gcloud compute zones list # enable compute
 ```
 
 ### Create a "Service" on Fastly
