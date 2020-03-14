@@ -566,9 +566,12 @@ $ pacman -S \
   pavucontrol
 
 $ yay -S \
-  neovim \    # a "better" Vim editor
-  hugo \      # static site generate written in Go
-  python-grip # GitHub-flavored markdown previewer
+  neovim \          # a "better" Vim editor
+  hugo \            # static site generate written in Go
+  python-grip \     # GitHub-flavored markdown previewer
+  pyhton-pip \
+  terraform \
+  google-cloud-sdk
 ```
 
 ---
