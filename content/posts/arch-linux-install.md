@@ -587,6 +587,23 @@ $ yay -S \
 $ xdg-mime query default inode/directory
 ```
 
+### Fixing Zoom SSO
+
+```toml
+$ cat $HOME/.config/zoomus.conf
+...
+embeddedBrowserForSSOLogin=false
+...
+```
+
+Then, the SSO link worked and I got a valid token, but the redirect back to open Zoom
+via the `zoommtg` protocol didn't work. I checked my `mimeapps.list` and everything
+looked fine, so I just tried `xdg-open`ing via the shell and everything worked!
+
+```bash
+$ xdg-open zoommtg://[blah].zoom.us/sso?token=[blah]
+```
+
 ### Screen Brightness
 
 Resource(s):

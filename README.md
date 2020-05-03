@@ -9,6 +9,12 @@ $ make help
 $ make serve
 ```
 
+## Deploying
+
+```bash
+FASTLY_SERVICE_ID=foo FASTLY_API_KEY=bar bash -c 'make deploy'
+```
+
 ## Bugs or Praise
 
 If you find these files useful or find a bug, please let me know. I'm
