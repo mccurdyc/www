@@ -9,10 +9,20 @@ $ make help
 $ make serve
 ```
 
+## Creating a New Static Asset
+
+New static assets can be generated with the `hugo new` command and by specifying
+the archetype. To read more, check out [these docs](https://gohugo.io/content-management/archetypes/#what-are-archetypes).
+
+```bash
+$ hugo new books/foo-bar-baz.md
+$ hugo new posts/foo-bar-baz.md
+```
+
 ## Deploying
 
 ```bash
-FASTLY_SERVICE_ID=foo FASTLY_API_KEY=bar bash -c 'make deploy'
+$ FASTLY_SERVICE_ID=foo FASTLY_API_KEY=bar bash -c 'make deploy'
 ```
 
 ## Bugs or Praise
