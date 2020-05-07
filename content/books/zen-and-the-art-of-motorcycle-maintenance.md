@@ -3,7 +3,7 @@ title: "Zen and the Art of Motorcycle Maintenance"
 author: "Colton J. McCurdy"
 date: 2020-05-04T06:36:43-04:00
 subtitle: "An Inquiry into Values"
-abstract: "A journey across the country on a motorcycle while diving into the unifying factor between subject and object, namely Quality, and how Quality comes to be from the attitude of the creator.
+description: "A journey across the country on a motorcycle while diving into the unifying factor between subject and object, namely Quality. Quality is not a _thing_. It is an _event_ at which the subject becomes aware of the object. Quality is woven into objects through the attitude of the creator."
 image: ""
 book-tags: ["book", "2020", "values", "quality"]
 books: ["Zen and the Art of Motorcycle Maintenance"]
@@ -12,6 +12,8 @@ amazon: "https://www.amazon.com/Zen-Art-Motorcycle-Maintenance-Inquiry/dp/006058
 thriftbooks: "https://www.thriftbooks.com/w/zen-and-the-art-of-motorcycle-maintenance-an-inquiry-into-values_robert-m-pirsig/247300/#isbn=0688052304&idiq=3570779"
 ---
 
+## Favorite Quotes
+
 > The place to improve the world is first in one's own heart and head and hands,
 and then work outward from there.
 
@@ -19,7 +21,7 @@ and then work outward from there.
 is weakened. You ego isolates you from Quality reality.
 
 > [...] most people stand in sight of the spiritual mountains all their lives and
-never enter them, being content to list to other who have been there and thus avoid
+never enter them, being content to listen to other who have been there and thus avoid
 the hardships. Some travel into the mountains accompanied by experienced guides who
 know the best and least dangerous routes by which they arrive at their destination.
 Still others, inexperienced and untrusting, attempt to make their own routes.
@@ -30,34 +32,40 @@ Still others, inexperienced and untrusting, attempt to make their own routes.
 
 ## Quality
 
-Quality is contagious.
+> Quality is not a _thing_. It is an _event_. [...] It is an event at which the subject
+becomes aware of the object.
+
+Think of how you define Quality or things that you have recently said were of a
+high or low quality recently. Now, think of how someone you know well and if they
+would consider the same object of the same quality as you. With that little exercise,
+is Quality defined objectively or subjectively?
+
+Defining Quality is a main theme of the book. The journey and struggle comes from the narrator
+and a past version of himself, trying to define Quality.
+As he later finds out, once you classically dissect something, the mystery
+and beauty of that thing disappears. Similarly, when something doesn't posses or you remove
+Quality, you are left with "squareness".
+
+> People differ about Quality, not because Quality is different, but because people
+are different in terms of experience.
+
+Think of a really well-designed and colorful website. Maybe _you_
+consider this a "high-Quality" website, but to someone who is colorblind, this
+site may be extremely hard to navigate and therefore, to _them_ it is "low-Quality".
+Chapter 4 in [Software Engineering at Google](https://www.thriftbooks.com/w/software-engineering-at-google-lessons-learned-from-programming-over-time/24297390/#isbn=1492082791&idiq=36931976),
+titled Engineering for Equity, talks about subject Quality in relation to software.
+
+> Quality is what _you_ like.
+
+The "System" defines Quality for us as what _others_ like. But true Quality must
+be discovered by oneself rather than taught or told. However, this does not mean
+that you should build something that only works for you. Quality in its most
+impactful form inspires, eases and influences those who experience it.
 
 > [...] Quality tends to fan out like waves. The Quality job he didn't think anyone was
 going to see is seen, and the person who sees it feels a little better because of it,
 and is likely to pass that feeling on to others.
 
-> Applied science and technology would be drastically changed [by a Quality-less world],
-but pure science, mathematics, philosophy and particularly logic would be unchanged.
-
-The narrator also talks about what he calls "squareness", which is what you get when
-you subtract Quality from something.
-
-Defining Quality is a main theme throughout the book and I still feel like I
-didn't fully grasp it in it's entirety. Much of the journey and struggle in the
-book is around defining Quality. Is it defined objectively or subjectively? Personally,
-I think it is both. Objectively, does it do its job? Subjectively, does it do
-it well, for _you_, for _them_?
-
-For example, think of a really well-designed and colorful website. Maybe _you_
-consider this a "high-Quality" website, but to someone who is colorblind, this
-site may be extremely hard to navigate and therefore, to _them_ it is "low-Quality".
-
-> Quality is what _you_ like.
-
-The "System" teaches us to do what _others_ like.
-
-> Quality is not a _thing_. It is an _event_. [...] It is an event at which the subject
-becomes aware of the object.
 
 > Peace of mind isn't at all superficial [...]. It's the whole thing. That which produces
 it is good maintenance; that which disturbs it is poor maintenance. What we call workability
@@ -67,27 +75,24 @@ you're working you're likely to build your personal problems right into the mach
 
 > The test of the machine is the satisfaction it gives you [...]. If the machine produces
 tranquility it's right. If it disturbs you it is wrong until either the machine or
-you mind [(i.e., your mental model)] is changed.
+your mind [i.e., your mental model] is changed.
 
 The above quote reminds me of a book called [The Design of Everyday Things by  Donald A. Norman](https://www.thriftbooks.com/w/the-design-of-everyday-things_donald-a-norman/246934/?mkwid=2tFK5nbD|dc&pcrid=77584311782996&pkw=the%20design%20of%20everyday%20things&pmt=be&slid=&product=&plc=&pgrid=3093486911&ptaid=kwd-23347852414:loc-190&utm_source=bing&utm_medium=cpc&utm_campaign=Search%20%7C%20Titles%20%7C%20D&utm_term=the%20design%20of%20everyday%20things&utm_content=2tFK5nbD|dc|pcrid|77584311782996|pkw|the%20design%20of%20everyday%20things|pmt|be|product||slid||pgrid|3093486911|ptaid|kwd-23347852414:loc-190|&msclkid=ef9c96096b7619e64228c8b827bd4408#isbn=0385267746&idiq=1852536).
-I haven't read the book in it's entirety, but I remember it talking about things
-that cause blips in our minds, such as a door handle that looks like it should
-be pushed, but the door operates by pulls.
+I haven't read the book in it's entirety, but I remember it talking about objects
+that force us to be conscious, when otherwise, we would be unconscious, such as
+a door handle that looks like it should be pushed, but the door actually operates by pulling.
 
 I know my wife and sister would laugh if they read this because when I'm struggling
 with something because it doesn't operate as I unconsciously think it should, I call
-it a "piece of junk".
+it a "piece of junk" i.e., it is of low Quality.
 
 > Quality is not the _result_ of the collision between subject and object, it is the
 _cause_ of the subject and object.
 
 I interpret this as we only truly notice the Quality of an object when either the
-object does its job extremely well or poorly compared to previous experiences with
-related objects. Otherwise, we do not become consciously aware of the Quality of
-and object. Quality is the unifying force between subject and object.
-
-> People differ about Quality, not because Quality is different, but because people
-are different in terms of experience.
+object does its job extremely well, or poorly, compared to previous experiences with
+related objects. Otherwise, we do not become consciously aware of Quality.
+Therefore, Quality is precisely the unifying force between subject and object.
 
 > Such personal transcendence of conflicts with technology doesn't have to involve
 motorcycles, of course. It can be at a level as simple as sharpening a kitchen knife
@@ -97,20 +102,18 @@ at the high-quality, beautiful way of doing it, both an ability to see what "loo
 and an ability to understand the underlying method to arrive at the "good" are needed.
 Both classic and romantic understandings of Quality must be combined.
 
-### "Fake" Quality
+### Veneer, "fake", Quality
 
-When Quality is taught or forced and not learned or discovered by oneself through trial
-and tribulation, it is unappreciated, "fake" Quality.
+When Quality is taught or forced and not learned or discovered by oneself through trials
+and tribulations, it is un- or under-appreciated, "fake" Quality.
 
 > It is the little, pathetic attempts at Quality that kill.
 
 > [...] there is nothing here but dead neon and cement and brick.
 
-Once you define or teach Quality, it no longer fully exists. To truly exists in full
+Once you define or teach Quality, it no longer fully exists. For one to full To truly exist in full
 form, Quality must be discovered. It is with passion, gumption, persistence and
 the right attitude that help discover true Quality.
-
-### Quality versus reason
 
 > [Our culture has the tendency] to do what is "reasonable" even when it isn't any good.
 
@@ -138,37 +141,34 @@ a situation where they aren't given the answer.
 is roaring, the sheep will be panicked half to death and will call and call until the
 shepherd comes, or comes the wolf.
 
-## Attitude
+## External influences of internal attitude
 
-The "spectator" attitude is when you don't intimately care about the thing or what
-you are doing, you just want to get it done or for it to "just work".
+> The place to improve the world is first in one's own heart and head and hands,
+and then work outward from there.
+
+The "spectator" attitude is when one doesn't intimately care about the object or task,
+but instead is focused on getting it done or getting it to "just work", so that
+one can move on to the next task. The narrator describes this separation between
+what man _is_ and what man _does_.
 
 While the author mostly focuses on internal attitude towards the work that one
 does, I think it is important to mention that the way the work is "prescribed" is
-also important. If what one is asked to do is discussed as important or influential
-work, then one will be more motivated to spend more effort on the task.
-
-The narrator describes a separation between what man _is_ and what man _does_. The
-attitude of rushing through a task shows how much one doesn't care about the task
-at hand, but rather is focused getting it done in order to move on to the next thing.
+also important in motivating one's internal attitude. If what one is asked to do is discussed as important or influential
+work, then one will be more motivated to spend a more significant percentage of their
+effort on the task.
 
 A worker with a "forced mechanized existence" is someone who has little say in the
 work that they do; they are commanded, similar to a robot. Similarly, they are
 optimized to simply finish the work, not overachieve. I've heard it a few times
 from people that they "put in their time" and just work for the money. While I
-truly enjoy reading about and working on little personal projects outside of work,
-I believe that it's absolutely fine that one doesn't work on work-related tasks
-in personal time, I think there is an important distinction about one's attitude
-while doing the work _at work_. I believe you can be passionate about something
-and deliberately restrain yourself from overworking as to reserve energy and enthusiasm
-i.e., avoid burnout.
+absolutely think that it is important to "pace" oneself, I think there is an
+important distinction to be made about one's attitude _while_ doing work.
+I believe you can be extremely passionate toward something and deliberately restrain
+yourself as to conserve energy and enthusiasm i.e., avoid burnout.
 
 "Caring" is self-identifying with what it is that one's doing. "When one has this feeling,
 then [they] also [see] the inverse side of caring, Quality itself" a "material reflection
 of a spiritual reality".
-
-> The place to improve the world is first in one's own heart and head and hands,
-and then work outward from there.
 
 I am extremely grateful and fortunate to be where I am today. I was curious about what the
 contributing factors were in the job offer for my current position, so I asked
@@ -186,34 +186,36 @@ In software engineering,
 developers are often introduced to codebase that has existed for a while,
 doesn't follow best practices or language idioms and has lots of "warts". In these
 situations, developers often immediately start pointing out the warts and potential
-points of failure. While it can absolutely be helpful to have a new perspective
-to the project, "name calling" doesn't solve anything.
+points of failure. While it can absolutely be helpful to have a new perspective,
+"name calling" solves nothing. Instead, influence the changes that you want to see
+through an optimistic and positive attitude.
 
-In the situations, if you dig just below the surface --- namely, use what
+Additionally, don't be quick to judge, because often in the situations if you dig
+just below the surface --- namely, use what
 [Shane Perrish writes about, called Second Order Thinking](https://fs.blog/2020/03/chestertons-fence/) ---
-there are usually reasons these warts exist --- whether they developed over time or were added deliberately --- and haven't
-been fixed. Either because it is necessary that the warts remain or because the effort
-involved in removing them could be better used elsewhere. Related specifically to
-deliberately added warts, the narrator tells a story about a beer can shim to
-fix loose handlebars. However, the beer can shim was being proposed to be added
-to his friend's, "fancy", BMW bike. While functionally, the beer can shim was
+there are usually reasons these warts exist. Whether they developed over time
+or were added deliberately and just haven't been fixed due to other priorities because
+time and effort could and still can be better utilized elsewhere.
+
+Related specifically to intentionally-added warts, the narrator tells a story about a beer can shim to
+fix loose handlebars. However, the beer can shim was proposed to be added
+to his friend's, "fancy", BMW motorcycle. While functionally, the beer can shim was
 perfect, the fact that a literal piece of trash was being proposed as the fix
 offended the friend tremendously. The friend decided that he would rather deal
 with loose handlebars than to have a "hacky", piece of trash fix his technological
 marvel of a bike.
 
-While it is important to evaluate "hacks", avoiding them altogether without acknowledging
+> Any effort that has self-glorification as its final endpoint is bound to end in disaster.
+
+Often our protecting ego --- what the narrator calls "ego goals" --- is what
+makes contributing to or adding "hacks" difficult. While it is important to
+evaluate "hacks", avoiding them altogether without acknowledging
 them isn't the best approach. If the hack has been evaluated, doesn't have long-term
-negative impacts and is able to be removed with a "real" solution, often these hacks
-are what allow us to incrementally improve our situations, "tightening of the handlebars".
+negative impacts, improves existing state or Quality of the system at large and
+is able to be removed with a "real" solution, often these hacks are what allow us
+to incrementally improve our situations, "tightening of the handlebars".
 This is an important lesson in the distinction between underlying form and immediate appearance
 that the narrator talks about throughout Zen and the Art of Motorcycle Maintenance.
-
-## Ego
-
-"Ego goals" and "ego climbing" (p212)
-
-> Any effort that has self-glorification as its final endpoint is bound to end in disaster.
 
 ## Classical Versus Romantic Thinking
 
@@ -287,13 +289,13 @@ eliminate the useless ones, or rather, to avoid the trouble of making them, and 
 that must guide the choice are extremely fine and delicate.
 
 When presented with infinitely many choices to choose from, Quality --- keeping in mind
-that Quality is based on past experiences --- is what helps us decide which paths to
+that Quality is relative to past experiences --- is what helps us decide which paths to
 pursue.
 
 > The difference between a good mechanic and a bad one [...] is precisely this ability to
 _select_ the good facts from the bad ones on the basis of quality. He has to _care_!
 
-The narrator, referencing an alternative life of his, namely Phaedrus, said, that
+The narrator, referencing his past life, namely Phaedrus, said, that
 this continual process of opening new questions is a "genetic defect within the
 nature of reason itself [...]".
 
@@ -309,11 +311,11 @@ _deeper_ in it.
 A few times in the book, as the narrator is driving on a less-frequently-traveled
 road adjacent to the highway, he talks about the lifeless-looking faces of the
 passengers in cars. These passengers have elected to optimize travel as to make
-it as short as possible. However, it is during the struggles of "travel" that we
-truly learn. In the classical thinking journey of diving deeper is when you are
+it as short as possible. However, it is during the struggles of "traveling on the path
+less traveled" that we truly learn. In the classical thinking journey of diving deeper is when you are
 learning about the intricacies at many levels. If you optimize this travel away
-by just obtaining the answer, you won't truly appreciate the fact. Throughout the
-book, the narrator is on a journey to define Quality. Quality is something
+by just obtaining the answer, you won't truly appreciate the fact that you were just told. Throughout the
+book, the narrator is on a journey to define Quality.
 
 When you are rushing and don't stop to think, it usually takes longer or comes out worse.
 
@@ -327,15 +329,7 @@ A continuation of the quote above,
 and end but a unique event in itself [...]. To live only for some future goal is
 shallow. It's the side of the mountain which sustain life, not the top.
 
-## Reason and Rationality
-
-The narrator talks about how while reason and rationality progressed humanity significantly
-from primitive times, as we continue to dive deeper into topics, it is reason and
-rationality that slows us down.
-
-> [...] the harder you think in this high country of the mind the slower you go.
-
-## A Priori Knowledge
+## A Priori Knowledge and experience.
 
 > Since all knowledge comes from sensory impressions and since there's no sensory
 impression of substance itself, it follows logically that there is no knowledge of substance.
@@ -380,7 +374,7 @@ mental models.
 help us deal with new, possibly unrelated, problems.
 
 > [...] most people stand in sight of the spiritual mountains all their lives and
-never enter them, being content to list to other who have been there and thus avoid
+never enter them, being content to listen to other who have been there and thus avoid
 the hardships. Some travel into the mountains accompanied by experienced guides who
 know the best and least dangerous routes by which they arrive at their destination.
 Still others, inexperienced and untrusting, attempt to make their own routes.
@@ -393,7 +387,7 @@ A mentor of mine jokes about the "dogmatic inflexibility" of programming languag
 communities and how it creates barriers to entry for newcomers, but also shifts
 focus from solving problems to solving dogmatisms.
 
-## Paralyzing Thought
+## Paralysis from a priori knowledge
 
 This is something that I often struggle with. Both when there are too many things
 to do, but also when I don't know what I should be doing. The quote "start with the top-left brick"
