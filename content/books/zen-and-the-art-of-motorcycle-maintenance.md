@@ -3,7 +3,7 @@ title: "Zen and the Art of Motorcycle Maintenance"
 author: "Colton J. McCurdy"
 date: 2020-05-04T06:36:43-04:00
 subtitle: "An Inquiry into Values"
-description: "A journey across the country on a motorcycle while diving into the unifying factor between subject and object, namely Quality. Quality is not a _thing_. It is an _event_ at which the subject becomes aware of the object. Quality is woven into objects through the attitude of the creator."
+description: "A journey across the country on a motorcycle while diving into the unifying factor between subject and object, namely Quality. Quality is not a _thing_, but an _event_ at which the subject becomes aware of the object. Quality is woven into objects through the attitude of the creator."
 image: ""
 book-tags: ["book", "2020", "values", "quality"]
 books: ["Zen and the Art of Motorcycle Maintenance"]
@@ -15,7 +15,7 @@ thriftbooks: "https://www.thriftbooks.com/w/zen-and-the-art-of-motorcycle-mainte
 ## Favorite Quotes
 
 These are some of my favorite quotes from Zen and the Art of Motorcycle Maintenance.
-You will see these reappear later in this post.
+I hope that this post, but minimally, these quotes will inspire you to read this book.
 
 * > The place to improve the world is first in one's own heart and head and hands,
 and then work outward from there.
@@ -46,31 +46,29 @@ would consider the same object of the same quality as you. With that little exer
 is Quality defined objectively or subjectively?
 
 Defining Quality is a main theme of the book. The journey and struggle comes from the narrator
-and a past version of himself, trying to define Quality.
-As he later finds out, once you classically dissect something, the mystery
-and beauty of that thing disappears. Similarly, when something doesn't posses or you remove
-Quality, you are left with "squareness".
+and a past version of himself, namely Phaedrus, trying to define Quality.
+As he later finds out, once one classically dissects something, --- e.g., defining Quality ---
+the mystery and beauty disappear.
 
 > People differ about Quality, not because Quality is different, but because people
 are different in terms of experience.
 
-Think of a really well-designed and colorful website. Maybe _you_
-consider this a "high-Quality" website, but to someone who is colorblind, this
-site may be extremely hard to navigate and therefore, to _them_ it is "low-Quality".
+Think of a what you consider a well-designed and colorful website. Maybe _you_
+consider this "high-Quality", but someone who is colorblind may consider it "low-Quality"
+because buttons are hard to distinguish from backgrounds.
 Chapter 4 in [Software Engineering at Google](https://www.thriftbooks.com/w/software-engineering-at-google-lessons-learned-from-programming-over-time/24297390/#isbn=1492082791&idiq=36931976),
-titled Engineering for Equity, talks about subject Quality in relation to software.
+titled Engineering for Equity, talks about subjective Quality in relation to software.
 
 > Quality is what _you_ like.
 
 The "System" defines Quality for us as what _others_ like. But true Quality must
 be discovered by oneself rather than taught or told. However, this does not mean
-that you should build something that only works for you. Quality in its most
+that ones should build something that only works for oneself. Quality in its most
 impactful form inspires, eases and influences those who experience it.
 
 > [...] Quality tends to fan out like waves. The Quality job he didn't think anyone was
 going to see is seen, and the person who sees it feels a little better because of it,
 and is likely to pass that feeling on to others.
-
 
 > Peace of mind isn't at all superficial [...]. It's the whole thing. That which produces
 it is good maintenance; that which disturbs it is poor maintenance. What we call workability
@@ -110,7 +108,12 @@ Both classic and romantic understandings of Quality must be combined.
 ### "Fake", veneer-like, Quality
 
 When Quality is taught or forced and not learned or discovered by oneself through trials
-and tribulations, it is un- or under-appreciated, "fake" Quality.
+and tribulations, it is un- or under-appreciated, "fake" Quality. You may relate
+to ordering a piece of cheap furniture that didn't look too bad online, but  you
+knew was cheap, only to open it up and be surprised by the lack of quality in person.
+You were probably upset and no longer excited to use that piece of furniture. It
+no longer eases your mind or solves your problem, but rather creates a new problem
+every single time you use it because you have to be extremely careful not to break it.
 
 > It is the little, pathetic attempts at Quality that kill.
 
