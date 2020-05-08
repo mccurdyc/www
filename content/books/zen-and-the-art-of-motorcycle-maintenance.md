@@ -14,21 +14,26 @@ thriftbooks: "https://www.thriftbooks.com/w/zen-and-the-art-of-motorcycle-mainte
 
 ## Favorite Quotes
 
-> The place to improve the world is first in one's own heart and head and hands,
+These are some of my favorite quotes from Zen and the Art of Motorcycle Maintenance.
+You will see these reappear later in this post.
+
+* > The place to improve the world is first in one's own heart and head and hands,
 and then work outward from there.
 
-> If you have a high evaluation of yourself then your ability to recognize new facts
+* > If you have a high evaluation of yourself then your ability to recognize new facts
 is weakened. You ego isolates you from Quality reality.
 
-> [...] most people stand in sight of the spiritual mountains all their lives and
+* > [...] most people stand in sight of the spiritual mountains all their lives and
 never enter them, being content to listen to other who have been there and thus avoid
 the hardships. Some travel into the mountains accompanied by experienced guides who
 know the best and least dangerous routes by which they arrive at their destination.
 Still others, inexperienced and untrusting, attempt to make their own routes.
 
-> Stuckness shouldn't be avoided. It's the psychic predecessor of all real understanding.
+* > Stuckness shouldn't be avoided. It's the psychic predecessor of all real understanding.
 
-> [...] physical discomfort is only important when the mood is wrong.
+* > [...] physical discomfort is only important when the mood is wrong.
+
+* > Sometimes it's a little better to travel than to arrive.
 
 ## Quality
 
@@ -102,7 +107,7 @@ at the high-quality, beautiful way of doing it, both an ability to see what "loo
 and an ability to understand the underlying method to arrive at the "good" are needed.
 Both classic and romantic understandings of Quality must be combined.
 
-### Veneer, "fake", Quality
+### "Fake", veneer-like, Quality
 
 When Quality is taught or forced and not learned or discovered by oneself through trials
 and tribulations, it is un- or under-appreciated, "fake" Quality.
@@ -222,7 +227,7 @@ that the narrator talks about throughout Zen and the Art of Motorcycle Maintenan
 > [...] all understanding is in terms of underlying form.
 
 Underlying form is the connectedness of functional components. The What, How, Where and Why.
-The blueprints of how things _actually_ work and their functional composition.
+The blueprints of how things _actually_ work.
 
 > You discuss things in terms of their immediate appearance or you discuss things
 in terms of their underlying form [...]
@@ -230,10 +235,10 @@ in terms of their underlying form [...]
 The narrator in Zen and the Art of Motorcycle Maintenance attaches names, specifically,
 "classical" and "romantic", to the underlying form and immediate appearance
 ways of thinking, respectively.
-Classical or scientific thinking i.e., regarding facts, is to think unemotionally
+Classical or scientific thinking --- i.e., regarding facts --- is to think unemotionally
 in terms of underlying form.
-While to think based on immediate appearance and feelings is to think romantically
-or artistically. He continues throughout the book with this distinction.
+While to think based on immediate appearance and feelings is to think artistically
+or romantically. He continues throughout the book with this distinction.
 
 > [Classical thinking]'s purpose is not to inspire emotionally, but to bring order
 out of chaos and make the unknown known.
@@ -246,12 +251,10 @@ thinking. Not that one is _always_ and exclusively better than the other. Howeve
 people become obsessed with their mode of thinking and neglect to acknowledge the
 importance of the other.
 
-With classical thinking, once you intensely analyze or "cut up" --- the narrator often uses
-this analogy of dissecting something with a proverbial knife --- and understand something,
-the beauty of it is gone. It is no longer mysterious or "magical". It's just pieces
+With classical thinking, once you intensely analyze or dissect and something, the
+beauty of it is gone. It is no longer mysterious or "magical". It's just pieces
 that are put together at many levels. The narrator talks about how you can indefinitely
-cut something up, but when you do this, you "kill" it. Romantic thinkers stop before
-they've kill the thing and therefore, the magic and beauty still exist and inspire.
+cut something up, but when you do this, you "kill" it.
 This process of cutting something up is a "death-birth continuity". Something new
 is "birthed" and killed at each level. In software engineering, you hear the phrase
 "yak shaving", which is when you are working on a project and you discover that
@@ -260,14 +263,13 @@ that problem, you have to solve some other problem and so on.
 
 ### Classical Thinking Challenges
 
-In Chapter 9, the narrator talk about the application of the scientific method,
-which [according to Wikipedia](https://en.wikipedia.org/wiki/Scientific_method),
-is "an empirical method of acquiring knowledge." The scientific method is a continuous
+In Chapter 9, the narrator talk about the application of the scientific method.
+The scientific method is a continuous
 process which involves applied skepticism, assumptions or hypotheses and recorded observations.
 The narrator talks about how the scientific method is useful for finding "answers"
 in levels of underlying form, but doesn't work as well against scientific truths.
 With scientific truths, once proved "true", they only remain fully true while they
-are not under continued investigation or skepticism, proving them still true or disproving them.
+are not under continued investigation or skepticism.
 
 > [...] time spans of scientific truths are an inverse function of the intensity
 of scientific effort.
@@ -293,16 +295,13 @@ that Quality is relative to past experiences --- is what helps us decide which p
 pursue.
 
 > The difference between a good mechanic and a bad one [...] is precisely this ability to
-_select_ the good facts from the bad ones on the basis of quality. He has to _care_!
+_select_ the good facts from the bad ones on the basis of quality. [They have] to _care_!
 
-The narrator, referencing his past life, namely Phaedrus, said, that
-this continual process of opening new questions is a "genetic defect within the
-nature of reason itself [...]".
-
-The narrator argues that it is this characteristic of classical thinking that
-continues to increase the divide between classical and romantic thinkers. Romantic
-thinkers continue to move further away, while classical thinkers go infinitely
-_deeper_ in it.
+The narrator says, that this continual process of opening new questions is a
+"genetic defect within the nature of reason itself" and argues that it is
+this characteristic of classical thinking that continues to increase the divide between classical
+and romantic thinkers. Romantic thinkers continue to move further away, while
+classical thinkers go infinitely _deeper_ in it.
 
 ## The Journey
 
@@ -313,11 +312,10 @@ road adjacent to the highway, he talks about the lifeless-looking faces of the
 passengers in cars. These passengers have elected to optimize travel as to make
 it as short as possible. However, it is during the struggles of "traveling on the path
 less traveled" that we truly learn. In the classical thinking journey of diving deeper is when you are
-learning about the intricacies at many levels. If you optimize this travel away
-by just obtaining the answer, you won't truly appreciate the fact that you were just told. Throughout the
-book, the narrator is on a journey to define Quality.
+learning about the intricacies at many levels. If one optimizes this travel away
+by jumping directly to obtaining the answer, one doesn't truly appreciate the fact.
 
-When you are rushing and don't stop to think, it usually takes longer or comes out worse.
+When ones rushes and doesn't stop to think, the task usually takes longer or comes out worse.
 
 > The reality of your own nature should determine speed. If you become restless, speed up.
 If you become winded, slow down. You climb the mountain in equilibrium between
@@ -329,13 +327,13 @@ A continuation of the quote above,
 and end but a unique event in itself [...]. To live only for some future goal is
 shallow. It's the side of the mountain which sustain life, not the top.
 
-## A Priori Knowledge and experience.
+## Experience and A Priori Knowledge
 
 > Since all knowledge comes from sensory impressions and since there's no sensory
 impression of substance itself, it follows logically that there is no knowledge of substance.
 It's just something we imagine. It's entirely within our own minds.
 
-> [...] From what sense data is our knowledge of causation received? In other words,
+> From what sense data is our knowledge of causation received? In other words,
 what is the scientific empirical basis of causation itself? [...] Hume's answer is 'None' [...]
 it's just something we imagine when one thing repeatedly follows another [...] then
 one must logically conclude that both 'Nature' and 'Nature's Laws' are creations
@@ -346,22 +344,16 @@ derived by reasoning from self-evident propositions".
 The author talks about a priori knowledge and how while knowledge _begins_ with experience,
 it doesn't _always_ necessarily come from experience. Basically, some experience triggers
 a thought, but then without additional experiences triggering additional thoughts, we
-think on our own.
+think on our own. In other words, you don't need exhaustive experience to think
+continuously.
 
 > This a priori motorcycle has been built up in our minds over many years from enormous
 amount of sense data and it is constantly changing as new sense data comes in.
 
-We are basically continually creating, working on and tweaking our mental models of
+We are continuously creating, screening and tweaking our mental models of
 our surroundings. While everyone's mental model of some object may differ slightly
 based on personal experiences, I think generally our mental models are similar
-or evolve to be similar. For example, if one experienced cars in the 1950's one
-still has that knowledge and experience, but it is less fresh than the experiences
-of today's cars. The data of today's cars is what is used by those experiencing
-cars for the first time now in building their mental models. Mental model evolve and
-generally converge.
-
-Mental models are continuously evolving, rather than built and fixed. The narrator
-talks about how we are always testing and "screening" our mental models.
+or evolve to be relatively similar.
 
 While new experiences bring inspiration, they also bring bounds to our imagination.
 The way one experienced something may differ from the way someone else experienced
@@ -387,58 +379,45 @@ A mentor of mine jokes about the "dogmatic inflexibility" of programming languag
 communities and how it creates barriers to entry for newcomers, but also shifts
 focus from solving problems to solving dogmatisms.
 
-## Paralysis from a priori knowledge
+## A Priori Knowledge Paralysis
 
 This is something that I often struggle with. Both when there are too many things
 to do, but also when I don't know what I should be doing. The quote "start with the top-left brick"
-from Zen and the Art of Motorcycle Maintenance and [Dr. Richard Hamming's talk "You and Your Research" given at Bell Communications Research Colloquium Seminar on March 7th 1986](https://www.cs.virginia.edu/~robins/YouAndYourResearch.html)
+from Zen and the Art of Motorcycle Maintenance and [Dr. Richard Hamming's talk, _You and Your Research_, given at Bell Communications Research Colloquium Seminar on March 7th 1986](https://www.cs.virginia.edu/~robins/YouAndYourResearch.html)
 have been influential in reminding me to pause and focus on digestible subproblems
 (i.e., "divide and conquer" over a lifetime).
 
-From "Your and Your Research",
+From _Your and Your Research_,
 
 > [...] plant the little acorns from which the mighty oak trees grow.
 
 > [...] solid work, steadily applied, gets you surprisingly far.
 
-Our minds are often paralyzed by trying to repeat and imitate the thoughts and ideas of those
-before or surrounding us, rather than truly new and unique thought.
+Our minds are often paralyzed by trying to repeat and imitate the thoughts and
+ideas of those before or surrounding us, rather than thinking of novel, unique thoughts.
 
 There is a story told by the narrator in Zen and the Art of Motorcycle Maintenance
 about a past student of his who was instructed to write a five-thousand word essay
 about the front of the Opera House on the main street of Bozeman, Montana. This task
 along with having students write about the back of one of their thumbs was to teach
-them to think on their own and to not always rely on those before or around them.
-People, companies and institutions, often immediately try to find answers to their
-problems by copying those around them. This makes me think of how companies cloned
-[the Spotify organizational model](https://labs.spotify.com/2014/03/27/spotify-engineering-culture-part-1/)
-and many later found that it needed to be tweaked for their organization.
+them to see and think on their own and to not rely on those before or around them.
+
+People, companies and institutions, often immediately try to find answers to their problems.
+This makes me think of how companies quickly cloned [the Spotify organizational model](https://labs.spotify.com/2014/03/27/spotify-engineering-culture-part-1/)
+and many, including Spotify themselve, later found that it needed to be tweaked.
 
 As with many things in life, I think there is a pendulum that needs to be in
 equilibrium. We can't entirely neglect the experiences of those before or
-around us, but we also need to bring our own unique and new ideas to the
-proverbial table.
+around us, but we also need to bring our own unique and new ideas.
 
 I subscribe to the [30x40 Design Workshop YouTube channel](https://www.youtube.com/user/30by40),
-where the creator calmly walks you through the architectural process. One quote
-that he said that stuck with me is that one of the most important components of
+where the creator calmly walks you through the architectural process. Something
+that he said that stuck with me, is that one of the most important components of
 teaching someone how to draw architectural diagrams is to teach them how to see
 for themselves.
 
 When you see for yourself, your attitude toward a particular topic changes. You
-feel connected and empowered. Conversely, when you are not allowed to see for
-yourself because you are told exactly what to do and how to do it, you posses
-a negative attitude toward whatever it is that you are doing.
-
-The narrator also talks about this dilemma between grading students' work being
-being a clear indicator of direction but also paralyzing unique thought.
-Students are conditioned to do what gives them a good grade, not to challenge
-what it is that they are asked to do or to think on their own.
-
-When we are "taught" what to do, we lose the "beginner's mind". We are being filled
-with the "answers" of those who have experienced the thing. This is both good
-and bad because we may avoid going down some "wrong" paths, but maybe those
-"wrong" paths are ultimately what push reality forward on a given problem.
+feel connected and empowered.
 
 > Stuckness shouldn't be avoided. It's the psychic predecessor of all real understanding.
 
@@ -450,7 +429,7 @@ revealed by stuckness which so often makes self-taught mechanics so superior to
 institute-trained men who have learned how to handle everything except a new situation.
 
 It is in times of stuckness that we begin to unleash our beginners mind and
-fearlessly take "wrong" or original paths.
+fearlessly take original, possibly "wrong" paths.
 
 > [...] stuckness is gradually eliminating patterns of traditional reason.
 
@@ -466,7 +445,7 @@ one feeling exhausted and discouraged. There are both internal and external
 gumption traps. A common problem that one faces when dealing with or
 overcoming a gumption trap is what the narrator calls "gumption desperation",
 which is when on tries to rush to "catch back up" in an attempt to restore gumption
-after being set back by a gumption trap. But gumption desperation only leads to
+after being set back by a trap. But gumption desperation only leads to
 more problems, so avoid it.
 
 Remember that having to take something apart and put it back together a few
@@ -494,12 +473,13 @@ The narrator talks about how we come to posses rigid values because we don't
 have the cognitive capacity to hold all possible truths and it's just easier to
 be rigid in our ways.
 
-When you are dealing with value rigidity, slow down, step back and just watch the
-machine like you would a fishing line.
+When you are dealing with value rigidity, slow down, step back and just observe the
+machine.
 
 "Ego gumption" is another trap that the narrator introduces that he says isn't
-entirely separate from value rigidity. Ego gumption is when you have a high evaluation
-of yourself and your ability to recognize new facts is weakened. "Your ego isolated
+entirely separate from value rigidity because in order to retain one's ego, one often
+believes that they must stand by their values indefinitely. Ego gumption is when you have a high evaluation
+of yourself and your ability to recognize new facts is weakened. "Your ego isolates
 you from Quality reality".
 
 > These false [personality] images are deflated so rapidly and completely you're bound
@@ -510,40 +490,6 @@ He suggests that if modesty isn't easy for you, keep faking modesty until the fa
 continuously prove that you were wrong.
 
 A couple more internal gumption traps are mentioned in the "anxiety" and "boredom" traps.
-With the anxiety trap, you are so afraid to fail and ruin your ego, that you never
-take risks. The boredom trap is as the name suggests, you or your mind is bored or burned
-out of the problem that you are working on and therefore don't think of new avenues to pursue.
-Impatience is also mentioned as related to internal gumption traps.
-
-> Impatience [...] always results from one cause: an underestimation of the amount of time
-the job will take.
-
-#### Truth traps
-
-Truth traps are bounded questions with unbounded "mu" answers. The mu answer is not valueless,
-but rather indicates that the context of the question is too small for nature's answer and
-therefore, "beyond the hypothesis".
-
-> A very strong case can be made for the statement that science grows by it mu answers
-more than by its yes or no answers.
-
-Yes or no answers confirm or deny a hypotheses and therefore, stop the process of understanding.
-Mu answers allow the process to continue.
-
-#### Psychomotor traps
-
- Psychomotor traps are basically inadequate tooling and bad surroundings.
-
-#### The biggest gumption trap
-
-The biggest gumption trap of all is the lifeless, emotionless, "funeral procession" way of
-living, where you are marching to your funeral. Focused on what comes next rather than
-what is around you currently.
-
-> It's paradoxical that where people are the most closely crowded [...] loneliness is the
-greatest [...]. Physical distance between people has nothing to do with loneliness. It's
-psychic distance [...]
-
-> [...] in this primary America [people] seem to go through huge portions of their lives
-without much consciousness of what's immediately around them. The media have convinced
-them that what's right around them is unimportant.
+With the anxiety trap, one is too afraid to fail and ruin their ego, that they never
+take risks. The boredom trap is as the name suggests, one's mind becomes bored or burned
+out of the problem on and can't think of new paths to pursue.
