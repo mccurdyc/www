@@ -63,7 +63,7 @@ titled Engineering for Equity, talks about subjective Quality in relation to sof
 
 The "System" defines Quality for us as what _others_ like. But true Quality must
 be discovered by oneself rather than taught or told. However, this does not mean
-that ones should build something that only works for oneself. Quality in its most
+that one should build something that only works for oneself. Quality in its most
 impactful form inspires, eases and influences those who experience it.
 
 > [...] Quality tends to fan out like waves. The Quality job he didn't think anyone was
@@ -86,7 +86,7 @@ that force us to be conscious, when otherwise, we would be unconscious, such as
 a door handle that looks like it should be pushed, but the door actually operates by pulling.
 
 I know my wife and sister would laugh if they read this because when I'm struggling
-with something because it doesn't operate as I unconsciously think it should, I call
+with something doesn't operate as I unconsciously think it should, I call
 it a "piece of junk" i.e., it is of low Quality.
 
 > Quality is not the _result_ of the collision between subject and object, it is the
@@ -109,15 +109,13 @@ Both classic and romantic understandings of Quality must be combined.
 
 When Quality is taught or forced and not learned or discovered by oneself through trials
 and tribulations, it is un- or under-appreciated, "fake" Quality. You may relate
-to ordering a piece of cheap furniture that didn't look too bad online, but  you
-knew was cheap, only to open it up and be surprised by the lack of quality in person.
+to ordering a piece of cheap furniture that didn't look too bad online, but you
+knew was cheap, only to receive it and be surprised by the true lack of quality in person.
 You were probably upset and no longer excited to use that piece of furniture. It
-no longer eases your mind or solves your problem, but rather creates a new problem
-every single time you use it because you have to be extremely careful not to break it.
+no longer eased your mind or solved your problem, but rather created new problem
+such as being extremely careful not to break it.
 
 > It is the little, pathetic attempts at Quality that kill.
-
-> [...] there is nothing here but dead neon and cement and brick.
 
 Once you define or teach Quality, it no longer fully exists. For one to full To truly exist in full
 form, Quality must be discovered. It is with passion, gumption, persistence and
@@ -167,12 +165,7 @@ effort on the task.
 
 A worker with a "forced mechanized existence" is someone who has little say in the
 work that they do; they are commanded, similar to a robot. Similarly, they are
-optimized to simply finish the work, not overachieve. I've heard it a few times
-from people that they "put in their time" and just work for the money. While I
-absolutely think that it is important to "pace" oneself, I think there is an
-important distinction to be made about one's attitude _while_ doing work.
-I believe you can be extremely passionate toward something and deliberately restrain
-yourself as to conserve energy and enthusiasm i.e., avoid burnout.
+optimized to simply finish the work, not overachieve.
 
 "Caring" is self-identifying with what it is that one's doing. "When one has this feeling,
 then [they] also [see] the inverse side of caring, Quality itself" a "material reflection
@@ -186,7 +179,8 @@ to help others who are curious about what is important. Sure, expertise is impor
 But expertise with the wrong attitude is extremely harmful to a team. This is why
 a lot of companies avoid hiring "brilliant jerks".
 
-Related to optimism and positivity, in Zen and the Art of Motorcycle Maintenance,
+Related to optimism and positivity and avoiding the "brilliant jerk" mentality,
+in Zen and the Art of Motorcycle Maintenance,
 the narrator says, "If someone's ungrateful and you tell him he's ungrateful, okay,
 you've called him a name. You haven't solved anything."
 
@@ -259,10 +253,7 @@ beauty of it is gone. It is no longer mysterious or "magical". It's just pieces
 that are put together at many levels. The narrator talks about how you can indefinitely
 cut something up, but when you do this, you "kill" it.
 This process of cutting something up is a "death-birth continuity". Something new
-is "birthed" and killed at each level. In software engineering, you hear the phrase
-"yak shaving", which is when you are working on a project and you discover that
-in order to complete the task, you have to solve some problem, and in order to solve
-that problem, you have to solve some other problem and so on.
+is "birthed" and killed at each level.
 
 ### Classical Thinking Challenges
 
@@ -318,8 +309,6 @@ less traveled" that we truly learn. In the classical thinking journey of diving 
 learning about the intricacies at many levels. If one optimizes this travel away
 by jumping directly to obtaining the answer, one doesn't truly appreciate the fact.
 
-When ones rushes and doesn't stop to think, the task usually takes longer or comes out worse.
-
 > The reality of your own nature should determine speed. If you become restless, speed up.
 If you become winded, slow down. You climb the mountain in equilibrium between
 restlessness and exhaustion.
@@ -345,20 +334,14 @@ of our own imagination.
 According to the Merriam-Webster dictionary, a priori is defined as "deductive" or "relating to or
 derived by reasoning from self-evident propositions".
 The author talks about a priori knowledge and how while knowledge _begins_ with experience,
-it doesn't _always_ necessarily come from experience. Basically, some experience triggers
-a thought, but then without additional experiences triggering additional thoughts, we
-think on our own. In other words, you don't need exhaustive experience to think
-continuously.
+it doesn't _always_ necessarily come from experience. In other words, one doesn't
+need exhaustive experience to think or discover knowledge continuously.
 
 > This a priori motorcycle has been built up in our minds over many years from enormous
 amount of sense data and it is constantly changing as new sense data comes in.
 
 We are continuously creating, screening and tweaking our mental models of
-our surroundings. While everyone's mental model of some object may differ slightly
-based on personal experiences, I think generally our mental models are similar
-or evolve to be relatively similar.
-
-While new experiences bring inspiration, they also bring bounds to our imagination.
+our surroundings. While new experiences bring inspiration, they also bring bounds to our imagination.
 The way one experienced something may differ from the way someone else experienced
 the same exact thing and therefore, both individuals have slightly differing
 mental models of the same object. These diverse experiences and mental models,
@@ -384,11 +367,11 @@ focus from solving problems to solving dogmatisms.
 
 ## A Priori Knowledge Paralysis
 
-This is something that I often struggle with. Both when there are too many things
-to do, but also when I don't know what I should be doing. The quote "start with the top-left brick"
-from Zen and the Art of Motorcycle Maintenance and [Dr. Richard Hamming's talk, _You and Your Research_, given at Bell Communications Research Colloquium Seminar on March 7th 1986](https://www.cs.virginia.edu/~robins/YouAndYourResearch.html)
+The quote "start with the top-left brick" from Zen and the Art of Motorcycle
+Maintenance and [Dr. Richard Hamming's talk, _You and Your Research_, given at Bell Communications Research Colloquium Seminar on March 7th 1986](https://www.cs.virginia.edu/~robins/YouAndYourResearch.html)
 have been influential in reminding me to pause and focus on digestible subproblems
-(i.e., "divide and conquer" over a lifetime).
+--- i.e., "divide and conquer" over a lifetime --- and to actually think on my own rather
+than search for the answers from others.
 
 From _Your and Your Research_,
 
@@ -404,10 +387,6 @@ about a past student of his who was instructed to write a five-thousand word ess
 about the front of the Opera House on the main street of Bozeman, Montana. This task
 along with having students write about the back of one of their thumbs was to teach
 them to see and think on their own and to not rely on those before or around them.
-
-People, companies and institutions, often immediately try to find answers to their problems.
-This makes me think of how companies quickly cloned [the Spotify organizational model](https://labs.spotify.com/2014/03/27/spotify-engineering-culture-part-1/)
-and many, including Spotify themselve, later found that it needed to be tweaked.
 
 As with many things in life, I think there is a pendulum that needs to be in
 equilibrium. We can't entirely neglect the experiences of those before or
@@ -479,20 +458,14 @@ be rigid in our ways.
 When you are dealing with value rigidity, slow down, step back and just observe the
 machine.
 
-"Ego gumption" is another trap that the narrator introduces that he says isn't
+"Ego gumption" is when you have a high evaluation of yourself and your ability to
+recognize new facts is weakened. This is another trap that he says isn't
 entirely separate from value rigidity because in order to retain one's ego, one often
-believes that they must stand by their values indefinitely. Ego gumption is when you have a high evaluation
-of yourself and your ability to recognize new facts is weakened. "Your ego isolates
-you from Quality reality".
+believes that they must stand by their values indefinitely.
+In other words, "[one's] ego isolates [them] from Quality reality". He suggests
+that if modesty isn't easy for you, keep faking modesty until the facts
+continuously prove that you were wrong.
 
 > These false [personality] images are deflated so rapidly and completely you're bound
 to be very discouraged very soon if you've derived your gumption from ego rather
 than Quality.
-
-He suggests that if modesty isn't easy for you, keep faking modesty until the facts
-continuously prove that you were wrong.
-
-A couple more internal gumption traps are mentioned in the "anxiety" and "boredom" traps.
-With the anxiety trap, one is too afraid to fail and ruin their ego, that they never
-take risks. The boredom trap is as the name suggests, one's mind becomes bored or burned
-out of the problem on and can't think of new paths to pursue.
