@@ -76,14 +76,14 @@ Warmup complete. Level 1 unlocked.
 ```bash
 $ lspci -k | grep -A3 'Network controller'
 $ iw dev
-$ ip link set wlan0 up
-$ iw dev wlan0 scan | grep 'SSID:'
-$ wpa_supplicant -i wlan0 -c <(wpa_passphrase 'your_network_ssid' 'password')
+$ ip link set wlp2s0 up
+$ iw dev wlp2s0 scan | grep 'SSID:'
+$ wpa_supplicant -i wlp2s0 -c <(wpa_passphrase 'your_network_ssid' 'password')
 ```
 
 > Once a connection is established, fork the process to the background by pressing `[CTRL]+z` and running `bg`.
 
-3. Lease an IP address with `dhcpcd wlan0`
+3. Lease an IP address with `dhcpcd wlp2s0`
 4. Sync system time with `timedatectl set-ntp true`
 
 ### Partitioning the Drive
