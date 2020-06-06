@@ -108,7 +108,7 @@ believe that their past experiences --- or games --- prepared them for this game
 Titles and past experiences define sturdy boundaries and are significant factors in setting expectations.
 We heavily weigh these titles in the hiring process. Titles carry different expectations,
 consider for example, what personality characteristics come to mind when I say,
-"early engineer at **SuccessfulWellKnownCompany**" versus "developer at **SmallUknownCompany**".
+"early engineer at *SuccessfulWellKnownCompany*" versus "developer at *SmallUknownCompany*".
 
 The assumptions that come along with these roles are exactly the titles that we have "won".
 Not only are the specific job titles our trophies, but so are the stories of our past experiences.
@@ -241,29 +241,14 @@ is when one is most free! One can fail without many people noticing.
 Thinking about many of the points made, they oppose many of the ideals of societies.
 Societies encourage "sameness" (i.e., unoriginal thought) and becoming a widely-recognized
 winner of many titles. However, once one achieves these things, one has essentially
-given up their freedom as an individual. So to "win" is to actually lose the most
-important thing that one can possibly possess.
-
-## Choice
-
-Finite play is a choice
-
-> There is no finite game unless the players freely choose to play it.
-
-> Fields of play simply do not impose themselves on us. Therefore, all limitations
-of finite play are self-limitations.
-
-In finite games, everything is a choice. We choose rules, boundaries, roles, opponents
-and we choose to remain a finite player.
+given up their freedom as an individual. So **to "win" is to actually lose the most
+important thing that one can possibly possess**.
 
 ### Genius
 
-> A genius does not have a mind full of thoughts but is the thinker of thoughts,
-and is the center of a field of vision.
-
 > To speak, or act, or think originally is to erase the boundary of the self.
 
-One's genius is one's own original thoughts.
+One's genius is one's original thoughts.
 
 To be labeled as "different" should be received as the highest compliment. Think
 about what this means. It means that one has effectively displayed the power to
@@ -274,15 +259,12 @@ first, and last, time. Even to repeat my own words is to say them as though I we
 another person in another time and place.
 
 I think if you think more generally about how societies describe "geniuses", they
-are the individuals who redefined the boundaries of which society lives. _Anyone_
-can be genius to their own thoughts. I do believe that often people spend a majority
+are the individuals who redefined the boundaries of which society lives. However,
+we define them as geniuses often _after_ we have seen what their original thought
+is capable of. At the time, we may have labeled them as "crazy".
+
+_Anyone_ can be genius to their own thoughts. I do believe that often people spend a majority
 of their time repeating thoughts, values, opinions of those before and around them.
-I've experienced on numerous occasions where I will talk with someone and there is
-a majority group of "like-minded" --- like-mindedness is a choice --- individuals
-who ultimately influence the thoughts of the entire group. This is why who one
-surrounds oneself with is extremely important. It's best if one can surround oneself
-with individuals who recognize the influence of groups and encourage each other
-to challenge one another, rather than unanimously agree.
 
 This is something that I am just beginning to wrap my head around as this is the
 third or forth time that the notion of "genius" has been described. I first
@@ -292,9 +274,10 @@ then this book, Finite and Infinite Games, and more recently began reading Richa
 Hamming's The Art of Doing Science and Engineering: Learning to Learn, an expansion of the aforementioned talk.
 
 To be "touched" by someone is to listen their genius thoughts. To expand on this a bit,
-people say that they have been "touched" or "moved" when they have just heard or
-experienced something that surprised them and therefore, shifted their genius.
-They were expecting the other to recite a script or act in their role. They remained behind the veil of society.
+people say that they have been "touched" or "moved" when they have heard or
+experienced something that surprised them and therefore, shifted _their_ own genius.
+They were expecting the other to recite a script or act in their role, but were
+instead surprised.
 
 > When I am touched, I am touched only as the person I am behind all the theatrical masks,
 but at the same time I am changed from within [...]
@@ -302,23 +285,17 @@ but at the same time I am changed from within [...]
 When we are touched at our core, this shift in genius propagates outward through
 all of our "masks" or societal roles.
 
-> [...] it's because I do not see what you see that I can see at all.
+> [...] **it's because I do not see what you see that I can see at all**.
 
-I love this quote. Basically, if we all see the same and therefore think the same,
-then
-
-Overlapping fields of vision.
 
 > [One's genius] is a field of vision, however, that is recognized as a field of vision
 only when we see that it includes within itself the original centers of other fields of vision.
 
 One's original thoughts are inspired by the original thoughts of those one chooses
 to surround --- not necessarily physically close, but surrounding ideas --- oneself with.
+"Overlapping fields of vision".
 
-Hamming dives pretty deep into this in You and Your Research and highlights it
-as one of the most significant factors in his "success".
-
-## Time
+## Roles with Respect to Time
 
 > Early in a game time seems abundant, and there appears a greater freedom to develop
 future strategies. Late in the game, time is rapidly being consumed. As choices become
@@ -329,8 +306,9 @@ because there still seem to remain so many paths open to a successful outcome. E
 that passes, however, increases the competitive value of making strategic all correct
 decisions. The errors of childhood can be more easily amended than those of adulthood.
 
-It is precisely this fear of error and the difficulty to amend that prevents us from
-making the choice to change.
+It is this fear of error and the difficulty to amend that prevents us from
+making the choice to change. Moreover, we feel that now is not the appropriate time
+and that there will become a more appropriate time in the perceived abundant future.
 
 > For an infinite player, each moment of time is a beginning. Not a beginning to a bounded
 period. [... M]oving toward a future which itself has a future.
