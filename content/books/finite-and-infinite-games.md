@@ -4,6 +4,7 @@ author: "Colton J. McCurdy"
 date: 2020-05-22T15:16:31-04:00
 subtitle: "A Vision of Life as Play and Possibility"
 image: ""
+description: "James P. Carse describes two games. The finite game where there are boundaries, expectations, limits and people assume roles defined by society and the infinite game where members of society challenge boundaries, expectations and live without limits."
 book-tags: ["2020", "books", "philosophy"]
 books: ["Finite and Infinite Games"]
 book-authors: ["James P. Carse"]
@@ -106,8 +107,8 @@ still going to be some questioning and friction, but probably less so because pe
 believe that their past experiences --- or games --- prepared them for this game.
 
 Titles and past experiences define sturdy boundaries and are significant factors in setting expectations.
-We heavily weigh these titles in the hiring process. Titles carry different expectations,
-consider for example, what personality characteristics come to mind when I say,
+We heavily weigh these titles in the hiring process. Titles carry different expectations.
+Consider for example, what personality characteristics come to mind when I say,
 "early engineer at *SuccessfulWellKnownCompany*" versus "developer at *SmallUknownCompany*".
 
 The assumptions that come along with these roles are exactly the titles that we have "won".
@@ -313,7 +314,7 @@ and that there will become a more appropriate time in the perceived abundant fut
 > For an infinite player, each moment of time is a beginning. Not a beginning to a bounded
 period. [... M]oving toward a future which itself has a future.
 
-## Hope
+## Hope and Possibility
 
 > If the silence of nature is the possibility of language, language is the possibility of history.
 
