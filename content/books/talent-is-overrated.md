@@ -5,7 +5,7 @@ date: 2020-07-14T20:57:59-04:00
 subtitle: "What Really Separates World-Class Performers from Everybody Else"
 description: "Colvin analyzes great golfers, musicians, chess players and more in their respective domains to determine what makes them identifiably great. Turns out, there is no magic, just an early start, persistent focused deliberate practice and motivation to continue working hard."
 image: ""
-book-tags: ["self-help",]
+book-tags: ["book", "2020", "self-help"]
 books: ["Talent is Overrated"]
 book-authors: ["Geoff Colvin"]
 amazon: "https://www.amazon.com/Talent-Overrated-Separates-World-Class-Performers/dp/1591842948/ref=sr_1_1?dchild=1&hvadid=77859297291081&hvbmt=bb&hvdev=c&hvqmt=p&keywords=talent+is+overrated&qid=1594982865&sr=8-1&tag=mh0b-20"
