@@ -3,7 +3,7 @@ title: "Talent Is Overrated"
 author: "Colton J. McCurdy"
 date: 2020-07-14T20:57:59-04:00
 subtitle: "What Really Separates World-Class Performers from Everybody Else"
-description: "Colvin analyzes great golfers, musicians, chess players and more in their respective fields to determine what makes them so great. Turns out, there is not magic, just an early start, persistent hard work and motivation to continue working hard."
+description: "Colvin analyzes great golfers, musicians, chess players and more in their respective domains to determine what makes them identifiably great. Turns out, there is no magic, just an early start, persistent focused deliberate practice and motivation to continue working hard."
 image: ""
 book-tags: ["self-help",]
 books: ["Talent is Overrated"]
