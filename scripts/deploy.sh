@@ -12,6 +12,7 @@ rm -rf public
 hugo --ignoreCache
 
 # Deploy!
+# Make sure to set the gcloud account using: gcloud auth application-default login
 hugo deploy --force --maxDeletes -1
 
 # Push .well-known back up to remote for Fastly TLS validation.
