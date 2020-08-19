@@ -4,8 +4,12 @@ default: help
 serve: ## Serves the statically-generated site locally.
 	hugo serve
 
+.PHONY: build
+build: ## Re-compiles the static assets.
+	hugo --ignoreCache
+
 .PHONY: deploy
-deploy: ## Deploys the changes to the GCS bucket.
+deploy: build ## Deploys the changes to the GCS bucket.
 	./scripts/deploy.sh
 
 .PHONY: help
