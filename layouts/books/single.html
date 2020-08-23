@@ -52,8 +52,17 @@
                 <hr />
             {{- end }}
 
+            {{ $coverImageTitle := .Param "cover-image-title" }}
+            {{ $coverImageCreatorName := .Param "cover-creator-name" }}
+            {{ $coverImageCreatorURL := .Param "cover-creator-url" }}
+            {{ $coverSource := .Param "cover-source" }}
+            {{ $coverLicense := .Param "cover-license" }}
+            {{ $coverLicenseURL := .Param "cover-license-url" }}
             {{ with .Params.Cover }}
-                <img src="/img/{{ . }}" class="post-cover" />
+                <img src="/images/{{ . }}" class="post-cover" />
+                <p style="text-align:center">
+                  <a href="{{ $coverSource }}">"{{ $coverImageTitle }}"</a> by <a href="{{ $coverImageCreatorURL }}">{{ $coverImageCreatorName }}</a> is licensed under <a href="{{ $coverLicenseURL }}">{{ $coverLicense }}</a>
+                </p>
             {{ end }}
 
             {{ $authors := .Param "book-authors" }}

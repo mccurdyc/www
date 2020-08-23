@@ -4,6 +4,12 @@ author: ""
 type: ""
 date: {{ .Date }}
 subtitle: ""
-image: ""
+cover: ""
+cover-image-title: ""
+cover-creator-name: ""
+cover-creator-url: ""
+cover-source: ""
+cover-license: ""
+cover-license-url: ""
 tags: []
 ---

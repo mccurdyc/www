@@ -138,3 +138,44 @@ $ bat /usr/lib/systemd/user/pulseaudio.service
 ```
 
 Next time it fails, I am going to try restarting pulseaudio via `systemctl --user restart pulseaudio.service`.
+
+## Next time is now
+
+Above, I mentioned that next time this issue occurred, I was going to try restarting pulseaudio via `systemctl --user restart pulseaudio.service`.
+Well, "next time" is right now and this is what I did.
+
+```bash
+$ systemctl --user status pulseaudio.service
+Failed to connect to bus: Connection refused
+
+$ systemctl --user list-units
+Failed to connect to bus: Connection refused
+```
+
+I found [this post](https://bbs.archlinux.org/viewtopic.php?id=234813) on the Arch forum
+titled "Systemctl --user failed to connect to bus on server", which is exactly the
+issue that I'm facing now.
+
+[This comment](https://bbs.archlinux.org/viewtopic.php?pid=1770862#p1770862) in
+particular is what I am trying out:
+
+```bash
+$ printenv XDG_RUNTIME_DIR
+$ ls /run/user/$UID
+$ XDG_RUNTIME_DIR=/run/user/$UID systemctl --user status
+$ loginctl show-session $XDG_SESSION_ID
+```
+
+I also did `loginctl list-sessions` because `show-session $XDG_SESSION_ID` failed with
+"Failed to get session path: No session '1000' known".
+
+```bash
+$ loginctl show-session $XDG_SESSION_ID
+Failed to get session path: No session '1000' known
+
+$ loginctl list-sessions
+SESSION  UID USER     SEAT  TTY
+      1 1000 mccurdyc seat0 tty1
+
+1 sessions listed.
+```

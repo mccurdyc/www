@@ -4,7 +4,13 @@ author: ""
 date: {{ .Date }}
 subtitle: ""
 description: ""
-image: ""
+cover: ""
+cover-image-title: ""
+cover-creator-name: ""
+cover-creator-url: ""
+cover-source: ""
+cover-license: ""
+cover-license-url: ""
 book-tags: []
 books: []
 book-authors: []

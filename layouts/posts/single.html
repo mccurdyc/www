@@ -19,13 +19,6 @@
                 <a href="{{ .Permalink }}">{{ .Title | markdownify }}</a>
             </h1>
 
-            {{ $subtitle := .Param "subtitle" }}
-            {{- if $subtitle }}
-            <h2 class="post-title">
-                <a href="{{ .Permalink }}">{{ $subtitle }}</a>
-            </h2>
-            {{- end }}
-
             {{- if .Params.toc }}
                 <hr />
                 <aside id="toc">
@@ -48,56 +41,9 @@
                 </p>
             {{ end }}
 
-            {{ $speakers:= .Param "speakers" }}
-            {{- if $speakers}}
-                <p>
-                    <h2>Speaker(s): </h2>{{ $speakers }}
-                </p>
-            {{- end }}
-
-            {{ $location := .Param "location" }}
-            {{- if $location}}
-                <p>
-                    <h2>Location: </h2><i>{{ $location }}</i>
-                </p>
-            {{- end }}
-
-            {{- if or .Content .Description }}
-                <div class="post-content">
-                {{- if .Content }}
-                    {{ .Content }}
-                {{- else if .Description }}
-                    {{ .Description }}
-                {{- end }}
-                </div>
-            {{- end }}
-
-            {{ $slides := .Param "slides-pdf" }}
-            {{- if $slides }}
-                <p>
-                  <h2>Download(s)</h2>
-                  <a href="/talks/{{ $slides }}" target="_blank">
-                    <i class='fa fa-download'>
-                    </i>
-                    <li><b>Slides</b></li>
-                  </a>
-                </p>
-            {{- end }}
-
-            {{ $repos := .Param "repos" }}
-            {{- if $repos }}
-                <p>
-                  <h2>Repositories</h2>
-                {{- range $repos }}
-                {{ $name := . }}
-                  <a href="https://github.com/{{ $name }}" target="_blank">
-                    <i class='fa fa-github'>
-                    </i>
-                    <li><b>{{ $name }}</b></li>
-                  </a>
-                </p>
-                {{ end}}
-            {{- end }}
+            <div class="post-content">
+                {{ .Content }}
+            </div>
         </article>
 
         <hr />
