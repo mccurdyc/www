@@ -3,7 +3,7 @@ title: "Tubes"
 author: "Colton J. McCurdy"
 date: 2020-08-23T09:43:58-04:00
 subtitle: "A Journey to the Center of the Internet"
-description: "While many people view the Internet as a bubble of omnipresent connectivity, the core of the Internet is localized to relatively few places, like Ashburn, Virginia or 60 Hudson Street in New York City. This book takes a journey to these few places that are the core to the foundation of the Internet."
+description: "While the Internet may feel like a bubble of omnipresent connectivity, the core of the Internet is localized to relatively few places; like Ashburn, Virginia or 60 Hudson Street in New York City. This book takes a journey to these few places that are the foundation of the Internet."
 cover: "tubes-60-hudson.jpg"
 cover-image-title: "60 Hudson"
 cover-creator-name: "Shiny Things"
@@ -38,13 +38,13 @@ of Ashburn, VA, which has been referred to as ["the bullseye of America's Intern
 A primary reason for this name is because it is a home to one of the largest Internet Exchanges (IX),
 namely Equinix, Amazon's `us-east-1` and is part of [the Dulles Technology Corridor](https://en.wikipedia.org/wiki/Dulles_Technology_Corridor).
 These core pieces of the Internet reside in buildings, similar to 60 Hudson, that
-probably wouldn't be worth taking a detour to see (from the outside); This is
+probably wouldn't be worth taking a detour to see (from the outside); this is
 one reason I decided that it wasn't worth taking this route on the way home.
 
 ## ~~Turtles~~ [Networks mostly with physical cables] all the way down
 
 The "Internet" is an inter-connection of intranets. Basically, think your home network --- don't
-focus on the WiFi bits --- but a little bigger and then a bunch of those networks all over, connected
+focus on the WiFi bits --- but quite a bit bigger and then a bunch of those networks all over, connected
 together. While we are used to using wireless networks and thinking of the Internet as
 omnipresent, at probably most, if not every, level of the Internet, there are physical wires
 connecting you to the rest of the world. Yes, [even across the ocean](https://www.submarinecablemap.com/#/).
@@ -66,30 +66,33 @@ wider Internet. At the highest level sit [Network Service Providers (NSPs)](http
 which are cross-ISP connections.
 
 In the book, IXPs were described as the
-"translators" between ISPs (or CDNs; which are out of the scope of this post).
+"translators" between ISPs.
 This is a translation of routing configurations between entities via the
 Border Gateway Protocol (BGP). The origin story for
 one of the early IXPs, namely MAE-East, according to Internet architect, Steven Feldman, in [The Shadow Factory](https://books.google.com/books?id=8zJmxWNTxrwC&pg=PA187&lpg=PA187&dq=uunet+office+mae-east#v=onepage&q=uunet%20office%20mae-east&f=false)
 is that ["A group of network providers in the Virginia area got together over beer
-one night and decided to connect their networks."](https://books.google.com/books?id=8zJmxWNTxrwC&pg=PA187&lpg=PA187&dq=uunet+office+mae-east#v=onepage&q=uunet%20office%20mae-east&f=false).
+one night and decided to connect their networks"](https://books.google.com/books?id=8zJmxWNTxrwC&pg=PA187&lpg=PA187&dq=uunet+office+mae-east#v=onepage&q=uunet%20office%20mae-east&f=false).
 I just ordered The Shadow Factory, so look for a future post with more details.
 
-Related, there was a good [On the Metal podcast episode with Kenneth Finnegan](https://oxide.computer/podcast/on-the-metal-6-kenneth-finnegan/)
-where Kenneth described how as a side project, him and a group of friends ended
+Related, there is a good [On the Metal podcast episode with Kenneth Finnegan](https://oxide.computer/podcast/on-the-metal-6-kenneth-finnegan/).
+In the episode, Kenneth described how, as a side project, him and a group of friends ended
 up building an IXP, [namely Fremont Cabal Internet Exchange](https://fcix.net/).
 Kenneth has a [post](https://blog.thelifeofkenneth.com/2018/04/creating-internet-exchange-for-even.html)
 describing why they ended up doing this. In [another post](https://blog.thelifeofkenneth.com/2017/11/creating-autonomous-system-for-fun-and.html)
-by Kenneth, he goes into more detail about what ISPs do, which consists of a large public IP
-address space and routing between ISPs (or address spaces) via BGP on an Autonomous System
-and then peering. At least in my understanding,
-peering with multiple Autonomous Systems is what makes the Internet reliable. If
-one AS is failing, another will still be able to route traffic to you.
+by Kenneth, he goes into more detail about what ISPs do; which mainly consists of possessing
+a large public IP address space and routing between other ISPs address spaces via
+BGP on an Autonomous System and also peering. According to Kenneth, peering often
+involves backroom handshakes between humans.
+
+At least in my understanding, peering with multiple Autonomous Systems is what makes the Internet reliable. If
+one Autonomous System is failing, another will still be able to route traffic to
+the desired destination.
 [I tweeted](https://twitter.com/mccurdycolton/status/1296854230184144897?s=20)
 a link to a talk at [Deconstruct '18](https://www.deconstructconf.com/2018),
 by [vicky nguyen](https://twitter.com/wickyvinn) who goes into detail about routing,
-finding the fastest routes and much, much more!
+finding the fastest routes and more!
 
 After reading this book, I was excited to see the routes my requests took around
-the book. Thankfully, the book did mention a Unix tool for doing just this, namely
+the Internet. Thankfully, the book did mention a Unix tool for doing just this, namely
 `traceroute`. I messed with `traceroute` a bit and then a colleague introduced
 me to `mtr`, which I've found nicer to use.
