@@ -13,7 +13,7 @@ thriftbooks: "https://www.thriftbooks.com/w/the-shadow-factory-the-ultra-secret-
 ---
 
 ## Three-sentence summary
-There are a lot of ethical "grey areas" regarding monitoring data of "Americans". If terrorism is what you fear, are you willing to trade your freedom?  From it's inception, the NSA has it's foundation built upon exercises of power and secretive, "backdoor" deals.
+There are a lot of ethical "grey areas" regarding monitoring data of "Americans". If terrorism is what you fear, are you willing to trade your freedom?  From its inception, the NSA has its foundation built upon exercises of power and secretive, "backdoor" deals.
 
 > We have to understand you can fight the war [on terrorism] and lose everything if you have no civil liberties left when you get through fighting the war.
 > - Royce C. Lamberth (Former Justice of the FISA court)
@@ -25,22 +25,22 @@ Additionally, Shadow Factory outlines the organizational challenges between the 
 
 > ... Harry Truman secretly created [the NSA] without the approval — or even knowledge — of Congress [in 1952].
 
-While you may not care about having your data monitored today, there may be a future where you wish you wouldn't have.
+While you may not care about having your data monitored today, there may be a future where you wish you would have cared sooner.
 
 ## Ethics
 There were countless decisions made that were ethically questionable at best. Things like John Poindexter, a man convicted of five felony counts of lying to Congress, destroying official documents and obstructing congressional investigations being appointed leader of the largest data-surveillance system ever built.
 
-What scares me most about a trove with massive amounts of data on civilians — especially when there is questionable behavior surrounding this data — is obviously the potentially secretive misuse (either now or in the future) of this data e.g., "do not fly" lists, potentially notes on credit reports, etc. Not only is the known questionable behavior scary, but just that fact that we know humans are flawed and writing safe and secure software is extremely difficult, so if someone was able to gain access to this trove of data, *everyone?* would be in trouble. A problem with data at large is that often "users" don't know precisely *what* data is being stored about them. This has fortunately changed for the better with companies having to handle data better to abide by General Data Protection Regulation (GDPR). But this is only for services that a user has signed up for, no one knows what the government is collecting about them.
+What scares me most about a trove with massive amounts of data on civilians — especially when there is questionable behavior surrounding this data — is obviously the potentially secretive misuse (either now or in the future) of this data e.g., "do not fly" lists, potentially notes on credit reports, etc. Not only is the known questionable behavior scary, but just that fact that we know humans are flawed and writing safe and secure software is extremely difficult. If someone was able to gain access to this trove of data, *everyone?* would be in trouble. A problem with data at large is that often "users" don't know precisely *what* data is being stored about them. This has fortunately changed for the better with companies having to handle data better to abide by General Data Protection Regulation (GDPR). But this is only for services that a user has signed up for, no one knows what the government is collecting about them.
 
-The Foreign Intelligence Surveillance Act (FISA) was enacted by a bi-partisan congress in 1978 in response to revelations that the NSA had been conducting warrantless surveillance on Americans. But the events of 9/11 we effectively an immediate switch to reenable warrantless surveillance again indefinitely. Warrantless surveillance continued six years post 9/11.
+The Foreign Intelligence Surveillance Act (FISA) was enacted by a bi-partisan congress in 1978 in response to revelations that the NSA had been conducting warrantless surveillance on Americans. But the events of 9/11 were effectively an immediate switch to reenable warrantless surveillance again indefinitely. Warrantless surveillance continued six years post 9/11.
 
-Jon C. Yoo, a Bush appointee wrote to the White House counsel about his views for granting the President powers that would trump the Constitution. Years later, Justice of the FISA court, Royce C. Lamberth would criticize warrantless surveillance by stating, "We have to understand you can fight the war [on terrorism] and lose everything if you have no civil liberties left when you get through fighting the war." This statement summarizes my feelings on this book perfectly and is my biggest fear. Once you give up something once, it's hard not for that liberty to be given up once and for all.
+Jon C. Yoo, a Bush appointee wrote to the White House counsel about his views for granting the President powers that would trump the Constitution. Years later, Justice of the FISA court, Royce C. Lamberth would criticize warrantless surveillance by stating, "We have to understand you can fight the war [on terrorism] and lose everything if you have no civil liberties left when you get through fighting the war." This statement summarizes my feelings on this book perfectly and is my biggest fear.
 
 Through all of this surveillance, we are trying to reduce the value of privacy to less than the opportunity cost of an attack.
 
 There was also a lot of corrupt behavior at the NSA by high-ranking folks, pressuring those below them to do the surveillance on Americans.
 
-Relating to the trove of data, the CIA is known for "throwing more people" at problems by hiring contractors etc. It was mentioned in the book that the mentality of the CIA was along the lines of more "butts in seats" meant tackling the problem, even if those people weren't actually working on the problem.
+Relating to the trove of data, the NSA is known for "throwing more people" at problems by hiring contractors etc. It was mentioned in the book that the mentality of the NSA was along the lines of more "butts in seats" meant tackling the problem, even if those people weren't actually working on the problem.
 
 While I don't know the current state of the NSA's solution to surveillance in the digital age, they did struggle originally. Not only due to the new technologies and technological protocols, but the sheer amount of data. Reading this comforted me just slightly. However, the book also mentioned that in terms of handling data, the NSA is often, necessarily, 10 years ahead of the rest of the technology industry.
 
