@@ -18,11 +18,12 @@ Surround yourself with diversity. Foster a life full of curiosity, especially in
 ## Introduction
 > Despite our differences, we all share the desire to be happy. What [Gino's] research suggests is that we can actually bring more joy into our lives by being rebels... [p.18]
 
-What I loved about this book is that it started and ended with stories of "rebel" Massimo Bottura, head chef at Osteria Francescana — one of the highest-rated restaurants in the world — breaking norms e.g., being the person who helped unload the delivery truck or playing soccer in the streets with his staff. When Bottura was asked who inspired him, he named Chinese conceptual artist Ai Weiwei [p. xiii]. In one of Weiwei's performance pieces, he smashes a two-thousand-year-old historic Han Dynasty urn. Bottura was describing the performance and said, "Ai's destructive gesture was actually a constructive one. A beginning. Break, transform, create."
+What I loved about this book was that it started and ended with stories of "rebel" Massimo Bottura, head chef at Osteria Francescana — one of the highest-rated restaurants in the world breaking norms.
+For example, Bottura would help unload the delivery truck or play soccer in the streets with his staff, nothing was "below" him. When Bottura was asked who inspired him, he named Chinese conceptual artist Ai Weiwei [p. xiii]. In one of Weiwei's performance pieces, he smashes a two-thousand-year-old historic Han Dynasty urn. Bottura was describing the performance and said, "Ai's destructive gesture was actually a constructive one. A beginning. Break, transform, create."
 
 > [Rebels] question their own assumptions and strongest beliefs, as well as the widely-accepted norms around them, to identify more creative, effective ways of doing transcendent work. [Rebels] are deviants, but in a positive and constructive way [p. xiv].
 
-Author, Francesca Gino, identifies five core elements of rebel talent:
+Gino identifies five core elements of rebel talent:
 
 1. novelty: seeking out challenge and the new.
 2. curiosity: child-like "why?".
@@ -30,7 +31,7 @@ Author, Francesca Gino, identifies five core elements of rebel talent:
 4. diversity: challenge pre-determined social roles.
 5. authenticity: remaining open and vulnerable in order to connect with and learn from others.
 
-## We Seek Comfort, but Comfort Restricts Creativity
+## We Seek Comfort, but Comfort Limits Creativity
 > Every single day we can chose between focusing on what we know or what we don't know [p. 69].
 
 Conformity is the result of first-order thinking, while rebellious behavior comes from second-order thinking e.g., challenging norms.
@@ -40,7 +41,7 @@ From a young age — i.e., about three-years-old — we start to pick up on soci
 
 Roles often come with prescribed rules and/or expectations. Abiding by the rules helps guide "good" work, but stunts or even prevents exceptional work.
 
-I grew up and currently live in what is know as "Tool City", because tool manufacturing shops are ubiquitous. I worked at two of the shops; for a semester in high school and then a few years later for a semester in college. These experiences made a lasting impact on me. Mainly, I saw personally and still hear about how explicit rules like, "clock in at this time", "don't bring your phone", etc. distract from doing exceptional work. Folks in these tool shops often "just putting in the time" and resent their superiors. Workers in these situations actively disengage from their work. Gino talks about how "disengagement costs the American economy up to $550 billion in lost productivity [p. 166]."
+I grew up and currently live in what is know as "Tool City", because tool manufacturing shops are ubiquitous. I worked at two of the shops; for a semester in high school and then a few years later for a semester in college. These experiences made a lasting impact on me. Mainly, I saw personally and still hear about how explicit rules like, "clock in at this time", "don't bring your phone", etc. distract from doing exceptional work. Folks in these tool shops often "just put in the time" and resent their superiors. Workers in these situations actively disengage from their work. Gino talks about how "disengagement costs the American economy up to $550 billion in lost productivity [p. 166]."
 
 > Rules and norms in organizations and, more broadly, in society instill order and predictability [p. 13].
 
@@ -51,7 +52,8 @@ Breaking social norms — e.g., wearing casual clothing to an important meeting,
 
 > To signal status, deviations from the norm must demonstrate one's autonomy to behave with one's own inclinations and to pay for nonconformity [p. 15].
 
-Often it's necessary to signal the behavior that we want to see in others e.g., Napolean working "beneath" his level on the battlefield [p. 11]. However, one must be aware that signaling status, whether true or fabricated, through "conspicuous consumption" -- i.e., "purchasing" elite status, even if it's mostly on loan -- is often extremely demotivating for those around oneself. Signaling is an expedited way to display personality traits by eliciting triggers in others related to commonly-held mental models.
+Signaling is an expedited way to display personality traits by eliciting triggers in others related to commonly-held mental models.
+Often, it's necessary to signal the behavior that we want to see in others e.g., Napolean working "beneath" his level on the battlefield [p. 11]. However, one must be aware that signaling superior status, whether true or fabricated, through "conspicuous consumption" -- i.e., "purchasing" elite status, even if it's mostly on loan -- is often extremely demotivating for those around oneself.
 
 > But as with conspicuous consumption and public generosity, something very powerful happens when we act in ways that are unconventional and unexpected [p. 13].
 
@@ -59,17 +61,21 @@ Often it's necessary to signal the behavior that we want to see in others e.g., 
 
 > One of the main purposes of rituals and traditions is to impart and nourish values [p. 27].
 
-However, breaking tradition results in great disappointment. This applies to any tradition, including how things have been traditionally done at work. As humans, we often seek comfort in predictability and fear instances of unpredictability, even when the unpredictability establishes a new, superior tradition. I'm using the term "tradition" fairly loosely to also refer to a "traditional process" in work-related environments. Relatedly, sometimes folks who establish a process let that process, at least in part, define them e.g., the process isn't good, therefore, I am not good. Instead, what one must internalize is that one often acts on the information that was present at the time and therefore, a direct comparison of a better process now to the existing process is not a fair comparison. Another commonality is that people hesitate to break "tradition" when they've heavily invested in that tradition.
+However, breaking tradition often results in great disappointment. This applies to any tradition, including how things have been traditionally done at work. As humans, we often seek comfort in predictability and fear instances of unpredictability, even when the unpredictability establishes a new, superior tradition.
+
+I'm using the term "tradition" fairly loosely to also refer to a "traditional process" in work-related environments.
+
+Relatedly, sometimes folks who establish a process, let that process --- at least in part --- define them e.g., the process isn't good, therefore, I am not good. Instead, what one must internalize is that one often acts on the information that was present at the time and therefore, a direct comparison of a better process now to the existing process is not a fair comparison. Another commonality is that people hesitate to break "tradition" when they've heavily invested in that tradition.
 
 > The traditions and rituals you encounter in your organization and in society often endure out of routine, rather than as a result of thoughtful deliberation [p. 30].
 
-Gino mentioned a study where participants were told that they would be paid by the number of t-shirts that they folded and were then primed by showing them how to fold a t-shirt. One group was shown an inefficient, nonsensical way to fold the t-shirts. Gino said, "as often happens in real life, most team members accepted, the nonsensical process without protest".
+Gino mentioned a study where participants were told they would be paid by the number of t-shirts they folded. They were then primed by showing them how to fold a t-shirt. One group was shown an inefficient, nonsensical way to fold the t-shirts. Gino said, "as often happens in real life, most team members accepted, the nonsensical process without protest".
 
 ### Imitation increases as we age
 
 > ... over-imitation actually increases as we age ... [p. 29]
 
-This is interesting to me because I remember being young and wanting to be "freer" and more independent. But as Gino said, as we age, we actually imitate and "depend" on others to establish a process. Doing foundational work is hard. Often, we let or want others to do the hard work so that we don't have to because building a strong foundation requires wrestling with a lot of uncertainty and trying to predict the unpredictable e.g., does this solution scale?.
+This is interesting to me because I remember being young and wanting to be "freer" and more independent. But as Gino said, as we age, we actually imitate and "depend" on others more. Doing foundational work is hard. Often, we let or want others to do the hard work so that we don't have to because building a strong foundation requires wrestling with a lot of uncertainty and trying to predict the unpredictable e.g., does this solution scale?.
 
 "Seeking ease" is something that we teach children e.g., how to most efficiently tie our shoes. More generally, we are trained to be efficient, similar to a robot i.e., to just do and not think.
 
@@ -77,15 +83,19 @@ I've questioned and thought to myself about how much time in life and at work �
 
 > We work to finish assigned tasks without questioning the process or asking about overall goals [p. 67].
 
+---
+
+Thought:
+
 I'd like to ponder the question about how todo lists — or Kanban boards — affect creativity. I certainly agree that they help track progress when coordinating work and/or working on many things concurrently, but I think they encourage efficiency rather than creativity.
 
 Currently, I rely on hierarchical todo lists to break large tasks down into smaller tasks and while this is appropriate for coordinating work with others, it's not necessary when coordination isn't required, yet I still rely on it. **I'd like to challenge myself to use other means for breaking down tasks that encourage creativity rather than efficiency in subtasks**. I think this will also help with the problem that I've often encountered where I break a task down into subtasks before understanding the problem and end up having sub-tasks that are inaccurate or unnecessary.
 
+---
+
 Something else that I've struggled with personally, mentioned by Gino, is a fear of "wasting" the company's time as we explore our curiosity. However, a valid counterargument is that **there is a time when exploring curiosity *deeply* is and is not appropriate**. This is yet another one of my personal weaknesses, (semi-)related to premature optimization i.e., exploring my curiosity *too* much about what an ideal solution would look like, when the business often benefits significantly more by incremental improvements over time [p. 104].
 
-~~Gino mentioned a study that showed that people who had a higher tolerance for uncertainty had fewer conflicts, passive-aggressive reactions and were more willing to excuse transgressions.~~
-
-### Homogenous teams *feel* more effective because they are comfortable
+### Homogenous teams \_feel\_ more effective because they are comfortable
 
 > ... we gravitate to people just like us [p. 116].
 
@@ -115,14 +125,15 @@ Intellectual curiosity is preferred to specialization [p. 63].
 
 Gino refers to this as the "curse of knowledge" and is something that we need to acknowledge and remember as we interact with our less-experienced colleagues [p. 98].
 
-People in powerful positions, or those who *feel* powerful often act without fear.
+People in powerful positions, or those who *feel* powerful, often act without fear.
 
 > Whether power is real or simply perceived, it leads us to take more risks, express stronger emotions and views, act based on our natural inclinations and impulses, and ignore situational pressure [p. 20].
 
 > ... with age, self-consciousness increases, and so does our desire to make show of expertise [p. 37].
 
+### Ask Questions
 Studies show that asking for advices *increases* rather than decreases perceived competence [p. 54]. It was suggested that this is because by asking others questions, it is "stroking their egos".
 
 A culture of curiosity is most effectively established through demonstration by leaders i.e., leaders who ask questions rather than define direction. [p.68] Not only does this help establish a culture of curiosity, it also helps with psychological safety in teams, which is the prerequisite for fearless exploration by team members.
 
-My current boss is absolutely phenomenal as displaying curiosity. She is always challenging us to think about the state of the world today and what it *could* look like, but more generally, avoiding complacency. I honestly don't think you could lead a culture of curiosity more effectively than how she does.
+My current boss is absolutely phenomenal at displaying curiosity. She is always challenging us to think about the state of the world today and what it *could* look like, but more generally, avoiding complacency. I honestly don't think you could lead a culture of curiosity more effectively than how she does.
