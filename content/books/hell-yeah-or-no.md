@@ -15,3 +15,5 @@ thriftbooks: ""
 <a href="https://sive.rs/n" target="_blank">
   View on Derek Siver's website
 </a>
+
+Poses questions about what it is that you _really_ want to do. If you are doing something that you are questioning, you shouldn't be doing it.
