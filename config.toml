@@ -157,4 +157,4 @@ URL = "gs://www.mccurdyc.dev"
   [[menu.main]]
     identifier = "resume"
     name       = "Resume"
-    url        = "/resume/curriculum_vitae_mccurdy.pdf"
+    url        = "https://docs.google.com/document/d/1PL18wCHQJ7qTU1ELkKPtRENsa3c01_z4WfptpMwbJsk/edit?usp=sharing"

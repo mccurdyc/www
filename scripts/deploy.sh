@@ -1,32 +1,45 @@
 #!/bin/bash
 
-# Copy .well-known from remote since it's not managed by Hugo and gets deleted.
-mkdir -p .well-known
-gsutil -m cp -r gs://www.mccurdyc.dev/.well-known/* .well-known
+set -ux -o pipefail
 
-# Delete all remote files
-gsutil -m rm -r gs://www.mccurdyc.dev/**
+function main() {
+  # Copy .well-known from remote since it's not managed by Hugo and gets deleted.
+  mkdir -p .well-known
+  gsutil -m cp -r gs://www.mccurdyc.dev/.well-known/* .well-known
 
-# Make sure that only items that were clean-built get deployed; nothing stale or cached.
-rm -rf public
-hugo --ignoreCache
+  # Delete all remote files
+  gsutil -m rm -r gs://www.mccurdyc.dev/**
 
-# Deploy!
-# Make sure to set the gcloud account using: gcloud auth application-default login
-hugo deploy --force --maxDeletes -1
+  # Make sure that only items that were clean-built get deployed; nothing stale or cached.
+  rm -rf public
+  hugo --ignoreCache
 
-# Push .well-known back up to remote for Fastly TLS validation.
-gsutil cp -r .well-known gs://www.mccurdyc.dev
+  # Deploy!
+  # Make sure to set the gcloud account using: gcloud auth application-default login
+  hugo deploy --force --maxDeletes -1
 
-# Purge Fastly cache
-if [ -z "${FASTLY_SERVICE_ID}" ]; then
-  echo "FASTLY_SERVICE_ID is not set."
-  exit 1
-fi
+  # Push .well-known back up to remote for Fastly TLS validation.
+  gsutil cp -r .well-known gs://www.mccurdyc.dev
 
-if [ -z "${FASTLY_API_KEY}" ]; then
-  echo "FASTLY_API_KEY is not set."
-  exit 1
-fi
+  # Purge Fastly cache
+  if [ -z "${FASTLY_SERVICE_ID}" ]; then
+    echo "FASTLY_SERVICE_ID is not set."
+    exit 1
+  fi
 
-curl -X POST -H "Fastly-Key: ${FASTLY_API_KEY}" "https://api.fastly.com/service/${FASTLY_SERVICE_ID}/purge_all"
+  if [ -z "${FASTLY_API_KEY}" ]; then
+    echo "FASTLY_API_KEY is not set."
+    exit 1
+  fi
+
+  curl -X POST -H "Fastly-Key: ${FASTLY_API_KEY}" "https://api.fastly.com/service/${FASTLY_SERVICE_ID}/purge_all"
+}
+
+function gsutil() {
+  docker run --rm -ti \
+    -v "$HOME/.config/gcloud:/root/.config/gcloud" \
+    -w "/root" \
+    google/cloud-sdk gsutil "$@"
+}
+
+main
