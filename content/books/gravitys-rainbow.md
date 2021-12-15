@@ -13,7 +13,7 @@ thriftbooks: "https://www.thriftbooks.com/w/gravitys-rainbow_thomas-pynchon/2550
 ---
 
 I didn't finish this book. The time wasn't right. I
-made it a little over halfway through --- page 450 to be exact ---
+made it a little over halfway through --- page 388 to be exact ---
 but stopped reading for the sake of my mental health.
 
 I started 2021 having finished David Foster Wallace's [Infinite Jest](./infinite-jest.md)

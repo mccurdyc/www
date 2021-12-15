@@ -1,11 +1,11 @@
 ---
 title: "Enlightenment Now"
 subtitle: "The Case for Reason, Science, Humanism, and Progress"
-description: ""
+description: "\"Nothing is more responsible for the good old days than a bad memory.\".\"In some ways the world has become less equal, but in more ways the world’s people have become better off.\" \"...progress is not utopia\" \"…political tribalism is the most insidious form of irrationality today...\""
 author: "Colton J. McCurdy"
 date: 2021-08-08T08:16:45-05:00
 image: ""
-book-tags: ["book", "2021", "progress"]
+book-tags: ["book", "2021", "progress", "purpose"]
 books: ["Enlightenment Now: The Case for Reason, Science, Humanism, and Progress"]
 book-authors: ["Steven Pinker"]
 amazon: "https://www.amazon.com/Enlightenment-Now-Science-Humanism-Progress/dp/0525427570"
@@ -14,7 +14,7 @@ thriftbooks: "https://www.thriftbooks.com/w/enlightenment-now-the-case-for-reaso
 
 - Why should I live? "you help continue that progress" [p. 4]
 - "The ideals of the Enlightenment are products of human reason, but they always
-struggle with other strands of human nature: loyalty to tribe, [etc.]... [p. 5]
+struggle with other strands of human nature: loyalty to tribe, [etc.]..." [p. 5]
 - "Optimism ... is the theory that all failures --- all evils --- are due to insufficient
 knowledge.... Problems are inevitable, because our knowledge will always be infinitely far
 from complete." [p. 7]
@@ -33,7 +33,7 @@ that happen, not things that don't happen." [p. 41]
 - "Nothing is more responsible for the good old days than a bad memory." [p. 48]
 - There is a wrong belief that wealth is a finite resource [p. 99]
 - "...the world's poor have gotten richer in part at the expense of the American lower middle class...the tradeoff is worth it." [p. 113]
-- "Eductation...is not keeping up with the demands of modern economies..." [p. 118]
+- "Education...is not keeping up with the demands of modern economies..." [p. 118]
 - "In some ways the world has become less equal, but in more ways the world's people have become better off." [p. 120]
 - "Humanistic Environmentalism" [p. 122]
   - "...there is an optimal amount of pollution in the environment, just as there is an optimal amount of dirt in your house.
@@ -46,7 +46,7 @@ Human life has become more precious, while glory, honor, preeminence, manliness,
 and other symptoms of excess testosterone have been downgraded." [p. 166]
   - "Though conquest may be tempting over the short term, it's ultimately better to figure
   out how to get what you want without the costs of destructive conflict..." [p. 166]
-- Sift from a manufacturing to a service economy [p. 185]
+- Shift from a manufacturing to a service economy [p. 185]
 - Terrorism is mostly a distraction and poses a minuscle danger compared with other risks. "Modern terrorism
 is a by-product of the vast reach of the media" [p. 195]. "Excluding 9/11 and Oklahoma,
 about twice as many Americans have been killed since 1990 by right-wing extremists as by
