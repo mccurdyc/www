@@ -38,21 +38,22 @@ conversation, topics on many occassions go two or three, maybe even four levels
 deep. I watched this interview when I was about 3/4 of the way through Sapiens
 and the interview made me "trust" Yuval and want to finish the book.
 
+I think this book clearly describes many very challenging systems problems that
+don't have simple solutions. This is what I appreciate most about Yuval's thoughts.
+He is very much a systems thinker.
+
 ## My Key Highlights
 
 ### General History
 
 - Three important revolutions shaped the course of history: the Cognitive Revolution kick-started history about 70,000 years ago. The Agricultural Revolution sped it up about 12,000 years ago. The Scientific Revolution, which got under way only 500 years ago, may well end history and start something completely different. This book tells the story of how these three revolutions have affected humans and their fellow organisms. ([Location 152](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=152))
-- For millions of years, humans hunted smaller creatures and gathered what they could, ([Location 276](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=276))
 - History cannot be explained deterministically and it cannot be predicted because it is chaotic. ([Location 3835](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=3835))
 - history is what is called a ‘level two’ chaotic system. ([Location 3837](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=3837))
 - Level two chaos is chaos that reacts to predictions about it, and therefore can never be predicted accurately. ([Location 3840](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=3840))
 - Politics, too, is a second-order chaotic system. ([Location 3845](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=3845))
-- the reason the revolution didn’t happen is because we predicted it,’ ([Location 3854](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=3854))
 
 ### Aggricultural Revolution
 
-- Some scholars imagine ancient hunter-gatherer societies as peaceful paradises, ([Location 1039](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=1039))
 - war and violence began only with the Agricultural Revolution, when people started to accumulate private property. ([Location 1039](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=1039))
 - during pre-industrial warfare more than 90 percent of war dead were killed by starvation, cold and disease rather than by weapons. ([Location 1054](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=1054))
 - The First Wave Extinction, which accompanied the spread of the foragers, was followed by the Second Wave Extinction, which accompanied the spread of the farmers, and gives us an important perspective on the Third Wave Extinction, which industrial activity is causing today. ([Location 1289](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=1289))
@@ -64,7 +65,6 @@ and the interview made me "trust" Yuval and want to finish the book.
 - The pursuit of an easier life resulted in much hardship, ([Location 1480](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=1480))
 -> - It happens to us today. How many young college graduates have taken demanding jobs in high-powered firms, vowing that they will work hard to earn money that will enable them to retire and pursue their real interests when they are thirty-five? But by the time they reach that age, they have large mortgages, children to school, houses in the suburbs that necessitate at least two cars per family, and a sense that life is not worth living without really good wine and expensive holidays abroad. What are they supposed to do, go back to digging up roots? No, they double their efforts and keep slaving away. ([Location 1481](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=1481))
 -> - luxuries tend to become necessities ([Location 1485](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=1485))
-- for the vast majority of domesticated animals, the Agricultural Revolution was a terrible catastrophe. ([Location 1622](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=1622))
 - They could not abandon their houses, fields and granaries without grave risk of loss. Furthermore, as time went on they accumulated more and more things – objects, not easily transportable, that tied them down. Ancient farmers might seem to us dirt poor, but a typical family possessed more artefacts than an entire forager tribe. ([Location 1660](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=1660))
 -> - Foragers discounted the future because they lived from hand to mouth ([Location 1666](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=1666))
 - from the very advent of agriculture, worries about the future became major players in the theatre of the human mind. ([Location 1681](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=1681))
@@ -87,7 +87,7 @@ and the interview made me "trust" Yuval and want to finish the book.
 - There are clear limits to the size of groups that can be formed and maintained in such a way. In order to function, all members of a group must know each other intimately. ([Location 499](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=499))
 - In the wake of the Cognitive Revolution, gossip helped Homo sapiens to form larger and more stable bands. ([Location 511](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=511))
 
-### Social Needs
+### Social Beings
 
 - Human babies are helpless, dependent for many years ([Location 257](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=257))
 - This fact has contributed greatly both to humankind’s extraordinary social abilities and to its unique social problems. ([Location 258](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=258))
@@ -107,7 +107,7 @@ and the interview made me "trust" Yuval and want to finish the book.
 - Those once victimised by history are likely to be victimised yet again. And those whom history has privileged are more likely to be privileged again. ([Location 2375](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=2375))
 - Ever since the French Revolution, people throughout the world have gradually come to see both social equality and individual freedom as fundamental values. Yet the two values contradict each other. ([Location 2647](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=2647))
 
-#### Collective Imagination / Beliefs and Trust
+#### Collective Imagination, Beliefs and Trust
 
 - Any large-scale human cooperation – whether a modern state, a medieval church, an ancient city or an archaic tribe – is rooted in common myths that exist only in people’s collective imagination. ([Location 525](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=525))
 - Yet none of these things exists outside the stories that people invent and tell one another. There are no gods in the universe, no nations, no money, no human rights, no laws, and no justice outside the common imagination of human beings. ([Location 532](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=532))
@@ -118,116 +118,18 @@ and the interview made me "trust" Yuval and want to finish the book.
 - while the behaviour patterns of archaic humans remained fixed for tens of thousands of years, Sapiens could transform their social structures, the nature of their interpersonal relations, their economic activities and a host of other behaviours within a decade or two. ([Location 640](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=640))
 - Trade cannot exist without trust, and it is very difficult to trust strangers. ([Location 663](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=663))
 - were able to create very different imagined realities, which manifested themselves in different norms and values. ([Location 817](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=817))
-- the vast majority of people lived in small bands numbering several dozen or at most several hundred individuals, ([Location 829](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=829))
 - We believe in a particular order not because it is objectively true, but because believing in it enables us to cooperate effectively and forge a better society. ([Location 1846](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=1846))
 - we do not want to hear that human rights are also a myth. If people realise that human rights exist only in the imagination, isn’t there a danger that our society will collapse? ([Location 1853](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=1853))
 -> - an imagined order is always in danger of collapse, because it depends upon myths, and myths vanish once people stop believing in them. ([Location 1858](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=1858))
 - Time and again people have created order in their societies by classifying the population into imagined categories, such as superiors, commoners and slaves; whites and blacks; patricians and plebeians; Brahmins and Shudras; or rich and poor. ([Location 2255](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=2255))
 
-#### Culture (groups of shared beliefs)
+#### Culture (groups holding shared beliefs)
 
 - The immense diversity of imagined realities that Sapiens invented, and the resulting diversity of behaviour patterns, are the main components of what we call ‘cultures’. ([Location 691](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=691))
 - Most human cooperation networks have been geared towards oppression and exploitation. ([Location 1739](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=1739))
 -> - ‘Biology enables, Culture forbids.’ ([Location 2430](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=2430))
 - Culture tends to argue that it forbids only that which is unnatural. ([Location 2433](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=2433))
-
-### Individualism
-
-- Over the past 10,000 years, Homo sapiens has grown so accustomed to being the only human species that it’s hard for us to conceive of any other possibility. ([Location 388](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=388))
-- Most Westerners today believe in individualism. ([Location 1899](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=1899))
-- Romanticism tells us that in order to make the most of our human potential we must have as many different experiences as we can. ([Location 1929](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=1929))
-- Romanticism, which encourages variety, meshes perfectly with consumerism. ([Location 1937](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=1937))
--> - Even if by some superhuman effort I succeed in freeing my personal desires from the grip of the imagined order, I am just one person. ([Location 1951](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=1951))
-- Many of history’s most important drivers are inter-subjective: law, money, gods, nations. ([Location 1968](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=1968))
-- These imagined orders are inter-subjective, so in order to change them we must simultaneously change the consciousness of billions of people, which is not easy. ([Location 1975](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=1975))
-- A change of such magnitude can be accomplished only with the help of a complex organisation, such as a political party, an ideological movement, or a religious cult. ([Location 1976](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=1976))
-- It follows that in order to change an existing imagined order, we must first believe in an alternative imagined order. ([Location 1979](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=1979))
-- There is no way out of the imagined order. ([Location 1983](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=1983))
-- When we break down our prison walls and run towards freedom, we are in fact running into the more spacious exercise yard of a bigger prison. ([Location 1983](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=1983))
-
-### Desires / "Needs"
-
-- Once people get used to a certain luxury, they take it for granted. ([Location 1486](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=1486))
-- but do I live a more relaxed life? ([Location 1491](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=1491))
-- We thought we were saving time; instead we revved up the treadmill of life to ten times its former speed and made our days more anxious and agitated. ([Location 1496](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=1496))
-- the luxury trap. ([Location 1498](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=1498))
-
-### Global Unification
-
-- global unification occurred in the last few centuries, ([Location 2747](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=2747))
-- The first universal order to appear was economic: the monetary order. The second universal order was political: the imperial order. The third universal order was religious: the order of universal religions such as Buddhism, Christianity and Islam. ([Location 2768](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=2768))
-- How did money succeed where gods and kings failed? ([Location 2779](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=2779))
-- obsession for gold ([Location 2790](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=2790))
-- useless yellow metal. ([Location 2791](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=2791))
-- As the Christians gradually gained the upper hand, they marked their victories not only by destroying mosques and building churches, but also by issuing new gold and silver coins bearing the sign of the cross and thanking God for His help in combating the infidels. ([Location 2794](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=2794))
-- ‘We are conquering you for your own benefit,’ said the Persians. Cyrus wanted the peoples he subjected to love him and to count themselves lucky to be Persian vassals. ([Location 3153](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=3153))
-- Evolution has made Homo sapiens, like other social mammals, a xenophobic creature. ([Location 3158](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=3158))
-- Americans nowadays maintain that their government has a moral imperative to bring Third World countries the benefits of democracy and human rights, even if these goods are delivered by cruise missiles and F-16s. ([Location 3206](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=3206))
-- It is unlikely that humankind can deal with these challenges without global cooperation. ([Location 3333](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=3333))
-
-#### The Monetary Systems is based on a shared belief / trust
-
-- An economy of favours and obligations doesn’t work when large numbers of strangers try to cooperate. It’s one thing to provide free assistance to a sister or a neighbour, a very different thing to take care of foreigners who might never reciprocate the favour. ([Location 2821](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=2821))
-- One can fall back on barter. But barter is effective only when exchanging a limited range of products. It cannot form the basis for a complex economy. ([Location 2823](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=2823))
-- In a barter economy, every day the shoemaker and the apple grower will have to learn anew the relative prices of dozens of commodities. ([Location 2836](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=2836))
-- More than 90 percent of all money – more than $50 trillion appearing in our accounts – exists only on computer servers. ([Location 2869](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=2869))
-- As long as people are willing to trade goods and services in exchange for electronic data, ([Location 2872](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=2872))
-- dollars have value only in our common imagination. ([Location 2897](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=2897))
-- money isn’t a material reality – it is a psychological construct. ([Location 2899](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=2899))
-- Trust is the raw material from which all types of money are minted. ([Location 2902](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=2902))
-- Money is accordingly a system of mutual trust, and not just any system of mutual trust: money is the most universal and most efficient system of mutual trust ever devised. ([Location 2904](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=2904))
-- As long as people trusted the power and integrity of the king, they trusted his coins. ([Location 2952](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=2952))
-- the fact that another person believes in cowry shells, or dollars, or electronic data, is enough to strengthen our own belief in them, ([Location 2993](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=2993))
-- religion asks us to believe in something, money asks us to believe that other people believe in something ([Location 2996](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=2996))
-- Money is based on two universal principles: ([Location 3002](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=3002))
-- Universal convertibility: ([Location 3003](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=3003))
-- Universal trust: ([Location 3004](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=3004))
-- it corrodes local traditions, intimate relations and human values, replacing them with the cold laws of supply and demand. ([Location 3007](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=3007))
-- Human communities and families have always been based on belief in ‘priceless’ things, such as honour, loyalty, morality and love. These things lie outside the domain of the market, and they shouldn’t be bought or sold for money. ([Location 3008](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=3008))
-
-### Credit, Capitalism and a Trust in a Growing Future
-
-- Banks are allowed to loan $10 for every dollar they actually possess, ([Location 4914](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=4914))
-- If all of the account holders at Barclays Bank suddenly demand their money, Barclays will promptly collapse (unless the government steps in to save it). ([Location 4916](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=4916))
-- What enables banks – and the entire economy – to survive and flourish is our trust in the future. ([Location 4919](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=4919))
-- with interest. ([Location 4924](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=4924))
--> - a new system based on trust in the future. ([Location 4936](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=4936))
-- Credit enables us to build the present at the expense of the future. ([Location 4937](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=4937))
-- The problem in previous eras was not that no one had the idea or knew how to use it. It was that people seldom wanted to extend much credit because they didn’t trust that the future would be better than the present. They generally believed that times past had been better than their own times and that the future would be worse, or at best much the same. ([Location 4941](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=4941))
-- A Growing Pie ([Location 4965](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=4965))
-- Smith taught people to think about the economy as a ‘win-win situation’, in which my profits are also your profits. ([Location 4988](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=4988))
-- All this depends, however, on the rich using their profits to open new factories and hire new employees, rather than wasting them on non-productive activities. ([Location 4995](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=4995))
-- profits ought to be reinvested in production. ([Location 4998](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=4998))
-- Capitalism distinguishes ‘capital’ from mere ‘wealth’. Capital consists of money, goods and resources that are invested in production. Wealth, on the other hand, is buried in the ground or wasted on unproductive activities. ([Location 5002](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=5002))
-- capitalism gradually became far more than just an economic doctrine. It now encompasses an ethic – a set of teachings about how people should behave, educate their children and even think. Its principal tenet is that economic growth is the supreme good, or at least a proxy for the supreme good, because justice, freedom and even happiness all depend on economic growth. ([Location 5029](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=5029))
-- Over the last few years, banks and governments have been frenziedly printing money. Everybody is terrified that the current economic crisis may stop the growth of the economy. So they are creating trillions of dollars, euros and yen out of thin air, pumping cheap credit into the system, and hoping that the scientists, technicians and engineers will manage to come up with something really big, before the bubble bursts. ([Location 5044](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=5044))
-- Like a present-day start-up entrepreneur, Columbus did not give up. He pitched his idea to other potential investors in Italy, France, England, and again in Portugal. Each time he was rejected. He then tried his luck with Ferdinand and Isabella, rulers of newly united Spain. He took on some experienced lobbyists, and with their help he managed to convince Queen Isabella to invest. ([Location 5069](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=5069))
-- The king of Spain desperately needs more money to pay his army. He’s sure that your father has cash to spare. So he brings trumped-up treason charges against your brother. If he doesn’t come up with 20,000 gold coins forthwith, he’ll get cast into a dungeon and rot there until he dies. ([Location 5130](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=5130))
-- Euphoria swept the streets of Paris. People sold all their possessions and took huge loans in order to buy Mississippi shares. ([Location 5179](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=5179))
-- The big speculators emerged largely unscathed – they had sold in time. Small investors lost everything, and many committed suicide. ([Location 5193](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=5193))
-- The Mississippi Bubble was one of history’s most spectacular financial crashes. The royal French financial system never recuperated fully from the blow. ([Location 5194](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=5194))
-- But in its extreme form, belief in the free market is as naïve as belief in Santa Claus. There simply is no such thing as a market free of all political bias. ([Location 5269](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=5269))
-- Markets by themselves offer no protection against fraud, theft and violence. It is the job of political systems to ensure trust by legislating sanctions against cheats and to establish and support police forces, courts and jails which will enforce the law. ([Location 5271](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=5271))
-- In a completely free market, unsupervised by kings and priests, avaricious capitalists can establish monopolies or collude against their workforces. If there is a single corporation controlling all shoe factories in a country, or if all factory owners conspire to reduce wages simultaneously, then the labourers are no longer able to protect themselves by switching jobs. ([Location 5283](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=5283))
-- This is the fly in the ointment of free-market capitalism. It cannot ensure that profits are gained in a fair way, or distributed in a fair manner. ([Location 5310](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=5310))
-- Some religions, such as Christianity and Nazism, have killed millions out of burning hatred. Capitalism has killed millions out of cold indifference coupled with greed. The Atlantic slave trade did not stem from racist hatred towards Africans. The individuals who bought the shares, the brokers who sold them, and the managers of the slave-trade companies rarely thought about the Africans. ([Location 5313](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=5313))
-- In recent decades, and especially after 1945, capitalist greed was somewhat reined in, not least due to the fear of Communism. Yet inequities are still rampant. The economic pie of 2014 is far larger than the pie of 1500, but it is distributed so unevenly that many African peasants and Indonesian labourers return home after a hard day’s work with less food than did their ancestors 500 years ago. ([Location 5336](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=5336))
-- The only serious attempt to manage the world differently – Communism – was so much worse in almost every conceivable way that nobody has the stomach to try again. ([Location 5342](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=5342))
-- THE MODERN ECONOMY GROWS THANKS to our trust in the future and to the willingness of capitalists to reinvest their profits in production. ([Location 5355](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=5355))
-- But the evidence provided by the past is that they are finite only in theory. Counter-intuitively, while humankind’s use of energy and raw materials has mushroomed in the last few centuries, the amounts available for our exploitation have actually increased. Whenever a shortage of either has threatened to slow economic growth, investments have flowed into scientific and technological research. These have invariably produced not only more efficient ways of exploiting existing resources, but also completely new types of energy and materials. ([Location 5358](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=5358))
-
-### Consumerism
-
-- Obesity is a double victory for consumerism. Instead of eating little, which will lead to economic contraction, people eat too much and then buy diet products – contributing to economic growth twice over. ([Location 5589](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=5589))
-- As in previous eras, there is today a division of labour between the elite and the masses. In medieval Europe, aristocrats spent their money carelessly on extravagant luxuries, whereas peasants lived frugally, minding every penny. Today, the tables have turned. The rich take great care managing their assets and investments, while the less well heeled go into debt buying cars and televisions they don’t really need. ([Location 5592](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=5592))
-- The state and the market approached people with an offer that could not be refused. ‘Become individuals,’ they said. ([Location 5755](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=5755))
-
-### Culture and Discrimination
-
-- Ever more scholars see cultures as a kind of mental infection or parasite, with humans as its unwitting host. ([Location 3872](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=3872))
 - Successful cultures are those that excel in reproducing their memes, irrespective of the costs and benefits to their human hosts. ([Location 3882](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=3882))
-- Columbus’ fleet of 1492 – which consisted of three small ships manned by 120 sailors – was like a trio of mosquitoes compared to Zheng He’s drove of dragons.8 Yet there was a crucial difference. Zheng He explored the oceans, and assisted pro-Chinese rulers, but he did not try to conquer or colonise the countries he visited. ([Location 4643](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=4643))
-- The Zheng He expeditions prove that Europe did not enjoy an outstanding technological edge. What made Europeans exceptional was their unparalleled and insatiable ambition to explore and conquer. ([Location 4650](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=4650))
 
 ### Religion
 
@@ -325,9 +227,101 @@ and the interview made me "trust" Yuval and want to finish the book.
 - When the gods created man, Gilgamesh had learned, they set death as man’s inevitable destiny, and man must learn to live with it. Disciples of progress do not share this defeatist attitude. For men of science, death is not an inevitable destiny, but merely a technical problem. People die not because the gods decreed it, but due to various technical failures ([Location 4255](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=4255))
 - Death suffered its worst setbacks in the arena of child mortality. Until the twentieth century, between a quarter and a third of the children of agricultural societies never reached adulthood. ([Location 4284](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=4284))
 
+
+### Individualism
+
+- Over the past 10,000 years, Homo sapiens has grown so accustomed to being the only human species that it’s hard for us to conceive of any other possibility. ([Location 388](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=388))
+- Most Westerners today believe in individualism. ([Location 1899](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=1899))
+- Romanticism tells us that in order to make the most of our human potential we must have as many different experiences as we can. ([Location 1929](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=1929))
+- Romanticism, which encourages variety, meshes perfectly with consumerism. ([Location 1937](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=1937))
+-> - Even if by some superhuman effort I succeed in freeing my personal desires from the grip of the imagined order, I am just one person. ([Location 1951](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=1951))
+- Many of history’s most important drivers are inter-subjective: law, money, gods, nations. ([Location 1968](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=1968))
+- These imagined orders are inter-subjective, so in order to change them we must simultaneously change the consciousness of billions of people, which is not easy. ([Location 1975](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=1975))
+- A change of such magnitude can be accomplished only with the help of a complex organisation, such as a political party, an ideological movement, or a religious cult. ([Location 1976](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=1976))
+- It follows that in order to change an existing imagined order, we must first believe in an alternative imagined order. ([Location 1979](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=1979))
+- There is no way out of the imagined order. ([Location 1983](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=1983))
+- When we break down our prison walls and run towards freedom, we are in fact running into the more spacious exercise yard of a bigger prison. ([Location 1983](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=1983))
+
+### Desires Become "Needs"
+
+- Once people get used to a certain luxury, they take it for granted. ([Location 1486](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=1486))
+- but do I live a more relaxed life? ([Location 1491](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=1491))
+- We thought we were saving time; instead we revved up the treadmill of life to ten times its former speed and made our days more anxious and agitated. ([Location 1496](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=1496))
+- the luxury trap. ([Location 1498](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=1498))
+
+### Global Unification
+
+- global unification occurred in the last few centuries, ([Location 2747](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=2747))
+- The first universal order to appear was economic: the monetary order. The second universal order was political: the imperial order. The third universal order was religious: the order of universal religions such as Buddhism, Christianity and Islam. ([Location 2768](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=2768))
+- How did money succeed where gods and kings failed? ([Location 2779](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=2779))
+- obsession for gold ([Location 2790](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=2790))
+- useless yellow metal. ([Location 2791](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=2791))
+- As the Christians gradually gained the upper hand, they marked their victories not only by destroying mosques and building churches, but also by issuing new gold and silver coins bearing the sign of the cross and thanking God for His help in combating the infidels. ([Location 2794](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=2794))
+- ‘We are conquering you for your own benefit,’ said the Persians. Cyrus wanted the peoples he subjected to love him and to count themselves lucky to be Persian vassals. ([Location 3153](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=3153))
+- Evolution has made Homo sapiens, like other social mammals, a xenophobic creature. ([Location 3158](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=3158))
+- Americans nowadays maintain that their government has a moral imperative to bring Third World countries the benefits of democracy and human rights, even if these goods are delivered by cruise missiles and F-16s. ([Location 3206](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=3206))
+- It is unlikely that humankind can deal with these challenges without global cooperation. ([Location 3333](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=3333))
+
+#### The Monetary Systems is Based on Shared Beliefs and Trust
+
+- An economy of favours and obligations doesn’t work when large numbers of strangers try to cooperate. It’s one thing to provide free assistance to a sister or a neighbour, a very different thing to take care of foreigners who might never reciprocate the favour. ([Location 2821](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=2821))
+- One can fall back on barter. But barter is effective only when exchanging a limited range of products. It cannot form the basis for a complex economy. ([Location 2823](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=2823))
+- In a barter economy, every day the shoemaker and the apple grower will have to learn anew the relative prices of dozens of commodities. ([Location 2836](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=2836))
+- More than 90 percent of all money – more than $50 trillion appearing in our accounts – exists only on computer servers. ([Location 2869](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=2869))
+- As long as people are willing to trade goods and services in exchange for electronic data, ([Location 2872](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=2872))
+- dollars have value only in our common imagination. ([Location 2897](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=2897))
+- money isn’t a material reality – it is a psychological construct. ([Location 2899](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=2899))
+- Trust is the raw material from which all types of money are minted. ([Location 2902](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=2902))
+- Money is accordingly a system of mutual trust, and not just any system of mutual trust: money is the most universal and most efficient system of mutual trust ever devised. ([Location 2904](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=2904))
+- As long as people trusted the power and integrity of the king, they trusted his coins. ([Location 2952](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=2952))
+- the fact that another person believes in cowry shells, or dollars, or electronic data, is enough to strengthen our own belief in them, ([Location 2993](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=2993))
+- religion asks us to believe in something, money asks us to believe that other people believe in something ([Location 2996](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=2996))
+- Money is based on two universal principles: ([Location 3002](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=3002))
+- Universal convertibility: ([Location 3003](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=3003))
+- Universal trust: ([Location 3004](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=3004))
+- it corrodes local traditions, intimate relations and human values, replacing them with the cold laws of supply and demand. ([Location 3007](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=3007))
+- Human communities and families have always been based on belief in ‘priceless’ things, such as honour, loyalty, morality and love. These things lie outside the domain of the market, and they shouldn’t be bought or sold for money. ([Location 3008](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=3008))
+
+### Credit, Capitalism and Trust in a Growing Future
+
+- Banks are allowed to loan $10 for every dollar they actually possess, ([Location 4914](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=4914))
+- If all of the account holders at Barclays Bank suddenly demand their money, Barclays will promptly collapse (unless the government steps in to save it). ([Location 4916](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=4916))
+- What enables banks – and the entire economy – to survive and flourish is our trust in the future. ([Location 4919](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=4919))
+- with interest. ([Location 4924](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=4924))
+-> - a new system based on trust in the future. ([Location 4936](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=4936))
+- Credit enables us to build the present at the expense of the future. ([Location 4937](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=4937))
+- The problem in previous eras was not that no one had the idea or knew how to use it. It was that people seldom wanted to extend much credit because they didn’t trust that the future would be better than the present. They generally believed that times past had been better than their own times and that the future would be worse, or at best much the same. ([Location 4941](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=4941))
+- A Growing Pie ([Location 4965](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=4965))
+- Smith taught people to think about the economy as a ‘win-win situation’, in which my profits are also your profits. ([Location 4988](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=4988))
+- All this depends, however, on the rich using their profits to open new factories and hire new employees, rather than wasting them on non-productive activities. ([Location 4995](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=4995))
+- profits ought to be reinvested in production. ([Location 4998](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=4998))
+- Capitalism distinguishes ‘capital’ from mere ‘wealth’. Capital consists of money, goods and resources that are invested in production. Wealth, on the other hand, is buried in the ground or wasted on unproductive activities. ([Location 5002](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=5002))
+- capitalism gradually became far more than just an economic doctrine. It now encompasses an ethic – a set of teachings about how people should behave, educate their children and even think. Its principal tenet is that economic growth is the supreme good, or at least a proxy for the supreme good, because justice, freedom and even happiness all depend on economic growth. ([Location 5029](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=5029))
+- Over the last few years, banks and governments have been frenziedly printing money. Everybody is terrified that the current economic crisis may stop the growth of the economy. So they are creating trillions of dollars, euros and yen out of thin air, pumping cheap credit into the system, and hoping that the scientists, technicians and engineers will manage to come up with something really big, before the bubble bursts. ([Location 5044](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=5044))
+- Like a present-day start-up entrepreneur, Columbus did not give up. He pitched his idea to other potential investors in Italy, France, England, and again in Portugal. Each time he was rejected. He then tried his luck with Ferdinand and Isabella, rulers of newly united Spain. He took on some experienced lobbyists, and with their help he managed to convince Queen Isabella to invest. ([Location 5069](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=5069))
+- The king of Spain desperately needs more money to pay his army. He’s sure that your father has cash to spare. So he brings trumped-up treason charges against your brother. If he doesn’t come up with 20,000 gold coins forthwith, he’ll get cast into a dungeon and rot there until he dies. ([Location 5130](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=5130))
+- Euphoria swept the streets of Paris. People sold all their possessions and took huge loans in order to buy Mississippi shares. ([Location 5179](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=5179))
+- The big speculators emerged largely unscathed – they had sold in time. Small investors lost everything, and many committed suicide. ([Location 5193](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=5193))
+- The Mississippi Bubble was one of history’s most spectacular financial crashes. The royal French financial system never recuperated fully from the blow. ([Location 5194](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=5194))
+- But in its extreme form, belief in the free market is as naïve as belief in Santa Claus. There simply is no such thing as a market free of all political bias. ([Location 5269](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=5269))
+- Markets by themselves offer no protection against fraud, theft and violence. It is the job of political systems to ensure trust by legislating sanctions against cheats and to establish and support police forces, courts and jails which will enforce the law. ([Location 5271](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=5271))
+- In a completely free market, unsupervised by kings and priests, avaricious capitalists can establish monopolies or collude against their workforces. If there is a single corporation controlling all shoe factories in a country, or if all factory owners conspire to reduce wages simultaneously, then the labourers are no longer able to protect themselves by switching jobs. ([Location 5283](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=5283))
+- This is the fly in the ointment of free-market capitalism. It cannot ensure that profits are gained in a fair way, or distributed in a fair manner. ([Location 5310](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=5310))
+- Some religions, such as Christianity and Nazism, have killed millions out of burning hatred. Capitalism has killed millions out of cold indifference coupled with greed. The Atlantic slave trade did not stem from racist hatred towards Africans. The individuals who bought the shares, the brokers who sold them, and the managers of the slave-trade companies rarely thought about the Africans. ([Location 5313](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=5313))
+- In recent decades, and especially after 1945, capitalist greed was somewhat reined in, not least due to the fear of Communism. Yet inequities are still rampant. The economic pie of 2014 is far larger than the pie of 1500, but it is distributed so unevenly that many African peasants and Indonesian labourers return home after a hard day’s work with less food than did their ancestors 500 years ago. ([Location 5336](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=5336))
+- The only serious attempt to manage the world differently – Communism – was so much worse in almost every conceivable way that nobody has the stomach to try again. ([Location 5342](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=5342))
+- THE MODERN ECONOMY GROWS THANKS to our trust in the future and to the willingness of capitalists to reinvest their profits in production. ([Location 5355](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=5355))
+- But the evidence provided by the past is that they are finite only in theory. Counter-intuitively, while humankind’s use of energy and raw materials has mushroomed in the last few centuries, the amounts available for our exploitation have actually increased. Whenever a shortage of either has threatened to slow economic growth, investments have flowed into scientific and technological research. These have invariably produced not only more efficient ways of exploiting existing resources, but also completely new types of energy and materials. ([Location 5358](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=5358))
+
+### Consumerism
+
+- Obesity is a double victory for consumerism. Instead of eating little, which will lead to economic contraction, people eat too much and then buy diet products – contributing to economic growth twice over. ([Location 5589](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=5589))
+- As in previous eras, there is today a division of labour between the elite and the masses. In medieval Europe, aristocrats spent their money carelessly on extravagant luxuries, whereas peasants lived frugally, minding every penny. Today, the tables have turned. The rich take great care managing their assets and investments, while the less well heeled go into debt buying cars and televisions they don’t really need. ([Location 5592](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=5592))
+- The state and the market approached people with an offer that could not be refused. ‘Become individuals,’ they said. ([Location 5755](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=5755))
+
 ### Terrorism isn't where we should focus
 
-- stories. In the year 2000, wars caused the deaths of 310,000 individuals, and violent crime killed another 520,000. Each and every victim is a world destroyed, a family ruined, friends and relatives scarred for life. Yet from a macro perspective these 830,000 victims comprised only 1.5 per cent of the 56 million people who died in 2000. That year 1.26 million people died in car accidents (2.25 per cent of total mortality) and 815,000 people committed suicide (1.45 per cent). ([Location 5878](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=5878))
+- In the year 2000, wars caused the deaths of 310,000 individuals, and violent crime killed another 520,000. Each and every victim is a world destroyed, a family ruined, friends and relatives scarred for life. Yet from a macro perspective these 830,000 victims comprised only 1.5 per cent of the 56 million people who died in 2000. That year 1.26 million people died in car accidents (2.25 per cent of total mortality) and 815,000 people committed suicide (1.45 per cent). ([Location 5878](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=5878))
 
 ### Peace
 
