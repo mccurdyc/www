@@ -60,7 +60,7 @@ URL = "gs://www.mccurdyc.dev"
   dateformNum     = "2006-01-02"
   dateformNumTime = "2006-01-02 15:04 -0700"
 
-  homeSubtitle = "Software. Coffee. Fountain Pens. Running."
+  homeSubtitle = "Software. Reading. Running. Traveling. Photography."
 
   # Metadata mostly used in document's head
   description = "Colton J. McCurdy's Website."
@@ -135,25 +135,29 @@ URL = "gs://www.mccurdyc.dev"
     name       = "About"
     url        = "about/"
   [[menu.main]]
-    identifier = "posts"
-    name       = "Posts"
-    url        = "posts/"
-  [[menu.main]]
     identifier = "books"
     name       = "Books"
     url        = "books/"
   [[menu.main]]
-    identifier = "talks"
-    name       = "Talks"
-    url        = "talks/"
+    identifier = "posts"
+    name       = "Posts"
+    url        = "posts/"
   [[menu.main]]
-    identifier = "oss"
-    name       = "Software"
-    url        = "oss/"
-  [[menu.main]]
-    identifier = "papers"
-    name       = "Papers"
-    url        = "papers/"
+    identifier = "photos"
+    name       = "Photos"
+    url        = "photos/"
+  # [[menu.main]]
+  #   identifier = "talks"
+  #   name       = "Talks"
+  #   url        = "talks/"
+  # [[menu.main]]
+  #   identifier = "oss"
+  #   name       = "Software"
+  #   url        = "oss/"
+  # [[menu.main]]
+  #   identifier = "papers"
+  #   name       = "Papers"
+  #   url        = "papers/"
   [[menu.main]]
     identifier = "resume"
     name       = "Resume"
