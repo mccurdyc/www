@@ -41,10 +41,12 @@ and I'd probably stop keeping track of what I read, who knows._
 
 _yearlyConsumptionRate_1_: my current, non-retired, consumption rate which is
 about 15 books.
+
 _yearlyConsumptionRate_2_: an estimated retirement reading rate. I assumed a
 book a week, so 52 books.
 
 _((retirementAge - currentAge) * yearlyConsumptionRate_1) + ((70 - retirementAge) * yearlyConsumptionRate_2)_
+
 _((65-26)*15))+((70-65)*52)=845_
 
 ## My process
@@ -52,7 +54,7 @@ _((65-26)*15))+((70-65)*52)=845_
 This process is mostly for non-fiction reading. Fictional reading focuses more
 on enjoyment and extrapolating themes and lessons.
 
-### 1. Highlighting
+### 1. Highlight
 
 While reading a book, I will highlight things. Non-fiction books now often have
 quite a bit of "fluff" to meet publisher requirements. I view highlighting as
@@ -63,7 +65,7 @@ more context.
 In physical books, if there is a particular highlight that I don't want to miss
 when writing a post for this site, I will fold the corner of the page.
 
-### 2. Handwritten Notes
+### 2. Handwrite Notes
 
 Notes for me can either be summarizations of a particular thing I've read, a
 verbatim text or a thought or question that popped in my head after reading something.
@@ -142,7 +144,7 @@ write an entirely separate post on the topic of using my iPad for programming.
 In short, it's similar to Fatih Arslan's setup that he documents [here](https://arslan.io/2019/01/07/using-the-ipad-pro-as-my-development-machine/).
 That's definitely where I got the inspiration for my setup.
 
-###### mccurdyc.dev/books
+### 3. Post to mccurdyc.dev/books
 
 I use Hugo as my static site generator. I try to cut as much as possible from my
 highlights to get to my key takeaways from a book so that others can quickly skim
@@ -156,16 +158,6 @@ Why don't I just publish Obsidian pages?
 
 - I don't pay for [Obsidian's Publish feature](https://obsidian.md/publish)
 - I don't want to trim my raw, exported, highlights
-
-## Phsycial Components
-
-For most reading recently, I've been prioritizing enjoyment. Therefore, I've
-been highlighting during reading and not taking summarizing or personal notes
-as much. Then, after finishing a book, I flip through the pages and read
-my highlights and write a rough first pass of a post for my site and then will
-revise and revisit hightlights, etc.
-
-I don't often use a physical notebook other than when I'm seeking more enjoyment.
 
 ## What about audiobooks? Or podcasts?
 
