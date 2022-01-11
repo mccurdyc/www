@@ -1,5 +1,6 @@
 ---
 title: "pavucontrol Stuck Establishing Connection to PulseAudio"
+description: ""
 author: "Colton J. McCurdy"
 date: 2020-08-19T06:50:52-04:00
 subtitle: ""

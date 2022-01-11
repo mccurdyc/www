@@ -1,5 +1,6 @@
 ---
 title: Getting Started Locally with HashiCorp Vault and a PostgreSQL Storage Backend
+description: ""
 author: "Colton J. McCurdy"
 date: 2019-11-27
 post-tags: ["vault", "hashicorp", "secrets", "2019"]

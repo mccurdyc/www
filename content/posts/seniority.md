@@ -1,5 +1,6 @@
 ---
 title: Seniority?
+description: ""
 subtitle: How I define "senior" as someone with two years of industry experience
 author: "Colton J. McCurdy"
 date: 2019-07-06

@@ -1,5 +1,6 @@
 ---
 title: Kafka Summit New York City 2019
+description: ""
 author: "Colton J. McCurdy"
 date: 2019-04-02
 post-tags: ["kafka", "kafka summit", "nyc", "conference", "2019"]

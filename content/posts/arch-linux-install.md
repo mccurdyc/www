@@ -1,5 +1,6 @@
 ---
 title: "My Arch Linux Install and Configuration on a Dell XPS 13 7390 (2019)"
+description: ""
 author: "Colton J. McCurdy"
 type: ""
 date: 2020-03-05

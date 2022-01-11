@@ -1,5 +1,6 @@
 ---
 title: My First Year of Running Consistently
+description: ""
 author: "Colton J. McCurdy"
 date: 2019-12-05
 post-tags: ["running", "personal", "fitness", "health", "2019"]

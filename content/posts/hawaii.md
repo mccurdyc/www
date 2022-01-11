@@ -1,5 +1,6 @@
 ---
 title: The Trip of a Lifetime
+description: ""
 author: "Colton J. McCurdy"
 date: 2019-05-25
 post-tags: ["hawaii", "vacation", "friends", "personal", "2019"]

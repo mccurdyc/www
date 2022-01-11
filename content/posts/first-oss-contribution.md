@@ -1,5 +1,6 @@
 ---
 title: My Personal Journey to the Open Source Community
+description: ""
 author: "Colton J. McCurdy"
 date: 2018-11-06
 post-tags: ["open-source", "neighbor", "hacktoberfest", "golang"]
