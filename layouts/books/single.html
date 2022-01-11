@@ -54,7 +54,7 @@
 
             {{ $image := .Param "image" }}
             {{- if $image }}
-                <img src="{{ $image }}" class="book-cover" />
+                <img src="{{ $image }}" class="book-cover" width="200" height="300"/>
             {{ end }}
 
             {{ $authors := .Param "book-authors" }}
