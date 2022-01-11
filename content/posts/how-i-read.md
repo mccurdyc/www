@@ -122,7 +122,7 @@ to `add@readwise.io`.
 
 ##### GoodNotes 5
 
-I choose GoodNotes because I knew I was primarily going to use it for handwritten
+I chose GoodNotes because I knew I was primarily going to use it for handwritten
 notetaking from physical books. At the time of making the decision, GoodNotes 5
 was praised for its ability to index and therefore search handwritten text.
 
