@@ -4,6 +4,7 @@ subtitle: "A Primer"
 author: "Colton J. McCurdy"
 date: 2020-01-06
 description: ""
+image: "/images/thinking-in-systems/cover.jpg"
 book-tags: ["book", "2020", "systems-thinking"]
 books: ["Thinking in Systems: A Primer"]
 book-authors: ["Donella H. Meadows"]

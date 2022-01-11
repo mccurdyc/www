@@ -4,7 +4,7 @@ subtitle: ""
 description: "Infinite Jest takes you on a challenging, type-2-fun, mental journey through the lives of a handful key individuals as they reflect on their pasts — mostly tough upbringings — and all-time-lows. Zooming out, a main theme is \"addiction\", but really more generally, dedicating our lives to something, either by choice or not — whether it be religion, sports, drugs, or work — and often struggling alone. This isolated dedication numbs us from the difficulties of life; we often latch tighter on to our addictions rather than have difficult conversations and listen and feel for others who are struggling around us."
 author: "Colton J. McCurdy"
 date: 2021-02-22
-image: ""
+image: "/images/infinite-jest/cover.jpg"
 book-tags: ["book", "2021", "david-foster-wallace", "purpose"]
 books: ["Infinite Jest"]
 book-authors: ["David Foster Wallace"]
@@ -28,7 +28,7 @@ To be frank, there is so much detail and so many things going on concurrently an
 
 The primary goal of these notes is not to summarize the book, but instead to summarize what I took away — or learned — from the book at this time in my life.
 
-I started this book over Christmas break, 2020, after the first 9-months at a new job, where I spent a lot of that time fighting with Imposter Syndrome, burning myself out and honestly caring too much about what "success" meant for me at the company. 
+I started this book over Christmas break, 2020, after the first 9-months at a new job, where I spent a lot of that time fighting with Imposter Syndrome, burning myself out and honestly caring too much about what "success" meant for me at the company.
 
 The company is phenomenal at providing means to not burning out, yet I was still caught up with overworking to "prove myself". I had a Zoom call with a friend, who I had worked with and at the end of our conversation, we migrated to the topic of books and they recommended *Infinite Jest*. At the time I was looking for something to strengthen my mind — i.e., something that was "hard" — but was not directly related to technology, as in programming, etc.
 
@@ -114,7 +114,7 @@ One of the tennis boys, LaMount Chu, is obsessed with becoming a famous, recogni
 
 Ambition has more than one blade. It's also cutting the beholder.
 
-Lyle asks Chu why he wants to be "famous", to which Chu responds, "to give life meaning". Lyle then follows up with, how does being famous make your life meaningful? You think famous people care deeply about being famous? Derive immense meaning? Perhaps *at first* they derive meaning from the fame, but that meaning is also short-lived [p. 388]. 
+Lyle asks Chu why he wants to be "famous", to which Chu responds, "to give life meaning". Lyle then follows up with, how does being famous make your life meaningful? You think famous people care deeply about being famous? Derive immense meaning? Perhaps *at first* they derive meaning from the fame, but that meaning is also short-lived [p. 388].
 
 Later in the book, it talks about how to be "famous" — in tennis, it's referred to as making it to "the Show" — is to become an "entertainer" in some form. And that entertainers are "chewed up" by the machine that is audiences. Once the entertainers have reached a point where they can't take anymore "chewing", they give up and again they go back to feeling worthless. Yet, folks still desire to become "famous" [p. 661].
 
@@ -138,11 +138,11 @@ An argument that social media often makes is that they don't "force" people to u
 
 ### Everything is Endurable When You Don't Try to Pull a Weight Greater Than You are Able
 
-Living in the Present. An "endless Now" with containerized moments, where in each container, you are given the opportunity to make a choice [p. 860]. 
+Living in the Present. An "endless Now" with containerized moments, where in each container, you are given the opportunity to make a choice [p. 860].
 
 > ... everything unendurable was in the head, was the head not Abiding in the Present but hopping the wall and doing a recon and then returning with the unendurable news you then somehow believed [p. 861].
 
-These two snippets have similar themes in that both threaten self-harm in order to avoid doing something more difficult to address the underlying problem. 
+These two snippets have similar themes in that both threaten self-harm in order to avoid doing something more difficult to address the underlying problem.
 
 ### The Paralyzing Fear of "Failure"
 
@@ -193,8 +193,14 @@ Rather than goals *defining* our existence, we must prepare to transcend our goa
 
 At a macro-level, a group of wheelchair "terrorists" who have demonstrated willingness to forgo self pleasure and ease of life in order to do what is right for the group i.e., separate from the rest of the selfish nations. Throughout the book the terrorist group tries to tap into this fundamental weakness of "self pleasure" that most of the rest of society is unable to overcome in order to push their agenda of separation. Another macro-level theme is to really give life meaning, you must transcend the self and become part of something larger — i.e., a community — who *together* are dedicated to *something*. At a micro-level, there is a constant theme of addiction and overcoming addiction by dedicating and humbling oneself to a point where they "blindly swallow" what they are told to do and not dwelling on what *caused* your addiction or "Disease". Relieving anxiety by purchasing *things* is another micro theme throughout [p. 145, 412].
 
-A.F.R. secures and verifies a read-only copy of the film *Infinite Jest —* the samizdat or "the Entertainment — stolen from the death of Duplessis (???). Someone from E.T.A was working for A.F.R. [p. 724]. The master copy, which was said to have buried in the head [p. 31] of Mr. I., was missing when he was dug up [p. 934]. There were other suggestions that pointed at John Wayne as the E.T.A. resident working with A.F.R. as, for one, he was from Canada. Early in the book, it's mentioned that John Wayne would have won the major annual tennis tournament that year had he not been with Don Gately and Hal digging up Mr. I.'s grave [p. 17]. John Wayne was ranked 1st at E.T.A. [p. 260]. Was he ranked 1st because he didn't care about tennis? He wasn't paralyzing himself with goals, etc.? 
+A.F.R. secures and verifies a read-only copy of the film *Infinite Jest —* the samizdat or "the Entertainment — stolen from the death of Duplessis (???). Someone from E.T.A was working for A.F.R. [p. 724]. The master copy, which was said to have buried in the head [p. 31] of Mr. I., was missing when he was dug up [p. 934]. There were other suggestions that pointed at John Wayne as the E.T.A. resident working with A.F.R. as, for one, he was from Canada. Early in the book, it's mentioned that John Wayne would have won the major annual tennis tournament that year had he not been with Don Gately and Hal digging up Mr. I.'s grave [p. 17]. John Wayne was ranked 1st at E.T.A. [p. 260]. Was he ranked 1st because he didn't care about tennis? He wasn't paralyzing himself with goals, etc.?
 
 **Once you forget about external expectations, "let go" and stop intimately caring about and constantly "checkpointing", whatever it is that you are trying to achieve is when you finally enable yourself to become "successful"** is a common, primary, theme throughout the book; spanning the boys at E.T.A., folks at the Ennet Drug Recovery House and members of the A.F.R.
 
 There is also a common theme of prioritizing *appearing* to be okay over truly being okay. As long as you are able to fake it well, then you tell yourself you are okay. In the book, substance users are worried about what the substance they are abusing does to their teeth more than they are worried about what it is doing to their mind [p. 770]. Similarly, Mrs. I. fakes her feelings and defines herself by her childrens' reactions so as long as everyone can fake being happy, then she feels that she is okay and a good mother.
+
+## Photos
+
+{{< load-photoswipe >}}
+{{< gallery dir="images/infinite-jest" >}}
+{{< gallery />}}

@@ -4,7 +4,7 @@ subtitle: ""
 description: "Crying of Lot 49 tells a story of the power and vulnerability of our minds.  An already paranoid woman looking for an escape becomes obsessed with and trapped by a conspiracy theory about an underground postal carrier. She continues to journey deep into seamless conspiracy."
 author: "Colton J. McCurdy"
 date: 2021-03-11
-image: ""
+image: "/images/crying-of-lot-49/cover.jpg"
 book-tags: ["book", "2021", "classic", "psychology"]
 books: ["Crying of Lot 49"]
 book-authors: ["Thomas Pynchon"]

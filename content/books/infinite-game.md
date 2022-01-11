@@ -4,7 +4,7 @@ subtitle: ""
 description: "In life, we are just players in many games. We can choose to play these games with a finite or infinite mindset, where we try to \"win\" or \"achieve\" something, or perpetuate the game, respectively. There are many external, societal pressures that turn into internal pressures, which encourage finite mindedness; we must fight these pressures and remember the Cause that we aim to perpetuate."
 author: "Colton J. McCurdy"
 date: 2020-12-07
-image: ""
+image: "/images/infinite-game/cover.jpg"
 book-tags: ["book", "infinite", "n-order thinking", "cause", "purpose", "2020", "thinking"]
 books: ["The Infinite Game"]
 book-authors: ["Simon Sinek"]

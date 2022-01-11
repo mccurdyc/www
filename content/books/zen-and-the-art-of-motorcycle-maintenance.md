@@ -4,7 +4,7 @@ author: "Colton J. McCurdy"
 date: 2020-05-04T06:36:43-04:00
 subtitle: "An Inquiry into Values"
 description: "A journey across the country on a motorcycle while diving into the unifying factor between subject and object, namely Quality. Quality is not a _thing_, but an _event_ at which the subject becomes aware of the object. Quality is woven into objects through the attitude of the creator."
-image: ""
+image: "/images/zen-and-the-art-of-motorcycle-maintenance/cover.jpg"
 book-tags: ["book", "2020", "values", "quality"]
 books: ["Zen and the Art of Motorcycle Maintenance"]
 book-authors: ["Robert M. Pirsig"]

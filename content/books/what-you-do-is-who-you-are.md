@@ -4,6 +4,7 @@ subtitle: "How To Create Your Business Culture"
 author: "Colton J. McCurdy"
 date: 2020-02-23
 description: "Ben Horowitz, describes how culture is defined by your actions as a leader. He presents stories of samurai, prison gangs and slave revolt to describe the importance of and how to build a strong culture."
+image: "/images/what-you-do-is-who-you-are/cover.jpg"
 book-tags: ["book", "2020", "culture"]
 books: ["What You Do Is Who You Are: How To Create Your Business Culture"]
 book-authors: ["Ben Horowitz"]

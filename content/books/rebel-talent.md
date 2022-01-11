@@ -4,7 +4,7 @@ subtitle: "Why it Pays to Break the Rules at Work and in Life"
 description: "Surround yourself with diversity. Foster a life full of curiosity, especially in positions of 'power' and experience. Challenge 'norms' and fear comfort."
 author: "Colton J. McCurdy"
 date: 2020-11-07
-image: ""
+image: "/images/rebel-talent/cover.jpg"
 book-tags: ["book", "2020", "social-norms", "conformity", "rebel", "talent"]
 books: ["Rebel Talent: Why it Pays to Break the Rules at Work and in Life"]
 book-authors: ["Francesca Gino"]

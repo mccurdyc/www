@@ -4,6 +4,7 @@ subtitle: "Systems of Engineering Management"
 author: "Colton J. McCurdy"
 date: 2019-06-11
 description: "\"An organization is a collection of people working toward a shared goal.\" Yet, it is often a challenge getting people to \"gel\" and have everyone work optimally together. This book talks proposes ideas that worked (or didn't work) for the author in his career managing engineers."
+image: "/images/elegant-puzzle/cover.jpg"
 book-tags: ["book", "2019"]
 books: ["An Elegant Puzzle: Systems of Engineering Management"]
 book-authors: ["Will Larson"]
