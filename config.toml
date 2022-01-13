@@ -33,6 +33,8 @@ disableSitemap = false
 disable404     = false
 disableHugoGeneratorInject = false
 
+ignoreErrors = ["error-remote-getjson"]
+
 [deployment]
 order = [".jpg$", ".gif$"]
 
