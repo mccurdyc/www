@@ -1,0 +1,41 @@
+{{ define "main" }}
+
+{{ $scratch := newScratch }}
+{{ $scratch.Set "imgUrl" .Site.BaseURL }}
+
+<link rel="stylesheet" href="/css/hugo-easy-gallery.css" />
+<link rel="stylesheet" href="/css/photos.css" />
+
+<main>
+	<article class="page">
+		<header class="post-header width-normal">
+			<h1 class="post-title">{{ .Title }}</h1>
+		</header>
+		<div class="post-content">
+			{{ .Content }}
+			<div class="photo-container">
+				{{ range (where .Site.RegularPages "Type" "in" (slice "photos")) }}
+				{{ if eq .Params.gallery_feature true }}
+				<div class="photo-item">
+					<a href="{{ .Permalink }}" data-no-instant>
+            <div class="box fancy-figure caption-position-bottom caption-effect-fade">
+              <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <div class="img">
+                  <img itemprop="contentUrl" src="{{ .Params.featured_image }}" />
+                </div>
+
+                <figcaption>
+                  {{ .Params.camera }} {{ .Params.lens }} - <i>f</i>/{{ .Params.aperature }} {{ .Params.shutter_speed }} {{ .Params.iso }}iso
+                </figcaption>
+              </figure>
+            </div>
+					</a>
+				</div>
+				{{ end }}
+				{{ end }}
+			</div>
+		</div>
+	</article>
+</main>
+
+{{ end }}
