@@ -17,7 +17,7 @@
 				{{ range (where .Site.RegularPages "Type" "in" (slice "photos")) }}
 				{{ if eq .Params.gallery_feature true }}
 					<a href="{{ .Permalink }}">
-            <div class="box fancy-figure caption-position-bottom caption-effect-fade">
+            <div class="fancy-figure caption-position-bottom caption-effect-fade">
               <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
                 <div class="img">
                   <img itemprop="contentUrl" src="{{ .Params.featured_image }}" />

@@ -1,13 +1,10 @@
 #photos {
-   /* change the photo hover box */
-   line-height: 3;
-
    -webkit-column-count: 3;
    -webkit-column-gap:   0px;
    -moz-column-count:    3;
    -moz-column-gap:      0px;
    column-count:         3;
-   column-gap:           10px;
+   column-gap:           0px;
 }
 
 #photos img {
@@ -45,25 +42,7 @@
   }
 }
 
-body {
-  margin: 0;
-  padding: 0;
+figure {
+  margin: 0px;
+  padding: 2px;
 }
-/* .photo-container { */
-/*   display: grid; */
-/*   grid-auto-flow: dense; */
-/*   grid-gap: 10px; */
-/*   grid-template-columns: repeat(3, 1fr); */
-/* } */
-/*  */
-/* .photo-container img { */
-/*   height: 100%; */
-/*   width: 100%; */
-/*   object-fit: cover; */
-/* } */
-/*  */
-/* .photo-item { */
-/*   width: 100%; */
-/*   height: 100%; */
-/*   object-fit: cover; */
-/* } */
