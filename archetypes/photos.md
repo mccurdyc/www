@@ -10,7 +10,6 @@ iso: ""
 aperature: ""
 gallery_feature: true
 image: ""
-image_thumbnail: ""
 tags: []
 draft: true
 ---
