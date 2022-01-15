@@ -10,4 +10,5 @@ books: ["{{ replace .Name "-" " " | title }}"]
 book-authors: []
 amazon: ""
 thriftbooks: ""
+draft: true
 ---
