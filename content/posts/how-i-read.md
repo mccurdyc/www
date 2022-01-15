@@ -1,8 +1,7 @@
 ---
 title: "How I Read"
-description: ""
+description: "A tradeoff between effeciency, effectiveness and enjoyment. My process prioritizes effeciency of \"re-reads\" or referring to where I learned something and less about reading most efficiently."
 author: "Colton J. McCurdy"
-type: ""
 date: 2022-01-07
 subtitle: "A tradeoff between effeciency, effectiveness and enjoyment"
 image: ""
