@@ -1,6 +1,6 @@
 ---
-title: "{{ replace .Name "-" " " | title }}"
-date: {{ .Date }}
+title: "Foggy Trees"
+date: 2022-01-15T14:09:05-05:00
 subtitle: ""
 description: ""
 camera: ""
@@ -9,7 +9,7 @@ shutter_speed: ""
 iso: ""
 aperature: ""
 gallery_feature: true
-image: "/images/photography/"
+image: ""
 tags: []
-draft: false
+draft: true
 ---

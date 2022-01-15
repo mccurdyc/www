@@ -3,7 +3,7 @@ title: "NYC"
 date: 2021-02-14T08:52:42-05:00
 subtitle: ""
 description: "Chelsea Market NYC"
-camera: "Fuji x100v"
+camera: "x100v"
 lens: "23mm"
 shutter_speed: "1/100"
 iso: "2500"
