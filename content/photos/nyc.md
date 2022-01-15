@@ -1,5 +1,5 @@
 ---
-title: "Nyc"
+title: "NYC"
 date: 2022-01-12T08:52:42-05:00
 subtitle: ""
 description: ""
@@ -9,7 +9,8 @@ shutter_speed: ""
 iso: "100"
 aperature: ""
 gallery_feature: true
-featured_image: "/images/photography/2021-02-14-nyc-x100v-s100-f28-i2500.jpg"
+image: "/images/photography/2021-02-14-nyc-x100v-s100-f28-i2500.jpg"
+image_thumbnail: "/images/photography/2021-02-14-nyc-x100v-s100-f28-i2500-thumb.jpg"
 tags: []
 ---
 

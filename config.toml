@@ -85,17 +85,17 @@ URL = "gs://www.mccurdyc.dev"
 
   # Directory name of your blog content (default is `content/posts`)
   contentTypeName = "posts"
-  listedContentTypes = ["posts", "books", "talks", "papers"]
+  listedContentTypes = ["posts", "books", "photos"]
 
   # Default theme "light" or "dark"
-  defaultTheme = "dark"
-  themeColor = "#2d2d2d"
+  defaultTheme = "light"
+  themeColor = "#1b1c1d"
 
   # Colors for favicons
   [params.favicon.color]
-    mask = "#2d2d2d"
-    msapplication = "#2d2d2d"
-    theme = "#2d2d2d"
+    mask = "#1b1c1d"
+    msapplication = "#1b1c1d"
+    theme = "#1b1c1d"
 
   [params.logo]
     logoText     = "$HOME"

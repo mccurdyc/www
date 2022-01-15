@@ -7,33 +7,31 @@
 <link rel="stylesheet" href="/css/photos.css" />
 
 <main>
-	<article class="page">
-		<header class="post-header width-normal">
-			<h1 class="post-title">{{ .Title }}</h1>
-		</header>
-		<div class="post-content">
-			{{ .Content }}
-			<section id="photos">
-				{{ range (where .Site.RegularPages "Type" "in" (slice "photos")) }}
-				{{ if eq .Params.gallery_feature true }}
-					<a href="{{ .Permalink }}">
-            <div class="fancy-figure caption-position-bottom caption-effect-fade">
-              <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                <div class="img">
-                  <img itemprop="contentUrl" src="{{ .Params.featured_image }}" />
-                </div>
+  <header class="post-header width-normal">
+    <h1 class="post-title">{{ .Title }}</h1>
+  </header>
+  <div class="post-content">
+    {{ .Content }}
+    <section id="photos">
+      {{ range (where .Site.RegularPages "Type" "in" (slice "photos")) }}
+      {{ if eq .Params.gallery_feature true }}
+        <a href="{{ .Permalink }}">
+          <div class="fancy-figure caption-position-bottom caption-effect-fade">
+            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+              <div class="img">
+                <img itemprop="contentUrl" src="{{ .Params.image_thumbnail }}" />
+              </div>
 
-                <figcaption>
-                  {{ .Params.camera }} {{ .Params.lens }} - <i>f</i>/{{ .Params.aperature }} {{ .Params.shutter_speed }} {{ .Params.iso }}iso
-                </figcaption>
-              </figure>
-            </div>
-					</a>
-				{{ end }}
-				{{ end }}
-				</section>
-		</div>
-	</article>
+              <figcaption>
+                {{ .Params.camera }} {{ .Params.lens }} - <i>f</i>/{{ .Params.aperature }} {{ .Params.shutter_speed }} {{ .Params.iso }}iso
+              </figcaption>
+            </figure>
+          </div>
+        </a>
+      {{ end }}
+      {{ end }}
+      </section>
+  </div>
 </main>
 
 {{ end }}

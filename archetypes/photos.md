@@ -9,6 +9,8 @@ shutter_speed: ""
 iso: ""
 aperature: ""
 gallery_feature: true
-featured_image: ""
+image: ""
+image_thumbnail: ""
 tags: []
+draft: true
 ---
