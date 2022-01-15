@@ -27,7 +27,7 @@ was established to own the pipeline. I effectively transfered ownership of
 the pipeline as I was interested in moving to the DevOps team.
 
 Prior to joining StockX in May of 2017 as employee number 50 --- approximately
-the 5th backend engineer --- I completed his B.Sc. in Computer Science at
+the 5th backend engineer --- I completed my B.Sc. in Computer Science at
 Allegheny College, where my research focus was software testing, specifically
 analyzing a technique known as mutation testing for evaluating test suite adequacy.
 
