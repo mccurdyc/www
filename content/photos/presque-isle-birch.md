@@ -14,6 +14,4 @@ tags: ["m240", "28mm Summicron", "presque isle"]
 draft: false
 ---
 
-{{< figure src="/images/photography/2022-01-11-birch-l240-28mm-s60-f95-i800.jpg" >}}
-
 I love these birch trees. I'm not in love with these photos. I will keep practicing.

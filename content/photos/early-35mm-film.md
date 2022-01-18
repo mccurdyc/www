@@ -8,7 +8,7 @@ lens: "50mm Summicron Dual-Range"
 shutter_speed: "-"
 iso: "-"
 aperature: "-"
-gallery_feature: true
+gallery_feature: false
 image: "/images/photography/2021-10-07-film-random.jpg"
 tags: ["Leica M-A", "Pentax K1000", "film"]
 draft: false
