@@ -23,11 +23,13 @@ I knew very little about photography at this time --- heck when I got the camera
 I didn't know how to take a photo with autofocus --- but I knew that I wanted to
 invest in a camera that would be good for traveling and everyday carrying. I
 wanted it to be a camera that would clearly surpass the quality of an iPhone.
-I also knew that I wanted to use a prime len to force myself to move around.
-I also knew that I didn't want to be editing photos. Primarily because the only
-computers that I have are Linux machines and they aren't as well supported as Macs
-or Windows for photo editing. It wasn't until much later that I figured out that
-you could use Lightroom on the iPad.
+I also knew that I wanted to use a prime len to force myself to move around and
+would be smaller and easier for everyday carrying.
+I also knew that I didn't want to be spending a significant amount of time
+editing photos. Primarily because the only computers that I have are
+Linux machines and they aren't as well supported as Macs or Windows for photo
+editing. It wasn't until much later that I figured out that you could use
+Lightroom on the iPad.
 
 ## Fuji x100v
 
@@ -82,7 +84,7 @@ in August of 2021 and I realized they had a Leica store.
 
 I had done quite a bit of research before going and had my eye on the Leica M-A
 because it is a 35mm rangefinder film camera that is still produced and it is
-totally manual --- i.e., no light sensor. I wanted
+totally manual with no electronics --- i.e., no light sensor. I wanted
 a challenge and to learn how to meter light without a meter. I almost didn't visit
 the Leica store because I expected to get laughed at, but the manager, Jarrett,
 was super nice. He let me try out anything I wanted. I got to hold a Leica for
@@ -142,7 +144,8 @@ to use my M-mount lenses to experiment.
 
 After the rumors were confirmed that they fixed everything wrong, in my opinion,
 with every digital Leica to date, I pre-ordered the M11. Now, this is by no means
-a cheap or even reasonably-priced camera. But it's exactly what I wanted in a camera,
+a cheap or even reasonably-priced camera. But it's exactly what I wanted in a camera.
+
 Leicas hold their value and got me planning how I could pay for this thing. In 2022,
 I'm going to work on building my portfolio and try to start making money from
 photography by shooting some sessions.
@@ -173,10 +176,11 @@ I've shot with 4 cameras now, 3 digital and 2 35mm film.
 - My first camera, fuji x100v acquired Dec 2020
 - Traded my sister my x100v for her xe4 that in Dec 2021
 - Leica M240 (loaner)
+- Leica M11 received on Jan 23rd 2022
 
 #### 35mm Film Cameras
 
-- Pentax K1000 gifted to me probably in June or July 2021
+- Pentax K1000 gifted to me in June or July 2021
 - Leica M-A film camera acquired in Aug 2021
 
 ## Lens
