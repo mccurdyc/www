@@ -19,6 +19,8 @@ fan of the style of his work.
 > [Parr's photos] show us in a penetrating way how we live, how we present ourselves
 > to others, and what we value. - [website](https://www.martinparr.com/introduction/)
 
+- [Philip Blair](https://www.philipblairs.com)
+
 - [Faizal Westcott](https://www.faizalwestcott.com)
 - [Mustafah Abdulaziz](https://www.mustafahabdulaziz.com)
 - [Joel Meyerowitz](https://www.joelmeyerowitz.com)
