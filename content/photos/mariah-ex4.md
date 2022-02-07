@@ -10,7 +10,9 @@ iso: "6400"
 aperature: "2"
 gallery_feature: true
 image: "/images/photography/2021-04-10-mariah-xe4-s200-f2-i6400.jpg"
-tags: ["x100v", "mariah"]
+tags:
+- x100v
+- Fujinon 23mm f/2
 draft: false
 ---
 

@@ -10,6 +10,9 @@ iso: ""
 aperature: ""
 gallery_feature: true
 image: "/images/photography/"
-tags: []
+tags:
+- Leica M11
+- Leica 50mm Summicron Dual-Range
+- Black and White
 draft: false
 ---

@@ -10,7 +10,9 @@ iso: "80"
 aperature: "7.1"
 gallery_feature: true
 image: "/images/photography/2021-01-17-niagra-falls-x100v-s80-f71-i80.jpg"
-tags: ["x100v", "niagara falls"]
+tags:
+- x100v
+- Fujinon 23mm f/2
 draft: false
 ---
 

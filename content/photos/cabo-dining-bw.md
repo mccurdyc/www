@@ -10,6 +10,10 @@ iso: "1600"
 aperature: "2"
 gallery_feature: true
 image: "/images/photography/2021-04-16-cabo-x100v-s125-f2-i1600.jpg"
-tags: ["x100v", "cabo"]
+tags:
+- x100v
+- Fujinon 23mm f/2
+- Black and White
+- cabo
 draft: false
 ---

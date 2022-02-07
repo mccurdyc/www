@@ -10,7 +10,11 @@ iso: "-"
 aperature: "-"
 gallery_feature: false
 image: "/images/photography/2021-10-07-film-random.jpg"
-tags: ["Leica M-A", "Pentax K1000", "film"]
+tags:
+- Leica MA
+- Leica 50mm Summicron Dual-Range
+- Pentax K1000
+- film
 draft: false
 ---
 

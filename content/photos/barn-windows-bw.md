@@ -10,6 +10,9 @@ iso: "64"
 aperature: "2.4"
 gallery_feature: true
 image: "/images/photography/2022-02-05-barn-windows-bw-m11-50mm-s125-f24-i64.JPG"
-tags: ["bw"]
+tags:
+- Leica M11
+- Leica 50mm Summicron Dual-Range
+- Black and White
 draft: false
 ---

@@ -10,7 +10,9 @@ iso: "2500"
 aperature: "2500"
 gallery_feature: true
 image: "/images/photography/2021-02-14-nyc-x100v-s100-f28-i2500.jpg"
-tags: ["x100v"]
+tags:
+- x100v
+- Fujinon 23mm f/2
 ---
 
 I love love love love the colors, exposure and focus of this photo. This was

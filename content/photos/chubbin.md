@@ -10,7 +10,10 @@ iso: "8000"
 aperature: "2"
 gallery_feature: true
 image: "/images/photography/2021-01-05-chubbin-x100v-s125-f2-i8000.jpg"
-tags: ["x100v", "cats"]
+tags:
+- x100v
+- Fujinon 23mm f/2
+- cats
 ---
 
 This was one of the first photos that I was proud of, where I felt good about the

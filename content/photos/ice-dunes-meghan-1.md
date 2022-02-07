@@ -10,6 +10,8 @@ iso: "160"
 aperature: "5.6"
 gallery_feature: true
 image: "/images/photography/2021-01-30-presque-isle-01-x100v-s500-f56-i160.jpg"
-tags: ["x100v", "presque isle"]
+tags:
+- x100v
+- Fujinon 23mm f/2
 draft: false
 ---
