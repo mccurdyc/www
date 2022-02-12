@@ -4,7 +4,7 @@ subtitle: "Organizing Business and Technology Teams for Fast Flow"
 description: "Team Topologies highlights human limitations regarding cognitive load and how this affects both system and organizational design. \"Team-first thinking\" is introduced as a foundational principle and is enabled via four fundamental team topologies -- stream-aligned, platform, enabling and complicated subsystem -- and three accompanying \"interaction modes\" —  X-as-a-Service, facilitating and collaborating. It is acknowledged that proper team topologies should be dynamic and evolve — not be blatantly copied — alongside the company and won't be as successful if the local and wider company culture is lacking in areas such as trust, emotional safety, vision, funding and abiding to industry best practices."
 author: "Colton J. McCurdy"
 date: 2021-03-22
-image: "/images/team-topologies/cover.jpg"
+image: "https://storage.googleapis.com/images.mccurdyc.dev/images/team-topologies/cover.jpg"
 book-tags: ["book", "software engineering", "technology", "teams"]
 books: ["Team Topologies"]
 book-authors: ["Matthew Skelton", "Manuel Pais"]

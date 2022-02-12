@@ -52,7 +52,7 @@ To read more about using Vuetify and integrating with Vue, check out the
 ## GitHub OAuth Sign-in Button or `v-btn` in Vuetify
 
 <p align="center">
-  <img src="/images/naas-toolbar.png">
+  <img src="https://storage.googleapis.com/images.mccurdyc.dev/images/naas-toolbar.png">
 </p>
 
 Due to the nature of neighbor, signing in to GitHub to access resources is necessary.

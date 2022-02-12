@@ -4,7 +4,7 @@ author: "Colton J. McCurdy"
 date: 2020-08-23T09:43:58-04:00
 subtitle: "A Journey to the Center of the Internet"
 description: "While the Internet may feel like a bubble of omnipresent connectivity, the core of the Internet is localized to relatively few places; like Ashburn, Virginia or 60 Hudson Street in New York City. This book takes a journey to these few places that are the foundation of the Internet."
-image: "/images/tubes-a-journey-to-the-center-of-the-internet/cover.jpg"
+image: "https://storage.googleapis.com/images.mccurdyc.dev/images/tubes-a-journey-to-the-center-of-the-internet/cover.jpg"
 book-tags: ["internet", "networking", "2020"]
 books: ["Tubes: A Journey to the Center of the Internet"]
 book-authors: ["Andrew Blum"]

@@ -4,7 +4,7 @@ author: "Colton J. McCurdy"
 date: 2020-07-14T20:57:59-04:00
 subtitle: "What Really Separates World-Class Performers from Everybody Else"
 description: "Colvin analyzes great golfers, musicians, chess players and more in their respective domains to determine what makes them identifiably great. Turns out, there is no magic, just an early start, persistent focused deliberate practice and motivation to continue working hard."
-image: "/images/talent-is-overrated/cover.jpg"
+image: "https://storage.googleapis.com/images.mccurdyc.dev/images/talent-is-overrated/cover.jpg"
 book-tags: ["book", "2020", "self-help"]
 books: ["Talent is Overrated"]
 book-authors: ["Geoff Colvin"]

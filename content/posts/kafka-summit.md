@@ -55,10 +55,10 @@ Speaker(s):
 ### Key slides
 
 {{< gallery caption-effect="fade" >}}
-  {{< figure thumb="-thumb" src="/images/cod-proxy.jpg" caption="Slide 1" >}}
-  {{< figure thumb="-thumb" src="/images/cod-chained-cluster.jpg" caption="Slide 2" >}}
-  {{< figure thumb="-thumb" src="/images/cod-topic-naming.jpg" caption="Slide 3" >}}
-  {{< figure thumb="-thumb" src="/images/cod-message-envelope.jpg" caption="Slide 4" >}}
+  {{< figure thumb="-thumb" src="https://storage.googleapis.com/images.mccurdyc.dev/images/cod-proxy.jpg" caption="Slide 1" >}}
+  {{< figure thumb="-thumb" src="https://storage.googleapis.com/images.mccurdyc.dev/images/cod-chained-cluster.jpg" caption="Slide 2" >}}
+  {{< figure thumb="-thumb" src="https://storage.googleapis.com/images.mccurdyc.dev/images/cod-topic-naming.jpg" caption="Slide 3" >}}
+  {{< figure thumb="-thumb" src="https://storage.googleapis.com/images.mccurdyc.dev/images/cod-message-envelope.jpg" caption="Slide 4" >}}
 {{< /gallery >}}
 
 ### Key points:
@@ -114,8 +114,8 @@ Speaker(s):
 ### Key slides
 
 {{< gallery caption-effect="fade" >}}
-  {{< figure thumb="-thumb" src="/images/tinder-event-driven-arch.jpg" caption="Slide 1" >}}
-  {{< figure thumb="-thumb" src="/images/tinder-notification.jpg" caption="Slide 2" >}}
+  {{< figure thumb="-thumb" src="https://storage.googleapis.com/images.mccurdyc.dev/images/tinder-event-driven-arch.jpg" caption="Slide 1" >}}
+  {{< figure thumb="-thumb" src="https://storage.googleapis.com/images.mccurdyc.dev/images/tinder-notification.jpg" caption="Slide 2" >}}
 {{< /gallery >}}
 
 ### Key points:
@@ -141,13 +141,13 @@ Speaker(s):
 ### Key slides
 
 {{< gallery caption-effect="fade" >}}
-  {{< figure thumb="-thumb" src="/images/flipp-contexts.jpg" caption="Slide 1" >}}
-  {{< figure thumb="-thumb" src="/images/flipp-dual-write.jpg" caption="Slide 2" >}}
-  {{< figure thumb="-thumb" src="/images/flipp-dual-write2.jpg" caption="Slide 3" >}}
-  {{< figure thumb="-thumb" src="/images/flipp-denormalization.jpg" caption="Slide 4" >}}
-  {{< figure thumb="-thumb" src="/images/flipp-upstream-denormalize.jpg" caption="Slide 5" >}}
-  {{< figure thumb="-thumb" src="/images/flipp-proxy-denormalization.jpg" caption="Slide 6" >}}
-  {{< figure thumb="-thumb" src="/images/flipp-core-event.jpg" caption="Slide 7" >}}
+  {{< figure thumb="-thumb" src="https://storage.googleapis.com/images.mccurdyc.dev/images/flipp-contexts.jpg" caption="Slide 1" >}}
+  {{< figure thumb="-thumb" src="https://storage.googleapis.com/images.mccurdyc.dev/images/flipp-dual-write.jpg" caption="Slide 2" >}}
+  {{< figure thumb="-thumb" src="https://storage.googleapis.com/images.mccurdyc.dev/images/flipp-dual-write2.jpg" caption="Slide 3" >}}
+  {{< figure thumb="-thumb" src="https://storage.googleapis.com/images.mccurdyc.dev/images/flipp-denormalization.jpg" caption="Slide 4" >}}
+  {{< figure thumb="-thumb" src="https://storage.googleapis.com/images.mccurdyc.dev/images/flipp-upstream-denormalize.jpg" caption="Slide 5" >}}
+  {{< figure thumb="-thumb" src="https://storage.googleapis.com/images.mccurdyc.dev/images/flipp-proxy-denormalization.jpg" caption="Slide 6" >}}
+  {{< figure thumb="-thumb" src="https://storage.googleapis.com/images.mccurdyc.dev/images/flipp-core-event.jpg" caption="Slide 7" >}}
 {{< /gallery >}}
 
 ### Key Points:
@@ -219,11 +219,11 @@ Speaker(s):
 ### Key slides
 
 {{< gallery caption-effect="fade" >}}
-  {{< figure thumb="-thumb" src="/images/confluent-alexa.jpg" caption="Slide 1" >}}
-  {{< figure thumb="-thumb" src="/images/confluent-refresh-ahead.jpg" caption="Slide 2" >}}
-  {{< figure thumb="-thumb" src="/images/confluent-refresh-ahead-adapt.jpg" caption="Slide 3" >}}
-  {{< figure thumb="-thumb" src="/images/confluent-write-behind.jpg" caption="Slide 4" >}}
-  {{< figure thumb="-thumb" src="/images/confluent-write-behind-adapt.jpg" caption="Slide 5" >}}
+  {{< figure thumb="-thumb" src="https://storage.googleapis.com/images.mccurdyc.dev/images/confluent-alexa.jpg" caption="Slide 1" >}}
+  {{< figure thumb="-thumb" src="https://storage.googleapis.com/images.mccurdyc.dev/images/confluent-refresh-ahead.jpg" caption="Slide 2" >}}
+  {{< figure thumb="-thumb" src="https://storage.googleapis.com/images.mccurdyc.dev/images/confluent-refresh-ahead-adapt.jpg" caption="Slide 3" >}}
+  {{< figure thumb="-thumb" src="https://storage.googleapis.com/images.mccurdyc.dev/images/confluent-write-behind.jpg" caption="Slide 4" >}}
+  {{< figure thumb="-thumb" src="https://storage.googleapis.com/images.mccurdyc.dev/images/confluent-write-behind-adapt.jpg" caption="Slide 5" >}}
 {{< /gallery >}}
 
 
@@ -262,7 +262,7 @@ Speaker(s):
 ### Key slides
 
 {{< gallery caption-effect="fade" >}}
-  {{< figure thumb="-thumb" src="/images/tesla-ingestion.jpg" caption="Slide 1" >}}
+  {{< figure thumb="-thumb" src="https://storage.googleapis.com/images.mccurdyc.dev/images/tesla-ingestion.jpg" caption="Slide 1" >}}
 {{< /gallery >}}
 
 ### Key points
@@ -291,14 +291,14 @@ Speaker(s):
 ### Key slides
 
 {{< gallery caption-effect="fade" >}}
-  {{< figure thumb="-thumb" src="/images/trivadis-cqrs.jpg" caption="Slide 1" >}}
-  {{< figure thumb="-thumb" src="/images/trivadis-event-sourcing.jpg" caption="Slide 2" >}}
-  {{< figure thumb="-thumb" src="/images/trivadis-option1.jpg" caption="Slide 3" >}}
-  {{< figure thumb="-thumb" src="/images/trivadis-option2.jpg" caption="Slide 4" >}}
-  {{< figure thumb="-thumb" src="/images/trivadis-option3.jpg" caption="Slide 5" >}}
-  {{< figure thumb="-thumb" src="/images/trivadis-dual-write.jpg" caption="Slide 6" >}}
-  {{< figure thumb="-thumb" src="/images/trivadis-kafka-streams.jpg" caption="Slide 7" >}}
-  {{< figure thumb="-thumb" src="/images/trivadis-summary.jpg" caption="Slide 8" >}}
+  {{< figure thumb="-thumb" src="https://storage.googleapis.com/images.mccurdyc.dev/images/trivadis-cqrs.jpg" caption="Slide 1" >}}
+  {{< figure thumb="-thumb" src="https://storage.googleapis.com/images.mccurdyc.dev/images/trivadis-event-sourcing.jpg" caption="Slide 2" >}}
+  {{< figure thumb="-thumb" src="https://storage.googleapis.com/images.mccurdyc.dev/images/trivadis-option1.jpg" caption="Slide 3" >}}
+  {{< figure thumb="-thumb" src="https://storage.googleapis.com/images.mccurdyc.dev/images/trivadis-option2.jpg" caption="Slide 4" >}}
+  {{< figure thumb="-thumb" src="https://storage.googleapis.com/images.mccurdyc.dev/images/trivadis-option3.jpg" caption="Slide 5" >}}
+  {{< figure thumb="-thumb" src="https://storage.googleapis.com/images.mccurdyc.dev/images/trivadis-dual-write.jpg" caption="Slide 6" >}}
+  {{< figure thumb="-thumb" src="https://storage.googleapis.com/images.mccurdyc.dev/images/trivadis-kafka-streams.jpg" caption="Slide 7" >}}
+  {{< figure thumb="-thumb" src="https://storage.googleapis.com/images.mccurdyc.dev/images/trivadis-summary.jpg" caption="Slide 8" >}}
 {{< /gallery >}}
 
 ### Key points:

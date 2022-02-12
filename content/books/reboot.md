@@ -4,7 +4,7 @@ subtitle: "Leadership And The Art Of Growing Up"
 description: "\"If you bring forth what is in you, what is in you will save you. If you do not bring forth what is in you, what is in you will destroy you.\""
 author: "Colton J. McCurdy"
 date: 2021-12-07T08:13:45-05:00
-image: "/images/reboot/cover.jpg"
+image: "https://storage.googleapis.com/images.mccurdyc.dev/images/reboot/cover.jpg"
 book-tags: ["book", "2021", "purpose", "maturing"]
 books: ["Reboot: Leadership And The Art Of Growing Up"]
 book-authors: ["Jerry Colonna"]

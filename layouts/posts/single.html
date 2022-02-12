@@ -40,7 +40,7 @@
             {{ $coverLicense := .Param "cover-license" }}
             {{ $coverLicenseURL := .Param "cover-license-url" }}
             {{ with .Params.Cover }}
-                <img src="/images/{{ . }}" class="post-cover" />
+                <img src="https://storage.googleapis.com/images.mccurdyc.dev/images/{{ . }}" class="post-cover" />
                 <p style="text-align:center">
                   <a href="{{ $coverSource }}">"{{ $coverImageTitle }}"</a> by <a href="{{ $coverImageCreatorURL }}">{{ $coverImageCreatorName }}</a> is licensed under <a href="{{ $coverLicenseURL }}">{{ $coverLicense }}</a>
                 </p>
