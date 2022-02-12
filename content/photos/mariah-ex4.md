@@ -9,7 +9,7 @@ shutter_speed: "1/200"
 iso: "6400"
 aperature: "2"
 gallery_feature: true
-image: "/images/photography/2021-04-10-mariah-xe4-s200-f2-i6400.jpg"
+image: "https://storage.googleapis.com/images.mccurdyc.dev/images/photography/2021-04-10-mariah-xe4-s200-f2-i6400.jpg"
 tags:
 - x100v
 - Fujinon 23mm f/2

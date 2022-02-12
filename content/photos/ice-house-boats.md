@@ -9,7 +9,7 @@ shutter_speed: "1/125"
 iso: "800"
 aperature: "5.6"
 gallery_feature: true
-image: "/images/photography/2022-01-11-boats-l240-28mm-s30-f34-i400.jpg"
+image: "https://storage.googleapis.com/images.mccurdyc.dev/images/photography/2022-01-11-boats-l240-28mm-s30-f34-i400.jpg"
 tags:
 - Leica M240
 - Leica 28mm Summicron
