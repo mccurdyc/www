@@ -198,9 +198,3 @@ A.F.R. secures and verifies a read-only copy of the film *Infinite Jest —* the
 **Once you forget about external expectations, "let go" and stop intimately caring about and constantly "checkpointing", whatever it is that you are trying to achieve is when you finally enable yourself to become "successful"** is a common, primary, theme throughout the book; spanning the boys at E.T.A., folks at the Ennet Drug Recovery House and members of the A.F.R.
 
 There is also a common theme of prioritizing *appearing* to be okay over truly being okay. As long as you are able to fake it well, then you tell yourself you are okay. In the book, substance users are worried about what the substance they are abusing does to their teeth more than they are worried about what it is doing to their mind [p. 770]. Similarly, Mrs. I. fakes her feelings and defines herself by her childrens' reactions so as long as everyone can fake being happy, then she feels that she is okay and a good mother.
-
-## Photos
-
-{{< load-photoswipe >}}
-{{< gallery dir="images/infinite-jest" >}}
-{{< gallery />}}
