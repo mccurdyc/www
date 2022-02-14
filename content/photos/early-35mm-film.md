@@ -9,7 +9,7 @@ shutter_speed: "-"
 iso: "-"
 aperature: "-"
 gallery_feature: false
-image: "https://storage.googleapis.com/images.mccurdyc.dev/images/photography/2021-10-07-film-random.jpg"
+image: "/images/photography/2021-10-07-film-random.jpg"
 tags:
 - Leica MA
 - Leica 50mm Summicron Dual-Range
@@ -19,8 +19,8 @@ draft: false
 ---
 
 
-{{< figure src="https://storage.googleapis.com/images.mccurdyc.dev/images/photography/2021-10-07-film-random-02.jpg" >}}
+{{< figure src="/images/photography/2021-10-07-film-random-02.jpg" >}}
 
-{{< figure src="https://storage.googleapis.com/images.mccurdyc.dev/images/photography/2021-10-07-film-ma-hole.jpg" >}}
+{{< figure src="/images/photography/2021-10-07-film-ma-hole.jpg" >}}
 
 This is what the images from the M-A with shutter curtain burnt looked like.

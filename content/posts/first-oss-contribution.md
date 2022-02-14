@@ -8,7 +8,7 @@ posts: ["My Personal Journey to the Open Source Community"]
 ---
 
 
-{{< figure src="https://storage.googleapis.com/images.mccurdyc.dev/images/hacktoberfest-tshirt.jpg" >}}
+{{< figure src="/images/hacktoberfest-tshirt.jpg" >}}
 
 For five years now, GitHub has been a part of the month-long celebration of open
 source software, known as Hacktoberfest. Hacktoberfest is an opportunity for new and
@@ -23,7 +23,7 @@ that inspired me to contribute to the project of choice, namely [source{d}'s](ht
 ## My personal open-source project
 
 <p align="center">
-  <img src="https://storage.googleapis.com/images.mccurdyc.dev/images/neighbor.png" width="300" height="300">
+  <img src="/images/neighbor.png" width="300" height="300">
 </p>
 
 My personal project, [neighbor](https://github.com/mccurdyc/neighbor), is a
@@ -45,7 +45,7 @@ with the project under inspection as an argument.
 ## A quick shout-out to source{d}
 
 <p align="center">
-  <img src="https://storage.googleapis.com/images.mccurdyc.dev/images/sourced.jpg" width="400" height="150">
+  <img src="/images/sourced.jpg" width="400" height="150">
 </p>
 
 If you are unfamiliar with source{d}, you should check out what they are doing
@@ -75,7 +75,7 @@ in GitHub reviews. I honestly felt like part of the team.
 ## What is go-git?
 
 <p align="center">
-  <img src="https://storage.googleapis.com/images.mccurdyc.dev/images/go-git.png" width="700" height="200">
+  <img src="/images/go-git.png" width="700" height="200">
 </p>
 
 [go-git](https://github.com/src-d/go-git) is a "highly extensible Git implementation

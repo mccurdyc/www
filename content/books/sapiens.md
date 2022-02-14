@@ -4,7 +4,7 @@ subtitle: "A Brief History of Humankind"
 description: "Brief, surface-level overview of the history and advancement of Homo Sapiens. Personally, I enjoyed the second half of the book more than the first."
 author: "Colton J. McCurdy"
 date: 2022-01-06
-image: "https://storage.googleapis.com/images.mccurdyc.dev/images/sapiens/cover.jpg"
+image: "/images/sapiens/cover.jpg"
 book-tags: ["book", "2022", "advancement", "purpose"]
 books: ["Sapiens: A Brief History of Humankind"]
 book-authors: ["Yuval Noah Harari"]

@@ -3,7 +3,7 @@ title: "Hold Me Tight"
 subtitle: "Seven conversations for a lifetime of love"
 author: "Colton J. McCurdy"
 date: 2019-08-29
-image: "https://storage.googleapis.com/images.mccurdyc.dev/images/hold-me-tight/cover.jpg"
+image: "/images/hold-me-tight/cover.jpg"
 description: "Hold Me Tight discusses a practice known as Emotionally Focused Therapy or EFT for short. EFT is heavily based on John Bowlby's Attachment Theory. The basis of both EFT and Attachment Theory is the innate need for connections and closeness with others. In Hold Me Tight, author Dr. Sue Johnson discusses EFT in the context of couples with many real world conversations. She also describes how EFT can be a solution for what she calls 'Demon Dialogues' or cyclical arguments where individuals are indirectly demanding each other's attention and love."
 book-tags: ["book", "2019"]
 books: ["Hold Me Tight: Seven conversations for a lifetime of love"]

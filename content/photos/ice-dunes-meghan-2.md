@@ -9,7 +9,7 @@ shutter_speed: "1/640"
 iso: "160"
 aperature: "4.5"
 gallery_feature: true
-image: "https://storage.googleapis.com/images.mccurdyc.dev/images/photography/2021-01-30-presque-isle-02-x100v-s640-f45-i160.jpg"
+image: "/images/photography/2021-01-30-presque-isle-02-x100v-s640-f45-i160.jpg"
 tags:
 - x100v
 - Fujinon 23mm f/2

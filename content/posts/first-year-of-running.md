@@ -52,7 +52,7 @@ relay that we are going to try to run in June.
   Prior to the run group starting this year, I was not consistently training, so I
   have a lot of room for further improvement in 2020.
 
-  {{< figure src="https://storage.googleapis.com/images.mccurdyc.dev/images/2019-running-calendar.png" >}}
+  {{< figure src="/images/2019-running-calendar.png" >}}
 
 - 330 total tracked miles running year-to-date, with the rest of December left to still run.
 

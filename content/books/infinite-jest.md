@@ -4,7 +4,7 @@ subtitle: ""
 description: "Infinite Jest takes you on a challenging, type-2-fun, mental journey through the lives of a handful key individuals as they reflect on their pasts — mostly tough upbringings — and all-time-lows. Zooming out, a main theme is \"addiction\", but really more generally, dedicating our lives to something, either by choice or not — whether it be religion, sports, drugs, or work — and often struggling alone. This isolated dedication numbs us from the difficulties of life; we often latch tighter on to our addictions rather than have difficult conversations and listen and feel for others who are struggling around us."
 author: "Colton J. McCurdy"
 date: 2021-02-22
-image: "https://storage.googleapis.com/images.mccurdyc.dev/images/infinite-jest/cover.jpg"
+image: "/images/infinite-jest/cover.jpg"
 book-tags: ["book", "2021", "david-foster-wallace", "purpose"]
 books: ["Infinite Jest"]
 book-authors: ["David Foster Wallace"]

@@ -4,7 +4,7 @@ subtitle: ""
 description: "We are helpless and inefficacious as parts of a system until we recognize the existence of the system."
 author: "Colton J. McCurdy"
 date: 2022-01-30T05:43:27-05:00
-image: "https://storage.googleapis.com/images.mccurdyc.dev/images/broom-of-the-system/cover.jpg"
+image: "/images/broom-of-the-system/cover.jpg"
 book-tags: ["book"]
 books: ["The Broom of the System"]
 book-authors: ["David Foster Wallace"]

@@ -9,7 +9,7 @@ shutter_speed: "1/100"
 iso: "2500"
 aperature: "2500"
 gallery_feature: true
-image: "https://storage.googleapis.com/images.mccurdyc.dev/images/photography/2021-02-14-nyc-x100v-s100-f28-i2500.jpg"
+image: "/images/photography/2021-02-14-nyc-x100v-s100-f28-i2500.jpg"
 tags:
 - x100v
 - Fujinon 23mm f/2

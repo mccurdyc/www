@@ -50,7 +50,7 @@ to Haleakalā, we stopped to pick up a few snacks (chocolate and peanut butter c
 gold fish and wheat thins) and drinks (32oz water and vitamin water) because there
 are no places to eat in the national park and we expected to be there through lunch.
 
-{{< figure src="https://storage.googleapis.com/images.mccurdyc.dev/images/haleakala-route.jpg" >}}
+{{< figure src="/images/haleakala-route.jpg" >}}
 
 > _Our route is highlighted [here](https://twitter.com/McCurdyColton/status/1129455010167705600),
 > but this map also includes the various routes on Haleakalā. I found this map on

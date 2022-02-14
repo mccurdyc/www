@@ -4,7 +4,7 @@ subtitle: "what's worth doing"
 description: "Poses questions about what it is that you _really_ want to do. If you are doing something that you are questioning, you shouldn't be doing it."
 author: "Colton J. McCurdy"
 date: 2020-12-12
-image: "https://storage.googleapis.com/images.mccurdyc.dev/images/hell-yeah-or-no/cover.jpg"
+image: "/images/hell-yeah-or-no/cover.jpg"
 book-tags: ["book", "2020"]
 books: ["Hell Yeah or No"]
 book-authors: ["Derek Sivers"]

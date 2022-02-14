@@ -3,7 +3,7 @@ title: "The Manager's Path"
 subtitle: "A Guide for Tech Leaders Navigating Growth & Change"
 author: "Colton J. McCurdy"
 date: 2019-07-18
-image: "https://storage.googleapis.com/images.mccurdyc.dev/images/managers-path/cover.jpg"
+image: "/images/managers-path/cover.jpg"
 description: "Camille Fournier is widely respected in the engineering management and wider tech community for sharing her knowledge of the nebulous role of engineering manager. In The Manager's Path, Fournier defines common difficult people or situations that you will most likely face as an engineering manager and how to approach these people or situations."
 book-tags: ["book", "2019"]
 books: ["The Manager's Path: A Guide for Tech Leaders Navigating Growth & Change"]
