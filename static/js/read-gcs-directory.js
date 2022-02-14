@@ -1,3 +1,4 @@
+// build: browserify --exclude worker_threads static/js/read-gcs-directory.js  -o static/js/browserify-read-gcs-bundle.js
 $( document ).ready(function() {
   const {Storage} = require('@google-cloud/storage');
 
