@@ -1,16 +1,21 @@
 {{ define "main" }}
     <link rel="stylesheet" href="/css/font.css" />
-    <link rel="stylesheet" href="/css/hugo-easy-gallery.css" />
+    <link rel="stylesheet" href="/css/simple-gallery.css" />
 
     {{ if .Params.js }}
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
     <script src="{{ .Params.js }}"></script>
     {{ end }}
 
     {{ $scratch := newScratch }}
     {{ $scratch.Set "imgUrl" .Site.BaseURL }}
 
+    {{ if eq .Params.simple_gallery true }}
+    <main>
+      {{ .Content }}
+    </main>
+    {{ else }}
     <main class="post">
-
         <div class="post-info">
             <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>{{ i18n "readingTime" .Page.ReadingTime }}
 
@@ -45,7 +50,6 @@
                 {{ .Content }}
             </div>
         </article>
-
         <hr />
 
         <div class="post-info">
@@ -102,4 +106,5 @@
             </div>
         {{ end }}
     </main>
+    {{ end }}
 {{ end }}

@@ -1,36 +1,30 @@
-const { Storage } = require('@google-cloud/storage');
-
-$( document ).ready(function() {
-  const projectId = 'www-mccurdyc-dev'
-  const storage = new Storage({projectId: projectId});
-  const options = {
-    prefix: 'images/photography/2022-02-09-yoga',
-  };
-
+window.onload=function(){
   async function listFiles() {
+    var gallery = document.getElementById('simple-gallery');
     let output = "";
 
-    const [files] = await storage.bucket('images.mccurdyc.dev').getFiles(options);
-    var gallery = document.getElementById('image-gallery');
+    let resp = await fetch('https://storage.googleapis.com/storage/v1/b/images.mccurdyc.dev/o?prefix=images/photography/2022-02-09-yoga');
+    if (resp.ok) {
+      let json = await resp.json();
 
-    files.forEach(file => {
-      output += `
-      <div class="box">
-        <figure itemprop='associatedMedia' itemscope itemtype='http://schema.org/ImageObject'>
-          <div class='img'>
-            <img itemprop='thumbnail' src='https://storage.googleapis.com/images.mccurdyc.dev/${file.name}' alt='TODO HERE' />
+      json.items.forEach(file => {
+        output += `
+        <a href="https://storage.googleapis.com/images.mccurdyc.dev/${file.name}" target="_blank">
+          <div class="box fancy-figure caption-position-bottom caption-effect-fade">
+            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+              <div class="img">
+                <img src="https://www.mccurdyc.dev/${file.name}?quality=30&pad=30&bg-color=ffffff"/>
+              </div>
+              <figcaption>
+                <p>${file.name}</p>
+              </figcaption>
+            </figure>
           </div>
-          <figcaption>
-            <p>Caption HERE</p>
-          </figcaption>
-          <a href='https://storage.googleapis.com/images.mccurdyc.dev/${file.name}' itemprop='contentUrl'></a>
-        </figure>
-      </div>`;
-    });
-
-     gallery.innerHTML = output;
-    console.log(output);
+        </a>`;
+      });
+    }
+    gallery.innerHTML = output;
   }
 
   listFiles().catch(console.error);
-});
+};

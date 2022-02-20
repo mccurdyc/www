@@ -14,7 +14,8 @@ function main() {
   # Deploy!
   # Make sure to set the gcloud account using: gcloud auth application-default login
   hugo deploy --force --maxDeletes -1
-gsutil -m rsync -r gs://images.mccurdyc.dev/images gs://www.mccurdyc.dev/images
+  gsutil -m rsync -r gs://images.mccurdyc.dev/images gs://www.mccurdyc.dev/images
+  gsutil -m setmeta -r -h "Cache-Control: no-store, max-age=86400" gs://www.mccurdyc.dev/*
 
   # Purge Fastly cache
   if [ -z "${FASTLY_SERVICE_ID}" ]; then

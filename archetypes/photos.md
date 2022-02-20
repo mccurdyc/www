@@ -9,6 +9,7 @@ shutter_speed: ""
 iso: ""
 aperature: ""
 gallery_feature: true
+simple_gallery: false
 image: "/images/photography/"
 tags:
 - Leica M11
