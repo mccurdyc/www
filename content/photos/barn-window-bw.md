@@ -9,6 +9,7 @@ shutter_speed: "1/1000"
 iso: "64"
 aperature: "2.0"
 gallery_feature: true
+bucket: "images.mccurdy.dev"
 image: "/images/photography/2022-02-05-barn-window-bw-m11-90mm-s1000-f2-i64.JPG"
 tags:
 - Leica M11

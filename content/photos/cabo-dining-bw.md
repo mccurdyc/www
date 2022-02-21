@@ -9,6 +9,7 @@ shutter_speed: "1/125"
 iso: "1600"
 aperature: "2"
 gallery_feature: true
+bucket: "images.mccurdy.dev"
 image: "/images/photography/2021-04-16-cabo-x100v-s125-f2-i1600.jpg"
 tags:
 - x100v

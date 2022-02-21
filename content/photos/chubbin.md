@@ -9,6 +9,7 @@ shutter_speed: "1/125"
 iso: "8000"
 aperature: "2"
 gallery_feature: true
+bucket: "images.mccurdy.dev"
 image: "/images/photography/2021-01-05-chubbin-x100v-s125-f2-i8000.jpg"
 tags:
 - x100v

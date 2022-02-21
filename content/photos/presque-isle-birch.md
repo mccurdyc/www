@@ -9,6 +9,7 @@ shutter_speed: "1/125"
 iso: "800"
 aperature: "9.5"
 gallery_feature: true
+bucket: "images.mccurdy.dev"
 image: "/images/photography/2022-01-11-birch-l240-28mm-s125-f95-i800.jpg"
 tags:
 - Leica M240

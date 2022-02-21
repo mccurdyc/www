@@ -9,6 +9,7 @@ shutter_speed: "1/125"
 iso: "800"
 aperature: "6.8"
 gallery_feature: true
+bucket: "images.mccurdy.dev"
 image: "/images/photography/2022-01-11-ice-houses-l240-28mm-s125-f56-i800.jpg"
 tags:
 - Leica M240
