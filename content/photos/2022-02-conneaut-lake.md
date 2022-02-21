@@ -1,5 +1,5 @@
 ---
-title: "2022 02 Conneaut Lake"
+title: "2022-02 Conneaut Lake"
 date: 2022-02-20T21:25:34-05:00
 subtitle: ""
 description: ""
@@ -10,6 +10,7 @@ iso: "80"
 aperature: "9.5"
 gallery_feature: true
 simple_gallery: false
+bucket: "images.mccurdyc.dev"
 image: "/images/photography/2022-02/L1001523.jpg"
 tags:
 - Leica M11
@@ -17,6 +18,6 @@ tags:
 draft: false
 ---
 
-I've carried my camera with my to the local coffee shop on the lake so many
+I've carried my camera with me to the local coffee shop on the lake so many
 times, but haven't seen a composition that I liked until this day. I'm pretty
 happy with this.

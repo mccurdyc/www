@@ -10,6 +10,8 @@ iso: ""
 aperature: ""
 gallery_feature: true
 simple_gallery: false
+bucket: "images.mccurdyc.dev"
+prefix: "images/photography/NEW_DIR"
 image: "/images/photography/"
 tags:
 - Leica M11

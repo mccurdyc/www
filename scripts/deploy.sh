@@ -11,6 +11,10 @@ function main() {
   rm -rf public
   hugo --ignoreCache
 
+  # Build javascript bundles.
+  pushd static/js/read-gcs && npx webpack
+  popd
+
   # Deploy!
   # Make sure to set the gcloud account using: gcloud auth application-default login
   hugo deploy --force --maxDeletes -1
