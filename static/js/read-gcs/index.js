@@ -13,7 +13,7 @@ window.onload=function(){
           <div class="box fancy-figure caption-position-bottom caption-effect-fade">
             <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
               <div class="img">
-                <img src="https://www.mccurdyc.dev/${file.name}?quality=30&pad=30&bg-color=ffffff"/>
+                <img src="https://www.mccurdyc.dev/${file.name}?quality=30&pad=100&bg-color=ffffff"/>
               </div>
               <figcaption>
                 <p>${file.name}</p>
