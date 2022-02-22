@@ -9,7 +9,7 @@ shutter_speed: "1/4000"
 iso: "64"
 aperature: "2.4"
 gallery_feature: true
-bucket: "images.mccurdy.dev"
+bucket: "images.mccurdyc.dev"
 image: "/images/photography/2022-02-05-white-bw-m11-50mm-s4000-f24-i64.JPG"
 tags:
 - Leica M11
