@@ -9,7 +9,7 @@ shutter_speed: "1/125"
 iso: "125"
 aperature: "3.4"
 gallery_feature: true
-bucket: "images.mccurdy.dev"
+bucket: "images.mccurdyc.dev"
 image: "/images/photography/2022-02-05-field-bw-m11-90mm-s250-f34-i125.JPG"
 tags:
 - Leica M11

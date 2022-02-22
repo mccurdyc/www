@@ -9,7 +9,7 @@ shutter_speed: "-"
 iso: "-"
 aperature: "-"
 gallery_feature: false
-bucket: "images.mccurdy.dev"
+bucket: "images.mccurdyc.dev"
 image: "/images/photography/2021-10-07-film-random.jpg"
 tags:
 - Leica MA
