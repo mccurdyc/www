@@ -8,7 +8,7 @@ lens: "23mm"
 shutter_speed: "1/80"
 iso: "80"
 aperature: "7.1"
-gallery_feature: true
+gallery_feature: false
 bucket: "images.mccurdyc.dev"
 image: "/images/photography/2021-01-17-niagra-falls-x100v-s80-f71-i80.jpg"
 tags:

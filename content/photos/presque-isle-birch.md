@@ -8,7 +8,7 @@ lens: "28mm Summicron"
 shutter_speed: "1/125"
 iso: "800"
 aperature: "9.5"
-gallery_feature: true
+gallery_feature: false
 bucket: "images.mccurdyc.dev"
 image: "/images/photography/2022-01-11-birch-l240-28mm-s125-f95-i800.jpg"
 tags:

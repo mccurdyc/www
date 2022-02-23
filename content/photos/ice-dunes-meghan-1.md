@@ -8,7 +8,7 @@ lens: "23mm"
 shutter_speed: "1/500"
 iso: "160"
 aperature: "5.6"
-gallery_feature: true
+gallery_feature: false
 bucket: "images.mccurdyc.dev"
 image: "/images/photography/2021-01-30-presque-isle-01-x100v-s500-f56-i160.jpg"
 tags:

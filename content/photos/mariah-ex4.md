@@ -8,7 +8,7 @@ lens: "23mm"
 shutter_speed: "1/200"
 iso: "6400"
 aperature: "2"
-gallery_feature: true
+gallery_feature: false
 bucket: "images.mccurdyc.dev"
 image: "/images/photography/2021-04-10-mariah-xe4-s200-f2-i6400.jpg"
 tags:
