@@ -1,7 +1,7 @@
 ---
 title: "White Noise"
 subtitle: ""
-description: "Breath, don't think."
+description: "Breathe, don't think."
 author: "Colton J. McCurdy"
 date: 2022-04-05
 image: "/images/white-noise/cover.jpg"
