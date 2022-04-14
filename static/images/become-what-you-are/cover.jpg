@@ -1,0 +1,12 @@
+--2022-04-14 06:10:11--  https://img.thriftbooks.com/api/images/m/0911c1aa5d7d8b6655524ce180aa031b4b4f19fb.jpg
+Loaded CA certificate '/etc/ssl/certs/ca-certificates.crt'
+Resolving img.thriftbooks.com (img.thriftbooks.com)... 151.101.2.7, 151.101.130.7, 151.101.66.7, ...
+Connecting to img.thriftbooks.com (img.thriftbooks.com)|151.101.2.7|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 8868 (8.7K) [image/jpeg]
+Saving to: ‘0911c1aa5d7d8b6655524ce180aa031b4b4f19fb.jpg’
+
+     0K ........                                              100% 27.3M=0s
+
+2022-04-14 06:10:12 (27.3 MB/s) - ‘0911c1aa5d7d8b6655524ce180aa031b4b4f19fb.jpg’ saved [8868/8868]
+
