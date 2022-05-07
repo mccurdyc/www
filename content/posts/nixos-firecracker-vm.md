@@ -98,3 +98,4 @@ I've made this decision.
 
   - https://nixos.org/manual/nix/stable/package-management/profiles.html
   - https://nixos.wiki/wiki/Change_root
+19. Need to use `nixos-enter` instead
