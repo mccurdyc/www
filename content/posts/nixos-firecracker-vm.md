@@ -1,5 +1,5 @@
 ---
-title: "05 2022 NixOS Firecracker VM"
+title: "NixOS Firecracker VM"
 description: "I've been playing with Firecracker VMs for a bit now and have become my primary means for PoCing things. And I've been wanting to switch to NixOS, but haven't had the time to move my primary machine."
 author: ""
 date: 2022-05-07
