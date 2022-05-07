@@ -28,7 +28,7 @@ the photos I took --- on "interval shooting" mode --- while learning to ollie.
 {{< simple-gallery >}}
 
 It wasn't until I returned from SF and looked at the photos that had been taken
-in interval mode that something captured my eye, the sticker or stencil grafitti
+in interval mode that something captured my eye, the sticker or stencil graffiti
 of the "three-faced woman" at the top of the pole behind me. At first, I didn't
 see the three faces! I thought it was just grafitti of a woman and wasn't until
 I looked much closer that I saw just how cool this was.
