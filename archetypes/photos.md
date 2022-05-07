@@ -19,3 +19,5 @@ tags:
 - Black and White
 draft: false
 ---
+
+{{< simple-gallery >}}
