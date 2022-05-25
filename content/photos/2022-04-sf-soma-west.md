@@ -1,5 +1,5 @@
 ---
-title: "04-2022 SF Soma West Skatepark"
+title: "2022-04 SF Soma West Skatepark"
 description: "I visited SF to meet co-workers for the first time since the pandemic. I love adventuring alone in new places, finding subjects for my photography. Skateparks have been a recent subject and while I was there, I was practicing olling."
 author: ""
 date: 2022-05-07
