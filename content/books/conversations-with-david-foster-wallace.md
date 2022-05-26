@@ -1,7 +1,7 @@
 ---
 title: "Conversations With David Foster Wallace"
 subtitle: ""
-description: ""
+description: "figure out how fiction can engage a reader, much of whose sensibility has been formed by pop culture, without simply becoming more shit in the pop culture machine."
 author: "Colton J. McCurdy"
 date: 2022-05-20T13:32:20-04:00
 image: "/images/conversations-with-david-foster-wallace/cover.jpg"
