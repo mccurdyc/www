@@ -5,7 +5,7 @@ description: "We are helpless and inefficacious as parts of a system until we re
 author: "Colton J. McCurdy"
 date: 2022-01-30T05:43:27-05:00
 image: "/images/broom-of-the-system/cover.jpg"
-book-tags: ["book"]
+book-tags: ["book", "2022"]
 books: ["The Broom of the System"]
 book-authors: ["David Foster Wallace"]
 amazon: "https://www.amazon.com/Broom-System-Novel-Penguin-Ink/dp/0143116932"
