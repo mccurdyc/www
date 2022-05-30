@@ -47,6 +47,10 @@ order = [".jpg$", ".gif$"]
 name = "www"
 URL = "gs://www.mccurdyc.dev"
 
+[[deployment.matchers]]
+pattern = "^.+\\.(jpg|JPG)$"
+cacheControl = "no-store, max-age=0, s-maxage=3600"
+
 [permalinks]
   posts = "/posts/:year/:month/:title/"
 

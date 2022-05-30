@@ -3,11 +3,7 @@
 set -ux -o pipefail
 
 function main() {
-
-  # Delete all remote files
-  gsutil -m rm -r gs://www.mccurdyc.dev/**
-
-  # Make sure that only items that were clean-built get deployed; nothing stale or cached.
+  # Build site!
   rm -rf public
   hugo --ignoreCache
 
@@ -18,8 +14,9 @@ function main() {
   # Deploy!
   # Make sure to set the gcloud account using: gcloud auth application-default login
   hugo deploy --force --maxDeletes -1
+  # Make sure images are synced after deploy
   gsutil -m rsync -r gs://images.mccurdyc.dev/images gs://www.mccurdyc.dev/images
-  gsutil -m setmeta -r -h "Cache-Control: no-store, max-age=86400" gs://www.mccurdyc.dev/*
+  gsutil -m setmeta -r -h "Cache-Control: no-store, max-age=0, s-maxage=3600" gs://www.mccurdyc.dev/*
 
   # Purge Fastly cache
   if [ -z "${FASTLY_SERVICE_ID}" ]; then
