@@ -65,7 +65,7 @@ kids to express themselve through skating and graffiti, she said that Josh Sherr
 seemed potentially interested in some of the space at Race Street to be allocated
 to this artistic center/skatepark.
 
-- https://www.meadvilletribune.com/news/local_news/grant-to-help-epa-to-conduct-an-environmental-assessment-at-former-meadville-lumber-yard/article_30301666-7588-11ec-a49e-77d02f753cdb.html
+- [Meadville Tribune](https://www.meadvilletribune.com/news/local_news/grant-to-help-epa-to-conduct-an-environmental-assessment-at-former-meadville-lumber-yard/article_30301666-7588-11ec-a49e-77d02f753cdb.html)
 
 ## PhotoVoices
 
