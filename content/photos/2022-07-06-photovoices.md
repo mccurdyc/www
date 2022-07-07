@@ -81,7 +81,7 @@ were thinking and the story we wanted to tell with our photos.
 
 The following are my responses.
 
-## Negatives
+### Negatives
 
 The story that I wanted to tell was that we are blessed to have such a beautiful
 and historical space, yet it provides no current value to our community. I envision
@@ -96,7 +96,7 @@ something new with much less character.
 {{< figure src="/images/2022-07-06-photovoices/L1005647.jpg" >}}
 {{< figure src="/images/2022-07-06-photovoices/L1005648.jpg" >}}
 
-## Positives
+### Positives
 
 It's still a dream, but as I said earlier, I can see through a hole in this fence,
 a beautiful opportunity. We can address many problems with this space. We can
