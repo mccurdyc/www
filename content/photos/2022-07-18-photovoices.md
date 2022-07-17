@@ -1,6 +1,6 @@
 ---
 title: "2022.07.18 PhotoVoices"
-date: 2022-07-13T07:06:12-04:00
+date: 2022-07-18T07:06:12-04:00
 subtitle: ""
 description: ""
 camera: ""
@@ -11,12 +11,11 @@ aperature: ""
 gallery_feature: true
 simple_gallery: false
 bucket: "images.mccurdyc.dev"
-prefix: "images/NEW_DIR"
-image: "/images/"
+prefix: "images/2022-07-18-photovoices/"
+image: "/images/2022-07-18-photovoices/L1005848.jpg"
 tags:
 - Leica M11
 - Leica 50mm Summicron Dual-Range
-- Black and White
 draft: false
 ---
 
@@ -34,13 +33,14 @@ on these dewy-cooler mornings, the skate park at the MARC is unskateable. The ra
 are soaked and won't be dry until at least 8AM. The ground is dry even under
 the open coverings at Race St. though.
 
-{{< figure src="/images/" >}}
-{{< figure src="/images/" >}}
-{{< figure src="/images/" >}}
-
+{{< figure src="/images/2022-07-18-photovoices/L1005845.jpg" >}}
+{{< figure src="/images/2022-07-18-photovoices/L1005848.jpg" >}}
+{{< figure src="/images/2022-07-18-photovoices/L1005753.jpg" >}}
 
 ## Positive
 
-{{< figure src="/images/" >}}
-{{< figure src="/images/" >}}
-{{< figure src="/images/" >}}
+TODO
+
+{{< figure src="/images/2022-07-18-photovoices/L1005755.jpg" >}}
+{{< figure src="/images/2022-07-18-photovoices/L1005767.jpg" >}}
+{{< figure src="/images/2022-07-18-photovoices/L1005768.jpg" >}}
