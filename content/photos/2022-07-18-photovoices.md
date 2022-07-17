@@ -1,6 +1,6 @@
 ---
 title: "2022.07.18 PhotoVoices"
-date: 2022-07-18T07:06:12-04:00
+date: 2022-07-17T07:06:12-04:00
 subtitle: ""
 description: ""
 camera: ""
