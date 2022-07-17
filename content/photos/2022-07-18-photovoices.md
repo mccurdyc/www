@@ -22,7 +22,7 @@ draft: false
 
 # PhotoVoice
 
-To read more about what PhotoVoice is and our community project, [see this post](/posts/2022-07-06-photovoices).
+To read more about what PhotoVoice is and our community project, [see this post](../../posts/2022/05/photovoice).
 
 ## Negative
 
