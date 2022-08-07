@@ -4,7 +4,7 @@ subtitle: ""
 description: ""
 author: "Colton J. McCurdy"
 date: 2022-04-13
-image: "/images/become-what-you-are/cover.jpg"
+image: "/images/book-covers/become-what-you-are/cover.jpg"
 book-tags: ["book", "2022"]
 books: ["Become What You Are"]
 book-authors: ["Alan Watts"]

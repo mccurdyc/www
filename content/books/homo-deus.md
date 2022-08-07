@@ -4,7 +4,7 @@ subtitle: "A brief history of tomorrow"
 description: "Given our past record and our current values, we are likely to reach out for bliss, divinity and immortality – even if it kills us."
 author: "Colton J. McCurdy"
 date: 2022-02-14T05:23:48-05:00
-image: "https://img.thriftbooks.com/api/images/m/361596689adf86067ed237dfa6033496baa1bc7e.jpg"
+image: "/images/book-covers/homo-deus/cover.jpg"
 book-tags: ["book", "philosophy"]
 books: ["Homo Deus: A brief history of tomorrow"]
 book-authors: ["Yuval Noah Harari"]

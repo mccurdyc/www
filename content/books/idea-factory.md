@@ -4,7 +4,7 @@ subtitle: "Bell Labs and the Great Age of American Innovation"
 description: "Bell Labs had its share of personality clashes, organizational challenges and strategic missteps. Many attributed the success of the Labs to a combination of timing, environment and curious and determined folks, but not geniuses. Ultimately what made Bell Labs' operating model successful was a clear, shared vision."
 author: "Colton J. McCurdy"
 date: 2020-11-17
-image: "/images/idea-factory/cover.jpg"
+image: "/images/book-covers/idea-factory/cover.jpg"
 book-tags: ["book", "2020", "innovation", "execution", "ideas", "computing", "teams", "organizations", "research"]
 books: ["Idea Factory: Bell Labs and the Great Age of American Innovation"]
 book-authors: ["Jon Gertner"]

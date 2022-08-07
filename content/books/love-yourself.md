@@ -4,7 +4,7 @@ subtitle: ""
 description: "Kamal talks about how he felt worthless after his company folded. It wasn't until his life was reduced to telling himself all day every day to \"love himself\" that he began to have positive feelings for himself. Basically, a story of \"blind faith\"."
 author: "Colton J. McCurdy"
 date: 2020-12-23
-image: "/images/love-yourself/cover.jpg"
+image: "/images/book-covers/love-yourself/cover.jpg"
 book-tags: ["book", "2020", "blind faith"]
 books: ["Love Yourself"]
 book-authors: ["Kamal Ravikant"]

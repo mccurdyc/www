@@ -4,7 +4,7 @@ subtitle: "The Ultra-Secret NSA from 9/11 to the Eavesdropping on America"
 description: "There are a lot of ethical 'grey areas' regarding monitoring data of 'Americans'. If terrorism is what you fear, are you willing to trade your freedom?  From it's inception, the NSA has it's foundation built upon exercises of power and secretive, 'backdoor' deals."
 author: "Colton J. McCurdy"
 date: 2020-09-07
-image: "/images/shadow-factory/cover.jpg"
+image: "/images/book-covers/shadow-factory/cover.jpg"
 book-tags: ["book", "2020", "privacy", "government", "ethics"]
 books: ["Shadow Factory: The Ultra-Secret NSA from 9/11 to the Eavesdropping on America"]
 book-authors: ["James Bamford"]

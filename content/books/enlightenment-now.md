@@ -4,7 +4,7 @@ subtitle: "The Case for Reason, Science, Humanism, and Progress"
 description: "\"Nothing is more responsible for the good old days than a bad memory.\".\"In some ways the world has become less equal, but in more ways the world’s people have become better off.\" \"...progress is not utopia\" \"…political tribalism is the most insidious form of irrationality today...\""
 author: "Colton J. McCurdy"
 date: 2021-08-08T08:16:45-05:00
-image: "/images/enlightenment-now/cover.jpg"
+image: "/images/book-covers/enlightenment-now/cover.jpg"
 book-tags: ["book", "2021", "progress", "purpose"]
 books: ["Enlightenment Now: The Case for Reason, Science, Humanism, and Progress"]
 book-authors: ["Steven Pinker"]

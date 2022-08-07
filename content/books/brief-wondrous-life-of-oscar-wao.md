@@ -4,7 +4,7 @@ subtitle: ""
 description: "A story about love."
 author: "Colton J. McCurdy"
 date: 2022-05-29T17:37:53-04:00
-image: "/images/brief-wondrous-life-of-oscar-wao/cover.jpg"
+image: "/images/book-covers/brief-wondrous-life-of-oscar-wao/cover.jpg"
 book-tags: ["book", "2022"]
 books: ["The Brief Wondrous Life of Oscar Wao"]
 book-authors: ["Junot Diaz"]

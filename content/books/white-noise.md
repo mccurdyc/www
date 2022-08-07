@@ -4,7 +4,7 @@ subtitle: ""
 description: "Breathe, don't think."
 author: "Colton J. McCurdy"
 date: 2022-04-05
-image: "/images/white-noise/cover.jpg"
+image: "/images/book-covers/white-noise/cover.jpg"
 book-tags: ["book", "2022"]
 books: ["White Noise"]
 book-authors: ["Don DeLillo"]

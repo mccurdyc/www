@@ -4,7 +4,7 @@ subtitle: ""
 description: "I didn't finish this book. The time wasn't right."
 author: "Colton J. McCurdy"
 date: 2021-04-09T08:30:35-05:00
-image: "/images/gravitys-rainbow/cover.jpg"
+image: "/images/book-covers/gravitys-rainbow/cover.jpg"
 book-tags: ["book", "2021", "incomplete"]
 books: ["Gravitys Rainbow"]
 book-authors: ["Thomas Pynchon"]

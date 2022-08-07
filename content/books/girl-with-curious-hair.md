@@ -4,7 +4,7 @@ subtitle: ""
 description: ""
 author: "Colton J. McCurdy"
 date: 2022-07-15T11:31:29-04:00
-image: "/images/girl-with-curious-hair/cover.jpg"
+image: "/images/book-covers/girl-with-curious-hair/cover.jpg"
 book-tags: ["book", "2022"]
 books: ["Girl With Curious Hair"]
 book-authors: ["David Foster Wallace"]

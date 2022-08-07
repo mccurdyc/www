@@ -4,7 +4,7 @@ subtitle: "A History and a Memoir"
 author: "Colton J. McCurdy"
 date: 2020-01-31
 description: "Author, Brian Kernighan talks about the environment, his time at Bell Labs and the many cool projects surrounding Unix."
-image: "/images/unix-memoir/cover.jpg"
+image: "/images/book-covers/unix-memoir/cover.jpg"
 book-tags: ["book", "2020", "unix-memoir"]
 books: ["UNIX: A History and a Memoir"]
 book-authors: ["Brian Kernighan"]

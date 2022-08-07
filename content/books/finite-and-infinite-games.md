@@ -3,7 +3,7 @@ title: "Finite and Infinite Games"
 author: "Colton J. McCurdy"
 date: 2020-05-22T15:16:31-04:00
 subtitle: "A Vision of Life as Play and Possibility"
-image: "/images/finite-and-infinite-games/cover.jpg"
+image: "/images/book-covers/finite-and-infinite-games/cover.jpg"
 description: "James P. Carse describes two games. The finite game where there are boundaries, expectations, limits and people assume roles defined by society and the infinite game where members of society challenge boundaries, expectations and live without limits."
 book-tags: ["2020", "books", "philosophy"]
 books: ["Finite and Infinite Games"]
