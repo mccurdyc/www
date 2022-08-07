@@ -11,8 +11,8 @@ aperature: "2"
 gallery_feature: true
 simple_gallery: true
 bucket: "images.mccurdyc.dev"
-prefix: "images/photography/2022/02-hells-hollow"
-image: "/images/photography/2022/02-hells-hollow/L1001505.jpg"
+prefix: "images/2022/02/20-hells-hollow"
+image: "/images/2022/02/20-hells-hollow/L1001505.jpg"
 tags:
 - Leica M11
 - TTArtisan 90mm

@@ -12,8 +12,8 @@ aperature: ""
 simple_gallery: true
 gallery_feature: true
 bucket: "images.mccurdyc.dev"
-prefix: "images/2022/04-soma-west"
-image: "/images/2022/04-soma-west/L1002761.JPG"
+prefix: "images/2022/04/soma-west"
+image: "/images/2022/04/soma-west/L1002761.JPG"
 tags:
 - Leica M11
 - Leica 50mm Summicron
