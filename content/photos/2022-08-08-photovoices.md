@@ -1,6 +1,6 @@
 ---
-title: "2022.08.09 Photovoices"
-date: 2022-08-09T19:25:39-04:00
+title: "2022.08.08 Photovoices"
+date: 2022-08-08T19:25:39-04:00
 subtitle: ""
 description: "There's light at the end of the tunnel."
 camera: ""
@@ -15,7 +15,6 @@ prefix: "images/NEW_DIR"
 image: "/images/2022/08/06-race-st/L1006251.jpg"
 tags:
 - Leica M11
-- Leica 50mm Summicron Dual-Range
 draft: false
 ---
 
