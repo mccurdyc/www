@@ -10,7 +10,7 @@ iso: "2500"
 aperature: "2500"
 gallery_feature: true
 bucket: "images.mccurdyc.dev"
-image: "/images/2021/02/14-nyc-x100v-s100-f28-i2500.jpg"
+image: "/images/2021/02/14-nyc/DSCF3246.JPG"
 tags:
 - x100v
 - Fujinon 23mm f/2

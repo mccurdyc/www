@@ -35,7 +35,3 @@ I decided that I would trace this image in Procreate, add my own flare to it
 and use it for a wallpaper on my iPad.
 
 {{< simple-gallery >}}
-
-{{< figure src="/images/2022-05-three-face-woman/trace.png" >}}
-{{< figure src="/images/2022-05-three-face-woman/orange-outline.png" >}}
-{{< figure src="/images/2022-05-three-face-woman/orange-background.png" >}}
