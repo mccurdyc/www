@@ -34,6 +34,6 @@ There's a lot of work ahead of us. But nothing a few young skaters can't handle.
 
 "9". Look at that concrete. Look at the ceiling height. Feel the opportunities.
 
-{{< figure src="/images/2022/08/06-race-st/L1006264.jpg" >}}
+{{< figure src="/images/2022/08/06-race-st/L1006254.jpg" >}}
 {{< figure src="/images/2022/08/06-race-st/L1006268.jpg" >}}
 {{< figure src="/images/2022/08/06-race-st/L1006245.jpg" >}}
