@@ -5,7 +5,7 @@ set -ux -o pipefail
 function main() {
   # Build site!
   rm -rf public
-  hugo --ignoreCache
+  hugo --ignoreCache --buildFuture --enableGitInfo
 
   # Build javascript bundles.
   pushd static/js/read-gcs && npx webpack
