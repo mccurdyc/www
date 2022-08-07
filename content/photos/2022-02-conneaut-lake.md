@@ -11,7 +11,7 @@ aperature: "9.5"
 gallery_feature: true
 simple_gallery: false
 bucket: "images.mccurdyc.dev"
-image: "/images/photography/2022-02/L1001523.jpg"
+image: "/images/photography/2022/02/L1001523.jpg"
 tags:
 - Leica M11
 - Leica 50mm Summicron Dual-Range

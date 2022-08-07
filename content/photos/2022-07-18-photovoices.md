@@ -11,8 +11,8 @@ aperature: ""
 gallery_feature: true
 simple_gallery: false
 bucket: "images.mccurdyc.dev"
-prefix: "images/2022-07-18-photovoices/"
-image: "/images/2022-07-18-photovoices/L1005848.jpg"
+prefix: "images/2022/07/18-photovoices/"
+image: "/images/2022/07/18-photovoices/L1005848.jpg"
 tags:
 - Leica M11
 - Leica 50mm Summicron Dual-Range
@@ -34,9 +34,9 @@ are soaked and won't be dry until at least 8AM. We all know Meadville weather,
 it could beautiful one day and raining the next. The ground is dry even under
 the open coverings at Race St. though.
 
-{{< figure src="/images/2022-07-18-photovoices/L1005845.jpg" >}}
-{{< figure src="/images/2022-07-18-photovoices/L1005848.jpg" >}}
-{{< figure src="/images/2022-07-18-photovoices/L1005753.jpg" >}}
+{{< figure src="/images/2022/07/18-photovoices/L1005845.jpg" >}}
+{{< figure src="/images/2022/07/18-photovoices/L1005848.jpg" >}}
+{{< figure src="/images/2022/07/18-photovoices/L1005753.jpg" >}}
 
 ## Positive
 
@@ -45,6 +45,6 @@ Race St. I hope these buildings aren't already too far deteriorated to be usable
 Or the ground too taken over by nature that it's unskateable due to large cracks.
 We have to move faster.
 
-{{< figure src="/images/2022-07-18-photovoices/L1005755.jpg" >}}
-{{< figure src="/images/2022-07-18-photovoices/L1005767.jpg" >}}
-{{< figure src="/images/2022-07-18-photovoices/L1005768.jpg" >}}
+{{< figure src="/images/2022/07/18-photovoices/L1005755.jpg" >}}
+{{< figure src="/images/2022/07/18-photovoices/L1005767.jpg" >}}
+{{< figure src="/images/2022/07/18-photovoices/L1005768.jpg" >}}

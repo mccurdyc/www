@@ -11,8 +11,8 @@ aperature: ""
 gallery_feature: true
 simple_gallery: false
 bucket: "images.mccurdyc.dev"
-prefix: "images/2022-07-06-photovoices"
-image: "/images/2022-07-06-photovoices/L1005646.jpg"
+prefix: "images/2022/07/06-photovoices"
+image: "/images/2022/07/06-photovoices/L1005646.jpg"
 tags:
 - Leica M11
 draft: false
@@ -33,9 +33,9 @@ The buildings will continue to deteriorate until they need completely demolished
 at which point this space will either be completely forgotten or replaced by
 something new with much less character.
 
-{{< figure src="/images/2022-07-06-photovoices/L1005655.jpg" >}}
-{{< figure src="/images/2022-07-06-photovoices/L1005647.jpg" >}}
-{{< figure src="/images/2022-07-06-photovoices/L1005648.jpg" >}}
+{{< figure src="/images/2022/07/06-photovoices/L1005655.jpg" >}}
+{{< figure src="/images/2022/07/06-photovoices/L1005647.jpg" >}}
+{{< figure src="/images/2022/07/06-photovoices/L1005648.jpg" >}}
 
 ## Positives
 
@@ -47,6 +47,6 @@ drainage. We could have a beautiful fountain that uses this water. We can tell
 stories about past generations while current generations influence future generations.
 We have an opportunity.
 
-{{< figure src="/images/2022-07-06-photovoices/L1005649.jpg" >}}
-{{< figure src="/images/2022-07-06-photovoices/L1005644.jpg" >}}
-{{< figure src="/images/2022-07-06-photovoices/L1005646.jpg" >}}
+{{< figure src="/images/2022/07/06-photovoices/L1005649.jpg" >}}
+{{< figure src="/images/2022/07/06-photovoices/L1005644.jpg" >}}
+{{< figure src="/images/2022/07/06-photovoices/L1005646.jpg" >}}

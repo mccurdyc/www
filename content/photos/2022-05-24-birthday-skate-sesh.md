@@ -11,8 +11,8 @@ aperature: ""
 gallery_feature: true
 simple_gallery: true
 bucket: "images.mccurdyc.dev"
-prefix: "images/2022-05-24-skate-sesh"
-image: "/images/2022-05-24-skate-sesh/L1004043.jpg"
+prefix: "images/2022/05/24-skate-sesh"
+image: "/images/2022/05/24-skate-sesh/L1004043.jpg"
 tags:
 - Leica M11
 - Leica 28mm Summicron
