@@ -19,6 +19,12 @@ $ hugo new books/foo-bar-baz.md
 $ hugo new posts/foo-bar-baz.md
 ```
 
+## Adding Photos to GCS
+
+```bash
+$ gsutil -m rsync -r /mnt/photos/YYYY/MM/ gs://images.mccurdyc.dev/images/YYYY/MM/
+```
+
 ## Deploying
 
 ```bash
