@@ -67,4 +67,4 @@ run feeling the soreness more than if you had run in shoes.
 > Pain teaches us to run comfortably!
 > From the moment you start going barefoot, you will change the way you run.
 
-{{<tweet 1134452014983864321 >}}
+{{<tweet user="mccurdyc" id="1134452014983864321" >}}

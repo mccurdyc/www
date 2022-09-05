@@ -48,7 +48,7 @@ I love his style and he used a similar camera. I also knew that a Go programmer
 that I looked up to --- Fatih Arslan --- loved the Fuji lineup. I specifically
 recall this tweet by Fatih that hooked me.
 
-{{< tweet 1342179578131976194 >}}
+{{< tweet user="fatih" id="1342179578131976194" >}}
 
 Months went by, I traveled with the camera, ran with the camera and took it everywhere
 I went. I certainly taught me a ton about photography and I can say that I

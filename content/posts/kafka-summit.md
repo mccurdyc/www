@@ -210,7 +210,7 @@ Speaker(s):
 
 ### My tweets
 
-{{< tweet 1113159815113658369 >}}
+{{< tweet user="mccurdyc" id="1113159815113658369" >}}
 
 ### Video and Slides:
 

@@ -96,7 +96,7 @@ make changes to the undersea cable. So to generalize this point,
 > ...too much, too soon [p. 210].
 Do what is simple first, then and only then, move on the more complex solutions with wider scopes. Iteration of a decent solution is often preferred to a high-cost deployment of a superior solution. This actually relates to a recent post that I read, titled [Managing technical quality in a codebase](https://lethain.com//managing-technical-quality/), by [Will Larson](https://twitter.com/lethain?s=21). I summarized my takeaways in [this thread on Twitter](https://twitter.com/mccurdycolton/status/1333205752656388097?s=21).
 
-{{< tweet-single 1333205761195986946 >}}
+{{< tweet user="mccurdyc" id="1333205761195986946" >}}
 
 In part, I think we often jump to what we believe to be the "superior" solution --- which
 might be using some new technology, etc. --- because we believe it to be easy to

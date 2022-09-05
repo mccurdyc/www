@@ -46,7 +46,7 @@ is inspired by the following [Twitter thread](https://twitter.com/lizthegrey/sta
 from [Liz Fong-Jones](https://twitter.com/lizthegrey), who summarized points made
 in [this talk at The Lead Developer New York 2019](https://newyork2019.theleaddeveloper.com/talks).
 
-{{< tweet 1123227381358112768 >}}
+{{< tweet user="lizthegrey" id="1123227381358112768" >}}
 
 {{< youtube jA1Q94d2z10 >}}
 

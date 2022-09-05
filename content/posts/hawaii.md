@@ -74,7 +74,7 @@ way, Jose was wondering if we could give him and his wife a ride to the Sliding 
 Trailhead, where they would be starting their hike.
 
 
-{{<tweet 1128883726929149952>}}
+{{<tweet user="mccurdyc" id="1128883726929149952">}}
 
 
 On the roughly 3-5 mile drive to the Sliding Sands Trailhead, we introduced ourselves
@@ -111,7 +111,7 @@ down Sliding Sands and I stepped on a sharp, coral-looking rock and it cut my fo
 a little. It was bleeding and my heel later did feel bruised, so I was walking
 exclusively on the ball of my foot for the rest of the hike.
 
-{{<tweet 1128953033952391170>}}
+{{<tweet user="mccurdyc" id="1128953033952391170">}}
 
 The hike was beautiful, our favorite part of the trip and something that I would
 highly recommend to anyone who is interested in beginner-level hiking. The sunset
@@ -119,7 +119,7 @@ at the end of the day is also quite remarkable to experience, but very, very col
 temperature-wise. This is something that was outside of our comfort-zone.
 
 
-{{<tweet 1129012634098049026 >}}
+{{<tweet user="mccurdyc" id="1129012634098049026" >}}
 
 
 We met up with Jose and Paulina a few other times for food and to check out beaches
