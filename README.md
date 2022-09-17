@@ -9,6 +9,13 @@ $ make help
 $ make serve
 ```
 
+### Using nix-direnv
+
+```bash
+$ direnv allow
+$ nix develop --impure
+```
+
 ## Creating a New Static Asset
 
 New static assets can be generated with the `hugo new` command and by specifying
