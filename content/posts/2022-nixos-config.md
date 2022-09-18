@@ -1,6 +1,6 @@
 ---
 title: "NixOS Config"
-description: ""
+description: "Setting up my first NixOS system."
 author: ""
 date: 2022-09-04T21:35:06-04:00
 subtitle: ""
@@ -30,9 +30,15 @@ to login remotely.
 
 2. I wanted a repository / project structure that would allow for setting some
 shared configuration across machines, architectures, users, etc. and would
-allow overrides. I respect Mitchel Hashimoto a lot and
-[his nixos-config repository](https://github.com/mitchellh/nixos-config/tree/4eacdd7792c313fa553c3077d17b7bfd22d17a06)
-structure was exactly what I was looking for.
+allow overrides.
+
+These projects where the ones I referred to most during my setup:
+
+- [kclejeune/system](https://github.com/kclejeune/system)
+- [notusknot/dotfiles-nix](https://github.com/notusknot/dotfiles-nix)
+- [mitchellh/nixos-config](https://github.com/mitchellh/nixos-config)
+
+You might find others that you like [here](https://nixos.wiki/wiki/Configuration_Collection).
 
 I wanted to have a base "headless" config and then a GUI config for other machines.
 
@@ -221,16 +227,9 @@ If I did this all again, I would have setup a formatter first so that rebasing
 commits after would be easier. It probably wouldn't have made a huge difference
 because I ended up just editing the files during the rebase anyway.
 
-## Modules
-
-https://nixos.org/manual/nixos/stable/index.html#sec-writing-modules
-
-- One of the modules that constitute the configuration is `/etc/nixos/configuration.nix`.
-Most of the others live in the [`nixos/modules`](https://github.com/NixOS/nixpkgs/tree/master/nixos/modules)
-subdirectory of the Nixpkgs tree.
-- Each NixOS module is a file that handles one logical aspect of the configuration,
-such as a specific kind of hardware, a service, or network settings.
-- `config` contains the full system configuration
+I ended up choosing `alejandra` as my formatter of choice, but may end up switching
+to `nixpkgs-fmt` because the experimental Nix LSP client `[rnix-lsp](https://github.com/nix-community/rnix-lsp)`
+uses `nixpkgs-fmt`.
 
 ## Flakes
 
@@ -245,6 +244,9 @@ in a declarative way
   # /etc/nixos/configuration.nix
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   ```
+
+- With the help from @phamann, I was able to setup my Flake to manage my Vim plugins
+[in this commit](https://github.com/mccurdyc/nixos-config/commit/98bfdc1589a5f9adbe26a25e70930b86bf8229ed).
 
 ## https://www.tweag.io/blog/2020-05-25-flakes/
 
@@ -295,33 +297,40 @@ harder to use.
 - `nix flake init -t templates#simpleContainer`
 - Nixpkgs overlays add or override packages in the `pkgs` set.
 
-## Niv
+### direnv + nix-shell
 
-- `nix-shell -p niv --run "niv init"`
+[In this commit](https://github.com/mccurdyc/nixos-config/commit/2504d7f927df83a49912584ee48852802b1eba83),
+I started using `direnv` and defined a `flakify` shell function for easily adding
+direnv config with Flake support to repos.
+
+[Here](https://github.com/mccurdyc/www/commit/0d7aa6b627a380d0123388de3a8f84c92f142ce5)
+is an example use of `nix-direnv` with a Flake for my website repo which has `gcloud`
+and `hugo` as build dependencies.
+
+- https://scrive.github.io/nix-workshop/02-nix-commands/02-use-packages-in-nix-shell.html
+- https://github.com/direnv/direnv/wiki/Nix
+- https://direnv.net/man/direnv-stdlib.1.html hooks mentioned by Zeke
 
 ## Home Manager `programs.${program}` Configuration Steps
 
 https://nix-community.github.io/home-manager/options.html
 
-- [x] Tailscale
+- Tailscale
+
   - https://fzakaria.com/2020/09/17/tailscale-is-magic-even-more-so-with-nixos.html
-  - Put tailscale in root configuration.nix
-  - `sudo tailscale up`
-- [x] ssh
-  - `ssh-keygen -t ed25519 -C "mccurdyc22@gmail.com"`
-  - `eval "$(ssh-agent -s)"`
-  - `ssh-add -K ~/.ssh/id_ed25519`
-- [x] git
+  - [In this commit](https://github.com/mccurdyc/nixos-config/commit/8b60f71f7324365fb72a09fb6b487164aec675ed),
+  I updated my system Tailscale package to use the `unstable` channel so that I
+  could use the latest version of Tailscale as it comes available.
+
+- git
+
   - gpg key import
   - Ran into issues importing my gpg key
   - https://github.com/NixOS/nixpkgs/issues/35464
     - `gpgconf --reload gpg-agent` fixed it
-- [x] tmux
-- [x] zsh
-  - https://github.com/agkozak/zsh-z
-  - https://github.com/Aloxaf/fzf-tab
-  - https://starship.rs/
-- [x]  neovim
+
+- NeoVim
+
   - **NOTE: there doesn't seem to be and official, fully-supported way to generate
   an `init.lua` instead of `init.vim` in NixOS.**
   - I was looking at https://github.com/nix-community/home-manager/blob/b382b59faf717c5b36f4cd8e1c5d96cdabd382c9/modules/programs/neovim.nix#L200
@@ -336,7 +345,7 @@ https://nix-community.github.io/home-manager/options.html
   - https://www.youtube.com/watch?v=rUvjkBuKua4
   - https://github.com/nix-community/home-manager/issues/1907#issuecomment-887573079
   - https://github.com/mtrsk/nixos-config/blob/6221ef7625ca1f8d72321a13ab800429ea59e977/home/editors.nix#L25
-  - **https://github.com/notusknot/dotfiles-nix**
+  - https://github.com/notusknot/dotfiles-nix
   - https://github.com/nix-community/rnix-lsp
   - diffview and coq_nvim ended up causing issues with how they were being loaded into init.vim
   - readonly filesystem issues 
@@ -347,63 +356,32 @@ https://nix-community.github.io/home-manager/options.html
   - I had a weird bug with the title bar
     - `set notitle` fixed it
 
-### direnv + nix-shell
+## Headed Server
 
-- https://github.com/direnv/direnv/wiki/Nix 
-- https://direnv.net/man/direnv-stdlib.1.html hooks mentioned by Zeke
-  - Used for secrets, etc
-- https://scrive.github.io/nix-workshop/02-nix-commands/02-use-packages-in-nix-shell.html
+  (Haven't got here yet. This part of the post will be updated once I get here.)
+
+  - firefox
+  - feh
+  - alacritty
+  - i3-status
+    - https://github.com/greshake/i3status-rust
+  - rofi
+  - zathura 
+  - picom
+  - polybar
+  - spotifyd
+  - status-notifier-watcher
+  - xsession
+    - i3
+  - xresources
+
+## Other Thing to Look Into
+
 - https://github.com/divnix/digga
   - https://github.com/divnix/digga/tree/main/examples/devos
   - https://github.com/montchr/dotfield/tree/main/home/profiles
 
-### exa
-### fzf
-### gh
-### go
-### gpg
-### htop
-### jq
-### keychain
-### less 
-### man
-### nix-index
-### xdg
-	https://nixos.wiki/wiki/Environment_variables
+## General References
 
-## Headed Server
-- firefox
-- feh
-- alacritty
-- i3-status
-	- https://github.com/greshake/i3status-rust 
-- rofi
-- zathura 
-
-## Home Manager `services.${service}` Configure
-### gpg-agent
-### keybase
-
-## Headed Server
-
-- picom
-- polybar
-- spotifyd
-- status-notifier-watcher
-- xsession
-  - i3
-- xresources
-
-## Key References
-
-- https://github.com/mitchellh/nixos-config
-- https://github.com/notusknot/dotfiles-nix
-- https://nix-community.github.io/home-manager/options.html
-- https://search.nixos.org/packages?query=
-
-## Reading List
-
-- https://nixos.wiki/wiki/Configuration_Collection
-- http://ryantm.github.io/nixpkgs/using/configuration/
-- https://nixos.org/manual/nixos/stable/index.html#sec-switching-systems
-- https://nixos.org/guides/nix-pills/basics-of-language.html#idm140737320575616
+  - http://ryantm.github.io/nixpkgs/using/configuration/
+  - https://nixos.org/guides/nix-pills/basics-of-language.html#idm140737320575616
