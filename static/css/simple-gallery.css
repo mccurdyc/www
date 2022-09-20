@@ -43,8 +43,8 @@
 }
 
 figure {
-  margin: 10px;
-  padding: 10px;
+  margin: 3px;
+  padding: 3px;
   position:relative; /* purely to allow absolution positioning of figcaption */
   overflow: hidden;
 }
@@ -131,11 +131,11 @@ figcaption styles
 .simple-gallery.caption-position-center figcaption,
 .fancy-figure.caption-position-center figcaption {
     top: 0;
-    padding: 40% 5px;
+    padding: 40% 3px;
 }
 .simple-gallery.caption-position-bottom figcaption,
 .fancy-figure.caption-position-bottom figcaption {
-    padding: 5px;
+    padding: 3px;
 }
 .simple-gallery.caption-effect-fade figure:not(:hover) figcaption,
 .simple-gallery.caption-effect-appear figure:not(:hover) figcaption,
