@@ -6,7 +6,7 @@ Documentation and licence at https://github.com/liwenyip/hugo-easy-gallery/
 /* Show an alert if this js file has been loaded twice */
 if (window.loadphotoswipejs) {
 	window.alert("You've loaded load-photoswipe.js twice. See https://github.com/liwenyip/hugo-easy-gallery/issues/6")
-}
+} 
 var loadphotoswipejs = 1
 
 /* TODO: Make the share function work */
@@ -48,7 +48,7 @@ $( document ).ready(function() {
 			console.log("Using default dimensions for " + $src);
 			// load the image to check its dimensions
 			// update the item as soon as w and h are known (check every 30ms)
-			var img = new Image();
+			var img = new Image(); 
 			img.src = $src;
 			var wait = setInterval(function() {
 				var w = img.naturalWidth,
@@ -70,11 +70,11 @@ $( document ).ready(function() {
 			// Get the PSWP element and initialise it with the desired options
 			var $pswp = $('.pswp')[0];
 			var options = {
-				index: index,
-				bgOpacity: 0.8,
+				index: index, 
+				bgOpacity: 0,
 				showHideOpacity: true
 			}
 			new PhotoSwipe($pswp, PhotoSwipeUI_Default, items, options).init();
-		});
+		});	
 	});
 });
