@@ -1,5 +1,5 @@
 baseurl = "https://www.mccurdyc.dev"
-title = "Colton J. McCurdy"
+title = "©oltoM"
 
 DefaultContentLanguage = "en"
 
@@ -71,10 +71,10 @@ cacheControl = "no-store, max-age=0, s-maxage=3600"
   dateformNum     = "2006-01-02"
   dateformNumTime = "2006-01-02 15:04 -0700"
 
-  homeSubtitle = "Software. Reading. Running. Traveling. Photography."
+  # homeSubtitle = "Software. Reading. Running. Traveling. Photography."
 
   # Metadata mostly used in document's head
-  description = "Colton J. McCurdy's Website."
+  description = "©oltoM"
   keywords = ""
   images = [""]
 
@@ -107,12 +107,12 @@ cacheControl = "no-store, max-age=0, s-maxage=3600"
     theme = "#1b1c1d"
 
   [params.logo]
-    logoText     = "$HOME"
+    logoText     = "©oltoM"
     logoHomeLink = "/"
     # path = "/img/your-example-logo.svg"
     # alt = "Your example logo alt text"
     # Set true to remove the logo cursor entirely.
-    logoCursorDisabled = false
+    logoCursorDisabled = true
     # Set to a valid CSS color to change the cursor in the logo.
     logoCursorColor    = "#ffa500"
     # Set to a valid CSS time value to change the animation duration, "0s" to disable.
