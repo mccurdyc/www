@@ -46,8 +46,6 @@ is inspired by the following [Twitter thread](https://twitter.com/lizthegrey/sta
 from [Liz Fong-Jones](https://twitter.com/lizthegrey), who summarized points made
 in [this talk at The Lead Developer New York 2019](https://newyork2019.theleaddeveloper.com/talks).
 
-{{< tweet user="lizthegrey" id="1123227381358112768" >}}
-
 {{< youtube jA1Q94d2z10 >}}
 
 This document should tell a story and elicit someone or people you know personally from past
@@ -89,79 +87,96 @@ for a matrix. Instead, it complements a career ladder matrix.
 ## Does
 
 ### 1. Evangelize others before themselves
+
 * e.g., When given the opportunity to shine the light on either themselves or
   someone else, consistently chooses someone other than themselves.
   Seniors should absolutely still evangelize their own work, but it should come
   after praising the work of others or the team.
 
 ### 2. Open, rather than close, conversations or discussions<sup>5</sup>
+
 * e.g., This could be in the form of a review comment. Instead of saying, "do this...",
   they say, "What are your thoughts on doing it [this way]...?"
 
 ### 3. Lift the skills and expertise of those around them<sup>1</sup> such that together they are better than working singularly
+
 * e.g., When this individual doesn't work with you, you do the bare minimum to
   complete a task, but when they do work with you, they challenge you to go above and beyond.
 
 ### 4. Regularly identify unknown, unknowns
+
 * e.g., In a pull request, instead of just reviewing what the code author has written,
   thinking outside of the defined space and posing questions/concerns that were
   probably not considered.
 
 ### 5. Intensely focus on finishing
+
 * e.g., Doesn't start a number of things, hand them off and never see them finished.
 
 ### 6. Actively seek out constructive criticism and feedback from peers of _all_ levels<sup>4</sup>
+
 * e.g., Doesn't say, "give me feedback", instead, creates an environment that makes
   it natural for others to provide feedback by posing questions for the others
   to consider. For example, "what do you think about using [this approach] instead?"
 
 ### 7. Habitually give constructive, often actionable, feedback --- not just in code reviews
+
 * e.g., Instead of saying, "I don’t like the name of this function", saying,
   "instead of naming this function `doThings`, name it `doABC` because there
   is a standard that this project follows".
 * e.g., very, very rarely, if ever, gives "LGTM"
 
 ### 8. Admit and own failure, early
+
 * e.g., Instead of waiting until a large project has completely failed, this
   individual owns failure as soon as they recognize it.
 
 ### 9. Lead with action
+
 * e.g., "Model, Document, Share". Doesn't lobby for change. Instead conducts many
   small experiments, iterating each time, then shares with a small group, before
   sharing to a larger group<sup>6</sup>.
 * Can also quickly pick up on effective ways to make change given the environment.
 
 ### 10. Focus on simplicity
+
 * e.g., Is constantly evaluating systems to see what is actually necessary and what
   could be removed.
 
 ### 11. Frequently evaluate the alignment of one's and the team's work with the wider organization/company/community, correcting when necessary
+
 * e.g., Catches themselves quickly in situations where scope is creeping too much
   and reevaluates rather than continuing with the current trajectory.
 
 ### 12. Effectively balance external and internal work
+
 * e.g., Knows when it is (and is not) appropriate to work in internal engineering
   goals along with Product work.
 * e.g., Does what is best for the company at that point in time. Sometimes doing
   things that don't scale.
 
 ### 13. Possess knowledge in their domain and the wider impacts
+
 * e.g., If 100ms of latency were to be added how could that affect consumers?
   Do queues get backed up?
 
 ### 14. Know where to look (or who to ask) when questions arise
+
 * e.g., If they know there is an issue in a service owned by another team, this
   person may go quickly look at the code and then ask follow-up questions
   rather than just going directly to someone and asking a question.
 
 ### 15. Understand industry idioms and/or best practices
+
 * e.g., Go Proverb: "The bigger the interface, the weaker the abstraction<sup>7</sup>"
 
 ### 16. Estimate accurately, consistently<sup>4</sup>
+
 * e.g., Not just the effort to get it "done", but considers other internal,
   Engineering goals and how they could potentially be integrated into the completion of a task
 
 ### 17. Effectively communicate across business domains and internal teams
+
 * Note: Ultimately, engineering is here to support the company. We are all trying
   to achieve the exact same goal! If we work with other teams and we understand
   their interest and they understand ours, we will all be better off.
@@ -169,6 +184,7 @@ for a matrix. Instead, it complements a career ladder matrix.
 ## Does Not
 
 ### 1. Say "No", but instead says what we need to do to get to "Yes"
+
 * Note: this idea was taken from the [Arrested Devops Podcast episode featuring Silvia Botros](https://www.arresteddevops.com/principal-engineer/)
   * Silvia also has a [blog post](https://www.arresteddevops.com/principal-engineer/) on this topic.
 * e.g., Instead of telling Marketing, "no, we cannot support that type of promotion",
@@ -176,14 +192,17 @@ for a matrix. Instead, it complements a career ladder matrix.
   or Delivery to see what needs shifted around.
 
 ### 2. Possess a "hero" mentality<sup>6</sup>
+
 * e.g., Instead of always being the one to pick up the high-priority tasks, giving
   others the chance i.e., sharing highly visible or priority work.
 
 ### 3. Consistently work alone or in a silo (i.e., actively avoids siloing)
+
 * e.g., Instead of designing, implementing and maintaining something in silo for
   "job security", actively tries to bring others into projects that they are working on.
 
 ### 4. Accept the excuse of "didn't have time" to establish confidence in my changes
+
 * Note: "Didn't have time" is indication of a poor ability to properly estimate
 * Establishing confidence in their code through automated tests --- not necessarily
   100% confident/coverage all of the time; understands diminishing returns.
@@ -191,6 +210,7 @@ for a matrix. Instead, it complements a career ladder matrix.
   adding another test.
 
 ### 5. Solve solved problems
+
 * e.g., "I bet there is already a tool that does that."
 
 ## Appendix
@@ -207,7 +227,7 @@ for a matrix. Instead, it complements a career ladder matrix.
 * Define a career ladder.
 * Define an exhaustive list of traits that seniors possess.
 
-### Threats to Validity:
+### Threats to Validity
 
 The points made here are purely my own and reflect my views, not those of anyone else.
 I recognize my lack of experience and because of that there will be unknown, unknowns.
@@ -215,7 +235,7 @@ I recognize my lack of experience and because of that there will be unknown, unk
 This document is a living document i.e., my definition of senior is not concrete;
 this is how I define senior at this point in time in my career.
 
-### Other Thoughts:
+### Other Thoughts
 
 #### What distinguishes senior from less than (\<) senior?
 
