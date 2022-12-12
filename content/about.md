@@ -1,6 +1,6 @@
-# About Me
+# "ABOUT ME"
 
-## Differentiators
+## "DIFFERENTIATORS"
 
 My differentiators are my optimisim, kindness, notetaking abilities and willingness
 to tackle any problem. I'm careful with my words and very aware of how easy it
@@ -8,7 +8,7 @@ is to destroy a relationship that took a while to build. I believe that trusting
 relationships are key to success, even with effective processes. Therefore, I
 operate with the mindset that relationships are paramount.
 
-## Career
+## "CAREER"
 
 I joined [Fastly](https://www.fastly.com/) in March of 2020 as a
 Software Engineer on the Data Infrastructure team. The role has primarily consisted
@@ -34,7 +34,7 @@ analyzing a technique known as mutation testing for evaluating test suite adequa
 [Click here](https://docs.google.com/document/d/1PL18wCHQJ7qTU1ELkKPtRENsa3c01_z4WfptpMwbJsk/edit?usp=sharing)
 to see my resume.
 
-## Personal Interests
+## "INTERESTS"
 
 Outside of work, my primary interests are traveling, running, reading
 and photography. A perfect day for me would look like getting up at 5AM, making
