@@ -70,8 +70,8 @@ $( document ).ready(function() {
 			// Get the PSWP element and initialise it with the desired options
 			var $pswp = $('.pswp')[0];
 			var options = {
-				index: index, 
-				bgOpacity: 0,
+				index: index,
+				bgOpacity: 0.9,
 				showHideOpacity: true
 			}
 			new PhotoSwipe($pswp, PhotoSwipeUI_Default, items, options).init();
