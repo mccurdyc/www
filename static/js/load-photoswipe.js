@@ -71,8 +71,11 @@ $( document ).ready(function() {
 			var $pswp = $('.pswp')[0];
 			var options = {
 				index: index,
-				bgOpacity: 0.9,
-				showHideOpacity: true
+        // to apply styles just to this instance of PhotoSwipe
+        mainClass: 'pswp--custom-bg',
+				bgOpacity: 1,
+				showHideOpacity: true,
+        padding: { top: 40, bottom: 40, left: 100, right: 100 }
 			}
 			new PhotoSwipe($pswp, PhotoSwipeUI_Default, items, options).init();
 		});	

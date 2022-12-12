@@ -85,11 +85,6 @@ img / a styles
 */
 
 .gallery .img {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -117,7 +112,7 @@ figcaption styles
     bottom: 0;
     left: 0;
     right: 0;
-    background: #000;
+    background: #FFF;
     color: #FFF;
     text-align: center;
     font-size: 75%; /* change this if you want bigger text */
@@ -155,4 +150,8 @@ figcaption styles
 }
 figcaption p {
     margin: auto; /* override style in theme */
+}
+
+.pswp__item {
+  background: #ffffff;
 }

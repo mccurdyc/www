@@ -6,18 +6,28 @@ Documentation and licence at https://github.com/liwenyip/hugo-easy-gallery/
 <!-- count how many times we've called this shortcode; load the css if it's the first time -->
 {{- if not ($.Page.Scratch.Get "figurecount") }}<link rel="stylesheet" href="/css/hugo-easy-gallery.css" />{{ end }}
 {{- $.Page.Scratch.Add "figurecount" 1 -}}
-{{ $image := .Get "src" }}
-<!-- use either src or link-thumb for thumbnail image -->
-<a href="https://storage.googleapis.com/images.mccurdyc.dev{{ $image }}" target="_blank">
-  <div class="box fancy-figure caption-position-bottom caption-effect-fade">
-    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-      <div class="img">
-        <img itemprop="contentUrl" src="{{ $image }}?quality=80" />
-      </div>
 
+{{- $image := (.Get "src") }}
+{{- $imageLowRes := (printf "%s%s" (.Get "src") "?quality=80") }}
+{{- $thumb := (printf "%s%s" $image "?quality=70") }}
+
+<div class="box box{{ with .Get "caption-position" }} fancy-figure caption-position-{{.}}{{end}}{{ with .Get "caption-effect" }} caption-effect-{{.}}{{end}}" {{ with .Get "width" }}style="max-width:{{.}}"{{end}}>
+  <figure {{ with .Get "class" }}class="{{.}}"{{ end }} itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <div class="img"{{ if .Parent }} style="background-image: url('{{ $imageLowRes }}');"{{ end }}{{ with .Get "size" }} data-size="{{.}}"{{ end }}>
+      <img itemprop="thumbnail" src="{{ $thumb }}" {{ with .Get "alt" | default (.Get "caption") }}alt="{{.}}"{{ end }}/><!-- <img> hidden if in .gallery -->
+    </div>
+
+    {{ with .Get "link" | default $imageLowRes }}<a href="{{ . }}" itemprop="contentUrl"></a>{{ end }}
+    {{- if or (or (.Get "title") (.Get "caption")) (.Get "attr")}}
       <figcaption>
-        {{ .Get "caption" | default $image }}
+        {{- with .Get "title" }}<h4>{{.}}</h4>{{ end }}
+        {{- if or (.Get "caption") (.Get "attr")}}
+          <p>
+            {{- .Get "caption" -}}
+            {{- with .Get "attrlink"}}<a href="{{.}}">{{ .Get "attr" }}</a>{{ else }}{{ .Get "attr"}}{{ end -}}
+          </p>
+        {{- end }}
       </figcaption>
-    </figure>
-  </div>
-</a>
+    {{- end }}
+  </figure>
+</div>
