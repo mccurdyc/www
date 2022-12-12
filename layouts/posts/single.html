@@ -22,7 +22,7 @@
 
         <article>
             <h1 class="post-title">
-                <a href="{{ .Permalink }}">{{ .Title | markdownify }}</a>
+                <a href="{{ .Permalink }}">"{{ .Title | upper | markdownify }}"</a>
             </h1>
 
               {{- if .Params.toc }}
@@ -48,7 +48,11 @@
             {{ end }}
 
             <div class="post-content">
+              {{- if eq .Page.Type "photos" }}
+                {{ .Content | upper }}
+              {{- else }}
                 {{ .Content }}
+              {{- end }}
             </div>
         </article>
 

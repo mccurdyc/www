@@ -17,12 +17,12 @@
 
         <article>
             <h1 class="post-title">
-                <a href="{{ .Permalink }}">{{ .Title | markdownify }}</a>
+                <a href="{{ .Permalink }}">"{{ .Title | upper | markdownify }}"</a>
             </h1>
 
             {{ $subtitle := .Param "subtitle" }}
             {{- if $subtitle }}
-            <h2>{{ $subtitle }}</h2>
+            <h2>"{{ $subtitle | upper }}"</h2>
             {{- end }}
 
             {{ $amazon := .Param "amazon" }}
@@ -31,14 +31,14 @@
             <p>
               {{- if $amazon}}
               <a href="{{ $amazon }}" target="_blank">
-                View on Amazon
+                "VIEW ON AMAZON"
               </a>
               {{- end }}
 
               {{- if $thrift }}
               </br>
               <a href="{{ $thrift }}" target="_blank">
-                View on Thriftbooks
+                "VIEW ON THRIFTBOOKS"
               </a>
               {{- end }}
             </p>
@@ -61,10 +61,10 @@
             {{ $authors := .Param "book-authors" }}
             {{- if $authors}}
                 <p>
-                  <h3>Author(s):</h3>
+                  <h3>"AUTHOR(s)":</h3>
                 {{- range $authors}}
                 {{ $name := . }}
-                    <li><b>{{ $name }}</b></li>
+                    <li><b>"{{ $name | upper }}"</b></li>
                 </p>
                 {{ end}}
             {{- end }}
