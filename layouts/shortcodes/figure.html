@@ -8,8 +8,8 @@ Documentation and licence at https://github.com/liwenyip/hugo-easy-gallery/
 {{- $.Page.Scratch.Add "figurecount" 1 -}}
 
 {{- $image := (.Get "src") }}
-{{- $imageLowRes := (printf "%s%s" (.Get "src") "?quality=80") }}
-{{- $thumb := (printf "%s%s" $image "?quality=70") }}
+{{- $imageLowRes := (printf "%s%s" (.Get "src") "?quality=80&?height=0.5&width=0.5") }}
+{{- $thumb := (printf "%s%s" $image "?quality=70&crop=1:1") }}
 
 <div class="box box{{ with .Get "caption-position" }} fancy-figure caption-position-{{.}}{{end}}{{ with .Get "caption-effect" }} caption-effect-{{.}}{{end}}" {{ with .Get "width" }}style="max-width:{{.}}"{{end}}>
   <figure {{ with .Get "class" }}class="{{.}}"{{ end }} itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">

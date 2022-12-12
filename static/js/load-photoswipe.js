@@ -75,7 +75,7 @@ $( document ).ready(function() {
         mainClass: 'pswp--custom-bg',
 				bgOpacity: 1,
 				showHideOpacity: true,
-        padding: { top: 40, bottom: 40, left: 100, right: 100 }
+        padding: { top: 100, bottom: 100, left: 100, right: 100 }
 			}
 			new PhotoSwipe($pswp, PhotoSwipeUI_Default, items, options).init();
 		});	
