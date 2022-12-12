@@ -1,5 +1,5 @@
 ---
-title: "{{ replace .Name "-" " " | title }}"
+title: "\"{{ replace .Name "-" " " | upper}}\""
 date: {{ .Date }}
 subtitle: ""
 description: ""
@@ -18,4 +18,11 @@ tags:
 draft: false
 ---
 
-{{< simple-gallery >}}
+{{< gallery >}}
+  {{< figure src="/images/2022/10/L1007078.jpg" >}}
+  {{< figure src="/images/2022/10/L1007077.jpg" >}}
+  {{< figure src="/images/2022/10/L1007165.jpg" >}}
+  {{< figure src="/images/2022/10/L1007165.jpg" >}}
+{{< /gallery >}}
+
+{{< load-photoswipe >}}
