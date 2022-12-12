@@ -107,9 +107,8 @@ cacheControl = "no-store, max-age=0, s-maxage=3600"
     theme = "#1b1c1d"
 
   [params.logo]
-    logoText     = "©oltoM"
     logoHomeLink = "/"
-    # path = "/img/your-example-logo.svg"
+    path = "/logo.svg"
     # alt = "Your example logo alt text"
     # Set true to remove the logo cursor entirely.
     logoCursorDisabled = true
@@ -141,35 +140,35 @@ cacheControl = "no-store, max-age=0, s-maxage=3600"
     copyright = ""
 
 [menu]
-  [[menu.main]]
-    identifier = "about"
-    name       = "About"
-    url        = "about/"
+  # [[menu.main]]
+  #   identifier = "about"
+  #   name       = "\"ABOUT\""
+  #   url        = "about/"
   [[menu.main]]
     identifier = "books"
-    name       = "Books"
+    name       = "\"BOOKS\""
     url        = "books/"
   [[menu.main]]
     identifier = "posts"
-    name       = "Posts"
+    name       = "\"NOTES\""
     url        = "posts/"
   [[menu.main]]
     identifier = "photos"
-    name       = "Photos"
+    name       = "\"PHOTOS\""
     url        = "photos/"
   # [[menu.main]]
   #   identifier = "talks"
-  #   name       = "Talks"
+  #   name       = "\"TALKS\""
   #   url        = "talks/"
   # [[menu.main]]
   #   identifier = "oss"
-  #   name       = "Software"
+  #   name       = "\"SOFTWARE\""
   #   url        = "oss/"
   # [[menu.main]]
   #   identifier = "papers"
-  #   name       = "Papers"
+  #   name       = "\"PAPERS\""
   #   url        = "papers/"
   [[menu.main]]
     identifier = "resume"
-    name       = "Resume"
+    name       = "\"RESUME\""
     url        = "https://docs.google.com/document/d/1PL18wCHQJ7qTU1ELkKPtRENsa3c01_z4WfptpMwbJsk/edit?usp=sharing"
