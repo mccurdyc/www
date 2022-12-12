@@ -1,5 +1,5 @@
 baseurl = "https://www.mccurdyc.dev"
-title = "©oltoM"
+title = "MOTLO©"
 
 DefaultContentLanguage = "en"
 
@@ -74,7 +74,7 @@ cacheControl = "no-store, max-age=0, s-maxage=3600"
   # homeSubtitle = "Software. Reading. Running. Traveling. Photography."
 
   # Metadata mostly used in document's head
-  description = "©oltoM"
+  description = "MOTLO©"
   keywords = ""
   images = [""]
 
