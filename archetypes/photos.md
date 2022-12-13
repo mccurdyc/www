@@ -8,7 +8,7 @@ lens: ""
 shutter_speed: ""
 iso: ""
 aperature: ""
-gallery_feature: true
+gallery_feature: false
 simple_gallery: false
 bucket: "images.mccurdyc.dev"
 prefix: "images/NEW_DIR"
@@ -16,6 +16,7 @@ image: "/images/"
 tags:
 - Leica M11
 draft: false
+hide: false
 ---
 
 {{< gallery >}}
