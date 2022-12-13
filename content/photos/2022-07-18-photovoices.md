@@ -8,7 +8,7 @@ lens: ""
 shutter_speed: ""
 iso: ""
 aperature: ""
-gallery_feature: true
+gallery_feature: false
 simple_gallery: false
 bucket: "images.mccurdyc.dev"
 prefix: "images/2022/07/18-photovoices/"
@@ -17,6 +17,7 @@ tags:
 - Leica M11
 - Leica 50mm Summicron Dual-Range
 draft: false
+hide: true
 ---
 
 # PhotoVoice

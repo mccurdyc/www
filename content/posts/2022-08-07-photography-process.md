@@ -8,6 +8,7 @@ image: ""
 post-tags: ["photography"]
 posts: ["Photography Process"]
 draft: false
+hide: false
 ---
 
 1. Take photos

@@ -8,6 +8,7 @@ image: ""
 post-tags: ["photography", "x100v", "Leica", "film", "digital photography", "hobby"]
 posts: ["Photography Journey"]
 draft: false
+hide: false
 ---
 
 ## Why Photography?

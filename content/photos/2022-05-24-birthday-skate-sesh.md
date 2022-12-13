@@ -8,7 +8,7 @@ lens: "Leica 28mm Summicron"
 shutter_speed: ""
 iso: "400"
 aperature: ""
-gallery_feature: true
+gallery_feature: false
 simple_gallery: true
 bucket: "images.mccurdyc.dev"
 prefix: "images/2022/05/24-skate-sesh"
@@ -17,6 +17,7 @@ tags:
 - Leica M11
 - Leica 28mm Summicron
 draft: false
+hide: true
 ---
 
 Quiet night at the park. Weather was beautiful and spirits were high after a good

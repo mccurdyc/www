@@ -10,6 +10,7 @@ books: ["An Elegant Puzzle: Systems of Engineering Management"]
 book-authors: ["Will Larson"]
 amazon: "https://www.amazon.com/dp/1732265186/ref=cm_sw_r_tw_dp_U_x_s8VnDbC6B82RW"
 thriftbooks: "https://www.thriftbooks.com/w/an-elegant-puzzle-systems-of-engineering-management_will-larson/21517133/#isbn=1732265186"
+hide: false
 ---
 
 > ...management, at its core, is an ethical profession.
@@ -79,7 +80,9 @@ Will names four sources --- that are "probably in order" --- of candidates for s
 1. Team members who are ready to fill the role now
 2. Team members who will grow into the role
 3. Internal transfers
-  + Will does suggest later that internal transfers are very costly due to disrupting the "gelling" process.
+
++ Will does suggest later that internal transfers are very costly due to disrupting the "gelling" process.
+
 4. External hires who are ready to fill the role now
 
 ### Four States of a Team
@@ -206,14 +209,14 @@ Instead, as Will suggests, I should have presented a few points very clearly.
 
 Will provides a few additional points on the topic of engaging leadership:
 
-* Communication is company-specific
-* Start with the conclusion
-* Frame _why_ the topic matters to the company; not just to yourself
-* Everyone loves a narrative
-    * "where things are now, how you got here and where you're going now"
-* Prepare for detours
-* Prepare a lot; practice a little
-    * Basically, be prepared for detours rather than word-for-word what you are going to say.
++ Communication is company-specific
++ Start with the conclusion
++ Frame _why_ the topic matters to the company; not just to yourself
++ Everyone loves a narrative
+  + "where things are now, how you got here and where you're going now"
++ Prepare for detours
++ Prepare a lot; practice a little
+  + Basically, be prepared for detours rather than word-for-word what you are going to say.
 
 In order, your pitch should go as follows:
 

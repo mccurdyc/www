@@ -11,6 +11,7 @@ book-authors: []
 amazon: ""
 thriftbooks: ""
 draft: false
+hide: false
 ---
 
 I honestly thought this was going to be another one of those books where there

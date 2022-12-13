@@ -10,6 +10,7 @@ books: ["Infinite Jest"]
 book-authors: ["David Foster Wallace"]
 amazon: "https://www.amazon.com/Infinite-Jest-David-Foster-Wallace/dp/0316066524/ref=sr_1_1?dchild=1&keywords=infinite+jest&qid=1614102367&s=books&sr=1-1"
 thriftbooks: "https://www.thriftbooks.com/w/infinite-jest-by-david-foster-wallace/249803/?resultid=6f602d39-b1b7-40bc-bdb5-1c64de0aa56d#edition=4263198&idiq=1273426"
+hide: false
 ---
 
 # Infinite Jest
@@ -38,7 +39,7 @@ However, I started this book much like I start many things in my life, sprinting
 
 # My Takeaways
 
-## Genuine Conversations. Listening.
+## Genuine Conversations. Listening
 
 > The fake ones try so hard to look and feel real. This is how you differentiate a real, real person from someone pretending to be real [p. 734].
 
@@ -50,7 +51,7 @@ In *Infinite Jest*, the only folks who seem to be able to genuinely stop talking
 
 Hal didn't have any(?) deep conversations in the book with people other than himself, but was forced by the "professional conversationalist" to go deep in order to grieve his father's death [p. 252]. After talking to the professional conversationalist, Hal talked to Lyle — the guru / wraith(?) — where the conclusion was basically in order to deal with grief, you must humble yourself and be willing to fail at all other parts of life at that moment [p. 254].
 
-## External Expectations. "Normal".
+## External Expectations. "Normal"
 
 > The true opponent [in the individual, infinite-bounded game of tennis], the enfolding boundary, is the player himself [p. 84].
 
@@ -64,7 +65,7 @@ This phrase was used twice in the book and the first time it was used — by Lyl
 
 Steeply, the undercover U.S.O.S member posed as a writer for Moment magazine asks Orin, the eldest Incandenza boy, were your father and mother "insane"? How is "insane" defined? Are you only considered "insane" if you cannot function? Can you truly be "insane", but functioning and therefore also be "normal" [p. 1028 #234]?
 
-## Selfish Pleasure. Addiction. "Attachments". "Freedom" and Choice.
+## Selfish Pleasure. Addiction. "Attachments". "Freedom" and Choice
 
 > Are not all of us fanatics...? [p. 107]
 
@@ -126,7 +127,7 @@ Later in the book, it talks about how to be "famous" — in tennis, it's referre
 
 > You think there is no love without the pleasure, the no-choice compelling of passion... This whole idea of pleasure and good feeling being what you choose [as love]. To give yourself away to. That all choice for you leads there — this pleasure of not choosing [p. 781].
 
-### "Freedom"; "Freedom-from" and "Freedom-to".
+### "Freedom"; "Freedom-from" and "Freedom-to"
 
 > ... how free are we if you dangle fatal fruit before us and we cannot help ourselves from temptation... [p. 320]
 

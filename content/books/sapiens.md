@@ -10,6 +10,7 @@ books: ["Sapiens: A Brief History of Humankind"]
 book-authors: ["Yuval Noah Harari"]
 amazon: "https://www.amazon.com/Sapiens-Humankind-Yuval-Noah-Harari/dp/0062316095"
 thriftbooks: "https://www.thriftbooks.com/w/from-animals-into-gods-a-brief-history-of-humankind_yuval-noah-harari/1015082/"
+hide: false
 ---
 
 ## My Thoughts
@@ -226,7 +227,6 @@ He is very much a systems thinker.
 - two kinds of poverty: social poverty, which withholds from some people the opportunities available to others; and biological poverty, which puts the very lives of individuals at risk due to lack of food and shelter. Perhaps social poverty can never be eradicated, but in many countries around the world biological poverty is a thing of the past. ([Location 4234](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=4234))
 - When the gods created man, Gilgamesh had learned, they set death as man’s inevitable destiny, and man must learn to live with it. Disciples of progress do not share this defeatist attitude. For men of science, death is not an inevitable destiny, but merely a technical problem. People die not because the gods decreed it, but due to various technical failures ([Location 4255](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=4255))
 - Death suffered its worst setbacks in the arena of child mortality. Until the twentieth century, between a quarter and a third of the children of agricultural societies never reached adulthood. ([Location 4284](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=4284))
-
 
 ### Individualism
 

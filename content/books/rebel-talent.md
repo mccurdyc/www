@@ -10,12 +10,15 @@ books: ["Rebel Talent: Why it Pays to Break the Rules at Work and in Life"]
 book-authors: ["Francesca Gino"]
 amazon: "https://www.amazon.com/Rebel-Talent-Pays-Break-Rules/dp/0062694634"
 thriftbooks: "https://www.thriftbooks.com/w/rebel-talent-why-it-pays-to-break-the-rules-at-work-and-in-life_francesca-gino/17987469/#edition=18970366&idiq=27494928"
+hide: false
 ---
 
 ## Three-sentence summary
+
 Surround yourself with diversity. Foster a life full of curiosity, especially in positions of "power" and experience. Challenge "norms" and fear comfort.
 
 ## Introduction
+
 > Despite our differences, we all share the desire to be happy. What [Gino's] research suggests is that we can actually bring more joy into our lives by being rebels... [p.18]
 
 What I loved about this book was that it started and ended with stories of "rebel" Massimo Bottura, head chef at Osteria Francescana — one of the highest-rated restaurants in the world breaking norms.
@@ -32,11 +35,13 @@ Gino identifies five core elements of rebel talent:
 5. authenticity: remaining open and vulnerable in order to connect with and learn from others.
 
 ## We Seek Comfort, but Comfort Limits Creativity
+
 > Every single day we can chose between focusing on what we know or what we don't know [p. 69].
 
 Conformity is the result of first-order thinking, while rebellious behavior comes from second-order thinking e.g., challenging norms.
 
 ### Social Norms
+
 From a young age — i.e., about three-years-old — we start to pick up on social norms and peoples' "roles" in society. We are constructing our unique mental model of the world. Our models are heavily influenced by the people we surround ourselves with and the information that we consume. Roles help society run smoothly when aligned with our mental models of the world and that makes us comfortable. However, smooth seldom leads to innovation.
 
 Roles often come with prescribed rules and/or expectations. Abiding by the rules helps guide "good" work, but stunts or even prevents exceptional work.
@@ -46,6 +51,7 @@ I grew up and currently live in what is know as "Tool City", because tool manufa
 > Rules and norms in organizations and, more broadly, in society instill order and predictability [p. 13].
 
 ### Power of Signals (i.e., mental model "triggers")
+
 Breaking social norms — e.g., wearing casual clothing to an important meeting, etc. — is a very powerful signal that can be both viewed positively and negatively. In a positive sense, one can break down established barriers. But, in a negative sense, it can also be viewed as one displaying superiority by explicitly ignoring -- either explicit or implicit -- social norms for the situation. There is a an external and internal cost associated with breaking norms, so this cost must be weighed against the benefits.
 
 > ... consciously choosing not to conform [p. 15].
@@ -108,6 +114,7 @@ Gino conducted a study that confirmed while homogeneous teams *felt* more effect
 > Insights and innovation seldom arise when we're feeling satisfied with the status quo. Rather, they come from the energy that's created when we crave change [p. 195].
 
 ## Framing and Perspective
+
 > When we frame work around *learning* goals ... we perform better than if we frame work around performance goals [e.g., tests in school] ... [p. 90].
 
 Using words like *could* rather than *should* help open our minds to curiosity versus restrict curiosity, respectively [p. 85].
@@ -117,6 +124,7 @@ Using words like *could* rather than *should* help open our minds to curiosity v
 Related to the "self-fulfilling prophecy" [p. 126] --- where success is defined by our own expectations --- when groups are reminded of stereotypes, they either "fulfill" or ignore those stereotypes, based on whether they are reminded of or told explicitly that they are not true, respectively [p. 124].
 
 ## Curiosity's Place in Power and Experience
+
 Intellectual curiosity is preferred to specialization [p. 63].
 
 > ... [expertise is] a process that must be kept alive [it is not something that once achieved continues to exist] [p. 89].
@@ -132,6 +140,7 @@ People in powerful positions, or those who *feel* powerful, often act without fe
 > ... with age, self-consciousness increases, and so does our desire to make show of expertise [p. 37].
 
 ### Ask Questions
+
 Studies show that asking for advices *increases* rather than decreases perceived competence [p. 54]. It was suggested that this is because by asking others questions, it is "stroking their egos".
 
 A culture of curiosity is most effectively established through demonstration by leaders i.e., leaders who ask questions rather than define direction. [p.68] Not only does this help establish a culture of curiosity, it also helps with psychological safety in teams, which is the prerequisite for fearless exploration by team members.

@@ -10,6 +10,7 @@ books: ["Finite and Infinite Games"]
 book-authors: ["James P. Carse"]
 amazon: "https://www.amazon.com/Finite-Infinite-Games-James-Carse/dp/1476731713"
 thriftbooks: "https://www.thriftbooks.com/w/finite-and-infinite-games_james-p-carse/254999/"
+hide: false
 ---
 
 > [...] the demand for obedience is inherently evil.
@@ -78,7 +79,6 @@ in the error that I think others think I do.
 
 ### "Casual Continuity" for Future Convenience
 
-
 Theatricality and "casual continuity" is continuing in the roles defined before us,
 for us. We choose to continuing acting in a role, mostly out of convenience. When
 something happens that we don't have control over and we can no longer choose to
@@ -109,7 +109,7 @@ believe that their past experiences --- or games --- prepared them for this game
 Titles and past experiences define sturdy boundaries and are significant factors in setting expectations.
 We heavily weigh these titles in the hiring process. Titles carry different expectations.
 Consider for example, what personality characteristics come to mind when I say,
-"early engineer at *SuccessfulWellKnownCompany*" versus "developer at *SmallUknownCompany*".
+"early engineer at _SuccessfulWellKnownCompany_" versus "developer at _SmallUknownCompany_".
 
 The assumptions that come along with these roles are exactly the titles that we have "won".
 Not only are the specific job titles our trophies, but so are the stories of our past experiences.
@@ -287,7 +287,6 @@ When we are touched at our core, this shift in genius propagates outward through
 all of our "masks" or societal roles.
 
 > [...] **it's because I do not see what you see that I can see at all**.
-
 
 > [One's genius] is a field of vision, however, that is recognized as a field of vision
 only when we see that it includes within itself the original centers of other fields of vision.

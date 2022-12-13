@@ -8,6 +8,7 @@ image: ""
 post-tags: ["linux", "nixos", "personal setup"]
 posts: ["NixOS Config"]
 draft: false
+hide: false
 ---
 
 # Context
@@ -54,7 +55,7 @@ of clear standards in terms of project structure.
 
 ## Preparing a bootable USB
 
-https://nixos.org/guides/building-bootable-iso-image.html
+<https://nixos.org/guides/building-bootable-iso-image.html>
 
 1. Re-partition the USB just to wipe it.
 
@@ -127,7 +128,7 @@ up the root partition.
 
 5. Mount the target drives
 
-https://nixos.wiki/wiki/NixOS_Installation_Guide
+<https://nixos.wiki/wiki/NixOS_Installation_Guide>
 
   ```
   sudo mount /dev/disk/by-label/NIXROOT /mnt
@@ -137,13 +138,13 @@ https://nixos.wiki/wiki/NixOS_Installation_Guide
 
 6. Generate the NixOS configuration on the target filesystem!!!
 
-https://nixos.wiki/wiki/NixOS_Installation_Guide
+<https://nixos.wiki/wiki/NixOS_Installation_Guide>
 
   ```
   sudo nixos-generate-config --root /mnt
   ```
 
-7. Tweak the configuration. 
+7. Tweak the configuration.
 
 - [/mnt/etc/nixos/configuration.nix](https://github.com/mccurdyc/nixos-config/blob/40d8d7828d4902d43a9aaf7b1a7f3ac7a7a9a673/nixos/configuration.nix)
 - [/mnt/etc/nixos/hardware-configuration.nix](https://github.com/mccurdyc/nixos-config/blob/40d8d7828d4902d43a9aaf7b1a7f3ac7a7a9a673/nixos/hardware-configuration.nix)
@@ -159,7 +160,7 @@ https://nixos.wiki/wiki/NixOS_Installation_Guide
 
 ### Building a New Generation
 
-https://nixos.wiki/wiki/Overview_of_the_NixOS_Linux_distribution#Generations
+<https://nixos.wiki/wiki/Overview_of_the_NixOS_Linux_distribution#Generations>
 
 1. Build
 
@@ -174,15 +175,15 @@ I love this command!! It just feels so good! It feels immutible.
 2. Rollbacks
 
 ```
-$ nix-env --rollback               # roll back a user environment
-$ nixos-rebuild switch --rollback  # roll back a system environment
+nix-env --rollback               # roll back a user environment
+nixos-rebuild switch --rollback  # roll back a system environment
 ```
 
 ## Home Manager
 
-https://nixos.wiki/wiki/Home_Manager
-https://nix-community.github.io/home-manager/index.html
-https://nix-community.github.io/home-manager/options.html
+<https://nixos.wiki/wiki/Home_Manager>
+<https://nix-community.github.io/home-manager/index.html>
+<https://nix-community.github.io/home-manager/options.html>
 
 1. Install home-manager
 
@@ -219,9 +220,9 @@ https://nix-community.github.io/home-manager/options.html
 
 ## Formatters for Nix lang
 
-- https://github.com/nix-community/nixpkgs-fmt
-- https://github.com/kamadorueda/alejandra
-  - https://github.com/kamadorueda/alejandra/blob/main/STYLE.md
+- <https://github.com/nix-community/nixpkgs-fmt>
+- <https://github.com/kamadorueda/alejandra>
+  - <https://github.com/kamadorueda/alejandra/blob/main/STYLE.md>
 
 If I did this all again, I would have setup a formatter first so that rebasing
 commits after would be easier. It probably wouldn't have made a huge difference
@@ -233,7 +234,7 @@ uses `nixpkgs-fmt`.
 
 ## Flakes
 
-https://nixos.wiki/wiki/Flakes
+<https://nixos.wiki/wiki/Flakes>
 
 - still in beta phase
 - Flakes allow you to specify your code's dependencies (e.g. remote Git repositories)
@@ -248,7 +249,7 @@ in a declarative way
 - With the help from @phamann, I was able to setup my Flake to manage my Vim plugins
 [in this commit](https://github.com/mccurdyc/nixos-config/commit/98bfdc1589a5f9adbe26a25e70930b86bf8229ed).
 
-## https://www.tweag.io/blog/2020-05-25-flakes/
+## <https://www.tweag.io/blog/2020-05-25-flakes/>
 
 - Note that any file that is not tracked by Git is invisible during Nix evaluation,
 in order to ensure hermetic evaluation.
@@ -267,7 +268,7 @@ the configuration specified by the flake output `nixosConfigurations.my-machine`
 If you omit the name of the configuration (`#my-machine`), `nixos-rebuild` defaults
 to using the current host name.
 
-## https://www.tweag.io/blog/2020-07-31-nixos-flakes/
+## <https://www.tweag.io/blog/2020-07-31-nixos-flakes/>
 
 - NixOS is currently built around a _monorepo_ workflow — the entire universe
 should be added to the `nixpkgs` repository, because anything that isn’t, is much
@@ -307,17 +308,17 @@ direnv config with Flake support to repos.
 is an example use of `nix-direnv` with a Flake for my website repo which has `gcloud`
 and `hugo` as build dependencies.
 
-- https://scrive.github.io/nix-workshop/02-nix-commands/02-use-packages-in-nix-shell.html
-- https://github.com/direnv/direnv/wiki/Nix
-- https://direnv.net/man/direnv-stdlib.1.html hooks mentioned by Zeke
+- <https://scrive.github.io/nix-workshop/02-nix-commands/02-use-packages-in-nix-shell.html>
+- <https://github.com/direnv/direnv/wiki/Nix>
+- <https://direnv.net/man/direnv-stdlib.1.html> hooks mentioned by Zeke
 
 ## Home Manager `programs.${program}` Configuration Steps
 
-https://nix-community.github.io/home-manager/options.html
+<https://nix-community.github.io/home-manager/options.html>
 
 - Tailscale
 
-  - https://fzakaria.com/2020/09/17/tailscale-is-magic-even-more-so-with-nixos.html
+  - <https://fzakaria.com/2020/09/17/tailscale-is-magic-even-more-so-with-nixos.html>
   - [In this commit](https://github.com/mccurdyc/nixos-config/commit/8b60f71f7324365fb72a09fb6b487164aec675ed),
   I updated my system Tailscale package to use the `unstable` channel so that I
   could use the latest version of Tailscale as it comes available.
@@ -326,33 +327,33 @@ https://nix-community.github.io/home-manager/options.html
 
   - gpg key import
   - Ran into issues importing my gpg key
-  - https://github.com/NixOS/nixpkgs/issues/35464
+  - <https://github.com/NixOS/nixpkgs/issues/35464>
     - `gpgconf --reload gpg-agent` fixed it
 
 - NeoVim
 
   - **NOTE: there doesn't seem to be and official, fully-supported way to generate
   an `init.lua` instead of `init.vim` in NixOS.**
-  - I was looking at https://github.com/nix-community/home-manager/blob/b382b59faf717c5b36f4cd8e1c5d96cdabd382c9/modules/programs/neovim.nix#L200
+  - I was looking at <https://github.com/nix-community/home-manager/blob/b382b59faf717c5b36f4cd8e1c5d96cdabd382c9/modules/programs/neovim.nix#L200>
   but it's a readonly value and I'd get the following error:
 
     ```
     error: The option `home-manager.users.mccurdyc.programs.neovim.generatedConfigs' is read-only, but it's set multiple times.
     ```
 
-  - https://nixos.wiki/wiki/Neovim#Note_on_errors_using_default_.60packages.60_for_plugins_requiring_Lua_modules
-  - https://github.com/nix-community/home-manager/issues/1907
-  - https://www.youtube.com/watch?v=rUvjkBuKua4
-  - https://github.com/nix-community/home-manager/issues/1907#issuecomment-887573079
-  - https://github.com/mtrsk/nixos-config/blob/6221ef7625ca1f8d72321a13ab800429ea59e977/home/editors.nix#L25
-  - https://github.com/notusknot/dotfiles-nix
-  - https://github.com/nix-community/rnix-lsp
+  - <https://nixos.wiki/wiki/Neovim#Note_on_errors_using_default_.60packages.60_for_plugins_requiring_Lua_modules>
+  - <https://github.com/nix-community/home-manager/issues/1907>
+  - <https://www.youtube.com/watch?v=rUvjkBuKua4>
+  - <https://github.com/nix-community/home-manager/issues/1907#issuecomment-887573079>
+  - <https://github.com/mtrsk/nixos-config/blob/6221ef7625ca1f8d72321a13ab800429ea59e977/home/editors.nix#L25>
+  - <https://github.com/notusknot/dotfiles-nix>
+  - <https://github.com/nix-community/rnix-lsp>
   - diffview and coq_nvim ended up causing issues with how they were being loaded into init.vim
-  - readonly filesystem issues 
+  - readonly filesystem issues
   - `:GoUpdateBinaries` fails
   - `:COQdeps fails`
     - I needed to update my config directory.
-  - https://github.com/NixOS/nixpkgs/issues/168928#issuecomment-1109581739
+  - <https://github.com/NixOS/nixpkgs/issues/168928#issuecomment-1109581739>
   - I had a weird bug with the title bar
     - `set notitle` fixed it
 
@@ -360,28 +361,28 @@ https://nix-community.github.io/home-manager/options.html
 
   (Haven't got here yet. This part of the post will be updated once I get here.)
 
-  - firefox
-  - feh
-  - alacritty
-  - i3-status
-    - https://github.com/greshake/i3status-rust
-  - rofi
-  - zathura 
-  - picom
-  - polybar
-  - spotifyd
-  - status-notifier-watcher
-  - xsession
-    - i3
-  - xresources
+- firefox
+- feh
+- alacritty
+- i3-status
+  - <https://github.com/greshake/i3status-rust>
+- rofi
+- zathura
+- picom
+- polybar
+- spotifyd
+- status-notifier-watcher
+- xsession
+  - i3
+- xresources
 
 ## Other Thing to Look Into
 
-- https://github.com/divnix/digga
-  - https://github.com/divnix/digga/tree/main/examples/devos
-  - https://github.com/montchr/dotfield/tree/main/home/profiles
+- <https://github.com/divnix/digga>
+  - <https://github.com/divnix/digga/tree/main/examples/devos>
+  - <https://github.com/montchr/dotfield/tree/main/home/profiles>
 
 ## General References
 
-  - http://ryantm.github.io/nixpkgs/using/configuration/
-  - https://nixos.org/guides/nix-pills/basics-of-language.html#idm140737320575616
+- <http://ryantm.github.io/nixpkgs/using/configuration/>
+- <https://nixos.org/guides/nix-pills/basics-of-language.html#idm140737320575616>

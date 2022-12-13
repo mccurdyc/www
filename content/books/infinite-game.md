@@ -10,6 +10,7 @@ books: ["The Infinite Game"]
 book-authors: ["Simon Sinek"]
 amazon: "https://www.amazon.com/Infinite-Game-Simon-Sinek/dp/073521350X"
 thriftbooks: "https://www.thriftbooks.com/w/the-infinite-game_simon-sinek/18603094/?resultid=b9e8c652-2128-46b4-9440-f1b929f830b2#isbn=073521350X&edition=19797901&idiq=34830405"
+hide: false
 ---
 
 ## Three-sentence Summary
@@ -52,7 +53,6 @@ will have multi-generational impact.
 > No matter how successful we are in life, when we die, none of us will be declared the winner of life... All of these things are journeys, not events. [p.4]
 
 > To live a life with an infinite mindset means thinking about second and third order effects of our decisions [p.223].
-
 
 A Cause must be specific and visible, but necessarily unobtainable. Sinek called
 out "moonshots", saying that these are not Causes, because moonshots are finite

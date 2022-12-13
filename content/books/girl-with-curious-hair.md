@@ -11,6 +11,7 @@ book-authors: ["David Foster Wallace"]
 amazon: "https://www.amazon.com/Girl-Curious-David-Foster-Wallace-ebook/dp/B00NQ9UJ2G"
 thriftbooks: "https://www.thriftbooks.com/w/girl-with-curious-hair_david-foster-wallace_robert-petkoff/271756/all-editions/"
 draft: false
+hide: false
 ---
 
 It took me a while to enjoy this book. There were only a few of the short stories

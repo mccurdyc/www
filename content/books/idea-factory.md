@@ -10,9 +10,11 @@ books: ["Idea Factory: Bell Labs and the Great Age of American Innovation"]
 book-authors: ["Jon Gertner"]
 amazon: "https://www.amazon.com/Idea-Factory-Great-American-Innovation/dp/0143122797"
 thriftbooks: "https://www.thriftbooks.com/w/the-idea-factory-bell-labs-and-the-great-age-of-american-innovation_jon-gertner/336630/#edition=7214814&idiq=969400"
+hide: false
 ---
 
 ## Three-sentence Summary
+
 Bell Labs had its share of personality clashes, organizational challenges and
 strategic missteps. Many attributed the success of the Labs to a combination of
 timing, environment and curious and determined folks, but not geniuses. Ultimately
@@ -21,6 +23,7 @@ what made Bell Labs' operating model successful was a clear, shared vision.
 > ... in any company's greatest achievements, one might, with clarity of hindsight, locate the beginnings of its own demise [p. 186].
 
 ## Introduction
+
 Prior to reading this book, I held an unrealistic view about "super-human"
 researchers and that Bell Labs was some sort of utopia. As I read the book, I
 began to realize that my prior view was far from correct and that both the
@@ -123,6 +126,7 @@ Their solutions were constantly identifying new problems that needed to be solve
 One major challenge that Bell Labs faced was helping the public understand and realize the benefits of its inventions, such as the transistor. The public clearly didn't understand the important of the transistor, exemplified by a four-paragraph write-up on page 46 of The New York Times. Marketing their inventions was something that Bell Labs, being part of the monopoly that it was, didn't have to do all that well because everything from discovery to development was done in-house.
 
 ## The People and Place
+
 Many of the now recognizable names are of people who had humble beginnings. Many
 were from the mid-west --- not that I think this fact matters all that much --- some
 grew up alongside latter-day pioneers, such as Brattain, where he spent much of
@@ -166,11 +170,13 @@ in one of the largest societal shifts in history and is the foundation of many t
 Many of the folks struggled in their new environments after Bell Labs [p. 321].
 
 ## The Culture
+
 There was a very strong culture of learning, sharing knowledge and "idle curiosity [p. 184]". For example, there were study groups the met weekly where they would work their way through a textbook one chapter at a time, sharing the role of lecturer over tea and cookies.  One of these study groups was informally led by William Shockley, who was joined by Brattain, Fisk, Townes and Woolridge, among others to discuss topics in the field that would later become "solid-state physics".
 
 Mervin Kelly displayed extreme managerial bravery to demote long-time senior folks and promote younger folks with fresh ideas [p. 79].
 
 ## Fair Share of Challenges
+
 ### The Great Depression
 
 During the Great Depression, researchers at the labs were forced to work fewer hours. Instead of being upset, the researchers viewed this as a good opportunity to enroll in academic courses.
@@ -218,7 +224,7 @@ was a registrar --- i.e., she helped students and professors with class schedule
 and prerequisites, etc. --- at my alma mater; it wasn't a position where she would
 have ever received any sort of domain recognition, yet she touched so many lives.
 There was an overwhelming amount of support when she was sick from many of these folks.
-I especially now recognize that what I want is _my mom's "legacy"_ over Shockley's.
+I especially now recognize that what I want is *my mom's "legacy"* over Shockley's.
 The simplest thing that I can do to continue my mom's legacy is to just focus on being helpful and cheerful, everyday, to everyone.
 
 Something that I need to work on to uphold this legacy is being able to hold conversations with people on topics that I may not be interested in, but the other person may be passionate about. And, when appropriate, ask about how someone is honestly doing and to get to know people that I work with better. I am so fearful about overstepping that I don't step at all and as a result, I'm not building lasting, deep, relationships.

@@ -16,7 +16,12 @@ tags:
 - Leica M11
 - Leica 50mm Summicron Dual-Range
 draft: false
+hide: false
 ---
+
+{{< gallery >}}
+  {{< figure src="/images/2022/02/L1001523.jpg" >}}
+{{< /gallery >}}
 
 I've carried my camera with me to the local coffee shop on the lake so many
 times, but haven't seen a composition that I liked until this day. I'm pretty

@@ -6,4 +6,5 @@ description: ""
 tags: ["talks", "2019", "golang"]
 location: "Detroit Meets, Detroit Gophers Night of Meetups"
 slides-pdf: "2019-11-19-go-meetup.pdf"
+hide: false
 ---

@@ -7,4 +7,5 @@ tags: ["papers", "2016", "mutation-analysis"]
 publication: "Proceedings of the 32nd International Conference on Software Maintenance and Evolution 2016, Raleigh, NC"
 paper-pdf: "icsme2016-mrstudyr.pdf"
 repos: ["mccurdyc/mrstudyr"]
+hide: false
 ---

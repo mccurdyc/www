@@ -8,6 +8,7 @@ image: ""
 post-tags: ["skateboarding"]
 posts: ["Skateboard Preferences"]
 draft: false
+hide: false
 ---
 
 As of now, I've owned the following components. All lists are in order of purchase

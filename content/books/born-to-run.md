@@ -10,6 +10,7 @@ books: ["Born To Run: A hidden tribe, superathletes, and the greatest race the w
 book-authors: ["Chris McDougall"]
 amazon: "https://www.amazon.com/Born-Run-Hidden-Superathletes-Greatest/dp/0307279189"
 thriftbooks: "https://www.thriftbooks.com/w/born-to-run-a-hidden-tribe-superathletes-and-the-greatest-race-the-world-has-never-seen_christopher-mcdougall/249036/?mkwid=s5F8Qd4T0%7cdc&pcrid=70112885352&pkw=&pmt=&plc=&pgrid=21326561472&ptaid=pla-294813786956&gclid=Cj0KCQjwxMjnBRCtARIsAGwWnBM5koiZdQNi8UPQ_HodxQW7pNGA3HY454CWx72_uggq7ML_ZtLmX_kaAgMTEALw_wcB#isbn=0307266303&idiq=2141447"
+hide: false
 ---
 
 > We were born to run; we were born _because_ we run.

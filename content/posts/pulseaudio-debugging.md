@@ -7,6 +7,7 @@ subtitle: ""
 image: ""
 post-tags: ["pavucontrol", "linux", "arch", "pulseaudio", "debugging"]
 posts: ["pavucontrol Stuck Establishing Connection to PulseAudio"]
+hide: true
 ---
 
 ## Overview
@@ -29,7 +30,7 @@ having to reboot.
 This section is mostly for my future self who just wants to resolve the issue.
 
 ```bash
-$ systemctl --user restart pulseaudio.service
+systemctl --user restart pulseaudio.service
 ```
 
 ## Debugging Process
@@ -161,10 +162,10 @@ issue that I'm facing now.
 particular is what I am trying out:
 
 ```bash
-$ printenv XDG_RUNTIME_DIR
-$ ls /run/user/$UID
-$ XDG_RUNTIME_DIR=/run/user/$UID systemctl --user status
-$ loginctl show-session $XDG_SESSION_ID
+printenv XDG_RUNTIME_DIR
+ls /run/user/$UID
+XDG_RUNTIME_DIR=/run/user/$UID systemctl --user status
+loginctl show-session $XDG_SESSION_ID
 ```
 
 I also did `loginctl list-sessions` because `show-session $XDG_SESSION_ID` failed with

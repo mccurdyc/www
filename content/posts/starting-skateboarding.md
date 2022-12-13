@@ -8,6 +8,7 @@ image: ""
 post-tags: ["skating", "personal", "blog"]
 posts: ["Skateboarding"]
 draft: false
+hide: false
 ---
 
 I purchases two boards from Powell Peralta on February 21, 2022. They arrived a

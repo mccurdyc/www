@@ -10,6 +10,7 @@ books: ["Enlightenment Now: The Case for Reason, Science, Humanism, and Progress
 book-authors: ["Steven Pinker"]
 amazon: "https://www.amazon.com/Enlightenment-Now-Science-Humanism-Progress/dp/0525427570"
 thriftbooks: "https://www.thriftbooks.com/w/enlightenment-now-the-case-for-reason-science-humanism-and-progress_steven-pinker/18321115/#edition=21300316&idiq=33371393"
+hide: false
 ---
 
 - Why should I live? "you help continue that progress" [p. 4]

@@ -9,6 +9,7 @@ book-tags: ["book", "software engineering", "technology", "teams"]
 books: ["Team Topologies"]
 book-authors: ["Matthew Skelton", "Manuel Pais"]
 amazon: "https://www.amazon.com/Team-Topologies-Organizing-Business-Technology/dp/1942788819"
+hide: false
 ---
 
 <a href="https://teamtopologies.com/key-concepts" target="_blank">

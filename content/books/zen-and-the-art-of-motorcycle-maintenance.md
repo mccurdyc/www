@@ -10,6 +10,7 @@ books: ["Zen and the Art of Motorcycle Maintenance"]
 book-authors: ["Robert M. Pirsig"]
 amazon: "https://www.amazon.com/Zen-Art-Motorcycle-Maintenance-Inquiry/dp/0060589469"
 thriftbooks: "https://www.thriftbooks.com/w/zen-and-the-art-of-motorcycle-maintenance-an-inquiry-into-values_robert-m-pirsig/247300/#isbn=0688052304&idiq=3570779"
+hide: false
 ---
 
 ## Favorite Quotes

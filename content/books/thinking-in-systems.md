@@ -10,6 +10,7 @@ books: ["Thinking in Systems: A Primer"]
 book-authors: ["Donella H. Meadows"]
 amazon: "https://www.amazon.com/Thinking-Systems-Donella-H-Meadows/dp/1603580557"
 thriftbooks: "https://www.thriftbooks.com/w/thinking-in-systems-a-primer_donella-h-meadows/258994/#isbn=1603580557&idiq=7108396"
+hide: false
 ---
 
 > We can't control systems or figure them out. But we can dance with them!

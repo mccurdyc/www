@@ -10,6 +10,7 @@ simple_gallery: false
 post-tags: ["photovoice"]
 posts: ["PhotoVoice"]
 draft: false
+hide: true
 ---
 
 ## What is PhotoVoices?

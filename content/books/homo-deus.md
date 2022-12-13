@@ -11,6 +11,7 @@ book-authors: ["Yuval Noah Harari"]
 amazon: "https://www.amazon.com/Homo-Deus-Brief-History-Tomorrow/dp/0062464310"
 thriftbooks: "https://www.thriftbooks.com/w/homo-deus-a-brief-history-of-tomorrow_yuval-noah-harari/11618735/?resultid=7290e576-2424-4a20-819f-e1b0af71183b#edition=11174294&idiq=19108869"
 draft: false
+hide: false
 ---
 
 - The same three problems preoccupied the people of twentieth-century China, of medieval India and of ancient Egypt. Famine, plague and war ([Location 8092](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=8092))
@@ -50,7 +51,7 @@ draft: false
 - <mark>Throughout history, religions and ideologies did not sanctify life itself. They always sanctified something above or beyond earthly existence, and were consequently quite tolerant of death. ([Location 8415](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=8415))</mark>
 - humans don’t die because a figure in a black cloak taps them on the shoulder, or because God decreed it, or because mortality is an essential part of some great cosmic plan. Humans always die due to some technical glitch. ([Location 8428](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=8428))
 - defeat death ([Location 8457](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=8457))
-    - Note: how does this affect the system though? Is the system setup to handle this? We are focused on solving the immediate technical problem, but what about how immortality affects the system that the world operates under.
+  - Note: how does this affect the system though? Is the system setup to handle this? We are focused on solving the immediate technical problem, but what about how immortality affects the system that the world operates under.
 - Google Ventures is investing 36 per cent of its $2 billion portfolio in life sciences start-ups, including several ambitious life-extending projects. ([Location 8462](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=8462))
 - According to Kurzweil and de Grey, every ten years or so we will march into the clinic and receive a makeover treatment that will not only cure illnesses, but will also regenerate decaying tissues, and upgrade hands, eyes and brains. ([Location 8474](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=8474))
 - In truth they will actually be <mark>a-mortal, rather than immortal.</mark> Unlike God, future superhumans could still die in some war or accident, and nothing could bring them back from the netherworld. ([Location 8478](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=8478))
@@ -457,7 +458,7 @@ draft: false
 - Once Cortanas evolve from oracles to agents, they might start speaking directly with one another on their masters’ behalf. ([Location 13488](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=13488))
 - As Cortanas gain authority, they may begin manipulating each other to further the interests of their masters, so that success in the job market or the marriage market may increasingly depend on the quality of your Cortana. ([Location 13492](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=13492))
 - Rich people owning the most up-to-date Cortana will have a decisive advantage over poor people with their older versions. ([Location 13494](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=13494))
-    - Note: unless there are regulations.
+  - Note: unless there are regulations.
 - The liberal solution for social inequality is to give equal value to different human experiences, instead of trying to create the same experiences for everyone. ([Location 13560](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=13560))
 - will this solution still work once rich and poor are separated not merely by wealth, but also by real biological gaps? ([Location 13561](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=13561))
 - Unlike in the twentieth century, when the elite had a stake in fixing the problems of the poor because they were militarily and economically vital, in the twenty-first century the most efficient (albeit ruthless) strategy might be to let go of the useless third-class carriages, and dash forward with the first class only. ([Location 13608](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=13608))
@@ -471,7 +472,7 @@ draft: false
 - One of the most important articles about the philosophy of mind is titled ‘What Is It Like to Be a Bat?’3 In this 1974 paper, the philosopher Thomas Nagel points out that a Sapiens mind cannot fathom the subjective world of a bat. We can write all the algorithms we want about the bat body, bat echolocation systems and bat neurons, but that won’t tell us how it feels to be a bat. ([Location 13719](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=13719))
 - Sapiens don’t rule the world because they have deeper emotions or more complex musical experiences than other animals. So we may be inferior to whales, bats, tigers and pelicans at least in some emotional and experiential domains. ([Location 13741](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=13741))
 - <mark>Just as Columbus and Magellan sailed beyond the horizon to explore new islands and unknown continents, so we may one day embark for the antipodes of the mind. ([Location 13746](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=13746))</mark>
-    - Note: wow. I hadn't thought of that
+  - Note: wow. I hadn't thought of that
 - medicine is increasingly focused on upgrading the healthy rather than healing the sick. ([Location 13756](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=13756))
 - Sapiens originally evolved as members of small intimate communities, and their mental faculties were not adapted to living as cogs within a giant machine. ([Location 13767](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=13767))
 - Modern humanity is sick with FOMO – Fear Of Missing Out – and though we have more choice than ever before, we have lost the ability to really pay attention to whatever we choose.6 ([Location 13786](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=13786))
@@ -501,7 +502,7 @@ draft: false
 - Did you ever vote about the shape of cyberspace? ([Location 13987](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=13987))
 - <mark>The governmental tortoise cannot keep up with the technological hare. ([Location 13992](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=13992))</mark>
 - Present-day democratic structures just cannot collect and process the relevant data fast enough, ([Location 13999](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=13999))
-    - Note: exactly. I honestly think it needs to be some sort of decentralization but there have to be incentives for agents in the system to want to maximize for themselves that betters the entire system.
+  - Note: exactly. I honestly think it needs to be some sort of decentralization but there have to be incentives for agents in the system to want to maximize for themselves that betters the entire system.
 - In the USA voters imagine that ‘the establishment’ monopolizes all the power, so they support anti-establishment candidates ([Location 14003](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=14003))
 - The sad truth is that nobody knows where all the power has gone. ([Location 14005](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=14005))
 - Many neo-liberal economists and political scientists argue that it is best to leave all the important decisions in the hands of the free market. ([Location 14025](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=14025))
@@ -515,9 +516,9 @@ draft: false
 - Increasing the freedom of movement along existing connections. ([Location 14059](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=14059))
 - These four methods often contradict one another. The greater the number and variety of processors, the harder it is to freely connect them. ([Location 14061](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=14061))
 - Sapiens used their advantage in data processing to overrun the entire world. ([Location 14067](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=14067))
-    - Note: <mark>Information Theory</mark>
+  - Note: <mark>Information Theory</mark>
 - invention of writing and money ([Location 14073](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=14073))
-    - Note: Generalized a bit, these are mechanisms for "knowledge and wealth transfer"
+  - Note: Generalized a bit, these are mechanisms for "knowledge and wealth transfer"
 - close proximity, ([Location 14075](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=14075))
 - dense local networks ([Location 14075](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=14075))
 - <mark>incentives and opportunities ([Location 14076](https://readwise.io/to_kindle?action=open&asin=B01NH9R8FK&location=14076))</mark>

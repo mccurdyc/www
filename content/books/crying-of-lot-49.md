@@ -10,6 +10,7 @@ books: ["Crying of Lot 49"]
 book-authors: ["Thomas Pynchon"]
 amazon: "https://www.amazon.com/Crying-Lot-49-Thomas-Pynchon/dp/B003Z2MZC6"
 thriftbooks: "https://www.thriftbooks.com/w/the-crying-of-lot-49_thomas-pynchon/248845/?resultid=8970d62f-c8b1-4633-9155-f9c31a1e3ea9#edition=2336459&idiq=2594498"
+hide: false
 ---
 
 # Three-sentence Summary

@@ -7,4 +7,5 @@ tags: ["talks", "2017", "mutation-analysis"]
 location: "Allegheny College, Thesis Defense"
 slides-pdf: "mccurdyc-thesis-defense.pdf"
 repos: ["mccurdyc/cs610s2017-mccurdyc-defense"]
+hide: false
 ---

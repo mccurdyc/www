@@ -5,6 +5,7 @@ author: "Colton J. McCurdy"
 date: 2019-10-29
 post-tags: ["linux", "pavucontrol", "audio", "2019"]
 posts: ["Fixing `pavucontrol`"]
+hide: true
 ---
 
 ## Problem
@@ -23,7 +24,9 @@ I learned a lot in the process of fixing `pavucontrol` on my machine.
 `alsa`. A lot of applications require `pulseaudio`, but you can get away with lighter alternatives.
 
 ## The Fix
+
 1. Update Related Dependencies
+
 ```bash
 pacman -Syu pulseaudio, pulseaudio-alsa, pulseaudio-bluetooth, alsa-lib, alsa-utils, alsa-firmware
 ```
@@ -40,6 +43,7 @@ was in sync with root. To do this, I did the following:
 5. `pavucontrol` started working!
 
 ## References
+
 + Huge shoutout to [this post](https://learn.foundry.com/nuke/content/timeline_environment/managetimelines/audio_pulse.html)
 + [This was another helpful post](https://linuxhint.com/pulseaudio_arch_linux/) which first exposed me to the user vs root config files
 and other alternatives to pulseaudio, if I decided to go that route.

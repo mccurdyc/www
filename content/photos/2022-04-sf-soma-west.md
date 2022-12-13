@@ -18,6 +18,7 @@ tags:
 - Leica M11
 - Leica 50mm Summicron
 draft: false
+hide: true
 ---
 
 I went out to SF in April and met co-workers for the first time. It was great!

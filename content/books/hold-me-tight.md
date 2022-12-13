@@ -10,6 +10,7 @@ books: ["Hold Me Tight: Seven conversations for a lifetime of love"]
 book-authors: ["Dr. Sue Johnson"]
 amazon: "https://www.amazon.com/Hold-Me-Tight-Conversations-Lifetime/dp/031611300X"
 thriftbooks: "https://www.thriftbooks.com/w/hold-me-tight-seven-conversations-for-a-lifetime-of-love_sue-johnson/248702/#isbn=031611300X&idiq=4032793"
+hide: false
 ---
 
 > ...love is like a language. If you speak it, it flows more and more easily. If you don't, then you start to lose it. - [@Dr_SueJohnson](https://twitter.com/Dr_SueJohnson)
@@ -63,7 +64,6 @@ We need healthy, emotionally-close relationships to be the best version of ourse
 Hold Me Tight Dr. Johnson makes the point about her parents' relationship,
 
 > I watched helplessly as they destroyed their marriage and _themselves_. - [@Dr_SueJohnson](https://twitter.com/Dr_SueJohnson)
-
 
 As we grow older, we form fewer new relationships in general, but especially fewer "close" relationships.
 However, we still innately remain dependent on others. While we may be less dependent on our parents for nurturing, soothing
@@ -124,7 +124,6 @@ She says, "[t]he circle of loving responsiveness widens like the ripple from a s
 If we have better relationships with our partners, families and then communities,
 we will foster a "more caring world". She agrees with the thoughts of Thomas Merton,
 who believed that compassion had to be based on "a keen awareness of the interdependence of all living things".
-
 
 > The circle of loving responsiveness widens like the ripple from a stone dropped in a pool. - [@Dr_SueJohnson](https://twitter.com/Dr_SueJohnson)
 

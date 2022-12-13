@@ -10,6 +10,7 @@ books: ["Hell Yeah or No"]
 book-authors: ["Derek Sivers"]
 amazon: ""
 thriftbooks: ""
+hide: false
 ---
 
 <a href="https://sive.rs/n" target="_blank">

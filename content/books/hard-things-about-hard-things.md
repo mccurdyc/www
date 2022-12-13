@@ -10,6 +10,7 @@ books: ["The Hard Things About Hard Things: Building a business when there are n
 book-authors: ["Ben Horowitz"]
 amazon: "https://www.amazon.com/Hard-Thing-About-Things-Building/dp/0062273205"
 thriftbooks: "https://www.thriftbooks.com/w/the-hard-thing-about-hard-things-building-a-business-when-there-are-no-easy-answers_ben-horowitz/3307127/?mkwid=sFM5qtcnV%7cdc&pcrid=70112878392&pkw=&pmt=&plc=&pgrid=21323665512&ptaid=pla-292616666786&gclid=Cj0KCQjwxMjnBRCtARIsAGwWnBMZGQNHt9KEy5y23QpZQCF-Vr13WMGOCerekAz6V4GxSRTNdeTEifcaAqOtEALw_wcB#isbn=0062273205&idiq=5331843"
+hide: false
 ---
 
 ## Relationships
@@ -155,4 +156,3 @@ hear and see the point of market fit and the vision.
 
 If you focus on what _could_ go wrong, you will drive yourself crazy. "Focus on
 where you are going rather than on what you hope to avoid."
-

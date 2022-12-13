@@ -6,6 +6,7 @@ type: ""
 date: 2020-03-05
 image: ""
 tags: ["arch", "2020", "linux"]
+hide: false
 ---
 
 ## Background
@@ -30,7 +31,8 @@ it easier to do again in the future.
 ### USB Storage Arch
 
 Resource(s):
-  + https://wiki.archlinux.org/index.php/USB_storage_devices
+
++ <https://wiki.archlinux.org/index.php/USB_storage_devices>
 
 1. Find the device with `lsblk -f`
 2. `mkdir /mnt/usb`
@@ -44,20 +46,23 @@ Download the `*.iso` file from a mirror listed on the [Arch Downloads page (HTTP
 ### Creating Bootable Arch image
 
 Resource(s):
-  + http://valleycat.org/linux/arch-usb.html?i=1
+
++ <http://valleycat.org/linux/arch-usb.html?i=1>
 
 ```bash
-$ dd bs=4M if=$HOME/Downloads/archlinux.*.iso of=/dev/sda status=progress && sync
+dd bs=4M if=$HOME/Downloads/archlinux.*.iso of=/dev/sda status=progress && sync
 ```
 
 ### Plug the USB into the Target Machine
 
 Resource(s):
-  + https://github.com/nw2190/Arch_Install
+
++ <https://github.com/nw2190/Arch_Install>
 
 1. Enter the machine's BIOS menu. For me, smash `<F12>` while booting.
 
 **CRITICAL:** in the BIOS, do the following:
+
   1. Disable `UEFI Secure Boot`
   2. Change the boot order to have the USB first
   3. Change the SATA operating mode from `RAID` to `AHCI`
@@ -74,12 +79,13 @@ Warmup complete. Level 1 unlocked.
 1. Make sure that the wireless drivers in the ISO were included and are supported
 
 2. Connect to the WiFi
+
 ```bash
-$ lspci -k | grep -A3 'Network controller'
-$ iw dev
-$ ip link set wlp2s0 up
-$ iw dev wlp2s0 scan | grep 'SSID:'
-$ wpa_supplicant -i wlp2s0 -c <(wpa_passphrase 'your_network_ssid' 'password')
+lspci -k | grep -A3 'Network controller'
+iw dev
+ip link set wlp2s0 up
+iw dev wlp2s0 scan | grep 'SSID:'
+wpa_supplicant -i wlp2s0 -c <(wpa_passphrase 'your_network_ssid' 'password')
 ```
 
 > Once a connection is established, fork the process to the background by pressing `[CTRL]+z` and running `bg`.
@@ -98,23 +104,26 @@ I originally was following [this post](https://gist.github.com/chrisleekr/a23e93
 but my target machine would not allow "Legacy" boot mode (i.e., BIOS/MBR) in the BIOS.
 
 Resources(s):
-  + https://www.saminiir.com/installing-arch-linux-on-dell-xps-15/
-  + https://wiki.archlinux.org/index.php/installation_guide
-  + https://wiki.archlinux.org/index.php/Partitioning#Example_layouts
+
++ <https://www.saminiir.com/installing-arch-linux-on-dell-xps-15/>
++ <https://wiki.archlinux.org/index.php/installation_guide>
++ <https://wiki.archlinux.org/index.php/Partitioning#Example_layouts>
 
 2. Partition the drive with `fdisk`. You could also use `parted` or `gdisk`.
+
 ```bash
-$ fdisk /dev/nvme0n1
-$ (fdisk) g
-$ (fdisk) n (skip, skip, +512M)
-$ (fdisk) t (1, 1)
-$ (fdisk) n (skip, skip, skip)
+fdisk /dev/nvme0n1
+(fdisk) g
+(fdisk) n (skip, skip, +512M)
+(fdisk) t (1, 1)
+(fdisk) n (skip, skip, skip)
 ```
 
 ### Formatting the Partitions
 
 Resource(s):
-  +  https://www.saminiir.com/installing-arch-linux-on-dell-xps-15/
+
++ <https://www.saminiir.com/installing-arch-linux-on-dell-xps-15/>
 
 ```bash
 # Should show "esp" in Flags:
@@ -130,56 +139,61 @@ $ mkfs.ext4 /dev/nvme0n1p2
 ### Encrypt the Drive
 
 Resource(s):
-  + https://gist.github.com/chrisleekr/a23e93edc3b0795d8d95f9c70d93eedd
+
++ <https://gist.github.com/chrisleekr/a23e93edc3b0795d8d95f9c70d93eedd>
 
 ```bash
-$ cryptsetup -c aes-xts-plain64 -y --use-random luksFormat /dev/nvme0n1p2
-$ cryptsetup luksOpen /dev/nvme0n1p2 luks
+cryptsetup -c aes-xts-plain64 -y --use-random luksFormat /dev/nvme0n1p2
+cryptsetup luksOpen /dev/nvme0n1p2 luks
 ```
 
 ### Logical Volume Manager (LVM) Partitions
 
 Resource(s):
-  + https://gist.github.com/chrisleekr/a23e93edc3b0795d8d95f9c70d93eedd
-  + https://wiki.archlinux.org/index.php/LVM
+
++ <https://gist.github.com/chrisleekr/a23e93edc3b0795d8d95f9c70d93eedd>
++ <https://wiki.archlinux.org/index.php/LVM>
 
 ```bash
-$ pvcreate /dev/mapper/luks
-$ vgcreate vg0 /dev/mapper/luks
-$ lvcreate -L 8G vg0 -n swap
-$ lvcreate -L 25G vg0 -n root
-$ lvcreate -l 100%FREE vg0 -n home
+pvcreate /dev/mapper/luks
+vgcreate vg0 /dev/mapper/luks
+lvcreate -L 8G vg0 -n swap
+lvcreate -L 25G vg0 -n root
+lvcreate -l 100%FREE vg0 -n home
 ```
 
 ### Format Partitions
 
 Resource(s):
-  + https://gist.github.com/chrisleekr/a23e93edc3b0795d8d95f9c70d93eedd
-  + https://www.saminiir.com/installing-arch-linux-on-dell-xps-15/
+
++ <https://gist.github.com/chrisleekr/a23e93edc3b0795d8d95f9c70d93eedd>
++ <https://www.saminiir.com/installing-arch-linux-on-dell-xps-15/>
 
 ```bash
-$ mkfs.ext4 /dev/mapper/vg0-root
-$ mkfs.ext4 /dev/mapper/vg0-home
-$ mkswap /dev/mapper/vg0-swap
+mkfs.ext4 /dev/mapper/vg0-root
+mkfs.ext4 /dev/mapper/vg0-home
+mkswap /dev/mapper/vg0-swap
 ```
 
 ### Mount the Filesystem
 
 Resource(s)
-  + https://gist.github.com/chrisleekr/a23e93edc3b0795d8d95f9c70d93eedd
+
++ <https://gist.github.com/chrisleekr/a23e93edc3b0795d8d95f9c70d93eedd>
 
 ```bash
-$ mount /dev/mapper/vg0-root /mnt
-$ mkdir /mnt/{boot,home}
-$ mount /dev/nvme0n1p1 /mnt/boot
-$ mount /dev/mapper/vg0-home /mnt/home
-$ swapon /dev/mapper/vg0-swap
+mount /dev/mapper/vg0-root /mnt
+mkdir /mnt/{boot,home}
+mount /dev/nvme0n1p1 /mnt/boot
+mount /dev/mapper/vg0-home /mnt/home
+swapon /dev/mapper/vg0-swap
 ```
 
 ### Install Packages that Go with You to the Root System
 
 Resource(s)
-  + https://gist.github.com/chrisleekr/a23e93edc3b0795d8d95f9c70d93eedd
+
++ <https://gist.github.com/chrisleekr/a23e93edc3b0795d8d95f9c70d93eedd>
 
 **CRITICAL:** Install any packages that will help you with setup (e.g., packages
 for connecting to WiFi). You could minimally install `base` and `base-devel`.
@@ -205,22 +219,25 @@ $ pacstrap -i /mnt \
 ### Generate `fstab`
 
 Resource(s):
-  + https://gist.github.com/chrisleekr/a23e93edc3b0795d8d95f9c70d93eedd
+
++ <https://gist.github.com/chrisleekr/a23e93edc3b0795d8d95f9c70d93eedd>
 
 ```bash
-$ genfstab -U /mnt >> /mnt/etc/fstab
+genfstab -U /mnt >> /mnt/etc/fstab
 ```
 
 ### Enter the Root System
 
 Resource(s):
-  + https://gist.github.com/chrisleekr/a23e93edc3b0795d8d95f9c70d93eedd
+
++ <https://gist.github.com/chrisleekr/a23e93edc3b0795d8d95f9c70d93eedd>
 
 ```bash
-$ arch-chroot /mnt /bin/bash
+arch-chroot /mnt /bin/bash
 ```
 
 1. Set timezone
+
 ```bash
 # ln -s /usr/share/zoneinfo/America/New_York /etc/localtime
 ```
@@ -228,51 +245,54 @@ $ arch-chroot /mnt /bin/bash
 2. Set locale
 
 ```bash
-$ vim /etc/locale.gen # (uncomment en_US.UTF-8 UTF-8)
-$ locale-gen
-$ echo LANG=en_US.UTF-8 > /etc/locale.conf
-$ export LANG=en_US.UTF-8
+vim /etc/locale.gen # (uncomment en_US.UTF-8 UTF-8)
+locale-gen
+echo LANG=en_US.UTF-8 > /etc/locale.conf
+export LANG=en_US.UTF-8
 ```
 
 3. Set hardware clock
 
 ```bash
-$ hwclock --systohc --utc
+hwclock --systohc --utc
 ```
 
 4. Set hostname
 
 Resource(s):
-  + https://wiki.archlinux.org/index.php/installation_guide
+
++ <https://wiki.archlinux.org/index.php/installation_guide>
 
 ```bash
-$ echo dell-arch > /etc/hostname
+echo dell-arch > /etc/hostname
 ```
 
 `/etc/hosts`
+
 ```txt
-127.0.0.1	localhost
+127.0.0.1 localhost
 ::1        localhost
-127.0.1.1	dell-arch.localdomain	dell-arch
+127.0.1.1 dell-arch.localdomain dell-arch
 ```
 
 5. Create a user
 
 Resource(s):
-  + https://gist.github.com/chrisleekr/a23e93edc3b0795d8d95f9c70d93eedd
-  + https://wiki.archlinux.org/index.php/users_and_groups
+
++ <https://gist.github.com/chrisleekr/a23e93edc3b0795d8d95f9c70d93eedd>
++ <https://wiki.archlinux.org/index.php/users_and_groups>
 
 ```bash
-$ useradd -m -g users -G wheel -s /bin/bash mccurdyc # the shell must be listed in $(cat /etc/shells)
-$ passwd mccurdyc
-$ visudo # uncomment %wheel ALL=(ALL) ALL
+useradd -m -g users -G wheel -s /bin/bash mccurdyc # the shell must be listed in $(cat /etc/shells)
+passwd mccurdyc
+visudo # uncomment %wheel ALL=(ALL) ALL
 ```
 
 6. Configure `mkinitcpio` with modules needed for the `initrd` image
 
 ```bash
-$ vim /etc/mkinitcpio.conf # Add 'encrypt' and 'lvm2' to HOOKS before 'filesystems'
-$ mkinitcpio -p linux
+vim /etc/mkinitcpio.conf # Add 'encrypt' and 'lvm2' to HOOKS before 'filesystems'
+mkinitcpio -p linux
 ```
 
 7. Setup the `systemd-boot` boot manager
@@ -280,8 +300,9 @@ $ mkinitcpio -p linux
 **CRITICAL:** `grub` didn't work
 
 Resource(s):
-  + https://www.cio.com/article/3098030/how-to-install-arch-linux-on-dell-xps-13-2016-in-7-steps.html
-  + https://www.saminiir.com/installing-arch-linux-on-dell-xps-15/
+
++ <https://www.cio.com/article/3098030/how-to-install-arch-linux-on-dell-xps-13-2016-in-7-steps.html>
++ <https://www.saminiir.com/installing-arch-linux-on-dell-xps-15/>
 
 ```bash
 # Make sure your ESP partition (described earlier) is mounted at /boot
@@ -315,30 +336,32 @@ If everything works, you've made it passed the hardest part! Level 2 unlocked.
 ## After Rebooting
 
 Resource(s):
-  + https://gist.github.com/chrisleekr/a23e93edc3b0795d8d95f9c70d93eedd
-  + https://unix.stackexchange.com/questions/279545/failed-to-open-config-file-dev-fd-63-error-no-such-file-or-directory-for-wp
+
++ <https://gist.github.com/chrisleekr/a23e93edc3b0795d8d95f9c70d93eedd>
++ <https://unix.stackexchange.com/questions/279545/failed-to-open-config-file-dev-fd-63-error-no-such-file-or-directory-for-wp>
 
 Make sure some things start on startup (and start them now).
 
 ```bash
-$ systemctl enable dhcpcd.service
-$ systemctl start dhcpcd.service
-$ systemctl enable wpa_supplicant.service
-$ systemctl start wpa_supplicant.service
+systemctl enable dhcpcd.service
+systemctl start dhcpcd.service
+systemctl enable wpa_supplicant.service
+systemctl start wpa_supplicant.service
 ```
 
 ### Reconnect to the WiFi
 
 ```bash
-$ iw dev # the device name probably changed
-$ sudo ip link set wlp2s0 up
-$ sudo su -c 'wpa_supplicant -i wlp2s0 -c <(wpa_passphrase "your_network_ssid" "password")'
+iw dev # the device name probably changed
+sudo ip link set wlp2s0 up
+sudo su -c 'wpa_supplicant -i wlp2s0 -c <(wpa_passphrase "your_network_ssid" "password")'
 ```
 
 ### Install Necessary and Helpful Packages
 
 Resource(s):
-  + https://gist.github.com/chrisleekr/a23e93edc3b0795d8d95f9c70d93eedd
+
++ <https://gist.github.com/chrisleekr/a23e93edc3b0795d8d95f9c70d93eedd>
 
 ```bash
 $ pacman -S
@@ -366,10 +389,10 @@ $ pacman -S
 Make sure some more things start on startup (and start them now).
 
 ```bash
-$ systemctl enable NetworkManager.service
-$ systemctl start NetworkManager.service
-$ systemctl enable bluetooth.service
-$ systemctl start bluetooth.service
+systemctl enable NetworkManager.service
+systemctl start NetworkManager.service
+systemctl enable bluetooth.service
+systemctl start bluetooth.service
 ```
 
 ### Clone Helpful `git` Repositories
@@ -377,40 +400,43 @@ $ systemctl start bluetooth.service
 Set `zsh` as your default shell because the tools in `mccurdyc/dotfiles` expect this.
 
 ```bash
-$ sudo chsh -s /bin/zsh mccurdyc
+sudo chsh -s /bin/zsh mccurdyc
 ```
 
 **CRITICAL:** This step creates the necessary symlinks and does the installations
 and configuring described below.
+
 ```bash
-$ git clone --recursive https://github.com/mccurdyc/dotfiles.git # ssh isn't configured yet
-$ cd dotfiles && git submodule update --init
-$ make run-minimal # does a bunch of necessary symlinking
-$ export TOOLS_DIR=$HOME/tools
-$ mkdir $TOOLS_DIR
+git clone --recursive https://github.com/mccurdyc/dotfiles.git # ssh isn't configured yet
+cd dotfiles && git submodule update --init
+make run-minimal # does a bunch of necessary symlinking
+export TOOLS_DIR=$HOME/tools
+mkdir $TOOLS_DIR
 ```
 
 Install [`yay`](https://github.com/Jguer/yay)
-  + My favorite AUR package manager
-  + Written in Go (I'd love to contribute)!
-  + Actively maintained
-  + Similar API to `pacman` (i.e., `-S` to install, `-R` to remove)
+
++ My favorite AUR package manager
++ Written in Go (I'd love to contribute)!
++ Actively maintained
++ Similar API to `pacman` (i.e., `-S` to install, `-R` to remove)
 
 ```bash
-$ git clone https://aur.archlinux.org/yay.git $TOOLS_DIR/yay
-$ cd $TOOLS_DIR/yay
-$ makepkg -si
+git clone https://aur.archlinux.org/yay.git $TOOLS_DIR/yay
+cd $TOOLS_DIR/yay
+makepkg -si
 ```
 
 ### Install Video Drivers
 
 Resource(s):
-  + https://wiki.archlinux.org/index.php/Intel_graphics
+
++ <https://wiki.archlinux.org/index.php/Intel_graphics>
 
 **CRITICAL:** `xf86-video-intel` caused video to be super super laggy in the next step!!!
 
 ```bash
-$ pacman -S vulkan-intel vulkan-mesa-layer
+pacman -S vulkan-intel vulkan-mesa-layer
 ```
 
 ### Install i3 Window Manager (and some other helpful packages)
@@ -436,23 +462,23 @@ $ yay -S \
 **CRITICAL:** Important keystrokes. Remember these for when you are in the X window system.
 
 + The Windows key is set as the i3 modifier key (Mod)
-    + Mod+Shift+Backspace - locks the screen (just start typing to login)
-    + Mod+Shift+r - reloads the i3 config
-    + Mod+`<ENTER>` - opens a terminal
-    + Mod+Backslash (i.e., `\`) - opens a browser
-    + Mod+`<TAB>` - brings up an application fuzzy searcher
+  + Mod+Shift+Backspace - locks the screen (just start typing to login)
+  + Mod+Shift+r - reloads the i3 config
+  + Mod+`<ENTER>` - opens a terminal
+  + Mod+Backslash (i.e., `\`) - opens a browser
+  + Mod+`<TAB>` - brings up an application fuzzy searcher
 
 To see all i3 keystrokes, check out [`~/.config/i3/config`](https://github.com/mccurdyc/dotfiles/blob/master/.config/i3/config).
 
 ```bash
-$ startx # BAM! No longer limited to a shell.
+startx # BAM! No longer limited to a shell.
 ```
 
 If your video is super laggy or only updates on mouse movement, the `xf86-video-intel`
 package is probably still installed. See the [Install Video Drivers section](#install-video-drivers).
 
 ```bash
-$ pacman -R xf86-video-intel
+pacman -R xf86-video-intel
 ```
 
 If you have video and it's not laggy, you've made it passed the second most difficult part!
@@ -461,10 +487,11 @@ Final level unlocked. Time for the fun stuff (i.e., making it your own).
 ### Install Drivers
 
 Resource(s):
-  + https://www.archlinux.org/groups/x86_64/xorg-drivers/
+
++ <https://www.archlinux.org/groups/x86_64/xorg-drivers/>
 
 ```bash
-$ pacman -S xorg-drivers
+pacman -S xorg-drivers
 ```
 
 ---
@@ -476,7 +503,8 @@ Go ahead and reboot now with `sudo reboot -h now`.
 ### Adjusting Font Sizes
 
 Resource(s):
-  + https://wiki.archlinux.org/index.php/HiDPI
+
++ <https://wiki.archlinux.org/index.php/HiDPI>
 
 1. To adjust them in [GTK applications](https://wiki.archlinux.org/index.php/GTK)
 (e.g., Chrome, Brave Browser, etc.), edit the font size in `~/.config/gtk-3.0/settings.ini`.
@@ -490,15 +518,15 @@ _Note: either export `QT_SCALE_FACTOR=...` or alias the commands to include the
 application-specific scale factor._
 
 ```bash
-$ QT_SCALE_FACTOR=2 zoom
+QT_SCALE_FACTOR=2 zoom
 ```
 
 Or, more likely, you will have to update the command that gets run by `/usr/local/share/application/<app-name>.desktop`.
 To add user overrides, do the following:
 
 ```bash
-$ export XDG_DATA_HOME="$HOME/.local/share"
-$ cp /usr/local/share/applications/<application>.desktop $XDG_DATA_HOME
+export XDG_DATA_HOME="$HOME/.local/share"
+cp /usr/local/share/applications/<application>.desktop $XDG_DATA_HOME
 ```
 
 In order to prepend an environment variable --- like above --- you will have
@@ -518,10 +546,10 @@ To read more about the XDG Base Directory, check out [this post on the Arch Wiki
 1. [Generate an SSH key](https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 
 ```bash
-$ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
-$ eval "$(ssh-agent -s)"
-$ ssh-add ~/.ssh/id_rsa
-$ xclip -sel clip < ~/.ssh/id_rsa.pub
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_rsa
+xclip -sel clip < ~/.ssh/id_rsa.pub
 ```
 
 2. [Add the SSH key to your GitHub account](https://help.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account)
@@ -539,19 +567,21 @@ $ nvim +PlugInstall +UpdateRemotePlugins +qall > /dev/null
 `tmux` plugin manager
 
 ```bash
-$ $(HOME)/.tmux/plugins/tpm/scripts/install_plugins.sh
-$ tmux source $(HOME)/.tmux.conf
-$ sudo npm i -g bash-language-server
+$(HOME)/.tmux/plugins/tpm/scripts/install_plugins.sh
+tmux source $(HOME)/.tmux.conf
+sudo npm i -g bash-language-server
 ```
 
 To list packages on another Arch machine, run the following:
 
 Official packages:
+
 ```
 pacman -Qqne
 ```
 
 AUR packages:
+
 ```
 pacman -Qqme
 ```
@@ -581,11 +611,11 @@ $ yay -S \
 
 ### Setting Default Applications
 
-+ https://wiki.archlinux.org/index.php/XDG_MIME_Applications
-+ https://www.linuxquestions.org/questions/slackware-14/wrong-application-for-opening-directories-with-xdg-open-4175619886/
++ <https://wiki.archlinux.org/index.php/XDG_MIME_Applications>
++ <https://www.linuxquestions.org/questions/slackware-14/wrong-application-for-opening-directories-with-xdg-open-4175619886/>
 
 ```bash
-$ xdg-mime query default inode/directory
+xdg-mime query default inode/directory
 ```
 
 ### Fixing Zoom SSO
@@ -602,23 +632,26 @@ via the `zoommtg` protocol didn't work. I checked my `mimeapps.list` and everyth
 looked fine, so I just tried `xdg-open`ing via the shell and everything worked!
 
 ```bash
-$ xdg-open zoommtg://[blah].zoom.us/sso?token=[blah]
+xdg-open zoommtg://[blah].zoom.us/sso?token=[blah]
 ```
 
 ### Screen Brightness
 
 Resource(s):
-+ https://prdpx7.github.io/linux/stuff-i-learned-while-fixing-brightness-on-ubuntu/
-+ https://superuser.com/a/462828
-+ https://unix.stackexchange.com/questions/471824/what-is-the-correct-substitute-for-rc-local-in-systemd-instead-of-re-creating-rc
-+ https://www.linuxbabe.com/linux-server/how-to-enable-etcrc-local-with-systemd
+
++ <https://prdpx7.github.io/linux/stuff-i-learned-while-fixing-brightness-on-ubuntu/>
++ <https://superuser.com/a/462828>
++ <https://unix.stackexchange.com/questions/471824/what-is-the-correct-substitute-for-rc-local-in-systemd-instead-of-re-creating-rc>
++ <https://www.linuxbabe.com/linux-server/how-to-enable-etcrc-local-with-systemd>
 + digitalocean.com/community/tutorials/understanding-systemd-units-and-unit-files
-+ https://bbs.archlinux.org/viewtopic.php?id=86815
-+ https://wiki.archlinux.org/index.php/kernel_parameters
++ <https://bbs.archlinux.org/viewtopic.php?id=86815>
++ <https://wiki.archlinux.org/index.php/kernel_parameters>
 
 This one ultimately solved it for me
-+ **https://wiki.archlinux.org/index.php/backlight**
->  If you find that changing the `acpi_video0` backlight does not actually change the brightness, you may need to use `acpi_backlight=none`.
+
++ **<https://wiki.archlinux.org/index.php/backlight>**
+
+> If you find that changing the `acpi_video0` backlight does not actually change the brightness, you may need to use `acpi_backlight=none`.
 
 ```bash
 $ ls /sys/class/backlight/
@@ -635,26 +668,27 @@ options ... acpi_backlight=none quiet rw
 ### Content Adaptive Brightness Control
 
 Resource(s):
-+ https://wiki.archlinux.org/index.php/Dell_XPS_13_(9360)#Content_Adaptive_Brightness_Control
+
++ <https://wiki.archlinux.org/index.php/Dell_XPS_13_(9360)#Content_Adaptive_Brightness_Control>
 
 Since I am on the Dell XPS 13 (7390), disabling Content Adaptive Brightness was
 as easy as disabling it in the BIOS menu, under the Video settings.
 
 ### Bluetooth Audio
 
-+ https://wiki.archlinux.org/index.php/Bluetooth
++ <https://wiki.archlinux.org/index.php/Bluetooth>
 If you wanted a bluetooth GUI, you could install one of the suggested ones here.
-+ https://wiki.archlinux.org/index.php/Bluetooth_headset
-+ https://wiki.archlinux.org/index.php/PulseAudio
++ <https://wiki.archlinux.org/index.php/Bluetooth_headset>
++ <https://wiki.archlinux.org/index.php/PulseAudio>
 
 ```bash
-$ bluetoothctl
-$ (bluetoothctl) power on
-$ (bluetoothctl) agent on
-$ (bluetoothctl) scan on
-$ (bluetoothctl) devices
-$ (bluetoothctl) pair <MAC>
-$ (bluetoothctl) connect <MAC>
+bluetoothctl
+(bluetoothctl) power on
+(bluetoothctl) agent on
+(bluetoothctl) scan on
+(bluetoothctl) devices
+(bluetoothctl) pair <MAC>
+(bluetoothctl) connect <MAC>
 ```
 
 ### Chrome Extensions

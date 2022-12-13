@@ -8,6 +8,7 @@ image: ""
 post-tags: ["2022", "linux"]
 posts: ["NixOS in a Firecracker VM"]
 draft: false
+hide: false
 ---
 
 ## Motivation for NixOS
@@ -47,7 +48,7 @@ I've made this decision.
 
 7. Make some minimal tweaks to these generated files
 
-  - Set the following in `/etc/nixos/configuration.nix`
+- Set the following in `/etc/nixos/configuration.nix`
 
   ```
   users.users.root.initialHashedPassword = "";
@@ -62,7 +63,8 @@ I've made this decision.
   services.openssh.enable = true;
   ```
 
-  - Added the following to `/etc/nixos/hardware-configuration.nix`
+- Added the following to `/etc/nixos/hardware-configuration.nix`
+
   ```
     fileSystems."/" = {
       device = "/dev/disk/by-uuid/<uuid>";
@@ -80,7 +82,7 @@ I've made this decision.
   error: file 'nixpkgs/nixos' was not found in the Nix search path (add it using $NIX_PATH or -I)
   ```
 
-  Found https://github.com/NixOS/nixpkgs/issues/149791#issuecomment-1107865859
+  Found <https://github.com/NixOS/nixpkgs/issues/149791#issuecomment-1107865859>
 
 11. Re-run `nixos-install`
 
@@ -93,9 +95,10 @@ I've made this decision.
 14. `sudo groupdel nixbld`
 15. `pacman -S rsync`
 16. **(on host)** `sudo mkdir /mnt/nixos-root && sudo rsync -a root@archlinux.localdomain:/mnt /mnt/nixos-root`
-17. `[root@archlinux ~]# chroot /mnt/ /bin/sh` but there's nothing here except  `sh` and `env` which is expected from https://nixos.wiki/wiki/Nix_vs._Linux_Standard_Base
-18.  Need to set my nix-profile in the chroot
+17. `[root@archlinux ~]# chroot /mnt/ /bin/sh` but there's nothing here except  `sh` and `env` which is expected from <https://nixos.wiki/wiki/Nix_vs._Linux_Standard_Base>
+18. Need to set my nix-profile in the chroot
 
-  - https://nixos.org/manual/nix/stable/package-management/profiles.html
-  - https://nixos.wiki/wiki/Change_root
+- <https://nixos.org/manual/nix/stable/package-management/profiles.html>
+- <https://nixos.wiki/wiki/Change_root>
+
 19. Need to use `nixos-enter` instead

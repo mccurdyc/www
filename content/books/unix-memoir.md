@@ -10,6 +10,7 @@ books: ["UNIX: A History and a Memoir"]
 book-authors: ["Brian Kernighan"]
 amazon: "https://www.amazon.com/UNIX-History-Memoir-Brian-Kernighan/dp/1695978552"
 thriftbooks: "https://www.thriftbooks.com/w/unix-a-history-and-a-memoir_brian-w-kernighan/24296322/#isbn=1695978552&idiq=35079524"
+hide: false
 ---
 
 > If nothing else, choices that might seem wrong-headed or perverse today can often

@@ -9,6 +9,7 @@ books: ["Life in Code"]
 book-authors: ["Ellen Ullman"]
 amazon: "https://www.amazon.com/Life-Code-Personal-History-Technology/dp/1250181690/"
 thriftbooks: "https://www.thriftbooks.com/w/life-in-code-a-personal-history-of-technology_ellen-ullman/13998458/all-editions/"
+hide: false
 ---
 
 Ullman starts the book with the following quote,
@@ -41,7 +42,6 @@ very different from what it was intended.
 
 > The internet had become not a celebration of computing, but a stock-market event, as
 > Tim Berners-Lee had feared it would.
-
 
 She discusses an inner battle with the infamous imposter syndrome, when she was offered
 a job from her friend's brother, Larry Page of Google. And how she convinced herself

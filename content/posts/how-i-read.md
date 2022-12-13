@@ -7,6 +7,7 @@ subtitle: "A tradeoff between effeciency, effectiveness and enjoyment"
 image: ""
 post-tags: ["reading", "2022", "hobbies", "ipad", "personal process"]
 posts: ["How I Read: A tradeoff between effeciency, effectiveness and enjoyment"]
+hide: false
 ---
 
 ## Goals of reading for me
@@ -88,7 +89,7 @@ at the time as well as other key apps for my workflow.
 
 #### iPad Apps
 
-##### Readwise, Readwise, READWISE!!!
+##### Readwise, Readwise, READWISE
 
 Readwise has been a huge gamechanger and positive improvement in my reading process.
 I use it for syncing Kindle and browser highlights to my "personal database" which

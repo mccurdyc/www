@@ -17,6 +17,7 @@ tags:
 - Leica M11
 - TTArtisan 90mm
 draft: false
+hide: true
 ---
 
 {{< simple-gallery >}}

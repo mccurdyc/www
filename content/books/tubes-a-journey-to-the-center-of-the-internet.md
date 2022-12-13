@@ -10,6 +10,7 @@ books: ["Tubes: A Journey to the Center of the Internet"]
 book-authors: ["Andrew Blum"]
 amazon: "https://www.amazon.com/Tubes-Journey-Internet-Andrew-Blum/dp/0061994952"
 thriftbooks: "https://www.thriftbooks.com/w/tubes-a-journey-to-the-center-of-the-internet_andrew--blum/323183/item/40202917/?mkwid=3KrTPiKg%7cdc&pcrid=11558858306&pkw=&pmt=be&slid=&product=40202917&plc=&pgrid=3970769380&ptaid=pla-1101002865068&utm_source=bing&utm_medium=cpc&utm_campaign=Bing+Shopping+%7c+Computers+&+Technology&utm_term=&utm_content=3KrTPiKg%7cdc%7cpcrid%7c11558858306%7cpkw%7c%7cpmt%7cbe%7cproduct%7c40202917%7cslid%7c%7cpgrid%7c3970769380%7cptaid%7cpla-1101002865068%7c&msclkid=4282c3af30ca1757f73a9ce8ad9dbb06#isbn=0061994936&idiq=40202917"
+hide: false
 ---
 
 While the Internet is a significant component of many people's lives, it "lives" in

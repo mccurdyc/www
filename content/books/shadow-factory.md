@@ -10,15 +10,19 @@ books: ["Shadow Factory: The Ultra-Secret NSA from 9/11 to the Eavesdropping on 
 book-authors: ["James Bamford"]
 amazon: "https://www.amazon.com/Shadow-Factory-NSA-Eavesdropping-America/dp/0307279391"
 thriftbooks: "https://www.thriftbooks.com/w/the-shadow-factory-the-ultra-secret-nsa-from-911-to-the-eavesdropping-on-america_james-bamford/259509/#edition=5370963&idiq=5607993"
+hide: false
 ---
 
 ## Three-sentence summary
+
 There are a lot of ethical "grey areas" regarding monitoring data of "Americans". If terrorism is what you fear, are you willing to trade your freedom?  From its inception, the NSA has its foundation built upon exercises of power and secretive, "backdoor" deals.
 
 > We have to understand you can fight the war [on terrorism] and lose everything if you have no civil liberties left when you get through fighting the war.
+>
 > - Royce C. Lamberth (Former Justice of the FISA court)
 
 ## Introduction
+
 Shadow Factory describes a pre and post-9/11 world and the effects of the events on 9/11 on the United States' National Security Agency (NSA), but more generally, American's privilege to privacy and freedom. The book outlines the fundamental challenges of monitoring communication; the sheer amount of data, introduction of new technologies and technical protocols, the "grey" definition of "American" and most importantly, ethics.
 
 Additionally, Shadow Factory outlines the organizational challenges between the NSA and other governmental agencies, such as the Central Intelligence Agency (CIA) due to its secretive inauguration.
@@ -28,6 +32,7 @@ Additionally, Shadow Factory outlines the organizational challenges between the 
 While you may not care about having your data monitored today, there may be a future where you wish you would have cared sooner.
 
 ## Ethics
+
 There were countless decisions made that were ethically questionable at best. Things like John Poindexter, a man convicted of five felony counts of lying to Congress, destroying official documents and obstructing congressional investigations being appointed leader of the largest data-surveillance system ever built.
 
 What scares me most about a trove with massive amounts of data on civilians — especially when there is questionable behavior surrounding this data — is obviously the potentially secretive misuse (either now or in the future) of this data e.g., "do not fly" lists, potentially notes on credit reports, etc. Not only is the known questionable behavior scary, but just that fact that we know humans are flawed and writing safe and secure software is extremely difficult. If someone was able to gain access to this trove of data, *everyone?* would be in trouble. A problem with data at large is that often "users" don't know precisely *what* data is being stored about them. This has fortunately changed for the better with companies having to handle data better to abide by General Data Protection Regulation (GDPR). But this is only for services that a user has signed up for, no one knows what the government is collecting about them.

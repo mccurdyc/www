@@ -10,6 +10,7 @@ books: ["Reboot: Leadership And The Art Of Growing Up"]
 book-authors: ["Jerry Colonna"]
 amazon: "https://www.amazon.com/Reboot-Leadership-Art-Growing-Up/dp/0062749536"
 thriftbooks: "https://www.thriftbooks.com/w/unti-colonna_jerry-colonna/19547098/item/47612767/?mkwid=viFS2rZd%7cdc&pcrid=76622372857526&pkw=&pmt=be&slid=&product=47612767&plc=&pgrid=1225955707041713&ptaid=pla-4580221854774956&utm_source=bing&utm_medium=cpc&utm_campaign=Bing+Shopping+%7c+Business+&+Investing+%7c+LOW&utm_term=&utm_content=viFS2rZd%7cdc%7cpcrid%7c76622372857526%7cpkw%7c%7cpmt%7cbe%7cproduct%7c47612767%7cslid%7c%7cpgrid%7c1225955707041713%7cptaid%7cpla-4580221854774956%7c&msclkid=6fdee50a53651166c8d884b857f4b106#isbn=0062749536&idiq=47612767"
+hide: false
 ---
 
 - A "pathless path" [p. 139]

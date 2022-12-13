@@ -11,6 +11,7 @@ book-authors: ["Stephen J. Burn"]
 amazon: "https://www.amazon.com/Conversations-David-Foster-Wallace-Literary/dp/1617032271"
 thriftbooks: "https://www.thriftbooks.com/w/conversations-with-david-foster-wallace_stephen-j-burn_burn-j-stephen/2017455/?resultid=5a5bd557-efad-430b-bea4-d45163ea057a#edition=7651672&idiq=19990590"
 draft: false
+hide: false
 ---
 
 There were only one or two interviews that I actually really enjoyed in this book.

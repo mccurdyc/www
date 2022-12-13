@@ -10,4 +10,5 @@ books: ["Love Yourself"]
 book-authors: ["Kamal Ravikant"]
 amazon: "https://www.amazon.com/Love-Yourself-Like-Your-Depends/dp/0062968726/ref=sr_1_4?dchild=1&keywords=love+yourself&qid=1614102713&sr=8-4"
 thriftbooks: ""
+hide: false
 ---

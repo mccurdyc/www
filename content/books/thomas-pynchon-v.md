@@ -11,6 +11,7 @@ book-authors: ["Thomas Pynchon"]
 amazon: ""
 thriftbooks: ""
 draft: false
+hide: false
 ---
 
 Hmm, so this would be a hard one to recommend. It's longer (500+ pages) and there
@@ -20,17 +21,17 @@ Honestly, the only reason I didn't drop this book was because it was the only on
 I took with me on a beach vacation and I love reading physical books on the beach
 and there wasn't a used bookstore in walking distance.
 
-
 ## General Takeaway
-This book is one that I probably wouldn't recommend or even read again. I missed comprehending so much of this book. 
 
-I think the main theme of this book is that "love is the journey, not the destination" and that you should do the journey for yourself, no one else. This definitely isn't clear. I think you read this are constantly like "what does this little story have anything to do with the main point?". 
+This book is one that I probably wouldn't recommend or even read again. I missed comprehending so much of this book.
+
+I think the main theme of this book is that "love is the journey, not the destination" and that you should do the journey for yourself, no one else. This definitely isn't clear. I think you read this are constantly like "what does this little story have anything to do with the main point?".
 
 ## Notes
 
 - "Some of us are afraid of dying; others of human loneliness." [p. 14]
 - Love for innanimate objects [p. 23]
-	- I think he is drawing parallels between women and innanimate objects. 
+  - I think he is drawing parallels between women and innanimate objects.
 - "time and reverse-time, co-existing" [p. 41]
 - "mirror world" [p. 41]
 - "Trafficking in human vanity... propagating the fallacy that beauty is not in the soul, that is can be bought" [p. 42]
@@ -46,7 +47,7 @@ I think the main theme of this book is that "love is the journey, not the destin
 - "Everyone has an Antarctic." [p. 261]
 - "Dreams are like a magic cloak" [p. 275]
 - Satisfying "the beast" [p. 292]
-	- "he'd had to abandon: the luxury of being able to see them as individuals" [p. 292]
+  - "he'd had to abandon: the luxury of being able to see them as individuals" [p. 292]
 - Not economic depression; soul-depression [p. 302]
 - Everyone will become an inanimate object [p. 311]
 - The inanimate war [p. 316]

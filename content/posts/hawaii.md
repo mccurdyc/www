@@ -5,6 +5,7 @@ author: "Colton J. McCurdy"
 date: 2019-05-25
 post-tags: ["hawaii", "vacation", "friends", "personal", "2019"]
 posts: ["The Trip of a Lifetime"]
+hide: false
 ---
 
 ## Why did we want to travel?
@@ -73,9 +74,7 @@ didn't come fully prepared and 11 miles seemed fairly long for a first hike. Eit
 way, Jose was wondering if we could give him and his wife a ride to the Sliding Sands
 Trailhead, where they would be starting their hike.
 
-
 {{<tweet user="mccurdyc" id="1128883726929149952">}}
-
 
 On the roughly 3-5 mile drive to the Sliding Sands Trailhead, we introduced ourselves
 and Jose and his wife, Paulina introduced theirselves. We asked where they were from
@@ -118,9 +117,7 @@ highly recommend to anyone who is interested in beginner-level hiking. The sunse
 at the end of the day is also quite remarkable to experience, but very, very cold
 temperature-wise. This is something that was outside of our comfort-zone.
 
-
 {{<tweet user="mccurdyc" id="1129012634098049026" >}}
-
 
 We met up with Jose and Paulina a few other times for food and to check out beaches
 while we were on Maui and then later, Kauai.

@@ -5,6 +5,7 @@ author: "Colton J. McCurdy"
 date: 2019-11-27
 post-tags: ["vault", "hashicorp", "secrets", "2019"]
 posts: ["Getting Started Locally with HashiCorp Vault and a PostgreSQL Storage Backend"]
+hide: false
 ---
 
 ## Motivation
@@ -41,8 +42,8 @@ image.
 _Note:_ I ran into connection issues using `localhost` instead of `127.0.0.1` as the connection URL, even when it worked
 when connecting directly via `pslconn`.
 
-
 ### Configuring your PostgreSQL Storage Backend
+
 To read more about the PostgreSQL Docker image, refer to the official [documentation](https://hub.docker.com/_/postgres).
 
 + Start PostgreSQL in a Docker container
@@ -95,6 +96,7 @@ CREATE INDEX parent_path_idx ON vault_kv_store (parent_path);
 _Note:_ [Official Vault documentation on this topic](https://www.vaultproject.io/docs/configuration/storage/postgresql.html)
 
 ### Configuring Vault to Use the Storage Backend
+
 + Create a Vault Server Configuration File
 
 ```bash

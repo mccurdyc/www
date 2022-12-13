@@ -10,6 +10,7 @@ books: ["Close to the Machine: Technophilia and Its Discontents"]
 book-authors: ["Ellen Ullman"]
 amazon: "https://www.amazon.com/Close-Machine-Technophilia-Its-Discontents/dp/1250002486"
 thriftbooks: "https://www.thriftbooks.com/w/close-to-the-machine-technophilia-and-its-discontents_ellen-ullman/392556/all-editions/"
+hide: false
 ---
 
 Founding father of virtual reality, [Jaron Lanier](http://www.jaronlanier.com/), writes

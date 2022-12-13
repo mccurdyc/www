@@ -8,6 +8,7 @@ image: ""
 post-tags: ["photography"]
 posts: ["Photography Influences"]
 draft: false
+hide: false
 ---
 
 - [Martin Parr](https://www.martinparr.com/introduction/)

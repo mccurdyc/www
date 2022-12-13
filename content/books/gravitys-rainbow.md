@@ -10,6 +10,7 @@ books: ["Gravitys Rainbow"]
 book-authors: ["Thomas Pynchon"]
 amazon: "https://www.amazon.com/Gravitys-Rainbow-Penguin-Classics-Deluxe/dp/0143039946"
 thriftbooks: "https://www.thriftbooks.com/w/gravitys-rainbow_thomas-pynchon/255055/#edition=13187459&idiq=40807760"
+hide: false
 ---
 
 I didn't finish this book. The time wasn't right. I

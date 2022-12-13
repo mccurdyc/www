@@ -16,6 +16,7 @@ image: "/images/2022/09/10-celebration-meadville/L1006892.jpg"
 tags:
 - Leica M11
 draft: false
+hide: true
 ---
 
 {{< simple-gallery >}}

@@ -8,13 +8,14 @@ image: ""
 post-tags: ["photography"]
 posts: ["September 2022 Photography Influences"]
 draft: false
+hide: false
 ---
 
 TL;DR - Joshua K. Jackson
 
-- https://vero.co/joshkjack
-- https://www.joshkjack.com
-- https://twitter.com/joshkjack
+- <https://vero.co/joshkjack>
+- <https://www.joshkjack.com>
+- <https://twitter.com/joshkjack>
 
 I recently signed up for an app called Vero after seeing Peter McKinnon post about
 it quite a bit recently. Why Vero? Well, because I don't want to sign

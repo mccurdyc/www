@@ -10,6 +10,7 @@ books: ["Talent is Overrated"]
 book-authors: ["Geoff Colvin"]
 amazon: "https://www.amazon.com/Talent-Overrated-Separates-World-Class-Performers/dp/1591842948/ref=sr_1_1?dchild=1&hvadid=77859297291081&hvbmt=bb&hvdev=c&hvqmt=p&keywords=talent+is+overrated&qid=1594982865&sr=8-1&tag=mh0b-20"
 thriftbooks: "https://www.thriftbooks.com/w/talent-is-overrated-what-really-separates-world-class-performers-from-everybody-else_geoff-colvin/251953/#isbn=1591842948&idiq=3950274"
+hide: false
 ---
 
 > ... Mozart became Mozart by working furiously hard.
@@ -27,7 +28,7 @@ of what already existed.
 
 > Intrinsic motivation is still best, and extrinsic motivation that's controlling is still detrimental to creativity, but extrinsic motivators that reinforce intrinsic drives can be highly effective."
 
-## Humans are lazy.
+## Humans are lazy
 
 Generally, humans are lazy and have a finite amount of time and energy. These reasons
 are why "The Greats" are minorities in their respective domains. For these same reasons,

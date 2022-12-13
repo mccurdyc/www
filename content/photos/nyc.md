@@ -14,9 +14,14 @@ image: "/images/2021/02/14-nyc/DSCF3246.JPG"
 tags:
 - x100v
 - Fujinon 23mm f/2
+hide: false
 ---
 
-I love love love love the colors, exposure and focus of this photo. This was
+{{< figure src="/images/2021/02/14-nyc/DSCF3246.JPG" >}}
+
+{{< load-photoswipe >}}
+
+I love the colors, exposure and focus of this photo. This was
 definitely luck and not skill.
 
 Something that I think this photo shows is that at this time in my photography

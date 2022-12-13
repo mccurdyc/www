@@ -11,6 +11,7 @@ book-authors: ["David Foster Wallace"]
 amazon: "https://www.amazon.com/Broom-System-Novel-Penguin-Ink/dp/0143116932"
 thriftbooks: "https://www.thriftbooks.com/w/the-broom-of-the-system_david-foster-wallace/297141/?resultid=347ee8f7-7323-4e23-8b8f-820cd87bb89e#edition=11154488&idiq=26012719"
 draft: false
+hide: false
 ---
 
 ### General Remarks

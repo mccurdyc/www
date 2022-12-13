@@ -11,6 +11,7 @@ book-authors: ["Alan Watts"]
 amazon: "https://www.amazon.com/Become-What-You-Alan-Watts/dp/1570629404"
 thriftbooks: "https://www.thriftbooks.com/w/become-what-you-are_alan-w-watts/344784/#edition=19895558&idiq=27344650"
 draft: false
+hide: false
 ---
 
 - You may believe yourself out of harmony with life and its eternal Now; but you cannot be, for you are life and exist Now.”—from Become What You Are ([Location 17](https://readwise.io/to_kindle?action=open&asin=B00LU5H19W&location=17))
@@ -21,7 +22,7 @@ draft: false
 - out of the union between self and life (or the world) there is born the Christ, ([Location 139](https://readwise.io/to_kindle?action=open&asin=B00LU5H19W&location=139))
 - for no two opposites can exist unless there is a relation between them. ([Location 141](https://readwise.io/to_kindle?action=open&asin=B00LU5H19W&location=141))
 - right. ([Location 147](https://readwise.io/to_kindle?action=open&asin=B00LU5H19W&location=147))
-    - Note: Right according to the masses? Dead and not willing to fight for what may be considered wrong?
+  - Note: Right according to the masses? Dead and not willing to fight for what may be considered wrong?
 - a man does not really begin to be alive until he has lost himself, ([Location 155](https://readwise.io/to_kindle?action=open&asin=B00LU5H19W&location=155))
 - released the anxious grasp which he normally holds upon his life, his property, his reputation and position. ([Location 155](https://readwise.io/to_kindle?action=open&asin=B00LU5H19W&location=155))
 - “holy poverty,” ([Location 156](https://readwise.io/to_kindle?action=open&asin=B00LU5H19W&location=156))
@@ -249,7 +250,7 @@ draft: false
 - “His breathing is operated by the wind but you do not notice it; the light of his right and left eyes is given by the sun and moon, but you do not see it; his shouting is of the thunder, his whispering of the waves, and his laughter of the mountain streams, but you do not hear it; his flesh is maintained by the earth, and his bones and vital juices by the rocks and rains, but you do not understand it; his thoughts and moods are directed by the coming and going of the seasons and the elements, but you are not aware of it. He does not rely on his own resources; he allows himself to be maintained and directed by that which maintains and directs the wind, the sun, the moon, and the rivers, but you do not recognize it.” ([Location 1382](https://readwise.io/to_kindle?action=open&asin=B00LU5H19W&location=1382))
 - “Only you have the power to make him visible. There is a magic by which you can make him appear.” ([Location 1388](https://readwise.io/to_kindle?action=open&asin=B00LU5H19W&location=1388))
 - “The magic,” answered the trader, “is this: in spring to watch the young grass peeping out between the stones; in summer to lift an eye at the lazy clouds; in autumn to follow the leaves that dance in the wind; in winter to wake and find the tracks of birds in the snow. To rise at dawn and go to sleep at sunset; to eat rice three times in a day; to talk of buying and selling with one’s neighbors; to chew the seeds of water melon and to plait straw ropes around the toes.” ([Location 1390](https://readwise.io/to_kindle?action=open&asin=B00LU5H19W&location=1390))
-    - Note: Be yourself
+  - Note: Be yourself
 - It also rejects the possibility of divine intervention at the causal end of the process, having no parallel to the Christian concept of Grace. In Christianity there is no human power that can, of its own resources, make for righteousness and salvation, for by reason of original sin it is impossible for man to move upwards without the gift of divine Grace. ([Location 1403](https://readwise.io/to_kindle?action=open&asin=B00LU5H19W&location=1403))
 - principle of absolute self-reliance. ([Location 1409](https://readwise.io/to_kindle?action=open&asin=B00LU5H19W&location=1409))
 - only in Mahayana has a way of salvation by faith arisen. ([Location 1422](https://readwise.io/to_kindle?action=open&asin=B00LU5H19W&location=1422))
