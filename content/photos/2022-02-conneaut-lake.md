@@ -1,5 +1,5 @@
 ---
-title: "2022-02 Conneaut Lake"
+title: "2022.02 Conneaut Lake"
 date: 2022-02-20T21:25:34-05:00
 subtitle: ""
 description: ""
@@ -19,9 +19,8 @@ draft: false
 hide: false
 ---
 
-{{< gallery >}}
-  {{< figure src="/images/2022/02/L1001523.jpg" >}}
-{{< /gallery >}}
+{{< figure src="/images/2022/02/L1001523.jpg" >}}
+{{< load-photoswipe >}}
 
 I've carried my camera with me to the local coffee shop on the lake so many
 times, but haven't seen a composition that I liked until this day. I'm pretty

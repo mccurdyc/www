@@ -12,21 +12,21 @@ gallery_feature: false
 simple_gallery: false
 bucket: "images.mccurdyc.dev"
 prefix: "none"
-image: "/images/2022/08/30-race-st-map/race-st-map.jpg"
+image: "/images/2022/07/06-photovoices/L1005649.jpg"
 tags:
 - Leica M11
 draft: false
 ---
 
 {{< gallery >}}
-  {{< figure src="images/2022/08/06-race-st/L1006245.jpg" >}}
-  {{< figure src="images/2022/08/06-race-st/L1005655.jpg" >}}
-  {{< figure src="images/2022/08/06-race-st/L1005647.jpg" >}}
-  {{< figure src="images/2022/08/06-race-st/L1006254.jpg" >}}
-  {{< figure src="images/2022/07/06-photovoices/L1005649.jpg" >}}
-  {{< figure src="images/2022/08/06-race-st/L1006268.jpg" >}}
-  {{< figure src="images/2022/08/06-race-st/L1006248.jpg" >}}
-  {{< figure src="images/2022/07/18-photovoices/L1005848.jpg" >}}
+  {{< figure src="/images/2022/08/06-race-st/L1006245.jpg" >}}
+  {{< figure src="/images/2022/07/06-photovoices/L1005655.jpg" >}}
+  {{< figure src="/images/2022/07/06-photovoices/L1005647.jpg" >}}
+  {{< figure src="/images/2022/08/06-race-st/L1006254.jpg" >}}
+  {{< figure src="/images/2022/07/06-photovoices/L1005649.jpg" >}}
+  {{< figure src="/images/2022/08/06-race-st/L1006268.jpg" >}}
+  {{< figure src="/images/2022/08/06-race-st/L1006248.jpg" >}}
+  {{< figure src="/images/2022/07/18-photovoices/L1005848.jpg" >}}
 {{< /gallery >}}
 
 {{< load-photoswipe >}}
