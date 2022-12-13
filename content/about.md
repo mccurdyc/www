@@ -47,5 +47,3 @@ we do have furry children. We have three cats and two dogs.
 
 Here's one photo of us from 2017, but for more recent photos of our family and
 life, check out the [photos pages](/photos).
-
-{{< figure src="/images/colton_meghan.jpg" title="Us" >}}
