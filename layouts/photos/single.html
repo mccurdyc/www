@@ -31,22 +31,6 @@
                 <a href="{{ .Permalink }}">"{{ .Title | upper | markdownify }}"</a>
             </h1>
 
-        {{ if .Params.image }}
-            <a href="https://storage.googleapis.com/{{ .Params.bucket }}{{ .Params.image }}" target="_blank">
-              <div class="box fancy-figure caption-position-bottom caption-effect-fade">
-                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                  <div class="img">
-                    <img itemprop="contentUrl" src="{{ .Params.image }}?quality=80" />
-                  </div>
-
-                  <figcaption>
-                    {{ .Param "camera" }} {{ .Param "lens" }} - <i>f</i>/{{ .Param "aperature" }} {{ .Param "shutter_speed" }} {{ .Param "iso" }}iso
-                  </figcaption>
-                </figure>
-              </div>
-            </a>
-        {{ end }}
-
             <div class="post-content">
                 {{ .Content }}
             </div>
