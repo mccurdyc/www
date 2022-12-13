@@ -6,6 +6,7 @@ date: 2019-12-05
 post-tags: ["running", "personal", "fitness", "health", "2019"]
 posts: ["My First Year of Running Consistently"]
 hide: false
+image: ""
 ---
 
 ## A Brief Background

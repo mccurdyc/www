@@ -6,6 +6,7 @@ date: 2018-01-22
 post-tags: ["docker", "multi-stage", "golang"]
 posts: ["Containerizing Go and a Use Case for Multi-Stage Docker Builds"]
 hide: false
+image: ""
 ---
 
 ## The Adoption of Go in a Service-Oriented Architecture at StockX

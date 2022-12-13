@@ -6,6 +6,7 @@ date: 2019-05-25
 post-tags: ["hawaii", "vacation", "friends", "personal", "2019"]
 posts: ["The Trip of a Lifetime"]
 hide: false
+image: ""
 ---
 
 ## Why did we want to travel?

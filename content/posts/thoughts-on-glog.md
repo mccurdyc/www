@@ -6,6 +6,7 @@ date: 2019-05-03
 post-tags: ["glog", "logging", "neighbor", "2019"]
 posts: ["Should I Use golang/glog"]
 hide: false
+image: ""
 ---
 
 ## Background and Problem Definition

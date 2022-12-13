@@ -6,6 +6,7 @@ date: 2018-11-06
 post-tags: ["open-source", "neighbor", "hacktoberfest", "golang"]
 posts: ["My Personal Journey to the Open Source Community"]
 hide: false
+image: ""
 ---
 
 

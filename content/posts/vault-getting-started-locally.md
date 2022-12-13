@@ -6,6 +6,7 @@ date: 2019-11-27
 post-tags: ["vault", "hashicorp", "secrets", "2019"]
 posts: ["Getting Started Locally with HashiCorp Vault and a PostgreSQL Storage Backend"]
 hide: false
+image: ""
 ---
 
 ## Motivation
