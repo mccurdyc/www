@@ -75,8 +75,6 @@ didn't come fully prepared and 11 miles seemed fairly long for a first hike. Eit
 way, Jose was wondering if we could give him and his wife a ride to the Sliding Sands
 Trailhead, where they would be starting their hike.
 
-{{<tweet user="mccurdyc" id="1128883726929149952">}}
-
 On the roughly 3-5 mile drive to the Sliding Sands Trailhead, we introduced ourselves
 and Jose and his wife, Paulina introduced theirselves. We asked where they were from
 and they said Columbia and they asked we were from, we said "Pennsylvania", they

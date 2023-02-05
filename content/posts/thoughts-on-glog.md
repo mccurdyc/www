@@ -92,8 +92,6 @@ for neighbor because logs are the primary interface for the user and the binary 
 Prior to my investigation, I did recall seeing a few [tweets from Peter Bourgon](https://twitter.com/search?q=from%3Apeterbourgon%20glog&src=typd),
 where glog was strongly advised against being used.
 
-{{< tweet user="mccurdyc" id="972177627996831744" >}}
-
 After seeing people pointing out the challenges of using glog, I expected to run
 into a few myself. A couple of resources that I came across once I had decided to use
 glog were [this blog post](https://flowerinthenight.com/blog/2017/12/01/golang-cobra-glog)
@@ -109,5 +107,3 @@ will be a learning experience with a new (for me) logging library.
 
 I'm curious to hear your thoughts, here is a Twitter thread where I've started
 the discussion.
-
-{{< tweet user="mccurdyc" id="1123729020145799170" >}}

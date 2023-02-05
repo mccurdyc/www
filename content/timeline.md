@@ -43,22 +43,4 @@
     </div>
   </div>
 
-  <div class="recent-posts section">
-    <div class="posts">
-        {{ if .Site.Author.twitter }}
-        <h2>"TWEETS"</h2>
-        {{ end }}
-          <a class="twitter-timeline"
-            data-width="100%"
-            data-dnt="true"
-            data-theme="light"
-            data-chrome="noborders noscrollbar noheader"
-            data-related="twitterapi,twitter"
-            data-aria-polite="assertive"
-            data-dnt="true"
-            href="https://twitter.com/{{ .Site.Author.twitter }}?ref_src=twsrc%5Etfw">
-          </a>
-          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-    </div>
-  </div>
 {{< /rawhtml >}}
