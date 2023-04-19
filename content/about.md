@@ -38,12 +38,12 @@ to see my resume.
 
 Outside of work, my primary interests are traveling, running, reading
 and photography. A perfect day for me would look like getting up at 5AM, making
-a pour-over coffee while reading a book, going for a 10k run and then finishing
-the day off going on a short drive with my wife, Meghan, to photograph Golden hour.
+a pour-over coffee, reading a book, going for a 10k run and then finishing
+the day off going on a short drive with my wife, Meghan, to photograph Golden Hour
+and then playing with our fur family.
 
 My wife and I started dating in 9th grade in 2010, married in 2018 and reside
 in our hometown near Pittsburgh, Pennsylvania. We don't have human children, but
 we do have furry children. We have three cats and two dogs.
 
-Here's one photo of us from 2017, but for more recent photos of our family and
-life, check out the [photos pages](/photos).
+Check out my [photos](/photos).

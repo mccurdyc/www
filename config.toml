@@ -101,7 +101,7 @@ cacheControl = "no-store, max-age=0, s-maxage=3600"
   themeColor = "#1b1c1d"
 
   [params.image]
-    url  = "https://www.mccurdyc.dev/images/2022/04/L1003451.JPG"
+    url  = "https://www.mccurdyc.dev/images/2023/04/L1009379.jpg"
 
   # Colors for favicons
   [params.favicon.color]
