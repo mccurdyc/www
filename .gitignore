@@ -1,4 +1,4 @@
 public/
 .well-known
 node_modules/
-.devenv*
+.direnv*
