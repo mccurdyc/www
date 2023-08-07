@@ -15,8 +15,12 @@ deploy: build ## Deploys the changes to the GCS bucket.
 	./scripts/deploy.sh
 
 .PHONY: sync-images
-sync-images-%: ## Uploads images to GCS
+sync-images-%: clean-images ## Uploads images to GCS
 	gsutil -m rsync -r /mnt/photos/$* gs://images.mccurdyc.dev/images/$*
+
+.PHONY: clean-images
+clean-images: ## Remove _L***.jpg images
+	find /mnt/photos -name "._*" -exec sudo rm -rf {} \;
 
 .PHONY: sync-bookcovers
 sync-bookcovers: ## Uploads book cover images to GCS
