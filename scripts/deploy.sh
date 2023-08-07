@@ -8,8 +8,8 @@ function main() {
 	hugo --ignoreCache --buildFuture --enableGitInfo
 
 	# Build javascript bundles.
-	pushd static/js/read-gcs && webpack-cli
-	popd
+	# pushd static/js/read-gcs && webpack-cli
+	# popd
 
 	# Deploy!
 	# Make sure to set the gcloud account using: gcloud auth application-default login
