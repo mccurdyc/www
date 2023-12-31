@@ -6,5 +6,6 @@ mkShell {
     pkgs.gnumake
     pkgs.wget
     pkgs.hugo
+    pkgs.google-cloud-sdk
   ];
 }
