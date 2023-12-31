@@ -9,9 +9,6 @@ shutter_speed: ""
 iso: ""
 aperature: ""
 gallery_feature: true
-simple_gallery: true
-bucket: "images.mccurdyc.dev"
-prefix: "images/2022/09/10-celebration-meadville/"
 image: "/images/2022/09/10-celebration-meadville/L1006892.jpg"
 tags:
 - Leica M11
@@ -19,4 +16,3 @@ draft: false
 hide: true
 ---
 
-{{< simple-gallery >}}

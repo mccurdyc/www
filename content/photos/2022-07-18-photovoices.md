@@ -9,9 +9,6 @@ shutter_speed: ""
 iso: ""
 aperature: ""
 gallery_feature: false
-simple_gallery: false
-bucket: "images.mccurdyc.dev"
-prefix: "images/2022/07/18-photovoices/"
 image: "/images/2022/07/18-photovoices/L1005848.jpg"
 tags:
 - Leica M11

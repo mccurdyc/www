@@ -9,8 +9,6 @@ shutter_speed: "1/500"
 iso: "80"
 aperature: "9.5"
 gallery_feature: true
-simple_gallery: false
-bucket: "images.mccurdyc.dev"
 image: "/images/2022/02/L1001523.jpg"
 tags:
 - Leica M11

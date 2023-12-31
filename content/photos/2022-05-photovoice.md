@@ -6,7 +6,6 @@ date: 2022-05-17T10:47:22-04:00
 subtitle: ""
 image: "/images/2022/07/06-photovoices/L1005646.jpg"
 gallery_feature: false
-simple_gallery: false
 post-tags: ["photovoice"]
 posts: ["PhotoVoice"]
 draft: false

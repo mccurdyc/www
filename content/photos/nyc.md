@@ -9,7 +9,6 @@ shutter_speed: "1/100"
 iso: "2500"
 aperature: "2500"
 gallery_feature: true
-bucket: "images.mccurdyc.dev"
 image: "/images/2021/02/14-nyc/DSCF3246.JPG"
 tags:
 - x100v

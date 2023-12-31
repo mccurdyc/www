@@ -9,9 +9,6 @@ shutter_speed: "1/1000"
 iso: "400"
 aperature: "2"
 gallery_feature: true
-simple_gallery: true
-bucket: "images.mccurdyc.dev"
-prefix: "images/2022/02/20-hells-hollow"
 image: "/images/2022/02/20-hells-hollow/L1001505.jpg"
 tags:
 - Leica M11
@@ -20,4 +17,3 @@ draft: false
 hide: true
 ---
 
-{{< simple-gallery >}}

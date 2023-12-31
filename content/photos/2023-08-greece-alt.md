@@ -9,9 +9,6 @@ shutter_speed: ""
 iso: ""
 aperature: ""
 gallery_feature: false
-simple_gallery: false
-bucket: "images.mccurdyc.dev"
-prefix: "images/NEW_DIR"
 image: "/images/2023/08-greece-alt/L1001030 43 Edited.jpg"
 tags:
 - Leica M11

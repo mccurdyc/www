@@ -9,10 +9,7 @@ lens: "Leica 50mm Summicron"
 shutter_speed: ""
 iso: ""
 aperature: ""
-simple_gallery: true
 gallery_feature: true
-bucket: "images.mccurdyc.dev"
-prefix: "images/2022/04/soma-west"
 image: "/images/2022/04/soma-west/L1002761.JPG"
 tags:
 - Leica M11
@@ -35,4 +32,3 @@ I looked much closer that I saw just how cool this was.
 I decided that I would trace this image in Procreate, add my own flare to it
 and use it for a wallpaper on my iPad.
 
-{{< simple-gallery >}}

@@ -9,9 +9,6 @@ shutter_speed: ""
 iso: "400"
 aperature: ""
 gallery_feature: false
-simple_gallery: true
-bucket: "images.mccurdyc.dev"
-prefix: "images/2022/05/24-skate-sesh"
 image: "/images/2022/05/24-skate-sesh/L1004043.jpg"
 tags:
 - Leica M11
@@ -29,4 +26,3 @@ and eats it on. Wanted to rock-to-fakie on the ramp, but didn't. I need to pract
 my rock point on the smaller ramp to avoid hanging up. Clean drop-in on the half-pipe
 before running home for my birthday dinner. A perfect birthday.
 
-{{< simple-gallery >}}
