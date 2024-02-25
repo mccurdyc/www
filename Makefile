@@ -35,7 +35,7 @@ clean-images: ## Remove _L***.jpg images
 
 .PHONY: sync-bookcovers
 sync-bookcovers: ## Uploads book cover images to GCS
-	$(MAKE) sync-images-book-covers
+	gsutil -m rsync -d -r "/mnt/photos/book-covers" "gs://images.mccurdyc.dev/images/book-covers"
 
 .PHONY: list-images
 list-images: ## List images
