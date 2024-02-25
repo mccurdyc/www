@@ -14,9 +14,20 @@ deploy: build ## Deploys the changes to the GCS bucket.
 	export FASTLY_API_KEY="$$(op item get Fastly --fields api_key)"; \
 	./scripts/deploy.sh
 
+.PHONY: rename-seq
+rename-seq: clean-images ## Renames images to sequential ordering
+	./scripts/rename-seq.sh "/mnt/photos/$(DIR)"
+
 .PHONY: sync-images
-sync-images-%: clean-images ## Uploads images to GCS
-	gsutil -m rsync -r /mnt/photos/$* gs://images.mccurdyc.dev/images/$*
+sync-images: ## Uploads images to GCS
+	@# Usage - "make sync-images DIR='2024/early'"
+	@$(MAKE) rename-seq DIR="$(DIR)"
+	gsutil -m rsync -d -r "/mnt/photos/$(DIR)" "gs://images.mccurdyc.dev/images/$(DIR)"
+
+.PHONY: dump-images
+dump-images: 
+	@# Usage - "make dump-images DIR='2024/early'"
+	@./scripts/dump-images.sh "$(DIR)"
 
 .PHONY: clean-images
 clean-images: ## Remove _L***.jpg images
