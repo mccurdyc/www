@@ -9,7 +9,7 @@ shutter_speed: ""
 iso: ""
 aperature: ""
 gallery_feature: false
-image: "/images/"
+image: "/images/2024/early/0014.jpg"
 tags:
 - Leica M11
 draft: false
