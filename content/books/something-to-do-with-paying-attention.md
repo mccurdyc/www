@@ -1,7 +1,7 @@
 ---
 title: "Something to Do with Paying Attention"
 subtitle: ""
-description: ""
+description: "It had something to do with paying attention and the ability to choose what I paid attention to, and to be aware of that choice, that fact that it’s a choice... there was more to my life and to myself than just the ordinary phsychological impulses for pleasure and vanity..."
 author: "Colton J. McCurdy"
 date: 2023-05-10T07:06:20-04:00
 image: "/images/book-covers/something-to-do-with-paying-attention/cover.jpg"

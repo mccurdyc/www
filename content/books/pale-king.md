@@ -1,7 +1,7 @@
 ---
 title: "The Pale King"
 subtitle: "An Unfinished Novel"
-description: ""
+description: "The key to life is to be able to endure boredom. If you are immune to boredom, there is literally nothing you cannot accomplish."
 author: "Colton J. McCurdy"
 date: 2023-08-07T12:22:13-04:00
 image: "/images/book-covers/pale-king/cover.jpg"
