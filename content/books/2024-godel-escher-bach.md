@@ -13,6 +13,8 @@ thriftbooks: "https://www.thriftbooks.com/w/gdel-escher-bach-an-eternal-golden-b
 draft: false
 ---
 
+This is an extremely dense book. At times boring and others fun. 
+
 P-1 
 - "how it is that animate beings can come out of inanimate matter"
 - "What is self..."
@@ -99,3 +101,79 @@ is no recipe which tells how to transcend Zen; the only thing one can rely on fo
 sure is that Buddha is _not_ the way. Zen is a system and cannot be its own metasystem;
 there is always something outside of Zen, which cannot be fully understood or described
 within Zen.
+
+p305 "Each level is, in some sense, 'sealed off' from the levels below it."
+
+p306 Chunking. "...in useing chunked high-level models, we sacrifice determinism for simplicity."
+
+p309 "...we shall examine whether the brain's top level --- the mind --- can be understood
+without understanding the lower levels on which it both depends and does not depend."
+
+p315 Ant colony as a whole or sum of its parts
+
+p316 Free. "...free only within certain constraints."
+
+p328 "What about your OWN brain? Aren't you aware of your own thoughts? Isn't that
+the essence of consciousness? What else are you doing but reading your own brain
+directly at the symbol level? ... You mean that I bypass all the lower levels, and only see
+the topmost level? That's the way it is, with conscious systems."
+
+p371 "'semantic network'"
+
+p375 "...reference points in common...although other people differ from us in some
+important ways, they are still 'the same' as we are in some deep and important ways."
+
+p376 "Occassionally, you find that another person is missing some of what you thought
+was the standard...you can communicate well in a limited domain."
+
+p377 "..._culture_ affects thought"
+
+p389 "The paradoxes of consciousness arise because a conscious being can be aware of
+itself..."
+
+p406 "...certain kind of self-awareness seems to be at the crux of consciousness."
+
+p408 "The relationship with abstraction is easy to see. The first sequence looks random
+unless one has developed through a process of abstraction a kind of filter which sees a simple structure
+behind the apparent randomness."
+
+p409 "Some of these aspects may be compoletely unknown to us now but they may reveal
+themselves to an observer with a different system of abstractions."
+
+p469 "Once a system is well-defined, of 'boxed', it becomes vulnerable." The act
+of boxing it in causes its incompleteness. "...it is the act of giving an explicit
+recipe for what supposedly characterizes number-theoretical truth that causes the
+incompleteness."
+
+p472 "We are trying to produce a model of the mind which is mechanical --- which is
+essentially 'dead' --- but the mind, being in fact 'alive'..."
+
+p472 "Basically the idea is that we are always _outside_ the system"
+
+p476 "...any human being simply will reach the limits of his own ability to Godelize
+at some point."
+
+p477 "...jump out of ourselves...Physics is an overriding system, from which there
+can be no escape."
+
+p479 "...Zen ... transcending the system."
+
+p494 "_Ceci n'est pas une pipe_."
+
+p495 "This sentence is false. (Epimenides paradox)"
+
+p499 Self-reproduction and self-reference
+
+p566 "_power of generalisation_"
+
+p570 brain as a formal system
+
+p571 "One could assemble a neural net which, on a local (neuron-to-neuron) level, performed
+in a manner indestinguishable from a neural net in a brain, but which had no higher-level
+meaning at all... High-level meaning is an optional feature of a neural network..."
+
+p573 "... it seems as though each new step towards AI, rather than producing something
+which everyone agrees is real intelligence, merely reveals what real intelligence
+is _not_."
+
+p574 "...beauty is one of those properties associated with the elusive soul..."
