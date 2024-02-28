@@ -177,3 +177,85 @@ which everyone agrees is real intelligence, merely reveals what real intelligenc
 is _not_."
 
 p574 "...beauty is one of those properties associated with the elusive soul..."
+
+p582 "Our minds contain interpreters which accept two-dimensional patterns and then
+'pull' from them high-dimensional notions..."
+
+p582 "...an object's _meaning is not localized_  within the object itself"
+
+p582 "Meaning derives from connections..."
+
+p601 "The ineluctable core of intelligence is always in that next thing which hasn't
+yet been programmed."
+
+p612 "In some sense all problems are abstract versions of the dog-and-bone problem.
+Many problems are not in physical space but in some sort of conceptual space. When
+you realize that direct motion towards the goal in that space runs you into some sort
+of abstract 'fence', you can do one of two things: (1) try moving away from the goal in some sort of random
+way, hoping that you may come upon a hidden 'gate' through which you can pass and then
+reach your bone; or (2) try to find a new 'space' in which you can represent the
+problem, and in which there is no abstract fence separating you from your goal ---
+then proceed straight towards the goal in this new space..."
+
+p613 "Intelligence" is the ability to "step back"
+
+p639 What is "reality"? "...I was tuned in to a channel which is very near to the
+Reality Channel, but ever so slightly off...It's nearly impossible to tune EXACTLY
+into the Reality Channel."
+
+p641 What ifs "...anything that didn't happen didn't happen. There aren't degrees of 'didn't-happen-ess'.
+And same goes for 'almost' situations."
+
+p642 "...these 'if' propositions are fundamental to the dynamics of human feeling...
+to conceive of, to articulate possibilities beyond the treadmill of organic decay
+and death...Think how immeasurably poorer our mental lives would be if we didn't have
+this creative capacity for slipping out of the midst of reality into soft 'what if''s!"
+
+p644 "hierarchy of variability" "We build up our mental representation of a situation
+layer by layer. The lowest layer establishes  the deepest aspect of the context ---
+sometimes being so low that it cannot vary at all."
+
+p645 "The existence of default values for slots allows the recursive process of
+filling slots to come to an end. In effect, you say, 'I will fill in the slots
+myself as far as three layers down; beyond that I will take the default options.'"
+
+p645 "...often detail is irrelevant and even distracting."
+
+p674 "The amazing thing about language is how imprecisely we use it and still manage
+to get away with it."
+
+p677 "Beauty" comes from shared experiences and feelings. "A 'program' which could produce
+music as they did would have to wander around the world on its own, fighting its
+way through the maze of life..."
+
+p680 "'If a lion could speak, we would not understand him.'"
+
+p684 "Can machines possess originality?" "...nothing comes out which has not been
+put in..."
+
+p686 "...you have access to your thoughts but not to you neurons."
+
+p688 "...in any system there is always some 'protected' level..."
+
+p708 "Consciousness as an intrinsically high-level phenomenon" "...some facts could
+be explained on the high level quite easy, but not on lower levels _at all_." "..._consciousness_
+is a phenomenon that escapes explanation in terms of brain-components..."
+
+p709 "My belief is that the explanations of 'emergent' phenomena in our brains --- for
+instance, ideas, hopes, image, analogies, and finally consciousness and free will ---
+are based on a kind of Strange Loop, an interaction between levels in which the top level reaches
+back down towards the bottom level and influences it, while at the same time being
+itself determined by the bottom level."
+
+p711 free-will as "making choices". "Let us take the following systems as paradigms:
+a marble rolling down a bumpy hill; a pocket calculator finding successive digits
+in the decimal expansion of the square root of 2; a sophisticated program which plays
+a mean game of chess; a robot in a T-maze (a maze with but a single fork, on one side
+of which there is reward); and a human being confronting a complex dilemma." "...what
+about a marble rolling down a hill? Does it make choices?"
+
+p722 "That's almost as silly as me thinking I didn't have free will! I suppose it
+never occurred to you, Achilles, that the three of us --- you, myself, and Mr. Crab ---
+might all be characters in a Dialogue..."
+
+p723 brains within other brains
