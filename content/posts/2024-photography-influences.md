@@ -12,8 +12,14 @@ draft: false
 
 # Photographers
 
+{{< youtube id="LMNdy9b2TY" >}}
+
 (no particular order)
 
+Also, it's sad that so much is guarded by the "Meta Walls". The gates I will not cross.
+
+- [Austin Augie](https://www.austinaugie.nyc)
+    - Particularly [his BW, motion blur photography / cinematography](https://www.youtube.com/watch?v=-LMNdy9b2TY)
 - [Todd Hido](http://www.toddhido.com/found)
 - [Saul Leiter](https://www.saulleiterfoundation.org/black-and-white)
 - [Joshua K. Jackson](https://www.joshkjack.com/)
@@ -34,3 +40,15 @@ draft: false
 - [Joel Meyerowitz](https://www.joelmeyerowitz.com/)
 - [Matt Black](https://www.mattblack.com/)
 - [Bruce Gilden](https://www.brucegilden.com/)
+
+# Musicians
+- Sampha
+- IDLES
+- Kendrick Lamar
+- Lute
+- Westside Boogie
+- Ryo Fukui
+- Jiro Inagaki and His Soul Media
+
+## Genres
+- 70s Japanese Jazz / Funk / Fusion
