@@ -39,7 +39,7 @@ sync-bookcovers: ## Uploads book cover images to GCS
 
 .PHONY: list-images
 list-images: ## List images
-	gsutil ls gs://images.mccurdyc.dev/images/
+	gsutil ls gs://images.mccurdyc.dev/images/$(DIR)
 
 .PHONY: help
 help: ## Prints this help menu.
