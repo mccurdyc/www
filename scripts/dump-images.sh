@@ -11,9 +11,3 @@ cat <<EOF
 {{< load-photoswipe >}}
 
 EOF
-
-cat <<EOF
-{{< rawhtml >}}
-    <meta property="og:image:url" content="https://www.mccurdyc.dev/images/2024/03-SF/0035.jpg" />
-{{< /rawhtml >}}
-EOF

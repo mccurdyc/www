@@ -22,7 +22,7 @@ rename-seq: clean-images ## Renames images to sequential ordering
 sync-images: ## Uploads images to GCS
 	@# Usage - "make sync-images DIR='2024/early'"
 	@$(MAKE) rename-seq DIR="$(DIR)"
-	gsutil -m rsync -d -r "/mnt/photos/$(DIR)" "gs://images.mccurdyc.dev/images/$(DIR)"
+	gsutil -m rsync -d -r "/mnt/photos/$(DIR)/" "gs://images.mccurdyc.dev/images/$(DIR)/"
 
 .PHONY: dump-images
 dump-images: 
