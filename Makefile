@@ -11,7 +11,7 @@ build: ## Re-compiles the static assets.
 .PHONY: deploy
 deploy: build ## Deploys the changes to the GCS bucket.
 	export FASTLY_SERVICE_ID="$$(op item get Fastly --fields service_id)"; \
-	export FASTLY_API_KEY="$$(op item get Fastly --fields api_key)"; \
+	export FASTLY_API_KEY="$$(op item get Fastly --fields purge_token)"; \
 	./scripts/deploy.sh
 
 .PHONY: rename-seq
