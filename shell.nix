@@ -1,5 +1,5 @@
 # https://nixos.wiki/wiki/Flakes#Super_fast_nix-shell
-{ pkgs ? import <nixpkgs> { } }:
+{ pkgs }:
 with pkgs;
 mkShell {
   buildInputs = [

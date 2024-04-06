@@ -54,10 +54,6 @@ cacheControl = "no-store, max-age=0, s-maxage=3600"
 [permalinks]
   posts = "/posts/:year/:month/:title/"
 
-[author]
-  name = "Colton J. McCurdy"
-  twitter = "mccurdycolton"
-
 [blackfriday]
   hrefTargetBlank = true
 
@@ -70,6 +66,9 @@ cacheControl = "no-store, max-age=0, s-maxage=3600"
   dateformShort   = "Jan 2"
   dateformNum     = "2006-01-02"
   dateformNumTime = "2006-01-02 15:04 -0700"
+  
+[params.author]
+  name = "Colton J. McCurdy"
 
   # homeSubtitle = "Software. Reading. Running. Traveling. Photography."
 
@@ -136,11 +135,6 @@ cacheControl = "no-store, max-age=0, s-maxage=3600"
   [[params.social]]
     name = "linkedin"
     url  = "https://www.linkedin.com/in/mccurdycolton"
-
-[languages]
-  [languages.en]
-    keywords = ""
-    copyright = ""
 
 [menu]
   # [[menu.main]]
