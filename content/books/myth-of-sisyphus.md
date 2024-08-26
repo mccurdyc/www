@@ -10,5 +10,5 @@ books: ["Myth of Sisyphus"]
 book-authors: []
 amazon: ""
 thriftbooks: ""
-draft: true
+draft: false
 ---

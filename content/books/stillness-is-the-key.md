@@ -10,7 +10,7 @@ books: ["Stillness Is the Key"]
 book-authors: []
 amazon: ""
 thriftbooks: ""
-draft: true
+draft: false
 ---
 
 I honestly thought this book was going to be one of those self-help books that was full of "fluff" and kept repeating the same message, but I was pleasantly surprised and did enjoy this book. There were a lot of useful, blunt and well-researched anecdotes.

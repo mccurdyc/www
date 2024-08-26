@@ -7,7 +7,7 @@ subtitle: ""
 image: ""
 post-tags: []
 posts: []
-draft: true
+draft: false
 ---
 
 I understand there is a monetary pressure to keep user data. If the US doesn't do

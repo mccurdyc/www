@@ -7,7 +7,7 @@ subtitle: ""
 image: ""
 post-tags: []
 posts: []
-draft: true
+draft: false
 ---
 
 I've had a few people come to me recently and ask about how to start running
