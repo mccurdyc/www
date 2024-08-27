@@ -10,4 +10,10 @@ posts: []
 draft: false
 ---
 
-https://youtu.be/8G9pnE0bnfE?si=TPx9x-L0LWKyWNI5
+{{< youtube id="8G9pnE0bnfE" >}}
+
+- dont be afraid to copy from source material
+- dont think, just do
+    - let your tastes make the decisions not your brain
+- being able to get into the flow quickly --- immediately --- anytime and anywhere
+- when you have a message, art comes out of you easily

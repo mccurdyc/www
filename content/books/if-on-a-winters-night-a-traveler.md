@@ -1,15 +1,15 @@
 ---
-title: "If on a Winters Night a Traveler"
+title: "If on a Winter's Night a Traveler"
 subtitle: ""
 description: ""
 author: "Colton J. McCurdy"
 date: 2024-08-12T08:15:53-04:00
-image: ""
-book-tags: ["book"]
+image: "/images/book-covers/if-on-a-winters-night-a-traveler/cover.jpg"
+book-tags: ["book", "2024"]
 books: ["If on a Winter's Night a Traveler"]
-book-authors: []
-amazon: ""
-thriftbooks: ""
+book-authors: ["Italo Calvino"]
+amazon: "https://a.co/d/0ug47JT"
+thriftbooks: "https://www.thriftbooks.com/w/if-on-a-winters-night-a-traveler-by-italo-calvino/353023/?resultid=be672a7f-1b17-4a58-93e1-b39d03de2e8f#edition=1846467&idiq=5034319"
 draft: false
 ---
 
