@@ -1,7 +1,7 @@
 ---
 title: "Myth of Sisyphus"
 subtitle: ""
-description: ""
+description: "By the mere activity of consciousness I transform into a rule of life what was an invitation to death..."
 author: "Colton J. McCurdy"
 date: 2024-03-05T08:15:01-04:00
 image: "/images/book-covers/myth-of-sisyphus/cover.jpg"
@@ -104,3 +104,68 @@ Be different! Be absurd!
 
 p.55 - It is essential to die unreconciled and not of one's own free will. Suicide
 is a repudiation.
+
+p.58 - In a certain sense, that hampered him. To the extent to which he imagined a purpose to his life,
+he adapted himself to the demands of a purpose to be achieved and became the slave of his liberty.
+
+p.59 - The return to consciousness, the escape from everyday sleep represent the first
+steps of absurd freedom.
+
+p.60 - freedom has no meaning except in relation to limited fate, then I must say that what
+counts is not the best living but the most living.
+
+p.62 - For the mistake is thinking that that quantity of experiences depends on the circumstances
+of our life when it depends solely on us... It is up to us to be conscious of them.
+
+- I note that this reminds me of David Foster Wallace's _This is Water_.
+
+p.64 - Thus I draw from the absurd three consequences, which are my revolt, my freedom,
+and my passion. By the mere activity of consciousness I transform into a rule of life
+what was an invitation to death --- and I refuse suicide.
+
+p.68 - It is essential to be absurd... it is not essential to be a dupe.
+
+p.68 - A subclerk in the post office is the equal of a conqueror if consciousness is common to them.
+
+p.69 - Everything that makes man work and get excited utilizes hope.
+
+p.69 - In the absurd world the value of a notion or of a life is measured by its sterility.
+
+- I think it is referring to true unique, thought. Not just repeating what others are saying.
+
+p.73 - There are those who are made for living and those who are made for loving.
+
+p.78 - Live in the moment for yourself because no matter what you do, you will _eventually_ be forgotten
+
+p.84 - At the end of a life man notices that he has spent years becoming sure of a single
+truth. But a single truth, if it is obvious, is enought to guide existence.
+
+p.86 - why I esteem the individual
+
+p.87 - It is a man's demands made against his fate
+
+p.88 - If he aims to be something, it is in this life... But it is always 'overcoming oneself'
+
+p.88 - the amazing grandeur of the human mind. The conquerors are merely those among men
+who are conscious enough of their strength to be sure of living constantly on those heights
+and fully aware of that grandeur.
+
+p.90 - Our fate stands before us and we provoke him. Less out of pride than our of awareness
+of our ineffectual condition.
+
+p.91 - They are not striving to be better; they are attempting to be consistent. If the term
+"wise men" can be applied to the man who lives on what he has without speculating
+on what he has not, then they are wise men.
+
+p.91 - do not create a scandal by posing as a judge
+
+p.94 - For the absurd man it is not a matter of explaining and solving, but of experiencing
+and describing. Everything begins with lucid indifference.
+
+p.95 - The heart learns thus that the emotion delighting us when we see the world's
+aspects comes to us not from its depth but from their diversity... a universe inexhaustible
+in quantity.
+
+p.98 - If the world were clear, art would not exist.
+
+p.99 - Expression begins where thought ends.
