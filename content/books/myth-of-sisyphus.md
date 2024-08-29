@@ -169,3 +169,46 @@ in quantity.
 p.98 - If the world were clear, art would not exist.
 
 p.99 - Expression begins where thought ends.
+
+p.102 - stop trying to understand
+
+p.103 - exercise in living
+
+p.103 - A man wants to earn money in order to be happy, and his whole effort and the
+best of a life are devoted to the earning of that money. Happiness is forgotten;
+the means are taken away for the end.
+
+p.105 - he wants to take his own life because it "is his idea"
+
+p.106 - he wants to kill himself to become god.
+
+p.114 - work and create "for nothing"... one's creation has no future... being aware
+that fundamentally this has no more importance than building for centuries --- this is the
+difficult wisdom that absurd thought sanctions.
+
+p.115 - All that "for nothing,"  in order to repeat and mark time.
+
+p.117 - I ask of absurd creation what I required from thought --- revolt, freedom, and diversity.
+Later on it will manifest its utter futility. In that daily effort in which intelligence
+and passion mingle and delight each other, the absurd man discovers a discipline that will
+make up the greatest of his strengths.
+
+p.117 - None of all this has any real meaning.
+
+p.117 - freedom in realization of that work, just becoming aware of the absurdity
+of life authorized them to plunge into it with every excess. (fullfilment)
+
+p.117 - Outside of that single fatality of death, everything, joy or happiness, is liberty...
+man is the sole master.
+
+p.120 - passion for life... he is superior to his fate. He is stronger than his rock.
+
+p.120 - Where would his torture be, indeed, if at every step the hope of succeeding
+uphelf him? The worksman of today works every day in his life at the same tasks,
+and this fate is no less absurd. But it is tragic only at the rare moments when it becomes
+conscious.
+
+p.120 - it is what he thinks of during his decent. The lucidity that was to constitute
+his torture at the same time crowns his victory.
+
+p.135 - existential thought ... is steeped in a vast of hope.
