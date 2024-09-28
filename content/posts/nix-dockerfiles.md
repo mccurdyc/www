@@ -54,7 +54,7 @@ WORKDIR /src
 # These are NOT used in CI because of how commands are passed to the container and hence
 # why we have 'nix develop --comand ...' everywhere. This is for local use via
 # 'docker run --rm --name nix --volume $(pwd):/src nix:latest <command>'
-ENTRYPOINT [ "nix", "--extra-experimental-features", "nix-command flakes", "develop", "--command" ]
+ENTRYPOINT [ "nix", "develop", "--command" ]
 # Default command that can be overriden
 CMD ["bash"]
 ```
@@ -130,8 +130,6 @@ debug these problems. If you FORCE Nix, people will get a bad taste.
               curl = pkgs.curl;
               jq = pkgs.jq;
               just = pkgs-unstable.just; # need just >1.33 for working-directory setting
-              make = pkgs.gnumake;
-              perl = pkgs.perl;
               yq = pkgs.yq-go;
             };
 
@@ -223,8 +221,6 @@ RUN nix build .#cue && cp -v result/bin/cue /usr/bin/cue
 RUN nix build .#curl && cp -v result-bin/bin/curl /usr/bin/curl
 RUN nix build .#jq && cp -v result-bin/bin/jq /usr/bin/jq
 RUN nix build .#just  && cp -v result/bin/just /usr/bin/just
-RUN nix build .#make && cp -v result/bin/make /usr/bin/make
-RUN nix build .#perl && cp -v result/bin/perl /usr/bin/perl
 RUN nix build .#yq && cp -v result/bin/yq /usr/bin/yq
 
 # Motivation for having a final image?
