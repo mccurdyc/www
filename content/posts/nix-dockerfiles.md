@@ -203,7 +203,7 @@ debug these problems. If you FORCE Nix, people will get a bad taste.
 # - I do NOT want to build a Docker image in Nix (unless I need hermetic builds).
 #     - It's the wrong interface, generally speaking.
 # - I got tired of pinning dependencies in two places in different ways
-FROM container-registry.secretcdn.net/external/nixos/nix:2.24.7 AS base
+FROM nixos/nix:latest AS base
 
 RUN echo "experimental-features = nix-command flakes" >> /etc/nix/nix.conf
 
