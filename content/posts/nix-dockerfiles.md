@@ -229,7 +229,81 @@ RUN nix build .#yq && cp -v result/bin/yq /usr/bin/yq
 # - `nix develop` prevents commands from being run in parallel
 FROM alpine:3.20.3
 
-COPY --from=base /usr/bin/* /usr/bin/
+# TODO(FUTURE): These are tools that only CI needs. Maybe we include them in the Nix flake also.
+# I'm burning too much time on this side quest now though.
+RUN apk add --no-cache --update coreutils bash git openssh
+
+COPY --from=base /nix/store /nix/store/
+COPY --from=base /usr/bin/cue /usr/bin/curl /usr/bin/make /usr/bin/just /usr/bin/jq /usr/bin/perl /usr/bin/yq /usr/bin/
+```
+
+## What if copying all of the nix store doesn't work?
+
+```docker
+# Reference(s)
+# - https://mitchellh.com/writing/nix-with-dockerfiles
+#
+# Context / Motivation
+# - I do NOT want to build a Docker image in Nix (unless I need hermetic builds).
+#     - It's the wrong interface, generally speaking.
+# - I got tired of pinning dependencies in two places in different ways
+FROM nixos/nix:2.24.7 AS base
+
+RUN echo "experimental-features = nix-command flakes" >> /etc/nix/nix.conf
+
+# Copy all nix files into the image
+COPY flake.nix flake.lock /src/
+COPY nix /src/nix
+
+WORKDIR /src
+
+# Fetch CI dependencies
+# These are deliberately each independent layers so that when ONE changes, we dont
+# rebuild all
+#
+# To identify/debug the correct source path, run `nix buid .#<pkg>` outside of the dockerfile
+RUN mkdir -p /tmp/build
+RUN nix build '.#cue' && \
+  nix-store --query --requisites --include-outputs result | xargs -I {} cp -r {} /tmp/build && \
+  cp -v result/bin/cue /usr/bin/cue
+
+RUN nix build '.#curl' && \
+  nix-store --query --requisites --include-outputs result-bin | xargs -I {} cp -r {} /tmp/build && \
+  cp -v result-bin/bin/curl /usr/bin/curl
+
+RUN nix build '.#just' && \
+  nix-store --query --requisites --include-outputs result | xargs -I {} cp -r {} /tmp/build && \
+  cp -v result/bin/just /usr/bin/just
+
+RUN nix build '.#jq' && \
+  nix-store --query --requisites --include-outputs result-bin | xargs -I {} cp -r {} /tmp/build && \
+  cp -v result-bin/bin/jq /usr/bin/jq
+
+RUN nix build '.#make' && \
+  nix-store --query --requisites --include-outputs result | xargs -I {} cp -r {} /tmp/build && \
+  cp -v result/bin/make /usr/bin/make
+
+RUN nix build '.#perl' && \
+  nix-store --query --requisites --include-outputs result | xargs -I {} cp -r {} /tmp/build && \
+  cp -v result/bin/perl /usr/bin/perl
+
+RUN nix build '.#yq' && \
+  nix-store --query --requisites --include-outputs result | xargs -I {} cp -r {} /tmp/build && \
+  cp -v result/bin/yq /usr/bin/yq
+
+# Motivation for having a final image?
+# - Running `nix develop` in CI takes too long (>2min)
+#   - Dependencies can be baked into the image
+# - `nix develop` prevents commands from being run in parallel
+FROM alpine:3.20.3
+
+# TODO(FUTURE): These are tools that only CI needs. Maybe we include them in the Nix flake also.
+# I'm burning too much time on this side quest now though.
+RUN apk add --no-cache --update coreutils bash git openssh
+
+# for dynamically linked things
+COPY --from=base /tmp/build /nix/store/
+COPY --from=base /usr/bin/cue /usr/bin/curl /usr/bin/make /usr/bin/just /usr/bin/jq /usr/bin/perl /usr/bin/yq /usr/bin/
 ```
 
 ## FUTURE: using `nixpkgs.dockerTools.buildImage`
