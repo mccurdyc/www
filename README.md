@@ -13,7 +13,6 @@ $ make serve
 
 ```bash
 $ direnv allow
-$ nix develop --impure
 ```
 
 ## Creating a New Static Asset
@@ -22,23 +21,20 @@ New static assets can be generated with the `hugo new` command and by specifying
 the archetype. To read more, check out [these docs](https://gohugo.io/content-management/archetypes/#what-are-archetypes).
 
 ```bash
-$ hugo new books/foo-bar-baz.md
-$ hugo new posts/foo-bar-baz.md
+$ hugo new content/books/foo-bar-baz.md
+$ hugo new content/posts/foo-bar-baz.md
 ```
 
-## Adding Photos to GCS
+## Adding Photos
 
 ```bash
-$ gsutil -m rsync -r /mnt/photos/YYYY/MM/ gs://images.mccurdyc.dev/images/YYYY/MM/
+hugo new content/photos/2050-foo.md
+make sync-images DIR='2050/foo'
+make dump-images DIR='2050/foo'
 ```
 
 ## Deploying
 
 ```bash
-$ FASTLY_SERVICE_ID=foo FASTLY_API_KEY=bar bash -c 'make deploy'
+make deploy
 ```
-
-## Bugs or Praise
-
-If you find these files useful or find a bug, please let me know. I'm
-@McCurdyColton on Twitter, but also feel free to open an issue here!
