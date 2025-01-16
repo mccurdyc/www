@@ -4,7 +4,7 @@ subtitle: ""
 description: "This dance of symbols in the brain is what consciousness is. It is also what thinking is. Note that I say "symbols" and not "neurons". The dance has to be perceived _at that level_ for it to constitute consciousness."
 author: "Colton J. McCurdy"
 date: 2024-10-13T08:12:33-05:00
-image: ""
+image: "/images/book-covers/i-am-a-strange-loop/cover.jpg"
 book-tags: ["book", "2024"]
 books: ["I Am a Strange Loop"]
 book-authors: ["Douglas Hofstadter"]

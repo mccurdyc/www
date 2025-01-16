@@ -4,12 +4,12 @@ subtitle: ""
 description: "The Castle won't make you happy"
 author: "Colton J. McCurdy"
 date: 2025-01-07T08:12:21-05:00
-image: ""
+image: "/images/book-covers/the-castle/cover.jpg"
 book-tags: ["book", "2025"]
 books: ["The Castle"]
-book-authors: ["Kafka"]
-amazon: ""
-thriftbooks: ""
+book-authors: ["Franz Kafka"]
+amazon: "https://a.co/d/fJ9rKLh"
+thriftbooks: "https://www.thriftbooks.com/w/the-castle-penguin-modern-classics_franz-kafka/297767/?resultid=47b39dd7-2950-49e4-a5f8-5d3cd5839501#edition=404370&idiq=9586529"
 draft: false
 ---
 

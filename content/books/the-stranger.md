@@ -4,7 +4,7 @@ subtitle: ""
 description: "Stop hoping; just live"
 author: "Colton J. McCurdy"
 date: 2024-12-06T08:12:15-05:00
-image: ""
+image: "/images/book-covers/the-stranger/cover.jpg"
 book-tags: ["book", "2024", "fiction"]
 books: ["The Stranger"]
 book-authors: ["Albert Camus"]
