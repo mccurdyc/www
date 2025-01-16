@@ -85,3 +85,22 @@ p223 - K. didn't have a strong enough desire to get to the Castle, Olga figured 
 p227 - This success almost made me go mad
 p228 - It is especially difficult to understand why up there, as a man, he has so completely lost the courage which, when he was a boy, was enough to drive us to despair.
 p254 - one ends up sacrificing one's health for things that are truly not worth it.
+p261 - you shouldn't let those disappointments frighten you off. Here some things seem to be arranged in such a way as to frighten people off, and when one is new to the place those obstacles seem absolutely impenetrable.
+p261 - opportunities through which more can be achieved with a word, with a glance, with a sign of trust, than with a lifetime of grueling effort.
+p265 - in your dreams you are free to do and be whatever you want
+p269 - How suicidal happiness can be!
+p273 - they want robots not free souls that challenge them
+p275 - finding peace in the craziness of following one's dreams
+    - He felt almost comfortable amid the bustle
+p278 - battle against these stubborn little rooms
+    - reminds me of Monsters Inc. movie from childhood
+p281 - beat K., but at what?
+p284 - K. has power over them through his actions they're weak.
+p291 - love or work.
+    - What is he striving for, what are the important things that make him so preoccupied and make him forget what is nearest and best and most beautiful?
+p303 - It even looked as if it was only through his contact with Frieda that he had discovered his actual insignificance...
+p307 - You chambermaids are used to spying through a keyhole, and so from the tiny details that you actually see you often draw grand but false conclusions...
+p309 - the effect of female beauty
+p310 - ensure that our tongues don't get spoiled
+p310 - what should I climb any higher than they; that's precisely what kept us together...
+p311 - they know the life that they're leading there is miserable but they've already reconciled themselves to it, ... their tears over my departure were mostly out of grief that I had to leave the room we share and go out into the cold --- there, everything outside the room seems cold...
