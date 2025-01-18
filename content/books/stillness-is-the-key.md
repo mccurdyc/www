@@ -4,7 +4,7 @@ subtitle: "An ancient strategy for modern life"
 description: "I honestly thought this book was going to be one of those self-help books that was full of \"fluff\" and kept repeating the same message, but I was pleasantly surprised and did enjoy this book. There were a lot of useful, blunt and well-researched anecdotes."
 author: "Colton J. McCurdy"
 date: 2024-08-26T08:05:52-04:00
-image: "/images/book-covers/stillness-is-the-key/cover.jpg"
+image: "/images/book-covers/stillness-is-key/cover.jpg"
 book-tags: ["book", "2024"]
 books: ["Stillness Is the Key"]
 book-authors: ["Ryan Holiday"]
