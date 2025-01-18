@@ -2,7 +2,7 @@ default: help
 
 .PHONY: serve
 serve: ## Serves the statically-generated site locally.
-	hugo serve
+	hugo serve --baseURL http://nuc:1313 --bind 0.0.0.0
 
 .PHONY: build
 build: ## Re-compiles the static assets.
