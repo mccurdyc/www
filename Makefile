@@ -27,7 +27,7 @@ sync-images: ## Uploads images to GCS
 .PHONY: dump-images
 dump-images: 
 	@# Usage - "make dump-images DIR='2024/early'"
-	@./scripts/dump-images.sh "$(DIR)"
+	@./scripts/dump-images.sh $(DIR)
 
 .PHONY: clean-images
 clean-images: ## Remove _L***.jpg images

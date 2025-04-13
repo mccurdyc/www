@@ -30,7 +30,7 @@ $ hugo new content/posts/foo-bar-baz.md
 ```bash
 hugo new content/photos/2050-foo.md
 make sync-images DIR='2050/foo'
-make dump-images DIR='2050/foo'
+make dump-images DIR='2050/foo' >> ./content/photos/2050-foo.md
 ```
 
 ## Deploying
