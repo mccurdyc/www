@@ -53,7 +53,6 @@ p74 - Do you have everything you want? Yes, everything... Marie shouted to me th
 p76 - When I was first imprisoned, the hardest thing was that my thoughts were still those of a free man
 
 p77 - Afterwards my only thoughts were those of a prisoner. I waited for the daily walk...
-
     - re-learning how to think, re-defining the bounds of thought, simpler thoughts
 
 p77 - after a while you could get used to anything
@@ -62,11 +61,11 @@ p78 - They've taken away your freedom... it wasn't a punishment anymore. Apart f
 
 p78 - Eventually, once I learned how to remember things, I wasn't bored at all.
 
-    - No one can take away your ability to think, your imagination and perception of situations
+- No one can take away your ability to think, your imagination and perception of situations
 
 p79 - I realized then that a man who had lived only one day could easily live for a hundred years in prison.
 
-    - In life, things move so fast we don't have time to process all of the details as we live those situations. It's only during dedicated times of reflection that we can truly process those situations. And therefore, for him, prison was a gift.
+- In life, things move so fast we don't have time to process all of the details as we live those situations. It's only during dedicated times of reflection that we can truly process those situations. And therefore, for him, prison was a gift.
 
 p85 - And I had the odd impression of being watched by myself
 
@@ -80,7 +79,7 @@ p96 - is my client on trial for burying his mother or for killing a man?
 
 p96 - between these two sets of facts there exists a profound, fundamental, and tragic relationship... I accuse this man of burying his mother with crime in his heart!
 
-    - chance
+- chance
 
 p97 - as if familiar paths traced in summer skies could lead as easily to prison as to the sleep of the innocent
 
@@ -92,7 +91,7 @@ p101 - The court is about telling stories. Evoking feelings. Not facts.
 
 p101 - the prosecutor started talking about my soul... He said that he had peered into it and that he had found nothing...
 
-    - morality is not withing his power to acquire. Here is the religion and belief in higher power theme again.
+- morality is not withing his power to acquire. Here is the religion and belief in higher power theme again.
 
 p102 - I ask you for this man's head... and I do so with a heart at ease... for the death penalty.
 
@@ -126,7 +125,7 @@ p115 - For the first time in a long time I thought about Marie.... I also occurr
 
 p116 - I didn't believe in God.
 
-    - "Every man I have known in your position has turned to Him." I acknowledged that that was their right.
+- "Every man I have known in your position has turned to Him." I acknowledged that that was their right.
 
 p118 - He was expressing his certainty that my appeal would be granted, but I was carrying the burden of sin from which I had to free myself. According to him, human justice was nothing and divine justice was everything. I pointed out that it was the former that condemned me.
 
@@ -146,4 +145,4 @@ p122 - So close to death, Maman must have felt free then and ready to live it al
 
 p122 - As if that blind rage had washed me clean, rid me of hope; for the first time, in that night alive with signs and stars, I opened myself to the gentle indifference of the world. Finding it so much life myself --- so like a brother, really --- I felt that I had been happy and that I was happy again. For everything to be consummated, for me to feel less alone, I had only to wish that there be a large crowd of spectators the day of my execution and that they greet me with cries of hate.
 
-    - Stop hoping; just live
+- Stop hoping; just live

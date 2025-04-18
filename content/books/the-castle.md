@@ -31,9 +31,8 @@ p38 - does this mean that such a person has reached the ultimate goal? ... But t
 
 p39 - K. seems to just be using all of these people to get to the Castle
 
-    - Everyone is trying to achieve this "ultimate goal" of reaching the Castle
-
-    - But the peasants just live. They aren't worried about the Castle
+- Everyone is trying to achieve this "ultimate goal" of reaching the Castle
+- But the peasants just live. They aren't worried about the Castle
 
 p41 - K. constantly felt he was lost or had wandered further into foreign lands than any human being before him, so foreign that even the air hadn't a single component of the air of his homeland...
 
@@ -83,23 +82,22 @@ p158 - thoughts as a weapon
 
 p164 - the castle won't make you happy
 
-    - Schwarzer, on the other hand, constantly made for her the sacrifice of remaining in the village; the messengers from his father who often came to pick him up he dismissed with great anger, as if such brief reminders of the Castle and of his duty as a son were seriously, irreparably compromising his happiness.
+- Schwarzer, on the other hand, constantly made for her the sacrifice of remaining in the village; the messengers from his father who often came to pick him up he dismissed with great anger, as if such brief reminders of the Castle and of his duty as a son were seriously, irreparably compromising his happiness.
 
 p172 - "Castle work"
 
-    - that job you hate, but it's respected by everyone
+- that job you hate, but it's respected by everyone
 
 p174 - He enters offices, but those are only a portion of the total, then there are barriers and behind them still more offices.
 
-    - Always more barriers; another Castle
+- Always more barriers; another Castle
 
 p175 - why cross the barriers at all? 
 
 p180 - it's not rewarding work. They need to find value outside of work.
 
-    - estimate what he has accomplished and decide in the end that it's very little...so he picks up his shoemaker's work
-
-    - enjoys shoemaking over castle worker - "only the shoemaker's iron tempts you..."
+- estimate what he has accomplished and decide in the end that it's very little...so he picks up his shoemaker's work
+- enjoys shoemaking over castle worker - "only the shoemaker's iron tempts you..."
 
 p180 - What is it you really want Barnabas? What sort of career, what sort of goal is it you dream of?
 
@@ -169,11 +167,11 @@ p273 - they want robots not free souls that challenge them
 
 p275 - finding peace in the craziness of following one's dreams
 
-    - He felt almost comfortable amid the bustle
+- He felt almost comfortable amid the bustle
 
 p278 - battle against these stubborn little rooms
 
-    - reminds me of Monsters Inc. movie from childhood
+- reminds me of Monsters Inc. movie from childhood
 
 p281 - beat K., but at what?
 
@@ -181,7 +179,7 @@ p284 - K. has power over them through his actions they're weak.
 
 p291 - love or work.
 
-    - What is he striving for, what are the important things that make him so preoccupied and make him forget what is nearest and best and most beautiful?
+- What is he striving for, what are the important things that make him so preoccupied and make him forget what is nearest and best and most beautiful?
 
 p303 - It even looked as if it was only through his contact with Frieda that he had discovered his actual insignificance...
 
