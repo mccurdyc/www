@@ -5,7 +5,7 @@ description: ""
 author: "Colton J. McCurdy"
 date: 2025-02-13T12:11:52-04:00
 image: "/images/book-covers/consider-the-lobster/cover.jpg"
-book-tags: ["book"]
+book-tags: ["book", "2025", "David Foster Wallace"]
 books: ["Consider the Lobster"]
 book-authors: ["David Foster Wallace"]
 amazon: ""
