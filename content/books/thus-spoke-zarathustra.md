@@ -172,3 +172,18 @@ p226 - Keep your eyes clear of their For and Against!
 p228 - I have always found the badly-paired to be the most revengeful ... may the garden of marriage assist you
 
 p230 - For the good -- _cannot_ create: they are always the beginning of the end: -- they crucify him who writes new values on new law-tables, they sacrifice the future _to themselves_
+
+p261 - How a wanderer dreaming of distant things unintentionally stumbles over a dog on a lonely road, a dog lying in the sun
+
+p286 - Even a prison at last seems bliss to such restless people ... Have you ever seen how captured criminals sleep? They sleep peacefully. ... Take care that you are not at last captured by a narrow belief, a hard, stern illusion!
+
+p304 - What has been the greatest sin here on earth? Was it not the saying of him who said: 'Woe to those who laugh!'
+
+p313 - courage is what make you a leader, a "god", a Superman, Zarathustra
+
+p325 - But we certainly do not want to enter into the kingdom of heaven: we have become men, _so we want the kingdom of earth.'
+
+p326 - say to death: "Was _that_ --- life?"
+
+p331 - everthing that suffers wants to live, that it may grow ripe and merry and passionate ... I want heirs, thus speaks everything that suffers, I want children, I do not want _myself_ ... Joy, however, does not want heirs or children, joy wants itself, wants eternity, wants recurrence, wants everything eternally the same
+
