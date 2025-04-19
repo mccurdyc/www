@@ -1,7 +1,7 @@
 ---
 title: "Beyond Good and Evil"
 subtitle: ""
-description: ""
+description: "One must test oneself ... One should not avoid one's tests, although they are perhaps the most dangerous game one could play"
 author: "Colton J. McCurdy"
 date: 2025-02-28T12:12:03-04:00
 image: "/images/book-covers/beyond-good-and-evil/cover.jpg"
@@ -92,3 +92,43 @@ p51 - free will doesn't exist; to believe it does denies so much more
 p51 - this symbol-world
 
 p54 - Keep your eyes open!
+
+p55 - What strange simplification and falsification mankind lives in ... retain our ignorance so as to ... enjoy life!
+
+p60 - Few are made for independence --- it is a privilege of the strong.
+
+p62 - One should not go into churches if one want to breathe _pure_ air
+
+p62 - In our youthful years we respect and despise without the art of nuance ... the best thing we gain from life ... the unconditional, is cruelly misused and made a fool of until a man learns to introduce
+a little art into his feelings ... artists of life ... Later, when the youthful soul, tormented by disappointments, finally turns suspiciously on itself ... one punishes oneself by distrusting one's feelings ... above all one takes sides, takes sides on principle, _against_ 'youth'. --- A decade later:
+and one grasps that all this too --- was still youth!
+
+p64 - _erroneousness_ of the world in which we believe we live ... a deceptive principle in the 'nature of things' ... mistrust thinking itself ... The belief in 'immediate certainties' is a piece of _moral_ naivety ... we ought not to be '_merely_ moral'
+
+p64 - In civil life an ever-ready mistrustfulness may count as a sign of 'bad character' ... beyond the civil world and its Yes and No ... the _duty_ to be distrustful, to squint wickedly up out of every abyss of suspicion
+
+p65 - there would be no life at all if not on the basis of perspective evaluations
+
+p66 - nothing is 'given' as real except our world of desires and passions
+
+p67 - 'Will' can of course operate only on 'will'
+
+p68 - No one is likely to consider a doctrine true merely because it makes happy or make virtuous
+
+p69 -  _wants_ a mask of him to roam the heads and hearts of his friends ... and supposing he does not want it, he will one day come to see that a mask is there in spite of that -- and that that is a good thing. Every profound spirit needs a mask; more, around every profound spirit a mask is continually growing, thanks to the constantly false, that is to say _shallow_ interpretation of every word he speaks, every step he takes, every sign of life he give.
+
+p70 - One must test oneself ... One should not avoid one's tests, although they are perhaps the most dangerous game one could play
+
+p70 - every person is a prison, also a nook and corner. Not to cleave to a fatherland ... Not to cleave to one's own detachement ... take the virtue of liberality to the point where it becomes a vice. One must know how _to conserve oneself_: the sertnest test of independence.
+
+p71 - One has to get rid of the bad taste of wanting to be in agreement with many. 'Good' is no longer good when your neighbor takes it into his mouth. And how could there exist a 'common good'
+
+p72 - suffering itself they take for something to be _abolished_
+
+p75 - a protracted suicide of reason ... The Christian faith is from the beginning sacrifice: sacrifice of all freedom, all pride, all self-confidence of the spirit, at the same tiem enslavement and self-mockery, self-mutilation.
+
+p82 - illusion of morality
+
+p87 - when they themselves want to be final ends and not means beside other means.
+
+- Religion is good until it tries to be _the_ religion.
