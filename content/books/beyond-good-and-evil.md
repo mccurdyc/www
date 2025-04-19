@@ -131,4 +131,104 @@ p82 - illusion of morality
 
 p87 - when they themselves want to be final ends and not means beside other means.
 
+p92 - Under conditions of peace the warlike man attacks himself.
+
+p94 - reputation is forever. life is temporary
+
+p96 - There are no moral phenomena at all, only a moral interpretation of phenomena...
 - Religion is good until it tries to be _the_ religion.
+
+p98 - The will to overcome an emotion is ultimately only the will of another emotion or several others.
+
+p98 - Sensuality often makes love grow too quickly, so that the root remains weak and is easy to pull out.
+
+p100 - behind a remarkable scholar one not infrequently finds a mediocre man, and behind a mediocre artist often --- a remarkable man.
+
+- "Scholar" and "artist" here can be thought of abstractly to mean "accepted" and "not accepted" persons.
+
+<mark>
+p103 - Madness is something rare in individuals --- but in groups, parties, peoples, ages it is the rule
+</mark>
+
+p105 - To talk about oneself a great deal can also be a means of concealing oneself.
+
+p109 - the real problems of morality ... come into view only if we compare _many_ moralities.
+
+p110 - There are moralities which are intended to justify their authors before others
+
+p110 - The essential and invaluable element in every morality is that it is a protracted constraint ... protracted _obedience_ in _one_ direction
+
+<mark>
+p112 - teaches the _narrowing of perspective_, and thus in a certain sense stupidity, as a condition of life and growth.
+</mark>
+
+p113 - No one wants to do injury to himself, therefore all badness is involuntary. For the bad man does injury to himself: this he would not do if he knew badness is bad. 
+
+p114 - morality is necessarily define by a group. It can't be defined by an individual. Thus, morality is invented and not discovered.
+
+p120 - there have been human beings there have also been human herds ... very many who obey compared with the very small number of those who command ... hitherto nothing has been practised and cultivated among men better and longer than obedience ... 'thou shalt' 
+
+<mark>
+p120 - the herd instinct of obedience has been inherited best and at the expense of the art of commanding.
+</mark>
+
+p120 - the moral hypocrisy of the commanders. They know no way of defending themselves against their bad conscience other than to pose as executors of more ancient or higher commands
+
+p123 - fear is the mother of morality ... herd timidity
+
+p125 - that which here believes it know, that which here glorifies itself with its praising and blaming and calls itself good, is the instinct of the herd-animal man
+
+p129 - experience always means bad experience, does it not?
+
+p135 - For he is genuine only when he can be objective ... he is an instrument, something of a slave ... The objective man is an instrument, a precious, easily damaged and tarnished measuring instrument and reflecting apparatus which ought to be respected and taken good care of; but he is not an end
+
+p142 - former _assessments_ of value, creations of value which have become dominant and are for a while called 'truths'
+
+p143 -  their will to truth is --- _will to power_.
+
+p143 - the philosopher, being _necessarily_ a man of tomorrow ... his enemy has always been the ideal of today.
+
+p144 - the man beyond good and evil, the master of his virtues
+
+p151 - fear more leaders who try to appear unselfish as then their selfishness is hidden
+
+p153 - an admiration for what is foreign
+
+p155 - _Our_ pity is a more elevated, more farsighted pity -- we see how _man_ is diminishing himself, how _you_ are diminishing him! ... 'if possible' -- _to abolish suffering;_ and we? -- it really does seem that _we_ would rather increase it and make it worse than it has ever been! Wellbeing as you understand it -- that is no goal, that seems to us an _end_! ... The discipline of suffering, of _great_ suffering -- do you not know that it is _this_ discipline alone which has created every elevation of mankind hitherto? That tension of the soul in misfortune which cultivates its strength ... In man, _creature_ and _creator_ ... _your_ pity is for the 'creature in man', for that which has to be formed, broken, forged, torn, burned, annealed, refined --- that which has to _suffer_ and _should_ suffer?
+
+p156 - there are higher problems than the problems of pleasure and pain and pity
+
+p161 - 'digestive power' ... 'the spirit' is more like a stomach than anything else.
+
+p163 - only -- _my_ truths
+
+p166 - (sad) equal rights ... is _typical_ sign of shallow-mindedness
+
+p196 - one has duties only towards one's equals; that towards beings of a lower rank, towards everything alien, one may act as one wishes or 'as the heart dictates' and in any case 'beyond good and evil' --: it is herethat pity and the like can have a place.
+
+<mark>
+p197 - qualities which serve to make easier the existence of the suffering ... here it is that pity, the kind and helping hand, the warm heart, patience, industriousness, humility, friendliness come into honour --- for these are the most useful
+qualities and virtually the only means of enduring the burden of existence
+</mark>
+
+p201 - the individual dares to be individual and stand out.
+
+<mark>
+p205 - What ultimately is commonness? ... it is not sufficient to employ the same words; we have also to employ the same words to designate the same species of inner experiences, we must ultimately have our experience _in common_. ... language is the history of a process of abbreviation
+</mark>
+
+p206 - Tremendous counter-forces ... into the _common_
+
+p209 - Profound suffering ennobles; it separates.
+
+p212 - Men of profound sorrow give themselves away when they are happy: they have a way of grasping happiness as if they wanted to crush and smother it, from jealousy -- alas, they know too well that it will flee away.
+
+p214 - it is a refined and at the same time noble piece of self-control to praise only where one does _not_ agree --- for in the other case one would be praising onself, which is contrary to good taste
+
+p214 - four virtues, courage, insight, sympathy, solitude
+
+p217 - Every profound thinker is more afraid of being understood than of being misunderstood. The latter may perhaps wound his vanity; but the former will wound his heart.
+
+<mark>
+p217 - invented the good conscience so as to enjoy his soul for once as _simple_; and the whole of morality is a protracted audacious forgery by virtue of which alone it becomes possible to feel pleasure at the sight of the soul.
+</mark>
