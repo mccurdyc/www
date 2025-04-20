@@ -1,7 +1,7 @@
 ---
 title: "Create Dangerously"
 subtitle: ""
-description: ""
+description: "there are two ways for an intellectual to betray at present, and in both cases he betrays because he accepts a single thing --- that separation between labour and culture. The first way is characteristic of bourgeios intellectuals who are willing that their privileges should be paid for by the enslavement of the workers. They often say that they are defending freedom, but they are defending first of all the privileges freedom gives to them, and to them alone."
 author: "Colton J. McCurdy"
 date: 2025-04-12T12:12:29-04:00
 image: "/images/book-covers/create-dangerously/cover.jpg"
@@ -63,3 +63,42 @@ p21 - What, then, is art? Nothing simple, that is certain. ... On the one hand, 
 p21 - So it is with art, which is nothing without reality and without which reality is insignificant.
 
 p22 - Art is neither complete rejection nor complete acceptance of what is.
+
+p23 - The greater an artist's revolt against the world's reality, the greater can be the weight of reality to balance that revolt. ... the work that maintains an equilibrium between reality and man's rejection of that reality
+
+p23 - That's just it and yet that's not it; the world is nothing and the world is everything
+
+p24 - The aim of art, on the contrary, is not to legislate or to reign supreme, but rather to understand first of all.
+
+p32 - 'Every wall is a door'
+
+p32 - Great ideas, ... come into the world as gently as doves.
+
+p35 - Men like you and me who in the morning patted children on the head would a few hours later become meticulous executioners.
+
+p36 - the most difficult battle to be won against the enemy in the future must be fought within ourselves, with an exceptional effort that will transform our appetite for hatred into a desire for justice.
+
+p42 - The simplest, and hence most tempting, thing is to blame governments or some obscure powers for such naughty behavior. Besides, it is indeed true that they are guilty ... we have lost sight of its beginnings. But they are not the only ones responsible.
+
+p43 - And if freedom is regressing today throughout such a large part of the world, this is probably because the devices for enslavement have never been so cynically chosen or so effective, but also because her real defenders ... have turned away.
+
+p44 - after Marx, the rumor began to spread and gain strength that freemdom was a bourgeois hoax ... that bourgeois society prostituted freedom
+
+p45 - The contention was that we needed justice first and that we would come to freedom later on
+
+p48 - How then can this infernal circle be broken? ... the value of freedom --- and by never again agreeing to its being sacrificed, even temporarily, or separated from our demand for justice.
+
+p50 - separating freedom from justice is tantamount to separating culture and labour
+
+<mark>
+p51 - there are two ways for an intellectual to betray at present, and in both cases he betrays because he accepts a single thing --- that separation between labour and culture. The first way is characteristic of bourgeios intellectuals who are willing that their privileges should be paid for by the enslavement
+of the workers. They often say that they are defending freedom, but they are defending first of all the privileges freedom gives to them, and to them alone.
+</mark>
+
+<mark>
+p52 - freedom is not made up principally of privileges; it is made up especially of duties.
+</mark>
+
+<mark>
+p54 - we shall be sure that freedom is not a gift received from a State or a leader but a possession to be won every day by the effort of each and the union of all.
+</mark>
