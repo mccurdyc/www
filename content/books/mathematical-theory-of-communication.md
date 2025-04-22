@@ -26,6 +26,8 @@ pviv - communication systems with frequency of errors as small as desired for a 
 
 p3 - entropy is related to "missing information"
 
+# SOME RECENT CONTRIBUTIONS: WEAVER
+
 <mark>
 p4 - Three levels of Communication Problems
 
@@ -63,4 +65,26 @@ p11 - an ergodic process ... is one which produces a sequence of symbols which w
 
 p13 - Having calculated the entropy (or the information, or the freedom of choice) of a certain information source, one can compare this to the maximum value this entropy could have ... this is called _relative entropy_ ... If the relative entropy of a certain source is, say 0.8, this roughly means that this source is, in its choice of symbols to for, a message, about 80 percent as free as it could possibly be with these same symbols. One minus the relative entropy is called the _redundancy_. ... this fraction of the message is unnecessary ... in the sense that if it were missing the message would still be essentially complete ... the redundancy of English is just about 50 percent, so that about half of the letters or words we choose in writing or speaking are under our free choice, and about half (although we are not ordinarily aware of it) are really controlled by the statistical structure of the language.
 
+<mark>
+p14 - If it is not possible or practible to design a system which can handle everything perfectly, then the system should be designed to handle well the jobs it is most likely to be asked to do, and should resign itself to be less efficient for the rare task.
+</mark>
 
+p15 - no freedom of choice --- no information
+
+<mark>
+p16 - the capacity of a channel [_C_] is to be described not in terms of the number of _symbols_ it can transmit, but rather in terms of the _information_ it transmits.
+</mark>
+
+p17 - _H_ bits per symbol ... no matter how clever the coding, can never be made to exceed _C/H_.
+
+p18 - The greater this freedom of choice, and hence the greater the information, the greater is the uncertainty that the message actually selected is some particular one ... _Noise_
+
+p22 - When there is noise on a channel, however, there is some real advantage in not using a coding process that eliminates all of the redundancy. For the remaining redundancy helps combat the noise.
+
+p27 - The concept of information developed in this theory at first seems disappointing and bizarre --- disappointing because it has nothing to do with meaning ... one is now, perhaps for the first time, ready for a real theory of meaning.
+
+<mark>
+p28 - one of the most significant but difficult aspects of meaning, namely the influence of context.
+</mark>
+
+# THE MATHEMATICAL THEORY OF COMMUNICATION
