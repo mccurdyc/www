@@ -88,3 +88,39 @@ p28 - one of the most significant but difficult aspects of meaning, namely the i
 </mark>
 
 # THE MATHEMATICAL THEORY OF COMMUNICATION
+
+p31 - the effect of noise in the channel, and the savings possible due to the statistical structure of the original message
+
+p34 - We may roughly classify communication systems into three main categories: discrete, continuous and mixed.
+
+## Discrete
+
+p39 - reducing the required capacity of the channel, by the use of proper encoding of the information
+
+p41 - _n_-gram - set of transition probabilities
+
+p49 - These probabilities are known but that is all we know concerning which event will occur. Can we find a measure of how much "choice" is involved in the selection of the vent or of how uncertain we are of the outcome?
+
+In other words, given the input probabilities can we reliably predict outcomes?
+
+p62 - The transducer which does the encoding should match the source to the channel in a statistical sense. ... In general, ideal or nearly ideal encoding requires a long delay in the transmitter and receiver. ... the main function of this delay is to allow reasonably good matching of probabilities to corresponding lengths of sequences.
+
+<mark>
+p62 - If a source can produce only one particular message its entropy is zero, and no channel is required. ... No channel is required to "transmit" this to another point. One could construct a second machine to compute the same sequence at the point.
+</mark>
+
+p67 - The conditional entropy `H_y(x)` will, for convience, be called the equivocation. It measures the average ambiguity of the received signal. ... _a posteriori_ probability
+
+p81 is where I stopped following along at a deeper level.
+
+## CONTINUOUS INFORMATION
+
+p81 - dividing the continuum of messages and signals into a large but finite number of small regions and calculating the various parameters involved on a discrete basis.
+
+p85 - _The Interpolation, Extrapolation, and Smoothing of Stationary Time Series_ (Wiley, 1949), contains the first clear-cut formulation of communication theory as a statistical problem
+
+## THE RATE FOR A CONTINUOUS SOURCE
+
+p108 - In the case of a discrete source of information we were able to determine a definite rate of generating information, namely the entropy of the underlying stochastic process. With a continuous source the situation is considerably more involved. ... exact transmission is impossible. ... Practically, we are not interested in exact transmission when we have a contiuous source, but only in transmission within a certain tolerance.
+
+p111 - The structure of the ear and brain determine implicitly a number of evaluations, appropriate in the case of speech or music transmission.
