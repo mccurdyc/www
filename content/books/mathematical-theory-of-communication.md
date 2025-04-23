@@ -1,7 +1,7 @@
 ---
 title: "Mathematical Theory of Communication"
 subtitle: ""
-description: ""
+description: "[T]his word information in communication theory relates not so much to what you _do_ say, as to what you _could_ say. ... If it is not possible or practible to design a system which can handle everything perfectly, then the system should be designed to handle well the jobs it is most likely to be asked to do, and should resign itself to be less efficient for the rare task."
 author: "Colton J. McCurdy"
 date: 2025-04-17T12:12:41-04:00
 image: "/images/book-covers/mathematical-theory-of-communication/cover.jpg"
