@@ -633,3 +633,99 @@ Hmm, this `external/` dir, if I remember correctly, is actually what Bazel insta
 Maybe I should just stay in the Nix sandbox VM and try to get things working in
 there manually and just make sure I'm porting those changes to code since `nix build`
 is super slow now that it installs Rust crates on every run.
+
+Okay, back in the VM
+
+```bash
+sudo /nix/store/y528s2cvrah7sgig54i97gnbq3nppikp-attach/bin/attach 1745132
+```
+
+Wow, lots more under `$bazelOut/external` now!
+
+```bash
+[root@nuc:~/output/external]# ls $bazelOut/external | grep python
+python3_12_toolchains
+@python3_12_toolchains.marker
+python3_12_x86_64-unknown-linux-gnu
+@python3_12_x86_64-unknown-linux-gnu.marker
+pythons_hub
+@pythons_hub.marker
+rules_python
+rules_python_internal
+@rules_python_internal.marker
+@rules_python.marker
+```
+
+Okay, `python3_12_toolchains` and `rules_python` look relevant. Hmm, okay neither of these
+mention `jinja`. So maybe a `requirements.txt` has the `jinja2` reference. Wait.
+The first error is just failing to execute a dynamically-linked python executable,
+let's try running `python` in the sandbox. Okay, weird, that works.
+
+```bash
+[root@nuc:~/output/external]# python --version
+Python 3.12.10
+```
+
+I mean maybe not weird because this is the python I tell nix to install. Or is this
+part of some Nix sandbox base builder packages or something? Either way, in my mind
+this is "nix python", not "Bazel python".
+
+```bash
+[root@nuc:~/output/external]# python3_12_
+python3_12_toolchains/               python3_12_x86_64-unknown-linux-gnu/
+
+[mccurdyc@nuc] [envoy] [[!] main]go:v1.24.3 [!!!]
+08:06:53 %% rg python3_12_host
+bazel/python_dependencies.bzl
+10:        python_interpreter_target = "@python3_12_host//:python",
+17:        python_interpreter_target = "@python3_12_host//:python",
+24:        python_interpreter_target = "@python3_12_host//:python",
+```
+
+Okay, no `python3_12_host` in the bazel output. But there is in the envoy repo!
+Let's try replacing `@python3_12_host` with like `@@` or whatever again. Or `@python@`?
+
+Oh, it was `@@//bazel/nix:cargo` and we had a BUILD file that "exported" `cargo`, presumably
+as a "label". Can we just use the same `$bazelOut/bazel/nix/BUILD.bazel` file that
+was used for Rust? Well before, Rust things were substituted in `bazel/dependency_imports.bzl`,
+but the Python stuff is in `bazel/python_dependencies.bzl`, so we'll definitely need to
+reference nix python in this file. But then make nix python a label in some BUILD
+file somewhere.
+
+In the nix sandbox I just manually overrode everwhere I saw `"@python3_12_host//:python"`
+with `@@//bazel/nix:python`. Seems legit. Now let's just add something to our `bazel/nix/BUILD.bazel` file.
+
+Is there a `rules_python` import and a `python_toolchain`? Python doesn't have a "toolchain"
+like Rust that I'm aware of. That sounds odd. So maybe there is just a `python` rule
+or something. Let's Google "bazel rules_python". Oh cool https://bazel.build/reference/be/python
+and it has `py_binary`. Uhh there's a lot to configure here, I remember seeing nixpkgs/envoy did
+this let's see if I was anywhere near [what that does](https://github.com/mccurdyc/nixpkgs/blob/80fbf5d705a48e091b860235a64dec9c7eabf070/pkgs/by-name/en/envoy/0001-nixpkgs-use-system-Python.patch).
+
+Oh dang, like kinda, a little. I mean correct file. But nixpkgs/envoy just straight up REMOVES --- doesn't
+even replace --- `python_interpreter_target = "@python3_12_host//:python",`. Oh and it does do some overrides
+of `rules_python`. Looks like it's also telling `rules_python` to not try installing python. Everything in this
+nixpkgs/envoy patch makes sense with the exception of the following, so I'll leave it out:
+
+```diff
+ pip_parse(
++        name = "pip3",
++        requirements_lock = "@envoy_toolshed//:requirements.txt",
++    )
+```
+
+This might be the next thing related to installing `jinja2`.
+
+Okay, in the Nix sandbox after manually making the patch:
+
+```bash
+[root@nuc:~/6g741kc8lzbc50jg3v7q7c3mxzkiwlqh-source-patched]# bazel build -c opt envoy
+...
+ERROR: <builtin>: BazelWorkspaceStatusAction stable-status.txt failed: Failed to determine workspace status: Process exited with status 1
+bazel/get_workspace_status: line 39: git: command not found
+```
+
+Git!? Okay I guess we install `git` in the sandbox. Sure, maybe it needs to use `git` to fetch dependencies?
+
+Eh, I'm feeling lazy. I don't feel like manually making the patch again, do I just
+take the entire nixpkgs/envoy Python patch at the cost of not learning something?
+Sure.
