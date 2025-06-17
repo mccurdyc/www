@@ -625,107 +625,103 @@ seem like it. I see some `pip3` things. Let's look at the error again to see if 
 gives a hint.
 
 ```bash
-> ERROR: /tmp/nix-build-envoy-deps.tar.gz.drv-0/output/external/base_pip3/jinja2/BUILD.bazel:5:12: no such package '@@base_pip3_jinja2//': no such package '@@python3_12_host//':
-```
-
-Hmm, this `external/` dir, if I remember correctly, is actually what Bazel installs.
-
-Maybe I should just stay in the Nix sandbox VM and try to get things working in
-there manually and just make sure I'm porting those changes to code since `nix build`
-is super slow now that it installs Rust crates on every run.
-
-Okay, back in the VM
-
-```bash
-sudo /nix/store/y528s2cvrah7sgig54i97gnbq3nppikp-attach/bin/attach 1745132
-```
-
-Wow, lots more under `$bazelOut/external` now!
-
-```bash
-[root@nuc:~/output/external]# ls $bazelOut/external | grep python
-python3_12_toolchains
-@python3_12_toolchains.marker
-python3_12_x86_64-unknown-linux-gnu
-@python3_12_x86_64-unknown-linux-gnu.marker
-pythons_hub
-@pythons_hub.marker
-rules_python
-rules_python_internal
-@rules_python_internal.marker
-@rules_python.marker
-```
-
-Okay, `python3_12_toolchains` and `rules_python` look relevant. Hmm, okay neither of these
-mention `jinja`. So maybe a `requirements.txt` has the `jinja2` reference. Wait.
-The first error is just failing to execute a dynamically-linked python executable,
-let's try running `python` in the sandbox. Okay, weird, that works.
-
-```bash
-[root@nuc:~/output/external]# python --version
-Python 3.12.10
-```
-
-I mean maybe not weird because this is the python I tell nix to install. Or is this
-part of some Nix sandbox base builder packages or something? Either way, in my mind
-this is "nix python", not "Bazel python".
-
-```bash
-[root@nuc:~/output/external]# python3_12_
-python3_12_toolchains/               python3_12_x86_64-unknown-linux-gnu/
-
-[mccurdyc@nuc] [envoy] [[!] main]go:v1.24.3 [!!!]
-08:06:53 %% rg python3_12_host
-bazel/python_dependencies.bzl
-10:        python_interpreter_target = "@python3_12_host//:python",
-17:        python_interpreter_target = "@python3_12_host//:python",
-24:        python_interpreter_target = "@python3_12_host//:python",
-```
-
-Okay, no `python3_12_host` in the bazel output. But there is in the envoy repo!
-Let's try replacing `@python3_12_host` with like `@@` or whatever again. Or `@python@`?
-
-Oh, it was `@@//bazel/nix:cargo` and we had a BUILD file that "exported" `cargo`, presumably
-as a "label". Can we just use the same `$bazelOut/bazel/nix/BUILD.bazel` file that
-was used for Rust? Well before, Rust things were substituted in `bazel/dependency_imports.bzl`,
-but the Python stuff is in `bazel/python_dependencies.bzl`, so we'll definitely need to
-reference nix python in this file. But then make nix python a label in some BUILD
-file somewhere.
-
-In the nix sandbox I just manually overrode everwhere I saw `"@python3_12_host//:python"`
-with `@@//bazel/nix:python`. Seems legit. Now let's just add something to our `bazel/nix/BUILD.bazel` file.
-
-Is there a `rules_python` import and a `python_toolchain`? Python doesn't have a "toolchain"
-like Rust that I'm aware of. That sounds odd. So maybe there is just a `python` rule
-or something. Let's Google "bazel rules_python". Oh cool https://bazel.build/reference/be/python
-and it has `py_binary`. Uhh there's a lot to configure here, I remember seeing nixpkgs/envoy did
-this let's see if I was anywhere near [what that does](https://github.com/mccurdyc/nixpkgs/blob/80fbf5d705a48e091b860235a64dec9c7eabf070/pkgs/by-name/en/envoy/0001-nixpkgs-use-system-Python.patch).
-
-Oh dang, like kinda, a little. I mean correct file. But nixpkgs/envoy just straight up REMOVES --- doesn't
-even replace --- `python_interpreter_target = "@python3_12_host//:python",`. Oh and it does do some overrides
-of `rules_python`. Looks like it's also telling `rules_python` to not try installing python. Everything in this
-nixpkgs/envoy patch makes sense with the exception of the following, so I'll leave it out:
-
-```diff
- pip_parse(
-+        name = "pip3",
-+        requirements_lock = "@envoy_toolshed//:requirements.txt",
-+    )
-```
-
-This might be the next thing related to installing `jinja2`.
-
-Okay, in the Nix sandbox after manually making the patch:
-
-```bash
-[root@nuc:~/6g741kc8lzbc50jg3v7q7c3mxzkiwlqh-source-patched]# bazel build -c opt envoy
+nix build
 ...
-ERROR: <builtin>: BazelWorkspaceStatusAction stable-status.txt failed: Failed to determine workspace status: Process exited with status 1
-bazel/get_workspace_status: line 39: git: command not found
+> no configure script, doing nothing
+> Running phase: buildPhase
+> ERROR: The project you're trying to build requires Bazel 7.6.0 (specified in /build/s8pzcp058ywsnmzdp0xs4sgigyqglgm1-source-patched/.bazelversion), but it wasn't found in /nix/store/8nbnr7vc86cp6nw92s9v7k3ab9028vr2-bazel-6.5.0/bin.
+>
+> Bazel binaries for all official releases can be downloaded from here:
+>   https://github.com/bazelbuild/bazel/releases
+>
+> Please put the downloaded Bazel binary into this location:
+>   /nix/store/8nbnr7vc86cp6nw92s9v7k3ab9028vr2-bazel-6.5.0/bin/bazel-7.6.0-linux-x86_64
 ```
 
-Git!? Okay I guess we install `git` in the sandbox. Sure, maybe it needs to use `git` to fetch dependencies?
+```bash
+sudo /nix/store/y528s2cvrah7sgig54i97gnbq3nppikp-attach/bin/attach 3412430
+bash-5.2# cat .bazelversion
+7.6.0
+```
 
-Eh, I'm feeling lazy. I don't feel like manually making the patch again, do I just
-take the entire nixpkgs/envoy Python patch at the cost of not learning something?
-Sure.
+Oh it's still there even though I tried removing it.
+
+```bash
+bash-5.2# bazel build -c opt envoy
+Extracting Bazel installation...
+Starting local Bazel server and connecting to it...
+INFO: Repository com_google_googleapis instantiated at:
+  /build/r6mjfd99m7j2nn6qwg1ibnys453i0s1l-source-patched/WORKSPACE:9:23: in <toplevel>
+  /build/r6mjfd99m7j2nn6qwg1ibnys453i0s1l-source-patched/bazel/api_repositories.bzl:4:21: in envoy_api_dependencies
+  /build/.cache/bazel/_bazel_root/f97a5d5d084e9180b40253ffbf680525/external/envoy_api/bazel/repositories.bzl:27:26: in api_dependencies
+  /build/.cache/bazel/_bazel_root/f97a5d5d084e9180b40253ffbf680525/external/envoy_api/bazel/repositories.bzl:9:23: in external_http_archive
+  /build/.cache/bazel/_bazel_root/f97a5d5d084e9180b40253ffbf680525/external/envoy_api/bazel/envoy_http_archive.bzl:16:17: in envoy_http_archive
+Repository rule http_archive defined at:
+  /build/.cache/bazel/_bazel_root/f97a5d5d084e9180b40253ffbf680525/external/bazel_tools/tools/build_defs/repo/http.bzl:372:31: in <toplevel>
+WARNING: Download from https://github.com/googleapis/googleapis/archive/fd52b5754b2b268bc3a22a10f29844f206abb327.tar.gz failed: class com.google.devtools.build.lib.bazel.repository.downloader.UnrecoverableHttpException Unknown host: github.com
+ERROR: An error occurred during the fetch of repository 'com_google_googleapis':
+   Traceback (most recent call last):
+        File "/build/.cache/bazel/_bazel_root/f97a5d5d084e9180b40253ffbf680525/external/bazel_tools/tools/build_defs/repo/http.bzl", line 132, column 45, in _http_archive_impl
+                download_info = ctx.download_and_extract(
+Error in download_and_extract: java.io.IOException: Error downloading [https://github.com/googleapis/googleapis/archive/fd52b5754b2b268bc3a22a10f29844f206abb327.tar.gz] to /build/.cache/bazel/_bazel_root/f97a5d5d084e9180b40253ffbf680525/external/com_google_googleapis/temp13342235895244228205/fd52b5754b2b268bc3a22a10f29844f206abb327.tar.gz: Unknown host: github.com
+ERROR: /build/r6mjfd99m7j2nn6qwg1ibnys453i0s1l-source-patched/WORKSPACE:9:23: fetching http_archive rule //external:com_google_googleapis: Traceback (most recent call last):
+        File "/build/.cache/bazel/_bazel_root/f97a5d5d084e9180b40253ffbf680525/external/bazel_tools/tools/build_defs/repo/http.bzl", line 132, column 45, in _http_archive_impl
+                download_info = ctx.download_and_extract(
+Error in download_and_extract: java.io.IOException: Error downloading [https://github.com/googleapis/googleapis/archive/fd52b5754b2b268bc3a22a10f29844f206abb327.tar.gz] to /build/.cache/bazel/_bazel_root/f97a5d5d084e9180b40253ffbf680525/external/com_google_googleapis/temp13342235895244228205/fd52b5754b2b268bc3a22a10f29844f206abb327.tar.gz: Unknown host: github.com
+ERROR: Error computing the main repository mapping: no such package '@com_google_googleapis//': java.io.IOException: Error downloading [https://github.com/googleapis/googleapis/archive/fd52b5754b2b268bc3a22a10f29844f206abb327.tar.gz] to /build/.cache/bazel/_bazel_root/f97a5d5d084e9180b40253ffbf680525/external/com_google_googleapis/temp13342235895244228205/fd52b5754b2b268bc3a22a10f29844f206abb327.tar.gz: Unknown host: github.com
+```
+
+Looks like a few more things that I need to tell Bazel NOT to try to fetch.
+
+Huh. I understand the failure. The nix sandbox can't fetch a `com_google_googleapis` repository from `github.com` which is instantiated in `./bazel/api_repositories.bzl`, specifically an `envoy_api_dependencies` function.
+But I don't know what it is trying to get from there. I guess I can grep for references of `com_google_googleapis`.
+
+I see in `api/bazel/repositories.bzl`. Maybe just remove this? But then references would fail. So `external_http_archive` seems like
+it will try to fetch a repository from some external HTTP archive, which we know won't be possible in the nix sandbox, so let's try replacing
+something that makes sense in `external_http_archive` which comes from the following function which says to fetch from some list of `REPOSITORY_LOCATIONS_SPEC`
+defined in `repository_locations.bzl`. What if we just make this list of repos empty or somehow tell it to use a local directory?
+
+```python
+...
+load(":repository_locations.bzl", "REPOSITORY_LOCATIONS_SPEC")
+
+REPOSITORY_LOCATIONS = load_repository_locations(REPOSITORY_LOCATIONS_SPEC)
+
+# Use this macro to reference any HTTP archive from bazel/repository_locations.bzl.
+def external_http_archive(name, **kwargs):
+    envoy_http_archive(
+        name,
+        locations = REPOSITORY_LOCATIONS,
+        **kwargs
+    )
+
+def api_dependencies():
+    ...
+    external_http_archive(
+        name = "com_google_googleapis",
+    )
+    ...
+```
+
+Okay in `api/bazel/repository_locations.bzl` I see
+
+```
+...
+    com_google_googleapis = dict(
+        # TODO(dio): Consider writing a Starlark macro for importing Google API proto.
+        project_name = "Google APIs",
+        project_desc = "Public interface definitions of Google APIs",
+        project_url = "https://github.com/googleapis/googleapis",
+        version = "fd52b5754b2b268bc3a22a10f29844f206abb327",
+        sha256 = "97fc354dddfd3ea03e7bf2ad74129291ed6fad7ff39d3bd8daec738a3672eb8a",
+        release_date = "2024-09-16",
+        strip_prefix = "googleapis-{version}",
+        urls = ["https://github.com/googleapis/googleapis/archive/{version}.tar.gz"],
+        use_category = ["api"],
+        license = "Apache-2.0",
+        license_url = "https://github.com/googleapis/googleapis/blob/{version}/LICENSE",
+    ),
+...
+```
+
+But what would I even point this at locally? I don't think I can use `google-cloud-sdk`.
