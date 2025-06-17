@@ -725,3 +725,25 @@ Okay in `api/bazel/repository_locations.bzl` I see
 ```
 
 But what would I even point this at locally? I don't think I can use `google-cloud-sdk`.
+
+Oh this looks interesting
+
+```python
+bazel/repositories.bzl                                                                                                                      
+1:load("@com_google_googleapis//:repository_rules.bzl", "switched_rules_by_language")                                                       
+243:        name = "com_google_googleapis_imports", 
+```
+
+Oh and in `bazel/repositories.bzl` I see the following.
+
+```python
+...
+    switched_rules_by_language(
+        name = "com_google_googleapis_imports",
+        cc = True,
+        go = True,
+        python = True,
+        grpc = True,
+    )
+...
+```
