@@ -19,6 +19,7 @@ It's enjoyable to write. It has a bit of a learning curve related to disjunction
 You physically cannot have value collisions so you will fight with this a bit if you use "fancy" things.
 
 # What I like
+- There's a playground - https://cuelang.org/play
 - Types
 - Constraints
 - Feels like Go
