@@ -27,14 +27,21 @@ You physically cannot have value collisions so you will fight with this a bit if
 	- https://cuelang.org/docs/tour/packages/standard-library/
 	- https://pkg.go.dev/cuelang.org/go/pkg#pkg-overview
 	- Has functions for strings, time, crytpo, encoding, net "strings" (IPs, subnets, etc.)
-- Cue code generation (e.g., types) via `cue go import` (pointed at a Go package) or from protobuf types
+- Cue code generation (e.g., types) via `cue go import` (pointed at a Go package) or from protobuf types or jsonschema
 - Modules (think Go packages) can be publishes as OCI artifacts
 - Core maintainers are extremely responsive and get fixes cut fast!
+- Can "inject" values from the CLI `--inject foo="foo"`
 
 # The Learning Curve
 - Disjunctions (i.e., value collisions / unset values)
 	- https://cuelang.org/docs/tour/types/disjunctions/
 - Think building a flat object
+- String interpolation
+
+    ```
+    "Hello, \(Name)"
+    ```
+
 - Using templates; https://cuelang.org/docs/tour/types/templates/
 - Notes I took when I was just learning - https://github.com/mccurdyc/playground/tree/main/cue#getting-started
 - "unset" or "bottom" `_|_`
