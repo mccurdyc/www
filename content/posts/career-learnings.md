@@ -70,4 +70,3 @@ draft: false
 	- I find skateboarding for 15min really helpful; maybe it's getting the heartrate up, not thinking about work. idk
 	- Find your version of skateboarding
 	- video games at lunch is a bit refreshing
--
