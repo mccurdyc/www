@@ -119,28 +119,29 @@ Okay, what is "cargo-bazel" then "`cargo-bazel` is a Bazel repository rule for 
 Okay, I know I've see `rules_rust` in the project, let's grep again. Okay I come across [this](https://github.com/mccurdyc/envoy/blob/c01676e090c94fe4ee720534146a4f177931530d/bazel/repository_locations.bzl#L1459-L1474)
 
 ```bash
-    # After updating you may need to run:
-    #
-    #     CARGO_BAZEL_REPIN=1 bazel sync --only=crate_index
-    #
-    rules_rust = dict(
-        project_name = "Bazel rust rules",
-        project_desc = "Bazel rust rules (used by Wasm)",
-        project_url = "https://github.com/bazelbuild/rules_rust",
-        version = "0.56.0",
-        sha256 = "f1306aac0b258b790df01ad9abc6abb0df0b65416c74b4ef27f4aab298780a64",
-        # Note: rules_rust should point to the releases, not archive to avoid the hassle of bootstrapping in crate_universe.
-        # This is described in https://bazelbuild.github.io/rules_rust/crate_universe.html#setup, otherwise bootstrap
-        # is required which in turn requires a system CC toolchains, not the bazel controlled ones.
-        urls = ["https://github.com/bazelbuild/rules_rust/releases/download/{version}/rules_rust-{version}.tar.gz"],
-        use_category = [
-            "controlplane",
-            "dataplane_core",
-            "dataplane_ext",
-        ],
-        extensions = ["envoy.wasm.runtime.wasmtime"],
+# After updating you may need to run:
+#
+#     CARGO_BAZEL_REPIN=1 bazel sync --only=crate_index
+#
+rules_rust = dict(
+    project_name = "Bazel rust rules",
+    project_desc = "Bazel rust rules (used by Wasm)",
+    project_url = "https://github.com/bazelbuild/rules_rust",
+    version = "0.56.0",
+    sha256 = "f1306aac0b258b790df01ad9abc6abb0df0b65416c74b4ef27f4aab298780a64",
+    # Note: rules_rust should point to the releases, not archive to avoid the hassle of bootstrapping in crate_universe.
+    # This is described in https://bazelbuild.github.io/rules_rust/crate_universe.html#setup, otherwise bootstrap
+    # is required which in turn requires a system CC toolchains, not the bazel controlled ones.
+    urls = ["https://github.com/bazelbuild/rules_rust/releases/download/{version}/rules_rust-{version}.tar.gz"],
+    use_category = [
+        "controlplane",
+        "dataplane_core",
+        "dataplane_ext",
+    ],
+    extensions = ["envoy.wasm.runtime.wasmtime"],
 ...
 ```
+
 Oh, cool somehow related to WASM and wasmtime! This aligns with my goal. Let's try running this referenced command `CARGO_BAZEL_REPIN=1 bazel sync --only=crate_index`. Nope, same error related to dynamically-linked executables.
 
 ```
@@ -329,8 +330,8 @@ Using `pkgs.applyPatches` and now `"error: undefined variable 'cargo'"` `"ln -sf
 `direnv reload` succeeded. Okay. Time for another `nix build`? Or were we just running `bazel build` directly? Let's try `nix build` for fun. Wait, actually I think we will HAVE to use `nix build` since it will apply all the patches, etc. 
 
 ```bash
-       >                fail(_EXECUTE_ERROR_MESSAGE.format(
-       > Error in fail: Command [/tmp/nix-build-envoy-deps.tar.gz.drv-0/output/external/dynamic_modules_rust_sdk_crate_index
+>                fail(_EXECUTE_ERROR_MESSAGE.format(
+> Error in fail: Command [/tmp/nix-build-envoy-deps.tar.gz.drv-0/output/external/dynamic_modules_rust_sdk_crate_index
 /cargo-bazel, "splice", "--output-dir", /tmp/nix-build-envoy-deps.tar.gz.drv-0/output/external/dynamic_modules_rust_sdk_crat
 e_index/splicing-output, "--splicing-manifest", /tmp/nix-build-envoy-deps.tar.gz.drv-0/output/external/dynamic_modules_rust_
 sdk_crate_index/splicing_manifest.json, "--config", /tmp/nix-build-envoy-deps.tar.gz.drv-0/output/external/dynamic_modules_r
@@ -339,14 +340,14 @@ rce-patched/bazel/nix/cargo, "--rustc", /tmp/nix-build-envoy-deps.tar.gz.drv-0/h
 ed/bazel/nix/rustc, "--cargo-lockfile", /tmp/nix-build-envoy-deps.tar.gz.drv-0/hx85kmm7pi75hyx46cjgissmkks61jgb-source-patch
 ed/source/extensions/dynamic_modules/sdk/rust/Cargo.lock, "--nonhermetic-root-bazel-workspace-dir", /tmp/nix-build-envoy-dep
 s.tar.gz.drv-0/hx85kmm7pi75hyx46cjgissmkks61jgb-source-patched] failed with exit code 127.
-       > STDOUT ------------------------------------------------------------------------
-       >
-       > STDERR ------------------------------------------------------------------------
-       > Could not start dynamically linked executable: /tmp/nix-build-envoy-deps.tar.gz.drv-0/output/external/dynamic_modul
+> STDOUT ------------------------------------------------------------------------
+>
+> STDERR ------------------------------------------------------------------------
+> Could not start dynamically linked executable: /tmp/nix-build-envoy-deps.tar.gz.drv-0/output/external/dynamic_modul
 es_rust_sdk_crate_index/cargo-bazel
-       > NixOS cannot run dynamically linked executables intended for generic
-       > linux environments out of the box. For more information, see:
-       > https://nix.dev/permalink/stub-ld
+> NixOS cannot run dynamically linked executables intended for generic
+> linux environments out of the box. For more information, see:
+> https://nix.dev/permalink/stub-ld
 ```
 
 Okay, I see lots of `.drv`s that's a good sign! And `/tmp` paths to things. This looks like it's definitely replacing path. But Nix is still unhappy about trying to use `/tmp/nix-build-envoy-deps.tar.gz.drv-0/output/external/dynamic_modules_rust_sdk_crate_index/cargo-bazel`. Okay, I didn't apply any patches for `cargo-bazel`. And I remember that `cargo-bazel` was replaced or proceeded by `rules_rust` and I remember seeing something related to `rules_rust` in the nixpkgs/envoy. Oh I think the important thing is that it sets the rustc and cargo versions to "hermetic" instead of a legit version. Maybe that legit version was referencing some old path that doesn't have `cargo-bazel`.
@@ -357,7 +358,7 @@ Okay, I see lots of `.drv`s that's a good sign! And `/tmp` paths to things. This
 nix build
 
 error: path '/nix/store/75aiyjh0b4limr4j6ampxsm92zk08p89-source/nix/patches/rules_rust_extra.patch' does not exist
-``` 
+```
 
 Oh, I must have screwed up paths. Am I being fancy trying to store these nix files under `nix/` in the Envoy repo?
 
@@ -366,8 +367,7 @@ ea6adc06dd
 ```bash
 nix build
 ...
-       > ERROR: /tmp/nix-build-envoy-deps.tar.gz.drv-0/output/external/bazel_tools/tools/build_defs/repo/utils.bzl:202:22: A
-n error occurred during the fetch of repository 'rules_rust':
+> ERROR: /tmp/nix-build-envoy-deps.tar.gz.drv-0/output/external/bazel_tools/tools/build_defs/repo/utils.bzl:202:22: An error occurred during the fetch of repository 'rules_rust':
 ...
 Error in patch: Error applying patch /tmp/nix-build-envoy-deps.tar.gz.drv-0/kr3xyim0f52wmwhpqpc7fy9b546z1cgh-source-patched/bazel/rules_rust.patch: in patch applied to /tmp/nix-build-envoy-deps.tar.gz.drv-0/output/external/rules_rust/cargo/private/cargo_bootstrap.bzl: could not apply patch due to CONTENT_DOES_NOT_MATCH_TARGET, error applying change near line 173
 ```
@@ -809,4 +809,203 @@ Ah okay. Envoy definitely doesn't use the new bzlmod module system yet.
 
 ```bash
 > ERROR: Error computing the main repository mapping: at /tmp/nix-build-envoy-deps.tar.gz.drv-0/2p08rkm66jm7makw26ipl3x4z279g9fp-source-patched/bazel/dependency_imports.bzl:2:6: Encountered error while reading extension file 'requirements.bzl': no such package '@base_pip3//': no such package '@python3_12_host//':
+```
+
+This made me realize that it's the `WORKSPACE` file that I should have been looking
+at to find the list of dependency-fetching function calls being made.
+
+```python
+workspace(name = "envoy")
+
+# These all reference local files in the bazel/ directory.
+
+# binds references of "api_httpbody_protos" and "http_api_protos" to other places
+load("//bazel:api_binding.bzl", "envoy_api_binding")
+
+# references load("@envoy_api//bazel:repositories.bzl", "api_dependencies")
+# which is api/bazel/repositories.bzl, not sure how the @envoy_api works though
+# Oh, this actually comes from the api_binding.bzl file above
+# _default_envoy_api(name = "envoy_api", reldir = "api")
+load("//bazel:api_repositories.bzl", "envoy_api_dependencies")
+
+# Looks at VERSION, etc. like build metadata
+load("//bazel:repo.bzl", "envoy_repo")
+
+# Lots in here
+load("//bazel:repositories.bzl", "envoy_dependencies")
+
+# Ah here's things about our python version being used!
+# And this calls rules_python and python_register_toolchains!
+load("//bazel:repositories_extra.bzl", "envoy_dependencies_extra")
+
+# Lots of python stuff too, obviously. This will likely need changed
+load("//bazel:python_dependencies.bzl", "envoy_python_dependencies")
+
+# All kinds of other languages: Go, WASM, rust, CC
+load("//bazel:dependency_imports.bzl", "envoy_dependency_imports")
+
+# Just Rust crates
+load("//bazel:dependency_imports_extra.bzl", "envoy_dependency_imports_extra")
+```
+
+Okay, so we have a few places we will likely have to update
+
+```python
+# Lots in here
+load("//bazel:repositories.bzl", "envoy_dependencies")
+
+# Ah here's things about our python version being used!
+# And this calls rules_python and python_register_toolchains!
+load("//bazel:repositories_extra.bzl", "envoy_dependencies_extra")
+
+# Lots of python stuff too, obviously. This will likely need changed
+load("//bazel:python_dependencies.bzl", "envoy_python_dependencies")
+
+# All kinds of other languages: Go, WASM, rust, CC
+load("//bazel:dependency_imports.bzl", "envoy_dependency_imports")
+
+# Just Rust crates
+load("//bazel:dependency_imports_extra.bzl", "envoy_dependency_imports_extra")
+```
+
+Back to our error
+
+```bash
+/bazel/dependency_imports.bzl:2:6: Encountered error while reading extension file 'requirements.bzl': no such package '@base_pip3//': no such package '@python3_12_host//':
+```
+
+We know this is related to `pip_parse` which comes from `rules_python`. Let's check
+out `rules_python` to see if we can tell it how to use a different Python interpreter
+since apparenetly `@python3_12_host` doesn't work.
+
+```python
+load("@rules_python//python:pip.bzl", "pip_parse")
+...
+pip_parse(
+    name = "base_pip3",
+    python_interpreter_target = "@python3_12_host//:python",
+    requirements_lock = "@envoy//tools/base:requirements.txt",
+    extra_pip_args = ["--require-hashes"],
+)
+```
+
+https://github.com/bazel-contrib/rules_python
+
+"This repository is the home of the core Python rules -- py_library, py_binary..."
+
+Okay, `py_binary` seems promising. Oh shoot look there's the "toolchains" thing again
+too https://rules-python.readthedocs.io/en/latest/toolchains.html
+
+This seems really promising.
+
+There's this example for both Bazel 7 modules and baze 6 BUILD.bazel
+
+```python
+# MODULE.bazel
+bazel_dep(name = "rules_python", version=...)
+
+python = use_extension("@rules_python//python/extensions:python.bzl", "python")
+python.toolchain(python_version = "3.12")
+
+# BUILD.bazel
+load("@rules_python//python:py_binary.bzl", "py_binary")
+
+py_binary(..., python_version="3.12")
+```
+
+https://rules-python.readthedocs.io/en/latest/toolchains.html#local-toolchain
+
+For simple cases, the local_runtime_repo and local_runtime_toolchains_repo rules are provided that will introspect a Python installation and create an appropriate Bazel definition from it. To do this, three pieces need to be wired together:
+
+1. Specify a path or command to a Python interpreter (multiple can be defined).
+2. Create toolchains for the runtimes in (1)
+3. Register the toolchains created by (2)
+
+```python
+# File: MODULE.bazel
+
+local_runtime_repo = use_repo_rule(
+    "@rules_python//python/local_toolchains:repos.bzl",
+    "local_runtime_repo",
+    dev_dependency = True,
+)
+
+local_runtime_toolchains_repo = use_repo_rule(
+    "@rules_python//python/local_toolchains:repos.bzl",
+    "local_runtime_toolchains_repo",
+    dev_dependency = True,
+)
+
+# Step 1: Define the Python runtime
+local_runtime_repo(
+    name = "local_python3",
+    interpreter_path = "python3",
+    on_failure = "fail",
+)
+
+# Step 2: Create toolchains for the runtimes
+local_runtime_toolchains_repo(
+    name = "local_toolchains",
+    runtimes = ["local_python3"],
+    # TIP: The `target_settings` arg can be used to activate them based on
+    # command line flags; see docs below.
+)
+
+# Step 3: Register the toolchains
+register_toolchains("@local_toolchains//:all", dev_dependency = True)
+```
+
+Oh here is a `path` we can override with a nix store path
+
+```python
+# Step 1: Define the Python runtime
+local_runtime_repo(
+    name = "local_python3",
+    interpreter_path = "python3",
+    on_failure = "fail",
+)
+```
+
+Also, https://rules-python.readthedocs.io/en/latest/toolchains.html#autodetecting-toolchain
+
+"It’s name is a bit misleading: it doesn’t autodetect anything. All it does is use python3 from the environment a binary runs within. This provides extremely limited functionality to the rules (at build time, nothing is knowable about the Python runtime)."
+
+Let's go back to where our Python stuff is mostly defined
+
+```python
+# Ah here's things about our python version being used!
+# And this calls rules_python and python_register_toolchains!
+load("//bazel:repositories_extra.bzl", "envoy_dependencies_extra")
+```
+# Ah here's things about our python version being used!
+# And this calls rules_python and python_register_toolchains!
+load("//bazel:repositories_extra.bzl", "envoy_dependencies_extra")
+
+```python
+# Python version for `rules_python`
+PYTHON_VERSION = "3.12.3"
+PYTHON_MINOR_VERSION = _python_minor_version(PYTHON_VERSION)
+...
+# Registers underscored Python minor version - eg `python3_10`
+python_register_toolchains(
+    name = "python%s" % _python_minor_version(python_version),
+    python_version = python_version,
+    ignore_root_user_error = ignore_root_user_error,
+)
+```
+
+Okay, back to the docs - https://rules-python.readthedocs.io/en/latest/toolchains.html#workspace-toolchain-registration
+
+"To register a hermetic Python toolchain rather than rely on a system-installed interpreter [use `python_register_toolchain`]"
+
+Oh, but we DO want the system interpreter which is the Nix sandbox one.
+
+Okay, now what about functions like `pip_parse`? Looks like `python_interpreter_target` is optional.
+Assuming if you don't specify, it uses the system interpreter - https://github.com/bazel-contrib/rules_python/blob/5b1db075d0810d09db7b1411c273a968ee3e4be0/examples/pip_parse/WORKSPACE#L47-L54
+
+Finally, moving again... was stuck for a day trying to figure out how to make bazel_7
+work.
+
+```bash
+> ERROR: /tmp/nix-build-envoy-deps.tar.gz.drv-0/output/external/base_pip3/jinja2/BUILD.bazel:5:12: @base_pip3//jinja2:pkg depends on @base_pip3_jinja2//:pkg in repository @base_pip3_jinja2 which failed to fetch. no such package '@base_pip3_jinja2//': Not a regular file: /tmp/nix-build-envoy-deps.tar.gz.drv-0/output/external/pypi__colorama/colorama-0.4.6-py2.py3-none-any.whl.dist-info/RECORD
 ```
