@@ -761,3 +761,52 @@ a local `bazel_tools`
 >      bazel fetch //...
 > External repository @@bazel_tools not found and fetching repositories is disabled.
 ```
+
+Hmm `--nofetch` seems promising, but disabling temporarily
+
+```
+Error in download_and_extract: java.io.IOException: Error downloading [https://github.com/googleapis/googleapis/archive/fd52b5754b2b268bc3a22a10f29844f206abb327.tar.gz] to /build/output/external/com_google_googleapis/temp4237767006948401698/fd52b5754b2b268bc3a22a10f29844f206abb327.tar.gz: Unknown host: github.com
+```
+
+Okay, so it seems that it's trying to install `https://github.com/googleapis/googleapis/archive/fd52b5754b2b268bc3a22a10f29844f206abb327.tar.gz` to `$bazelOut/external/com_google_googleapis/...`
+but it failing to reach github.com, which is expected. And I can't just tell
+Nix to install to this directory I don't think.
+
+What even is this? https://github.com/googleapis/googleapis ah cool yeah, I remember
+asking if there were a nixpkg for this! I don't need a nixpkg, just `fetchTarball` or whatever.
+
+Okay, I was starting to get quite frustrated. I couldn't understand how the nixpkgs/envoy
+was doing this. Then I decided to dig more into why nixpkgs/envoy was explicitly
+using `bazel_6` instead of `bazel_7` like the upstream envoy repo was explicitly calling for.
+
+Turns out, from AI:
+
+"The Envoy package in Nixpkgs uses `bazel_6` instead of `bazel_7` primarily for
+compatibility and stability reasons. Bazel 7 introduced significant changes, most
+notably the deprecation of the traditional `WORKSPACE` setup in favor of `bzlmod`,
+Bazel's new module system. Many existing Bazel projects, including Envoy, have not
+fully migrated to `bzlmod` and may rely on behaviors or APIs that were changed or removed in Bazel 7
+
+```bash
+find . -name "WORKSPACE"
+./ci/osx-build-config/WORKSPACE
+./mobile/third_party/rbe_configs/cc/WORKSPACE
+./mobile/envoy_build_config/WORKSPACE
+./mobile/WORKSPACE
+./bazel/rbe/toolchains/configs/linux/gcc/cc/WORKSPACE
+./bazel/rbe/toolchains/configs/linux/clang/cc/WORKSPACE
+./WORKSPACE
+```
+
+```bash
+find . -name "MODULE.bazel"
+# (empty)
+```
+
+Ah okay. Envoy definitely doesn't use the new bzlmod module system yet.
+
+## Back to Bazel 6
+
+```bash
+> ERROR: Error computing the main repository mapping: at /tmp/nix-build-envoy-deps.tar.gz.drv-0/2p08rkm66jm7makw26ipl3x4z279g9fp-source-patched/bazel/dependency_imports.bzl:2:6: Encountered error while reading extension file 'requirements.bzl': no such package '@base_pip3//': no such package '@python3_12_host//':
+```
