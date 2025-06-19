@@ -186,21 +186,21 @@ https://github.com/bazelbuild/rules_rust and https://bazelbuild.github.io/rules_
 I see [this block in Nixpkgs envoy](https://github.com/mccurdyc/nixpkgs/blob/80fbf5d705a48e091b860235a64dec9c7eabf070/pkgs/by-name/en/envoy/package.nix#L89-L98) 
 
 ```python
-    # making a dir
-	mkdir -p bazel/nix/
-	# copying some local bazel BUILD file template and using system bash $(type -p bash) => bash is /run/current-system/sw/bin/bash)
-    substitute ${./bazel_nix.BUILD.bazel} bazel/nix/BUILD.bazel \
-      --subst-var-by bash "$(type -p bash)"
-	
-	# using Nix binaries
-    ln -sf "${cargo}/bin/cargo" bazel/nix/cargo
-    ln -sf "${rustc}/bin/rustc" bazel/nix/rustc
-    ln -sf "${rustc}/bin/rustdoc" bazel/nix/rustdoc
-    ln -sf "${rustPlatform.rustLibSrc}" bazel/nix/ruststd
-    
-    substituteInPlace bazel/dependency_imports.bzl \
-      --replace-fail 'crate_universe_dependencies()' 'crate_universe_dependencies(rust_toolchain_cargo_template="@@//bazel/nix:cargo", rust_toolchain_rustc_template="@@//bazel/nix:rustc")' \
-      --replace-fail 'crates_repository(' 'crates_repository(rust_toolchain_cargo_template="@@//bazel/nix:cargo", rust_toolchain_rustc_template="@@//bazel/nix:rustc",'
+# making a dir
+mkdir -p bazel/nix/
+# copying some local bazel BUILD file template and using system bash $(type -p bash) => bash is /run/current-system/sw/bin/bash)
+substitute ${./bazel_nix.BUILD.bazel} bazel/nix/BUILD.bazel \
+    --subst-var-by bash "$(type -p bash)"
+
+# using Nix binaries
+ln -sf "${cargo}/bin/cargo" bazel/nix/cargo
+ln -sf "${rustc}/bin/rustc" bazel/nix/rustc
+ln -sf "${rustc}/bin/rustdoc" bazel/nix/rustdoc
+ln -sf "${rustPlatform.rustLibSrc}" bazel/nix/ruststd
+
+substituteInPlace bazel/dependency_imports.bzl \
+    --replace-fail 'crate_universe_dependencies()' 'crate_universe_dependencies(rust_toolchain_cargo_template="@@//bazel/nix:cargo", rust_toolchain_rustc_template="@@//bazel/nix:rustc")' \
+    --replace-fail 'crates_repository(' 'crates_repository(rust_toolchain_cargo_template="@@//bazel/nix:cargo", rust_toolchain_rustc_template="@@//bazel/nix:rustc",'
 ```
 
 Oh wow [there's a lot of good context in this BUILD file template](https://github.com/mccurdyc/nixpkgs/blob/80fbf5d705a48e091b860235a64dec9c7eabf070/pkgs/by-name/en/envoy/bazel_nix.BUILD.bazel). I see an `export_files` function that if I had to guess means that these binaries are "returned" from this bazel file?
@@ -263,11 +263,11 @@ Okay, `:cargo` `:rustc` labels in `nixpkgs/envoy`. Some other `toolchain` that i
 Applying patches, postPatch doing some substitution that I would expect to reference nixpkg paths. And I see lots of symlink creation that looks very relevant.
 
 ```python
-	# using Nix binaries
-    ln -sf "${cargo}/bin/cargo" bazel/nix/cargo
-    ln -sf "${rustc}/bin/rustc" bazel/nix/rustc
-    ln -sf "${rustc}/bin/rustdoc" bazel/nix/rustdoc
-    ln -sf "${rustPlatform.rustLibSrc}" bazel/nix/ruststd
+# using Nix binaries
+ln -sf "${cargo}/bin/cargo" bazel/nix/cargo
+ln -sf "${rustc}/bin/rustc" bazel/nix/rustc
+ln -sf "${rustc}/bin/rustdoc" bazel/nix/rustdoc
+ln -sf "${rustPlatform.rustLibSrc}" bazel/nix/ruststd
 ```
 
 Oh okay, so apply normal Git patches for Python, Go, CC toolchain and using a newer `rules_rust` bazel version. Maybe for these we are actually making larger changes and want to install these in a completely different way than the Envoy repo,  but then for patching Rust, we are using exactly what's in the Envoy repo, but overriding the output binaries with nix binary paths. Let's look at the CC toolchain as this is probably the most important first. It relates to those critical system build tooling and we'll definitely want to tweak these for Nix package paths and Envoy is C++, so probably heavily relies on these libraries. Rust is probably more for the WASM extension.
@@ -314,10 +314,10 @@ We are essentially applying a patch, but just a simple string substitution in `b
 
 ```python
  # patch rules_rust for envoy specifics, but also to support old Bazel
-    # (Bazel 6 doesn't have ctx.watch, but ctx.path is sufficient for our use)
-    cp ${./rules_rust.patch} bazel/rules_rust.patch
-    substituteInPlace bazel/repositories.bzl \
-      --replace-fail ', "@envoy//bazel:rules_rust_ppc64le.patch"' ""
+# (Bazel 6 doesn't have ctx.watch, but ctx.path is sufficient for our use)
+cp ${./rules_rust.patch} bazel/rules_rust.patch
+substituteInPlace bazel/repositories.bzl \
+    --replace-fail ', "@envoy//bazel:rules_rust_ppc64le.patch"' ""
 ```
 
 Oh overwrites the `bazel/rules_rust.patch` in the Envoy repo with the local `rules_rust.patch` file and then overwrites or removes "@envoy//bazel:rules_rust_ppc64le.patch" from `bazel/repositories.bzl`. 
@@ -377,10 +377,10 @@ Okay, so it successfully failed to apply my patch ;P. Something related to `carg
 Why is this substitution in `fetchAttrs` instead of during the patch phase like the others? Oh because `fetchAttrs` is specific to a fetching phase of BAZEL; NOT nix fetching. So this needs to be applied before a `bazel build` command runs. So theoretically, it could be applied in the Nix fetching / patching phase. Let's put it in there to keep it altogether.
 
 ```python
-      substituteInPlace bazel/dependency_imports.bzl \
-        --replace-fail 'crate_universe_dependencies(' 'crate_universe_dependencies(bootstrap=True, ' \
-        --replace-fail 'crates_repository(' 'crates_repository(generator="@@cargo_bazel_bootstrap//:cargo-bazel", '
-    '';
+substituteInPlace bazel/dependency_imports.bzl \
+    --replace-fail 'crate_universe_dependencies(' 'crate_universe_dependencies(bootstrap=True, ' \
+    --replace-fail 'crates_repository(' 'crates_repository(generator="@@cargo_bazel_bootstrap//:cargo-bazel", '
+'';
 ```
 
 Oh maybe because this is the same `bazel/dependency_imports.bzl` file modified above and we don't want these changes to be applied until BAZEL is in it's fetch phase (not sure if Bazel runs other things first.). Let's put in the `fetchAttrs` `postPatch` phase like nixpkgs/envoy.
@@ -388,11 +388,11 @@ Oh maybe because this is the same `bazel/dependency_imports.bzl` file modified a
 Oh and here's the thing called `cargo-bazel`
 
 ```python
- # Install repinned rules_rust lockfile
-      cp source/extensions/dynamic_modules/sdk/rust/Cargo.Bazel.lock $bazelOut/external/Cargo.Bazel.lock
+# Install repinned rules_rust lockfile
+cp source/extensions/dynamic_modules/sdk/rust/Cargo.Bazel.lock $bazelOut/external/Cargo.Bazel.lock
 
-      # Don't save cargo_bazel_bootstrap or the crate index cache
-      rm -rf $bazelOut/external/cargo_bazel_bootstrap $bazelOut/external/dynamic_modules_rust_sdk_crate_index/.cargo_home $bazelOut/external/dynamic_modules_rust_sdk_crate_index/
+# Don't save cargo_bazel_bootstrap or the crate index cache
+rm -rf $bazelOut/external/cargo_bazel_bootstrap $bazelOut/external/dynamic_modules_rust_sdk_crate_index/.cargo_home $bazelOut/external/dynamic_modules_rust_sdk_crate_index/
 ```
 
 Okay if we are failing to have matching hashes, maybe we just copy or remove things, right? Seems like that's what these do.
@@ -416,55 +416,55 @@ Bazel in a Nix VM for building Envoy is failing to fetch `rules_rust` because of
 `$bazelOut` must be some path set by Nix's `buildBazelPackage`. Okay back to the `buildBazelPackage` definition - https://github.com/NixOS/nixpkgs/blob/master/pkgs/build-support/build-bazel-package/default.nix. Now that we understand things a bit more, we'll definitely want to come back to this definition. Okay `$bazelOut/external` must be something created during the fetch phase of Bazel.
 
 ```bash
- export bazelOut="$(echo ''${NIX_BUILD_TOP}/output | sed -e 's,//,/,g')"
+export bazelOut="$(echo ''${NIX_BUILD_TOP}/output | sed -e 's,//,/,g')"
 ```
 
 Okay, I remember seeing nixpkgs/envoy set all of these `remove...` attributes to true. These clean up a bunch of files
 
 ```python
-              # Remove all built in external workspaces, Bazel will recreate them when building
-              rm -rf $bazelOut/external/{bazel_tools,\@bazel_tools.marker}
-              ${lib.optionalString removeRulesCC "rm -rf $bazelOut/external/{rules_cc,\\@rules_cc.marker}"}
+# Remove all built in external workspaces, Bazel will recreate them when building
+rm -rf $bazelOut/external/{bazel_tools,\@bazel_tools.marker}
+${lib.optionalString removeRulesCC "rm -rf $bazelOut/external/{rules_cc,\\@rules_cc.marker}"}
 
-              rm -rf $bazelOut/external/{embedded_jdk,\@embedded_jdk.marker}
-              ${lib.optionalString removeLocalConfigCc "rm -rf $bazelOut/external/{local_config_cc,\\@local_config_cc.marker}"}
-              ${lib.optionalString removeLocal "rm -rf $bazelOut/external/{local_*,\\@local_*.marker}"}
+rm -rf $bazelOut/external/{embedded_jdk,\@embedded_jdk.marker}
+${lib.optionalString removeLocalConfigCc "rm -rf $bazelOut/external/{local_config_cc,\\@local_config_cc.marker}"}
+${lib.optionalString removeLocal "rm -rf $bazelOut/external/{local_*,\\@local_*.marker}"}
 
-              # For bazel version >= 6 with bzlmod.
-              ${lib.optionalString removeLocalConfigCc "rm -rf $bazelOut/external/*[~+]{local_config_cc,local_config_cc.marker}"}
-              ${lib.optionalString removeLocalConfigSh "rm -rf $bazelOut/external/*[~+]{local_config_sh,local_config_sh.marker}"}
-              ${lib.optionalString removeLocal "rm -rf $bazelOut/external/*[~+]{local_jdk,local_jdk.marke
+# For bazel version >= 6 with bzlmod.
+${lib.optionalString removeLocalConfigCc "rm -rf $bazelOut/external/*[~+]{local_config_cc,local_config_cc.marker}"}
+${lib.optionalString removeLocalConfigSh "rm -rf $bazelOut/external/*[~+]{local_config_sh,local_config_sh.marker}"}
+${lib.optionalString removeLocal "rm -rf $bazelOut/external/*[~+]{local_jdk,local_jdk.marke
 ```
 
 Let's set them all! Why not!?
 
 ```nix
-  # Newer versions of Bazel are moving away from built-in rules_cc and instead
-  # allow fetching it as an external dependency in a WORKSPACE file[1]. If
-  # removed in the fixed-output fetch phase, building will fail to download it.
-  # This can be seen e.g. in #73097
-  #
-  # This option allows configuring the removal of rules_cc in cases where a
-  # project depends on it via an external dependency.
-  #
-  # [1]: https://github.com/bazelbuild/rules_cc
-  removeRulesCC ? true,
-  removeLocalConfigCc ? true,
-  removeLocalConfigSh ? true,
-  removeLocal ? true,
+# Newer versions of Bazel are moving away from built-in rules_cc and instead
+# allow fetching it as an external dependency in a WORKSPACE file[1]. If
+# removed in the fixed-output fetch phase, building will fail to download it.
+# This can be seen e.g. in #73097
+#
+# This option allows configuring the removal of rules_cc in cases where a
+# project depends on it via an external dependency.
+#
+# [1]: https://github.com/bazelbuild/rules_cc
+removeRulesCC ? true,
+removeLocalConfigCc ? true,
+removeLocalConfigSh ? true,
+removeLocal ? true,
 
-  # Use build --nobuild instead of fetch. This allows fetching the dependencies
-  # required for the build as configured, rather than fetching all the dependencies
-  # which may not work in some situations (e.g. Java code which ends up relying on
-  # Debian-specific /usr/share/java paths, but doesn't in the configured build).
-  fetchConfigured ? true,
+# Use build --nobuild instead of fetch. This allows fetching the dependencies
+# required for the build as configured, rather than fetching all the dependencies
+# which may not work in some situations (e.g. Java code which ends up relying on
+# Debian-specific /usr/share/java paths, but doesn't in the configured build).
+fetchConfigured ? true,
 
-  # Don’t add Bazel --copt and --linkopt from NIX_CFLAGS_COMPILE /
-  # NIX_LDFLAGS. This is necessary when using a custom toolchain which
-  # Bazel wants all headers / libraries to come from, like when using
-  # CROSSTOOL. Weirdly, we can still get the flags through the wrapped
-  # compiler.
-  dontAddBazelOpts ? false
+# Don’t add Bazel --copt and --linkopt from NIX_CFLAGS_COMPILE /
+# NIX_LDFLAGS. This is necessary when using a custom toolchain which
+# Bazel wants all headers / libraries to come from, like when using
+# CROSSTOOL. Weirdly, we can still get the flags through the wrapped
+# compiler.
+dontAddBazelOpts ? false
 ```
 
 Oh they default to true.
@@ -583,21 +583,21 @@ BUILD.bazel  cargo  rules_rust_extra.patch  rustc  rustdoc  ruststd
 ```
 
 ```bash
- 32 diff --git cargo/private/cargo_bootstrap.bzl cargo/private/cargo_bootstrap.bzl
- 33 index a8021c49d62037ef32c7c64d5bb4a5efe3a8b4aa..f63d7c23ae0bddc9f3fece347a3a2b5b0afe6d8d 100644
- 34 --- cargo/private/cargo_bootstrap.bzl
- 35 +++ cargo/private/cargo_bootstrap.bzl
- 36 @@ -173,13 +173,13 @@ def _detect_changes(repository_ctx):
- 37      # 'consumed' which means changes to it will trigger rebuilds
- 38  
- 39      for src in repository_ctx.attr.srcs:
- 40 -        repository_ctx.watch(src)
- 41 +        repository_ctx.path(src)
- 42  
- 43 -    repository_ctx.watch(repository_ctx.attr.cargo_lockfile)
- 44 -    repository_ctx.watch(repository_ctx.attr.cargo_toml)
- 45 +    repository_ctx.path(repository_ctx.attr.cargo_lockfile)
- ...
+32 diff --git cargo/private/cargo_bootstrap.bzl cargo/private/cargo_bootstrap.bzl
+33 index a8021c49d62037ef32c7c64d5bb4a5efe3a8b4aa..f63d7c23ae0bddc9f3fece347a3a2b5b0afe6d8d 100644
+34 --- cargo/private/cargo_bootstrap.bzl
+35 +++ cargo/private/cargo_bootstrap.bzl
+36 @@ -173,13 +173,13 @@ def _detect_changes(repository_ctx):
+37      # 'consumed' which means changes to it will trigger rebuilds
+38  
+39      for src in repository_ctx.attr.srcs:
+40 -        repository_ctx.watch(src)
+41 +        repository_ctx.path(src)
+42  
+43 -    repository_ctx.watch(repository_ctx.attr.cargo_lockfile)
+44 -    repository_ctx.watch(repository_ctx.attr.cargo_toml)
+45 +    repository_ctx.path(repository_ctx.attr.cargo_lockfile)
+...
 ```
 
 Okay this is where the line 173 is coming from, so something in cargo_bootstrap.bzl. Okay and actually this error is related to failing to apply the patch --- kinda like a merge conflict. This is what is actually in rules_rust https://github.com/bazelbuild/rules_rust/blob/0cb272d303ce7ea1dbe9bb5b16228f2008c8d72e/cargo/private/cargo_bootstrap.bzl#L173. Oh okay, maybe this is a rules_rust version mismatch. I remember seeing this - https://github.com/mccurdyc/nixpkgs/blob/80fbf5d705a48e091b860235a64dec9c7eabf070/pkgs/by-name/en/envoy/0004-nixpkgs-bump-rules_rust-to-0.60.0.patch I manually made this change in the Envoy source repo and re-run `nix build` and got a new error!
@@ -746,4 +746,18 @@ Oh and in `bazel/repositories.bzl` I see the following.
         grpc = True,
     )
 ...
+```
+
+I got stuck for a while, then ended up querying AI for my error to give some suggestions
+and came across the `--nofetch` Bazel flag.
+
+Then, I encounter the following; which makes sense. These are the errors that I expected
+to see. Now, I just need to figure out how to tell `@@bazel_tools` to reference
+a local `bazel_tools`
+
+```bash
+> Computing main repo mapping:
+> ERROR: Error computing the main repository mapping: no such package '@@bazel_tools//tools/build_defs/repo': to fix, run
+>      bazel fetch //...
+> External repository @@bazel_tools not found and fetching repositories is disabled.
 ```
