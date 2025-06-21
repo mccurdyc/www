@@ -1007,5 +1007,184 @@ Finally, moving again... was stuck for a day trying to figure out how to make ba
 work.
 
 ```bash
-> ERROR: /tmp/nix-build-envoy-deps.tar.gz.drv-0/output/external/base_pip3/jinja2/BUILD.bazel:5:12: @base_pip3//jinja2:pkg depends on @base_pip3_jinja2//:pkg in repository @base_pip3_jinja2 which failed to fetch. no such package '@base_pip3_jinja2//': Not a regular file: /tmp/nix-build-envoy-deps.tar.gz.drv-0/output/external/pypi__colorama/colorama-0.4.6-py2.py3-none-any.whl.dist-info/RECORD
+> ERROR: ... @base_pip3//jinja2:pkg depends on @base_pip3_jinja2//:pkg in repository @base_pip3_jinja2 which failed to fetch. no such package '@base_pip3_jinja2//': Not a regular file
 ```
+
+Okay, grep for `base_pip3` and `jinja2` and see
+
+```python
+# bazel/python_dependencies.bzl
+pip_parse(
+    name = "base_pip3",
+...
+    requirements_lock = "@envoy//tools/base:requirements.txt",
+...
+)
+```
+
+```
+# tools/base/requirements.txt
+jinja2==3.1.6 \
+    --hash=sha256:0137fb05990d35f1275a587e9aee6d56da821fc83491a0fb838183be43f66d6d \
+    --hash=sha256:85ece4451f492d0c13c5dd7c13a64681a86afae63a5f347908daf103ce6d2f67
+```
+
+So we're going to have to install jinja2 via nix and somehow NOT use this requirements.txt.
+Let's start by just not using the requirements.txt. Do we just remove it from these
+blocks in bazel/python_dependencies.bzl?
+
+```bash
+rg install_deps
+bazel/dependency_imports.bzl
+2:load("@base_pip3//:requirements.bzl", pip_dependencies = "install_deps")
+8:load("@dev_pip3//:requirements.bzl", pip_dev_dependencies = "install_deps")
+13:load("@fuzzing_pip3//:requirements.bzl", pip_fuzzing_dependencies = "install_deps")
+```
+
+Maybe it's as simple as getting rid of these `pip_*_dependencies = "install_deps"`?
+
+Oh look ... I started adding some more flags so that build logs would persist
+
+```bash
+nix build --debug --verbose --print-build-logs
+...
+envoy-deps.tar.gz> INFO: Repository base_pip3_jinja2 instantiated at:                                                                                
+envoy-deps.tar.gz>   /tmp/nix-build-envoy-deps.tar.gz.drv-2/cgc5nprc3i9giwjcfyjccmmz1aryiic4-source-patched/WORKSPACE:29:25: in <toplevel>           
+envoy-deps.tar.gz>   /tmp/nix-build-envoy-deps.tar.gz.drv-2/cgc5nprc3i9giwjcfyjccmmz1aryiic4-source-patched/bazel/dependency_imports.bzl:46:21: in en
+voy_dependency_imports
+envoy-deps.tar.gz>   /tmp/nix-build-envoy-deps.tar.gz.drv-2/output/external/base_pip3/requirements.bzl:572:20: in install_deps
+```
+
+So, let's look at `WORKSPACE:29`.
+
+```python
+load("//bazel:dependency_imports.bzl", "envoy_dependency_imports")
+envoy_dependency_imports()
+```
+
+Okay, `dependency_imports.bzl:46`
+
+```python
+def envoy_dependency_imports(go_version = GO_VERSION, jq_version = JQ_VERSION, yq_version = YQ_VERSION, buf_version = BUF_VERSION):
+...
+    pip_dependencies()
+    pip_dev_dependencies()
+    pip_fuzzing_dependencies()
+    rules_pkg_dependencies()
+    emscripten_deps(emscripten_version = "4.0.6")
+...
+```
+
+I think the lines differ locally from the patched version that is actually being run,
+so I think it's refering to these `pip_*` functions. And it does say that it's related
+to `install_deps`. Let's just try removing thtat.
+
+Oh, it didn't like that
+
+```bash
+ERROR: Error computing the main repository mapping: compilation of module 'bazel/dependency_imports.bzl' failed
+```
+
+What if we remove the imports and function calls entirely?
+
+```bash
+ERROR: /tmp/nix-build-envoy-deps.tar.gz.drv-2/output/external/base_pip3/jinja2/BUILD.bazel:5:12: no such package '@base_pip3_jinja2//': The repository '@base_pip3_jinja2' could not be resolved: Repository '@base_pip3_jinja2' is not defined and referenced by '@base_pip3//jinja2:pkg'
+```
+
+Oh okay, so something is still referring to it in the build. How do we remove this
+from being referenced?
+
+```python
+[root@nuc:~/output/external/base_pip3/jinja2]# grep -C5 jinja2 BUILD.bazel
+load("@rules_python//python/private/pypi:pkg_aliases.bzl", "pkg_aliases")
+
+package(default_visibility = ["//visibility:public"])
+
+pkg_aliases(
+    name = "jinja2",
+    actual = "base_pip3_jinja2",
+)
+```
+
+Oh this is the entire file. Can we just not? Okay, a grep for `jinja2` in Envoy
+reveals that it doesn't seem critical. Maybe for building docs, something with
+`kafka` and a couple other things.
+
+I'd prefer to NOT just delete things that don't work. That feels wrong. But the
+intention is to delete them to get a build that passes, then when the build doesn't
+work, work backwards and add things properly.
+
+Let's understand this line
+
+```python
+load("@envoy_toolshed//:packages.bzl", "load_packages")
+```
+
+What is `envoy_toolshed`?
+
+Oh, something for CI. MAYBE necessary. Let's remove this import.
+
+```python
+# bazel/repository_locations.bzl
+envoy_toolshed = dict(
+    project_name = "envoy_toolshed",
+    project_desc = "Tooling, libraries, runners and checkers for Envoy proxy's CI",
+    project_url = "https://github.com/envoyproxy/toolshed",
+    version = "0.3.3",
+    sha256 = "1ac69d5b1cbc138f779fc3858f06a6777455136260e1144010f0b51880f69814",
+    strip_prefix = "toolshed-bazel-v{version}/bazel",
+    urls = ["https://github.com/envoyproxy/toolshed/archive/bazel-v{version}.tar.gz"],
+    use_category = ["build", "controlplane", "dataplane_core"],
+    implied_untracked_deps = [
+        "tsan_libs",
+        "msan_libs",
+    ],
+    release_date = "2025-06-02",
+    cpe = "N/A",
+    license = "Apache-2.0",
+    license_url = "https://github.com/envoyproxy/toolshed/blob/bazel-v{version}/LICENSE",
+),
+```
+
+Also, found this because I was looking at nixpkgs/envoy to see how they handled this
+and saw this substitutions of requirements.BZL files. But these were in the generated
+or bazel-fetched dependencies, not in the Envoy source repo.
+
+Oh wow this is a gold mine. Although I wish I could just delete from the source repo.
+It doesn't feel right manipulating the generated outputs. That feels like an antipattern.
+It's so much harder to make changes.
+
+```
+[root@nuc:~/output/external]# grep jinja2 base_pip3/requirements.bzl
+    "@base_pip3//jinja2:pkg",
+    "jinja2": "@base_pip3//jinja2:whl",
+    "@base_pip3//jinja2:data",
+    ("base_pip3_jinja2", "jinja2==3.1.6 --hash=sha256:0137fb05990d35f1275a587e9aee6d56da821fc83491a0fb838183be43f66d6d --hash=sha256:85ece4451f492d0c13c5dd7c13a64681a86afae63a5f347908daf103ce6d2f67"),
+```
+
+```
+[root@nuc:~/output/external]# find $bazelOut/external -name requirements.bzl
+/tmp/nix-build-envoy-deps.tar.gz.drv-2/output/external/dev_pip3/requirements.bzl
+/tmp/nix-build-envoy-deps.tar.gz.drv-2/output/external/base_pip3/requirements.bzl
+/tmp/nix-build-envoy-deps.tar.gz.drv-2/output/external/rules_python/python/pip_install/requirements.bzl
+/tmp/nix-build-envoy-deps.tar.gz.drv-2/output/external/rules_python/examples/pip_parse_vendored/requirements.bzl
+/tmp/nix-build-envoy-deps.tar.gz.drv-2/output/external/fuzzing_pip3/requirements.bzl
+```
+
+```
+[root@nuc:~/output/external]# find $bazelOut/external -name requirements.bzl | while read $req; do grep 'Generated' $req; done
+# (empty)
+```
+
+So the line in nixpkgs Envoy doesn't do anything
+
+
+Okay, you can't just delete the entire contents of the `python_dependencies.bzl` file.
+```bash
+envoy-deps.tar.gz> ERROR: Failed to load Starlark extension '@fuzzing_pip3//:requirements.bzl'.
+envoy-deps.tar.gz> Cycle in the workspace file detected. This indicates that a repository is used prior to being defined.
+envoy-deps.tar.gz> The following chain of repository dependencies lead to the missing definition.
+envoy-deps.tar.gz>  - @fuzzing_pip3
+envoy-deps.tar.gz> This could either mean you have to add the '@fuzzing_pip3' repository with a statement like `http_archive` in your WORKSPACE file (note that transitive dependencies are not added automatically), or move an existing definition earlier in your WORKSPACE file.
+```
+
