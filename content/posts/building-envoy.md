@@ -976,12 +976,11 @@ Let's go back to where our Python stuff is mostly defined
 # Ah here's things about our python version being used!
 # And this calls rules_python and python_register_toolchains!
 load("//bazel:repositories_extra.bzl", "envoy_dependencies_extra")
-```
+
 # Ah here's things about our python version being used!
 # And this calls rules_python and python_register_toolchains!
 load("//bazel:repositories_extra.bzl", "envoy_dependencies_extra")
 
-```python
 # Python version for `rules_python`
 PYTHON_VERSION = "3.12.3"
 PYTHON_MINOR_VERSION = _python_minor_version(PYTHON_VERSION)
@@ -1251,3 +1250,65 @@ ERROR: --extra_toolchains=//bazel/nix:rust_nix_aarch64,//bazel/nix:rust_nix_x86_
 ```
 
 I see it on the docs page https://bazel.build/reference/command-line-reference#fetch
+
+```bash
+bazel fetch //source/exe:envoy-static
+ERROR: Evaluation of query "deps(//source/exe:envoy-static)" failed: preloading transitive closure failed: no such package '@base_pip3_jinja2//': Not a regular file: /tmp/nix-build-envoy-deps.tar.gz.drv-3/.cache/bazel/_bazel_nix/83eeb12f51ee11b582aa28fb0be4e7b9/external/pypi__colorama/colorama-0.4.6-py2.py3-none-any.whl.dist-info/RECORD
+```
+
+Seems like the bazel cache is somehow carrying over from previous nix builds. A clean
+with the following commands brings a new error!
+
+```bash
+[root@nuc:~/5brg9znbv44nj3mankkscfvvlnn1ahh9-source-patched]# rm -rf /tmp/nix-build-envoy-deps.tar.gz.drv-0/.cache/bazel/_ba
+zel_nix/
+
+[root@nuc:~/5brg9znbv44nj3mankkscfvvlnn1ahh9-source-patched]# bazel clean
+```
+
+```bash
+ERROR: /tmp/nix-build-envoy-deps.tar.gz.drv-0/.cache/bazel/_bazel_nix/b345a95ae9d397097bbace6c93525ae1/external/proxy_wasm_cpp_host/bazel/cargo/wasmtime/remote/BUILD.bazel:70:6: no such package '@cu__wasmtime-c-api-macros-24.0.0//': error running 'git init /tmp/nix-build-envoy-deps.tar.gz.drv-0/.cache/bazel/_bazel_nix/b345a95ae9d397097bbace6c93525ae1/external/cu__wasmtime-c-api-macros-24.0.0/.tmp_git_root' while working with @cu__wasmtime-c-api-macros-24.0.0:
+src/main/tools/process-wrapper-legacy.cc:80: "execvp(git, ...)": No such file or directory
+ and referenced by '@proxy_wasm_cpp_host//bazel/cargo/wasmtime/remote:wasmtime-c-api-macros'
+ERROR: Evaluation of query "deps(//source/exe:envoy-static)" failed: preloading transitive closure failed: no such package '@cu__wasmtime-c-api-macros-24.0.0//': error running 'git init /tmp/nix-build-envoy-deps.tar.gz.drv-0/.cache/bazel/_bazel_nix/b345a95ae9d397097bbace6c93525ae1/external/cu__wasmtime-c-api-macros-24.0.0/.tmp_git_root' while working with @cu__wasmtime-c-api-macros-24.0.0:
+src/main/tools/process-wrapper-legacy.cc:80: "execvp(git, ...)": No such file or directory
+```
+
+Oh, so it failed to run `git`
+
+```bash
+[root@nuc:~/5brg9znbv44nj3mankkscfvvlnn1ahh9-source-patched]# git
+The program 'git' is not in your PATH. It is provided by several packages.
+You can make it available in an ephemeral shell by typing one of the following:
+  nix-shell -p git
+  nix-shell -p git-doc
+  nix-shell -p gitMinimal
+  nix-shell -p gitSVN
+```
+
+Yep, makes sense. But, let's not move on yet. I'm stumped by this nix bazel build cache.
+
+Okay, this is likely a Nix cache issue and NOT a bazel cache.
+
+Okay, well back to the jinja2 error, but what's wrong with this RECORD file? It seems fine.
+
+
+```bash
+[root@nuc:~/output/external/pypi__colorama/colorama-0.4.6.dist-info]# file RECORD
+RECORD: CSV ASCII text
+```
+
+```bash
+envoy-deps.tar.gz> ERROR: /tmp/nix-build-envoy-deps.tar.gz.drv-0/pmzjcy6654la9xhjs950a24p4mc9khgk-source-patched/WORKSPACE:29:25: fetching whl_library rule //external:base_pip3_jinja2: Traceback (most recent call last):
+```
+
+Which are these lines
+
+```python
+load("//bazel:dependency_imports.bzl", "envoy_dependency_imports")
+envoy_dependency_imports()
+```
+
+Ah, `base_pip3` refers to this process described in `tools/README.md` where `base_`
+is a prefix that matches a directory under tools, so `base_pip3` refers to the
+tools in `tools/base/`.
