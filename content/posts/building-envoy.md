@@ -1188,3 +1188,66 @@ envoy-deps.tar.gz>  - @fuzzing_pip3
 envoy-deps.tar.gz> This could either mean you have to add the '@fuzzing_pip3' repository with a statement like `http_archive` in your WORKSPACE file (note that transitive dependencies are not added automatically), or move an existing definition earlier in your WORKSPACE file.
 ```
 
+Not making much progress just trying things. What does `buildBazelPackage` actually run?
+Let's try running it manually.
+
+```bash
+[root@nuc:~/1qgg9ld2jsv22zqcyk5sh6mw51p4n80n-source-patched]# bazel fetch //source/exe:envoy-static --loading_phase_threads=1 --extra_toolchains=//bazel/nix:rust_nix_aarch64,//bazel/nix:rust_nix_x86_64
+ERROR: --extra_toolchains=//bazel/nix:rust_nix_aarch64,//bazel/nix:rust_nix_x86_64 :: Unrecognized option: --extra_toolchains=//bazel/nix:rust_nix_aarch64,//bazel/nix:rust_nix_x86_64
+```
+
+If you specific Bazel targets, which we do, `bazelTargets = [ "//source/exe:envoy-static" ];`,
+this the bazel command that is run:
+
+```nix
+lib.optionalString (targets != [ ]) ''
+    # See footnote called [USER and BAZEL_USE_CPP_ONLY_TOOLCHAIN variables]
+    BAZEL_USE_CPP_ONLY_TOOLCHAIN=1 \
+    USER=homeless-shelter \
+    bazel \
+    --batch \
+    --output_base="$bazelOut" \
+    --output_user_root="$bazelUserRoot" \
+    ${cmd} \
+    --curses=no \
+    "''${copts[@]}" \
+    "''${host_copts[@]}" \
+    "''${linkopts[@]}" \
+    "''${host_linkopts[@]}" \
+    $bazelFlags \
+    ${lib.strings.concatStringsSep " " additionalFlags} \
+    ${lib.strings.concatStringsSep " " targets} \
+    ${
+        lib.optionalString (targetRunFlags != [ ]) " -- " + lib.strings.concatStringsSep " " targetRunFlags
+    }
+```
+
+```bash
+export bazelOut="$NIX_BUILD_TOP/output"
+export bazelUserRoot="$NIX_BUILD_TOP/tmp"
+```
+
+And during the deps phase's build phase, it sets up the shell
+
+https://github.com/mccurdyc/nixpkgs/blob/d6fe08ff3a14be3db7b3dc4fc2802b63c1d942a6/pkgs/build-support/build-bazel-package/default.nix#L298-L315
+
+```nix
+# Don’t add Bazel --copt and --linkopt from NIX_CFLAGS_COMPILE /
+# NIX_LDFLAGS. This is necessary when using a custom toolchain which
+# Bazel wants all headers / libraries to come from, like when using
+# CROSSTOOL. Weirdly, we can still get the flags through the wrapped
+# compiler.
+dontAddBazelOpts ? false,
+```
+
+Hm, `--extra_toolchains` is not value in bazel 6.5.0
+
+```bash
+bazel fetch --loading_phase_threads=1 --extra_toolchains="//bazel/nix:rust_nix_aarch64,//bazel/nix:rust_nix_x86_64" //source/exec:envoy-static
+ERROR: --extra_toolchains=//bazel/nix:rust_nix_aarch64,//bazel/nix:rust_nix_x86_64 :: Unrecognized option: --extra_toolchains=//bazel/nix:rust_nix_aarch64,//bazel/nix:rust_nix_x86_64
+
+[root@nuc:~/1qgg9ld2jsv22zqcyk5sh6mw51p4n80n-source-patched]# bazel help fetch | grep 'toolchains'
+# (empty)
+```
+
+I see it on the docs page https://bazel.build/reference/command-line-reference#fetch
