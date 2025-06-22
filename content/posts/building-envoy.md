@@ -1312,3 +1312,72 @@ envoy_dependency_imports()
 Ah, `base_pip3` refers to this process described in `tools/README.md` where `base_`
 is a prefix that matches a directory under tools, so `base_pip3` refers to the
 tools in `tools/base/`.
+
+```bash
+[root@nuc:~/output/external]# find -name '*colorama*'
+./pypi__colorama
+./pypi__colorama/colorama-0.4.6.dist-info
+./pypi__colorama/colorama
+./@pypi__colorama.marker
+./v8/third_party/colorama
+./base_pip3/colorama
+./pypi__pip/pip/_vendor/colorama
+```
+
+I just don't get it.
+
+```bash
+epo_utils.bzl", line 112, column 43, in _execute_prep
+envoy-deps.tar.gz>              repo_utils.watch(mrctx, mrctx.path(src))
+```
+
+trying to change this from `watch` to `path`
+
+No help.
+
+```bash
+/tmp/nix-build-envoy-deps.tar.gz.drv-1/output/external/base_pip3/jinja2/BUILD.bazel:5:12: @base_pip3//jinja2:pkg
+depends on
+@base_pip3_jinja2//:pkg
+in repository @base_pip3_jinja2 which failed to fetch
+```
+
+I get that there's some weird like bazel build file generation happening for each python project. Maybe one of
+these `genrules`?
+
+This looks relevant. This looks like it MAY be adding `_jinja` to some base directory like `base_jinja` or something.
+
+```python
+# tools/base/envoy_python.bzl
+if not template_name:
+    template_name = "$$(basename $(location %s))" % template
+
+name_data = "%s_data" % name
+name_tpl = "%s_jinja" % name
+name_template_bin = ":%s_generate_content" % name
+```
+
+At this point, this has become a meditative experience rather than trying to get somewhere or do something. This is like
+reading David Foster Wallace's _Infinite Jest_ where you stick with it through the slower parts for the ultimate reward
+of finishing it. And coming away moved. This is "experience".
+
+```bash
+[root@nuc:~/p1dlfh59m5p1lf1bris57zrhh38d78v8-source-patched]# python --version
+Python 3.12.10
+```
+
+But colorama only lists Python 3.10.
+
+
+```bash
+cp -r $bazelOut/external/pypi__colorama/colorama-0.4.6.dist-info $bazelOut/external/pypi__colorama/colorama-0.4.6-py2.py3-none-any.whl.dist-info
+cp -r ../.cache/bazel/_bazel_nix/e1cfe00d3d990b871fb4094d4a77b9a3/external/pypi__colorama/{colorama-0.4.6.dist-info/,colorama-0.4.6-py2.py3-none-any.whl.dist-info}
+```
+
+So this actually worked, but another jinja2 error
+
+
+```bash
+ERROR: /tmp/nix-build-envoy-deps.tar.gz.drv-3/.cache/bazel/_bazel_nix/e1cfe00d3d990b871fb4094d4a77b9a3/external/base_pip3_jinja2/BUILD.bazel:5:20: @base_pip3_jinja2//:pkg: no such attribute 'pyi_srcs' in 'py_library' rule
+ERROR: /tmp/nix-build-envoy-deps.tar.gz.drv-3/.cache/bazel/_bazel_nix/e1cfe00d3d990b871fb4094d4a77b9a3/external/base_pip3_jinja2/BUILD.bazel:5:20: @base_pip3_jinja2//:pkg: no such attribute 'experimental_venvs_site_packages' in 'py_library' rule
+```
