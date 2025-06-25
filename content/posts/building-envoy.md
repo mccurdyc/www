@@ -1381,3 +1381,19 @@ So this actually worked, but another jinja2 error
 ERROR: /tmp/nix-build-envoy-deps.tar.gz.drv-3/.cache/bazel/_bazel_nix/e1cfe00d3d990b871fb4094d4a77b9a3/external/base_pip3_jinja2/BUILD.bazel:5:20: @base_pip3_jinja2//:pkg: no such attribute 'pyi_srcs' in 'py_library' rule
 ERROR: /tmp/nix-build-envoy-deps.tar.gz.drv-3/.cache/bazel/_bazel_nix/e1cfe00d3d990b871fb4094d4a77b9a3/external/base_pip3_jinja2/BUILD.bazel:5:20: @base_pip3_jinja2//:pkg: no such attribute 'experimental_venvs_site_packages' in 'py_library' rule
 ```
+
+According to AI
+
+> Make sure you're using a recent version of Bazel (8.x or later), as support for pyi_srcs was added in newer releases.
+
+I'm going to go read more docs in the Envoy repo.
+
+I've read these docs before - https://github.com/envoyproxy/envoy/tree/main/tools
+
+but maybe we try running jinja2 by itself, directly in the Nix sandbox.
+
+# Why am I doing this again?
+
+After talking with a friend today, I realized that I should approach this from
+the original angle of fixing WASM rather than trying to use this particular example
+as my learning opportunity.
