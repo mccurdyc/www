@@ -1397,3 +1397,22 @@ but maybe we try running jinja2 by itself, directly in the Nix sandbox.
 After talking with a friend today, I realized that I should approach this from
 the original angle of fixing WASM rather than trying to use this particular example
 as my learning opportunity.
+
+# Another Fresh Start; updating a non-envoy-repo flake
+
+Now, instead of up
+
+Found these docs super helpful.
+
+- https://github.com/envoyproxy/envoy/tree/main/bazel#disabling-optional-features
+- https://github.com/envoyproxy/envoy/tree/main/bazel#enabling-and-disabling-extensions
+
+But this is the most important bit for building in Nix
+
+https://github.com/envoyproxy/envoy/tree/main/bazel#customize-extension-build-config
+
+```bash
+ERROR: /build/source-patched/source/exe/BUILD:26:16: While resolving toolchains for target //source/exe:envoy-stati
+c: invalid registered toolchain '//bazel/nix:rust_nix_aarch64': no such package 'bazel/nix': BUILD file not found in any of 
+the following directories. Add a BUILD file to a directory to mark it as a package.
+```
