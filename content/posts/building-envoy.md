@@ -1416,3 +1416,47 @@ ERROR: /build/source-patched/source/exe/BUILD:26:16: While resolving toolchains 
 c: invalid registered toolchain '//bazel/nix:rust_nix_aarch64': no such package 'bazel/nix': BUILD file not found in any of 
 the following directories. Add a BUILD file to a directory to mark it as a package.
 ```
+
+The above was fixed by fetching for the proper Nix `system`.
+
+```bash
+       > ERROR: Error computing the main repository mapping: at /build/source-patched-patched/bazel/api_repositories.bzl:1:6: Every .bzl file must have a corresponding package, but '@envoy_api//bazel:repositories.bzl' does not have one. Please create a BUILD file in the same or any parent directory. Note that this BUILD file does not need to do anything except exist.
+```
+
+And if we look at how upstream Envoy handles adding a BUILD file to the wasmtime repo,
+
+```python
+# bazel/repositories.bzl
+external_http_archive(
+    name = "com_github_wasmtime",
+    build_file = "@proxy_wasm_cpp_host//:bazel/external/wasmtime.BUILD",
+)
+
+native.bind(
+    name = "wasmtime",
+    actual = "@com_github_wasmtime//:wasmtime_lib",
+)
+```
+
+So what is or where is `proxy_wasm_cpp_host`?
+
+Oh, it's defined in `bazel/repository_locations`. It's this https://github.com/proxy-wasm/proxy-wasm-cpp-host.
+
+So we just need to repeat the same process for fetching this repo.
+
+It honestly feels like for the first time in this project, I'm making forward progress.
+
+```bash
+nix build --print-build-logs
+...
+       > ERROR: Error computing the main repository mapping: at /build/source-patched-patched/bazel/api_repositories.bzl:1:6: Every .bzl file must have a corresponding package, but '@envoy_api//bazel:repositories.bzl' does not have one. Please create a BUILD file in the same or any parent directory. Note that this BUILD file does not need to do anything except exist.
+```
+
+This error message wasn't helpful. `envoy_api` refers to the `api` directory. There's a BUILD
+file there. And because there are references to `bazel/api_repositories.bzl`, I also
+checked to confirm that `api/bazel` also had a BUILD file; and it does.
+
+
+```bash
+nix build --debug --verbose --print-build-logs
+```
