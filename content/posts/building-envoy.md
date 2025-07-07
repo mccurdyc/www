@@ -1458,5 +1458,93 @@ checked to confirm that `api/bazel` also had a BUILD file; and it does.
 
 
 ```bash
-nix build --debug --verbose --print-build-logs
+nix build --debug --verbose --print-build-logs >out 2>&1
 ```
+
+Hm okay nothing really any more helpful. Let's use a `breakpointHook` to get into the build VM and see if we can access
+`/build/source-patched-patched`. This `patched-patched` seems like maybe patching the patch is causing issues?
+
+Also, just looking at `/nix/store/cm3561h2myqzc65zydp3zgi29g3m1qga-source-patched-patched`
+
+I finally found the issue after getting the breakpointHook to break by putting `false` at the end of `postPatch`.
+
+```bash
+source-patched-patched> build for source-patched-patched failed in patchPhase with exit code 1
+source-patched-patched> To attach, run the following command:
+source-patched-patched>     sudo /nix/store/y528s2cvrah7sgig54i97gnbq3nppikp-attach/bin/attach 8561621
+```
+
+And this made it clearer that it failed in `postPatch` and this narrowed things down
+a lot. Then I just opened with `WORKSPACE` file since that's what I was patching.
+
+Then I was just curious what the nix-fetched repos looked like and in the build failure
+output, I knew it was likely related to a path that I was referencing in my patch
+not including a `BUILD` file. And BAM `com_github_wasmtime`.
+
+What does nixpkgs/envoy do for this? I vaguelly remember a patch.
+
+```bash
+source-patched-patched> patching file WORKSPACE                                                                       
+source-patched-patched> applying patch /nix/store/8gyj3hxwlrvhprprfj8d38ikbii3nnwy-0001-proxy_wasm_cpp_host_from_nix.patch                                                                                                                  
+source-patched-patched> patching file WORKSPACE                                                                       
+source-patched-patched> Running phase: installPhase                                                                   
+envoy> Running phase: unpackPhase                                                                                     
+envoy> unpacking source archive /nix/store/hdr641fjyjz7ghqp2qigqccnljjd3hjh-source-patched-patched                    
+envoy> source root is source-patched-patched                                                                          
+envoy> Running phase: patchPhase                                                                                      
+envoy> ln: failed to create symbolic link 'bazel/nix/ruststd/rpb5p5adniq2p1mc43smvxpckvh9v6ig-rust-lib-src': Permission denied                                                                                                              
+```
+
+Okay fails to symlink a rust stdlib thing.
+
+```bash
+bash-5.2# pwd
+/build/source-patched
+```
+
+```bash
+bash-5.2# echo $out
+/nix/store/s0kx763hlf24g4nfkjfhjmf4j09i6w7f-source-patched-patched
+```
+
+Oh this explains the `source-patched` versus `source-patched-patched`
+
+So it's failing to apply the old patches? or failing to apply them again?
+
+# Yet another approach, editing directly in nixpkgs instead of `overrideAttrs`
+
+```bash
+nix-build -E 'with import <nixpkgs> {}; callPackage ./package.nix {wasmRuntime="wasmtime";}'
+```
+
+```bash
+bash-5.2# ls /build/output/external/com_github_wasmtime/
+.gitattributes          CODE_OF_CONDUCT.md      README.md               cranelift/              pulley/
+.github/                CONTRIBUTING.md         RELEASES.md             crates/                 scripts/
+.gitignore              Cargo.lock              SECURITY.md             deny.toml               src/
+.gitmodules             Cargo.toml              benches/                docs/                   supply-chain/
+ADOPTERS.md             LICENSE                 build.rs                examples/               tests/
+CODEOWNERS              ORG_CODE_OF_CONDUCT.md  ci/                     fuzz/                   winch/
+```
+
+Why is my patch not applying? Well and I think I should be using this instead from upstream envoy
+
+```python
+def _com_github_wasmtime():
+    external_http_archive(
+        name = "com_github_wasmtime",
+        build_file = "@proxy_wasm_cpp_host//:bazel/external/wasmtime.BUILD",
+    )
+
+    native.bind(
+        name = "wasmtime",
+        actual = "@com_github_wasmtime//:wasmtime_lib",
+    )
+```
+
+```txt
+ERROR: /build/output/external/com_github_wasmtime/BUILD.bazel:63:20: errors encountered resolving toolchains for @com_github_wasmtime//:rust_c_api
+```
+
+Making solid forward momentum now!
+
