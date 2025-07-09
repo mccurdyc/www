@@ -1542,9 +1542,135 @@ def _com_github_wasmtime():
     )
 ```
 
+Ah, okay using `new_local_repository` ensures effectively the same thing as my patch gets applied
+
+```python
+bash-5.2# cat WORKSPACE
+# DO NOT EDIT: automatically generated WORKSPACE file for new_local_repository rule
+workspace(name = "com_github_wasmtime")
+```
+
 ```txt
 ERROR: /build/output/external/com_github_wasmtime/BUILD.bazel:63:20: errors encountered resolving toolchains for @com_github_wasmtime//:rust_c_api
 ```
 
 Making solid forward momentum now!
 
+```bash
+ERROR: /build/source-patched/bazel/nix/BUILD.bazel:12:19: in rust_std attribute of rust_toolchain rule //bazel/ni
+x:rust_nix_x86_64_impl: source file '//bazel/nix:ruststd' is misplaced here (expected no files)                 
+ERROR: /build/source-patched/bazel/nix/BUILD.bazel:12:19: Analysis of target '//bazel/nix:rust_nix_x86_64_impl' failed
+```
+
+It appears to be related to the `build_nix.BUILD.bazel` file in nixpkgs/envoy.
+
+```python
+    rust_toolchain(
+        name = "rust_nix_" + k + "_impl",
+        ...
+        rust_std = ":ruststd",
+        ...
+    )
+```
+
+https://bazelbuild.github.io/rules_rust/rust_toolchains.html#rust_toolchain
+
+Nothing really stands out in the referenced BUILD.bzl`
+
+```python
+# $bazelOut/external/proxy_wasm_cpp_host/bazel/external/wasmtime.BUILD
+bash-5.2# cat external/wasmtime.BUILD                                                                            
+load("@rules_cc//cc:defs.bzl", "cc_library")                                                                     
+load("@rules_rust//rust:defs.bzl", "rust_static_library")
+...
+```
+
+I mean MAYBE this reference to `rules_rust`. But let's not go down this path yet
+as it seems to be related to our `bazel/nix` stuff.
+
+Okay, what does `:ruststd` refer to? Well, we know that this is a label or reference to the current directory.
+
+```bash
+bash-5.2# ls -al ruststd
+lrwxrwxrwx 1 30001 30000 56 Jul  7 00:39 ruststd -> /nix/store/rpb5p5adniq2p1mc43smvxpckvh9v6ig-rust-lib-src
+```
+
+And this nix store path is definitely a thing
+
+```bash
+bash-5.2# ls /nix/store/rpb5p5adniq2p1mc43smvxpckvh9v6ig-rust-lib-src/
+Cargo.lock  backtrace  panic_abort    proc_macro         rustc-std-workspace-alloc  std      test
+Cargo.toml  core       panic_unwind   profiler_builtins  rustc-std-workspace-core   stdarch  unwind
+alloc       coretests  portable-simd  rtstartup          rustc-std-workspace-std    sysroot  windows_targets
+```
+
+```python
+bash-5.2# grep -C 3 'rust_c_api' BUILD.bazel
+        "crates/c-api/include/wasm.h",
+    ],
+    deps = [
+        ":rust_c_api",
+    ],
+)
+
+--
+genrule(
+    name = "prefixed_wasmtime_c_api_lib",
+    srcs = [
+        ":rust_c_api",
+    ],
+    outs = [
+        "prefixed_wasmtime_c_api.a",
+--
+)
+
+rust_static_library(
+    name = "rust_c_api",
+    srcs = glob(["crates/c-api/src/**/*.rs"]),
+    crate_features = ["cranelift"],
+    crate_root = "crates/c-api/src/lib.rs",
+```
+
+Two things that stand out:
+
+1. We define a `rust_static_library` named `rust_c_api` that references the path `crates/c-api/src` and includes all `*.rs` files in the (sub-)directories in te path.
+2. There's a `genrule` that references a local "path"(?) `rust_c_api` as the source which is likely defined by the `rust_static_library` from 1.
+
+My guess would be maybe there's issues creating a static library in nix?
+
+https://bazelbuild.github.io/rules_rust/rust.html#rust_static_library
+
+```bash
+bash-5.2# cd crates/wasmtime/src/
+bash-5.2# ls
+compile     config.rs  engine.rs  profiling_agent     runtime     sync_nostd.rs
+compile.rs  engine     lib.rs     profiling_agent.rs  runtime.rs  sync_std.rs
+```
+
+The referenced `src` location is definitely a place. And there is a `lib.rs` there.
+
+Just making sure I understand what the rust static library actually is
+
+"All code and dependencies are included in the library file, so the final executable does not rely on external dynamic libraries for the Rust code at runtime"
+
+Cool, yep makes sense.
+
+"Add `#![crate_type = "staticlib"]` to your lib.rs or specify `--crate-type=staticlib` when building. And use the resulting .a or .lib file in your target project"
+
+```bash
+bash-5.2# ls crates/c-api/
+CMakeLists.txt  Cargo.toml  LICENSE  README.md  artifact  build.rs  cmake  doxygen.conf.in  include  src
+```
+
+I think the issue may be that there isn't a BUILD file in here?
+
+
+`rust_static_library` ultimately ends up [here](https://github.com/bazelbuild/rules_rust/blob/4d140350e6cb0fb1e96c8c54d5a0dfac204b5bbf/rust/private/rust.bzl#L133) which
+calls `rustc_compile_action`, defined [here](https://github.com/bazelbuild/rules_rust/blob/4d140350e6cb0fb1e96c8c54d5a0dfac204b5bbf/rust/private/rustc.bzl#L1150).
+Oh interesting, `rustc_compile_action` accepts a `toolchain` argument, which comes
+from `rust_static_library` [here](https://github.com/bazelbuild/rules_rust/blob/4d140350e6cb0fb1e96c8c54d5a0dfac204b5bbf/rust/private/rust.bzl#L146).
+Finally, `find_toolchain is defined [here](https://github.com/bazelbuild/rules_rust/blob/4d140350e6cb0fb1e96c8c54d5a0dfac204b5bbf/rust/private/utils.bzl#L36-L45)
+and appears to find the FIRST toolchain that's configured. And it's looking for a `//rust:toolchain_type`
+label.
+
+Wait, what is [this](https://github.com/bazelbuild/rules_rust/tree/main/nix)?!
