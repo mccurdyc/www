@@ -1816,16 +1816,57 @@ valid bazel that appears to cause issues during the `buildPhase` of building nix
 
 https://github.com/proxy-wasm/proxy-wasm-cpp-host/blob/c4d7bb0fda912e24c64daf2aa749ec54cec99412/bazel/repositories.bzl#L248-L255
 
-```mermaid
-graph Dep;
-    A-->B;
-    B--A;
-```
-
 ```txt
 nixpkgs/envoy
     ->com_github_wasmtime(nix)
-        ->proxy_wasm_cpp_host(nix)
-            ->wasmtime(rust crate)
-            ->wasmtime(bazel)
+        -> uses proxy_wasm_cpp_host's BUILD file bazel/external/wasmtime.BUILD
+            - https://github.com/proxy-wasm/proxy-wasm-cpp-host/blob/main/bazel/external/wasmtime.BUILD
+    ->proxy_wasm_cpp_host(nix)
+        ->wasmtime(bazel)
+            -> maybe(http_archive(...)) # GitHub URL
+        ->wasmtime(rust crate)
 ```
+
+So we'd need to patch `proxy_wasm_cpp_host` to ALSO not try to fetch in the `http_archive`.
+
+Let's understand `proxy_wasm_cpp_host` more:
+
+    - We could patch the `WORKSPACE` https://github.com/proxy-wasm/proxy-wasm-cpp-host/blob/main/WORKSPACE
+    - This comes with a mirror or submodule of some part?? of proxy-wasm?
+        - This IS proxy-wasm, probably calls one of the proxy-wasm-sdks and that's how the host repo is smaller
+    - Nothing in BUILD that is tweakable. Looks like this is cpp building / building header files.
+    - proxy-wasm seems to be the library that actually handles all of the configuration and creation of wasm runtimes.
+    - BUILD is mostly defining config option parsing
+    - bazel
+        - dependencies.bzl
+            ```
+            load("@proxy_wasm_cpp_host//bazel/cargo/wasmtime/remote:crates.bzl", wasmtime_crate_repositories = "crate_repositories")
+            ...
+            # Wasmtime dependencies.
+            wasmtime_crate_repositories()
+            ```
+
+            And nixpkgs/envoy overrides these.
+
+            ```
+            load("@rules_rust//crate_universe:repositories.bzl", "crate_universe_dependencies")
+            load("@rules_rust//rust:repositories.bzl", "rust_repositories", "rust_repository_set")
+            ```
+    - bazel/cargo/wasmtime/remote:crates.bzl
+        https://github.com/proxy-wasm/proxy-wasm-cpp-host/blob/c4d7bb0fda912e24c64daf2aa749ec54cec99412/bazel/cargo/wasmtime/Cargo.toml#L16-L17
+
+        ```
+        # Cargo.toml
+        ...
+        [dependencies]
+        env_logger = "0.10"
+        anyhow = "1.0"
+        once_cell = "1.12"
+        log = {version = "0.4.8", default-features = false}
+        tracing = "0.1.26"
+        wasmtime = {version = "24.0.0", default-features = false, features = ['cranelift', 'runtime', 'gc', 'std']}
+        wasmtime-c-api-macros = {git = "https://github.com/bytecodealliance/wasmtime", tag = "v24.0.0"}
+        ```
+
+        Wow, that's FOUR!? references to this repo. And must be by magic that they all point at wasmtime 24.0.0.
+        How do keep these aligned?
