@@ -1664,7 +1664,6 @@ CMakeLists.txt  Cargo.toml  LICENSE  README.md  artifact  build.rs  cmake  doxyg
 
 I think the issue may be that there isn't a BUILD file in here?
 
-
 `rust_static_library` ultimately ends up [here](https://github.com/bazelbuild/rules_rust/blob/4d140350e6cb0fb1e96c8c54d5a0dfac204b5bbf/rust/private/rust.bzl#L133) which
 calls `rustc_compile_action`, defined [here](https://github.com/bazelbuild/rules_rust/blob/4d140350e6cb0fb1e96c8c54d5a0dfac204b5bbf/rust/private/rustc.bzl#L1150).
 Oh interesting, `rustc_compile_action` accepts a `toolchain` argument, which comes
@@ -1674,3 +1673,159 @@ and appears to find the FIRST toolchain that's configured. And it's looking for 
 label.
 
 Wait, what is [this](https://github.com/bazelbuild/rules_rust/tree/main/nix)?!
+
+Added `--show-trace` to the `nix-build` command and magically there is a way more
+clear error.
+
+```bash
+> ERROR: /build/output/external/proxy_wasm_cpp_host/bazel/cargo/wasmtime/remote/BUILD.bazel:70:6: @proxy_wasm_cpp_host//bazel/cargo/wasmtime/remote:wasmtime-c-api-macros depends on @cu__wasmtime-c-api-macros-24.0.0//:wasmtime_c_api_macros in repository @cu__wasmtime-c-api-macros-24.0.0 which failed to fetch. no such package '@cu__wasmtime-c-api-macros-24.0.0//': error running 'git fetch origin refs/heads/*:refs/remotes/origin/* refs/tags/*:refs/tags/*' while working with @cu__wasmtime-c-api-macros-24.0.0:
+> fatal: unable to access 'https://github.com/bytecodealliance/wasmtime/': Could not resolve host: github.com
+```
+
+```python
+alias(
+    name = "wasmtime-c-api-macros",
+    actual = "@cu__wasmtime-c-api-macros-24.0.0//:wasmtime_c_api_macros",
+    tags = ["manual"],
+)
+
+Something else in the Bazel dependencies relying on the wasmtime repo.
+
+(Listening to King Gizzard and The Lizard Wizard: Butterfly 3000; sitting on the porch
+ on a 70-degree F evening.)
+
+I wonder if it's "alias"
+
+```python
+""" bazel/repositories.bzl
+def _com_github_wasmtime():
+external_http_archive(
+    name = "com_github_wasmtime",
+    build_file = "@proxy_wasm_cpp_host//:bazel/external/wasmtime.BUILD",
+)
+
+native.bind(
+    name = "wasmtime",
+    actual = "@com_github_wasmtime//:wasmtime_lib",
+)
+```
+
+
+```bash
+INFO: Repository cu__wasmtime-c-api-macros-24.0.0 instantiated at:                                                    
+  /build/source-patched/WORKSPACE:35:25: in <toplevel>                                                                
+  /build/source-patched/bazel/repositories_extra.bzl:15:23: in envoy_dependencies_extra                               
+  /build/output/external/proxy_wasm_cpp_host/bazel/cargo/wasmtime/remote/crates.bzl:31:43: in crate_repositories      
+  /build/output/external/proxy_wasm_cpp_host/bazel/cargo/wasmtime/remote/defs.bzl:1289:10: in crate_repositories
+```
+
+I think this is telling us what we are interested in:
+
+1. We see errors related to cu__wasmtime-c-api-macros....
+2. WORKSPACE:35 in the patched code which has
+
+```python
+load("//bazel:repositories_extra.bzl", "envoy_dependencies_extra")
+envoy_dependencies_extra()
+```
+
+3. envoy_dependencies_extra
+4. Something about crate_repositories() so possibly another place that would be fetching from github
+
+Then we see
+
+```python
+# bazel/dependency_imports()
+crates_repository(
+    name = "dynamic_modules_rust_sdk_crate_index",
+    cargo_lockfile = "@envoy//source/extensions/dynamic_modules/sdk/rust:Cargo.lock",
+    lockfile = Label("@envoy//source/extensions/dynamic_modules/sdk/rust:Cargo.Bazel.lock"),
+    manifests = ["@envoy//source/extensions/dynamic_modules/sdk/rust:Cargo.toml"],
+)
+```
+
+It flops between these errors.
+
+The first related to com_github_wasmtime
+
+```python
+rust_static_library(
+    name = "rust_c_api",
+
+...
+    deps = [
+        "@proxy_wasm_cpp_host//bazel/cargo/wasmtime/remote:anyhow",
+        "@proxy_wasm_cpp_host//bazel/cargo/wasmtime/remote:env_logger",
+        "@proxy_wasm_cpp_host//bazel/cargo/wasmtime/remote:once_cell",
+        # buildifier: leave-alone
+        "@proxy_wasm_cpp_host//bazel/cargo/wasmtime/remote:wasmtime",
+    ],
+```
+
+Ah! These are the crates / packages listed in the failed build
+
+```
+INFO: Repository cu__anyhow-1.0.86 instantiated at:
+...
+INFO: Repository cu__wasmtime-24.0.0 instantiated at:
+...
+INFO: Repository cu__once_cell-1.19.0 instantiated at:
+...
+INFO: Repository cu__env_logger-0.10.2 instantiated at:
+```
+
+Okay I think the build succeeded installing these, but failed on the ... where did it fail?
+
+```
+# /build/output/external/proxy_wasm_cpp_host/bazel/cargo/wasmtime/remote/defs.bzl
+_NORMAL_DEPENDENCIES = {
+    "bazel/cargo/wasmtime": {
+        _COMMON_CONDITION: {
+            "anyhow": Label("@cu__anyhow-1.0.86//:anyhow"),
+            "env_logger": Label("@cu__env_logger-0.10.2//:env_logger"),
+            "log": Label("@cu__log-0.4.22//:log"),
+            "once_cell": Label("@cu__once_cell-1.19.0//:once_cell"),
+            "tracing": Label("@cu__tracing-0.1.40//:tracing"),
+            "wasmtime": Label("@cu__wasmtime-24.0.0//:wasmtime"),
+        },
+    },
+}
+```
+
+So it looks like the issues are related to wasmtime-c-api TRIES to fetch com_github_wasmtime again
+and fails
+
+```bash
+$ nix-build --show-trace ...
+no such package '@cu__wasmtime-c-api-macros-24.0.0//': error running 'git fetch origin refs/heads/*:refs/remotes/origin/* refs/tags/*:refs/tags/*' while working with @cu__wasmtime-c-api-macros-24.0.0:
+fatal: unable to access 'https://github.com/bytecodealliance/wasmtime/': Could not resolve host: github.com
+```
+
+```python
+# bazel/repository_extras.bzl
+load("@proxy_wasm_cpp_host//bazel/cargo/wasmtime/remote:crates.bzl", "crate_repositories")
+```
+
+Do I need to patch `com_github_wasmtime` in nix on `fetchFromGitHub`? Because it fetches
+valid bazel that appears to cause issues during the `buildPhase` of building nixpkgs/envoy
+
+```
+#
+/bazel/cargo/wasmtime/remote/BUILD.bazel
+```
+
+https://github.com/proxy-wasm/proxy-wasm-cpp-host/blob/c4d7bb0fda912e24c64daf2aa749ec54cec99412/bazel/repositories.bzl#L248-L255
+
+```mermaid
+graph Dep;
+    A-->B;
+    B--A;
+```
+
+```txt
+nixpkgs/envoy
+    ->com_github_wasmtime(nix)
+        ->proxy_wasm_cpp_host(nix)
+            ->wasmtime(rust crate)
+            ->wasmtime(bazel)
+```
