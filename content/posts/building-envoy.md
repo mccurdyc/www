@@ -1906,8 +1906,164 @@ For tomorrow:
     - https://bazel.googlesource.com/bazel/+/master/tools/build_defs/repo/utils.bzl#249
     - https://bazel.build/versions/6.0.0/rules/lib/repo/utils
 
-    Utility function for only adding a repository IF IT'S NOT ALREADY PRESENT. :o
+    Utility function for only adding a repository IF IT'S NOT ALREADY PRESENT. :o There's HOPE!
 
     So we need to make proxy-wasm-cpp-host's `maybe()` THINK it already has the dependencies
-    in the bazel repo cache i.e., /build/.cache/bazel/_bazel_root/cache/repos/v1.
+    in the bazel repo cache i.e., `/build/.cache/bazel/_bazel_root/cache/repos/v1`.
     And we can potentially do this by `cp $/bazelOut/external/proxy_wasm_cpp_host/*`.
+
+    Bazel hashes the repos in the repo cache if a sha256 attribute is defined on the `http_archive`; which
+    in our case it is.
+
+    ```
+    maybe(
+        http_archive,
+        name = "com_github_bytecodealliance_wasmtime",
+        build_file = "@proxy_wasm_cpp_host//bazel/external:wasmtime.BUILD",
+        sha256 = "2ccb49bb3bfa4d86907ad4c80d1147aef6156c7b6e3f7f14ed02a39de9761155",
+        strip_prefix = "wasmtime-24.0.0",
+        url = "https://github.com/bytecodealliance/wasmtime/archive/v24.0.0.tar.gz",
+    )
+    ```
+
+    From AI,
+
+    The Bazel repository cache directory (typically at ~/.cache/bazel/_bazel_$USER/cache/repos/v1/) contains files named by their SHA-256 hash. Each file in this directory is an archive (such as a .zip, .tar.gz, etc.) that Bazel has downloaded as an external dependency via rules like http_archive.
+
+    What's inside:
+    - Each file is a raw downloaded archive (not unpacked).
+    - The filename is the SHA-256 hash of the archive's contents, serving as a unique key.
+    - No subdirectories or metadata files are present—just a flat list of hash-named files
+
+    So we need to tar gzip the com_github_wasmtime and make the filename `2ccb49bb3bfa4d86907ad4c80d1147aef6156c7b6e3f7f14ed02a39de9761155`
+
+    ```
+    tar -czvf 2ccb49bb3bfa4d86907ad4c80d1147aef6156c7b6e3f7f14ed02a39de9761155 $bazelOut/external/com_github_wasmtime
+    ```
+
+    Okay, how can I manually re-run the build in the sandbox VM?
+
+    ```
+    nix-shell -E 'with import <nixpkgs> {}; callPackage ./package.nix {wasmRuntime="wasmtime";}'
+
+    [nix-shell:/home/mccurdyc/src/github.com/mccurdyc/nixpkgs/pkgs/by-name/en/envoy]$ type buildPhase
+    buildPhase is a function
+    ...
+    ```
+
+    ```
+    [nix-shell:/home/mccurdyc/src/github.com/mccurdyc/nixpkgs/pkgs/by-name/en/envoy]$ printenv buildPhase
+    runHook preBuild
+
+    # Bazel sandboxes the execution of the tools it invokes, so even though we are
+    # calling the correct nix wrappers, the values of the environment variables
+    # the wrappers are expecting will not be set. So instead of relying on the
+    # wrappers picking them up, pass them in explicitly via `--copt`, `--linkopt`
+    # and related flags.
+
+    copts=()
+    host_copts=()
+    linkopts=()
+    host_linkopts=()
+    if [ -z "${dontAddBazelOpts:-}" ]; then
+    for flag in $NIX_CFLAGS_COMPILE; do
+        copts+=( "--copt=$flag" )
+        host_copts+=( "--host_copt=$flag" )
+    done
+    for flag in $NIX_CXXSTDLIB_COMPILE; do
+        copts+=( "--copt=$flag" )
+        host_copts+=( "--host_copt=$flag" )
+    done
+    for flag in $NIX_LDFLAGS; do
+        linkopts+=( "--linkopt=-Wl,$flag" )
+        host_linkopts+=( "--host_linkopt=-Wl,$flag" )
+    done
+    fi
+
+
+    # See footnote called [USER and BAZEL_USE_CPP_ONLY_TOOLCHAIN variables]
+    BAZEL_USE_CPP_ONLY_TOOLCHAIN=1 \
+    USER=homeless-shelter \
+    bazel \
+    --batch \
+    --output_base="$bazelOut" \
+    --output_user_root="$bazelUserRoot" \
+    build \
+    --curses=no \
+    "${copts[@]}" \
+    "${host_copts[@]}" \
+    "${linkopts[@]}" \
+    "${host_linkopts[@]}" \
+    $bazelFlags \
+    -c opt \
+    --spawn_strategy=standalone \
+    --noexperimental_strict_action_env \
+    --cxxopt=-Wno-error \
+    --linkopt=-Wl,-z,noexecstack \
+    --config=gcc \
+    --verbose_failures \
+    --extra_toolchains=@local_jdk//:all \
+    --java_runtime_version=local_jdk \
+    --tool_java_runtime_version=local_jdk \
+    --extra_toolchains=//bazel/nix:rust_nix_aarch64,//bazel/nix:rust_nix_x86_64 \
+    --linkopt=-Wl,--unresolved-symbols=ignore-in-object-files \
+    --define=wasm=wasmtime \
+    --jobs \
+    $NIX_BUILD_CORES \
+    //source/exe:envoy-static \
+
+    runHook postBuild
+    ```
+
+    Hmm the `attach` script I'm using to attach to the nix sandbox container is very "minimal" and doesn't include
+    the necessary stdenv to re-run the `buildPhase` script. Specifically, it's missing `runHook`.
+
+    So, now, let's understand how to be able to re-run the `buildPhase` in a more full-featured sandbox container?
+
+    When the `breakpointHook` hits, it prints an `attach` command to run. What is `attach`?
+
+    ```bash
+    sudo /nix/store/y528s2cvrah7sgig54i97gnbq3nppikp-attach/bin/attach
+    #!/nix/store/xy4jjgw87sbgwylm5kn047d9gkbhsr9x-bash-5.2p37/bin/bash
+    export PATH="${PATH:+${PATH}:}/nix/store/1q9lw4r2mbap8rsr8cja46nap6wvrw2p-bash-interactive-5.2p37/bin:/nix/store/87fck6hm17chxjq7badb11mq036zbyv9-coreutils-9.7/bin:/nix/store/mw6bvyrwv9mk36knn65r80zp8clnw9jl-util-linux-minimal-2.41-bin/bin"
+    exec bash /nix/store/d35qy094aq6x42f201irfmjnfwaz8zcl-attach.sh "$@"
+    ```
+
+    Looks like mostly adds my current PATH, bash, coreutils and util-linux-minimal(?) and runs an attach bash script
+
+    And this `attach.sh` looks like it gets the PID of the (now) sleeping nix build process, gets the build directory and the working directory of the nix build, then ultimately enters the namespace
+
+    ```bash
+    # enter the namespace of the failed build
+    # bash needs to be executed with --init-file /build/env-vars to include the bash native
+    #   variables like ones declared via `declare -a`.
+    # If another shell is chosen via `debugShell`, it will only have simple env vars avaialable.
+    exec nsenter --mount --ipc --uts --pid  --net --target "$pid" "$bashInteractive" -c "
+    ...
+    "
+    ```
+
+    Then
+
+    ```bash
+    # in the sandbox container
+    source $stdenv/setup
+    buildPhase
+    no Makefile or custom buildPhase, doing nothing
+    ```
+
+    ```
+    echo "$buildPhase" > /build/source-patched/buildPhase.sh
+    ```
+
+    Then manually remove the `preBuild` and `postBuild` hooks
+
+    ```
+    bash-5.2# tar -czvf 2ccb49bb3bfa4d86907ad4c80d1147aef6156c7b6e3f7f14ed02a39de9761155 $bazelOut/external/com_github_wasmtime
+    bash-5.2# mv 2ccb49bb3bfa4d86907ad4c80d1147aef6156c7b6e3f7f14ed02a39de9761155 /build/tmp/cache/repos/v1/
+    bash-5.2# ./buildPhase.sh
+    ```
+
+    Sweet!! Errors like in the build. Now we can iterate faster.
+
+
