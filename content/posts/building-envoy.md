@@ -1869,4 +1869,45 @@ Let's understand `proxy_wasm_cpp_host` more:
         ```
 
         Wow, that's FOUR!? references to this repo. And must be by magic that they all point at wasmtime 24.0.0.
-        How do keep these aligned?
+        How do keep these aligned? Or is there magic in bazel that know to check
+        the bazel cache first?
+
+        `~/.cache/bazel/_bazel_$USER/cache/repos/v1/)` is a cache shared between all workspaces
+
+        ```
+        bash-5.2# bazel info output_base
+        Extracting Bazel installation...
+        Starting local Bazel server and connecting to it...
+        /build/.cache/bazel/_bazel_root/0f047aa10826cb708d64d431f1593700
+        ```
+
+        ```
+        bash-5.2# pwd
+        /build/.cache/bazel/_bazel_root/cache/repos/v1
+        bash-5.2# ls
+        (empty)
+        ```
+
+        Oh obviously because nix wont fetch any repos! But okay, now we know that
+        bazel would cache wasmtime when installed FOUR times.
+
+For tomorrow:
+- patch proxy_wasm_cpp_host with references to the nix com_github_wasm path.
+- In order to do this, we'll need to confirm whether or not `maybe(http_archive))` supports local repo overrides.
+    Both of these functions are in the common bazel tools repo, so i'm fairly sure they would.
+
+    ```python
+    # https://github.com/proxy-wasm/proxy-wasm-cpp-host/blob/main/bazel/repositories.bzl#L16-L17
+    load("@bazel_tools//tools/build_defs/repo:git.bzl", "git_repository", "new_git_repository")
+    load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
+    load("@bazel_tools//tools/build_defs/repo:utils.bzl", "maybe")
+    ```
+
+    - https://bazel.googlesource.com/bazel/+/master/tools/build_defs/repo/utils.bzl#249
+    - https://bazel.build/versions/6.0.0/rules/lib/repo/utils
+
+    Utility function for only adding a repository IF IT'S NOT ALREADY PRESENT. :o
+
+    So we need to make proxy-wasm-cpp-host's `maybe()` THINK it already has the dependencies
+    in the bazel repo cache i.e., /build/.cache/bazel/_bazel_root/cache/repos/v1.
+    And we can potentially do this by `cp $/bazelOut/external/proxy_wasm_cpp_host/*`.
