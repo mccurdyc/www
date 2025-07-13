@@ -2110,3 +2110,64 @@ I mean I get it. This is how you guarantee builds.
     ```
 
     Oh so is it actually running rust locally to install the deps BEFORE nix build?
+
+From AI:
+ 1 First Phase (fetchAttrs):
+    • Runs in a sandbox with network access
+    • Downloads all dependencies including Rust crates
+    • env.CARGO_BAZEL_REPIN = true triggers cargo-bazel to fetch and pin Rust dependencies
+    • Creates a fixed-output derivation containing all dependencies
+ 2 Second Phase (buildAttrs):
+    • Runs in a sandbox without network access
+    • Uses the pre-downloaded dependencies from the first phase
+    • The dependencies are available in $bazelOut/external/
+
+So instead of trying to pre-fetch all dependencies manually and putting then in the Bazel repository cache, we could
+try fetching them in the `fetchAttrs` phase which is still part of `buildBazelPackage` so should still properly store them in the
+bazel cache.
+
+In other words, we need to fetch transitive dependencies of the proxy-wasm-cpp-host repository during
+the `fetchPhase` also.
+
+I remember there being a shortcoming of the old bazel WORKSPACE mentioned in regards to transitive dependencies
+in the bazel docs and something related to `deps.bzl`.
+
+https://bazel.build/external/overview#workspace-system
+
+"Bazel does not evaluate the WORKSPACE files of any dependencies, so all transitive dependencies must be defined in the WORKSPACE file of the main repo, in addition to direct dependencies.
+This has its own problems: macros cannot load other .bzl files, so these projects have to define their transitive dependencies in this "deps" macro, or work around this issue by having the user call multiple layered "deps" macros."
+
+So it should be using Cargo / Rust's language tooling to fetch proxy-wasm-cpp-host's transitive dependencies as rust crates. These would not be defined
+directly in the Envoy repo.
+
+So does envoy define a `deps` macro to fetch transitive dependencies?
+
+"To work around this, projects have adopted the "deps.bzl" pattern, in which they define a macro which in turn defines multiple repos, and ask users to call this macro in their WORKSPACE files."
+
+Which is in the `bazel_nix.BUILD.bazel` file in nixpkgs/envoy
+
+So during the `patchPhase` (before fetch) a `bazel/nix` directory is created in the envoy repo
+and in this directory is a BUILD.bazel and a rules_rust.patch (which combines
+bazel/nix/rules_rust_extra.patch and bazel/rules_rust.patch)
+
+```python
+# bazel/dependency_imports.bzl
+load("@proxy_wasm_rust_sdk//bazel:dependencies.bzl", "proxy_wasm_rust_sdk_dependencies")
+...
+def envoy_dependency_imports(go_version = GO_VERSION, jq_version = JQ_VERSION, yq_version = YQ_VERSION, buf_version = BUF_VERSION):
+    ...
+    crate_universe_dependencies()
+    crates_repositories()
+    ...
+    proxy_wasm_rust_sdk_dependencies()
+```
+
+The top two `crate_...()` functions are already replaced in the nix build. So I'd bet
+we need to do something identical for proxy-wasm.
+
+And then the question is why is this `proxy_wasm_rust_sdk_dependencies` and where
+are `proxy_wasm_cpp_sdk` and `proxy_wasm_cpp_host` dependencies?
+
+Oh even the cpp-host uses rust crates!!
+
+https://github.com/proxy-wasm/proxy-wasm-cpp-host/blob/main/bazel/cargo/wasmtime/remote/BUILD.bazel
