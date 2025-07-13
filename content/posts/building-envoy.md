@@ -2171,3 +2171,85 @@ are `proxy_wasm_cpp_sdk` and `proxy_wasm_cpp_host` dependencies?
 Oh even the cpp-host uses rust crates!!
 
 https://github.com/proxy-wasm/proxy-wasm-cpp-host/blob/main/bazel/cargo/wasmtime/remote/BUILD.bazel
+
+Can we "just" add `proxy_wasm_rust_sdk_dependencies()` to this list?
+
+```
+# nix postPatch
+    substituteInPlace bazel/dependency_imports.bzl \
+      --replace-fail 'crate_universe_dependencies()' 'crate_universe_dependencies(rust_toolchain_cargo_template="@@//bazel/nix:cargo", rust_toolchain_rustc_template="@@//bazel/nix:rustc")' \
+      --replace-fail 'crates_repository(' 'crates_repository(rust_toolchain_cargo_template="@@//bazel/nix:cargo", rust_toolchain_rustc_template="@@//bazel/nix:rustc",'
+
+# bazelFetch postPatch
+      substituteInPlace bazel/dependency_imports.bzl \
+        --replace-fail 'crate_universe_dependencies(' 'crate_universe_dependencies(bootstrap=True, ' \
+        --replace-fail 'crates_repository(' 'crates_repository(generator="@@cargo_bazel_bootstrap//:cargo-bazel", '
+```
+
+When I look at it in the nix sandbox
+
+```
+crates_repository(
+    rust_toolchain_cargo_template="@@//bazel/nix:cargo",
+    rust_toolchain_rustc_template="@@//bazel/nix:rustc",                                                                                         name = "dynamic_modules_rust_sdk_crate_index",
+...
+)
+```
+
+Where does the `bazelFetch postPatch` apply this patch i.e., where in the nix build
+filesystem?
+
+Is it only accessible in the nix store and these changes don't persist into the buildAttrs derivation?
+
+I think it's in a derivation / VM that we are NOT in.
+
+In the nix build VM
+
+```
+env
+# some decent context
+```
+
+Hmm is this fetchAttrs being used? Am I querying the correct derivation?
+```
+nix derivation show /nix/store/i06c1hdi9qn4ssll147kd5prliz6ikis-envoy-1.34.0.drv | rg -i fetch
+      "bazelFetchFlags": "--define=wasm=wasmtime --extra_toolchains=//bazel/nix:rust_nix_aarch64,//bazel/nix:rust_nix_x86_64 --repo_env=GOPROXY=https://proxy.golang.org,direct --repo_env=GOSUMDB=sum.golang.org",
+```
+
+This is where I got that path
+
+```bash
+nix-build --keep-failed -E 'with import <nixpkgs> {}; callPackage ./package.nix {wasmRuntime="wasmtime";}'
+this derivation will be built:
+  /nix/store/i06c1hdi9qn4ssll147kd5prliz6ikis-envoy-1.34.0.drv
+building '/nix/store/i06c1hdi9qn4ssll147kd5prliz6ikis-envoy-1.34.0.drv'...
+unpacking source archive /nix/store/7bk61pnvqa3jz3ykfrxydfyp9bgn3ly0-source-patched
+```
+
+```bash
+nix-build -vvv --show-trace --keep-failed ... > log 2>&1
+# nothing too interesting
+```
+
+So I don't think it's doing this second patch in the fetchAttrs (or at least I haven't seen proof).
+
+The issue is likely that:   
+
+ 1 The fetchAttrs phase runs first and makes these substitutions                                                 
+ 2 But when the user logs into a failed build container, they're likely looking at the buildAttrs phase          
+ 3 In buildAttrs, the ${postPatch} is called again, but it refers to the top-level postPatch, which doesn't      
+   include these specific substitutions                                                                          
+ 4 So the file gets overwritten/reset by the top-level postPatch
+
+Do the following paths tell us anything?
+
+```
+cp $bazelOut/external/Cargo.Bazel.lock source/extensions/dynamic_modules/sdk/rust/Cargo.Bazel.lock
+```
+
+Actually, it seems like it's going to be much more of a pain to do all of the
+bazel file substitution than it is to just make sure nix puts the file in the bazel repository
+cache. Because I'd have to be making substitutions to files in transitive dependencies
+and I dont think we can guarantee those exist before the `patchPhase` in `fetchAttrs`.
+It's a chicken-and-egg where you want to patch a dependency that's being fetched.
+Am I right? I think so.
