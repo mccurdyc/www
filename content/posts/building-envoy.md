@@ -1829,6 +1829,8 @@ nixpkgs/envoy
 
 So we'd need to patch `proxy_wasm_cpp_host` to ALSO not try to fetch in the `http_archive`.
 
+https://bazel.build/rules/lib/repo/http
+
 Let's understand `proxy_wasm_cpp_host` more:
 
     - We could patch the `WORKSPACE` https://github.com/proxy-wasm/proxy-wasm-cpp-host/blob/main/WORKSPACE
@@ -1881,8 +1883,8 @@ Let's understand `proxy_wasm_cpp_host` more:
         /build/.cache/bazel/_bazel_root/0f047aa10826cb708d64d431f1593700
         ```
 
-        ```
-        bash-5.2# pwd
+        ``` 
+        bash-5.2# bazel info repository_cache
         /build/.cache/bazel/_bazel_root/cache/repos/v1
         bash-5.2# ls
         (empty)
@@ -1890,6 +1892,11 @@ Let's understand `proxy_wasm_cpp_host` more:
 
         Oh obviously because nix wont fetch any repos! But okay, now we know that
         bazel would cache wasmtime when installed FOUR times.
+
+        https://bazel.build/external/overview#workspace-shortcomings
+
+        Bazel does not evaluate the WORKSPACE files of any dependencies, so all transitive dependencies must be defined in the WORKSPACE file of the main repo, in addition to direct dependencies.
+        To work around this, projects have adopted the "deps.bzl" pattern, in which they define a macro which in turn defines multiple repos, and ask users to call this macro in their WORKSPACE files.
 
 For tomorrow:
 - patch proxy_wasm_cpp_host with references to the nix com_github_wasm path.
@@ -1929,6 +1936,8 @@ For tomorrow:
     From AI,
 
     The Bazel repository cache directory (typically at ~/.cache/bazel/_bazel_$USER/cache/repos/v1/) contains files named by their SHA-256 hash. Each file in this directory is an archive (such as a .zip, .tar.gz, etc.) that Bazel has downloaded as an external dependency via rules like http_archive.
+
+    https://sluongng.hashnode.dev/bazel-caching-explained-pt-3-repository-cache
 
     What's inside:
     - Each file is a raw downloaded archive (not unpacked).
@@ -2060,10 +2069,44 @@ For tomorrow:
 
     ```
     bash-5.2# tar -czvf 2ccb49bb3bfa4d86907ad4c80d1147aef6156c7b6e3f7f14ed02a39de9761155 $bazelOut/external/com_github_wasmtime
-    bash-5.2# mv 2ccb49bb3bfa4d86907ad4c80d1147aef6156c7b6e3f7f14ed02a39de9761155 /build/tmp/cache/repos/v1/
+    bash-5.2# mv 2ccb49bb3bfa4d86907ad4c80d1147aef6156c7b6e3f7f14ed02a39de9761155 /build/.cache/bazel/_bazel_root/cache/repos/v1
     bash-5.2# ./buildPhase.sh
+    ...
+    ERROR: /build/output/external/com_github_wasmtime/BUILD.bazel:63:20: errors encountered resolving toolchains for @com_github_wasmtime//:rust_c_api
     ```
 
     Sweet!! Errors like in the build. Now we can iterate faster.
 
+    Is this a DNS "resolving" issue? I am going to try to get more verbose build logs.
 
+    Yeah it definitely seems to be failing `rust_c_api` because it can't fetch it's dependencies:
+
+    ```
+    INFO: Repository cu__anyhow-1.0.86 instantiated at:
+    INFO: Repository cu__wasmtime-24.0.0 instantiated at:
+    INFO: Repository cu__once_cell-1.19.0 instantiated at:
+    INFO: Repository cu__env_logger-0.10.2 instantiated at:
+    ```
+
+For tomorrow, `fetchFromGitHub` these and put them in `$(bazel info repository_cache)`
+
+But this got me thinking, this would be ridiculously painful to do this for all language dependencies.
+
+I mean I get it. This is how you guarantee builds.
+
+
+    ```
+    ...
+    5. Bazel Toolchain Flags                                                                                         
+                                                                                                                    
+    The build forces use of the Nix-provided Rust toolchain:
+
+                                                                                                                    
+    "--extra_toolchains=//bazel/nix:rust_nix_aarch64,//bazel/nix:rust_nix_x86_64"                                    
+                                                                                                                    
+
+    This ensures that during the actual build phase, Bazel uses the pre-downloaded Rust dependencies and the         
+    Nix-provided Rust toolchain rather than trying to fetch anything from the network.
+    ```
+
+    Oh so is it actually running rust locally to install the deps BEFORE nix build?
