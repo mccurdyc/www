@@ -2253,3 +2253,16 @@ cache. Because I'd have to be making substitutions to files in transitive depend
 and I dont think we can guarantee those exist before the `patchPhase` in `fetchAttrs`.
 It's a chicken-and-egg where you want to patch a dependency that's being fetched.
 Am I right? I think so.
+
+`/build/output/external/proxy_wasm_cpp_host/bazel/cargo/wasmtime/remote/defs.bzl` defines
+the list of rust crates we must install.
+
+From AI:
+ 1 Fetch cargo dependencies separately using rustPlatform.fetchCargoTarball                                      
+ 2 Install them during postPatch by copying to bazel/proxy_wasm_cargo/                                           
+ 3 Store them in the fetch phase by copying to $bazelOut/external/proxy_wasm_cpp_host_cargo_deps                 
+ 4 Restore them in the build phase by copying back from the cached location  
+
+Time to get expert help: https://github.com/NixOS/nixpkgs/issues/425065
+
+Here's my draft PR: https://github.com/NixOS/nixpkgs/pull/425071
