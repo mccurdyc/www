@@ -115,3 +115,18 @@ p131 - =="Universities are not the best place to teach people about the realitie
 
 p134 - "the two-state solution has a logical ring to it. It's a very Western idea... [The idea of partition] became a kind of religion to the extent that you do not question it anymore. ... Five minutes on the ground shows you that one state is already there."
 
+p151 - when the kids start to die
+
+p153 - "The only chance for a successful struggle against Zionism in Palestine is the one based on a human and civil rights agenda."
+
+p154 - "It does not really matter what the religious identity is of the people who commit the atrocities or in the name of which religion they purport to speak. Whether they call themselves jihadists, Judaists, or Zionists, they should be treated in the same way."
+
+p171 - "condemned all the people who lived in the West Bank and the Gaza Strip to life imprisonment in the biggest ever human mega-prision witnessed in modern times."
+
+p193 - Noam Chomsky - "Many of the world's problems are so intractable that it's hard to think of ways even to take steps toward mitigating them. The Israel-Palestine conflict is not one of these."
+
+p195 - Hamas observes the ceasefire, as Israel officially recognizes, until some Israeli escalation elicits a Hamas response, which leads to another exercise of 'mowing the lawn,' in Israeli parlance, each episode more fierce and destructive than the last."
+
+It feels like siblings trying to instigate a situation, then back off and say, "I didn't do anything to provoke this!"
+
+p197 - "the November 2005 agreement lasted for a few weeks. In January 2006, a very important event took place: the first full, free election in the Arab world, carefully monitored, recognized to be free and fair. It had one flaw: it came out the wrong way. Hamas won the Parliament, control of the Parliament. The US and Israel didn't want that. You may recall, at that period, the slogan on everyone's lips was 'democracy promotion.' The highest US commitment in the world was democracy promotion. Here was a good test. Democracy: election came out the wrong way; the US instantly decided, along with Israel, to punish the Palestinians for the crime of voting the wrong way"

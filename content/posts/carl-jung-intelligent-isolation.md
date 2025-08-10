@@ -28,7 +28,7 @@ feel "magical". And that's what makes them so much more special to me.
 
 https://m.youtube.com/watch?v=V9eggTXAwu0
 
-There's something unsettling about highly intelligent people that most can't quite put their finger on.
+There's something unsettling about ~highly intelligent~ people that most can't quite put their finger on.
 They seem distant, almost unreachable at times, not cold, but selectively engaged. Not antisocial, but strategically solitary.
 What you're witnessing isn't arrogance or superiority. It's something far more profound and psychologically sophisticated.
 
