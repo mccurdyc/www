@@ -1,19 +1,19 @@
 ---
 title: "Trust"
 subtitle: ""
-description: ""
+description: "From what I recall, it's a story of wealth maintained not by the man who was the face of the family, but instead the lesser known and recognized wife of the man. It embodied the saying, 'behind every great man is an even greater woman'."
 author: "Colton J. McCurdy"
 date: 2025-05-03T10:40:14-04:00
-image: ""
+image: "/images/book-covers/trust/cover.jpg"
 book-tags: ["book", "2025"]
 books: ["Trust"]
 book-authors: ["Hernan Diaz"]
 amazon: ""
-thriftbooks: ""
+thriftbooks: "https://www.thriftbooks.com/w/trust_hernan-diaz/29451546/?resultid=2634e3aa-3d65-42f1-8ed1-bd97b11bfd44#edition=66312325&idiq=56702881"
 draft: false
 ---
 
-This was an easier read. I flew through it. It was still quite enjoyable. But it wasn't "complex".
+This was an easier read. I flew through it (20250427-20250503). It was still quite enjoyable. But it wasn't "complex".
 
 From what I recall, it's a story of wealth maintained not by the man who was the face of the family, but instead the
 lesser known and recognized wife of the man. It embodied the saying, "behind every great man is an even greater woman".
