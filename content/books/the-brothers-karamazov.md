@@ -248,3 +248,27 @@ p410 - "'Part with everything, Dmitry Fyodorovich!' Madame Khokhlakov interrupte
 women especially. Your goal is the mines"
 
 p423 - "his bloody face and bloodstained hands, with a bunch of money in his trembling fingers"
+
+p426 - "What are you looking at the bullet for? ... if you had decided to blow your brains out, would you look at the bullet before you
+loaded the pistol, or not? ... It will go into my brain, so it's interesting to see what it's like"
+
+p467 - "If I were God, I'd forgive all people. ... Everyone in the world is good, every one of them. The world is a good place. We may be
+bad, but the world is a good place."
+
+p485 - "It's me, me, the cursed one, I am guilty! ... it's because of me that he killed him...! I tormented him and drove him to it!"
+
+p512 - "I'm a beast, a man with no more self-restraint than a beast ... But still not a thief! ... Whatever you like, a beast, a scoundrel, but not a thief, no finally a thief, because
+if I were a theif, I'd have appropriated the other half as well and certainly not have brought it back."
+
+p539 - "Mitya was informed that from that moment on he was a prisoner ... merely shrugged. Well, gentlemen, I don't blame you, I'm ready ... I understand
+that you have no other choice. ... Gentlemen, we are all cruel, we are all monsters, we all make people weep ... I want to suffer and be purified
+by suffering! ... let God decide!"
+
+p563 - Chapter 4 Zhuchka - I have this highlighted to indicate a good chapter, but have no notes. "in the end he gave himself up to me like a slave, ... listened
+to me as though I were God"
+
+p568 - "Oh, we're all egoists, Karamazov!"
+
+p585 - Again, I have Chapter 6 Precocity highlighted. "What, don't you believe in God? ... I admit, he is necessary, for the sake of order ...
+if there were no God, he would have to be invented ... America is a base thing, worse than base --- it's foolish. Why go to America,
+if one can also be of much use to mankind here? Precisely now."
