@@ -272,3 +272,94 @@ p568 - "Oh, we're all egoists, Karamazov!"
 p585 - Again, I have Chapter 6 Precocity highlighted. "What, don't you believe in God? ... I admit, he is necessary, for the sake of order ...
 if there were no God, he would have to be invented ... America is a base thing, worse than base --- it's foolish. Why go to America,
 if one can also be of much use to mankind here? Precisely now."
+
+==p590== - "Oh Karamazov, I'm profoundly unhappy. Sometimes I imagine God know what, that everyone is laughing
+at me, the whole world, and then I ... then I'm quite ready to destroy the whole order of things... people are terribly
+afraid of being ridiculous, and are miserable because of it. I'm only surprised that you've begun to feel it so early...
+Nowadays even children almost are ready beginning to suffer from it. ... So do not be like everyone else; even
+if you are the only one left who is not like that, still do not be like that."
+
+p615 - "I will love you terribly for allowing me not to love you so soon. ... I wanted to tell you a wish of mine.
+I want someone to torment me, to marry me and then torment me, deceive me, leave me and go away. I don't want to be happy! You've
+come to love disorder? ... It's your rich life, Alyosha said softly. Why, is it better to be poor? Yes, it is."
+
+p615 - "why live in reality, it's better to dream. One can dream up the gayest things, but to live is boring."
+
+p616 - "I just don't want to do good, I want to do evil, and illness has nothing to do with it. ... They all
+say they hate what's bad, but secretly they all love it. ... they all love it that he killed his father. ... They love it,
+they all love it! Everyone says it's terrible, but secretly they all love it terrible... sometimes I have a dream about devils. ...
+is it possible for two different people to have one and the same dream? ... Sometimes I imagine that it was I who crucified him."
+
+p626 - "Tomorrow will be a terrible, great day for you: divine judgment will be passed on you ... I've been waiting
+till this last time to pour out my soul to you. ... What do I care if I spend twenty years pounding out iron ore in the mines, I'm not afraid
+of that at all, but I'm afraid of something else now: that this risen man not depart from me! Even there, in the mines ...
+it's possible to live, and love, and suffer! ... everyone is guilty for everyone else. ... life is full, there is life underground, too!"
+
+p627 - "I am! In a thousand torments --- I am; writhing under torture --- but I am. Locked up in a tower, but still I exist,
+I see the sun, and if I don't see the sun, still I know it is. And the whole of life is there --- in knowing that the sun is."
+
+p632 - "After the trial you will decide yourself; you'll find a new man in yourself, and he will decide."
+
+p662 - "You used to be brave once, sir, you used to say, 'Everything is permitted,' sire, and now you've go so frightened!"
+
+p675 - "what good is faith by force?"
+
+p679 - There is definitely a "devil" / evil, but is there a God? "He was trying with all his might not to believe in his delirium and not to fall into complete insanity. ... they diagnose
+beautifully, ... but they can't cure you ... even if you die, he said, at least you'll have thorough knowledge of what
+disease you died of!"
+
+==p681== - What is life without suffering? "without negation there will be no criticism, and what sort of journal has no 'criticism section'? Without
+criticism, there would be nothing but 'Hosannah'. But 'Hosannah' alone is not enough for life ... If everything on earth were
+sensible, nothing would happen. Without you there would be no events, and there must be events. ... People take this whole comedy
+for something serious ... for suffering is life. Without suffering, what pleasure would there be in it --- everything would turn
+into an endless prayer service: holy, but a bit dull. ... Is there a God, or not? ... I just don't know"
+
+p682 - "a consistent development of me _I_"
+
+p693 - "Why do I suffer then? Out of habit. ... So let us get out of the habit, and we shall be gods!"
+
+You can feel the inner battle of Dostoevsky questioning his belief in God. So sure on either side.
+
+p740 - there's a strong theme of challenging societal norms or "inheritted values" "I hope that his youthful
+sunnymindedness and yearning for popular foundations will not turn later, as so often happens, into dark mysticism on the moral side"
+
+p741 - "our dear mother Russia, we can smell her, we can hear her. Oh, we are ingenuous, we are an amazing mixture of good and evil,
+we are lovers of enlightenment and Schiller, and at the same time we rage in taverns and tear out the beards of little drunkards, our tavern mates. Oh, we can
+also be good and beautiful, but only when we are feeling good an beautiful ourselves. ... We like very much to get things, but terribly
+dislike having to pay for them, and so it is with everything. Oh, give us, give us all possible good things in life (precisely all, we won't settle for less) 
+and, more particularly, do not obstruct our character in any way, and then we, too, will prove that we can be good and beautiful."
+
+==p742== - "It is usually so in life that when there are two opposites one must look for truth in the middle"
+
+p760 - "we will raise a cup and toast the new happiness of the woman we adore, and then --- right there, at her feet, we will
+blow our brains out before her, and punish our life!"
+
+p761 - "why did he not shoot himself right then ... It was precisely this passionate thirst for love and the hope of satisfying it right then and there that held him back."
+
+p763 - "And now he stands before his judges, before the arbiters of his fate ... feel almost afraid before man, and afraid for man! ... These
+are the moments when all the instincts of self-preservation rise up in him at once, and, trying to save himself"
+
+p787 - "what is a father, a real father, what does this great word mean ... did anyone give him at least a little love in his childhood? ... the murdered old Karamazov cannot and
+does not deserve to be called a father ... Love cannot be created out of nothing; only God creates out of nothing"
+
+==p790== - "Fathers, provoke not your children! Let us first fulfill Christ's commandment ourselves, and only then let us expect the same of our children. Otherwise we are not fathers
+but enemies of our children, and they are not our children but our enemies, and we ourselves have made them our enemies! ... he who begets
+is not yet a father; a father is he who begets and proves still worthy of it ... within the sphere of real life ... itself imposes
+great obligations ... let the sone stand before his father and ask him reasonably: 'Father, tell me, why should I love you? Father,
+prove to me that I should love you'"
+
+p793 - "if you want to punish him terribly, fearfully, with the most horrible punishment imaginable, but so as to save and restore his sould forever ---
+then overwhelm him with your mercy!"
+
+p795 - "if every child ought to ask his father, 'Father, why should I love you?' --- what will become of us, what will become
+of the foundations of society, where will the family end up?"
+
+p815 - "Oh, if only I, too, could some day offer myself as a sacrifice for truth!"
+
+==p817== - "Papa, when they put the dirt on my grave, crumble a crust of bread on it so the sparrows will come, and I'll hear that they've come and be glad
+that I'm not lying alone. ... 'Fly down, birds, fly down, little sparrows!'"
+
+==p821== - "You must know that there is nothing higher, or stronger, or sounder, or more useful afterwards in life, than some good memory, especially a memory
+from childhood, from the parental home. ... If a man stores up many such memories to take into life, then he is saved for his whole life."
+
+p823 - "do not be afraid of life! How good life is when you do something good and rightful!"
