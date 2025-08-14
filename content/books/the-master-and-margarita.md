@@ -120,3 +120,50 @@ p286 - Margarita was willing to be naked in front of the devil in order to free 
 
 p286 - "why does Margarita call you a master? asked Woland. ... She has too high an opinion of a novel I wrote. What is the novel about? It is a
 novel about Pontius Pilate."
+
+p288 - illegal literature
+
+p300 - heaven and hell collide. God rescuing the sentenced
+
+p305 - "among human vices he considered cowardice one of the first."
+
+p329 - "greater vice... cowardice..."
+
+p354 - "Dostoyevsky is immortal ... A writer is defined not by any identity card, but by what he writes. How do you
+know what plots are swarming in my head?"
+
+p360 - "what would you do if evil did not exist, and what would earth look like if shadows disappeared from it? Shadows are
+cast by objects and people. Here is the shadow of my sword. Trees and living beings also have shadows. Do you want
+to skin the whole earth, tearing all the trees and living things off it, because of your fantasy of enjoying bare light? You're stupid."
+
+- I don't fully understand this analogy.
+
+p360 - "I'm not a slave ... I'm his disciple."
+
+p364 - "those idols, ah, the golden idols! ... are you seriously convinced that we were at Satan's yesterday?"
+
+p367 - "victims of our mental illness"
+
+p370 - Margarita poisons herself and the master returns to the other world. ... were you really alive before?
+
+p379 - "How mysterious the mist over the swamps! He who has wandered in these mists, he who has suffered much before death,
+he who has flown over this earth bearing on himself too heavy a burden, knows it. The weary man knows it. And without regret he leaves the mists of the
+earth, its swamps and rivers, with a light heart he gives himself into the hands of death, knowing that she alone can bring him
+peace."
+
+- Peace of death. Death brings long-awaited peace.
+
+p381 - some beautiful imagry. "Your novel has been read ... turning to the master ... unfortunately, it is not finished ...
+cowardice is the most grevious vice, then the dog at least is not guilty of it. Storms were the only thing the brave
+dog feared."
+
+p381 - "He says one and the same thing, ... He says that even the moon gives him no peace ... when he sleeps,
+he dreams one and the same thing: there is a path of moonlight, and he wants to walk down it and talk with the
+prisoner Ha-Nozri, because ... of all things in the world, he most hates his immortality. ... Twelve thousand moons for one moon long ago. ...
+Well, now you can finish your novel with one phrase! ... You're free! You're free! He's waiting for you!"
+
+p383 - just live; be human. There's a peaceful and calm end to what was a chaotic story. "listen and enjoy what you
+were not given in life --- peace. ... your eternal home ... you will be visited by those you love"
+
+p384 - was willing to go to hell to end one's life of misery, to achieve peace in death, but ends up in heaven.
+"he himself had just set free the hero he had created."
