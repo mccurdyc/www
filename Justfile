@@ -34,12 +34,12 @@ rename-seq dir: clean-images
 
 # Uploads images to GCS
 
-# Usage - "make sync-images DIR='2024/early'"
+# Usage - just sync-images '2024/early'
 sync-images dir:
     just rename-seq {{ dir }}
     gsutil -m rsync -d -r "/mnt/photos/{{ dir }}/" "gs://images.mccurdyc.dev/images/{{ dir }}/"
 
-# Usage - "make dump-images DIR='2024/early'"
+# Usage - just dump-images '2024/early'
 dump-images dir:
     ./scripts/dump-images.sh {{ dir }}
 

@@ -28,8 +28,8 @@ $ hugo new content/posts/foo-bar-baz.md
 
 ```bash
 hugo new content/photos/2050-foo.md
-just sync-images DIR='2050/foo'
-just dump-images DIR='2050/foo' >> ./content/photos/2050-foo.md
+just sync-images '2050/foo'
+just dump-images '2050/foo' >> ./content/photos/2050-foo.md
 ```
 
 ## Deploying
