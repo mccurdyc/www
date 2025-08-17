@@ -5,8 +5,7 @@
 ```bash
 $ git clone --recursive https://github.com/mccurdyc/www.git
 $ cd www && git submodule update --init
-$ make help
-$ make serve
+$ just serve
 ```
 
 ### Using nix-direnv
@@ -29,12 +28,12 @@ $ hugo new content/posts/foo-bar-baz.md
 
 ```bash
 hugo new content/photos/2050-foo.md
-make sync-images DIR='2050/foo'
-make dump-images DIR='2050/foo' >> ./content/photos/2050-foo.md
+just sync-images DIR='2050/foo'
+just dump-images DIR='2050/foo' >> ./content/photos/2050-foo.md
 ```
 
 ## Deploying
 
 ```bash
-make deploy
+just
 ```
