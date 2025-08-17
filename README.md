@@ -35,5 +35,5 @@ just dump-images '2050/foo' >> ./content/photos/2050-foo.md
 ## Deploying
 
 ```bash
-just
+eval $(op signin) && just deploy
 ```

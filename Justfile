@@ -11,6 +11,8 @@ set shell := ["/usr/bin/env", "bash", "-uc"]
 
 log := "warn"
 export JUST_LOG := log
+export FASTLY_SERVICE_ID := "$(op item get Fastly --fields service_id --reveal)"
+export FASTLY_API_KEY := "$(op item get Fastly --fields purge_token --reveal)"
 
 set quiet := false
 
@@ -25,14 +27,10 @@ build:
     hugo --ignoreCache
 
 deploy: build
-    export FASTLY_SERVICE_ID="$(op item get Fastly --fields service_id --reveal)"; \
-    export FASTLY_API_KEY="$(op item get Fastly --fields purge_token --reveal)"; \
     ./scripts/deploy.sh
 
 rename-seq dir: clean-images
     ./scripts/rename-seq.sh "/mnt/photos/{{ dir }}"
-
-# Uploads images to GCS
 
 # Usage - just sync-images '2024/early'
 sync-images dir:
