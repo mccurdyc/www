@@ -234,7 +234,7 @@ In order, your pitch should go as follows:
 
 ## Individual Contributors Should Still Understand Management
 
-{{<tweet user="mccurdyc" id="1135881974424358913">}}
+{{<x user="mccurdyc" id="1135881974424358913">}}
 
 > Every engineer should read this.  Not just managers.
 
@@ -242,7 +242,7 @@ Before Charity Majors posted that Tweet, I posted a Tweet making a similar state
 The other books included in the picture are of a similar genre to An Elegant Puzzle.
 This "self-help" genre is one that I most frequently read.
 
-{{<tweet user="mccurdyc" id="1134086064514187264">}}
+{{<x user="mccurdyc" id="1134086064514187264">}}
 
 Reading these books enables me to be a knowledgable contributor in the challenging
 problems that exist at a fast-growing company. These books have also helped prepare
@@ -260,6 +260,6 @@ impact for me i.e., introducing me to a genre of literature that is extremely us
 in my day-to-day life as a software engineer in industry. As shown below in my Tweets,
 many of my challenges as a software engineer are not purely technical.
 
-{{<tweet user="mccurdyc" id="1138075343552688128">}}
+{{<x user="mccurdyc" id="1138075343552688128">}}
 
-{{<tweet user="mccurdyc" id="1138436722600140801">}}
+{{<x user="mccurdyc" id="1138436722600140801">}}

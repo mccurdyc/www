@@ -119,11 +119,6 @@ cacheControl = "no-store, max-age=0, s-maxage=3600"
     # Set to a valid CSS time value to change the animation duration, "0s" to disable.
     logoCursorAnimate  = "1s"
 
-  # Social icons
-  [[params.social]]
-    name = "twitter"
-    url  = "https://twitter.com/mccurdycolton"
-
   [[params.social]]
     name = "email"
     url  = "mailto:coltonjmccurdy+website@gmail.com"

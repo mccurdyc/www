@@ -109,14 +109,14 @@ down Sliding Sands and I stepped on a sharp, coral-looking rock and it cut my fo
 a little. It was bleeding and my heel later did feel bruised, so I was walking
 exclusively on the ball of my foot for the rest of the hike.
 
-{{<tweet user="mccurdyc" id="1128953033952391170">}}
+{{<x user="mccurdyc" id="1128953033952391170">}}
 
 The hike was beautiful, our favorite part of the trip and something that I would
 highly recommend to anyone who is interested in beginner-level hiking. The sunset
 at the end of the day is also quite remarkable to experience, but very, very cold
 temperature-wise. This is something that was outside of our comfort-zone.
 
-{{<tweet user="mccurdyc" id="1129012634098049026" >}}
+{{<x user="mccurdyc" id="1129012634098049026" >}}
 
 We met up with Jose and Paulina a few other times for food and to check out beaches
 while we were on Maui and then later, Kauai.
