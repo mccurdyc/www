@@ -11,8 +11,8 @@ set shell := ["/usr/bin/env", "bash", "-uc"]
 
 log := "warn"
 export JUST_LOG := log
-export FASTLY_SERVICE_ID := "$(op item get Fastly --fields service_id --reveal)"
-export FASTLY_API_KEY := "$(op item get Fastly --fields purge_token --reveal)"
+export FASTLY_SERVICE_ID := `op item get Fastly --fields service_id --reveal`
+export FASTLY_API_KEY := `op item get Fastly --fields purge_token --reveal`
 
 set quiet := false
 
