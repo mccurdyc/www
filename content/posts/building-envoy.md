@@ -1,6 +1,6 @@
 ---
 title: "Building Envoy from Source"
-description: 'This post could alternatively been called "how I learn something completely new with only minimal awareness of the adjacent tooling, but really (well kinda) wanting to do a thing; An unedited process of learning and thoughts"'
+description: 'This post could alternatively be titled "how I learn something completely new with only minimal awareness of the adjacent tooling, but really (well kinda) want to do a thing; an unedited process of learning and thoughts"'
 author: ""
 date: 2025-06-15T20:52:23-04:00
 subtitle: ""
@@ -10,18 +10,24 @@ posts: ["Building Envoy"]
 draft: false
 ---
 
-This post could alternatively been called "how I learn something completely new with only minimal awareness of the adjacent tooling, but really (well kinda) wanting to do a thing; An unedited process of learning and thoughts"
+This post could alternatively be titled "how I learn something completely new with only minimal awareness of the adjacent tooling, but really (well kinda) want to do a thing; an unedited process of learning and thoughts"
 
 # Motivation
 
-I wanted to build Envoy with the wasmtime WASM runtime and nixpkgs envoy package errors when you add `wasmRuntime="wasmtime"` and I wanted to submit a patch to fix. But while I know Nix fairly well, I'm no expert. Also, I've never written C++, nor have I ever used Bazel. Prior to this my knowledge of Bazel was that it was Google and it was a build system.
+I wanted to build Envoy with the wasmtime WASM runtime and the nixpkgs/envoy package errors
+when you add `wasmRuntime="wasmtime"`; so I wanted to try to submit a patch to fix. 
 
-To be honest, I wasn't even that motivated to make this work, because just using the Docker image that had Envoy compiled with WASM would have got me what I wanted. I honestly don't know why I dug in. Maybe because I do want to contribute to Envoy and understand the WASM parts of Envoy.
+But while I know Nix fairly well, I'm no expert. Also, I've never written C++, nor used Bazel.
+
+Prior to this my knowledge of Bazel was that it was used at Google and it was a build system.
+
+To be honest, I wasn't even that motivated to make this work, because just using the Docker image
+that had Envoy compiled with WASM would have got me what I wanted. I honestly don't know why I dug in.
+Maybe because I do want to contribute to Envoy and understand the WASM parts of Envoy.
 
 It was kind of out of spite that NixOS told me "you should know this" and this felt like a good deep dive. And then, once I got invested enough, then it became an opportunity for me to capture my full thought process of trying something.
 
-Then, this became a personal challenge of "so you think you are smart and know how to learn, prove it".
-You tell yourself this, but how often do you really prove it.
+Then, this became a personal challenge of "so you think you know how to learn; prove it".
 
 # Manually Building Envoy
 
