@@ -10,6 +10,14 @@ posts: ["Building Envoy"]
 draft: false
 ---
 
+TL;DR - Thanks to @lukegb on GitHub / Bluesky for the fix (https://github.com/NixOS/nixpkgs/pull/435633)!!
+- https://github.com/lukegb
+- https://bsky.app/profile/lukegb.dev
+
+If you want to try it, see this comment: https://github.com/NixOS/nixpkgs/pull/435633#issuecomment-3212833722
+
+---
+
 This post could alternatively be titled "how I learn something completely new with only minimal awareness of the adjacent tooling, but really (well kinda) want to do a thing; an unedited process of learning and thoughts"
 
 # Motivation
