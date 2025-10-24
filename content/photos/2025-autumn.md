@@ -1,7 +1,7 @@
 ---
 title: "2025 AUTUMN"
 date: 2025-10-19T17:39:28-04:00
-image: "/images/"
+image: "/images/2025/autumn/0152.jpg"
 draft: false
 hide: false
 ---
