@@ -4,7 +4,7 @@ subtitle: ""
 description: "**A Favorite**: I really enjoyed this one. Read it in less than a week. About coming of age. Growing up. Fighting society (a bit). It's a book of feeling the feelings of another. 'Hearing' from another's ears. Thinking from another's perspective. I took so much away from this and still feel there is SO much that I missed. And the notes in the back are strong and I feel like there is a lot that I'm missing. Also the writing is so beautiful."
 author: "Colton J. McCurdy"
 date: 2025-08-31T08:11:06-05:00
-image: "/images/book-covers/the-information/cover.jpg"
+image: "/images/book-covers/the-first-man/cover.jpg"
 book-tags: ["book", "2025", "favorite"]
 books: ["The First Man"]
 book-authors: ["Albert Camus"]
