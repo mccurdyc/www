@@ -1,15 +1,15 @@
 ---
 title: "Ubik"
 subtitle: ""
-description: ""
+description: "A fun read."
 author: "Colton J. McCurdy"
 date: 2025-09-21T16:58:54-05:00
-image: ""
+image: "/images/book-covers/ubik/cover.jpg"
 book-tags: ["book", "2025"]
 books: ["Ubik"]
 book-authors: ["Phillip K. Dick"]
 amazon: ""
-thriftbooks: ""
+thriftbooks: "https://www.thriftbooks.com/w/ubik_philip-k-dick/280551/?resultid=dddd571c-4562-4910-8867-66146d123dcc#edition=7252617&idiq=10409822"
 draft: false
 ---
 

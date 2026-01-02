@@ -4,12 +4,12 @@ subtitle: "A history, A theory, a flood"
 description: "Strong Recommendation: Amazing book. Admittedly, I was expecting this to be one of those reads that just told a repeated story from a different angle, but it was far from that and actually progressed at a fast pace. Additionally, the depth was deeper than I expected. 'The embarassment of riches. Another reminder that information is not knowledge, and knowledge is not wisdom.'"
 author: "Colton J. McCurdy"
 date: 2025-09-03T12:42:18-05:00
-image: ""
+image: "/images/book-covers/the-information/cover.jpg"
 book-tags: ["book", "2025", "favorite"]
 books: ["The Information"]
 book-authors: ["James Gleick"]
 amazon: ""
-thriftbooks: ""
+thriftbooks: "https://www.thriftbooks.com/w/the-information-a-history-a-theory-a-flood_james-gleick/252332/?resultid=18acd82f-357d-400c-add0-f42e354eafa6"
 draft: false
 ---
 

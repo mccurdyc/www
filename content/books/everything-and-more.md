@@ -4,12 +4,12 @@ subtitle: "A Compact History of Infinity"
 description: "A story about childlike curiosity about a topic that both 'matters' and at the same time has no applicable 'real' value. Infinity 'closes gaps' but not much more."
 author: "Colton J. McCurdy"
 date: 2025-10-29T11:18:25-05:00
-image: ""
+image: "/images/book-covers/everything-and-more/cover.jpg"
 book-tags: ["book", "2025"]
 books: ["Everything and More"]
 book-authors: ["David Foster Wallace"]
 amazon: ""
-thriftbooks: ""
+thriftbooks: "https://www.thriftbooks.com/w/everything-and-more-a-compact-history-of-infinity_david-foster-wallace/350493/?resultid=0b6cc236-7fb9-4ba2-bc40-9aa4f6dfc73e#edition=6583712&idiq=7811824"
 draft: false
 ---
 

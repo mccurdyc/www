@@ -4,12 +4,12 @@ subtitle: ""
 description: "Is it so strange if we no longer remember how to resist?"
 author: "Colton J. McCurdy"
 date: 2025-11-15T15:27:10-05:00
-image: ""
+image: "/images/book-covers/these-memories-do-not-belong-to-us/cover.jpg"
 book-tags: ["book", "2025"]
 books: ["These Memories Do Not Belong to Us"]
 book-authors: ["Yiming Ma"]
 amazon: ""
-thriftbooks: ""
+thriftbooks: "https://www.thriftbooks.com/w/these-memories-do-not-belong-to-us-a-constellation-novel_yiming-ma/56110649/?resultid=0bad06c0-0289-4cf6-9cee-83b2539c9c1a#edition=73753723&idiq=85678780"
 draft: false
 ---
 

@@ -1,15 +1,15 @@
 ---
-title: "The First Man"
+title: "The First Man (Le Premier Homme)"
 subtitle: ""
 description: "**A Favorite**: I really enjoyed this one. Read it in less than a week. About coming of age. Growing up. Fighting society (a bit). It's a book of feeling the feelings of another. 'Hearing' from another's ears. Thinking from another's perspective. I took so much away from this and still feel there is SO much that I missed. And the notes in the back are strong and I feel like there is a lot that I'm missing. Also the writing is so beautiful."
 author: "Colton J. McCurdy"
 date: 2025-08-31T08:11:06-05:00
-image: ""
+image: "/images/book-covers/the-information/cover.jpg"
 book-tags: ["book", "2025", "favorite"]
 books: ["The First Man"]
 book-authors: ["Albert Camus"]
 amazon: ""
-thriftbooks: ""
+thriftbooks: "https://www.thriftbooks.com/w/the-first-man_albert-camus/276804/?resultid=fb53c925-7641-47c4-88f0-0538cb6fc78e#edition=2269850&idiq=5998328"
 draft: false
 ---
 

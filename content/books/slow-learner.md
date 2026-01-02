@@ -4,12 +4,12 @@ subtitle: "Early Stories"
 description: "The preface was better than any of the short stories. I appreciated Pynchon's self-reflection."
 author: "Colton J. McCurdy"
 date: 2025-11-28T15:07:15-05:00
-image: ""
+image: "/images/book-covers/slow-learner/cover.jpg"
 book-tags: ["book", "2025"]
 books: ["Slow Learner"]
 book-authors: ["Thomas Pynchon"]
 amazon: ""
-thriftbooks: ""
+thriftbooks: "https://www.thriftbooks.com/w/entropy_thomas-pynchon/322871/?resultid=46ca4906-e172-464f-b21a-d70644ecb581#edition=3823651&idiq=10288229"
 draft: false
 ---
 
