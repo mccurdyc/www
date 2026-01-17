@@ -69,3 +69,7 @@ I recognize how small we are in relation to space. Like mindblowingly small.
 
 Hmm. I hadn't thought of this. Probably more social contract. Probably related to that "abstraction" on top
 of humanity that also causes evil.
+
+This is just how my mind works. I like writing it down to analyze how my definition of _I_ (trigger Hofstadter) change over time.
+
+I don't know if any of my beliefs are "true" or "correct". That's just what they are.
