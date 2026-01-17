@@ -98,3 +98,5 @@ but i think we spend enough time of our life in a career that you should care ab
 > It’s like I’m talking to ChatGPT some times. So adverse to ruffling feathers
 
 it's not that my career is my favorite thing or strongest belief or thing i love the most, just something that i do care deeply about. it might be some deep belief in being kind over ruffling feathers. i dont think much good comes from negativity. yet i am negative.
+
+i think there's a social contract in the fabric of the universe that is partially upheld by not having these deep conversations though. these conversations are weird
