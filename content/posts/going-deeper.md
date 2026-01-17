@@ -86,9 +86,10 @@ better and would enable looking at assembly for specific functions or the interm
 LLVM representation. Eh we'll get here. I don't want to understand the Rust
 specifics, yet.
 
-It also suggested these two references:
+AI also suggested these two references:
 - https://www.felixcloutier.com/x86/
 - Programming from the Ground Up: Bartlett, Jonathan, et. al.
+    - This book is honestly EXACTLY what I was looking for. It is amazing.
 
 I also just picked up https://eater.net/6502.
 
@@ -117,11 +118,18 @@ Offset  Field
 0000040 0006 0000 0004 0000 0040 0000 0000 0000
 ```
 
+Why groups of 4 hex digits (2 bytes)?
+    - Tool default for readability
+	- Easier to spot patterns than single bytes
+Why 8 groups (16 bytes) per line?
+	- Convention: 16 bytes fits nicely on terminal
+
 And AI tells me that the offset column is 7-hex-digits long only because
 of the size of my binary which is 3.7MB and 7-digits is enough to represent
 the address space of a binary of that size.
-It's just a default display thing, but internally it's still using 64-bit addresses. A 3.7MB file only needs
-22 bits of addressing (2^22 = 4MB).
+
+It's just a default display thing, but internally it's still using 64-bit addresses.
+A 3.7MB file only needs 22 bits of addressing (2^22 = 4MB).
 
 ```bash
 07:00:54 %% ls -al target/debug/app
@@ -135,7 +143,7 @@ Okay, wow this is way more helpful.
 ```txt
 # readelf -h ...
 ELF Header:
-  Magic:   7f 45 4c 46 02 01 01 00 00 00 00 00 00 00 00 00 
+  Magic:   7f 45 4c 46 02 01 01 00 00 00 00 00 00 00 00 00
   Class:                             ELF64
   Data:                              2's complement, little endian
   Version:                           1 (current)
@@ -196,10 +204,10 @@ objdump -d -M intel -C target/debug/app > out/objdump-min.out
 AI helps
 
 ```txt
-_start (not shown) 
-  → __libc_start_main 
-    → main (0x7b90) 
-      → std::rt::lang_start 
+_start (not shown)
+  → __libc_start_main
+    → main (0x7b90)
+      → std::rt::lang_start
         → app::main (0x7b60)
 ```
 
@@ -210,9 +218,9 @@ And the machine code is in that second column.
 So the CPU see `7b90: 50 48 89 f2 48 8d 05 7d 49 04 00 8a 00 48 63 f7 ...`.
 Well not the `7b90` part. That's the memory address.
 
-Variable-length encoding: x86-64 instructions are 1-15 bytes.
-The CPU’s instruction decoder:
+Variable-length encoding: x86-64 instructions are 1-15 bytes (typical is between 2-4 bytes).
 
+Fetch, Decode, Execute loop:
 1. Fetches bytes from memory
 2. Determines instruction length by examining opcodes/prefixes
 3. Executes that instruction
@@ -224,12 +232,66 @@ The CPU’s instruction decoder:
 - https://www.felixcloutier.com/x86/
 - ref.x86asm.net/coder64.html
 
+# Understanding `main`
+
+```asm
+0000000000007b60 <app::main>:
+    7b60:	48 83 ec 38          	sub    rsp,0x38
+    7b64:	48 8d 7c 24 08       	lea    rdi,[rsp+0x8]
+    7b69:	48 8d 35 a8 d2 04 00 	lea    rsi,[rip+0x4d2a8]        # 54e18 <__do_global_dtors_aux_fini_array_entry+0x38>
+    7b70:	e8 ab ff ff ff       	call   7b20 <core::fmt::Arguments::new_const>
+    7b75:	48 8d 7c 24 08       	lea    rdi,[rsp+0x8]
+    7b7a:	ff 15 a8 ff 04 00    	call   QWORD PTR [rip+0x4ffa8]        # 57b28 <_GLOBAL_OFFSET_TABLE_+0x350>
+    7b80:	48 83 c4 38          	add    rsp,0x38
+    7b84:	c3                   	ret
+    7b85:	66 2e 0f 1f 84 00 00 	cs nop WORD PTR [rax+rax*1+0x0]
+    7b8c:	00 00 00 
+    7b8f:	90                   	nop
+```
+
+```
+    7b60:	48 83 ec 38          	sub    rsp,0x38
+```
+
+How does this machine code encode this instruction?
+
+`48 83 ec 38` - subtract from the `rsp` register `0x38`
+
+From AI:
+1.	48 - REX.W prefix (indicates 64-bit operand size)
+2.	83 - opcode for SUB with sign-extended 8-bit immediate
+3.	ec - ModR/M byte
+    - mod: 11 (register direct)
+    - reg: 101 (SUB operation)
+    - r/m: 100 (RSP register)
+4.	38 - immediate value (0x38 = 56 decimal)
+
+
+Okay, let's actually understand this:
+
+https://www.felixcloutier.com/x86/sub
+
+> opcode            | Instruction       | Op Encoding | ... | Description
+> ...
+> REX.W + 83 /5 ib	| SUB r/m64, imm8	| MI	      | ... | Subtract sign-extended imm8 from r/m64.
+> ...
+
+> Op Encoding   | Operand 1         | Operand 2  | ...
+> MI            | ModRM:r/m (r, w)  | imm8/16/32 | ...
+
+I get that we're subtracting 56 (decimal) from the stack pointer. Presumably for function arguments to `println` (which is a macro, so we know it's syntactic sugar) or something.
+
+It might be time to minimize a bit. Or work more from bottom up to "meet in the middle". I think there are too many abstractions that I don't
+yet understand to make "top down" understandable.
+
+So we can work bottom up and then top down by using `no std` and not using macros.
+
 # How does a microprocessor work?
 
-I know we give it some input in the form of bits? 
+I know we give it some input in the form of bits?
 
 The input is destined to specific locations of the microprocessor (thinking
-each "prong"). 
+each "prong").
 
 # What does a resistor do? How does it work?
 
