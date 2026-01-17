@@ -78,3 +78,23 @@ I also believe that you should constantly challenge your beliefs. What you belie
 
 This is really hard for me. I try to challenge my negative views. I have brief moments where my negativity
 feels unebelievable.
+
+---
+
+Then my friends asked
+
+> What do you think about [us]? What types of people do you think we are?
+
+To which I first laugh. And joke that I should write a post to respond (which I am now doing because this turned into another good conversation).
+
+i think that's a loaded question honestly haha i dont think about other peoples' beliefs. nor do i really care or judge people based on their beliefs. all i care about is kindness in other people and acceptance of differing beliefs. so i dont "think about <people>" like that. i just dont really care haha.
+
+i like you guys haha youre fun to hang out with
+
+which aligns with my belief in career (not that it's the correct beliefs)
+
+but i think we spend enough time of our life in a career that you should care about it. if you have other things you care more about, that's awesome, i just dont know that feeling that much.
+
+> It’s like I’m talking to ChatGPT some times. So adverse to ruffling feathers
+
+it's not that my career is my favorite thing or strongest belief or thing i love the most, just something that i do care deeply about. it might be some deep belief in being kind over ruffling feathers. i dont think much good comes from negativity. yet i am negative.
