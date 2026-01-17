@@ -75,3 +75,6 @@ This is just how my mind works. I like writing it down to analyze how my definit
 I don't know if any of my beliefs are "true" or "correct". That's just what they are.
 
 I also believe that you should constantly challenge your beliefs. What you believe to be "true".
+
+This is really hard for me. I try to challenge my negative views. I have brief moments where my negativity
+feels unebelievable.
