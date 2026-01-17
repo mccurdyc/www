@@ -34,7 +34,7 @@ better vaccines, better medicine, etc.
 
 Hmm. I think it's better for more people i.e., for the general population. The majority is happier
 now. I think --- specifically in regards to some measure of "happiness" --- the extremes or maxima
-are decreasing.
+are stablizing(?), shrinking(?), smoothing. Smoothing.
 
 Is this because most things have gotten better and easier? So something as simple as finding a meal is no longer
 a euphoric experience?
