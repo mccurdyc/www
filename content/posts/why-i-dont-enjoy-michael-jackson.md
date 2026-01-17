@@ -73,3 +73,5 @@ of humanity that also causes evil.
 This is just how my mind works. I like writing it down to analyze how my definition of _I_ (trigger Hofstadter) change over time.
 
 I don't know if any of my beliefs are "true" or "correct". That's just what they are.
+
+I also believe that you should constantly challenge your beliefs. What you believe to be "true".
