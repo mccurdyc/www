@@ -28,7 +28,7 @@ p3 - entropy is related to "missing information"
 
 # SOME RECENT CONTRIBUTIONS: WEAVER
 
-<mark>
+{{% mark %}}
 p4 - Three levels of Communication Problems
 
 Level A. - How accurately can the symbols of communication be transmitted? (The technical problem)
@@ -36,7 +36,7 @@ Level A. - How accurately can the symbols of communication be transmitted? (The 
 Level B. - How precisely do the transmitted symbols convey the desired meaning? (The semantic problem)
 
 Level C. - How effectively does the received meaning affect conduct in the desired way? (The effectiveness problem)
-</mark>
+{{% /mark %}}
 
 p4 - If Mr. X is suspected not to understand what Mr. Y says, then it is theoretically no possible, by having Mr. Y do nothing but talk further
 
@@ -46,9 +46,9 @@ p7 - The _information source_ selects a desired _message_ out of a set of possib
 
 p8 - How does one measure _amount of information?_ ... _information_ must not be confused with meaning ... the semantic aspects of communication are irrelevant to the engineering aspects
 
-<mark>
+{{% mark %}}
 p8 - this word information in communication theory relates not so much to what you _do_ say, as to what you _could_ say.
-</mark>
+{{% /mark %}}
 
 p9 - information is a measure of one's freedom of choice
 
@@ -65,15 +65,15 @@ p11 - an ergodic process ... is one which produces a sequence of symbols which w
 
 p13 - Having calculated the entropy (or the information, or the freedom of choice) of a certain information source, one can compare this to the maximum value this entropy could have ... this is called _relative entropy_ ... If the relative entropy of a certain source is, say 0.8, this roughly means that this source is, in its choice of symbols to for, a message, about 80 percent as free as it could possibly be with these same symbols. One minus the relative entropy is called the _redundancy_. ... this fraction of the message is unnecessary ... in the sense that if it were missing the message would still be essentially complete ... the redundancy of English is just about 50 percent, so that about half of the letters or words we choose in writing or speaking are under our free choice, and about half (although we are not ordinarily aware of it) are really controlled by the statistical structure of the language.
 
-<mark>
+{{% mark %}}
 p14 - If it is not possible or practible to design a system which can handle everything perfectly, then the system should be designed to handle well the jobs it is most likely to be asked to do, and should resign itself to be less efficient for the rare task.
-</mark>
+{{% /mark %}}
 
 p15 - no freedom of choice --- no information
 
-<mark>
+{{% mark %}}
 p16 - the capacity of a channel [_C_] is to be described not in terms of the number of _symbols_ it can transmit, but rather in terms of the _information_ it transmits.
-</mark>
+{{% /mark %}}
 
 p17 - _H_ bits per symbol ... no matter how clever the coding, can never be made to exceed _C/H_.
 
@@ -83,9 +83,9 @@ p22 - When there is noise on a channel, however, there is some real advantage in
 
 p27 - The concept of information developed in this theory at first seems disappointing and bizarre --- disappointing because it has nothing to do with meaning ... one is now, perhaps for the first time, ready for a real theory of meaning.
 
-<mark>
+{{% mark %}}
 p28 - one of the most significant but difficult aspects of meaning, namely the influence of context.
-</mark>
+{{% /mark %}}
 
 # THE MATHEMATICAL THEORY OF COMMUNICATION
 
@@ -105,9 +105,9 @@ In other words, given the input probabilities can we reliably predict outcomes?
 
 p62 - The transducer which does the encoding should match the source to the channel in a statistical sense. ... In general, ideal or nearly ideal encoding requires a long delay in the transmitter and receiver. ... the main function of this delay is to allow reasonably good matching of probabilities to corresponding lengths of sequences.
 
-<mark>
+{{% mark %}}
 p62 - If a source can produce only one particular message its entropy is zero, and no channel is required. ... No channel is required to "transmit" this to another point. One could construct a second machine to compute the same sequence at the point.
-</mark>
+{{% /mark %}}
 
 p67 - The conditional entropy `H_y(x)` will, for convience, be called the equivocation. It measures the average ambiguity of the received signal. ... _a posteriori_ probability
 

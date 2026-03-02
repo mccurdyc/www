@@ -29,12 +29,12 @@ p3 - the armchair genius is over. To create today is to create dangerously.
 
 p5 - In most cases the artists is ashamed of himself and his privileges
 
-<mark>
+{{% mark %}}
 p7 - For about a century we have been living in a society that is not even the society of money ... but that of the abstract symbols of money. ... A society founded on signs is,
 in its essense, an artificial society ... There is no reason for being surprised that such a society chose as its
 religion a moral code of formal principles and that it inscribes that words 'liberty' and 'equality'
 on its prisons as well as on its temples of finance.
-</mark>
+{{% /mark %}}
 
 p8 - for a hundred years a society of merchants made an exclusive and unilateral use of liberty, looking upon it as a right
 rather than a duty ... such a society asked art to be, not an instrument of liberation, but an inconsiquential
@@ -90,15 +90,15 @@ p48 - How then can this infernal circle be broken? ... the value of freedom --- 
 
 p50 - separating freedom from justice is tantamount to separating culture and labour
 
-<mark>
+{{% mark %}}
 p51 - there are two ways for an intellectual to betray at present, and in both cases he betrays because he accepts a single thing --- that separation between labour and culture. The first way is characteristic of bourgeios intellectuals who are willing that their privileges should be paid for by the enslavement
 of the workers. They often say that they are defending freedom, but they are defending first of all the privileges freedom gives to them, and to them alone.
-</mark>
+{{% /mark %}}
 
-<mark>
+{{% mark %}}
 p52 - freedom is not made up principally of privileges; it is made up especially of duties.
-</mark>
+{{% /mark %}}
 
-<mark>
+{{% mark %}}
 p54 - we shall be sure that freedom is not a gift received from a State or a leader but a possession to be won every day by the effort of each and the union of all.
-</mark>
+{{% /mark %}}

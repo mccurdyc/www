@@ -89,9 +89,9 @@ p75 - Let your love towards life be love towards your highest hope: and let your
 
 p75 - The state is the coldest of all cold monsters. Coldly it lies, too; and this lie creeps from its mouth: 'I, the state, am the people.'
 
-<mark>
+{{% mark %}}
 p77 - They devour one another and cannot even digest themselves. ... Often filth sits upon the throne --- and often the throne upon filth, too.
-</mark>
+{{% /mark %}}
 
 p77 - all these idolators ... Leave the idolatry of the superfluous!
 

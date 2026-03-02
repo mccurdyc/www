@@ -146,9 +146,9 @@ p100 - behind a remarkable scholar one not infrequently finds a mediocre man, an
 
 - "Scholar" and "artist" here can be thought of abstractly to mean "accepted" and "not accepted" persons.
 
-<mark>
+{{% mark %}}
 p103 - Madness is something rare in individuals --- but in groups, parties, peoples, ages it is the rule
-</mark>
+{{% /mark %}}
 
 p105 - To talk about oneself a great deal can also be a means of concealing oneself.
 
@@ -158,9 +158,9 @@ p110 - There are moralities which are intended to justify their authors before o
 
 p110 - The essential and invaluable element in every morality is that it is a protracted constraint ... protracted _obedience_ in _one_ direction
 
-<mark>
+{{% mark %}}
 p112 - teaches the _narrowing of perspective_, and thus in a certain sense stupidity, as a condition of life and growth.
-</mark>
+{{% /mark %}}
 
 p113 - No one wants to do injury to himself, therefore all badness is involuntary. For the bad man does injury to himself: this he would not do if he knew badness is bad. 
 
@@ -168,9 +168,9 @@ p114 - morality is necessarily define by a group. It can't be defined by an indi
 
 p120 - there have been human beings there have also been human herds ... very many who obey compared with the very small number of those who command ... hitherto nothing has been practised and cultivated among men better and longer than obedience ... 'thou shalt' 
 
-<mark>
+{{% mark %}}
 p120 - the herd instinct of obedience has been inherited best and at the expense of the art of commanding.
-</mark>
+{{% /mark %}}
 
 p120 - the moral hypocrisy of the commanders. They know no way of defending themselves against their bad conscience other than to pose as executors of more ancient or higher commands
 
@@ -206,16 +206,16 @@ p166 - (sad) equal rights ... is _typical_ sign of shallow-mindedness
 
 p196 - one has duties only towards one's equals; that towards beings of a lower rank, towards everything alien, one may act as one wishes or 'as the heart dictates' and in any case 'beyond good and evil' --: it is herethat pity and the like can have a place.
 
-<mark>
+{{% mark %}}
 p197 - qualities which serve to make easier the existence of the suffering ... here it is that pity, the kind and helping hand, the warm heart, patience, industriousness, humility, friendliness come into honour --- for these are the most useful
 qualities and virtually the only means of enduring the burden of existence
-</mark>
+{{% /mark %}}
 
 p201 - the individual dares to be individual and stand out.
 
-<mark>
+{{% mark %}}
 p205 - What ultimately is commonness? ... it is not sufficient to employ the same words; we have also to employ the same words to designate the same species of inner experiences, we must ultimately have our experience _in common_. ... language is the history of a process of abbreviation
-</mark>
+{{% /mark %}}
 
 p206 - Tremendous counter-forces ... into the _common_
 
@@ -229,6 +229,6 @@ p214 - four virtues, courage, insight, sympathy, solitude
 
 p217 - Every profound thinker is more afraid of being understood than of being misunderstood. The latter may perhaps wound his vanity; but the former will wound his heart.
 
-<mark>
+{{% mark %}}
 p217 - invented the good conscience so as to enjoy his soul for once as _simple_; and the whole of morality is a protracted audacious forgery by virtue of which alone it becomes possible to feel pleasure at the sight of the soul.
-</mark>
+{{% /mark %}}
