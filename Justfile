@@ -49,6 +49,10 @@ clean-images:
 sync-bookcovers:
     gsutil -m rsync -d -r "/mnt/photos/book-covers" "gs://images.mccurdyc.dev/images/book-covers"
 
+# Import SuperNote digest notes as book posts
+import-books:
+    ./scripts/supernote-to-book.sh
+
 # List images
 list-images dir:
     gsutil ls gs://images.mccurdyc.dev/images/{{ dir }}
