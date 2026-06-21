@@ -3,7 +3,7 @@ set -euo pipefail
 
 SUPERNOTE_DIR="$HOME/src/github.com/mccurdyc/obsidian.md/SuperNote"
 BOOKS_DIR="$(cd "$(dirname "$0")/.." && pwd)/content/books"
-NOW="$(date +%Y-%m-%dT%H:%M:%S%:z)"
+TZ_OFFSET="$(date +%:z)"
 
 slugify() {
   local title="$1"
@@ -55,6 +55,7 @@ for file in "$SUPERNOTE_DIR"/*.md; do
   full_title=""
   author_raw=""
   year=""
+  read_date=""
 
   # Parse metadata
   in_metadata=false
@@ -83,6 +84,9 @@ for file in "$SUPERNOTE_DIR"/*.md; do
           ;;
         "- Year: "*)
           year="${line#- Year: }"
+          ;;
+        "- Read Date: "*)
+          read_date="${line#- Read Date: }"
           ;;
       esac
     fi
@@ -116,6 +120,13 @@ for file in "$SUPERNOTE_DIR"/*.md; do
   fi
   book_tags+=']'
 
+  # Use Read Date if available, otherwise current date
+  if [ -n "$read_date" ]; then
+    post_date="${read_date}T00:00:00${TZ_OFFSET}"
+  else
+    post_date="$(date +%Y-%m-%dT%H:%M:%S%:z)"
+  fi
+
   # Write frontmatter
   cat > "$out_file" <<EOF
 ---
@@ -123,7 +134,7 @@ title: "$disp_title"
 subtitle: ""
 description: ""
 author: "Colton J. McCurdy"
-date: $NOW
+date: $post_date
 image: "/image/book-covers/$slug/cover.jpg"
 book-tags: $book_tags
 books: ["$disp_title"]

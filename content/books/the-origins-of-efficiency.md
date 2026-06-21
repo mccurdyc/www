@@ -3,7 +3,7 @@ title: "The Origins of Efficiency"
 subtitle: ""
 description: ""
 author: "Colton J. McCurdy"
-date: 2026-06-21T10:02:31-04:00
+date: 2026-06-17T00:00:00-04:00
 image: "/image/book-covers/the-origins-of-efficiency/cover.jpg"
 book-tags: ["book", "2025"]
 books: ["The Origins of Efficiency"]

@@ -3,7 +3,7 @@ title: "Kubernetes: Up and Running - Third Edition"
 subtitle: ""
 description: ""
 author: "Colton J. McCurdy"
-date: 2026-06-21T10:02:31-04:00
+date: 2026-06-06T00:00:00-04:00
 image: "/image/book-covers/kubernetes-up-and-running-third-edition/cover.jpg"
 book-tags: ["book", "2022"]
 books: ["Kubernetes: Up and Running - Third Edition"]

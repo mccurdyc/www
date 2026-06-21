@@ -3,7 +3,7 @@ title: "This Is Water: Some Thoughts, Delivered on a Significant"
 subtitle: ""
 description: ""
 author: "Colton J. McCurdy"
-date: 2026-06-21T10:02:31-04:00
+date: 2026-06-05T00:00:00-04:00
 image: "/image/book-covers/this-is-water-some-thoughts-delivered-on-a-significant/cover.jpg"
 book-tags: ["book", "2009"]
 books: ["This Is Water: Some Thoughts, Delivered on a Significant"]
