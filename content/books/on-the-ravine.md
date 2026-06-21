@@ -3,13 +3,13 @@ title: "On the Ravine"
 subtitle: ""
 description: "This book came with my 2000 Audi S4 Avant who I purchased from the author. This book is honestly up there for me. It felt real. A story about a doctor at a methodone clinic who was classmates and now 'friends' with another doctor who provides a live-in house, safe place for drug use and any drug you want. And a patient the main doctor cares about (like a daughter)."
 author: "Colton J. McCurdy"
-date: 2026-06-21T07:05:54-04:00
+date: 2026-02-17T07:05:54-04:00
 image: "/image/book-covers/on-the-ravine/cover.jpg"
 book-tags: ["book"]
 books: ["On the Ravine"]
 book-authors: ["Vincent Lam"]
 amazon: ""
-thriftbooks: ""
+thriftbooks: "https://www.thriftbooks.com/w/on-the-ravine_vincent-lam/38846430/?resultid=32cd0bfe-5000-4523-8934-d5c6ca1342fb#edition=71577200&idiq=87569283"
 draft: false
 ---
 
