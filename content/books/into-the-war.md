@@ -7,7 +7,7 @@ date: 2026-03-21T06:34:16-04:00
 image: "/image/book-covers/into-the-war/cover.jpg"
 book-tags: ["book", "2026"]
 books: ["Into the War"]
-book-authors: ["Italo Calvino"
+book-authors: ["Italo Calvino"]
 amazon: ""
 thriftbooks: ""
 draft: false
