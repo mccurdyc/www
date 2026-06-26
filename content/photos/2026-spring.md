@@ -1,7 +1,7 @@
 ---
 title: "2026 SPRING"
 date: 2026-03-28T12:43:42-04:00
-image: "/images/"
+image: "/images/2026/spring/0002.jpg"
 draft: false
 hide: false
 ---

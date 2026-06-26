@@ -1,11 +1,11 @@
 ---
-title: "Kubernetes: Up and Running - Third Edition"
+title: "Kubernetes: Up and Running"
 subtitle: ""
 description: ""
 author: "Colton J. McCurdy"
 date: 2026-06-06T00:00:00-04:00
-image: "/image/book-covers/kubernetes-up-and-running-third-edition/cover.jpg"
-book-tags: ["book", "2022"]
+image: "/image/book-covers/kubernetes-up-and-running/cover.jpg"
+book-tags: ["book", "2026"]
 books: ["Kubernetes: Up and Running - Third Edition"]
 book-authors: ["Brendan Burns", "Joe Beda", "Kelsey Hightower", "Lachlan Evenson"]
 amazon: ""

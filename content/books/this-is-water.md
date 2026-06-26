@@ -1,13 +1,13 @@
 ---
-title: "This Is Water: Some Thoughts, Delivered on a Significant"
-subtitle: ""
+title: "This Is Water"
+subtitle: "Some Thoughts, Delivered on a Significant Occassion, about Living a Compasionate Life"
 description: ""
 author: "Colton J. McCurdy"
 date: 2026-06-05T00:00:00-04:00
-image: "/image/book-covers/this-is-water-some-thoughts-delivered-on-a-significant/cover.jpg"
-book-tags: ["book", "2009"]
-books: ["This Is Water: Some Thoughts, Delivered on a Significant"]
-book-authors: ["Wallace, David Foster"]
+image: "/image/book-covers/this-is-water/cover.jpg"
+book-tags: ["book", "2026"]
+books: ["This Is Water"]
+book-authors: ["David Foster Wallace"]
 amazon: ""
 thriftbooks: ""
 draft: false
