@@ -4,7 +4,7 @@ subtitle: "Some Thoughts, Delivered on a Significant Occassion, about Living a C
 description: ""
 author: "Colton J. McCurdy"
 date: 2026-06-05T00:00:00-04:00
-image: "/image/book-covers/this-is-water/cover.jpg"
+image: "/images/book-covers/this-is-water/cover.jpg"
 book-tags: ["book", "2026"]
 books: ["This Is Water"]
 book-authors: ["David Foster Wallace"]

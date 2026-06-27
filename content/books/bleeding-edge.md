@@ -4,7 +4,7 @@ subtitle: ""
 description: "An okay book, but only felt Pynchon-esque at times, overall an enjoyable page-turner read, but not a heavily impactful or memorable read. Funny. There are times where the pace and detailed descriptions are beautiful. A story about paranoia, but ends with a clear theme of 'everything's going to be okay'."
 author: "Colton J. McCurdy"
 date: 2026-04-15T08:00:49-04:00
-image: "/image/book-covers/bleeding-edge/cover.jpg"
+image: "/images/book-covers/bleeding-edge/cover.jpg"
 book-tags: ["book"]
 books: ["Bleeding Edge"]
 book-authors: ["Thomas Pynchon"]

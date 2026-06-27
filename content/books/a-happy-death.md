@@ -4,7 +4,7 @@ subtitle: ""
 description: "Really enjoyed this book. Felt very close to relateable for me. Talks about this struggle of solitude and thinking and finding purpose. Hypocritically mentions finding purpose and happiness in yourself and to abandon the needs of the world for providing happiness, but then also mentions that you need to find happiness in community and humanity outside of yourself. Happiness is found in the simple."
 author: "Colton J. McCurdy"
 date: 2026-03-12T08:13:12-04:00
-image: "/image/book-covers/a-happy-death/cover.jpg"
+image: "/images/book-covers/a-happy-death/cover.jpg"
 book-tags: ["book"]
 books: ["A Happy Death"]
 book-authors: ["Albert Camus"]

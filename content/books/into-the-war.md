@@ -4,7 +4,7 @@ subtitle: ""
 description: "A coming of age story. A feeling of outsider-ness. The war just being a background element of life."
 author: "Colton J. McCurdy"
 date: 2026-03-21T06:34:16-04:00
-image: "/image/book-covers/into-the-war/cover.jpg"
+image: "/images/book-covers/into-the-war/cover.jpg"
 book-tags: ["book", "2026"]
 books: ["Into the War"]
 book-authors: ["Italo Calvino"]

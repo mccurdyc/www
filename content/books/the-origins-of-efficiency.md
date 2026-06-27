@@ -4,7 +4,7 @@ subtitle: ""
 description: ""
 author: "Colton J. McCurdy"
 date: 2026-06-17T00:00:00-04:00
-image: "/image/book-covers/the-origins-of-efficiency/cover.jpg"
+image: "/images/book-covers/the-origins-of-efficiency/cover.jpg"
 book-tags: ["book", "2025"]
 books: ["The Origins of Efficiency"]
 book-authors: ["Brian Potter"]

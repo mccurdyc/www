@@ -4,7 +4,7 @@ subtitle: ""
 description: ""
 author: "Colton J. McCurdy"
 date: {{ .Date }}
-image: "/image/book-covers/{{ .Name }}/cover.jpg"
+image: "/images/book-covers/{{ .Name }}/cover.jpg"
 book-tags: ["book"]
 books: ["{{ replace .Name "-" " " | title }}"]
 book-authors: []

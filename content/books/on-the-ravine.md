@@ -4,7 +4,7 @@ subtitle: ""
 description: "This book came with my 2000 Audi S4 Avant who I purchased from the author. This book is honestly up there for me. It felt real. A story about a doctor at a methodone clinic who was classmates and now 'friends' with another doctor who provides a live-in house, safe place for drug use and any drug you want. And a patient the main doctor cares about (like a daughter)."
 author: "Colton J. McCurdy"
 date: 2026-02-17T07:05:54-04:00
-image: "/image/book-covers/on-the-ravine/cover.jpg"
+image: "/images/book-covers/on-the-ravine/cover.jpg"
 book-tags: ["book"]
 books: ["On the Ravine"]
 book-authors: ["Vincent Lam"]

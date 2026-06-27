@@ -4,7 +4,7 @@ subtitle: "General thinking concepts"
 description: ""
 author: "Colton J. McCurdy"
 date: 2026-03-21T14:12:15-04:00
-image: "/image/book-covers/great-mental-models/cover.jpg"
+image: "/images/book-covers/great-mental-models/cover.jpg"
 book-tags: ["book"]
 books: ["Great Mental Models"]
 book-authors: ["Farnam Street"]

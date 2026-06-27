@@ -4,7 +4,7 @@ subtitle: "How money and markets really work"
 description: "Phenomenal book. Aligned well with so many of my beliefs on how we make the world a better place. Gets you excited about trying to 'fix' the world. Makes you believe it's possible."
 author: "Colton J. McCurdy"
 date: 2026-03-09T13:27:45-04:00
-image: "/image/book-covers/in-this-economy/cover.jpg"
+image: "/images/book-covers/in-this-economy/cover.jpg"
 book-tags: ["book", "2026"]
 books: ["In This Economy"]
 book-authors: ["Kyla Scanlon"]
