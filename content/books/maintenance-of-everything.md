@@ -4,7 +4,7 @@ subtitle: ""
 description: ""
 author: "Colton J. McCurdy"
 date: 2026-06-10T00:00:00-04:00
-image: "/images/book-covers/maintenance-of-everything-part-one/cover.jpg"
+image: "/images/book-covers/maintenance-of-everything/cover.jpg"
 book-tags: ["book", "2026"]
 books: ["Maintenance: of Everything: Part One"]
 book-authors: ["Stewart Brand"]
