@@ -1,7 +1,7 @@
 ---
 title: "On the Genealogy of Morals"
 subtitle: ""
-description: "Three coherent and complex discussions of topics related to the history of moral sentiments. Overall, I think I disagreed with most points made in this point; particularly the theme that 'the human species loses more than it gains in the transition from free and instinctual beings to individuals whose aggression is unleashed internally.'. I found myself disagreeing with a lot of this book, but it was still an interesting perspective. I will admit that, at times, this book felt 'immature' --- I remember looking up Nietzsche age when written because many times, this felt like it was coming from someone early in adulthood --- (maybe also 'premature') or 'unfiltered thought'."
+description: "Three coherent and complex discussions of topics related to the history of moral sentiments. Overall, I think I disagreed with many of the points made; particularly the theme that 'the human species loses more than it gains in the transition from free and instinctual beings to individuals whose aggression is unleashed internally.'. I found myself disagreeing with a lot of this book, but it was still an interesting perspective. I will admit that, at times, this book felt 'immature' --- I remember looking up Nietzsche age when written because many times, this felt like it was coming from someone early in adulthood --- (maybe also 'premature') or 'unfiltered thought'."
 author: "Colton J. McCurdy"
 date: 2026-05-19T07:43:20-04:00
 image: "/images/book-covers/on-the-genealogy-of-morals/cover.jpg"
@@ -144,3 +144,47 @@ but only of his relations with things --- that, in point of fact, he only thinks
 p96 - "one who is sure of himself speaks softly"
 
 p97 - "reluctant to employ the word 'truth'"
+
+p100 - "All good things were once bad things; every original sin has become an original virtue. Marriage, for example, was for a long time regarded as infringing upon the rights of the community; in former
+times a man had to make amends for having the audacity to claim one woman for himself...""
+
+p104 - life is this constant battle with oneself "_enjoys_ itself in this very _suffering_"
+
+p105 - "employs the _diversity_ of perspectives"
+
+p106 - =="There is _only_ a seeing from a perspective, _only_ a 'knowing' from a perspective"==
+
+p110 - "when they succeed in forcing their own misery, in fact, all misery, _into the consciousness_ of the happy, so that the latter begin one day to be ashamed of their happiness, ... 'It is a shame to be happy; _there is too much misery!_'" 
+
+p114 - "'I suffer: someone is to blame' ... you yourself are that someone, you alone are to blame -- _you yourself are to blame for yourself_"
+
+p115 - "'sinfulness' in Man is not a face, but rather merely the interpretation of a fact, of a physiological discomfort --- a discomfort seen through a moral and religious perspective"
+
+p116 - psychological solutions to physiological problems"
+
+p117 - "a _naive_ presumption that pain _must_ vanish" ... =="fought with weapons which reduce the consciousness of life"==
+
+p119 - "The hypnotic sensation of nothingness, the peace of deepest sleep"
+
+p134 - "these 'free', _very_ free souls' believe themselves to be wholly unaffected by the ascetic ideal; and yet, if I may reveal to them what they themselves cannot see --- for they stand too close --- this ideal is simply _their_ ideal.
+
+p134 - "there have been no _freethinkers_"
+
+p134 - "Nothing is true, everything is permitted"
+
+p135 - "truth is _divine_"
+
+p136 - "Both science and the ascetic ideal spring from the same soil and theus share the same foundation"
+
+p139 - "Supposing that everything 'known' to Man fails to satisfy his desires"
+
+p140 - "All this is to a high degree ascetic, but at the same time it is to a much greater degree _nihilistic_; let us make no mistake about this! You see in the historian a sombre, hard, but determined gaze --- an eye that _peers out_ like that of a lone polar explorer
+(perhaps so as not to look within, so as not to look back?) --- here is nothing but snow --- here everything is hushed; nothing is heard save for a few crows, whose distant cries of 'why?' 'in vain' and '_nada_' vanish into the void and silence --- here nothing more flourishes and grows, except perhaps Petersburg metapolitical intrigue and Tolstonian 'pity'"
+
+p143 - "All great things perish by their own accord"
+
+p144 - "what is the meaning of _our_ existence ... own consciousness _as a problem_ ... the desire for truth will undoubtedly _destroy_ morality"
+
+p144 - "_Why_ do we suffer?" "The senselessness of suffering, _not_ suffering itself, was the curse which lay upon humanity --- _until the ascetic ideal gave Man a meaning!_ ... any meaning is better than no meaning"
+
+p145 - "Man will desire _oblivion_ rather than not desire _at all_."
