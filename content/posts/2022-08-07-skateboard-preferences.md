@@ -5,7 +5,7 @@ author: ""
 date: 2022-08-07T12:39:17-04:00
 subtitle: ""
 image: ""
-post-tags: ["skateboarding"]
+tags: ["skateboarding"]
 posts: ["Skateboard Preferences"]
 draft: false
 hide: false

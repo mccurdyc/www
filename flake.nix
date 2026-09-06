@@ -28,13 +28,15 @@
             nix-fmt = pkgs.nixpkgs-fmt;
           };
 
-          packages = (builtins.attrValues ci_packages) ++ [
+          devPackages = (builtins.attrValues ci_packages) ++ [
             pkgs.nil
             pkgs.deadnix
             pkgs.gnumake
             pkgs.google-cloud-sdk
             pkgs.hugo
             pkgs.nixpkgs-fmt
+            pkgs.pagefind
+            pkgs.shfmt
             pkgs.statix
             pkgs.wget
           ];
@@ -58,7 +60,8 @@
                 shellcheck.enable = true;
                 shfmt = {
                   enable = true;
-                  entry = "shfmt --simplify --indent 2";
+                  package = pkgs.shfmt;
+                  entry = "${pkgs.shfmt}/bin/shfmt --simplify --indent 2";
                 };
               };
             };
@@ -68,8 +71,7 @@
 
           devShells.default = pkgs.mkShell {
             inherit (self.checks.${system}.pre-commit-check) shellHook;
-            buildInputs = self.checks.${system}.pre-commit-check.enabledPackages;
-            inherit packages;
+            packages = self.checks.${system}.pre-commit-check.enabledPackages ++ devPackages;
           };
         };
     };

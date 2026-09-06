@@ -5,7 +5,7 @@ author: ""
 date: {{ .Date }}
 subtitle: ""
 image: ""
-post-tags: []
+tags: []
 posts: []
 draft: false
 ---

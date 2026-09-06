@@ -5,7 +5,7 @@ author: ""
 date: 2022-09-04T21:35:06-04:00
 subtitle: ""
 image: ""
-post-tags: ["linux", "nixos", "personal setup"]
+tags: ["linux", "nixos", "personal setup"]
 posts: ["NixOS Config"]
 draft: false
 hide: false

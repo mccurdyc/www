@@ -5,7 +5,7 @@ author: ""
 date: 2024-07-01T06:57:01-04:00
 subtitle: ""
 image: ""
-post-tags: ["life", "2024"]
+tags: ["life", "2024"]
 posts: ["Life Learnings"]
 draft: false
 ---

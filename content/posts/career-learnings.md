@@ -5,7 +5,7 @@ author: ""
 date: 2025-01-24T07:55:40-04:00
 subtitle: ""
 image: ""
-post-tags: ["career", "mentoring", "2025"]
+tags: ["career", "mentoring", "2025"]
 posts: []
 draft: false
 ---

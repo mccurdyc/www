@@ -5,7 +5,7 @@ author: "Colton J. McCurdy"
 date: 2022-01-07
 subtitle: "A tradeoff between effeciency, effectiveness and enjoyment"
 image: ""
-post-tags: ["reading", "2022", "hobbies", "ipad", "personal process"]
+tags: ["reading", "2022", "hobbies", "ipad", "personal process"]
 posts: ["How I Read: A tradeoff between effeciency, effectiveness and enjoyment"]
 hide: false
 ---

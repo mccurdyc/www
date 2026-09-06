@@ -5,7 +5,7 @@ author: ""
 date: 2024-03-17T13:27:56-04:00
 subtitle: "A story about developing one's style"
 image: "/images/2024/03-SF/0027.jpg"
-post-tags: ["2024", "photography", "blurry", "style"]
+tags: ["2024", "photography", "blurry", "style"]
 posts: ["Blurred Perspecive"]
 draft: false
 ---

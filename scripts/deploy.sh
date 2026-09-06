@@ -2,10 +2,14 @@
 
 set -ux -o pipefail
 
+FASTLY_SERVICE_ID="${FASTLY_SERVICE_ID:-$(op item get Fastly --fields service_id --reveal)}"
+FASTLY_API_KEY="${FASTLY_API_KEY:-$(op item get Fastly --fields purge_token --reveal)}"
+
 function main() {
 	# Build site!
 	rm -rf public
 	hugo --ignoreCache --buildFuture --enableGitInfo
+	pagefind --site public
 
 	# Deploy!
 	# Make sure to set the gcloud account using: gcloud auth application-default login

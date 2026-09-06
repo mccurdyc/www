@@ -5,7 +5,7 @@ author: ""
 date: 2025-10-05T16:16:19-04:00
 subtitle: ""
 image: ""
-post-tags: ["2025", "ai"]
+tags: ["2025", "ai"]
 posts: []
 draft: false
 ---

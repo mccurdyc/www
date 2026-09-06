@@ -4,7 +4,7 @@ description: "Do I spend my time learning the latest and greatest abstraction so
 date: 2026-01-30T08:47:26-05:00
 subtitle: ""
 image: ""
-post-tags: ["2026"]
+tags: ["2026"]
 posts: []
 draft: false
 ---

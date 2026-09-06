@@ -5,7 +5,7 @@ author: ""
 date: 2022-09-11T10:08:53-04:00
 subtitle: "Joshua K. Jackson"
 image: ""
-post-tags: ["photography"]
+tags: ["photography"]
 posts: ["September 2022 Photography Influences"]
 draft: false
 hide: false

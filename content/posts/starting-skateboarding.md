@@ -5,7 +5,7 @@ author: "Colton McCurdy"
 date: 2022-04-10T21:40:43-04:00
 subtitle: ""
 image: ""
-post-tags: ["skating", "personal", "blog"]
+tags: ["skating", "personal", "blog"]
 posts: ["Skateboarding"]
 draft: false
 hide: false

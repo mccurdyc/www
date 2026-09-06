@@ -5,7 +5,7 @@ author: ""
 date: 2022-01-18T08:01:52-05:00
 subtitle: ""
 image: ""
-post-tags: ["photography"]
+tags: ["photography"]
 posts: ["Photography Influences"]
 draft: false
 hide: false

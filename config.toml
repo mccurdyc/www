@@ -145,6 +145,10 @@ cacheControl = "no-store, max-age=0, s-maxage=3600"
     name       = "\"NOTES\""
     url        = "posts/"
   [[menu.main]]
+    identifier = "search"
+    name       = "\"SEARCH\""
+    url        = "search/"
+  [[menu.main]]
     identifier = "photos"
     name       = "\"PHOTOS\""
     url        = "photos/"

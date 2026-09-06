@@ -5,7 +5,7 @@ author: ""
 date: 2024-09-11T08:22:14-04:00
 subtitle: ""
 image: ""
-post-tags: ["nix", "2024"]
+tags: ["nix", "2024"]
 posts: []
 draft: false
 ---

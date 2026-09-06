@@ -5,7 +5,7 @@ author: ""
 date: 2026-01-21T08:47:45-05:00
 subtitle: ""
 image: ""
-post-tags: ["DFW"]
+tags: ["DFW"]
 posts: []
 draft: false
 ---

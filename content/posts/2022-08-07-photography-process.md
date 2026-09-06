@@ -5,7 +5,7 @@ author: ""
 date: 2022-08-07T13:49:57-04:00
 subtitle: ""
 image: ""
-post-tags: ["photography"]
+tags: ["photography"]
 posts: ["Photography Process"]
 draft: false
 hide: false

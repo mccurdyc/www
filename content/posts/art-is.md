@@ -5,7 +5,7 @@ author: ""
 date: 2024-03-09T20:01:44-05:00
 subtitle: ""
 image: ""
-post-tags: ["2024", "Art"]
+tags: ["2024", "Art"]
 posts: ["Art is"]
 draft: false
 ---

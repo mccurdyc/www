@@ -5,7 +5,7 @@ author: ""
 date: 2025-06-15T20:52:23-04:00
 subtitle: ""
 image: ""
-post-tags: ["envoy", "2025"]
+tags: ["envoy", "2025"]
 posts: ["Building Envoy"]
 draft: false
 ---

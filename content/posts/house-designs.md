@@ -5,7 +5,7 @@ author: ""
 date: 2024-02-25T10:19:43-05:00
 subtitle: ""
 image: ""
-post-tags: ["house", "2024", "interior design"]
+tags: ["house", "2024", "interior design"]
 posts: ["Interior Design"]
 draft: false
 ---

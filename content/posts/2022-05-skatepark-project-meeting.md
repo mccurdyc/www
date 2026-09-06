@@ -5,7 +5,7 @@ author: ""
 date: 2022-05-24T07:57:33-04:00
 subtitle: "Let's do this!"
 image: ""
-post-tags: ["volunteer", "skatepark project", "skateboarding"]
+tags: ["volunteer", "skatepark project", "skateboarding"]
 posts: ["2022-05-24 Skatepark Meeting with City Council"]
 draft: false
 hide: false

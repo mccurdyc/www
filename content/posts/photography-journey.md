@@ -5,7 +5,7 @@ author: ""
 date: 2022-01-15T12:10:05-05:00
 subtitle: ""
 image: ""
-post-tags: ["photography", "x100v", "Leica", "film", "digital photography", "hobby"]
+tags: ["photography", "x100v", "Leica", "film", "digital photography", "hobby"]
 posts: ["Photography Journey"]
 draft: false
 hide: false

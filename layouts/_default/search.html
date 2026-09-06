@@ -1,0 +1,29 @@
+{{ define "main" }}
+<main class="post">
+  <article>
+    <h1 class="post-title">"{{ .Title | upper }}"</h1>
+    <div id="search" class="post-content"></div>
+  </article>
+</main>
+
+<script>
+  (function () {
+    const css = document.createElement('link');
+    css.rel = 'stylesheet';
+    css.href = '/pagefind/pagefind-ui.css';
+    document.head.appendChild(css);
+
+    const js = document.createElement('script');
+    js.src = '/pagefind/pagefind-ui.js';
+    js.onload = function () {
+      new PagefindUI({
+        element: "#search",
+        showImages: false,
+        showEmptyFilters: false,
+        excerptLength: 15
+      });
+    };
+    document.head.appendChild(js);
+  })();
+</script>
+{{ end }}

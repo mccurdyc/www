@@ -5,7 +5,7 @@ author: ""
 date: 2022-05-07
 subtitle: ""
 image: ""
-post-tags: ["2022", "linux"]
+tags: ["2022", "linux"]
 posts: ["NixOS in a Firecracker VM"]
 draft: false
 hide: false

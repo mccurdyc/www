@@ -5,7 +5,7 @@ author: ""
 date: 2023-01-05T10:08:53-04:00
 subtitle: ""
 image: ""
-post-tags: ["photography"]
+tags: ["photography"]
 posts: ["January 2023 Photography Influences"]
 draft: false
 hide: false

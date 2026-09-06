@@ -3,7 +3,7 @@ title: GitHub OAuth Sign-in Button with Vue.js and Vuetify
 description: ""
 author: "Colton J. McCurdy"
 date: 2019-07-10
-post-tags: ["github", "vuejs", "vuetifyjs", "javascript", "naas", "2019"]
+tags: ["github", "vuejs", "vuetifyjs", "javascript", "naas", "2019"]
 posts: ["GitHub OAuth Sign-in Button with Vue.js and Vuetify"]
 image: ""
 ---

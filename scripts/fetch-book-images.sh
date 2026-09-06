@@ -10,4 +10,4 @@ do
 
   wget -O "$tmpfile" "$source"
   mv "$tmpfile" "$destdir/cover.jpg"
-done < "$(dirname $0)/data/covers.csv"
+done < "$(dirname "$0")/data/covers.csv"

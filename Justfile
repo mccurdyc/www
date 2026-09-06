@@ -11,8 +11,6 @@ set shell := ["/usr/bin/env", "bash", "-uc"]
 
 log := "warn"
 export JUST_LOG := log
-export FASTLY_SERVICE_ID := `op item get Fastly --fields service_id --reveal`
-export FASTLY_API_KEY := `op item get Fastly --fields purge_token --reveal`
 
 set quiet := false
 
@@ -20,13 +18,14 @@ shebang := "/usr/bin/env bash"
 
 default: deploy
 
-serve:
+serve: build
     hugo serve --baseURL http://nuc:1313 --bind 0.0.0.0
 
 build:
     hugo --ignoreCache
+    pagefind --site public
 
-deploy: build
+deploy:
     ./scripts/deploy.sh
 
 rename-seq dir: clean-images

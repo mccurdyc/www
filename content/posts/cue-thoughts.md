@@ -5,7 +5,7 @@ author: ""
 date: 2025-06-18T07:34:11-04:00
 subtitle: ""
 image: ""
-post-tags: ["cue", "2025"]
+tags: ["cue", "2025"]
 posts: []
 draft: false
 ---

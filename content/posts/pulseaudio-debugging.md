@@ -5,7 +5,7 @@ author: "Colton J. McCurdy"
 date: 2020-08-19T06:50:52-04:00
 subtitle: ""
 image: ""
-post-tags: ["pavucontrol", "linux", "arch", "pulseaudio", "debugging"]
+tags: ["pavucontrol", "linux", "arch", "pulseaudio", "debugging"]
 posts: ["pavucontrol Stuck Establishing Connection to PulseAudio"]
 hide: true
 ---

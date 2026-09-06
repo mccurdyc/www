@@ -5,7 +5,7 @@ author: ""
 date: 2024-08-07T07:59:30-04:00
 subtitle: ""
 image: ""
-post-tags: ["documentation", "software engineering"]
+tags: ["documentation", "software engineering"]
 posts: []
 draft: false
 ---

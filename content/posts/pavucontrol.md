@@ -3,7 +3,7 @@ title: Fixing `pavucontrol`
 description: ""
 author: "Colton J. McCurdy"
 date: 2019-10-29
-post-tags: ["linux", "pavucontrol", "audio", "2019"]
+tags: ["linux", "pavucontrol", "audio", "2019"]
 posts: ["Fixing `pavucontrol`"]
 hide: true
 ---

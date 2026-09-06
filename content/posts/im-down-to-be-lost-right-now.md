@@ -5,7 +5,7 @@ author: ""
 date: 2022-09-11T10:24:35-04:00
 subtitle: ""
 image: ""
-post-tags: ["skateboarding", "andy anderson"]
+tags: ["skateboarding", "andy anderson"]
 posts: ["I'm Kinda Down to Be Lost Right Now"]
 draft: false
 hide: false

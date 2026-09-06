@@ -5,7 +5,7 @@ author: ""
 date: 2024-08-24T09:12:39-04:00
 subtitle: ""
 image: ""
-post-tags: ["ai", "random-thoughts", "anxiety"]
+tags: ["ai", "random-thoughts", "anxiety"]
 posts: ["Anxiety-Provoking AI"]
 draft: false
 ---

@@ -5,7 +5,7 @@ author: ""
 date: 2025-08-08T21:29:57-04:00
 subtitle: ""
 image: ""
-post-tags: ["2025", "mental health", "carl jung"]
+tags: ["2025", "mental health", "carl jung"]
 posts: []
 draft: false
 ---
