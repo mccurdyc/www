@@ -1,11 +1,11 @@
 ---
-title: "Even More Ai Thoughts"
+title: "AiToday 8"
 description: ""
 author: ""
 date: 2026-03-05T07:45:54-05:00
-subtitle: ""
+subtitle: "Even More Ai Thoughts"
 image: ""
-tags: []
+tags: ["ai today"]
 posts: []
 draft: false
 ---

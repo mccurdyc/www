@@ -1,11 +1,11 @@
 ---
-title: "Ai Had Potential"
+title: "AiToday 4"
 description: "We almost(?) had a \"truth machine\". It was almost a thing that we could query for the probabilities of outcomes or certainties of various facts. Sadly, \"AGI\" put too much pressure to feed it all the garbage of the internet; the kingdom of opinions and few facts."
 author: ""
 date: 2025-09-20T08:07:13-04:00
-subtitle: ""
+subtitle: "Ai Had Potential"
 image: ""
-tags: []
+tags: ["ai today"]
 posts: []
 draft: false
 ---

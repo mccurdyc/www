@@ -1,11 +1,11 @@
 ---
-title: "Ai Thoughts"
+title: "AiToday 2"
 description: ""
 author: ""
 date: 2025-06-24T19:48:59-04:00
-subtitle: ""
+subtitle: "Ai Thoughts"
 image: ""
-tags: ["AI", "2025"]
+tags: ["AI", "2025", "ai today"]
 posts: []
 draft: false
 ---

@@ -1,11 +1,11 @@
 ---
-title: "Frustration with AI Loops"
+title: "AiToday 6"
 description: "It's frustrating seeing AI just repeatedly try different things in a loop. I mean maybe it helped me understand what wouldn't work. But honestly after like three loops, I get to the point where I realize that my time is going to be better spent trying to understand the first principles of the problem so that I can understand why AI is struggling so much trying to produce a working solution. And either doing it myself or asking AI to do it some other way."
 author: ""
 date: 2026-02-17T07:56:29-05:00
-subtitle: ""
+subtitle: "Frustration with AI Loops"
 image: ""
-tags: ["2026"]
+tags: ["2026", "ai today"]
 posts: []
 draft: false
 ---

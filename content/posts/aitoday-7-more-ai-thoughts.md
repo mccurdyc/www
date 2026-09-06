@@ -1,11 +1,11 @@
 ---
-title: "More Ai Thoughts"
+title: "AiToday 7"
 description: "It's amazing; yet I wish we'd avoid it. I think we needed a better Google; not agentic. I feel lazier, not more productive."
 author: ""
 date: 2026-03-02T07:28:33-05:00
-subtitle: ""
+subtitle: "More Ai Thoughts"
 image: ""
-tags: ["2026"]
+tags: ["2026", "ai today"]
 posts: []
 draft: false
 ---

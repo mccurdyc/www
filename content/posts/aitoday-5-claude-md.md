@@ -1,11 +1,11 @@
 ---
-title: "Claude Md"
+title: "AiToday 5"
 description: ""
 author: ""
 date: 2025-10-05T16:16:19-04:00
-subtitle: ""
+subtitle: "Claude Md"
 image: ""
-tags: ["2025", "ai"]
+tags: ["2025", "ai", "ai today"]
 posts: []
 draft: false
 ---

@@ -1,11 +1,11 @@
 ---
-title: "Anxiety Provoking Ai"
+title: "AiToday 1"
 description: ""
 author: ""
 date: 2024-08-24T09:12:39-04:00
-subtitle: ""
+subtitle: "Anxiety Provoking Ai"
 image: ""
-tags: ["ai", "random-thoughts", "anxiety"]
+tags: ["ai", "random-thoughts", "anxiety", "ai today"]
 posts: ["Anxiety-Provoking AI"]
 draft: false
 ---

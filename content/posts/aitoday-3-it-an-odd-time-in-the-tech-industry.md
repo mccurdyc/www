@@ -1,11 +1,11 @@
 ---
-title: "It's an Odd Time in the Tech Industry Right Now"
+title: "AiToday 3"
 description: "Things feel manic and chaotic. We are moving at hyper speed. All to make a few at the top a few bucks so that they can move on."
 author: ""
 date: 2025-07-23T06:42:00-04:00
-subtitle: ""
+subtitle: "It's an Odd Time in the Tech Industry Right Now"
 image: ""
-tags: ["tech", "2025", "ai"]
+tags: ["tech", "2025", "ai", "ai today"]
 posts: []
 draft: false
 ---
