@@ -5,7 +5,7 @@ author: ""
 date: 2026-08-12T22:11:41-04:00
 subtitle: "Keep Thinking"
 image: ""
-post-tags: ["ai today"]
+tags: ["ai today"]
 posts: []
 draft: false
 ---

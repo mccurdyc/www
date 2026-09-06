@@ -5,7 +5,7 @@ author: ""
 date: 2026-08-29T20:56:24-04:00
 subtitle: "A Positive Take on Ai"
 image: ""
-post-tags: ["ai today"]
+tags: ["ai today"]
 posts: []
 draft: false
 ---
