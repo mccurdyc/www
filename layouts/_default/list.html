@@ -1,0 +1,55 @@
+{{ define "main" }}
+    <link rel="stylesheet" href="/css/list.css" />
+
+    <main class="posts">
+        <h1>"{{ .Title | upper }}"</h1>
+
+        <p>
+        {{- if .Content }}
+            <div class="content">{{ .Content }}</div>
+        {{- end }}
+        </p>
+
+        {{- $imageBase := getenv "HUGO_IMAGE_CDN" | default "" }}
+        {{- range .Data.Pages.GroupByDate "2006" }}
+            <div class="posts-group">
+                <div class="post-year">{{ .Key }}</div>
+
+                <ul class="posts-list">
+                    {{- range .Pages }}
+                      {{ if (.Param "hide" | default false) }}
+                      {{ else }}
+                        <li class="post-item">
+                            <a href="{{.Permalink}}">
+                                <span class="post-title">"{{ .Title | upper }}"</span>
+                                <span class="post-day">{{ .Date.Format "2006.01.02" }}</span>
+                            </a>
+
+                            {{- if eq .Page.Type "books" }}
+                              {{ $image := .Param "image" }}
+                              {{- if $image }}
+                                  <img src="{{ $imageBase }}{{ $image }}" class="book-cover"/>
+                              {{ end }}
+                            {{ else }}
+                              {{ $image := .Param "image" }}
+                              {{- if $image }}
+                                  <img src="{{ $imageBase }}{{ $image }}?crop=1:1&quality=40" class="photo"/>
+                              {{ end }}
+                            {{ end }}
+
+                            <p>
+                            {{ $description := .Param "description" }}
+                            {{- if $description }}
+                                <span class="description">
+                                    {{ $description | upper }}
+                                </span>
+                            {{ end }}
+                            <p>
+                        </li>
+                      {{ end }}
+                    {{- end }}
+                </ul>
+            </div>
+        {{- end }}
+    </main>
+{{ end }}

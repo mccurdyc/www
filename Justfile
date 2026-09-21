@@ -19,11 +19,15 @@ shebang := "/usr/bin/env bash"
 default: deploy
 
 serve: build
-    hugo serve --baseURL http://nuc:1313 --bind 0.0.0.0
+    HUGO_IMAGE_CDN="https://www.mccurdyc.dev" hugo serve --baseURL http://nuc:1313 --bind 0.0.0.0
 
-build:
+build: check-submodules
     hugo --ignoreCache
     pagefind --site public
+
+check-submodules:
+    @test -f themes/hello-friend-ng/layouts/_default/baseof.html || \
+        (echo "Error: theme submodule is not initialized. Run 'git submodule update --init --recursive'" && exit 1)
 
 deploy:
     ./scripts/deploy.sh
@@ -35,10 +39,12 @@ rename-seq dir: clean-images
 sync-images dir:
     just rename-seq {{ dir }}
     gsutil -m rsync -d -r "/mnt/photos/{{ dir }}/" "gs://images.mccurdyc.dev/images/{{ dir }}/"
+    gsutil -m rsync -d -r "gs://images.mccurdyc.dev/images/{{ dir }}/" "gs://www.mccurdyc.dev/images/{{ dir }}/"
 
-# Usage - just dump-images '2024/early'
-dump-images dir:
-    ./scripts/dump-images.sh {{ dir }}
+# Usage - just photo-post '2026/06-bonaire'
+photo-post dir:
+    just sync-images {{ dir }}
+    ./scripts/photo-post.py {{ dir }}
 
 # Remove _L***.jpg images
 clean-images:

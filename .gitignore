@@ -3,3 +3,4 @@ public/
 node_modules/
 .direnv*
 .pre-commit-config.yaml
+__pycache__/

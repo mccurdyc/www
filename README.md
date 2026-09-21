@@ -27,9 +27,7 @@ $ hugo new content/posts/foo-bar-baz.md
 ## Adding Photos
 
 ```bash
-hugo new content/photos/2050-foo.md
-just sync-images '2050/foo'
-just dump-images '2050/foo' >> ./content/photos/2050-foo.md
+just photo-post '2050/foo'
 ```
 
 ## Deploying
