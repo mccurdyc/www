@@ -1,7 +1,7 @@
 ---
 title: "2026 SUMMER"
 date: 2026-07-21T14:21:36-04:00
-image: "/images/2026/summer/0004.jpg"
+image: "/images/2026/summer/0002.jpg"
 draft: false
 hide: false
 ---

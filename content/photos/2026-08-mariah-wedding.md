@@ -1,7 +1,7 @@
 ---
 title: "2026 08 MARIAH WEDDING"
 date: 2026-08-27T14:21:24-04:00
-image: "/images/2026/08-mariah-wedding/0143.jpg"
+image: "/images/2026/08-mariah-wedding/0017.jpg"
 draft: false
 hide: false
 ---

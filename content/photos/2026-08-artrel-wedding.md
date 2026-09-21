@@ -1,7 +1,7 @@
 ---
 title: "2026 08 ARTREL WEDDING"
 date: 2026-08-01T14:21:12-04:00
-image: "/images/2026/08-artrel-wedding/0271.jpg"
+image: "/images/2026/08-artrel-wedding/0250.jpg"
 draft: false
 hide: false
 ---
