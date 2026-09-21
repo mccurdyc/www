@@ -1,7 +1,7 @@
 ---
 title: "2026 06 BONAIRE"
 date: 2026-06-21T14:20:44-04:00
-image: "/images/2026/06-bonaire/0038.jpg"
+image: "/images/2026/06-bonaire/0020.jpg"
 draft: false
 hide: false
 ---
