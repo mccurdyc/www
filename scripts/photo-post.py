@@ -8,6 +8,17 @@ import sys
 from pathlib import Path
 
 GCS_BASE = "gs://images.mccurdyc.dev"
+IMAGE_EXTENSIONS = (
+    ".avif",
+    ".bmp",
+    ".gif",
+    ".jpeg",
+    ".jpg",
+    ".png",
+    ".tif",
+    ".tiff",
+    ".webp",
+)
 
 
 def run(cmd, **kwargs):
@@ -15,12 +26,26 @@ def run(cmd, **kwargs):
     return subprocess.run(cmd, check=True, text=True, **kwargs)
 
 
+def _natural_sort_key(path):
+    """Return a sort key that orders embedded numbers numerically."""
+    basename = Path(path).stem
+    return [
+        int(part) if part.isdigit() else part.lower()
+        for part in re.split(r"(\d+)", basename)
+    ]
+
+
 def list_images(dir_path):
     """Return sorted public image URLs for a directory in GCS."""
     url = f"{GCS_BASE}/images/{dir_path}/"
     result = run(["gsutil", "ls", url], capture_output=True)
-    images = sorted(line.strip() for line in result.stdout.splitlines() if line.strip())
-    return images
+    lines = (line.strip() for line in result.stdout.splitlines() if line.strip())
+    images = [
+        line
+        for line in lines
+        if any(line.lower().endswith(ext) for ext in IMAGE_EXTENSIONS)
+    ]
+    return sorted(images, key=_natural_sort_key)
 
 
 def image_path_from_gcs(gcs_url):
