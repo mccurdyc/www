@@ -1,3 +1,4 @@
 [submodule "themes/hello-friend-ng"]
 	path = themes/hello-friend-ng
 	url = git@github.com:mccurdyc/hugo-theme-hello-friend-ng.git
+	branch = master
