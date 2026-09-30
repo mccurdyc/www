@@ -50,6 +50,7 @@ photo-post dir:
 # Like photo-post, but pulls the canonical images down from GCS to /mnt/photos
 # before generating the post.
 develop-roll dir:
+    mkdir -p /mnt/photos
     gsutil -m rsync -d -r "gs://images.mccurdyc.dev/images/{{ dir }}/" "/mnt/photos/{{ dir }}/"
     gsutil -m rsync -d -r "gs://images.mccurdyc.dev/images/{{ dir }}/" "gs://www.mccurdyc.dev/images/{{ dir }}/"
     ./scripts/photo-post.py {{ dir }}
