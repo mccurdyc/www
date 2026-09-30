@@ -2,8 +2,8 @@
 
 set -ux -o pipefail
 
-FASTLY_SERVICE_ID="${FASTLY_SERVICE_ID:-$(op item get Fastly --fields service_id --reveal)}"
-FASTLY_API_KEY="${FASTLY_API_KEY:-$(op item get Fastly --fields purge_token --reveal)}"
+FASTLY_SERVICE_ID="${FASTLY_SERVICE_ID:-$(cat ~/.fastly-sid)}"
+FASTLY_API_KEY="${FASTLY_API_KEY:-$(cat ~/.fastly-key)}"
 
 function main() {
 	# Build site!

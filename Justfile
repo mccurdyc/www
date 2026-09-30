@@ -46,6 +46,14 @@ photo-post dir:
     just sync-images {{ dir }}
     ./scripts/photo-post.py {{ dir }}
 
+# Usage - just develop-roll '2026/06-bonaire'
+# Like photo-post, but pulls the canonical images down from GCS to /mnt/photos
+# before generating the post.
+develop-roll dir:
+    gsutil -m rsync -d -r "gs://images.mccurdyc.dev/images/{{ dir }}/" "/mnt/photos/{{ dir }}/"
+    gsutil -m rsync -d -r "gs://images.mccurdyc.dev/images/{{ dir }}/" "gs://www.mccurdyc.dev/images/{{ dir }}/"
+    ./scripts/photo-post.py {{ dir }}
+
 # Remove _L***.jpg images
 clean-images:
     find /mnt/photos -name "._*" -exec sudo rm -rf {} \;
