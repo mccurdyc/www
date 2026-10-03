@@ -32,12 +32,8 @@ check-submodules:
 deploy:
     ./scripts/deploy.sh
 
-rename-seq dir: clean-images
-    ./scripts/rename-seq.sh "/mnt/photos/{{ dir }}"
-
 # Usage - just sync-images '2024/early'
-sync-images dir:
-    just rename-seq {{ dir }}
+sync-images dir: clean-images
     gsutil -m rsync -d -r "/mnt/photos/{{ dir }}/" "gs://images.mccurdyc.dev/images/{{ dir }}/"
     gsutil -m rsync -d -r "gs://images.mccurdyc.dev/images/{{ dir }}/" "gs://www.mccurdyc.dev/images/{{ dir }}/"
 
