@@ -165,3 +165,16 @@ figcaption p {
 .pswp__counter {
   display: none;
 }
+
+/*
+Photo post figure captions: render the image filename below the image,
+centered, instead of as an overlay.
+*/
+.gallery .photo-figure::after {
+    content: attr(data-filename);
+    display: block;
+    padding: 5px 0;
+    text-align: center;
+    font-size: 75%;
+    pointer-events: none;
+}
