@@ -39,6 +39,7 @@
             pkgs.shfmt
             pkgs.statix
             pkgs.wget
+            pkgs.zk
           ];
         in
         {
