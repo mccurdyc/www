@@ -59,6 +59,10 @@ clean-images:
 sync-bookcovers:
     gsutil -m rsync -d -r "/mnt/photos/book-covers" "gs://images.mccurdyc.dev/images/book-covers"
 
+# Copy Obsidian notes tagged #public into Hugo posts
+obsidian-post:
+    ./scripts/obsidian-post.sh
+
 # Import SuperNote digest notes as book posts
 import-books:
     ./scripts/supernote-to-book.sh
