@@ -32,7 +32,7 @@ just photo-post '2050/foo'
 
 ## Publishing Obsidian Notes
 
-Notes in the Obsidian vault tagged `#public` are copied into Hugo posts with
+Notes in the Obsidian vault tagged `#post` are copied into Hugo posts with
 archetype frontmatter via `just obsidian-post`. Notes tagged `#book` are copied
 into Hugo book posts via `just obsidian-book`.
 

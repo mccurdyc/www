@@ -17,10 +17,10 @@ ARCHETYPES_DIR = REPO_ROOT / "archetypes"
 
 KINDS = {
     "posts": {
-        "tag": "public",
+        "tag": "post",
         "content_dir": "content/posts",
         "archetype": "posts.md",
-        "trigger_tag": "public",
+        "trigger_tag": "post",
     },
     "books": {
         "tag": "book",
@@ -258,12 +258,14 @@ def build_frontmatter(
     frontmatter["title"] = note.get("title", title_case(slug.replace("-", " ")))
     frontmatter["date"] = date_str
 
-    note_tags = [t for t in note.get("tags", []) if t != trigger]
+    note_tags = note.get("tags", [])
 
     if kind == "posts":
-        frontmatter["tags"] = note_tags
+        frontmatter["tags"] = list(dict.fromkeys(note_tags + ["obsidian"]))
     elif kind == "books":
-        frontmatter["book-tags"] = ["book"] + note_tags
+        frontmatter["book-tags"] = list(
+            dict.fromkeys(["book"] + note_tags + ["obsidian"])
+        )
         frontmatter["books"] = [frontmatter["title"]]
         frontmatter["image"] = f"/images/book-covers/{slug}/cover.jpg"
 
