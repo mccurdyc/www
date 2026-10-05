@@ -1,10 +1,15 @@
 ---
-tags:
-  - public
-title: Dante Sisofo
-date created: Saturday, September 26th 2026, 10:45:49 pm
-date modified: Monday, October 5th 2026, 11:30:15 am
+title: "Dante Sisofo"
+description: ""
+author: ""
+date: "2026-09-26T22:45:49-04:00"
+subtitle: ""
+image: ""
+tags: []
+posts: []
+draft: false
 ---
+
 https://dantesisofo.com/street-photography-masterclass-with-the-ricoh-gr-iii/
 "Walk More, See More"
 "The more that you walk, the more that you see. The more that you see, the more that you photograph. The more that you photograph, the more curious you become
@@ -59,4 +64,4 @@ Feel.
 
 consistent constraints
 
-Constraints create freedom; one camera one lens one street 
+Constraints create freedom; one camera one lens one street

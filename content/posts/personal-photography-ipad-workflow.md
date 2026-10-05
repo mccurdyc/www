@@ -1,10 +1,15 @@
 ---
-tags:
-  - public
-title: iPad Workflow
-date created: Sunday, October 19th 2025, 4:39:53 pm
-date modified: Monday, October 5th 2026, 12:00:04 pm
+title: "iPad Workflow"
+description: ""
+author: ""
+date: "2025-10-19T16:39:53-04:00"
+subtitle: ""
+image: ""
+tags: []
+posts: []
+draft: false
 ---
+
 i've used an ipad as my personal "laptop" for probably five years at this point. first, an 11" M1 ipad air, then --- and now --- a 13" M4 ipad pro. i do have a personal nuc running linux which is where i shell to do most of my personal programming projects. but most of my photography process is done solely on the ipad --- or my iphone via apple shortcuts. since july of 2026, i do now have a personal 16" m2 macbook pro --- my old work machine. and i also have a 2015 thinkpad x1 carbon running windows that i haven't touched in probably 5y at this point. at one point i did try running lightroom classic and negative lab pro and it was just a painful experience.
 
 my main priority is enjoyment. and i enjoy flexibility and convience most. i take my ipad everywhere. it's small --- will probably go back to an 11" next time. light and extremely portable. i like using touch to interact with my photos. i try to do minimal editing to my photos anyway --- it's a personal philosophy. edits aren't "real life". yes, they can be used when you have a particular vision, but i do try to avoid too much editing. i do enjoy editing sometimes though. it's one of the only truly creative things that i do. i want to be able to edit on the go. edit in a coffee shop. edit in the airport. edit in the car when i wait for my wife in tjmaxx.

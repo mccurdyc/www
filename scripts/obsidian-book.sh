@@ -4,4 +4,4 @@ set -euo pipefail
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 
 cd "${SCRIPT_DIR}/.."
-exec "${SCRIPT_DIR}/obsidian-to-hugo.py" posts "$@"
+exec "${SCRIPT_DIR}/obsidian-to-hugo.py" books "$@"

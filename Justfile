@@ -63,6 +63,10 @@ sync-bookcovers:
 obsidian-post:
     ./scripts/obsidian-post.sh
 
+# Copy Obsidian notes tagged #book into Hugo book posts
+obsidian-book:
+    ./scripts/obsidian-book.sh
+
 # Import SuperNote digest notes as book posts
 import-books:
     ./scripts/supernote-to-book.sh
