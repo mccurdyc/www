@@ -1,6 +1,6 @@
 ---
-title: "ai today 13 - ai enshitification; smeering ai on poor interfaces doesnt lead to a magically good abstraction"
-description: ""
+title: "aitoday 13"
+description: "ai enshitification; smeering ai on poor interfaces doesnt lead to a magically good abstraction"
 author: ""
 date: "2026-10-14T12:47:47-04:00"
 subtitle: ""

@@ -1,6 +1,6 @@
 ---
 title: "AiToday 2"
-description: ""
+description: "abstraction layer"
 author: ""
 date: 2025-06-24T19:48:59-04:00
 subtitle: "Ai Thoughts"

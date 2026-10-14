@@ -1,6 +1,6 @@
 ---
-title: "ai today 11"
-description: ""
+title: "aitoday 11"
+description: "effort is no longer the currency"
 author: ""
 date: "2026-10-08T08:45:16-04:00"
 subtitle: ""

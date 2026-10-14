@@ -1,6 +1,6 @@
 ---
-title: "ai today 12 - removing opinions and control leaves space for expertise"
-description: ""
+title: "aitoday 12"
+description: "removing opinions and control leaves space for expertise"
 author: ""
 date: "2026-10-14T12:39:13-04:00"
 subtitle: ""

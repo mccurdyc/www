@@ -1,6 +1,6 @@
 ---
 title: "AiToday 1"
-description: ""
+description: "Finally, maybe we would be free enough to actually think. We could be done shaving yaks. We would be solving the actual first-level problems instead of shaving yaks many layers deep worrying about how to manage network connections, how to structure our code, etc. Or, maybe we could stop solving problems and enjoy life."
 author: ""
 date: 2024-08-24T09:12:39-04:00
 subtitle: "Anxiety Provoking Ai"
