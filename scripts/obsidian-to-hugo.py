@@ -258,6 +258,10 @@ def build_frontmatter(
     frontmatter["title"] = note.get("title", title_case(slug.replace("-", " ")))
     frontmatter["date"] = date_str
 
+    description = metadata.get("description", "")
+    if description:
+        frontmatter["description"] = description
+
     note_tags = note.get("tags", [])
 
     if kind == "posts":
