@@ -23,15 +23,15 @@ class TestBuildFrontmatter(unittest.TestCase):
         self.posts_archetype = self.archetypes_dir / "posts.md"
         self.books_archetype = self.archetypes_dir / "books.md"
 
-    def test_description_from_obsidian_metadata_for_posts(self):
-        """A 'description' property in Obsidian frontmatter is copied to the post."""
+    def test_description_from_obsidian_top_level_for_posts(self):
+        """A top-level 'description' field is copied to the post."""
         note = {
             "title": "Test Post",
+            "description": "A description from Obsidian.",
             "created": "2024-01-15T10:30:00Z",
             "tags": ["post"],
             "metadata": {
                 "date created": "Monday, January 15th 2024, 10:30:00 am",
-                "description": "A description from Obsidian.",
             },
         }
 
@@ -40,6 +40,24 @@ class TestBuildFrontmatter(unittest.TestCase):
         )
 
         self.assertEqual(frontmatter["description"], "A description from Obsidian.")
+
+    def test_description_falls_back_to_metadata(self):
+        """A 'description' property under metadata is used when top-level is absent."""
+        note = {
+            "title": "Test Post",
+            "created": "2024-01-15T10:30:00Z",
+            "tags": ["post"],
+            "metadata": {
+                "date created": "Monday, January 15th 2024, 10:30:00 am",
+                "description": "A metadata description.",
+            },
+        }
+
+        frontmatter = obsidian_to_hugo.build_frontmatter(
+            "posts", self.posts_archetype, note, "test-post"
+        )
+
+        self.assertEqual(frontmatter["description"], "A metadata description.")
 
     def test_description_defaults_to_archetype_when_missing(self):
         """When Obsidian has no description, the archetype default is kept."""
@@ -58,15 +76,15 @@ class TestBuildFrontmatter(unittest.TestCase):
 
         self.assertEqual(frontmatter["description"], "")
 
-    def test_description_from_obsidian_metadata_for_books(self):
-        """A 'description' property in Obsidian frontmatter is copied to books."""
+    def test_description_from_obsidian_top_level_for_books(self):
+        """A top-level 'description' field is copied to books."""
         note = {
             "title": "Test Book",
+            "description": "A book description from Obsidian.",
             "created": "2024-01-15T10:30:00Z",
             "tags": ["book"],
             "metadata": {
                 "date created": "Monday, January 15th 2024, 10:30:00 am",
-                "description": "A book description from Obsidian.",
             },
         }
 

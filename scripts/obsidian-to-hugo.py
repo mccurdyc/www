@@ -258,7 +258,7 @@ def build_frontmatter(
     frontmatter["title"] = note.get("title", title_case(slug.replace("-", " ")))
     frontmatter["date"] = date_str
 
-    description = metadata.get("description", "")
+    description = note.get("description") or metadata.get("description", "")
     if description:
         frontmatter["description"] = description
 
