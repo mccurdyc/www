@@ -255,10 +255,18 @@ def build_frontmatter(
 
     # Start from archetype defaults and overlay note values.
     frontmatter = dict(archetype_fm)
-    frontmatter["title"] = note.get("title", title_case(slug.replace("-", " ")))
+    title = note.get("title", title_case(slug.replace("-", " ")))
+    title_description = ""
+    if kind == "posts" and "-" in title:
+        title, title_description = title.split("-", 1)
+        title = title.strip()
+        title_description = title_description.strip()
+    frontmatter["title"] = title
     frontmatter["date"] = date_str
 
-    description = note.get("description") or metadata.get("description", "")
+    description = (
+        note.get("description") or metadata.get("description", "") or title_description
+    )
     if description:
         frontmatter["description"] = description
 
@@ -278,6 +286,17 @@ def build_frontmatter(
         frontmatter.pop(key, None)
 
     return frontmatter
+
+
+def find_stale_files(content_dir: Path, expected_files: set[Path]) -> list[Path]:
+    """Return markdown files in content_dir that are not in expected_files."""
+    stale = []
+    for path in content_dir.glob("*.md"):
+        if path.name.startswith("_"):
+            continue
+        if path not in expected_files:
+            stale.append(path)
+    return stale
 
 
 def process_kind(kind: str, dry_run: bool = False) -> int:
@@ -300,12 +319,14 @@ def process_kind(kind: str, dry_run: bool = False) -> int:
         content_dir.mkdir(parents=True, exist_ok=True)
 
     copied = 0
+    expected_files: set[Path] = set()
+    seen_slugs: dict[str, str] = {}
     for note in notes:
         rel_path = note["path"]
         title = note.get("title", "")
 
         if kind == "posts":
-            slug = slugify(rel_path.removesuffix(".md"))
+            slug = slugify(Path(rel_path).stem)
         else:
             slug = slugify(title)
 
@@ -313,7 +334,17 @@ def process_kind(kind: str, dry_run: bool = False) -> int:
             print(f"Warning: empty slug for {rel_path}", file=sys.stderr)
             continue
 
+        if slug in seen_slugs:
+            print(
+                f"Warning: duplicate slug '{slug}' for {rel_path} and "
+                f"{seen_slugs[slug]}, skipping {rel_path}",
+                file=sys.stderr,
+            )
+            continue
+        seen_slugs[slug] = rel_path
+
         dest_file = content_dir / f"{slug}.md"
+        expected_files.add(dest_file)
         frontmatter = build_frontmatter(kind, archetype_path, note, slug)
         body = note.get("body", "").rstrip()
         output = f"---\n{dump_simple_yaml(frontmatter)}\n---\n\n{body}\n"
@@ -324,6 +355,14 @@ def process_kind(kind: str, dry_run: bool = False) -> int:
             dest_file.write_text(output)
             print(f"{rel_path} -> {dest_file}")
         copied += 1
+
+    if content_dir.exists():
+        for stale_file in find_stale_files(content_dir, expected_files):
+            if dry_run:
+                print(f"[dry-run] would remove {stale_file}")
+            else:
+                stale_file.unlink()
+                print(f"removed stale {stale_file}")
 
     print(f"{'Would copy' if dry_run else 'Copied'} {copied} note(s) to {content_dir}")
     return 0
