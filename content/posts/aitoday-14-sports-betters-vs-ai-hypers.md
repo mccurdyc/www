@@ -1,6 +1,6 @@
 ---
-title: "AITODAY 14 - sports betters vs ai hypers"
-description: ""
+title: "AITODAY 14"
+description: "sports betters vs ai hypers"
 author: ""
 date: "2026-10-19T20:27:04-04:00"
 subtitle: ""

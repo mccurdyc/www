@@ -166,15 +166,63 @@ class TestFindStaleFiles(unittest.TestCase):
             path.unlink()
         self.content_dir.rmdir()
 
-    def test_returns_files_not_in_expected_set(self):
-        """Files not in the expected set are flagged as stale."""
+    def test_default_keeps_unrelated_stale_files(self):
+        """By default, files that are not duplicates are preserved."""
         expected = self.content_dir / "expected.md"
         stale = self.content_dir / "stale.md"
-        expected.write_text("expected")
-        stale.write_text("stale")
+        expected.write_text("---\nfoo\n---\n\nexpected")
+        stale.write_text("---\nfoo\n---\n\nstale")
 
         result = obsidian_to_hugo.find_stale_files(
-            self.content_dir, {expected}
+            self.content_dir, {expected}, {expected: "expected"}
+        )
+
+        self.assertEqual(result, [])
+
+    def test_default_removes_prefixed_duplicates(self):
+        """Files prefixed with the old directory slug are removed as duplicates."""
+        expected = self.content_dir / "expected.md"
+        duplicate = self.content_dir / "personal-www-posts-expected.md"
+        expected.write_text("---\nfoo\n---\n\nexpected")
+        duplicate.write_text("---\nfoo\n---\n\nduplicate")
+
+        result = obsidian_to_hugo.find_stale_files(
+            self.content_dir, {expected}, {expected: "expected"}
+        )
+
+        self.assertEqual(result, [duplicate])
+
+    def test_default_removes_body_duplicates(self):
+        """Files with the same body as a generated file are removed as duplicates."""
+        expected = self.content_dir / "expected.md"
+        duplicate = self.content_dir / "old-expected.md"
+        expected.write_text("---\nfoo\n---\n\nshared body")
+        duplicate.write_text("---\nbar\n---\n\nshared body")
+
+        result = obsidian_to_hugo.find_stale_files(
+            self.content_dir, {expected}, {expected: "shared body"}
+        )
+
+        self.assertEqual(result, [duplicate])
+
+    def test_default_keeps_prefixed_files_without_expected_match(self):
+        """Prefixed files that do not shadow an expected file are preserved."""
+        prefixed = self.content_dir / "personal-www-posts-unique.md"
+        prefixed.write_text("---\nfoo\n---\n\nunique")
+
+        result = obsidian_to_hugo.find_stale_files(self.content_dir, set(), {})
+
+        self.assertEqual(result, [])
+
+    def test_clean_removes_all_unexpected_files(self):
+        """With clean=True, all files not in the expected set are flagged."""
+        expected = self.content_dir / "expected.md"
+        stale = self.content_dir / "stale.md"
+        expected.write_text("---\nfoo\n---\n\nexpected")
+        stale.write_text("---\nfoo\n---\n\nstale")
+
+        result = obsidian_to_hugo.find_stale_files(
+            self.content_dir, {expected}, {expected: "expected"}, clean=True
         )
 
         self.assertEqual(result, [stale])
@@ -184,17 +232,17 @@ class TestFindStaleFiles(unittest.TestCase):
         index = self.content_dir / "_index.md"
         index.write_text("index")
 
-        result = obsidian_to_hugo.find_stale_files(self.content_dir, set())
+        result = obsidian_to_hugo.find_stale_files(self.content_dir, set(), {})
 
         self.assertEqual(result, [])
 
     def test_returns_empty_when_all_files_expected(self):
         """An empty list is returned when every file is expected."""
         expected = self.content_dir / "expected.md"
-        expected.write_text("expected")
+        expected.write_text("---\nfoo\n---\n\nexpected")
 
         result = obsidian_to_hugo.find_stale_files(
-            self.content_dir, {expected}
+            self.content_dir, {expected}, {expected: "expected"}
         )
 
         self.assertEqual(result, [])

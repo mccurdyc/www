@@ -205,6 +205,16 @@ def extract_frontmatter(text: str) -> str:
     return text[3:end].strip()
 
 
+def extract_body(text: str) -> str:
+    """Return the markdown body after the YAML frontmatter."""
+    if not text.startswith("---"):
+        return text.strip()
+    end = text.find("\n---", 3)
+    if end == -1:
+        return text.strip()
+    return text[end + 4 :].strip()
+
+
 def render_archetype(archetype_path: Path, name: str, date_str: str) -> dict:
     """Render an archetype template and parse its frontmatter."""
     text = archetype_path.read_text()
@@ -288,18 +298,50 @@ def build_frontmatter(
     return frontmatter
 
 
-def find_stale_files(content_dir: Path, expected_files: set[Path]) -> list[Path]:
-    """Return markdown files in content_dir that are not in expected_files."""
+DUPLICATE_PREFIX = "personal-www-posts-"
+
+
+def find_stale_files(
+    content_dir: Path,
+    expected_files: set[Path],
+    expected_bodies: dict[Path, str],
+    clean: bool = False,
+) -> list[Path]:
+    """Return markdown files in content_dir that should be removed.
+
+    By default only duplicates created by the old slug derivation are
+    removed: files prefixed with ``personal-www-posts-`` whose stripped name
+    matches an expected file, or files whose body matches a generated file.
+    When ``clean`` is true, every markdown file outside ``expected_files`` is
+    returned (useful for a full mirror of the Obsidian vault).
+    """
     stale = []
+    expected_names = {p.name for p in expected_files}
+    generated_bodies = set(expected_bodies.values())
     for path in content_dir.glob("*.md"):
         if path.name.startswith("_"):
             continue
-        if path not in expected_files:
+        if path in expected_files:
+            continue
+        if clean:
+            stale.append(path)
+            continue
+        stripped = path.name
+        if stripped.startswith(DUPLICATE_PREFIX):
+            stripped = stripped[len(DUPLICATE_PREFIX) :]
+        if stripped in expected_names:
+            stale.append(path)
+            continue
+        try:
+            existing_body = extract_body(path.read_text())
+        except OSError:
+            continue
+        if existing_body in generated_bodies:
             stale.append(path)
     return stale
 
 
-def process_kind(kind: str, dry_run: bool = False) -> int:
+def process_kind(kind: str, dry_run: bool = False, clean: bool = False) -> int:
     """Process all Obsidian notes tagged for the given kind."""
     config = KINDS[kind]
     tag = config["tag"]
@@ -320,6 +362,7 @@ def process_kind(kind: str, dry_run: bool = False) -> int:
 
     copied = 0
     expected_files: set[Path] = set()
+    expected_bodies: dict[Path, str] = {}
     seen_slugs: dict[str, str] = {}
     for note in notes:
         rel_path = note["path"]
@@ -347,6 +390,7 @@ def process_kind(kind: str, dry_run: bool = False) -> int:
         expected_files.add(dest_file)
         frontmatter = build_frontmatter(kind, archetype_path, note, slug)
         body = note.get("body", "").rstrip()
+        expected_bodies[dest_file] = body
         output = f"---\n{dump_simple_yaml(frontmatter)}\n---\n\n{body}\n"
 
         if dry_run:
@@ -357,7 +401,9 @@ def process_kind(kind: str, dry_run: bool = False) -> int:
         copied += 1
 
     if content_dir.exists():
-        for stale_file in find_stale_files(content_dir, expected_files):
+        for stale_file in find_stale_files(
+            content_dir, expected_files, expected_bodies, clean=clean
+        ):
             if dry_run:
                 print(f"[dry-run] would remove {stale_file}")
             else:
@@ -382,9 +428,18 @@ def main():
         action="store_true",
         help="Print what would be copied without writing files.",
     )
+    parser.add_argument(
+        "--clean",
+        action="store_true",
+        help=(
+            "Remove all markdown files in the content directory that are not "
+            "generated from the current Obsidian vault. By default only "
+            "duplicate files created by the old slug derivation are removed."
+        ),
+    )
     args = parser.parse_args()
 
-    return process_kind(args.kind, dry_run=args.dry_run)
+    return process_kind(args.kind, dry_run=args.dry_run, clean=args.clean)
 
 
 if __name__ == "__main__":
