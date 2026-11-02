@@ -1,6 +1,6 @@
 ---
-title: "AITODAY 17 - can't eat your cake and have it too"
-description: ""
+title: "AITODAY 17"
+description: "can't eat your cake and have it too"
 author: ""
 date: "2026-10-23T11:34:42-04:00"
 subtitle: ""
@@ -12,7 +12,7 @@ draft: false
 
 i've long believed a job is a job. you try to find a job that aligns with your values and one that you enjoy, but at the end of the day, you are paid to do what you are asked. you have _some_ say, but you must be able to disagree and commit.
 
-this is my problem with ai in tech right now. i enjoy using ai to help me learn. but right now the incentive in tech is not on humans learning; it's on investing in ai. i think this strategy of investing in ai _can_ work, but likely won't if we continue the way it currently exists. to few companies are in control and building open alternatives are too costly.
+this is my problem with ai in tech right now. i enjoy using ai to help me learn. but right now the incentive in tech is not on humans learning; it's on investing in ai. i think this strategy of investing in ai _can_ work, but likely won't if we continue the way it currently exists. too few companies are in control and building open alternatives are too costly.
 
 open alternatives to proprietary solutions isn't a new thing; but maybe this is the first time the gap is  this large. right now the cost of using the proprietary solutions isn't too high, but i do believe there will be a future where machines will be more expensive than humans and we are back to where we were pre-ai.
 

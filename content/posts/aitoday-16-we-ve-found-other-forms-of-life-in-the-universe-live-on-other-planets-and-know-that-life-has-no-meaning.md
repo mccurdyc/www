@@ -1,6 +1,6 @@
 ---
-title: "AITODAY 16 - we've found other forms of life in the universe, live on other planets and know that life has no meaning"
-description: ""
+title: "AITODAY 16"
+description: "we've found other forms of life in the universe, live on other planets and know that life has no meaning"
 author: ""
 date: "2026-10-23T11:20:42-04:00"
 subtitle: ""
